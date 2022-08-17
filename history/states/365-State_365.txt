@@ -1,0 +1,34 @@
+
+state={
+	id=365
+	name="STATE_365"
+	resources={
+		oil=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+	}
+
+	history={
+		owner = UST
+		add_core_of = UST
+		buildings = {
+			infrastructure = 0
+			arms_factory = 0
+			industrial_complex = 0
+			air_base = 0
+
+		}
+
+	}
+
+	provinces={
+		423 2271 2758 2936 2973 3106 3731 4449 4663 5765 7875 7981 8009 8023 8024 8073 
+	}
+	manpower=5037896
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

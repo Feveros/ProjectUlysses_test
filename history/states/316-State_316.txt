@@ -1,0 +1,31 @@
+state={
+	id=316
+	name="STATE_316"
+
+
+	history={
+		owner = GEB
+		add_core_of = GEB
+		buildings = {
+			infrastructure = 0
+			arms_factory = 0
+			industrial_complex = 0
+			air_base = 0
+		}
+	}
+	provinces={
+		1048 2289 3048 3251 3465 3660 3955 4626 5886 7592 7596 7622 7627 7628 7658 7662 7667 7672 7685 7686 7687 7690 7713 
+	}
+	resources = {
+		oil = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		chromium = 0
+	}
+
+	state_category = town 
+	manpower=946713
+	buildings_max_level_factor=1.000
+}

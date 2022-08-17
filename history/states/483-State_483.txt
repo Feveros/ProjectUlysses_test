@@ -1,0 +1,34 @@
+
+state={
+	id=483
+	name="STATE_483"
+	resources={
+		oil=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+	}
+
+	history={
+		owner = OSE
+		add_core_of = OSE
+		buildings = {
+			infrastructure = 0
+			arms_factory = 0
+			industrial_complex = 0
+			air_base = 0
+
+		}
+
+	}
+
+	provinces={
+		313 783 1395 1736 2232 2533 2757 2809 3135 3243 4332 4468 8923 8953 9020 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

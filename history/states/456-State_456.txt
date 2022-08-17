@@ -1,0 +1,31 @@
+state={
+	id=456
+	name="STATE_456"
+
+
+	history={
+		owner = OSE
+		add_core_of = OSE
+		buildings = {
+			infrastructure = 0
+			arms_factory = 0
+			industrial_complex = 0
+			air_base = 0
+		}
+	}
+	provinces={
+		31 418 855 954 1548 1665 1693 1740 2136 2177 2183 2356 2443 2473 2514 2608 2981 3178 4377 4720 4773 4895 4934 4937 5003 5015 5017 5748 5773 8738 8798 8803 8818 8822 8841 8854 8856 8935 9017 
+	}
+	resources = {
+		oil = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		chromium = 0
+	}
+
+	state_category = town 
+	manpower=1000000
+	buildings_max_level_factor=1.000
+}

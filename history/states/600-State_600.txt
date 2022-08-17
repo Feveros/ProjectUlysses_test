@@ -1,0 +1,34 @@
+
+state={
+	id=600
+	name="STATE_600"
+	resources={
+		oil=0.000
+		aluminium=0.000
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		chromium=0.000
+	}
+
+	history={
+		owner = BLK
+		add_core_of = BLK
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 0
+
+		}
+
+	}
+
+	provinces={
+		1555 4657 5522 7284 7292 7304 7316 7326 
+	}
+	manpower=1100345
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

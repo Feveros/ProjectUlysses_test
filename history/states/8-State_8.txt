@@ -1,0 +1,34 @@
+
+state={
+	id=8
+	name="STATE_8"
+	resources={
+		oil=0.000
+		aluminium=0.000
+		rubber=0.000
+		tungsten=15
+		steel=36
+		chromium=0.000
+	}
+
+	history={
+		owner = BLK
+		add_core_of = BLK
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 0
+
+		}
+
+	}
+
+	provinces={
+		251 342 837 1954 3533 4042 4556 6008 6061 7394 7465 7502 
+	}
+	manpower=2245658
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,8 @@
+BLK_resurces  = {
+	priority = 2
+	icon = 
+
+	allowed = {
+		original_tag = BLK
+	}
+}

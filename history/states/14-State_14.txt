@@ -1,0 +1,34 @@
+
+state={
+	id=14
+	name="STATE_14"
+	resources={
+		oil=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+	}
+
+	history={
+		owner = SAP
+		add_core_of = SAP
+		buildings = {
+			infrastructure = 0
+			arms_factory = 0
+			industrial_complex = 0
+			air_base = 0
+
+		}
+
+	}
+
+	provinces={
+		970 2019 2125 2263 3880 5662 5945 8750 8761 8784 8792 8819 8820 8845 
+	}
+	manpower=7536168
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

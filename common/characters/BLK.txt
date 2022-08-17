@@ -1,0 +1,54 @@
+characters = {
+	BLK_conser_leader = {
+		name = BLK_conser_leader
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_adolf_hitler
+			}
+		}
+		country_leader={
+			ideology=conservatism 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BLK_moderate_leader = {
+		name = BLK_moderate_leader
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_adolf_hitler
+			}
+		}
+		country_leader={
+			ideology=liberalism 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BLK_dlp_leader = {
+		name = BLK_dlp_leader
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_adolf_hitler
+			}
+		}
+		country_leader={
+			ideology=nationalism_ideology 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BLK_rald = {
+		name = BLK_rald
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_adolf_hitler
+			}
+		}
+		country_leader={
+			ideology=nationalism_ideology 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

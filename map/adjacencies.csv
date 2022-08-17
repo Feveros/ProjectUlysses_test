@@ -1,0 +1,8 @@
+From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+7737;7718;sea;10298;-1;-1;-1;-1;;Great Lakes
+8039;1410;sea;10439;-1;-1;-1;-1;;Great Lakes
+5035;1410;sea;10439;-1;-1;-1;-1;;Great Lakes
+8170;8116;sea;10937;-1;-1;-1;-1;;Great Lakes
+8188;2734;sea;10937;-1;-1;-1;-1;;Great Lakes
+8259;8210;sea;10937;-1;-1;-1;-1;;Great Lakes
+-1;-1;;-1;-1;-1;-1;-1;-1

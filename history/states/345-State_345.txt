@@ -1,0 +1,31 @@
+state={
+	id=345
+	name="STATE_345"
+
+
+	history={
+		owner = GEB
+		add_core_of = GEB
+		buildings = {
+			infrastructure = 0
+			arms_factory = 0
+			industrial_complex = 0
+			air_base = 0
+		}
+	}
+	provinces={
+		1094 1715 2242 2496 2537 3133 3317 3534 4496 4896 5867 5934 5989 7739 7757 7777 7784 7795 7808 7823 7826 7840 7863 7876 7899 7912 7953 7986 7995 8033 8059 8074 8084 8124 
+	}
+	resources = {
+		oil = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		chromium = 0
+	}
+
+	state_category = town 
+	manpower=8236570
+	buildings_max_level_factor=1.000
+}

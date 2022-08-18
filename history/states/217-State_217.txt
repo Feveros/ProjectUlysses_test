@@ -1,7 +1,7 @@
 
 state={
 	id=217
-	name="STATE_217"
+	name="Sarsfield"
 	resources={
 		oil=0
 		aluminium=0

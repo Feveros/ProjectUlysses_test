@@ -1,7 +1,7 @@
 
 state={
 	id=363
-	name="STATE_363"
+	name="Bronstein"
 	resources={
 		oil=0
 		aluminium=0

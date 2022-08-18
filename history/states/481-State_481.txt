@@ -1,7 +1,7 @@
 
 state={
 	id=481
-	name="STATE_481"
+	name="Oured"
 	resources={
 		oil=0
 		aluminium=0

@@ -1,7 +1,7 @@
 
 state={
 	id=361
-	name="STATE_361"
+	name="South Shubrick"
 	resources={
 		oil=0
 		aluminium=0

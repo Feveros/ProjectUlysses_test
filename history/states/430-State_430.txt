@@ -1,7 +1,7 @@
 
 state={
 	id=430
-	name="STATE_430"
+	name="South Rutherford"
 	resources={
 		oil=0
 		aluminium=0

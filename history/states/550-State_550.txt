@@ -1,7 +1,7 @@
 
 state={
 	id=550
-	name="STATE_550"
+	name="Lake Hoe"
 	resources={
 		oil=0
 		aluminium=0

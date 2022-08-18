@@ -1,7 +1,7 @@
 
 state={
 	id=445
-	name="STATE_445"
+	name="McCord"
 	resources={
 		oil=0
 		aluminium=0

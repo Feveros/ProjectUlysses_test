@@ -1,7 +1,7 @@
 
 state={
 	id=580
-	name="STATE_580"
+	name="Cranston"
 	resources={
 		oil=0
 		aluminium=0

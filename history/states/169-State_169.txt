@@ -1,7 +1,7 @@
 
 state={
 	id=169
-	name="STATE_169"
+	name="North Osean Islands"
 	resources={
 		oil=0
 		aluminium=0

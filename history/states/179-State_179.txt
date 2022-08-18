@@ -1,7 +1,7 @@
 
 state={
 	id=179
-	name="STATE_179"
+	name="Sufford"
 	resources={
 		oil=0
 		aluminium=0

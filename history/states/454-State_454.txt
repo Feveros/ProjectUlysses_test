@@ -1,7 +1,7 @@
 
 state={
 	id=454
-	name="STATE_454"
+	name="Pampanito"
 	resources={
 		oil=0
 		aluminium=0

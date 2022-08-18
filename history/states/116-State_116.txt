@@ -1,7 +1,7 @@
 
 state={
 	id=116
-	name="STATE_116"
+	name="Onslow"
 	resources={
 		oil=0
 		aluminium=0

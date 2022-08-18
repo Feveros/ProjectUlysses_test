@@ -1,7 +1,7 @@
 
 state={
 	id=212
-	name="STATE_212"
+	name="West Sarsfield"
 	resources={
 		oil=0
 		aluminium=0

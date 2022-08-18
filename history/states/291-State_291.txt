@@ -1,7 +1,7 @@
 
 state={
 	id=291
-	name="STATE_291"
+	name="North Cranston"
 	resources={
 		oil=0
 		aluminium=0

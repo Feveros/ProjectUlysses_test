@@ -1,7 +1,7 @@
 
 state={
 	id=390
-	name="STATE_390"
+	name="Corncestor"
 	resources={
 		oil=0
 		aluminium=0

@@ -1,0 +1,88 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			### USTIO RESURCES - EVENT CHAIN FOR BELKAN WAR
+			PLH = {
+				country_event = { id = trigger_event.1 days = 1480 }
+			}
+			every_possible_country = {
+				set_rule = {
+					can_join_factions = no
+				}
+			}
+			BLK = {
+				add_opinion_modifier = { target = OSE modifier = historical_enemies }
+				}
+			OSE = {
+				add_opinion_modifier = { target = BLK modifier = historical_enemies }
+			}
+			BLK = {
+				add_opinion_modifier = { target = PBL modifier = historical_friends }
+				}
+			PBL = {
+				add_opinion_modifier = { target = BLK modifier = historical_friends }
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					is_in_faction = yes
+					all_allied_country = {
+						NOT = {
+							has_war_with = FROM
+						}
+					}
+				}
+				leave_faction = yes
+			}
+			if = { #Recta dies, become puppet
+				limit = {
+					ROOT = {
+						original_tag = REC
+						has_war_with = BLK
+						has_global_flag = belkan_war_is_happening
+					}
+				}
+				BLK = {
+					transfer_state = 293
+					transfer_state = 316
+				}
+				ROOT = {
+					set_state_controller = 300
+					set_state_controller = 345
+					BLK = {
+						puppet = ROOT
+						set_autonomy = { target = ROOT autonomy_state = autonomy_integrated_puppet end_wars = yes end_civil_wars = no }
+					}
+				}
+			}
+			else_if = { #Fato dies, become puppet
+				limit = {
+					ROOT = {
+						original_tag = FAT
+						has_war_with = BLK
+						has_global_flag = belkan_war_is_happening
+					}
+				}
+				BLK = {
+					transfer_state = 220
+				}
+				ROOT = {
+					set_state_controller = 75
+					set_state_controller = 594
+					set_state_controller = 297
+					set_state_controller = 334
+					set_state_controller = 237
+					set_state_controller = 295
+					set_state_controller = 230
+					BLK = {
+						puppet = ROOT
+						set_autonomy = { target = ROOT autonomy_state = autonomy_integrated_puppet end_wars = yes end_civil_wars = no }
+					}
+				}
+			}
+		}
+	}
+}

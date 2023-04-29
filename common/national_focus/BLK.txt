@@ -1,0 +1,16 @@
+focus_tree = {
+    id = belka_dlp_focus_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            original_tag = BLK
+        }
+    }
+    default = no
+    continuous_focus_position = { x = 0 y = 0 }
+    
+	shared_focus = BLK_the_crisis_continues
+    shared_focus = BLK_dlp_victory
+	#shared_focus = BLK_the_eagle_has_hallen
+}

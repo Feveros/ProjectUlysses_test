@@ -1,0 +1,56 @@
+BLK_resurces_DLP  = {
+	priority = 2
+	icon = decision_category_generic_prospect_for_resources
+
+	allowed = {
+		original_tag = BLK
+	}
+}
+
+BLK_public_works_DLP  = {
+	priority = 3
+	icon = decision_category_generic_industry
+	allowed = {
+		original_tag = BLK
+	}
+}
+
+BLK_special_eco_dec_DLP  = {
+	priority = 4
+	icon = decision_category_generic_economy
+	allowed = {
+		original_tag = BLK
+	}
+}
+
+BLK_plan_z_dlp = {
+	priority = 5
+	icon = decision_category_ITA_cooperation_programs
+	allowed = {
+		original_tag = BLK
+	}
+}
+
+BLK_belkan_war_category = {
+	priority = 10
+	icon = decision_category_ITA_cooperation_programs
+	allowed = {
+		original_tag = BLK
+	}
+}
+
+BLK_excalibur_cat = {
+	priority = 11
+	icon = decision_category_ITA_cooperation_programs
+	picture = GFX_decision_cat_excalibur
+	allowed = {
+		original_tag = BLK
+	}
+	visible = {
+		OR = {
+			has_country_flag = BLK_excalibur_anti_place
+			has_country_flag = BLK_excalibur_anti_land
+			has_country_flag = BLK_excalibur_anti_icbm
+		}
+	}
+}

@@ -1,0 +1,31 @@
+state={
+	id=419
+	name="STATE_419"
+
+
+	history={
+		owner = RAT
+		add_core_of = RAT
+		buildings = {
+			infrastructure = 0
+			arms_factory = 0
+			industrial_complex = 0
+			air_base = 0
+		}
+	}
+	provinces={
+		106 125 722 1546 1931 2410 2425 3095 3536 3926 4075 4459 5138 5584 6049 8634 8731 
+	}
+	resources = {
+		oil = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		steel = 0
+		chromium = 0
+	}
+
+	state_category = town 
+	manpower=1000000
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,166 @@
+﻿
+### Air oob
+air_wings = {
+
+	220 = { 
+
+		small_plane_airframe_0 =  {		# He 51
+			owner = "BLK" 
+			amount = 40
+			version_name = "He 51"
+		}
+		name = "Jagdgeschwader 232"
+	}
+
+
+	296 = { 
+		
+		small_plane_airframe_0 =  {		# Ar 68
+			owner = "BLK" 
+			amount = 80
+			version_name = "He 51"
+		}
+		name = "Jagdgeschwader 132"
+	
+		medium_plane_airframe_0 = {		# Do 23
+			owner = "BLK" 
+			amount = 80
+			version_name = "Do 23"
+		}
+		medium_plane_airframe_0 = {		# Ju 86
+			owner = "BLK" 
+			amount = 40
+			version_name = "Ju 86"
+		}
+		name = "Kampfgeschwader 153"
+
+		transport_plane_equipment_1 = {
+			owner = "BLK" 
+			amount = 10
+		}
+	}
+
+
+	364 = { 
+
+		medium_plane_airframe_0 = {		# He 45 or Do 23 ?
+			owner = "BLK" 
+			amount = 60
+			version_name = "Do 23"
+		}
+		name = "Kampfgeschwader 253"
+		medium_plane_airframe_0 = {		# He 45 or Do 23 ?
+			owner = "BLK" 
+			amount = 60
+			version_name = "Do 23"
+		}
+		
+		small_plane_cas_airframe_0 =  {			# Hs 123
+			owner = "BLK" 
+			amount = 80
+			version_name = "Hs 123"
+		}
+		name = "Sturzkampfgeschwader 162"	
+	}
+
+
+	330 = { 
+	
+		small_plane_airframe_0 =  {		# He 51 # Ar 68
+			owner = "BLK" 
+			amount = 60
+			version_name = "He 51"
+		}
+		name = "Jagdgeschwader 134"
+		small_plane_airframe_0 =  {		# He 51 # Ar 68
+			owner = "BLK" 
+			amount = 60
+			version_name = "He 51"
+		}
+	
+		medium_plane_airframe_0 = {		# Do 23
+			owner = "BLK" 
+			amount = 80
+			version_name = "Do 23"
+		}
+		name = "Kampfgeschwader 152"
+
+		medium_plane_airframe_0 = {		# He 45 or Do 23 ? (light bomber)
+			owner = "BLK" 
+			amount = 80
+			version_name = "Do 23"
+		}
+		name = "Kampfgeschwader 155"
+	}
+
+
+	590 = { 
+	
+		small_plane_airframe_0 =  {		# He 51
+			owner = "BLK" 
+			amount = 40
+			version_name = "He 51"
+		}
+		name = "Jagdgeschwader 136"
+
+		medium_plane_airframe_0 = {		# Do 23
+			owner = "BLK" 
+			amount = 80
+			version_name = "Do 23"
+		}
+		name = "Kampfgeschwader 154"
+	}
+
+
+	215 = { 
+	
+		small_plane_naval_bomber_airframe_1 =  {		# He 59, Do 18
+			owner = "BLK" 
+			amount = 72
+			version_name = "Do 22"
+		}
+		name = "Küstenfliegergruppe 106"
+
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_1
+			creator = "BLK" 
+			version_name = "Bf 109 D"
+		}
+		requested_factories = 4
+		progress = 0.15
+		efficiency = 15
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_cas_airframe_1
+			creator = "BLK" 
+			version_name = "Ju 87"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 15
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = medium_plane_airframe_1
+			creator = "BLK" 
+			version_name = "He 111"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 15
+	}
+}
+
+#####################

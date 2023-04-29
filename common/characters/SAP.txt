@@ -1,0 +1,424 @@
+characters = { #placeholder leader
+	SAP_na_leader = { #Sapin Leader
+		#name="N/A leader"
+		#portraits = {
+		#	civilian = {
+		#		large=""
+		#	}
+		#}
+		country_leader = {
+			ideology=constitutional_monarchy 
+			traits = { }
+			expire="2050.1.1.1"
+			id=-1
+		}
+	}
+}
+
+characters = { #placeholder advisors
+	SPA_advisor_1 = {
+		#name = "Advisor 1"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPA_advisor_1
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				financial_expert
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SPA_advisor_2 = {
+		#name = "Advisor 2"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPA_advisor_2
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				technocrat
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SPA_advisor_3 = {
+		#name = "Advisor 3"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPA_advisor_3
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				captain_of_industry
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SPA_advisor_4 = {
+		#name = "Advisor 4"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPA_advisor_4
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				hawk
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SPA_advisor_5 = {
+		#name = "Advisor 5"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPA_advisor_5
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				appeaser
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SPA_advisor_6 = {
+		#name = "Advisor 6"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPA_advisor_6
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				industry_reformer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}
+
+characters = { #placeholder army
+	SAP_army_1 = {
+		#name = "Army 1"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SAP_army_1
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				army_regrouping_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	SAP_army_2 = {
+		#name = "Army 2"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SAP_army_2
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				air_bomber_interception_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	SAP_army_3 = {
+		#name = "Army 3"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SAP_army_3
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	SAP_army_4 = {
+		#name = "Army 4"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SAP_army_4
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				army_entrenchment_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+}
+
+characters = { #placeholder chiefs
+	SAP_chief_air_1 = {
+		#name = "Chief Air 1"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = SAP_chief_air_1
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	SAP_chief_air_2 = {
+		#name = "Chief Air 2"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = SAP_chief_air_2
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				air_chief_safety_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	SAP_chief_land_1 = {
+		#name = "Chief Land 1"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SAP_chief_land_1
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	SAP_chief_land_2 = {
+		#name = "Chief Land 2"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SAP_chief_land_2
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	SAP_chief_navy_1 = {
+		#name = "Chief Navy 1"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SAP_chief_navy_1
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	SAP_chief_navy_2 = {
+		#name = "Chief Navy 2"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SAP_chief_navy_2
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+}
+
+characters = { #placeholder theorist
+	SAP_theorist_1 = {
+		#name = "Theorist 1"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = SAP_theorist_1
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	SAP_theorist_2 = {
+		#name = "Theorist 2"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = SAP_theorist_2
+			allowed = {
+				original_tag = SAP
+			}
+			traits = {
+				naval_theorist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+}

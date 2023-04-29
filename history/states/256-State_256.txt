@@ -8,9 +8,9 @@ state={
 		add_core_of = BLK
 		buildings = {
 			infrastructure = 2
-			arms_factory = 0
-			industrial_complex = 0
-			air_base = 0
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 2
 		}
 		victory_points = { 288 50 }
 	}
@@ -26,7 +26,7 @@ state={
 		chromium = 0
 	}
 
-	state_category = town 
+	state_category = city
 	manpower=3500437
 	buildings_max_level_factor=1.000
 }

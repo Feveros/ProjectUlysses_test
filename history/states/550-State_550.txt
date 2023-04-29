@@ -1,7 +1,7 @@
 
 state={
 	id=550
-	name="Lake Hoe"
+	name="STATE_550"
 	resources={
 		oil=0
 		aluminium=0
@@ -15,19 +15,20 @@ state={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
+			infrastructure = 2
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 1
 			air_base = 0
 
 		}
+		victory_points = { 9396 50 }
 
 	}
 
 	provinces={
 		1067 2433 2869 3499 3532 3755 3758 4111 4157 4797 6028 9380 9393 9396 9401 9405 9420 9425 9437 9440 9447 9449 9451 9453 9476
 	}
-	manpower=1000000
+	manpower=2376899
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

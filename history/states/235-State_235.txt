@@ -7,7 +7,7 @@ state={
 		aluminium=0.000
 		rubber=0.000
 		tungsten=0.000
-		steel=54
+		steel=34
 		chromium=0.000
 	}
 
@@ -16,7 +16,7 @@ state={
 		add_core_of = BLK
 		buildings = {
 			infrastructure = 3
-			arms_factory = 5
+			arms_factory = 4
 			industrial_complex = 1
 			air_base = 0
 
@@ -30,6 +30,6 @@ state={
 	}
 	manpower=3055432
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=0.000
 }

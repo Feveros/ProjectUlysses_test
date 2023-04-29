@@ -1,33 +1,35 @@
 
 state={
 	id=525
-	name="Gurnard"
+	name="STATE_525"
 	resources={
-		oil=0
-		aluminium=0
-		rubber=0
-		tungsten=0
-		steel=0
-		chromium=0
+		oil=0.000
+		aluminium=0.000
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		chromium=0.000
 	}
 
 	history={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 2
 			air_base = 0
 
 		}
+		victory_points = { 458 50 }
+		victory_points = { 9128 50 }
 
 	}
 
 	provinces={
-		458 524 715 1168 1238 1557 1818 1984 2225 2632 3910 4321 4644 4724 5196 5719 5787 9128 9191 9222 9239 9249 
+		458 524 715 1238 1557 1818 1984 3910 5196 5787 9128 9222 
 	}
-	manpower=1000000
+	manpower=4568146
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

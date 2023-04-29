@@ -1,0 +1,19 @@
+﻿l_english:
+
+ ### PARTIES ###
+
+ OSE_communism_party:0 "***"
+ OSE_communism_party_long:0 "***"
+ OSE_democratic_party:0 "Unity Party" ###Liberty Party
+ OSE_fascism_party:0 "Nationalist Union" ### osean brotherhood(centralizationist faction) and oured purity party(regionalist faction)
+ OSE_neutrality_party:0 "***"
+ OSE_neutrality_party_long:0 "***" 
+ 
+ ### Ideas ###
+ 
+ ose_logistical_nightmare:0 "Logistical Nightmare"
+ ose_logistical_nightmare_desc:0 ""
+ ose_overextended_military:0 "Overextended Military"
+ ose_overextended_military_desc:0 ""
+ ose_federation_bureaucracy:0 "Federal System"
+ ose_federation_bureaucracy_desc:0 ""

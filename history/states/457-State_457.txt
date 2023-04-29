@@ -3,12 +3,12 @@ state={
 	id=457
 	name="STATE_457"
 	resources={
-		oil=0
-		aluminium=0
-		rubber=0
-		tungsten=0
-		steel=0
-		chromium=0
+		oil=0.000
+		aluminium=0.000
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		chromium=0.000
 	}
 
 	history={
@@ -25,7 +25,7 @@ state={
 	}
 
 	provinces={
-		540 3566 3655 4938 5268 5358 5570 5770 8317 8380 8442 8478 8495 8496 8534 8535 8557 8566 
+		540 3566 3655 4938 5073 5268 5358 5570 5683 5770 8317 8380 8416 8442 8464 8478 8495 8496 8534 8535 8557 8566 
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000

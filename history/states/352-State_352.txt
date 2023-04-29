@@ -1,6 +1,6 @@
 state={
 	id=352
-	name="East Shubrick"
+	name="STATE_352"
 
 
 	history={
@@ -26,6 +26,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=135800
 	buildings_max_level_factor=1.000
 }

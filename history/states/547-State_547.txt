@@ -1,6 +1,6 @@
 state={
 	id=547
-	name="Donnel"
+	name="STATE_547"
 
 
 	history={
@@ -26,6 +26,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=54325
 	buildings_max_level_factor=1.000
 }

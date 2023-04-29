@@ -3,10 +3,38 @@ ideas = {
 	economy = {
 		law = yes
 		use_list_view = yes
-
-		sleeping_giant = {
 		
-			cost = 150
+		cold_war_eco = {
+
+			picture = idea_cold_war_eco
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.25
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = 0.6
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = 0.2
+				production_speed_dockyard_factor = 0.2
+			}
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			cancel_if_invalid = no
+		}
+
+		undisturbed_isolation = {
+
+
+			allowed = {
+				always = no
+			}
 			removal_cost = -1
 
 			modifier = {
@@ -16,11 +44,55 @@ ideas = {
 				production_speed_dockyard_factor = -0.5
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
-				industrial_capacity_factory = -0.4
-				industrial_capacity_dockyard = -0.4
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+				max_fuel_factor = -0.45
+				fuel_gain_factor = -0.6
+				agency_upgrade_time = 1.0
 			}
 
 			allowed_to_remove = {
+				OR = {
+					has_war_support > 0.5
+					has_war = yes
+					has_completed_focus = USA_limited_intervention
+				}
+			}
+
+			cancel_if_invalid = no
+		}
+
+		isolation = {
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_industrial_complex_factor = -0.4
+				production_speed_arms_factory_factor = -0.4
+				production_speed_dockyard_factor = -0.4
+				conversion_cost_civ_to_mil_factor= 0.4
+				conversion_cost_mil_to_civ_factor = 0.4
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.5
+				max_fuel_factor = -0.35
+				fuel_gain_factor = -0.5
+				agency_upgrade_time = 0.8
+			}
+			allowed_to_remove = {
+				OR = {
+					has_war_support > 0.75
+					has_war = yes
+					has_completed_focus = USA_limited_intervention
+				}
 			}
 
 			cancel_if_invalid = no
@@ -33,12 +105,13 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = 0.35
-				production_speed_industrial_complex_factor = 0.2
-				production_speed_arms_factory_factor = -0.3
+				consumer_goods_factor = 0.4
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
 				conversion_cost_civ_to_mil_factor= 0.3
-				conversion_cost_mil_to_civ_factor = -0.2
-				political_power_gain = 0.20
+				conversion_cost_mil_to_civ_factor = 0.3
+				max_fuel_factor = -0.25
+				fuel_gain_factor = -0.4
 			}
 
 			default = yes
@@ -49,6 +122,10 @@ ideas = {
 		low_economic_mobilisation = {
 
 			available = {
+				OR = {
+					has_war = yes
+					has_country_flag = eco_laws_unlocked_1
+				}
 			}
 			on_add = {
 			}
@@ -58,33 +135,30 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.3
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_arms_factory_factor = -0.15
-				conversion_cost_civ_to_mil_factor= 0.2
-				conversion_cost_mil_to_civ_factor = -0.1
-				political_power_gain = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				fuel_gain_factor = -0.25
 			}
 
 			cancel_if_invalid = no
 
 			ai_will_do = {
-   				factor = 2
-
-   				modifier = {
-					factor = 20
-
-					is_major = yes
-				}
-				modifier = {
-					has_war_support > 0.25
-					factor = 0 #don't even look at it if you could be taking partial mob
-				}
+   				factor = 20
+				
+				#modifier = {
+				#	has_war_support > 0.25
+				#	factor = 0 #don't even look at it if you could be taking partial mob
+				#}
    			}
 		}
 
 		partial_economic_mobilisation = {
 
 			available = {
+				OR = {
+					has_war = yes
+					has_country_flag = eco_laws_unlocked_2
+				}
 			}
 
 			cost = 150
@@ -92,8 +166,10 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.25
-				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = 0.1
+				conversion_cost_civ_to_mil_factor= -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+				fuel_gain_factor = -0.1
 			}
 
 			cancel_if_invalid = no
@@ -114,6 +190,10 @@ ideas = {
 
 
 			available = {
+				OR = {
+					has_war = yes
+					has_country_flag = eco_laws_unlocked_3
+				}
 			}
 
 			cost = 150
@@ -121,16 +201,12 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.2
-				production_speed_industrial_complex_factor = -0.2
 				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
-				conversion_cost_mil_to_civ_factor = 0.2
-				political_power_gain = -0.15
+				conversion_cost_mil_to_civ_factor = -0.2
 			}
 
 			cancel_if_invalid = no
-			on_add = {
-			}
 			ai_will_do = {
    				factor = 3
 
@@ -169,16 +245,12 @@ ideas = {
 
 
 			available = {
+				OR = {
+					has_war = yes
+					has_country_flag = eco_laws_unlocked_4
+				}
 			}
 			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
 			}
 			ai_will_do = {
    				factor = 1
@@ -210,12 +282,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = 0.1
-				production_speed_industrial_complex_factor = -0.3
+				consumer_goods_factor = 0.10
+				conscription = -0.03
 				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
-				conversion_cost_mil_to_civ_factor = 0.3
-				political_power_gain = -0.25
+				conversion_cost_mil_to_civ_factor = -0.3
 			}
 
 			cancel_if_invalid = no
@@ -263,18 +334,23 @@ ideas = {
 			}
 
 			on_remove = {
-				if = {
-					limit = {
-						tag = POL
-						85 = { is_demilitarized_zone = no }
-						has_civil_war = no 
-					}
-					85 = {
-						if = {
-							limit = {
-								has_dynamic_modifier = { modifier = international_city }
+				effect_tooltip =  {
+					remove_dynamic_modifier = { modifier = international_city }
+				}
+				hidden_effect = {
+					if = {
+						limit = {
+							tag = POL
+							85 = { is_demilitarized_zone = no }
+							has_civil_war = no 
+						}
+						85 = {
+							if = {
+								limit = {
+									has_dynamic_modifier = { modifier = international_city }
+								}
+								remove_dynamic_modifier = { modifier = international_city }
 							}
-							remove_dynamic_modifier = { modifier = international_city }
 						}
 					}
 				}

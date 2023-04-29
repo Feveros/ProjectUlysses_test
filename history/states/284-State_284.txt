@@ -1,17 +1,18 @@
 state={
 	id=284
-	name="Meripan"
+	name="STATE_284"
 
 
 	history={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
+			infrastructure = 3
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 1
 			air_base = 0
 		}
+		victory_points = { 7419 50 }
 	}
 	provinces={
 		290 1097 1454 4584 5018 7386 7411 7419 7524 7573 
@@ -26,6 +27,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=1657890
 	buildings_max_level_factor=1.000
 }

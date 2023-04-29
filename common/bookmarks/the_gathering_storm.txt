@@ -8,6 +8,38 @@ bookmarks = {
 		default = yes
 		
 		"BLK"={
+			history = "BLK_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				BLK_eco_crisis
+				BLK_overspending_for_military
+				BLK_chaos_in_the_assembly
+			}	
+			focuses = {
+			}
+		}
+		#"UST"={
+		#	history = "UST_GATHERING_STORM_DESC"
+		#	ideology = democratic
+		#	ideas = {
+		#
+		#	}
+		#	focuses = {
+		#
+		#	}
+		#}
+		#"OSE"={
+		#	history = "OSE_GATHERING_STORM_DESC"
+		#	ideology = democratic
+		#	ideas = {
+		#
+		#	}
+		#	focuses = {
+		#
+		#	}
+		#}
+
+		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 		effect = {

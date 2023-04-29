@@ -1,17 +1,19 @@
 state={
 	id=551
-	name="Lamprey"
+	name="STATE_551"
 
 
 	history={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
+			infrastructure = 3
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 3
 			air_base = 0
 		}
+		victory_points = { 4709 50 }
+		victory_points = { 9333 50 }
 	}
 	provinces={
 		394 1639 2153 2573 2818 3473 3543 4108 4528 4709 9297 9318 9321 9329 9333 9336 9343 9352 9353 9354 9360 9381 
@@ -26,6 +28,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=5543879
 	buildings_max_level_factor=1.000
 }

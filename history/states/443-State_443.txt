@@ -1,17 +1,19 @@
 state={
 	id=443
-	name="Cobia Hill"
+	name="STATE_443"
 
 
 	history={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
+			infrastructure = 2
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 3
 			air_base = 0
 		}
+		victory_points = { 8759 50 }
+		victory_points = { 5660 50 }
 	}
 	provinces={
 		144 203 380 414 466 483 691 936 1140 1538 1775 2630 3000 3374 3434 3451 4580 5068 5660 5679 6014 8625 8679 8689 8739 8759 8769 8780 8866 
@@ -26,6 +28,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=3000000
 	buildings_max_level_factor=1.000
 }

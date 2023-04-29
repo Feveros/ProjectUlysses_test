@@ -4,7 +4,7 @@ state={
 	name="STATE_594"
 	resources={
 		oil=0
-		aluminium=0
+		aluminium=15
 		rubber=0
 		tungsten=0
 		steel=0
@@ -15,13 +15,15 @@ state={
 		owner = FAT
 		add_core_of = FAT
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 3
 			air_base = 0
 
 		}
-
+		victory_points = { 1899 50 }
+		victory_points = { 7258 50 }
 	}
 
 	provinces={
@@ -29,6 +31,6 @@ state={
 	}
 	manpower=4560136
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_city
 	local_supplies=0.000
 }

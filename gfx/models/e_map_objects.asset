@@ -1,0 +1,6 @@
+
+entity = {
+	name = "excalibur"
+	pdxmesh = "excalibur_mesh"
+	scale = 1.0
+}

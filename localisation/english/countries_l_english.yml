@@ -1,24 +1,73 @@
 ﻿l_english:
 
- BLK_fascism:0 "Belka"
- BLK_communism:0 "Belka"
- BLK_democratic:0 "Belka"
+ #ENG_fascism:0 "British Empire"
+ #ENG_fascism_DEF:0 "the British Empire"
+ #ENG_democratic:0 "United Kingdom"
+ #ENG_democratic_DEF:0 "the United Kingdom"
+ #ENG_neutrality:0 "Great Britain"
+ #ENG_neutrality_DEF:0 "Great Britain"
+ #ENG_communism:0 "Union of Britain"
+ #ENG_communism_DEF:0 "the Union of Britain"
+ #ENG_fascism_ADJ:0 "British"
+ #ENG_democratic_ADJ:0 "British"
+ #ENG_neutrality_ADJ:0 "British"
+ #ENG_communism_ADJ:0 "British"
+ #ENG:0 "Britain"
+ #ENG_DEF:0 "Britain"
+ #ENG_ADJ:0 "British"
+
+ BLK_fascism:0 "Belkan Federation"
+ BLK_communism:0 "Belkan Union"
+ BLK_democratic:0 "Belkan Federation"
+ BLK_neutrality:0 "Belkan Federation"
+ BLK_monarchism:0 "Kingdom of Belka"
+ BLK_DEF:0 "Belka"
+ BLK_ADJ:0 "Belkan"
  
+ SBK_fascism:0 "South Belka"
+ SBK_communism:0 "South Belka"
+ SBK_democratic:0 "South Belka"
+ SBK_neutrality:0 "South Belka"
+ SBK_DEF:0 "South Belka"
+ SBK_ADJ:0 "South Belkan"
+ 
+ SAP_fascism:0 "Kingdom of Sapin"
+ SAP_communism:0 "Sapin"
  SAP_democratic:0 "Sapin"
+ SAP_neutrality:0 "Kingdom of Sapin"
+ SAP_monarchism:0 "Kingdom of Sapin"
+ SAP_DEF:0 "Sapin"
+ SAP_ADJ:0 "Sapinian"
  
  RAT_democratic:0 "Ratio"
  
+ FAT_fascism:0 "FATO"
+ FAT_communism:0 "FATO"
  FAT_democratic:0 "FATO"
+ FAT_neutrality:0 "FATO"
+ FAT_DEF:0 "FATO"
+ FAT_ADJ:0 "FATO"
  
  NRL_democratic:0 "Nordlands"
  
  OSE_democratic:0 "Osean Federation"
  
- REC_democratic:0 "Recta"
- 
+ GEB_fascism:0 "Gebet"
+ GEB_communism:0 "Gebet"
  GEB_democratic:0 "Gebet"
+ GEB_neutrality:0 "Gebet"
+ GEB_DEF:0 "Gebet"
+ GEB_ADJ:0 "Gebetan"
+ 
+ REC_fascism:0 "Recta"
+ REC_communism:0 "Recta"
+ REC_democratic:0 "Recta"
+ REC_neutrality:0 "Recta"
+ REC_DEF:0 "Recta"
+ REC_ADJ:0 "Rectan"
  
  UST_democratic:0 "Ustio"
+ UST_DEF:0 "Ustio"
  
  WIE_democratic:0 "Wielvakia"
  
@@ -93,3 +142,18 @@
  DOR_democratic:0 "Dorondo"
  
  FRU_democratic:0 "Ferustia"
+ 
+ CHO_democratic:0 "Chopinburg"
+ 
+ SEA_democratic:0 "Seals"
+ 
+ RJR_democratic:0 "Roca Roja"
+ 
+ PAY_democratic:0 "Payton"
+ 
+ EDW_democratic:0 "Edwards"
+ 
+ SCA_democratic:0 "Scandia"
+ 
+ VOS_democratic:0 "Voslage"
+ 

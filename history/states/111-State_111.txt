@@ -3,21 +3,21 @@ state={
 	id=111
 	name="STATE_111"
 	resources={
-		oil=0
-		aluminium=0
-		rubber=0
-		tungsten=0
-		steel=0
-		chromium=0
+		oil=0.000
+		aluminium=0.000
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		chromium=0.000
 	}
 
 	history={
-		owner = PLH
-		add_core_of = PLH
+		owner = OSE
+		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
+			infrastructure = 3
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 2
 			air_base = 0
 
 		}
@@ -25,9 +25,9 @@ state={
 	}
 
 	provinces={
-		10006 
+		1168 2225 2632 4321 4644 4724 5719 9191 9239 9249 
 	}
-	manpower=1000000
+	manpower=1247681
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

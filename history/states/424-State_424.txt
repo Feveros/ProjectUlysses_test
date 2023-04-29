@@ -1,6 +1,6 @@
 state={
 	id=424
-	name="West Rutherford"
+	name="STATE_424"
 
 
 	history={
@@ -12,6 +12,8 @@ state={
 			industrial_complex = 0
 			air_base = 0
 		}
+		victory_points = { 8711 50 }
+		victory_points = { 2291 50 }
 	}
 	provinces={
 		510 2284 2291 3073 3184 4953 8494 8527 8674 8702 8711 
@@ -26,6 +28,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=4345613
 	buildings_max_level_factor=1.000
 }

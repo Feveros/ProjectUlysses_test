@@ -6,6 +6,9 @@ state={
 	history={
 		owner = YUK
 		add_core_of = YUK
+		victory_points = {
+			1095 25
+		}
 		buildings = {
 			infrastructure = 0
 			arms_factory = 0

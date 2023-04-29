@@ -7,7 +7,7 @@ state={
 		aluminium=0
 		rubber=0
 		tungsten=0
-		steel=0
+		steel=11
 		chromium=0
 	}
 
@@ -15,20 +15,21 @@ state={
 		owner = UST
 		add_core_of = UST
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
-			air_base = 0
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 5
+			air_base = 2
 
 		}
-
+	victory_points = { 2930 50 }
+	victory_points = { 2140 45 }
 	}
 
 	provinces={
 		205 417 1741 2140 2143 2685 2930 3594 5010 5370 5771 5946 7698 7829 7846 7868 7885 7888 7909 7910 7923 7931 7937 7938 7967 7985 
 	}
-	manpower=7467053
+	manpower=5467053
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_city
 	local_supplies=0.000
 }

@@ -15,20 +15,20 @@ state={
 		owner = UST
 		add_core_of = UST
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
-			air_base = 0
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
 
 		}
-
+		victory_points = { 4499 50 }
 	}
 
 	provinces={
 		20 568 1813 1919 2032 2448 2638 2715 3505 4022 4160 4499 5610 5900 6075 7716 7751 7769 7783 7833 7847 7919 7932 
 	}
-	manpower=4657130
+	manpower=3657130
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=0.000
 }

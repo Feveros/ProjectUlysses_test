@@ -1,13 +1,13 @@
 state={
 	id=332
-	name="Haliham"
+	name="STATE_332"
 
 
 	history={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			arms_factory = 0
 			industrial_complex = 0
 			air_base = 0
@@ -26,6 +26,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=2780124
 	buildings_max_level_factor=1.000
 }

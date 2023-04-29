@@ -1,0 +1,9 @@
+technologies = {
+	fast_nuke_tech = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		nuclear_production = 1
+	}
+}

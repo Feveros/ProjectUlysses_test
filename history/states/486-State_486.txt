@@ -1,7 +1,7 @@
 
 state={
 	id=486
-	name="North Sarsfield"
+	name="STATE_486"
 	resources={
 		oil=0
 		aluminium=0
@@ -27,7 +27,7 @@ state={
 	provinces={
 		135 695 983 1139 1579 1595 1788 1789 1889 2987 5151 5586 6885 
 	}
-	manpower=1000000
+	manpower=234513
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

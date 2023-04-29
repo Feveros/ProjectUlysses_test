@@ -1,7 +1,7 @@
 
 state={
 	id=223
-	name="South East Fairweather"
+	name="STATE_223"
 	resources={
 		oil=0
 		aluminium=0
@@ -21,6 +21,7 @@ state={
 			air_base = 0
 
 		}
+		victory_points = { 4153 50 }
 
 	}
 

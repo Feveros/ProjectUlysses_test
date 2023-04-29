@@ -1,17 +1,18 @@
 state={
 	id=383
-	name="Central Cranston"
+	name="STATE_383"
 
 
 	history={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
+			infrastructure = 2
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 2
 			air_base = 0
 		}
+		victory_points = { 210 50 }
 	}
 	provinces={
 		210 306 525 663 1842 2605 3214 4281 4675 5286 8315 8429 
@@ -26,6 +27,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=1657666
 	buildings_max_level_factor=1.000
 }

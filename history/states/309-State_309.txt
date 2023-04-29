@@ -6,6 +6,7 @@ state={
 	history={
 		owner = BLK
 		add_core_of = BLK
+		add_core_of = UST
 		buildings = {
 			infrastructure = 1
 			arms_factory = 0
@@ -26,7 +27,7 @@ state={
 		chromium = 0
 	}
 
-	state_category = town 
-	manpower=1400467
+	state_category = wasteland
+	manpower=101046
 	buildings_max_level_factor=1.000
 }

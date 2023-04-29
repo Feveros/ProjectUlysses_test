@@ -8,10 +8,11 @@ state={
 		add_core_of = SAP
 		buildings = {
 			infrastructure = 0
-			arms_factory = 0
+			arms_factory = 1
 			industrial_complex = 0
 			air_base = 0
 		}
+		victory_points = { 4044 15 }
 	}
 	provinces={
 		1077 1186 1576 1705 1973 2030 2667 2691 2955 3016 3072 3829 4044 4910 5391 5511 5850 6080 6084 8469 8501 8572 
@@ -25,7 +26,7 @@ state={
 		chromium = 0
 	}
 
-	state_category = town 
-	manpower=3089514
+	state_category = rural
+	manpower=1089514
 	buildings_max_level_factor=1.000
 }

@@ -1,6 +1,6 @@
 shared_focus = {
     id = BLK_the_crisis_continues
-    icon = placeholder
+    icon = GFX_focus_CZE_german_puppet
     cost = 4.3
     ai_will_do = {
         factor = 90
@@ -15,7 +15,7 @@ shared_focus = {
 
 shared_focus = {
     id = BLK_country_wide_protests
-    icon = placeholder
+    icon = GFX_focus_generic_support_the_left_right
     cost = 5.8
     ai_will_do = {
         factor = 90
@@ -30,14 +30,13 @@ shared_focus = {
 
     completion_reward = {
 		country_event = { id = belka.2 }
-		add_stability = -0.2
     }
     search_filters = { }
 }
 
 shared_focus = {
     id = BLK_economy_in_pieces
-    icon = placeholder
+    icon = GFX_goal_generic_trade
     cost = 5.8
     ai_will_do = {
         factor = 90
@@ -51,15 +50,13 @@ shared_focus = {
 
     completion_reward = {
 		country_event = { id = belka.3 }
-		add_political_power= -50
-		add_stability = -0.1
     }
     search_filters = { }
 }
 
 shared_focus = {
     id = BLK_no_work_place
-    icon = placeholder
+    icon = GFX_goal_generic_construction
     cost = 5.8
     ai_will_do = {
         factor = 90
@@ -73,15 +70,13 @@ shared_focus = {
 
     completion_reward = {
 		country_event = { id = belka.4 }
-		add_manpower = -100000
-		add_stability = -0.1
 	}
     search_filters = { }
 }
 
 shared_focus = {
     id = BLK_no_money
-    icon = placeholder
+    icon = GFX_focus_ETH_adopt_the_lira
     cost = 8.6
     ai_will_do = {
         factor = 90
@@ -101,35 +96,37 @@ shared_focus = {
 
     completion_reward = {
 		country_event = { id = belka.5 }
-		add_political_power= -200
-		add_stability = -0.1
+		#add_ideas = BLK_no_money_idea
 	}
     search_filters = { }
 }
 
 shared_focus = {
     id = BLK_sell_the_land
-    icon = placeholder
-    cost = 4.3
+    icon = GFX_focus_hol_the_foundations_of_defense
+    cost = 2.9
     ai_will_do = {
         factor = 90
     }
     prerequisite = {
         focus = BLK_no_money
     }
+	available = {
+		has_country_flag = BLK_flag_sell_lands_yes
+	}
     relative_position_id = BLK_no_money
     x = 0
     y = 1
 
     completion_reward = {
-		country_event = { id = belka.6 }
+		country_event = { id = belka.9 }
 	}
     search_filters = { }
 }
 
 shared_focus = {
     id = BLK_osean_prop
-    icon = placeholder
+    icon = GFX_focus_generic_develop_eritrea
     cost = 4.3
     ai_will_do = {
         factor = 90
@@ -142,14 +139,14 @@ shared_focus = {
     y = 1
 
     completion_reward = {
-		country_event = { id = belka.7 }
+		country_event = { id = belka.10 }
 	}
     search_filters = { }
 }
 
 shared_focus = {
     id = BLK_wait_for_profit
-    icon = placeholder
+    icon = GFX_goal_generic_intelligence_exchange
     cost = 4.3
     ai_will_do = {
         factor = 90
@@ -162,14 +159,14 @@ shared_focus = {
     y = 1
 
     completion_reward = {
-		country_event = { id = belka.8 }
+		country_event = { id = belka.11 }
 	}
     search_filters = { }
 }
 
 shared_focus = {
     id = BLK_dark_times
-    icon = placeholder
+    icon = GFX_goal_tfv_saf_anti_colonialist_crusade
     cost = 4.3
     ai_will_do = {
         factor = 90
@@ -182,7 +179,7 @@ shared_focus = {
     y = 1
 
     completion_reward = {
-		country_event = { id = belka.9 }
+		country_event = { id = belka.12 }
 	}
     search_filters = { }
 }

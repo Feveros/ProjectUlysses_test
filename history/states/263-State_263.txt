@@ -7,11 +7,12 @@ state={
 		owner = GEB
 		add_core_of = GEB
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
-			air_base = 0
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 2
 		}
+		victory_points = { 5643 30 }
 	}
 	provinces={
 		1835 2149 2186 2292 2344 2476 2641 2760 3002 3140 3299 3713 3976 5643 5751 7164 7205 7257 7298 7463 7486 7534 
@@ -25,7 +26,7 @@ state={
 		chromium = 0
 	}
 
-	state_category = town 
-	manpower=569139
+	state_category = town
+	manpower=769139
 	buildings_max_level_factor=1.000
 }

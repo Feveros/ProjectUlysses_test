@@ -1,6 +1,6 @@
 state={
 	id=400
-	name="Carlden"
+	name="STATE_400"
 
 
 	history={
@@ -26,6 +26,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=121989
 	buildings_max_level_factor=1.000
 }

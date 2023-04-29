@@ -1,17 +1,19 @@
 state={
 	id=498
-	name="Wingfield"
+	name="STATE_498"
 
 
 	history={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
+			infrastructure = 2
+			arms_factory = 6
 			industrial_complex = 0
 			air_base = 0
 		}
+		victory_points = { 2481 50 }
+		victory_points = { 9106 50 }
 	}
 	provinces={
 		14 15 219 408 553 758 765 1037 1643 1781 2264 2481 3289 3347 3400 3503 3831 4040 4064 4278 5174 5341 8949 8968 9036 9106 
@@ -26,6 +28,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=5500321
 	buildings_max_level_factor=1.000
 }

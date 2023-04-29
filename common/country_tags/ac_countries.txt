@@ -1,5 +1,6 @@
 PLH = "countries/Placeholder.txt"
 BLK = "countries/Belka.txt"
+SBK = "countries/South Belka.txt"
 SAP = "countries/Sapin.txt"
 RAT = "countries/Ratio.txt"
 FAT = "countries/FATO.txt"
@@ -46,3 +47,12 @@ MAY = "countries/Malynea.txt"
 
 DOR = "countries/Dorondo.txt"
 FRU = "countries/Ferustia.txt"
+
+CHO = "countries/Chopinburg.txt"
+SEA = "countries/Seals.txt"
+RJR = "countries/Roca Roja.txt"
+PAY = "countries/Payton.txt"
+EDW = "countries/Edwards.txt"
+SCA = "countries/Scandia.txt"
+
+VOS = "countries/Voslage.txt"

@@ -1,17 +1,18 @@
 state={
 	id=287
-	name="McConray"
+	name="STATE_287"
 
 
 	history={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
+			infrastructure = 2
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 4
 			air_base = 0
 		}
+		victory_points = { 3988 50 }
 	}
 	provinces={
 		77 324 416 1354 2221 2229 2330 2588 2647 2966 3234 3988 4227 4687 5449 5885 5969 7585 7618 7640 7671 7801 7872 7917 
@@ -26,6 +27,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=4568903
 	buildings_max_level_factor=1.000
 }

@@ -6,12 +6,14 @@ state={
 	history={
 		owner = BLK
 		add_core_of = BLK
+		add_core_of = SBK
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
 			industrial_complex = 1
-			air_base = 0
+			air_base = 5
 		}
+		victory_points ={ 2326 50 }
 	}
 	provinces={
 		703 2326 2996 4434 4738 5266 5523 5754 5871 5882 5999 7665 7715 7768 7790 7832 7862 7873 7880 
@@ -21,7 +23,7 @@ state={
 		aluminium = 54
 		rubber = 0
 		tungsten = 0
-		steel = 60
+		steel = 20
 		chromium = 0
 	}
 

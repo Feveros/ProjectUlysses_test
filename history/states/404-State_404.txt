@@ -1,17 +1,18 @@
 state={
 	id=404
-	name="East Cranston"
+	name="STATE_404"
 
 
 	history={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
+			infrastructure = 2
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 1
 			air_base = 0
 		}
+		victory_points = { 3504 50 }
 	}
 	provinces={
 		1379 2560 2611 3291 3468 3504 4277 4446 4858 8352 
@@ -26,6 +27,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=297326
 	buildings_max_level_factor=1.000
 }

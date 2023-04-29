@@ -1,17 +1,18 @@
 state={
 	id=311
-	name="North Shubrick"
+	name="STATE_311"
 
 
 	history={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
+			infrastructure = 2
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 4
 			air_base = 0
 		}
+		victory_points = { 5116 50 }
 	}
 	provinces={
 		3387 3419 3535 4326 5116 5191 5395 5631 7580 7717 7774 7788 7811 7836 7851 7852 7884 
@@ -26,6 +27,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=2067300
 	buildings_max_level_factor=1.000
 }

@@ -1,7 +1,7 @@
 
 state={
 	id=212
-	name="West Sarsfield"
+	name="STATE_212"
 	resources={
 		oil=0
 		aluminium=0
@@ -27,7 +27,7 @@ state={
 	provinces={
 		10 214 399 514 1297 1519 1592 1756 3441 3632 3772 3789 5302 5367 6060 7093 7168 
 	}
-	manpower=1000000
+	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

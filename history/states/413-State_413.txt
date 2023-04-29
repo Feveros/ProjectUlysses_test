@@ -1,6 +1,6 @@
 state={
 	id=413
-	name="Rutherford"
+	name="STATE_413"
 
 
 	history={
@@ -26,6 +26,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=123780
 	buildings_max_level_factor=1.000
 }

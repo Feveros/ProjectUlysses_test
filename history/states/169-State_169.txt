@@ -1,7 +1,7 @@
 
 state={
 	id=169
-	name="North Osean Islands"
+	name="STATE_169"
 	resources={
 		oil=0
 		aluminium=0
@@ -27,7 +27,7 @@ state={
 	provinces={
 		2034 3160 5363 9891 9893 
 	}
-	manpower=1000000
+	manpower=17890
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

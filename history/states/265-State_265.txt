@@ -9,8 +9,8 @@ state={
 		buildings = {
 			infrastructure = 4
 			arms_factory = 2
-			industrial_complex = 4
-			air_base = 0
+			industrial_complex = 3
+			air_base = 2
 		}
                 victory_points = { 4376 50 }
 	}
@@ -26,7 +26,7 @@ state={
 		chromium = 0
 	}
 
-	state_category = town 
-	manpower=7908760
+	state_category = large_city
+	manpower=5908760
 	buildings_max_level_factor=1.000
 }

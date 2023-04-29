@@ -1,17 +1,18 @@
 state={
 	id=273
-	name="South West Sarsfield"
+	name="STATE_273"
 
 
 	history={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3
 			air_base = 0
 		}
+		victory_points = { 536 50 }
 	}
 	provinces={
 		536 902 1304 2050 2224 2255 4035 4920 7336 7493 7494 
@@ -26,6 +27,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=2245671
 	buildings_max_level_factor=1.000
 }

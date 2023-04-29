@@ -1,7 +1,7 @@
 
 state={
 	id=188
-	name="North Gurnard"
+	name="STATE_188"
 	resources={
 		oil=0
 		aluminium=0
@@ -15,19 +15,20 @@ state={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 5
 			air_base = 0
 
 		}
+		victory_points = { 6047 50 }
 
 	}
 
 	provinces={
 		2316 3507 3802 6047 9114 9137 
 	}
-	manpower=1000000
+	manpower=3789343
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

@@ -1,6 +1,6 @@
 state={
 	id=405
-	name="North Rutherford"
+	name="STATE_405"
 
 
 	history={
@@ -26,6 +26,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=15479
 	buildings_max_level_factor=1.000
 }

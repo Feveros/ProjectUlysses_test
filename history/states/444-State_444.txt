@@ -22,7 +22,7 @@ state={
 			air_base = 0
 
 		}
-		victory_points = { 8744 40 }
+		victory_points = { 8744 50 }
 	}
 
 	provinces={

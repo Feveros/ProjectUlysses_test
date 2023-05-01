@@ -12,7 +12,7 @@ state={
 			industrial_complex = 0
 			air_base = 0
 		}
-		victory_points = { 4370 50 }
+		victory_points = { 4370 5 }
 	}
 	provinces={
 		3232 4370 4577 4880 5062 5365 7911 8036 8041 8047 8056 8082 8083 8088 8097 8098 8103 8122 8146 

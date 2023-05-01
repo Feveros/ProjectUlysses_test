@@ -12,8 +12,8 @@ state={
 			industrial_complex = 3
 			air_base = 2
 		}
-		victory_points = { 4002 40 }
-		victory_points = { 3525 25 }
+		victory_points = { 4002 35 }
+		victory_points = { 3525 20 }
 	}
 	provinces={
 		1891 3525 3580 3680 3928 3982 4002 5049 5321 5483 6089 7578 7582 7586 7605 7650 7659 

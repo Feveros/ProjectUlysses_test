@@ -31,7 +31,7 @@
  BLK_chaos_in_the_assembly_desc:0 "The National Assembly, our parliament, has been in a state of near-gridlock ever since our last election. The §Bconservative BNCP§!, §Cliberal Wege§!, and §Onationalist DLP§! have failed to pass almost any resolutions, and as a result both our population and government are extremely restless and grow more polarized by the day.\n\nThis chaos has caused a number of politicians from all parties to support a return to an §Gabsolute monarchy§!, hoping it would return stability and order to the country."
  BLK_research_department:0 "Special Military Research Department"
  BLK_research_department_desc:0 "The Belkan Special Military Research Department serves as the link between our scientific, military, and political organizations, and is at the forefront of military technology, both in Belka and the world."
- BLK_echos_of_history:0 "Echos Of History"
+ BLK_echos_of_history:0 "Echoes Of History"
  BLK_echos_of_history_desc:0 "Belka is a land rich with traditions, many of which we trace back to the ancient Belkan Knights, the most prestigious soldiers of the ancient world. We invoke these legends into the way we fight and live."
  
  BLK_echos_elitarism:0 "§BElitism§!"
@@ -346,12 +346,21 @@
  ######################################
  
  belka_dlp_war.1.t:0 "resurces are in ustio" # event which starts timer for war start, rald goes nuts after info that resurces are in ustio
- belka_dlp_war.1.d:0 ""
- belka_dlp_war.1.a:0 ""
+ belka_dlp_war.1.d:0 "war will start in around 60 days"
+ belka_dlp_war.1.a:0 "timer in decisions"
  
  belka_dlp_war.2.t:0 "belka war start" # belkan war begun, event for belka, not global news event
  belka_dlp_war.2.d:0 ""
  belka_dlp_war.2.a:0 ""
+ 
+ belka_dlp_war.98.t:0 "South Belka appered"
+ belka_dlp_war.98.d:0 ""
+ belka_dlp_war.98.a:0 "FUCK"
+ 
+ belka_dlp_war.99.t:0 "The war looks lost"
+ belka_dlp_war.99.d:0 "What should we do"
+ belka_dlp_war.99.a:0 "Cook the nukes"
+ belka_dlp_war.99.b:0 "WACHT AM WALDREICH"
  
  belka_dlp_war.100.t:0 "belka drops nukes" #belka drops nukes, event for belka, not global news event
  belka_dlp_war.100.d:0 ""
@@ -364,6 +373,10 @@
  belka_dlp_war.102.t:0 "belka won" #belka won the war, event for belka, not global news event
  belka_dlp_war.102.d:0 ""
  belka_dlp_war.102.a:0 ""
+ 
+ belka_dlp_war.103.t:0 "Wacht am Waldreich" #Wacht am Waldreich has begun
+ belka_dlp_war.103.d:0 "The last stand"
+ belka_dlp_war.103.a:0 "Curent Objective - Survive"
  
  belka_dlp_war_crisis.1.t:0 "eco is dead again" #event for belka at war start informing that everything that was left in terms of economy run dry, we need to fight with what is left - this event removes all the eco buffs which player got from focus tree and start timer for getting huge eco debuffs
  belka_dlp_war_crisis.1.d:0 ""

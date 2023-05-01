@@ -162,6 +162,7 @@ ideas = {
 				army_org_factor = 0.2
 				army_attack_factor = 0.2
 				army_defence_factor = 0.2
+				breakthrough_factor = 0.2
 			}
 		}
 	}
@@ -979,6 +980,22 @@ ideas = {
 				army_morale_factor = -0.5
 			}
 		}
+		
+		BLK_wacht_am_wal_idea = {
+			picture = 
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -1
+				army_defence_factor = -1
+			}
+		}
+		
 	}
 
 	##############################################

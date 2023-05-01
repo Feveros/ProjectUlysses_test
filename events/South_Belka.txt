@@ -32,7 +32,7 @@ country_event = {
 				size = 0.20
 				navy_ratio = 0
 			}
-			set_country_flag = BLK_cook_nukes_timer
+			country_event = { id = belka_dlp_war.98 }
 		}
 	}
 }

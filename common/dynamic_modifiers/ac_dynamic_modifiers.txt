@@ -1,0 +1,13 @@
+	BLK_wacht_am_wal_state_mod = {
+		icon = GFX_idea_FRA_scw_intervention_republicans_focus
+		enable = {
+			always = yes
+		}
+		remove_trigger = {
+			NOT = {
+				is_controlled_by = BLK
+			}
+		}
+		army_core_defence_factor = 0.5
+		army_core_attack_factor = 0.5
+	}

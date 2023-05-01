@@ -2474,3 +2474,176 @@ shared_focus = {
 	}
 	search_filters = { }
 }
+
+################
+### WAR TREE ###
+################
+
+shared_focus = {
+	id = BLK_dlp_war
+	icon = zzz
+	cost = 5
+	ai_will_do = {
+		factor = 90
+	}
+	x = 40
+	y = 0
+	available = {
+		has_global_flag = belkan_war_is_happening
+	}
+	
+	completion_reward = {
+	}
+	search_filters = { }
+}
+
+shared_focus = {
+	id = BLK_to_the_last_man
+	icon = zzz
+	cost = 5
+	ai_will_do = {
+		factor = 90
+	}
+	prerequisite = {
+		focus = BLK_dlp_war
+	}
+	relative_position_id = BLK_dlp_war
+	x = 2
+	y = 1
+	
+	completion_reward = {
+		custom_effect_tooltip = cheap_combat_abilities_tt
+		hidden_effect = {
+			set_rule = {
+				can_use_kamikaze_pilots = yes
+			}
+			#set_country_flag = kamikaze_flag
+		}
+		custom_effect_tooltip = kamikaze_focus_tooltip_tt
+	}
+	search_filters = { }
+}
+
+shared_focus = {
+	id = BLK_repair_squads
+	icon = zzz
+	cost = 5
+	ai_will_do = {
+		factor = 90
+	}
+	prerequisite = {
+		focus = BLK_dlp_war
+	}
+	relative_position_id = BLK_dlp_war
+	x = -2
+	y = 1
+	
+	completion_reward = {
+		add_ideas = BLK_repair_squads_idea
+	}
+	search_filters = { }
+}
+
+shared_focus = {
+	id = BLK_use_locals
+	icon = zzz
+	cost = 5
+	ai_will_do = {
+		factor = 90
+	}
+	prerequisite = {
+		focus = BLK_repair_squads
+	}
+	relative_position_id = BLK_repair_squads
+	x = -1
+	y = 1
+	
+	completion_reward = {
+		custom_effect_tooltip = BLK_use_locals_tt
+	}
+	search_filters = { }
+}
+
+shared_focus = {
+	id = BLK_consript_workers
+	icon = zzz
+	cost = 5
+	ai_will_do = {
+		factor = 90
+	}
+	prerequisite = {
+		focus = BLK_to_the_last_man
+	}
+	relative_position_id = BLK_to_the_last_man
+	x = 1
+	y = 1
+	
+	completion_reward = {
+		if = {
+			limit = { has_idea = BLK_crush_unemploy_idea }
+			remove_ideas = BLK_crush_unemploy_idea
+		}
+		if = {
+			limit = { has_idea = BLK_mili_civ_infr_idea }
+			remove_ideas = BLK_mili_civ_infr_idea
+		}
+		if = {
+			limit = { has_idea = BLK_expand_supply_idea }
+			remove_ideas = BLK_expand_supply_idea
+		}
+	}
+	search_filters = { }
+}
+
+shared_focus = {
+	id = BLK_pillage_ustio
+	icon = zzz
+	cost = 5
+	ai_will_do = {
+		factor = 90
+	}
+	available = {
+		UST = { has_capitulated = yes }
+	}
+	prerequisite = {
+		focus = BLK_dlp_war
+	}
+	relative_position_id = BLK_dlp_war
+	x = 1
+	y = 3
+	
+	completion_reward = {
+		custom_effect_tooltip = BLK_pillage_ustio_tt
+	}
+	search_filters = { }
+}
+
+shared_focus = {
+	id = BLK_reparations
+	icon = zzz
+	cost = 5
+	ai_will_do = {
+		factor = 90
+	}
+	available = {
+		NOT = {
+			has_war_with = FAT
+			has_war_with = GEB
+			has_war_with = REC
+		}
+	}
+	prerequisite = {
+		focus = BLK_dlp_war
+	}
+	relative_position_id = BLK_dlp_war
+	x = -1
+	y = 3
+	
+	completion_reward = {
+		custom_effect_tooltip = BLK_reparations_tt
+	}
+	search_filters = { }
+}
+
+
+

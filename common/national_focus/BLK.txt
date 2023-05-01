@@ -12,5 +12,6 @@ focus_tree = {
     
 	shared_focus = BLK_the_crisis_continues
     shared_focus = BLK_dlp_victory
+	shared_focus = BLK_dlp_war
 	#shared_focus = BLK_the_eagle_has_hallen
 }

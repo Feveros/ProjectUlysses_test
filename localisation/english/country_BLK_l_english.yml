@@ -387,6 +387,9 @@
  BLK_for_1_year_4_civs_tt:0 "For 1 Year Add §G4§! offmap §YCivilian Factories§!.\n"
  BLK_remove_6_dockyard_tt:0 "Replace §R6 Dockyards§! with §G6 Military Factories§!\n"
  BLK_unlock_focustt:0 "This Option Unlocks Focus"
+ BLK_pillage_ustio_tt:0 "Completing this focus will allows us to §Rpillage Ustio§! for valiables and resurces to §Gfuel our war machine§!."
+ BLK_reparations_tt:0 "Completing this focus will allows us to §Rdemand reparations§! from §Ynations we have defeated§! to §Gstablize our economy§!."
+ BLK_use_locals_tt:0 "Completing this focus will allows us to §Ruse non-belkan population§! as §Gforce labour§!."
 
  ### DECISIONS ###
 

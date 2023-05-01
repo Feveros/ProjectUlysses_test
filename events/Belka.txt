@@ -654,6 +654,7 @@ country_event = { #south belka spaws
 
 	option = {
 		name = belka_dlp_war.98.a
+		country_event = { id = belka_dlp_war.99 }
 	}
 }
 
@@ -669,25 +670,25 @@ country_event = {
 		name = belka_dlp_war.99.a
 		set_country_flag = BLK_cook_nukes_timer
 	}
-	option = {
-		name = belka_dlp_war.99.b
-		#trigger = {
-		#	check_variable = { BLK_wacht_am_wal_var = 3 }
-		#}
-		set_country_flag = BLK_wacht_am_wal_flag
-		hidden_effect = {
-			remove_ideas = BLK_eco_crisis_army_1
-			remove_ideas = BLK_eco_crisis_army_2
-			remove_ideas = BLK_eco_crisis_army_3
-		}
-		add_ideas = BLK_wacht_am_wal_idea
-		every_owned_state = {
-		    limit = {
-				is_core_of = BLK
-			}
-			add_dynamic_modifier = { modifier = BLK_wacht_am_wal_state_mod }
-		}
-	}
+	#option = {
+	#	name = belka_dlp_war.99.b
+	#	#trigger = {
+	#	#	check_variable = { BLK_wacht_am_wal_var = 3 }
+	#	#}
+	#	set_country_flag = BLK_wacht_am_wal_flag
+	#	hidden_effect = {
+	#		remove_ideas = BLK_eco_crisis_army_1
+	#		remove_ideas = BLK_eco_crisis_army_2
+	#		remove_ideas = BLK_eco_crisis_army_3
+	#	}
+	#	add_ideas = BLK_wacht_am_wal_idea
+	#	every_owned_state = {
+	#	    limit = {
+	#			is_core_of = BLK
+	#		}
+	#		add_dynamic_modifier = { modifier = BLK_wacht_am_wal_state_mod }
+	#	}
+	#}
 }
 
 country_event = { #FUNNY NUKES HAHAHAHAHAHHH ITS FUNNY COZ BELKA CRAZY HAMBURGER HAHAHAHA laugh
@@ -877,9 +878,9 @@ country_event = {
 		name = belka_dlp_war_crisis.1.a
 		hidden_effect = {
 			remove_ideas = BLK_woman_in_industry_idea
-			remove_ideas = BLK_expand_supply_idea
-			remove_ideas = BLK_mili_civ_infr_idea
-			remove_ideas = BLK_crush_unemploy_idea
+			#remove_ideas = BLK_expand_supply_idea
+			#remove_ideas = BLK_mili_civ_infr_idea
+			#remove_ideas = BLK_crush_unemploy_idea
 			remove_ideas = BLK_overspending_for_military_2
 			swap_ideas = { remove_idea = BLK_eco_crisis_5 add_idea = BLK_eco_crisis_6 }
 		}

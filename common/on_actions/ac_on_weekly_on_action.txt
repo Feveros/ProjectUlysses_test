@@ -37,6 +37,16 @@ on_actions = {
 				}
 				ROOT = {
 					white_peace = BLK
+					diplomatic_relation = {
+						country = FAT
+						relation = military_access
+						active = no
+					}
+					diplomatic_relation = {
+						country = REC
+						relation = military_access
+						active = no
+					}
 				}
 			}
 		}
@@ -57,6 +67,11 @@ on_actions = {
 				}
 				ROOT = {
 					white_peace = BLK
+					diplomatic_relation = {
+						country = GEB
+						relation = military_access
+						active = no
+					}
 				}
 			}
 		}
@@ -78,6 +93,16 @@ on_actions = {
 				}
 				ROOT = {
 					white_peace = BLK
+					diplomatic_relation = {
+						country = GEB
+						relation = military_access
+						active = no
+					}
+					diplomatic_relation = {
+						country = UST
+						relation = military_access
+						active = no
+					}
 				}
 			}
 		}

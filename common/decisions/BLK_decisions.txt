@@ -113,6 +113,12 @@ BLK_belkan_war_category = {
 					}
 					add_timed_idea  = { idea = BLK_belkan_war_ai_buff_idea  days = 90 }
 				}
+				FAT = { give_military_access = GEB }
+				GEB = { give_military_access = FAT }
+				GEB = { give_military_access = REC }
+				REC = { give_military_access = GEB }
+				REC = { give_military_access = UST }
+				UST = { give_military_access = REC }
 				OSE = { country_event = { id = osea_belkan_war.2 } }
 			}
 			declare_war_on = { 
@@ -139,8 +145,8 @@ BLK_belkan_war_category = {
 				type = annex_everything 
 				target = REC 
 			}
-			OSE = { create_faction = OSE_BELKAN_WAR_FACTION }
-			OSE = {
+			OSE = { 
+				create_faction = OSE_BELKAN_WAR_FACTION
 				add_to_faction = UST
 				add_to_faction = SAP
 			}

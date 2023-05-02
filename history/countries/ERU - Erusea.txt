@@ -14,7 +14,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = monarchism 
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
@@ -25,6 +25,7 @@ set_popularities = {
 	fascism = 50
 	democratic = 1
 	communism = 1
+	monarchism = 0
 }
 
 set_stability = 0.5

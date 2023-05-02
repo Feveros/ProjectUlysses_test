@@ -18,7 +18,11 @@ state={
 			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 3
+			dockyard = 1
 			air_base = 0
+			653 = {
+				naval_base = 4
+			}
 
 		}
 		victory_points = { 653 50 }

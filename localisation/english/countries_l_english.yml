@@ -28,6 +28,7 @@
  SBK_communism:0 "South Belka"
  SBK_democratic:0 "South Belka"
  SBK_neutrality:0 "South Belka"
+ SBK_monarchism:0 "South Belka"
  SBK_DEF:0 "South Belka"
  SBK_ADJ:0 "South Belkan"
  
@@ -44,7 +45,8 @@
  FAT_fascism:0 "FATO"
  FAT_communism:0 "FATO"
  FAT_democratic:0 "FATO"
- FAT_neutrality:0 "FATO"
+ FAT_neutrality:0 "FATO
+ FAT_monarchism:0 "FATO
  FAT_DEF:0 "FATO"
  FAT_ADJ:0 "FATO"
  
@@ -56,6 +58,7 @@
  GEB_communism:0 "Gebet"
  GEB_democratic:0 "Gebet"
  GEB_neutrality:0 "Gebet"
+ GEB_monarchism:0 "Gebet"
  GEB_DEF:0 "Gebet"
  GEB_ADJ:0 "Gebetan"
  
@@ -63,6 +66,7 @@
  REC_communism:0 "Recta"
  REC_democratic:0 "Recta"
  REC_neutrality:0 "Recta"
+ REC_monarchism:0 "Recta"
  REC_DEF:0 "Recta"
  REC_ADJ:0 "Rectan"
  
@@ -79,7 +83,13 @@
  
  YUK_democratic:0 "Union of Yuktobanian Republics"
  
+ ERU_fascism:0 "Erusea"
+ ERU_communism:0 "Erusea"
  ERU_democratic:0 "Erusea"
+ ERU_neutrality:0 "Erusea"
+ ERU_monarchism:0 "Kingdom of Erusea"
+ ERU_DEF:0 "Erusea"
+ ERU_ADJ:0 "Erusean"
  
  WEL_democratic:0 "Wellow"
  

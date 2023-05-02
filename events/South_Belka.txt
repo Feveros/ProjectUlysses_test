@@ -29,7 +29,7 @@ country_event = {
 				target_organization = 1
 				source_organization = 1
 				keep_unit_leaders_trigger = { always = yes }
-				size = 0.20
+				size = 0.25
 				navy_ratio = 0
 			}
 			country_event = { id = belka_dlp_war.98 }

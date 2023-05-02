@@ -269,12 +269,6 @@ sound =
 
 sound = 
 {
-	name = "blk_idle_007"
-	file = "blk/blk_idle_007.wav"
-}
-
-sound = 
-{
 	name = "blk_idle_008"
 	file = "blk/blk_idle_008.wav"
 }
@@ -481,12 +475,6 @@ sound =
 {
 	name = "ose_idle_006"
 	file = "ose/ose_idle_006.wav"
-}
-
-sound = 
-{
-	name = "ose_idle_007"
-	file = "ose/ose_idle_007.wav"
 }
 
 sound = 

@@ -230,7 +230,7 @@ BLK_belkan_war_category = {
 			controls_state = 335
 		}
 		visible = {
-			#has_completed_focus = BLK_pillage_ustio
+			has_completed_focus = BLK_pillage_ustio
 		}
 		fire_only_once = yes
 		cost = 100
@@ -288,7 +288,7 @@ BLK_belkan_war_category = {
 			}
 		}
 		visible = {
-			#has_completed_focus = BLK_reparations
+			has_completed_focus = BLK_reparations
 		}
 		targets = { FAT GEB REC }
 		#fire_only_once = yes

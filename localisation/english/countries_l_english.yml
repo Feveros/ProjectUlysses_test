@@ -45,8 +45,8 @@
  FAT_fascism:0 "FATO"
  FAT_communism:0 "FATO"
  FAT_democratic:0 "FATO"
- FAT_neutrality:0 "FATO
- FAT_monarchism:0 "FATO
+ FAT_neutrality:0 "FATO"
+ FAT_monarchism:0 "FATO"
  FAT_DEF:0 "FATO"
  FAT_ADJ:0 "FATO"
  
@@ -70,8 +70,13 @@
  REC_DEF:0 "Recta"
  REC_ADJ:0 "Rectan"
  
+ UST_fascism:0 "Ustio"
+ UST_communism:0 "Ustio"
  UST_democratic:0 "Ustio"
+ UST_neutrality:0 "Ustio"
+ UST_monarchism:0 "Ustio"
  UST_DEF:0 "Ustio"
+ UST_ADJ:0 "Ustian"
  
  WIE_democratic:0 "Wielvakia"
  

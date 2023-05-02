@@ -129,6 +129,7 @@ ideas = {
 				BLK_echos_elitarism
 				BLK_echos_land
 				BLK_echos_air
+				BLK_echos_cas
 			}
 			modifier = {
 			}
@@ -956,11 +957,11 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_org_factor = -0.25
-				army_attack_factor = -0.25
-				army_armor_attack_factor = -0.25
-				army_defence_factor = -0.25
-				army_morale_factor = -0.25
+				army_org_factor = -0.20
+				army_attack_factor = -0.20
+				army_armor_attack_factor = -0.2
+				army_defence_factor = -0.20
+				army_morale_factor = -0.20
 			}
 		}
 		BLK_eco_crisis_army_3 = {
@@ -973,7 +974,24 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_org_factor = -0.5
+				army_org_factor = -0.3
+				army_attack_factor = -0.3
+				army_armor_attack_factor = -0.3
+				army_defence_factor = -0.3
+				army_morale_factor = -0.3
+			}
+		}
+		BLK_eco_crisis_army_4 = {
+			picture = generic_army_problems
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.75
 				army_attack_factor = -0.5
 				army_armor_attack_factor = -0.5
 				army_defence_factor = -0.5

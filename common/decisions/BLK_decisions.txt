@@ -217,6 +217,114 @@ BLK_belkan_war_category = {
 			country_event = { id = belka_dlp_war.102 days = 1 }
 		}
 	}
+	BLK_opillage_ustio_dec = {
+		icon = GFX_decision_oil
+		allowed = {
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 335
+			}
+		}
+		available = {
+			controls_state = 228
+		}
+		visible = {
+			#has_completed_focus = BLK_pillage_ustio
+		}
+		fire_only_once = yes
+		cost = 100
+		days_remove = 7
+		ai_will_do = {
+			base = 20
+		}
+		remove_effect = {
+			custom_effect_tooltip = BLK_pillage_ustio_dec_tt
+			set_country_flag = BLK_pillage_ustio_flag
+			if = {
+				limit = { 
+					has_idea = BLK_eco_crisis_army_1 
+				}
+				remove_ideas = BLK_eco_crisis_army_1
+			}
+			else_if = {
+				limit = { 
+					has_idea = BLK_eco_crisis_army_2 
+				}
+				swap_ideas = { remove_idea = BLK_eco_crisis_army_2 add_idea = BLK_eco_crisis_army_1 }
+			}
+			else_if = {
+				limit = { 
+					has_idea = BLK_eco_crisis_army_3
+				}
+				swap_ideas = { remove_idea = BLK_eco_crisis_army_3 add_idea = BLK_eco_crisis_army_2 }
+			}
+			else_if = {
+				limit = { 
+					has_idea = BLK_eco_crisis_army_4
+				}
+				swap_ideas = { remove_idea = BLK_eco_crisis_army_4 add_idea = BLK_eco_crisis_army_3 }
+			}
+			335 = {
+                add_manpower = -50000
+				remove_building = {
+					type = arms_factory
+					level = 10
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 10
+				}
+            }
+		}
+	}
+	BLK_war_rep = {
+		icon = GFX_decision_oil
+		allowed = {
+		}
+		available = {
+			ROOT = { 
+				NOT = { has_war_with = FROM }
+			}
+		}
+		visible = {
+			#has_completed_focus = BLK_reparations
+		}
+		targets = { FAT GEB REC }
+		#fire_only_once = yes
+		cost = 100
+		days_remove = 7
+		ai_will_do = {
+			base = 20
+		}
+		remove_effect = {
+			custom_effect_tooltip = BLK_war_rep_tt
+			if = {
+				limit = { 
+					has_idea = BLK_eco_crisis_7 
+				}
+				swap_ideas = { remove_idea = BLK_eco_crisis_7 add_idea = BLK_eco_crisis_6 }
+			}
+			else_if = {
+				limit = { 
+					has_idea = BLK_eco_crisis_8 
+				}
+				swap_ideas = { remove_idea = BLK_eco_crisis_8 add_idea = BLK_eco_crisis_7 }
+			}
+			else_if = {
+				limit = { 
+					has_idea = BLK_eco_crisis_9
+				}
+				swap_ideas = { remove_idea = BLK_eco_crisis_9 add_idea = BLK_eco_crisis_8 }
+			}
+			else_if = {
+				limit = { 
+					has_idea = BLK_eco_crisis_10
+				}
+				swap_ideas = { remove_idea = BLK_eco_crisis_10 add_idea = BLK_eco_crisis_9 }
+			}
+		}
+	}
 }
 
 BLK_special_eco_dec_DLP = {
@@ -314,6 +422,14 @@ BLK_special_eco_dec_DLP = {
 			
 			if = {
 				limit = { 
+					has_idea = BLK_eco_crisis_army_3 
+					NOT = { has_country_flag = BLK_wacht_am_wal_flag }
+					NOT = { has_completed_focus = BLK_pillage_ustio_flag }
+				}
+				swap_ideas = { remove_idea = BLK_eco_crisis_army_2 add_idea = BLK_eco_crisis_army_4 }
+			}
+			else_if = {
+				limit = { 
 					has_idea = BLK_eco_crisis_army_2 
 					NOT = { has_country_flag = BLK_wacht_am_wal_flag }
 				}
@@ -333,7 +449,6 @@ BLK_special_eco_dec_DLP = {
 				}
 				add_ideas = BLK_eco_crisis_army_1
 			}
-			
 		}
 	}
 }

@@ -37,6 +37,7 @@
  BLK_echos_elitarism:0 "§BElitism§!"
  BLK_echos_land:0 "§BMilitaristic Spirit§!"
  BLK_echos_air:0 "§BModern Knights§!\n    Fighter attack §G+5%§!\n    Fighter agility §G+5%§!\n    Fighter defense §G+5%§!"
+ BLK_echos_cas:0 "§BForgotten Branch§!"
  BLK_land_department:0 "\n§BLand Forces Branch§!"
  BLK_air_department:0 "§BAir Forces Branch§!"
  
@@ -198,6 +199,8 @@
  BLK_scrap_the_navy_desc:0 "The Belkan Navy has never been anything special, and seeing as there really isn't any use for it in the coming conflict, we may as well be better off scrapping it and using the materials to develop our ground forces."
  BLK_south_belka_munitions_monopoly:0 "South Belka Munitions"
  BLK_south_belka_munitions_monopoly_desc:0 "The South Belka Munitions Factory, at the foot of the Waldreich Mountains, has long been a world leader in weapons and aircraft research and development. Managing to survive the crisis, boosting their industries will give our airforce a much needed bolstering."
+ BLK_to_cover_the_skyes:0 "To Cover The Skies"
+ BLK_to_cover_the_skyes_desc:0 "fsdfsdfdsfdsfdsfdsfdsdsfdsfdsfdsfdsfdsfsfsfdsfsdfdfsfsdffdsf"
  BLK_crown_jewel:0 "The Crown Jewel"
  BLK_crown_jewel_desc:0 "Ever since it's inception, the Belkan Air Force has been the pride of our nation. The first of it's kind, the Belkan Air Force was created in 1907 during the Osean War. Compared to the Belkan Knights of old, our air force dutifully takes each task with pride and honor, setting a precedence for air forces across the globe."
  BLK_keep_skies_clear:0 "Focus On Superiority"
@@ -218,6 +221,21 @@
  BLK_scrap_the_graveyards_desc:0 "Many scrapyards full of old or damaged aircraft exist around our nation, and could be repurposed to be used instead of fashioning new parts entirely. Their quality might leave a little to be desired, but we will be able to produce aircraft much quicker than before."
  BLK_bm_335_project:0 "To Replace Bm-335"
  BLK_bm_335_project_desc:0 "The Bm-355 Lindwurm bomber is the oldest plane in the Belkan Air Force, and while it has served us well over it's 40 years of service, we are starting to fall short on bomber development and need to introduce a new bomber as our standard."
+ 
+ BLK_dlp_war:0 "The Belkan War"
+ BLK_dlp_war_desc:0 ""
+ BLK_to_the_last_man:0 "To The Last Soldier"
+ BLK_to_the_last_man_desc:0 ""
+ BLK_repair_squads:0 "Repair Squads"
+ BLK_repair_squads_desc:0 ""
+ BLK_use_locals:0 "Forced Labour"
+ BLK_use_locals_desc:0 ""
+ BLK_consript_workers:0 "Consript Factory Workers"
+ BLK_consript_workers_desc:0 ""
+ BLK_pillage_ustio:0 "Pillage Ustio"
+ BLK_pillage_ustio_desc:0 ""
+ BLK_reparations:0 "War Reparations"
+ BLK_reparations_desc:0 ""
  
  ### EVENTS ###
  
@@ -351,7 +369,7 @@
  
  belka_dlp_war.2.t:0 "belka war start" # belkan war begun, event for belka, not global news event
  belka_dlp_war.2.d:0 ""
- belka_dlp_war.2.a:0 ""
+ belka_dlp_war.2.a:0 "SHOULD UNLOCK NEW FOCUS TREE"
  
  belka_dlp_war.98.t:0 "South Belka appered"
  belka_dlp_war.98.d:0 ""
@@ -388,7 +406,9 @@
  BLK_remove_6_dockyard_tt:0 "Replace §R6 Dockyards§! with §G6 Military Factories§!\n"
  BLK_unlock_focustt:0 "This Option Unlocks Focus"
  BLK_pillage_ustio_tt:0 "Completing this focus will allows us to §Rpillage Ustio§! for valiables and resurces to §Gfuel our war machine§!."
+ BLK_pillage_ustio_dec_tt:0 "Completing this decisions will §Glower our army debuff§! and make it §Gimposible§! for our force to §Gcollapse entirely§!"
  BLK_reparations_tt:0 "Completing this focus will allows us to §Rdemand reparations§! from §Ynations we have defeated§! to §Gstablize our economy§!."
+ BLK_war_rep_tt:0 "Completing this decisions will §Glower our industry debuff§!."
  BLK_use_locals_tt:0 "Completing this focus will allows us to §Ruse non-belkan population§! as §Gforce labour§!."
 
  ### DECISIONS ###
@@ -428,3 +448,9 @@
  BLK_force_osea_to_peace:0 "Force Osea To Bargaining Table"
  
  ### FLAGS ###
+ 
+ 
+ ### TEMP ### !!!!!!!!!!! REMEMBR ABOUT THIS SHIT #####
+ 
+ cheap_combat_abilities_tt:0 "\nFinishing this focus greatly reduces the cost of §YForce Attack§! and §YLast Stand§! Command Abilities."
+ kamikaze_focus_tooltip_tt:0 "\nFinishing this focus unlocks usage of §YSuicide Strike§! air missions."

@@ -1023,7 +1023,7 @@ shared_focus = {
 			}
 			add_building_construction = {
 				type = anti_air_building  
-				level = 5
+				level = 3
 				instant_build = yes
 			}
 		}
@@ -1080,7 +1080,7 @@ shared_focus = {
 			}
 			add_building_construction = {
 				type = anti_air_building  
-				level = 5
+				level = 3
 				instant_build = yes
 			}
 		}
@@ -2148,6 +2148,32 @@ shared_focus = {
 }
 
 shared_focus = {
+	id = BLK_to_cover_the_skyes
+	icon = GFX_focus_generic_air_defense
+	cost = 3
+	ai_will_do = {
+		factor = 90
+	}
+	prerequisite = {
+		focus = BLK_south_belka_munitions_monopoly
+	}
+	relative_position_id = BLK_south_belka_munitions_monopoly
+	x = 2
+	y = 1
+	
+	completion_reward = {
+		every_owned_state = {
+			add_building_construction = {
+				type = anti_air_building 
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { }
+}
+
+shared_focus = {
 	id = BLK_crown_jewel
 	icon = GFX_focus_fra_regiment_normandie
 	cost = 3
@@ -2183,11 +2209,8 @@ shared_focus = {
 	prerequisite = {
 		focus = BLK_crown_jewel
 	}
-	mutually_exclusive = {
-		focus = BLK_blast_them_to_kingdom_come
-	}
 	relative_position_id = BLK_crown_jewel
-	x = -1
+	x = 1
 	y = 1
 	
 	completion_reward = {
@@ -2250,88 +2273,6 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BLK_blast_them_to_kingdom_come
-	icon = GFX_focus_generic_armored_air_support
-	cost = 3
-	ai_will_do = {
-		factor = 90
-	}
-	prerequisite = {
-		focus = BLK_crown_jewel
-	}
-	mutually_exclusive = {
-		focus = BLK_keep_skies_clear
-	}
-	relative_position_id = BLK_crown_jewel
-	x = 1
-	y = 1
-	
-	completion_reward = {
-		if = {
-            limit = {
-  	           has_dlc = "By Blood Alone"
-            }
-			add_tech_bonus = {
-				name = rocketry
-				bonus = 0.75
-				uses = 1
-				category = rocketry
-			}
-			add_tech_bonus = {
-				name = cat_anti_tank
-				bonus = 0.5
-				uses = 1
-				category = cat_anti_tank
-			}
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = tactical_bomber
-			}
-		}
-		else = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				category = cas_bomber
-			}
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				category = tactical_bomber
-			}
-		}
-	}
-	search_filters = { }
-}
-
-shared_focus = {
-	id = BLK_cas
-	icon = GFX_focus_generic_tank_air_support
-	cost = 3
-	ai_will_do = {
-		factor = 90
-	}
-	prerequisite = {
-		focus = BLK_blast_them_to_kingdom_come
-	}
-	relative_position_id = BLK_blast_them_to_kingdom_come
-	x = 0
-	y = 1
-	
-	completion_reward = {
-		if = {
-			limit = { has_idea = BLK_strat_bomber_idea }
-			swap_ideas = { remove_idea = BLK_strat_bomber_idea add_idea = BLK_strat_bomber_support_priority_idea }
-		}
-		else = {
-			add_ideas = BLK_support_priority_idea
-		}
-	}
-	search_filters = { }
-}
-
-shared_focus = {
 	id = BLK_eyes_on_the_sky
 	icon = GFX_focus_usa_escort_fighters
 	cost = 3
@@ -2345,7 +2286,7 @@ shared_focus = {
 		focus = BLK_eyes_on_thr_ground
 	}
 	relative_position_id = BLK_crown_jewel
-	x = 3
+	x = -1
 	y = 1
 	
 	completion_reward = {
@@ -2381,7 +2322,7 @@ shared_focus = {
 		focus = BLK_eyes_on_the_sky
 	}
 	relative_position_id = BLK_crown_jewel
-	x = 5
+	x = -3
 	y = 1
 	
 	completion_reward = {
@@ -2409,7 +2350,7 @@ shared_focus = {
 	}
 	relative_position_id = BLK_crown_jewel
 	x = 3
-	y = 2
+	y = 1
 	
 	completion_reward = {
 		add_ideas = BLK_master_of_the_craft_idea
@@ -2432,7 +2373,7 @@ shared_focus = {
 	}
 	relative_position_id = BLK_crown_jewel
 	x = 5
-	y = 2
+	y = 1
 	
 	completion_reward = {
 		add_ideas = BLK_scrap_idea
@@ -2499,7 +2440,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BLK_to_the_last_man
-	icon = zzz
+	icon = GFX_focus_generic_provoke_border_clashes
 	cost = 5
 	ai_will_do = {
 		factor = 90
@@ -2526,7 +2467,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BLK_repair_squads
-	icon = zzz
+	icon = GFX_goal_continuous_repairments
 	cost = 5
 	ai_will_do = {
 		factor = 90
@@ -2546,7 +2487,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BLK_use_locals
-	icon = zzz
+	icon = GFX_goal_generic_construction
 	cost = 5
 	ai_will_do = {
 		factor = 90
@@ -2566,7 +2507,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BLK_consript_workers
-	icon = zzz
+	icon = GFX_focus_generic_manpower
 	cost = 5
 	ai_will_do = {
 		factor = 90
@@ -2597,7 +2538,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BLK_pillage_ustio
-	icon = zzz
+	icon = GFX_focus_generic_annex_country
 	cost = 5
 	ai_will_do = {
 		factor = 90
@@ -2620,7 +2561,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BLK_reparations
-	icon = zzz
+	icon = GFX_focus_generic_annex_country_2
 	cost = 5
 	ai_will_do = {
 		factor = 90

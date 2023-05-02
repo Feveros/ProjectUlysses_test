@@ -227,7 +227,7 @@ BLK_belkan_war_category = {
 			}
 		}
 		available = {
-			controls_state = 228
+			controls_state = 335
 		}
 		visible = {
 			#has_completed_focus = BLK_pillage_ustio

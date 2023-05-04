@@ -441,6 +441,10 @@ BLK_special_eco_dec_DLP = {
 				limit = { has_idea = BLK_eco_crisis_7 }
 				swap_ideas = { remove_idea = BLK_eco_crisis_7 add_idea = BLK_eco_crisis_8 }
 			}
+			else_if = {
+				limit = { has_idea = BLK_eco_crisis_6 }
+				swap_ideas = { remove_idea = BLK_eco_crisis_6 add_idea = BLK_eco_crisis_7 }
+			}
 			
 			if = {
 				limit = { 

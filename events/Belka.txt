@@ -394,6 +394,20 @@ country_event = {
 			UST = { set_country_flag = man_laws_unlocked_1 set_country_flag = eco_laws_unlocked_1 }
 			REC = { set_country_flag = man_laws_unlocked_1 set_country_flag = eco_laws_unlocked_1 }
 			OSE = { country_event = { id = osea_belkan_war.1 } }
+			if = {
+				limit = {
+					AND = {
+						BLK = { is_ai = no }
+						SAP = { is_ai = yes }
+					}
+				}
+				SAP = {
+					add_offsite_building = { 
+						type = arms_factory 
+						level = 4
+					}
+				}
+			}
 		}
 	}
 }

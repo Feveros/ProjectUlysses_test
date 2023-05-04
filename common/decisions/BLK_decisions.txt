@@ -192,6 +192,15 @@ BLK_belkan_war_category = {
 				has_capitulated = yes
 			}
 			BLK = {
+				NOT = {
+					AND = {
+						has_war_with = FAT
+						has_war_with = GEB
+						has_war_with = REC
+					}
+				}
+			}
+			BLK = {
 				controls_state = 309
 				controls_state = 339
 				controls_state = 335
@@ -228,6 +237,12 @@ BLK_belkan_war_category = {
 		}
 		available = {
 			controls_state = 335
+			OR = {
+				has_idea = BLK_eco_crisis_army_1
+				has_idea = BLK_eco_crisis_army_2
+				has_idea = BLK_eco_crisis_army_3
+				has_idea = BLK_eco_crisis_army_4
+			}
 		}
 		visible = {
 			has_completed_focus = BLK_pillage_ustio
@@ -283,8 +298,14 @@ BLK_belkan_war_category = {
 		allowed = {
 		}
 		available = {
-			ROOT = { 
+			ROOT = {
 				NOT = { has_war_with = FROM }
+			}
+			OR = {
+				has_idea = BLK_eco_crisis_7
+				has_idea = BLK_eco_crisis_8 
+				has_idea = BLK_eco_crisis_9
+				has_idea = BLK_eco_crisis_10
 			}
 		}
 		visible = {
@@ -382,6 +403,7 @@ BLK_special_eco_dec_DLP = {
 		selectable_mission = no
 		timeout_effect = {
 			swap_ideas = { remove_idea = BLK_eco_crisis_6 add_idea = BLK_eco_crisis_7 }
+			add_ideas = BLK_eco_crisis_army_1
 			hidden_effect = {
 				set_country_flag = BLK_belkan_war_eco_crisis_dec
 			}

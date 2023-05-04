@@ -138,6 +138,7 @@ ideas = {
 
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
+				NOT = { tag = BLK }
 				OR = {
 					has_war = yes
 					has_country_flag = man_laws_unlocked_3
@@ -184,6 +185,7 @@ ideas = {
 
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
+				NOT = { tag = BLK }
 				OR = {
 					has_war = yes
 					has_country_flag = man_laws_unlocked_4
@@ -229,6 +231,7 @@ ideas = {
 
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
+				NOT = { tag = BLK }
 				OR = {
 					has_war = yes
 					has_country_flag = man_laws_unlocked_5

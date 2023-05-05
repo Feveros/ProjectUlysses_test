@@ -52,7 +52,7 @@ SAP_defend_vs_belka  = {
 	enable = {
 		has_war_with = BLK
 		#BLK = { is_ai = yes }
-		date < 1995.8.1
+		#date < 1995.8.1
 	}
 
 	abort_when_not_enabled = yes
@@ -65,6 +65,6 @@ SAP_defend_vs_belka  = {
 		
 		ordertype = front
 		execution_type = careful
-		manual_attack = yes
+		#manual_attack = yes
 	}
 }

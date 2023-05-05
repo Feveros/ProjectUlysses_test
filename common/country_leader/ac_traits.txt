@@ -75,7 +75,7 @@ leader_traits = {
 
 		army_bonus_air_superiority_factor = -0.25
 		#air_cas_efficiency = -0.5
-		ground_attack_factor = -0.5
+		ground_attack_factor = -0.3
 		
 		ai_will_do = {
 			factor = 1

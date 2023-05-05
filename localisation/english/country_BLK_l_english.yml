@@ -361,6 +361,18 @@
  belka_dlp_coup.10.a:0 "kill party guys" #kill party guys
  belka_dlp_coup.10.b:0 "kill south belka guys" #kill south belka guys
  
+ belka_dlp_coup.11.t:0 "#Belka Uber Alles" #BLK_cult_of_belka focus event
+ belka_dlp_coup.11.d:0 "ah harder onii-chan"
+ belka_dlp_coup.11.a:0 "bzzzzz"
+ 
+ belka_dlp_coup.12.t:0 "#martial law moment" #BLK_police_state event
+ belka_dlp_coup.12.d:0 "i like femboys"
+ belka_dlp_coup.12.a:0 "hue hue hue bzbbzzz "
+ 
+ belka_dlp_coup.13.t:0 "#BSF event" #BLK_form_bs
+ belka_dlp_coup.13.d:0 "still working on this BS"
+ belka_dlp_coup.13.a:0 "112 inches man"
+ 
  ######################################
  
  belka_dlp_war.1.t:0 "resurces are in ustio" # event which starts timer for war start, rald goes nuts after info that resurces are in ustio

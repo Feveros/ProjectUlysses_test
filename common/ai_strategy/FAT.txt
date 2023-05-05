@@ -20,6 +20,5 @@ FAT_defend_vs_belka  = {
 		priority = 100
 		ordertype = front
 		execution_type = careful
-		execute_order = no
 	}
 }

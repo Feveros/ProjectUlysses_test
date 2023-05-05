@@ -1,0 +1,26 @@
+### This file tells other files how to find the songs, and what volume to play them at (the volume here is independent of the in game music player)
+
+#############################
+### Ace Comabt Zero - OST ###
+#############################
+
+music = {
+	name = "briefing_1"
+	file = "briefing_1.ogg"
+	volume = 0.9
+}
+music = {
+	name = "prologue"
+	file = "prologue.ogg"
+	volume = 0.9
+}
+music = {
+	name = "sortie_1"
+	file = "sortie_1.ogg"
+	volume = 0.9
+}
+music = {
+	name = "zero"
+	file = "zero.ogg"
+	volume = 0.9
+}

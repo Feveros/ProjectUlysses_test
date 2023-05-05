@@ -1,0 +1,36 @@
+music_station = "ac_zero_music"
+
+### Ace Combat Zero OST ###
+
+music = {
+	song = "briefing_1"
+	chance = {
+		factor = 1
+
+		#modifier = {
+		#	factor = 0.2
+		#	has_war = yes
+		#}
+	}
+}
+
+music = {
+	song = "prologue"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "sortie_1"
+	chance = {
+		factor = 1
+	}
+}
+
+music = {
+	song = "zero"
+	chance = {
+		factor = 1
+	}
+}

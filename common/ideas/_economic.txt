@@ -362,6 +362,7 @@ ideas = {
 		free_trade = {
 
 			available = {
+				NOT = { has_country_flag = block_trade_law }
 				if = {
 					limit = {
 						original_tag = SPR
@@ -418,7 +419,7 @@ ideas = {
 		export_focus = {
 
 			available = {
-
+				NOT = { has_country_flag = block_trade_law }
 				if = {
 					limit = {
 						original_tag = CHI
@@ -481,6 +482,7 @@ ideas = {
 
 		limited_exports = {
 			available = {
+				NOT = { has_country_flag = block_trade_law }
 				OR = {
 					AND = {
 						has_government = democratic
@@ -568,6 +570,7 @@ ideas = {
 
 			available = {
 				has_war = yes
+				NOT = { has_country_flag = block_trade_law }
 				OR = {
 					has_government = fascism
 					has_government = communism

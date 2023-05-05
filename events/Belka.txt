@@ -236,6 +236,7 @@ country_event = { #Elections
 
 	option = {
 		name = belka.13.a
+		custom_effect_tooltip = BLK_unlock_focus_tt
 		set_country_flag = BLK_DLP_won_flag
 		set_politics = {
 			ruling_party = fascism 
@@ -326,6 +327,8 @@ country_event = { #nation switches to free trade
 		name = belka_dlp.5.a
 		add_ideas = free_trade
 		add_ideas = BLK_free_trade_idea
+		set_country_flag = block_trade_law
+		custom_effect_tooltip = block_trade_flag_tt
 	}
 }
 

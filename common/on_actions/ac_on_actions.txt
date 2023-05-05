@@ -37,30 +37,30 @@ on_actions = {
 				}
 				leave_faction = yes
 			}
-		}
-	}
-	on_daily_REC = {
-		effect = {
 			if = { #Recta peace with belka
 				limit = {
-					has_war_with = BLK
-					has_global_flag = belkan_war_is_happeningz
-					surrender_progress > 0.5
+					ROOT = {
+						original_tag = REC
+						has_war_with = BLK
+						has_global_flag = belkan_war_is_happening
+					}
 				}
 				BLK = {
 					transfer_state = 293
 					transfer_state = 316
 				}
-				white_peace = BLK
-				diplomatic_relation = {
-					country = GEB
-					relation = military_access
-					active = no
-				}
-				diplomatic_relation = {
-					country = UST
-					relation = military_access
-					active = no
+				ROOT = {
+					white_peace = BLK
+					diplomatic_relation = {
+						country = GEB
+						relation = military_access
+						active = no
+					}
+					diplomatic_relation = {
+						country = UST
+						relation = military_access
+						active = no
+					}
 				}
 			}
 		}

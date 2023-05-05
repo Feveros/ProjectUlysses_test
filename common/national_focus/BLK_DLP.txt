@@ -809,6 +809,7 @@ shared_focus = {
 		add_ideas = closed_economy
 		remove_ideas = BLK_free_trade_idea
 		swap_ideas = { remove_idea = BLK_eco_crisis_4 add_idea = BLK_eco_crisis_5 }
+		#set_country_flag = block_trade_law
     }
     search_filters = { }
 }

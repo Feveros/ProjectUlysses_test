@@ -38,7 +38,7 @@ do_not_protect_ustio_ose = {
 		tag = OSE
 	}
 	enable = {
-		date < 1995.7.1
+		#date < 1995.7.1
 		BLK = { is_ai = yes }
 	}
 	abort_when_not_enabled = yes
@@ -55,7 +55,7 @@ do_not_protect_sapin_ose = {
 		tag = OSE
 	}
 	enable = {
-		date < 1995.7.1
+		#date < 1995.7.1
 		BLK = { is_ai = yes }
 	}
 	abort_when_not_enabled = yes
@@ -72,11 +72,11 @@ do_not_waste_units_on_garrison = {
 		original_tag = OSE
 	}
 	enable = {
-		date > 1995.8.1
+		has_global_flag = belkan_war_is_happening
 	}
 	ai_strategy = {
 		type = garrison
-		value = -1000
+		value = -100
 	}
 }
 
@@ -87,7 +87,7 @@ ose_kill_weak_belka  = {
 
 	enable = {
 		has_war_with = BLK
-		date > 1996.1.1
+		date > 1995.8.1
 	}
 
 	abort_when_not_enabled = yes
@@ -95,10 +95,11 @@ ose_kill_weak_belka  = {
 	ai_strategy = {
 		type = front_control
 
-		id = "BLK"
+		tag = BLK
 
 		priority = 100
 		ordertype = front
 		execution_type = rush
+		manual_attack = yes
 	}
 }

@@ -17,7 +17,7 @@ do_not_protect_ustio_sap = {
 		tag = SAP
 	}
 	enable = {
-		date < 1995.7.1
+		#date < 1995.7.1
 		BLK = { is_ai = yes }
 	}
 	abort_when_not_enabled = yes
@@ -51,22 +51,20 @@ SAP_defend_vs_belka  = {
 
 	enable = {
 		has_war_with = BLK
-		BLK = { is_ai = yes }
-		date < 1996.1.1
+		#BLK = { is_ai = yes }
+		date < 1995.8.1
 	}
 
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = front_control
-
-		id = "BLK"
-
-		#ratio = 0.5
+		tag = BLK
 
 		priority = 100
+		
 		ordertype = front
 		execution_type = careful
-		execute_order = no
+		manual_attack = yes
 	}
 }

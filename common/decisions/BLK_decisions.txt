@@ -307,19 +307,29 @@ BLK_belkan_war_category = {
 				has_idea = BLK_eco_crisis_9
 				has_idea = BLK_eco_crisis_10
 			}
+			NOT = { has_country_flag = BLK_war_rep_going }
 		}
 		visible = {
 			has_completed_focus = BLK_reparations
 		}
 		targets = { FAT GEB REC }
+		target_trigger = {
+			NOT = { has_country_flag = BLK_demanded_rep_already }
+		}
 		#fire_only_once = yes
 		cost = 100
 		days_remove = 7
 		ai_will_do = {
 			base = 20
 		}
+		complete_effect = {
+			set_country_flag = BLK_war_rep_going
+		}
 		remove_effect = {
 			custom_effect_tooltip = BLK_war_rep_tt
+			FROM = {
+				set_country_flag = BLK_demanded_rep_already
+			}
 			if = {
 				limit = { 
 					has_idea = BLK_eco_crisis_7 
@@ -344,6 +354,7 @@ BLK_belkan_war_category = {
 				}
 				swap_ideas = { remove_idea = BLK_eco_crisis_10 add_idea = BLK_eco_crisis_9 }
 			}
+			clr_country_flag = BLK_war_rep_going
 		}
 	}
 }

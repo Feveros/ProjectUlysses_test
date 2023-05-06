@@ -63,49 +63,49 @@ on_actions = {
 					}
 				}
 			}
-		}
-	}
-	on_daily_FAT = {
-		effect = {
-			if = { #FATO peace with belka
+			else_if = { #FATO peace with belka
 				limit = {
-					has_war_with = BLK
-					has_global_flag = belkan_war_is_happening
-					surrender_progress > 0.8
+					ROOT = {
+						original_tag = FAT
+						has_war_with = BLK
+						has_global_flag = belkan_war_is_happening
+					}
 				}
 				BLK = {
 					transfer_state = 220
 				}
-				white_peace = BLK
-				diplomatic_relation = {
-					country = GEB
-					relation = military_access
-					active = no
+				ROOT = {
+					white_peace = BLK
+					diplomatic_relation = {
+						country = GEB
+						relation = military_access
+						active = no
+					}
 				}
 			}
-		}
-	}
-	on_daily_GEB = {
-		effect = {
-			if = { #Gebet peace with belka
+			else_if = { #Gebet peace with belka
 				limit = {
-					has_war_with = BLK
-					has_global_flag = belkan_war_is_happening
-					surrender_progress > 0.5
+					ROOT = {
+						original_tag = GEB
+						has_war_with = BLK
+						has_global_flag = belkan_war_is_happening
+					}
 				}
 				BLK = {
 					transfer_state = 256
 				}
-				white_peace = BLK
-				diplomatic_relation = {
-					country = FAT
-					relation = military_access
-					active = no
-				}
-				diplomatic_relation = {
-					country = REC
-					relation = military_access
-					active = no
+				ROOT = { 
+					white_peace = BLK
+					diplomatic_relation = {
+						country = FAT
+						relation = military_access
+						active = no
+					}
+					diplomatic_relation = {
+						country = REC
+						relation = military_access
+						active = no
+					}
 				}
 			}
 		}

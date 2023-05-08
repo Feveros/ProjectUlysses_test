@@ -683,7 +683,11 @@ country_event = {
 
 	option = {
 		name = belka_dlp_war.1.a
-		set_country_flag = BLK_war_start_timer
+		activate_mission = BLK_war_start_timer_dec
+		hidden_effect = {
+			country_event = { id = belka_dlp_war_crisis.1 days = 1 }
+		}
+		#set_country_flag = BLK_war_start_timer
 	}
 }
 
@@ -724,7 +728,8 @@ country_event = {
 
 	option = {
 		name = belka_dlp_war.99.a
-		set_country_flag = BLK_cook_nukes_timer
+		activate_mission = BLK_cook_nukes_timer_dec
+		#set_country_flag = BLK_cook_nukes_timer
 	}
 	#option = {
 	#	name = belka_dlp_war.99.b
@@ -938,7 +943,39 @@ country_event = {
 			#remove_ideas = BLK_mili_civ_infr_idea
 			#remove_ideas = BLK_crush_unemploy_idea
 			remove_ideas = BLK_overspending_for_military_2
-			swap_ideas = { remove_idea = BLK_eco_crisis_5 add_idea = BLK_eco_crisis_6 }
+			swap_ideas = { remove_idea = BLK_eco_crisis_5_2 add_idea = BLK_eco_crisis_6 }
+			activate_mission = BLK_belkan_war_eco_crisis_1
 		}
+	}
+}
+
+country_event = {
+	id = belka_dlp_war_crisis.2
+	title = belka_dlp_war_crisis.2.t
+	desc = belka_dlp_war_crisis.2.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_war_crisis.2.a
+		swap_ideas = { remove_idea = BLK_eco_crisis_5 add_idea = BLK_eco_crisis_5_1 }
+		hidden_effect = {
+			country_event = { id = belka_dlp_war_crisis.3 days = 240 }
+		}
+	}
+}
+
+country_event = {
+	id = belka_dlp_war_crisis.3
+	title = belka_dlp_war_crisis.3.t
+	desc = belka_dlp_war_crisis.3.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_war_crisis.3.a
+		swap_ideas = { remove_idea = BLK_eco_crisis_5_1 add_idea = BLK_eco_crisis_5_2 }
 	}
 }

@@ -118,10 +118,6 @@ music = {
 	file = "32_zero_the_final_overture.ogg"
 }
 music = {
-	name = "HRESVELGR_intro"
-	file = "33_zero_HRESVELGR_intro.ogg"
-}
-music = {
 	name = "HRESVELGR"
 	file = "34_zero_HRESVELGR.ogg"
 }

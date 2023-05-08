@@ -729,6 +729,9 @@ shared_focus = {
 	
 	completion_reward = {
 		country_event = { id = belka_dlp_coup.5 }
+		hidden_effect = {
+			country_event = { id = belka_dlp_war_crisis.2 days = 360 }
+		}
 		add_ideas = tot_economic_mobilisation
 		add_war_support = 0.2
 	}
@@ -2566,12 +2569,10 @@ shared_focus = {
 		factor = 90
 	}
 	available = {
-		NOT = {
-			OR = {
-				has_war_with = FAT
-				has_war_with = GEB
-				has_war_with = REC
-			}
+		OR = {
+			NOT = { has_war_with = FAT }
+			NOT = { has_war_with = GEB }
+			NOT = { has_war_with = REC }
 		}
 	}
 	prerequisite = {

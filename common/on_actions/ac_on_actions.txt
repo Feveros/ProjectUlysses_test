@@ -51,15 +51,8 @@ on_actions = {
 				}
 				ROOT = {
 					white_peace = BLK
-					diplomatic_relation = {
-						country = GEB
-						relation = military_access
-						active = no
-					}
-					diplomatic_relation = {
-						country = UST
-						relation = military_access
-						active = no
+					if = { limit = { is_in_faction_with = FAT }
+						leave_faction = yes
 					}
 				}
 			}
@@ -76,10 +69,15 @@ on_actions = {
 				}
 				ROOT = {
 					white_peace = BLK
-					diplomatic_relation = {
-						country = GEB
-						relation = military_access
-						active = no
+				}
+				GEB = {
+					if = { limit = { is_in_faction_with = ROOT }
+						leave_faction = yes
+					}
+				}
+				REC = {
+					if = { limit = { is_in_faction_with = ROOT }
+						leave_faction = yes
 					}
 				}
 			}
@@ -96,15 +94,8 @@ on_actions = {
 				}
 				ROOT = { 
 					white_peace = BLK
-					diplomatic_relation = {
-						country = FAT
-						relation = military_access
-						active = no
-					}
-					diplomatic_relation = {
-						country = REC
-						relation = military_access
-						active = no
+					if = { limit = { is_in_faction_with = FAT }
+						leave_faction = yes
 					}
 				}
 			}

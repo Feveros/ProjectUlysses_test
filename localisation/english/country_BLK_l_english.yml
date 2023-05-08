@@ -408,9 +408,17 @@
  belka_dlp_war.103.d:0 "The last stand"
  belka_dlp_war.103.a:0 "Curent Objective - Survive"
  
- belka_dlp_war_crisis.1.t:0 "eco is dead again" #event for belka at war start informing that everything that was left in terms of economy run dry, we need to fight with what is left - this event removes all the eco buffs which player got from focus tree and start timer for getting huge eco debuffs
- belka_dlp_war_crisis.1.d:0 ""
- belka_dlp_war_crisis.1.a:0 ""
+ belka_dlp_war_crisis.1.t:0 "eco is dead again" #event for belka 60 days before war start after ustio finds resurces informing that everything that was left in terms of economy run dry, we need to fight with what is left - this event removes all the eco buffs which player got from focus tree and start timer for getting huge eco debuffs
+ belka_dlp_war_crisis.1.d:0 "we run out of time"
+ belka_dlp_war_crisis.1.a:0 "war in 60 days"
+ 
+ belka_dlp_war_crisis.2.t:0 "eco starts dying again"
+ belka_dlp_war_crisis.2.d:0 "due to our over spending on army eco is starting to die again"
+ belka_dlp_war_crisis.2.a:0 ""
+ 
+ belka_dlp_war_crisis.3.t:0 "its starting to get worse"
+ belka_dlp_war_crisis.3.d:0 "if this continues even year longer..."
+ belka_dlp_war_crisis.3.a:0 ""
  
  ### TOOLTIPS ###
  
@@ -439,8 +447,11 @@
  BLK_special_eco_dec_DLP_desc:0 "BLEHBLEH Placeholder" #category for missions and decision related to eco crisis
  BLK_4_civs_1_DLP:0 "Magic Of Bureaucracy §YCivilian Factories§! Timeout" #BLK_seeds_of_industry
  BLK_4_civs_2_DLP:0 "New Workplaces §YCivilian Factories§! Timeout" #BLK_new_workplaces
- BLK_belkan_war_eco_crisis_1:0 ""
- BLK_belkan_war_eco_crisis_2:0 ""
+ BLK_print_mefo_dec:0 "Print SBMB Promissory Notes"
+ BLK_use_prisoners_dec:0 "12 Hours Shifts For Prisoners"
+ BLK_expand_south_belka_munitions:0 "Expand South Belka Munitions"
+ BLK_borrow_from_perbla_civs:0 "Borrow Money From Perbla"
+ BLK_borrow_from_perbla_mils:0 "Make Orders In Perbla"
  
  BLK_plan_z_dlp:0 "Plan Z"
  BLK_plan_z_dlp_desc:0 "adadad" #category only for plan z - fast and rapid expantion of belkan navy
@@ -458,6 +469,14 @@
  BLK_war_start_timer_dec:0 "Final War Preparations"
  BLK_cook_nukes_timer_dec:0 "The Last Option"
  BLK_force_osea_to_peace:0 "Force Osea To Bargaining Table"
+ 
+ BLK_belkan_war_collapse:0 ""
+ BLK_belkan_war_eco_crisis_1:0 ""
+ BLK_belkan_war_eco_crisis_2:0 ""
+ BLK_opillage_ustio_dec:0 "Pillage Ustio"
+ BLK_war_rep_FAT:0 "Demand War Reparations From FATO"
+ BLK_war_rep_GEB:0 "Demand War Reparations From Gebet"
+ BLK_war_rep_REC:0 "Demand War Reparations From Recta"
  
  ### FLAGS ###
  

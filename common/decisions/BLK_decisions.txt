@@ -84,9 +84,9 @@ BLK_excalibur_cat = {
 
 BLK_belkan_war_category = {
 	BLK_belkan_war_collapse = {
-		#activation = {
-		#	has_global_flag = belkan_war_is_happening
-		#}
+		activation = {
+			always = no
+		}
 		available = {
 			always = no
 		}
@@ -102,9 +102,9 @@ BLK_belkan_war_category = {
 		}
 	}
 	BLK_war_start_timer_dec = {
-	    #activation = {
-		#	BLK = { has_country_flag = BLK_war_start_timer }
-		#}
+	    activation = {
+			always = no
+		}
 		available = {
 			always = no
 		}
@@ -170,9 +170,9 @@ BLK_belkan_war_category = {
 		}
 	}
 	BLK_cook_nukes_timer_dec = {
-	    #activation = {
-		#	BLK = { has_country_flag = BLK_cook_nukes_timer }
-		#}
+	    activation = {
+			always = no
+		}
 		available = {
 			always = no
 		}

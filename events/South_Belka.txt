@@ -11,6 +11,7 @@ country_event = {
 
 	option = {
 		name = south_belka.2.a
+		news_event = { id = ac_news_event.11 days = 1 }
 		SBK = {
 			inherit_technology = BLK
 			#add_ideas = SBK_demob_idea
@@ -48,8 +49,7 @@ country_event = {
 	option = {
 		name = south_belka.1.a
 		OSE = {
-			puppet = SBK
-			set_autonomy = { target = SBK autonomy_state = autonomy_integrated_puppet end_wars = yes end_civil_wars = no }
+			add_to_faction = SBK
 		}
 	}
 }

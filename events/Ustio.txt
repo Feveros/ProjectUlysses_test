@@ -10,8 +10,14 @@ country_event = { ### ustio gives up east
 
 	option = {
 		name = ustio.1.a
-			RAT = { transfer_state = 336 }
-			RAT = { transfer_state = 376 }
-			RAT = { transfer_state = 365 }
+		RAT = {
+			transfer_state = 336
+			transfer_state = 376
+			transfer_state = 365
+		}
+		336 = { add_core_of = RAT remove_core_of = UST }
+		376 = { add_core_of = RAT remove_core_of = UST }
+		365 = { add_core_of = RAT remove_core_of = UST }
+		news_event = { id = ac_news_event.2 days = 1 }
 	}
 }

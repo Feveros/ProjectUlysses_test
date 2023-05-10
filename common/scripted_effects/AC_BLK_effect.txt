@@ -46,9 +46,13 @@ BLK_war_eco_crisis_down = {
 
 BLK_war_army_crisis_up = {
 	if = {
+		limit = {
+			has_idea = BLK_eco_crisis_army_4 
+		}
+	}
+	else_if = {
 		limit = { 
 			has_idea = BLK_eco_crisis_army_3 
-			NOT = { has_country_flag = BLK_pillage_ustio_flag }
 		}
 		swap_ideas = { remove_idea = BLK_eco_crisis_army_3 add_idea = BLK_eco_crisis_army_4 }
 	}

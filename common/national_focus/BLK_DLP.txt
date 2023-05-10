@@ -273,7 +273,7 @@ shared_focus = {
 				level = 4
 			}
 		}
-		country_event = { id = belka_dlp.3 days = 5 }
+		country_event = { id = belka_dlp.3 }
 	}
 	search_filters = { }
 }
@@ -491,11 +491,11 @@ shared_focus = {
 	completion_reward = {
 		build_railway = {
             level = 1
-            path = { 511 6998 7012 5192 7057 7059 7063 7094 7132 450 1359 4289 3921 7305 5172 7380 6054 4768 7406 7430 3269 4024 7466 }
+            path = { 511 6998 7012 5192 7057 7059 7063 7094 7132 450 1359 4289 3921 7319 5893 7380 6054 4768 7406 7430 3269 4024 7466 }
         }
 		build_railway = {
 			level = 1
-			path = { 7466 4678 7510 7536 7574 7602 7638 4763 7738 7756 1849 7812 5083 7838 7879 7952 }
+			path = { 7466 439 7552 7576 7602 7634 3835 7710 1849 }
 		}
 	}
 	search_filters = { }
@@ -730,7 +730,7 @@ shared_focus = {
 	completion_reward = {
 		country_event = { id = belka_dlp_coup.5 }
 		hidden_effect = {
-			country_event = { id = belka_dlp_war_crisis.2 days = 360 }
+			country_event = { id = belka_dlp_war_crisis.2 days = 240 }
 		}
 		add_ideas = tot_economic_mobilisation
 		add_war_support = 0.2
@@ -815,6 +815,7 @@ shared_focus = {
 		remove_ideas = BLK_free_trade_idea
 		swap_ideas = { remove_idea = BLK_eco_crisis_4 add_idea = BLK_eco_crisis_5 }
 		#set_country_flag = block_trade_law
+		custom_effect_tooltip = unlock_dec
     }
     search_filters = { }
 }
@@ -1271,6 +1272,7 @@ shared_focus = {
 	
 	completion_reward = {
 		add_ideas = BLK_overspending_for_military
+		custom_effect_tooltip = unlock_dec
 	}
 	search_filters = { }
 }
@@ -2145,6 +2147,7 @@ shared_focus = {
 	
 	completion_reward = {
 		add_ideas = BLK_south_belka_munitions_air_designer
+		custom_effect_tooltip = unlock_dec
 	}
 	search_filters = { }
 }
@@ -2424,7 +2427,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BLK_dlp_war
-	icon = zzz
+	icon = GFX_focus_spa_the_war_of_vengeance
 	cost = 5
 	ai_will_do = {
 		factor = 90
@@ -2468,8 +2471,8 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BLK_repair_squads
-	icon = GFX_goal_continuous_repairments
+	id = BLK_use_locals
+	icon = GFX_goal_generic_construction
 	cost = 5
 	ai_will_do = {
 		factor = 90
@@ -2482,27 +2485,27 @@ shared_focus = {
 	y = 1
 	
 	completion_reward = {
-		add_ideas = BLK_repair_squads_idea
+		custom_effect_tooltip = BLK_use_locals_tt
 	}
 	search_filters = { }
 }
 
 shared_focus = {
-	id = BLK_use_locals
-	icon = GFX_goal_generic_construction
+	id = BLK_repair_squads
+	icon = GFX_goal_continuous_repairments
 	cost = 5
 	ai_will_do = {
 		factor = 90
 	}
 	prerequisite = {
-		focus = BLK_repair_squads
+		focus = BLK_use_locals
 	}
-	relative_position_id = BLK_repair_squads
+	relative_position_id = BLK_use_locals
 	x = -1
 	y = 1
 	
 	completion_reward = {
-		custom_effect_tooltip = BLK_use_locals_tt
+		add_ideas = BLK_repair_squads_idea
 	}
 	search_filters = { }
 }
@@ -2584,9 +2587,42 @@ shared_focus = {
 	
 	completion_reward = {
 		custom_effect_tooltip = BLK_reparations_tt
+		custom_effect_tooltip = BLK_reparations_army_tt
+		set_variable = { BLK_war_rep_taken = 0 }
 	}
 	search_filters = { }
 }
 
-
+shared_focus = {
+	id = BLK_cross_great_lakes
+	icon = GFX_focus_generic_the_suez
+	cost = 5
+	ai_will_do = {
+		factor = 90
+	}
+	available = {
+	}
+	prerequisite = {
+		focus = BLK_dlp_war
+	}
+	relative_position_id = BLK_dlp_war
+	x = 0
+	y = 2
+	
+	completion_reward = {
+		if = {
+			limit = {
+				has_completed_focus = BLK_contest_lakes
+			}
+			add_timed_idea = { idea = BLK_contest_lakes_belkan_war days = 30 }
+		}
+		else_if = {
+			limit = {
+					has_completed_focus = BLK_dig_in
+				}
+			add_timed_idea = { idea = BLK_dig_in_belkan_war days = 30 }
+		}
+	}
+	search_filters = { }
+}
 

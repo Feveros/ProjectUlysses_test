@@ -1,10 +1,6 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			### USTIO RESURCES - EVENT CHAIN FOR BELKAN WAR
-			PLH = {
-				country_event = { id = trigger_event.1 days = 1480 }
-			}
 			every_possible_country = {
 				set_rule = {
 					can_join_factions = no
@@ -24,7 +20,7 @@ on_actions = {
 			}
 		}
 	}
-	on_capitulation_immediate = {
+	on_capitulation = {
 		effect = {
 			if = {
 				limit = {
@@ -37,7 +33,22 @@ on_actions = {
 				}
 				leave_faction = yes
 			}
-			if = { #Recta peace with belka
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = UST
+						has_war_with = BLK
+						has_global_flag = belkan_war_is_happening
+					}
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_dynamic_modifier = { modifier = UST_vs_belka_resistance }
+				}
+			}
+			else_if = { #Recta peace with belka
 				limit = {
 					ROOT = {
 						original_tag = REC
@@ -45,15 +56,15 @@ on_actions = {
 						has_global_flag = belkan_war_is_happening
 					}
 				}
-				BLK = {
-					transfer_state = 293
-					transfer_state = 316
-				}
 				ROOT = {
 					white_peace = BLK
 					if = { limit = { is_in_faction_with = FAT }
 						leave_faction = yes
 					}
+				}
+				BLK = {
+					transfer_state = 256
+					puppet = ROOT
 				}
 			}
 			else_if = { #FATO peace with belka
@@ -63,12 +74,6 @@ on_actions = {
 						has_war_with = BLK
 						has_global_flag = belkan_war_is_happening
 					}
-				}
-				BLK = {
-					transfer_state = 220
-				}
-				ROOT = {
-					white_peace = BLK
 				}
 				GEB = {
 					if = { limit = { is_in_faction_with = ROOT }
@@ -80,6 +85,14 @@ on_actions = {
 						leave_faction = yes
 					}
 				}
+				ROOT = {
+					white_peace = BLK
+					dismantle_faction = yes
+				}
+				BLK = {
+					transfer_state = 256
+					puppet = ROOT
+				}
 			}
 			else_if = { #Gebet peace with belka
 				limit = {
@@ -89,14 +102,15 @@ on_actions = {
 						has_global_flag = belkan_war_is_happening
 					}
 				}
-				BLK = {
-					transfer_state = 256
-				}
-				ROOT = { 
+				ROOT = {
 					white_peace = BLK
 					if = { limit = { is_in_faction_with = FAT }
 						leave_faction = yes
 					}
+				}
+				BLK = {
+					transfer_state = 256
+					puppet = ROOT
 				}
 			}
 		}

@@ -10,6 +10,7 @@ country_event = { ### Recta is born
 
 	option = {
 		name = recta.1.a
+		news_event = { id = ac_news_event.3 days = 1 }
 		REC = {
 			inherit_technology = GEB 
 			transfer_state = 345

@@ -46,11 +46,4 @@ BLK_excalibur_cat = {
 	allowed = {
 		original_tag = BLK
 	}
-	visible = {
-		OR = {
-			has_country_flag = BLK_excalibur_anti_place
-			has_country_flag = BLK_excalibur_anti_land
-			has_country_flag = BLK_excalibur_anti_icbm
-		}
-	}
 }

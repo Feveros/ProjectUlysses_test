@@ -48,6 +48,11 @@
  BLK_free_trade_idea:0 "State Controlled Trade"
  BLK_free_trade_idea_desc:0 ""
  
+ BLK_contest_lakes_belkan_war:0 ""
+ BLK_contest_lakes_belkan_war_desc:0 ""
+ BLK_dig_in_belkan_war:0 ""
+ BLK_dig_in_belkan_war_desc:0 ""
+ 
  ###
  
  BLK_enemy_excalibur_fire_idea:0 "Under Fire From Excalibur"
@@ -228,7 +233,7 @@
  BLK_to_the_last_man_desc:0 ""
  BLK_repair_squads:0 "Repair Squads"
  BLK_repair_squads_desc:0 ""
- BLK_use_locals:0 "Forced Labour"
+ BLK_use_locals:0 "Plunder The Peripheries"
  BLK_use_locals_desc:0 ""
  BLK_consript_workers:0 "Consript Factory Workers"
  BLK_consript_workers_desc:0 ""
@@ -236,6 +241,8 @@
  BLK_pillage_ustio_desc:0 ""
  BLK_reparations:0 "War Reparations"
  BLK_reparations_desc:0 ""
+ BLK_cross_great_lakes:0 "Great Lakes Offensive"
+ BLK_cross_great_lakes_desc:0 ""
  
  ### EVENTS ###
  
@@ -383,6 +390,10 @@
  belka_dlp_war.2.d:0 ""
  belka_dlp_war.2.a:0 "SHOULD UNLOCK NEW FOCUS TREE"
  
+ belka_dlp_war.3.t:0 "raid on excalibur"
+ belka_dlp_war.3.d:0 "osea does suicide raid to destroy excalibur"
+ belka_dlp_war.3.a:0 "it goes boom"
+ 
  belka_dlp_war.98.t:0 "South Belka appered"
  belka_dlp_war.98.d:0 ""
  belka_dlp_war.98.a:0 "FUCK"
@@ -410,7 +421,7 @@
  
  belka_dlp_war_crisis.1.t:0 "eco is dead again" #event for belka 60 days before war start after ustio finds resurces informing that everything that was left in terms of economy run dry, we need to fight with what is left - this event removes all the eco buffs which player got from focus tree and start timer for getting huge eco debuffs
  belka_dlp_war_crisis.1.d:0 "we run out of time"
- belka_dlp_war_crisis.1.a:0 "war in 60 days"
+ belka_dlp_war_crisis.1.a:0 "dsfdfsdsfds"
  
  belka_dlp_war_crisis.2.t:0 "eco starts dying again"
  belka_dlp_war_crisis.2.d:0 "due to our over spending on army eco is starting to die again"
@@ -428,30 +439,35 @@
  BLK_pillage_ustio_tt:0 "Completing this focus will allows us to §Rpillage Ustio§! for valiables and resurces to §Gfuel our war machine§!."
  BLK_pillage_ustio_dec_tt:0 "Completing this decisions will §Glower our army debuff§! and make it §Gimposible§! for our force to §Gcollapse entirely§!"
  BLK_reparations_tt:0 "Completing this focus will allows us to §Rdemand reparations§! from §Ynations we have defeated§! to §Gstablize our economy§!."
+ BLK_reparations_army_tt:0 "\nAfter §Rdemanding all 3 reparations§! we will be able to partially §Gfuel our war machine§!."
  BLK_war_rep_tt:0 "Completing this decisions will §Glower our industry debuff§!."
- BLK_use_locals_tt:0 "Completing this focus will allows us to §Ruse non-belkan population§! as §Gforce labour§!."
+ BLK_use_locals_tt:0 "Completing this focus will allows us to §Rplunder retaken land§! to §Gpay for war and buy us more time§!."
 
  ### DECISIONS ###
 
- BLK_resurces_DLP:0 ""
- BLK_resurces_DLP_desc:0 "" #category for excavation decisions
+ BLK_resurces_DLP:0 "resurces exca"
+ #BLK_resurces_DLP_desc:0 "" #category for excavation decisions
  BLK_oil_1:0 "Dig for oil hue hure placeholder"
  BLK_oil_2:0 "Dig for oil hue hure placeholder"
  BLK_tungsten_1:0 "Dig for tungsten hue hure placeholder"
  BLK_tungsten_2:0 "Dig for tungsten hue hure placeholder"
- BLK_public_works_DLP:0 "z"
+ 
+ BLK_public_works_DLP:0 "Economic Actions"
  BLK_public_works_DLP_desc:0 "zzz" #category for public works DLP can order
- BLK_public_works_DLP_1:0 "zzzzz"
+ BLK_print_mefo_dec:0 "Print SBMB Promissory Notes"
+ BLK_print_mefo_dec_desc:0 "huge"
+ BLK_use_prisoners_dec:0 "12 Hours Shifts For Prisoners"
+ BLK_use_prisoners_dec_desc:0 "huhe"
+ BLK_expand_south_belka_munitions:0 "Expand South Belka Munitions"
+ BLK_borrow_from_perbla_civs:0 "Borrow Money From Perbla"
+ BLK_borrow_from_perbla_civs_desc:0 "friends"
+ BLK_borrow_from_perbla_mils:0 "Make Orders In Perbla"
+ BLK_borrow_from_perbla_mils_desc:0 "friends"
  
  BLK_special_eco_dec_DLP:0 "Belkan Economic Crisis"
  BLK_special_eco_dec_DLP_desc:0 "BLEHBLEH Placeholder" #category for missions and decision related to eco crisis
  BLK_4_civs_1_DLP:0 "Magic Of Bureaucracy §YCivilian Factories§! Timeout" #BLK_seeds_of_industry
  BLK_4_civs_2_DLP:0 "New Workplaces §YCivilian Factories§! Timeout" #BLK_new_workplaces
- BLK_print_mefo_dec:0 "Print SBMB Promissory Notes"
- BLK_use_prisoners_dec:0 "12 Hours Shifts For Prisoners"
- BLK_expand_south_belka_munitions:0 "Expand South Belka Munitions"
- BLK_borrow_from_perbla_civs:0 "Borrow Money From Perbla"
- BLK_borrow_from_perbla_mils:0 "Make Orders In Perbla"
  
  BLK_plan_z_dlp:0 "Plan Z"
  BLK_plan_z_dlp_desc:0 "adadad" #category only for plan z - fast and rapid expantion of belkan navy
@@ -459,7 +475,8 @@
  
  BLK_excalibur_cat:0 "Excalibur - Sword of Annihilation"
  BLK_excalibur_cat_desc:0 "fsdfsdfsfsdf" #category for everything related to excalibur so short ex desc should be ok, i think ???
- BLK_excalibur_cooling_after_bombing:0 "Excalibur is cooling"
+ BLK_excalibur_cooling_after_bombing:0 "Excalibur Is Cooling"
+ BLK_excalibur_fire_land:0 "Excalibur is ready to conduct land bombardment"
  BLK_excalibur_fire_during_aa:0 "Excalibur is conducting Anti-Air fire"
  BLK_excalibur_cooling_after_aa:0 "Excalibur is cooling"
  BLK_excalibur_fire_aa:0 "Activate Excalibur"
@@ -470,9 +487,9 @@
  BLK_cook_nukes_timer_dec:0 "The Last Option"
  BLK_force_osea_to_peace:0 "Force Osea To Bargaining Table"
  
- BLK_belkan_war_collapse:0 ""
- BLK_belkan_war_eco_crisis_1:0 ""
- BLK_belkan_war_eco_crisis_2:0 ""
+ BLK_belkan_war_collapse:0 "belkan war collapse"
+ BLK_belkan_war_eco_crisis_1:0 "belkan war eco crisis 1"
+ BLK_belkan_war_eco_crisis_2:0 "belkan war eco crisis 2"
  BLK_opillage_ustio_dec:0 "Pillage Ustio"
  BLK_war_rep_FAT:0 "Demand War Reparations From FATO"
  BLK_war_rep_GEB:0 "Demand War Reparations From Gebet"
@@ -485,3 +502,4 @@
  
  cheap_combat_abilities_tt:0 "\nFinishing this focus greatly reduces the cost of §YForce Attack§! and §YLast Stand§! Command Abilities."
  kamikaze_focus_tooltip_tt:0 "\nFinishing this focus unlocks usage of §YSuicide Strike§! air missions."
+ unlock_dec:0 "\nFinishing this focus §GUnlocks§! §YDecision(s)§!."

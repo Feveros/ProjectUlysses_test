@@ -19,6 +19,25 @@
 		}
 		#remove_trigger = {
 		#}
-		add_extra_state_shared_building_slots = 2
 		production_speed_buildings_factor = 0.2
+	}
+	
+	UST_vs_belka_resistance = {
+		enable = {
+			always = yes
+		}
+		#remove_trigger = {
+		#	NOT = {
+		#		is_owned_by = CTH
+		#	}
+		#}
+
+		icon = GFX_modifiers_empowered_state_resistance
+
+		compliance_growth = -0.1
+		resistance_growth = 0.05
+		resistance_target = 0.3
+		resistance_decay = -0.3
+		state_resources_factor = -0.2
+		disable_strategic_redeployment = 1
 	}

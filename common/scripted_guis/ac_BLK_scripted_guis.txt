@@ -9,7 +9,8 @@ scripted_gui = {
 			ROOT = {
 				has_country_flag = BLK_excalibur_anti_land
 				original_tag = BLK
-				NOT = { has_country_flag = BLK_excalibur_cooling_bombing_flag }
+				NOT = { has_active_mission = BLK_excalibur_cooling_after_bombing }
+				NOT = { has_global_flag = excalibur_destroyed }
 			}				
 			OR = {
 				owner = {
@@ -32,7 +33,13 @@ scripted_gui = {
 					str_damage = 0.2
                     army = yes
                 }
-				BLK = { set_country_flag = BLK_excalibur_cooling_bombing_flag }
+				ROOT = {
+					activate_mission = BLK_excalibur_cooling_after_bombing
+					add_to_variable = {
+						var = BLK_excalibur_destruction_meter
+						value = 1
+					}
+				}
 			}
         }
 	}

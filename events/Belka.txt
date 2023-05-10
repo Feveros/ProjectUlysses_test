@@ -77,9 +77,9 @@ country_event = { ### no money
 		add_political_power= -200
 		add_stability = -0.1
 		add_ideas = BLK_no_money_idea
-		country_event = { id = belka.6 days = 2 }
 		add_popularity = { ideology = neutrality popularity = -0.05 }
 		add_popularity = { ideology = communism popularity = 0.05 }
+		country_event = { id = belka.6 days = 2 }
 	}
 }
 
@@ -120,8 +120,10 @@ country_event = { ### democrats win
 			activate_advisor = BLK_advisor_5
 			activate_advisor = BLK_advisor_6
 		}
-		country_event = { id = belka.8 days = 2 }
 		add_popularity = { ideology = democratic popularity = 0.15 }
+		hidden_effect = {
+			country_event = { id = belka.8 days = 2 }
+		}
 	}
 }
 
@@ -152,6 +154,7 @@ country_event = { #SELLING LAND
 		name = belka.9.a
 		custom_effect_tooltip = BLK_sell_lands_tt
 		remove_ideas = BLK_no_money_idea
+		news_event = { id = ac_news_event.1 days = 1 }
 		hidden_effect = {
 			OSE = { 
 				transfer_state = 269
@@ -209,6 +212,7 @@ country_event = { #Great Lake Goes bad
 		add_political_power= -200
 		add_stability = -0.1
 		add_popularity = { ideology = democratic popularity = -0.2 }
+		news_event = { id = ac_news_event.4 days = 1 }
 	}
 }
 
@@ -253,6 +257,7 @@ country_event = { #Elections
 		}
 		add_popularity = { ideology = communism popularity = -0.2 }
 		add_popularity = { ideology = fascism popularity = 0.1 }
+		news_event = { id = ac_news_event.5 days = 1 }
 	}
 }
 
@@ -382,6 +387,7 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = BLK_new_government_form_tt
+		news_event = { id = ac_news_event.6 days = 1 }
 		hidden_effect = {
 			deactivate_advisor = BLK_advisor_7
 			deactivate_advisor = BLK_advisor_8
@@ -452,10 +458,12 @@ country_event = { #Excalibur
 	option = { #make it kill planes
 		name = belka_dlp_coup.6.a 
 		set_country_flag = BLK_excalibur_anti_place
+		set_variable = { BLK_excalibur_destruction_meter = 0 }
 	}
 	option = { #make it bomb land
 		name = belka_dlp_coup.6.b
 		set_country_flag = BLK_excalibur_anti_land
+		set_variable = { BLK_excalibur_destruction_meter = 0 }
 	}
 	option = { #make it kill more ICBMs
 		name = belka_dlp_coup.6.c
@@ -499,8 +507,8 @@ country_event = { #gott mit uns
 		activate_advisor = BLK_arnold_weinmann
 		hidden_effect = {
 			add_to_variable = {
-			var = BLK_wacht_am_wal_var
-			value = 1
+				var = BLK_wacht_am_wal_var
+				value = 1
 			}
 		}
 	}
@@ -684,9 +692,12 @@ country_event = {
 	option = {
 		name = belka_dlp_war.1.a
 		activate_mission = BLK_war_start_timer_dec
-		hidden_effect = {
-			country_event = { id = belka_dlp_war_crisis.1 days = 1 }
-		}
+		#remove_ideas = BLK_woman_in_industry_idea
+		#remove_ideas = BLK_expand_supply_idea
+		#remove_ideas = BLK_mili_civ_infr_idea
+		#remove_ideas = BLK_crush_unemploy_idea
+		#remove_ideas = BLK_overspending_for_military_2
+		#country_event = { id = belka_dlp_war_crisis.1 days = 1 }
 		#set_country_flag = BLK_war_start_timer
 	}
 }
@@ -701,6 +712,25 @@ country_event = {
 
 	option = {
 		name = belka_dlp_war.2.a
+		activate_mission = BLK_belkan_war_eco_crisis_1
+		activate_mission = BLK_belkan_war_collapse
+	}
+}
+
+country_event = {
+	id = belka_dlp_war.3
+	title = belka_dlp_war.3.t
+	desc = belka_dlp_war.3.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_war.3.a
+		set_global_flag = excalibur_destroyed
+		hidden_effect = {
+			news_event = { id = ac_news_event.11 days = 1 }
+		}
 	}
 }
 
@@ -764,6 +794,7 @@ country_event = { #FUNNY NUKES HAHAHAHAHAHHH ITS FUNNY COZ BELKA CRAZY HAMBURGER
 		name = belka_dlp_war.100.a
 		hidden_effect = {
 			country_event = { id = belka_dlp_war.101 days = 2 }
+			news_event = { id = ac_news_event.8 days = 1 }
 			PLH = {
 				set_technology = {
 					popup = no
@@ -850,6 +881,7 @@ country_event = {
 			transfer_state = 220
 		}
 		clr_global_flag = belkan_war_is_happening
+		country_event = { id = world_event.2 days = 1 }
 	}
 }
 
@@ -882,6 +914,8 @@ country_event = {
 		}
 		clr_global_flag = belkan_war_is_happening
 		set_global_flag = belka_won_belkan_war
+		news_event = { id = ac_news_event.9 days = 1 }
+		country_event = { id = world_event.2 days = 1 }
 	}
 }
 
@@ -937,15 +971,7 @@ country_event = {
 
 	option = {
 		name = belka_dlp_war_crisis.1.a
-		hidden_effect = {
-			remove_ideas = BLK_woman_in_industry_idea
-			#remove_ideas = BLK_expand_supply_idea
-			#remove_ideas = BLK_mili_civ_infr_idea
-			#remove_ideas = BLK_crush_unemploy_idea
-			remove_ideas = BLK_overspending_for_military_2
-			swap_ideas = { remove_idea = BLK_eco_crisis_5_2 add_idea = BLK_eco_crisis_6 }
-			activate_mission = BLK_belkan_war_eco_crisis_1
-		}
+		swap_ideas = { remove_idea = BLK_eco_crisis_5_2 add_idea = BLK_eco_crisis_6 }
 	}
 }
 

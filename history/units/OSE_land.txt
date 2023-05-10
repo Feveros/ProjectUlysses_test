@@ -40,6 +40,7 @@ division_template = {
 	division_names_group = OSE_MOT_01
 
 	regiments = {
+		light_armor = { x = 0 y = 0 }
 		motorized = { x = 0 y = 0 }
 	    motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
@@ -324,95 +325,94 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
-#########################################################	
 	division= {
 		division_name = {
 				is_name_ordered = yes
-				name_order = 1
+				name_order = 31
 		}
 		location = 1160
-		division_template = "Motorised Infantry Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {
 		division_name = {
 				is_name_ordered = yes
-				name_order = 2
+				name_order = 32
 		}
 		location = 1160
-		division_template = "Motorised Infantry Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {
 		division_name = {
 				is_name_ordered = yes
-				name_order = 3
+				name_order = 33
 		}
 		location = 1160
-		division_template = "Motorised Infantry Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {
 		division_name = {
 				is_name_ordered = yes
-				name_order = 4
+				name_order = 34
 		}
 		location = 1160
-		division_template = "Motorised Infantry Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {
 		division_name = {
 				is_name_ordered = yes
-				name_order = 5
+				name_order = 35
 		}
 		location = 1160
-		division_template = "Motorised Infantry Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {
 		division_name = {
 				is_name_ordered = yes
-				name_order = 6
+				name_order = 36
 		}
 		location = 1160
-		division_template = "Motorised Infantry Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {
 		division_name = {
 				is_name_ordered = yes
-				name_order = 7
+				name_order = 37
 		}
 		location = 1160
-		division_template = "Motorised Infantry Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {
 		division_name = {
 				is_name_ordered = yes
-				name_order = 8
+				name_order = 38
 		}
 		location = 1160
-		division_template = "Motorised Infantry Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {
 		division_name = {
 				is_name_ordered = yes
-				name_order = 9
+				name_order = 39
 		}
 		location = 1160
-		division_template = "Motorised Infantry Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {
 		division_name = {
 				is_name_ordered = yes
-				name_order = 10
+				name_order = 40
 		}
 		location = 1160
-		division_template = "Motorised Infantry Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 #########################################################	

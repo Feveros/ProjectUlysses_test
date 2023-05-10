@@ -678,6 +678,28 @@ ideas = {
 			}
 		}
 		
+		BLK_new_blood_3_idea = {
+			picture = german_advisors
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.10
+				max_command_power = 20
+				army_leader_start_attack_level = 1
+				navy_leader_start_attack_level = 1
+				fascism_drift = 0.02
+				army_org_factor = 0.05
+				conscription = 0.01
+				special_forces_training_time_factor = -0.1
+				special_forces_defence_factor = 0.05
+			}
+		}
+		
 		BLK_army_with_state_quantity_idea = {
 			picture = MEX_politicised_army_2
 			allowed = {

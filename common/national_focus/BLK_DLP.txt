@@ -1059,6 +1059,7 @@ shared_focus = {
 	
 	completion_reward = {
 		country_event = { id = belka_dlp_coup.13 }
+		swap_ideas = { remove_idea = BLK_new_blood_2_idea add_idea = BLK_new_blood_3_idea }
 	}
 	search_filters = { }
 }

@@ -1,5 +1,6 @@
 BLK_excalibur_cat = {
 	BLK_excalibur_cooling_after_bombing = {
+		icon = mission_icon
 		activation = {
 			always = no
 		}
@@ -10,14 +11,13 @@ BLK_excalibur_cat = {
 			has_global_flag = excalibur_destroyed
 		}
 		fire_only_once = no
-		icon = mission_icon
 		days_mission_timeout = 60
 		selectable_mission = no
 		timeout_effect = {
 		}
 	}
 	BLK_excalibur_fire_land = {
-		icon = GFX_decision_oil
+		icon = GFX_decision_generic_intelligence_operation
 		allowed = {
 		}
 		available = {
@@ -38,6 +38,7 @@ BLK_excalibur_cat = {
 		}
 	}
 	BLK_excalibur_cooling_after_aa = {
+		icon = mission_icon
 		activation = {
 			always = no
 		}
@@ -48,13 +49,13 @@ BLK_excalibur_cat = {
 			has_global_flag = excalibur_destroyed
 		}
 		fire_only_once = no
-		icon = mission_icon
 		days_mission_timeout = 30
 		selectable_mission = no
 		timeout_effect = {
 		}
 	}
 	BLK_excalibur_fire_during_aa = {
+		icon = mission_icon
 		activation = {
 			BLK = { has_country_flag = BLK_excalibur_fire_aa_flag }
 		}
@@ -65,7 +66,6 @@ BLK_excalibur_cat = {
 			has_global_flag = excalibur_destroyed
 		}
 		fire_only_once = no
-		icon = mission_icon
 		days_mission_timeout = 30
 		selectable_mission = no
 		timeout_effect = {
@@ -73,7 +73,7 @@ BLK_excalibur_cat = {
 		}
 	}
 	BLK_excalibur_fire_aa = {
-		icon = GFX_decision_oil
+		icon = GFX_decision_generic_intelligence_operation
 		allowed = {
 		}
 		available = {
@@ -108,6 +108,7 @@ BLK_excalibur_cat = {
 
 BLK_belkan_war_category = {
 	BLK_belkan_war_collapse = {
+		icon = GFX_decision_generic_scorched_earth
 		activation = {
 			always = no
 		}
@@ -118,14 +119,14 @@ BLK_belkan_war_category = {
 			NOT = { has_global_flag = belkan_war_is_happening }
 		}
 		fire_only_once = yes
-		icon = mission_icon
-		days_mission_timeout = 150
+		days_mission_timeout = 180
 		selectable_mission = no
 		timeout_effect = {
 			country_event = { id = south_belka.2 }
 		}
 	}
 	BLK_war_start_timer_dec = {
+		icon = GFX_decision_generic_ignite_civil_war
 	    activation = {
 			always = no
 		}
@@ -133,7 +134,6 @@ BLK_belkan_war_category = {
 			always = no
 		}
 		fire_only_once = yes
-		icon = mission_icon
 		days_mission_timeout = 60
 		selectable_mission = no
 		
@@ -146,7 +146,9 @@ BLK_belkan_war_category = {
 		
 		timeout_effect = {
 			country_event = { id = belka_dlp_war.2 }
-			news_event = { id = ac_news_event.7 days = 1 }
+			hidden_effect = {
+				news_event = { id = ac_news_event.7 days = 1 }
+			}
 			hidden_effect = {
 				#country_event = { id = belka_dlp_war_crisis.1 days = 5 }
 				set_global_flag = belkan_war_is_happening
@@ -195,6 +197,7 @@ BLK_belkan_war_category = {
 		}
 	}
 	BLK_cook_nukes_timer_dec = {
+		icon = mission_icon
 	    activation = {
 			always = no
 		}
@@ -202,7 +205,6 @@ BLK_belkan_war_category = {
 			always = no
 		}
 		fire_only_once = yes
-		icon = mission_icon
 		days_mission_timeout = 14
 		selectable_mission = no
 		timeout_effect = {
@@ -225,7 +227,7 @@ BLK_belkan_war_category = {
 	#	}
 	#}
 	BLK_force_osea_to_peace = {
-		icon = GFX_decision_oil
+		icon = GFX_decision_eng_trade_unions_demand
 		allowed = {
 		}
 		available = {
@@ -269,7 +271,7 @@ BLK_belkan_war_category = {
 		}
 	}
 	BLK_opillage_ustio_dec = {
-		icon = GFX_decision_oil
+		icon = GFX_decision_gre_faction_management
 		allowed = {
 		}
 		highlight_states = {
@@ -310,12 +312,14 @@ BLK_belkan_war_category = {
 					level = 10
 				}
             }
+			set_country_flag = BLK_opillage_ustio_dec_flag
 		}
 	}
 	BLK_war_rep_FAT = {
-		icon = GFX_decision_oil
+		icon = GFX_decision_generic_prepare_civil_war
 		allowed = {
 		}
+		targets = { FAT }
 		available = {
 			NOT = { has_war_with = FAT }
 			OR = {
@@ -331,7 +335,7 @@ BLK_belkan_war_category = {
 		}
 		fire_only_once = yes
 		#cost = 10
-		days_remove = 7
+		days_remove = 10
 		ai_will_do = {
 			base = 20
 		}
@@ -341,6 +345,7 @@ BLK_belkan_war_category = {
 		remove_effect = {
 			custom_effect_tooltip = BLK_war_rep_tt
 			BLK_war_eco_crisis_down = yes
+			puppet = FAT
 			add_days_mission_timeout = {
 				mission = BLK_belkan_war_collapse
 				days = 30
@@ -353,9 +358,10 @@ BLK_belkan_war_category = {
 		}
 	}
 	BLK_war_rep_GEB = {
-		icon = GFX_decision_oil
+		icon = GFX_decision_generic_prepare_civil_war
 		allowed = {
 		}
+		targets = { GEB }
 		available = {
 			NOT = { has_war_with = GEB }
 			OR = {
@@ -371,7 +377,7 @@ BLK_belkan_war_category = {
 		}
 		fire_only_once = yes
 		#cost = 100
-		days_remove = 7
+		days_remove = 10
 		ai_will_do = {
 			base = 20
 		}
@@ -381,6 +387,7 @@ BLK_belkan_war_category = {
 		remove_effect = {
 			custom_effect_tooltip = BLK_war_rep_tt
 			BLK_war_eco_crisis_down = yes
+			puppet = GEB
 			add_days_mission_timeout = {
 				mission = BLK_belkan_war_collapse
 				days = 30
@@ -393,9 +400,10 @@ BLK_belkan_war_category = {
 		}
 	}
 	BLK_war_rep_REC = {
-		icon = GFX_decision_oil
+		icon = GFX_decision_generic_prepare_civil_war
 		allowed = {
 		}
+		targets = { REC }
 		available = {
 			NOT = { has_war_with = REC }
 			OR = {
@@ -411,7 +419,7 @@ BLK_belkan_war_category = {
 		}
 		fire_only_once = yes
 		#cost = 100
-		days_remove = 7
+		days_remove = 10
 		ai_will_do = {
 			base = 20
 		}
@@ -421,6 +429,7 @@ BLK_belkan_war_category = {
 		remove_effect = {
 			custom_effect_tooltip = BLK_war_rep_tt
 			BLK_war_eco_crisis_down = yes
+			puppet = REC
 			add_days_mission_timeout = {
 				mission = BLK_belkan_war_collapse
 				days = 30
@@ -433,7 +442,7 @@ BLK_belkan_war_category = {
 		}
 	}
 	BLK_war_rep_army = {
-		icon = GFX_decision_oil
+		icon = GFX_decision_generic_industry
 		allowed = {
 		}
 		available = {
@@ -454,10 +463,10 @@ BLK_belkan_war_category = {
 	}
 	##########
 	BLK_use_locals_decision = { #remade it to plunder retakne land
-		icon = gre_paying_ifc_debt
+		icon = GFX_decision_generic_nationalism
 		state_target = yes
 		target_root_trigger = {
-			#has_completed_focus = GRI_noble_council
+			has_completed_focus = BLK_use_locals
 		}
 		#target_array = core_states
 		target_trigger = {
@@ -474,6 +483,7 @@ BLK_belkan_war_category = {
 					state = 220
 					state = 256
 					state = 293
+					state = 339
 				}
 			}
 		}
@@ -487,16 +497,13 @@ BLK_belkan_war_category = {
 				mission = BLK_belkan_war_collapse
 				days = 10
 			}
-			add_days_mission_timeout = {
-				mission = BLK_belkan_war_eco_crisis_2
-				days = 10
-			}
 		}
 	}
 }
 
 BLK_special_eco_dec_DLP = {
 	BLK_4_civs_1_DLP = {
+		icon = GFX_decision_generic_factory
 	    activation = {
 			has_completed_focus = BLK_seeds_of_industry
 		}
@@ -504,7 +511,6 @@ BLK_special_eco_dec_DLP = {
 			always = no
 		}
 		fire_only_once = yes
-		icon = mission_icon
 		days_mission_timeout = 365
 		selectable_mission = no
 		timeout_effect = {
@@ -516,6 +522,7 @@ BLK_special_eco_dec_DLP = {
 	}
 	
 	BLK_4_civs_2_DLP = {
+		icon = GFX_decision_generic_factory
 		activation = {
 			has_completed_focus = BLK_new_workplaces
 		}
@@ -523,7 +530,6 @@ BLK_special_eco_dec_DLP = {
 			always = no
 		}
 		fire_only_once = yes
-		icon = mission_icon
 		days_mission_timeout = 365
 		selectable_mission = no
 		timeout_effect = {
@@ -535,7 +541,7 @@ BLK_special_eco_dec_DLP = {
 	}
 	
 	BLK_belkan_war_eco_crisis_1 = {
-		icon = mission_icon
+		icon = GFX_decision_generic_merge_plant_tank
 	    activation = {
 			always = no
 		}
@@ -546,7 +552,7 @@ BLK_special_eco_dec_DLP = {
 			NOT = { has_global_flag = belkan_war_is_happening }
 		}
 		fire_only_once = yes
-		days_mission_timeout = 180
+		days_mission_timeout = 150
 		selectable_mission = no
 		timeout_effect = {
 			BLK_war_eco_crisis_up = yes
@@ -555,7 +561,7 @@ BLK_special_eco_dec_DLP = {
 		}
 	}
 	BLK_belkan_war_eco_crisis_2 = {
-		icon = mission_icon
+		icon = GFX_decision_generic_merge_plant_tank
 		activation = {
 			has_country_flag = BLK_belkan_war_eco_crisis_2_flag
 			NOT = { has_idea = BLK_eco_crisis_army_4 }
@@ -771,7 +777,7 @@ BLK_resurces_DLP = {
 
 BLK_public_works_DLP = {
 	BLK_print_mefo_dec = {
-		icon = GFX_decision_oil
+		icon = GFX_decision_ger_mefo_bills
 		allowed = {
 		}
 		available = {
@@ -794,7 +800,7 @@ BLK_public_works_DLP = {
 	}
 	
 	BLK_use_prisoners_dec = {
-		icon = GFX_decision_oil
+		icon = GFX_decision_generic_arrest
 		allowed = {
 		}
 		available = {
@@ -821,7 +827,7 @@ BLK_public_works_DLP = {
 	}
 	
 	BLK_expand_south_belka_munitions = {
-		icon = GFX_decision_oil
+		icon = GFX_decision_generic_merge_plant_aircraft
 		allowed = {
 			always = yes
 		}
@@ -861,7 +867,7 @@ BLK_public_works_DLP = {
 	}
 	
 	BLK_borrow_from_perbla_civs = {
-		icon = GFX_decision_oil
+		icon = GFX_decision_hol_attract_foreign_investors
 		allowed = {
 		}
 		available = {
@@ -891,7 +897,7 @@ BLK_public_works_DLP = {
 	}
 	
 	BLK_borrow_from_perbla_mils = {
-		icon = GFX_decision_oil
+		icon = GFX_decision_ger_military_buildup
 		allowed = {
 		}
 		available = {

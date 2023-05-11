@@ -48,6 +48,21 @@
  BLK_free_trade_idea:0 "State Controlled Trade"
  BLK_free_trade_idea_desc:0 ""
  
+ BLK_eco_crisis_5_1:0 "Belkan Economic Crisis"
+ BLK_eco_crisis_5_1_desc:0 ""
+ BLK_eco_crisis_5_2:0 "Belkan Economic Crisis"
+ BLK_eco_crisis_5_2_desc:0 ""
+ BLK_eco_crisis_6:0 "Belkan Economic Crisis"
+ BLK_eco_crisis_6_desc:0 ""
+ BLK_eco_crisis_7:0 "Economic Collapse"
+ BLK_eco_crisis_7_desc:0 ""
+ BLK_eco_crisis_8:0 "Economic Collapse"
+ BLK_eco_crisis_8_desc:0 ""
+ BLK_eco_crisis_9:0 "Economic Collapse"
+ BLK_eco_crisis_9_desc:0 ""
+ BLK_eco_crisis_10:0 "Economic Collapse"
+ BLK_eco_crisis_10_desc:0 ""
+ 
  BLK_contest_lakes_belkan_war:0 ""
  BLK_contest_lakes_belkan_war_desc:0 ""
  BLK_dig_in_belkan_war:0 ""
@@ -77,8 +92,12 @@
  BLK_osean_prop_desc:0 "The Oseans have expressed interest in a joint resource excavation company focused around the Great Lakes region, which has shown great promise according to them. Their sudden cooperation is somewhat suspicious, but this could be key to restarting our economy."
  BLK_wait_for_profit:0 "Await The Results"
  BLK_wait_for_profit_desc:0 "The Great Lakes Resource Company has gone online, and we have put our remaining resources into it. All we have to do now is wait for the profits from the resource exports. Once that comes in, we can start the recovery process. Perhaps the Oseans aren't so bad after all."
- BLK_dark_times:0 "Future Awaits"
- BLK_dark_times_desc:0 "We are truly in dark times now. Our populace is in open rebellion, we have once again exhausted our resources, and our national pride has been shattered by the Oseans. There is nothing we can do now. Belka is lost."
+ BLK_dark_times:0 "[Root.GetBLKDarkTimeName]"
+ BLK_dark_times_desc:0 "[Root.GetBLKDarkTimeDesc]"
+ BLK_dark_times_good:0 "Future Awaits"
+ BLK_dark_times_good_desc:0 "vxcvxcvxvcvxc"
+ BLK_dark_times_bad:0 "Darkest Clouds Over Belka"
+ BLK_dark_times_bad_desc:0 "We are truly in dark times now. Our populace is in open rebellion, we have once again exhausted our resources, and our national pride has been shattered by the Oseans. There is nothing we can do now. Belka is lost."
  
  BLK_dlp_victory:0 "DLP In Power"
  BLK_dlp_victory_desc:0 "At last, nothing stands in Belka's way. The cowardly conservatives simply wished their problems away, too scared to ever take action. The weak-kneed liberals bowed to our greatest enemy, the Oseans, to try and save themselves. We will do what they could not. We will allow Belka to take her rightful place atop the world. To live and thrive, that is what we will accomplish. Rejoice, for Belka is young again."
@@ -233,7 +252,7 @@
  BLK_to_the_last_man_desc:0 ""
  BLK_repair_squads:0 "Repair Squads"
  BLK_repair_squads_desc:0 ""
- BLK_use_locals:0 "Plunder The Peripheries"
+ BLK_use_locals:0 "Secure What Was Ours"
  BLK_use_locals_desc:0 ""
  BLK_consript_workers:0 "Consript Factory Workers"
  BLK_consript_workers_desc:0 ""
@@ -303,7 +322,7 @@
  belka_dlp.1.a:0 "Belka will rise again."
  
  belka_dlp.2.t:0 "The 2 Year Plan"
- belka_dlp.2.d:0 "After intense discussion, we have arrived at a conclusion on how to start our reconstruction. While it is true that the military is all we have left and is necessary for our self-preservation, however this is exactly what we will use to our advantage. Converting a large amount of our military into civilan equipment will allow us to start economic growth without many funds to go off of, and we have plenty of military equipment to use. This has upset the militarist faction of our government, but with all likelihood they will come around when our economy recovers, which from there we can expand the military once again."
+ belka_dlp.2.d:0 "After intense discussion, we have arrived at a conclusion on how to start our reconstruction. While it is true that the military is all we have left and is necessary for our self-preservation, however this is exactly what we will use to our advantage. Converting a large amount of our military production into civilan will allow us to start economic growth without many funds to go off of, and our military is powerfull enough as it is to ward off any potential invasions from Osea. This will upset the militarist faction in our government, but with all likelihood they will come around when our economy recovers, which from there we can expand the military once again."
  belka_dlp.2.a:0 "We must use what we have."
  
  belka_dlp.3.t:0 "Magic Of Bureaucracy"
@@ -433,15 +452,16 @@
  
  ### TOOLTIPS ###
  
+ BLK_dark_times_tt:0 "The Future Awaits...\nOnly God Knows What Waits For Us There"
  BLK_for_1_year_4_civs_tt:0 "For 1 Year Add §G4§! offmap §YCivilian Factories§!.\n"
  BLK_remove_6_dockyard_tt:0 "Replace §R6 Dockyards§! with §G6 Military Factories§!\n"
  BLK_unlock_focustt:0 "This Option Unlocks Focus"
  BLK_pillage_ustio_tt:0 "Completing this focus will allows us to §Rpillage Ustio§! for valiables and resurces to §Gfuel our war machine§!."
  BLK_pillage_ustio_dec_tt:0 "Completing this decisions will §Glower our army debuff§! and make it §Gimposible§! for our force to §Gcollapse entirely§!"
- BLK_reparations_tt:0 "Completing this focus will allows us to §Rdemand reparations§! from §Ynations we have defeated§! to §Gstablize our economy§!."
+ BLK_reparations_tt:0 "Completing this focus will allows us to §Ymilitarily occupy and demand reparations§! from §Rnations we have defeated§! to §Gstablize our economy§!."
  BLK_reparations_army_tt:0 "\nAfter §Rdemanding all 3 reparations§! we will be able to partially §Gfuel our war machine§!."
  BLK_war_rep_tt:0 "Completing this decisions will §Glower our industry debuff§!."
- BLK_use_locals_tt:0 "Completing this focus will allows us to §Rplunder retaken land§! to §Gpay for war and buy us more time§!."
+ BLK_use_locals_tt:0 "Completing this focus will §Yunlock decisions§! to §Rsecure retaken land§! and §Grise morale and support for war effort§!."
 
  ### DECISIONS ###
 
@@ -487,15 +507,22 @@
  BLK_cook_nukes_timer_dec:0 "The Last Option"
  BLK_force_osea_to_peace:0 "Force Osea To Bargaining Table"
  
- BLK_belkan_war_collapse:0 "belkan war collapse"
- BLK_belkan_war_eco_crisis_1:0 "belkan war eco crisis 1"
- BLK_belkan_war_eco_crisis_2:0 "belkan war eco crisis 2"
+ BLK_belkan_war_collapse:0 "§RSouth Rebels§!"
+ BLK_belkan_war_collapse_desc:0 "\nPart of the military and politicians, mainly those allied with democratic environments, do not see a way for us to win the war. If our §Roffensive comes to a halt§! or we §Rstart losing our core territory§!, there is high chance for §Ropen mutiny and rebellions§! to occur.\n\nOur only way to keep them in check is with §Gcontinuous victories and reconquest of our lost land§!."
+ BLK_belkan_war_eco_crisis_1:0 "Belkan Economic Crisis - Stage 1"
+ BLK_belkan_war_eco_crisis_2:0 "Belkan Economic Crisis - Stage 2"
  BLK_opillage_ustio_dec:0 "Pillage Ustio"
- BLK_war_rep_FAT:0 "Demand War Reparations From FATO"
- BLK_war_rep_GEB:0 "Demand War Reparations From Gebet"
- BLK_war_rep_REC:0 "Demand War Reparations From Recta"
+ BLK_war_rep_FAT:0 "Occupy And Demand War Reparations From FATO"
+ BLK_war_rep_GEB:0 "Occupy And Demand War Reparations From Gebet"
+ BLK_war_rep_REC:0 "Occupy And Demand War Reparations From Recta"
+ BLK_war_rep_army:0 "Stabilise The Army Logistics"
+ BLK_use_locals_decision:0 ""
  
  ### FLAGS ###
+ 
+ BLK_flag_sell_lands_yes:0 "Osea Have Sent Us Proposition"
+ BLK_DLP_won_flag:0 "DLP Won The Elections"
+ BLK_war_rep_going:0 "War Reparations Decision is Ongoing"
  
  
  ### TEMP ### !!!!!!!!!!! REMEMBR ABOUT THIS SHIT #####

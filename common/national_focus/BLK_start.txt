@@ -5,7 +5,7 @@ shared_focus = {
     ai_will_do = {
         factor = 90
     }
-    x = 20
+    x = 5
     y = 0
     completion_reward = {
 		country_event = { id = belka.1 }
@@ -171,6 +171,7 @@ shared_focus = {
     ai_will_do = {
         factor = 90
     }
+	dynamic = yes
     prerequisite = {
         focus = BLK_wait_for_profit
     }
@@ -179,7 +180,15 @@ shared_focus = {
     y = 1
 
     completion_reward = {
-		country_event = { id = belka.12 }
+		if = {
+			limit = {
+				has_global_flag = great_lakes_went_bad
+			}
+			country_event = { id = belka.12 }
+		}
+		else = {
+			custom_effect_tooltip = BLK_dark_times_tt
+		}
 	}
     search_filters = { }
 }

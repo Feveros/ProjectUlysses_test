@@ -1,11 +1,11 @@
 shared_focus = {
     id = BLK_dlp_victory
-    icon = GFX_focus_eng_the_kings_party
+    icon = GFX_goal_BLK_dlp_won_elections
     cost = 3
     ai_will_do = {
         factor = 90
     }
-    x = 30
+    x = 10
     y = 0
 	available = {
 		has_country_flag = BLK_DLP_won_flag
@@ -304,6 +304,9 @@ shared_focus = {
 				has_completed_focus = BLK_end_of_the_chain
 			}
 			swap_ideas = { remove_idea = BLK_eco_crisis_3 add_idea = BLK_eco_crisis_4 }
+			hidden_effect = {
+				country_event = utility.1
+			}
 		}
 	}
 	search_filters = { }
@@ -468,8 +471,8 @@ shared_focus = {
 	y = 1
 	
 	completion_reward = {
+		country_event = { id = belka_dlp.4 days = 2 }
 		custom_effect_tooltip = unlock_dec
-		country_event = { id = belka_dlp.4 days = 5 }
 	}
 	search_filters = { }
 }
@@ -611,6 +614,9 @@ shared_focus = {
 				has_completed_focus = BLK_start_of_the_chain
 			}
 			swap_ideas = { remove_idea = BLK_eco_crisis_3 add_idea = BLK_eco_crisis_4 }
+			hidden_effect = {
+				country_event = utility.1
+			}
 		}
 	
 	
@@ -626,6 +632,10 @@ shared_focus = {
 	cost = 1.5
 	ai_will_do = {
 		factor = 90
+	}
+	allow_branch = {
+		has_completed_focus = BLK_start_of_the_chain
+		has_completed_focus = BLK_end_of_the_chain
 	}
 	prerequisite = {
 		focus = BLK_start_of_the_chain
@@ -684,6 +694,7 @@ shared_focus = {
 				var = BLK_wacht_am_wal_var
 				value = 0
 			}
+			country_event = utility.1
 		}
 	}
 	search_filters = { }
@@ -695,6 +706,9 @@ shared_focus = {
 	cost = 3
 	ai_will_do = {
 		factor = 90
+	}
+	allow_branch = {
+		has_completed_focus = BLK_pull_the_trigger
 	}
 	prerequisite = {
 		focus = BLK_pull_the_trigger
@@ -719,6 +733,9 @@ shared_focus = {
 	cost = 3
 	ai_will_do = {
 		factor = 90
+	}
+	allow_branch = {
+		has_completed_focus = BLK_pull_the_trigger
 	}
 	prerequisite = {
 		focus = BLK_pull_the_trigger
@@ -2404,11 +2421,7 @@ shared_focus = {
 	completion_reward = {
 		if = {
 			limit = { has_idea = BLK_finest_pilots_idea }
-			swap_ideas = { remove_idea = BLK_strat_bomber_idea add_idea = BLK_strat_bomber_support_priority_idea }
-		}
-		else_if = {
-			limit = { has_idea = BLK_support_priority_idea }
-			swap_ideas = { remove_idea = BLK_strat_bomber_idea add_idea = BLK_strat_bomber_support_priority_idea }
+			swap_ideas = { remove_idea = BLK_finest_pilots_idea add_idea = BLK_strat_bomber_finest_pilots_idea }
 		}
 		else = {
 			add_ideas = BLK_strat_bomber_idea
@@ -2433,7 +2446,7 @@ shared_focus = {
 	ai_will_do = {
 		factor = 90
 	}
-	x = 40
+	x = 10
 	y = 0
 	available = {
 		has_global_flag = belkan_war_is_happening
@@ -2550,7 +2563,7 @@ shared_focus = {
 		factor = 90
 	}
 	available = {
-		UST = { has_capitulated = yes }
+		#UST = { has_capitulated = yes }
 	}
 	prerequisite = {
 		focus = BLK_dlp_war
@@ -2573,11 +2586,11 @@ shared_focus = {
 		factor = 90
 	}
 	available = {
-		OR = {
-			NOT = { has_war_with = FAT }
-			NOT = { has_war_with = GEB }
-			NOT = { has_war_with = REC }
-		}
+		#OR = {
+		#	NOT = { has_war_with = FAT }
+		#	NOT = { has_war_with = GEB }
+		#	NOT = { has_war_with = REC }
+		#}
 	}
 	prerequisite = {
 		focus = BLK_dlp_war

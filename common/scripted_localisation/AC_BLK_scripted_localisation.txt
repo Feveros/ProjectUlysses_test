@@ -1,0 +1,31 @@
+defined_text = { # Country
+	name = GetBLKDarkTimeName
+	text = {
+		trigger = {
+			NOT = { has_global_flag = great_lakes_went_bad }
+		}
+		localization_key = BLK_dark_times_good
+	}
+	text = {
+		trigger = {
+			has_global_flag = great_lakes_went_bad
+		}
+		localization_key = BLK_dark_times_bad
+	}
+}
+
+defined_text = { # Country
+	name = GetBLKDarkTimeDesc
+	text = {
+		trigger = {
+			NOT = { has_global_flag = great_lakes_went_bad }
+		}
+		localization_key = BLK_dark_times_good_desc
+	}
+	text = {
+		trigger = {
+			has_global_flag = great_lakes_went_bad
+		}
+		localization_key = BLK_dark_times_bad_desc
+	}
+}

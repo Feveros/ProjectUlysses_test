@@ -19,6 +19,13 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					has_global_flag = belkan_war_is_happening
+					surrender_progress > 0.2
+				}
+				country_event = { id = south_belka.2 days = 7 }
+			}
+			if = {
+				limit = {
 					date > 1995.01.1
 					has_government = fascism
 					has_idea = BLK_eco_crisis_5_2
@@ -29,25 +36,8 @@ on_actions = {
 				limit = {
 					check_variable = {	BLK_excalibur_destruction_meter = 2 }
 				}
+				clear_variable = BLK_excalibur_destruction_meter
 				country_event = { id = belka_dlp_war.3 days = 45 }	
-			}
-			if = {
-				limit = {
-					FROM = { 
-						original_tag = BLK
-						has_global_flag = belkan_war_is_happening
-						OR = {
-							has_idea = BLK_eco_crisis_7
-							has_idea = BLK_eco_crisis_8
-							has_idea = BLK_eco_crisis_9
-							has_idea = BLK_eco_crisis_10
-						}
-						surrender_progress > 0.2
-					}
-				}
-				FROM = {
-					country_event = { id = south_belka.2 days = 7 }
-				}
 			}
 		}
 	}

@@ -154,7 +154,9 @@ country_event = { #SELLING LAND
 		name = belka.9.a
 		custom_effect_tooltip = BLK_sell_lands_tt
 		remove_ideas = BLK_no_money_idea
-		news_event = { id = ac_news_event.1 days = 1 }
+		hidden_effect = {
+			news_event = { id = ac_news_event.1 days = 1 }
+		}
 		hidden_effect = {
 			OSE = { 
 				transfer_state = 269
@@ -212,7 +214,11 @@ country_event = { #Great Lake Goes bad
 		add_political_power= -200
 		add_stability = -0.1
 		add_popularity = { ideology = democratic popularity = -0.2 }
-		news_event = { id = ac_news_event.4 days = 1 }
+		set_global_flag = great_lakes_went_bad
+		hidden_effect = {
+			country_event = utility.1
+			news_event = { id = ac_news_event.4 days = 1 }
+		}
 	}
 }
 
@@ -240,7 +246,7 @@ country_event = { #Elections
 
 	option = {
 		name = belka.13.a
-		custom_effect_tooltip = BLK_unlock_focus_tt
+		load_focus_tree = { tree = belka_dlp_pre_war keep_completed = yes }
 		set_country_flag = BLK_DLP_won_flag
 		set_politics = {
 			ruling_party = fascism 
@@ -257,7 +263,10 @@ country_event = { #Elections
 		}
 		add_popularity = { ideology = communism popularity = -0.2 }
 		add_popularity = { ideology = fascism popularity = 0.1 }
-		news_event = { id = ac_news_event.5 days = 1 }
+		hidden_effect = {
+			news_event = { id = ac_news_event.5 days = 1 }
+			country_event = utility.1
+		}
 	}
 }
 
@@ -387,7 +396,9 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = BLK_new_government_form_tt
-		news_event = { id = ac_news_event.6 days = 1 }
+		hidden_effect = {
+			news_event = { id = ac_news_event.6 days = 1 }
+		}
 		hidden_effect = {
 			deactivate_advisor = BLK_advisor_7
 			deactivate_advisor = BLK_advisor_8
@@ -403,20 +414,20 @@ country_event = {
 			UST = { set_country_flag = man_laws_unlocked_1 set_country_flag = eco_laws_unlocked_1 }
 			REC = { set_country_flag = man_laws_unlocked_1 set_country_flag = eco_laws_unlocked_1 }
 			OSE = { country_event = { id = osea_belkan_war.1 } }
-			if = {
-				limit = {
-					AND = {
-						BLK = { is_ai = no }
-						SAP = { is_ai = yes }
-					}
-				}
-				SAP = {
-					add_offsite_building = { 
-						type = arms_factory 
-						level = 4
-					}
-				}
-			}
+			#if = {
+			#	limit = {
+			#		AND = {
+			#			BLK = { is_ai = no }
+			#			SAP = { is_ai = yes }
+			#		}
+			#	}
+			#	SAP = {
+			#		add_offsite_building = { 
+			#			type = arms_factory 
+			#			level = 4
+			#		}
+			#	}
+			#}
 		}
 	}
 }
@@ -713,7 +724,16 @@ country_event = {
 	option = {
 		name = belka_dlp_war.2.a
 		activate_mission = BLK_belkan_war_eco_crisis_1
-		activate_mission = BLK_belkan_war_collapse
+		load_focus_tree = { tree = belka_dlp_belkan_war keep_completed = yes }
+		hidden_effect = {
+			country_event = utility.1
+		}
+		if = {
+			limit = {
+				BLK = { is_ai = no }
+			}
+			activate_mission = BLK_belkan_war_collapse
+		}
 	}
 }
 
@@ -854,34 +874,66 @@ country_event = {
 	
 	option = {
 		name = belka_dlp_war.101.a
-		BLK = {
-			white_peace = SAP
-			white_peace = OSE
-			white_peace = UST
-			white_peace = FAT
-			white_peace = GEB
-			white_peace = REC
-			white_peace = SBK
+		hidden_effect = {
+			BLK = {
+				white_peace = SAP
+				white_peace = OSE
+				white_peace = UST
+				white_peace = FAT
+				white_peace = GEB
+				white_peace = REC
+				white_peace = SBK
+				if = {
+					limit = { FAT = { is_subject_of = BLK } }
+					end_puppet = FAT
+					FAT = {
+						set_politics = {
+							ruling_party = neutrality 
+							elections_allowed = no
+						}
+					}
+				}
+				if = {
+					limit = { GEB = { is_subject_of = BLK } }
+					end_puppet = GEB
+					FAT = {
+						set_politics = {
+							ruling_party = democratic 
+							elections_allowed = no
+						}
+					}
+				}
+				if = {
+					limit = { REC = { is_subject_of = BLK } }
+					end_puppet = REC
+					FAT = {
+						set_politics = {
+							ruling_party = communism 
+							elections_allowed = no
+						}
+					}
+				}
+			}
+			SBK = {
+				transfer_state = 228
+				transfer_state = 584
+				transfer_state = 590
+				transfer_state = 270
+				transfer_state = 331
+			}
+			GEB = {
+				transfer_state = 256
+			}
+			REC = {
+				transfer_state = 293
+				transfer_state = 316
+			}
+			FAT = {
+				transfer_state = 220
+			}
+			clr_global_flag = belkan_war_is_happening
+			country_event = { id = world_event.2 days = 1 }
 		}
-		SBK = {
-			transfer_state = 228
-			transfer_state = 584
-			transfer_state = 590
-			transfer_state = 270
-			transfer_state = 331
-		}
-		GEB = {
-			transfer_state = 256
-		}
-		REC = {
-			transfer_state = 293
-			transfer_state = 316
-		}
-		FAT = {
-			transfer_state = 220
-		}
-		clr_global_flag = belkan_war_is_happening
-		country_event = { id = world_event.2 days = 1 }
 	}
 }
 
@@ -914,7 +966,9 @@ country_event = {
 		}
 		clr_global_flag = belkan_war_is_happening
 		set_global_flag = belka_won_belkan_war
-		news_event = { id = ac_news_event.9 days = 1 }
+		hidden_effect = {
+			news_event = { id = ac_news_event.9 days = 1 }
+		}
 		country_event = { id = world_event.2 days = 1 }
 	}
 }

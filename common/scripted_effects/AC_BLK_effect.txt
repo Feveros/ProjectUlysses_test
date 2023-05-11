@@ -52,7 +52,9 @@ BLK_war_army_crisis_up = {
 	}
 	else_if = {
 		limit = { 
-			has_idea = BLK_eco_crisis_army_3 
+			has_idea = BLK_eco_crisis_army_3
+			NOT = { has_country_flag = BLK_opillage_ustio_dec_flag }
+			BLK = { is_ai = no }
 		}
 		swap_ideas = { remove_idea = BLK_eco_crisis_army_3 add_idea = BLK_eco_crisis_army_4 }
 	}

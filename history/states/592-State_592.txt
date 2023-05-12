@@ -15,13 +15,17 @@ state={
 		owner = PBL
 		add_core_of = PBL
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 1
 			air_base = 0
+			dockyard = 2
+			9523 = {
+				naval_base = 6
+			}
 
 		}
-		victory_points = { 9523 50 }
+		victory_points = { 9523 15 }
 
 	}
 

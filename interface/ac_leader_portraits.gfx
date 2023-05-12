@@ -4,6 +4,11 @@ spriteTypes = {
 		name = "GFX_portrait_empty_advisor"
 		texturefile = "gfx/leaders/portrait_empty_advisor.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_portrait_empty_leader"
+		texturefile = "gfx/leaders/portrait_empty_leader.dds"
+	}
 
 ############## BELKA #########################
 
@@ -59,6 +64,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_OSE_senator_armstrong"
 		texturefile = "gfx/leaders/OSE/portrait_OSE_SENATOR_small.dds"
+	}
+
+######### PERBLA ##################################
+
+	spriteType = {
+		name = "GFX_portrait_PBL_wilfredo_de_abarquero"
+		texturefile = "gfx/leaders/PBL/portrait_PBL_Wilfredo_de_Abarquero.dds"
 	}
 	
 }

@@ -28,7 +28,7 @@
  BLK_communism:0 "Belkan Union"
  BLK_democratic:0 "Belkan Federation"
  BLK_neutrality:0 "Belkan Federation"
- BLK_monarchism:0 "Kingdom of Belka"
+ BLK_monarchism:0 "Principality of Belka"
  BLK_DEF:0 "Belka"
  BLK_ADJ:0 "Belkan"
  
@@ -88,7 +88,13 @@
  
  WIE_democratic:0 "Wielvakia"
  
- PBL_democratic:0 "Perbla"
+ PBL_fascism:0 "State of Perbla"
+ PBL_communism:0 "Socialist Federation of Perblan"
+ PBL_democratic:0 "Federation of Perbla"
+ PBL_neutrality:0 "Perbla"
+ PBL_monarchism:0 "Kingdom of Perbla"
+ PBL_DEF:0 "Perbla"
+ PBL_ADJ:0 "Perblan"
  
  LEA_democratic:0 "Leasath"
  

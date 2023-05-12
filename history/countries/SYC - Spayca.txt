@@ -20,6 +20,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = SYC_na_leader
+
 set_popularities = {
 	neutrality = 100
 	fascism = 0
@@ -28,5 +30,5 @@ set_popularities = {
 	monarchism = 0
 }
 
-set_stability = 0.5
+set_stability = 0.8
 set_war_support = 0.5

@@ -14,18 +14,21 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1930.11.9"
+	ruling_party = monarchism
+	last_election = "1991.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+recruit_character = PBL_wilfredo_de_abarquero
+
 set_popularities = {
-	neutrality = 48
-	fascism = 50
-	democratic = 1
-	communism = 1
+	neutrality = 0
+	fascism = 10
+	democratic = 10
+	communism = 10
+	monarchism = 70
 }
 
-set_stability = 0.5
+set_stability = 0.84
 set_war_support = 0.5

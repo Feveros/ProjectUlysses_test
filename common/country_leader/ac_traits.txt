@@ -73,9 +73,9 @@ leader_traits = {
 	BLK_echos_cas = {
 		random = no
 
-		army_bonus_air_superiority_factor = -0.25
-		#air_cas_efficiency = -0.5
+		army_bonus_air_superiority_factor = 0.2
 		ground_attack_factor = -0.3
+		air_superiority_bonus_in_combat = -0.3
 		
 		ai_will_do = {
 			factor = 1

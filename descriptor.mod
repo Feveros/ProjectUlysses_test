@@ -8,7 +8,7 @@ tags={
 	"National Focuses"
 }
 supported_version="1.12.*"
-path="mod/ProjectUlyssesMain/"
+path="mod/ProjectUlysses_test/"
 
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"

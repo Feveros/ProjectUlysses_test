@@ -410,12 +410,11 @@ characters = { #advisors
 	
 	BLK_niclas_von_cocceji={
 		name="Niclas Von Cocceji"
-		#portraits={
-		#	army={
-		#		large=GFX_portrait_GER_gerd_von_rundstedt
-		#		small="GFX_idea_gerd_von_rundstedt"
-		#	}
-		#}
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			slot = high_command
 			idea_token = BLK_niclas_von_cocceji
@@ -444,12 +443,11 @@ characters = { #advisors
 
 	BLK_arno_von_hardenberg={
 		name="Arno Von Hardenberg"
-		#portraits={
-		#	army={
-		#		large=GFX_portrait_GER_gunther_von_kluge
-		#		small=GFX_portrait_GER_gunther_von_kluge_small
-		#	}
-		#}
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		field_marshal={
 			traits={ armor_officer offensive_doctrine }
 			skill=3
@@ -462,12 +460,11 @@ characters = { #advisors
 
 	BLK_peter_klepper={
 		name="Peter Klepper"
-		#portraits={
-		#	army={
-		#		large=GFX_portrait_GER_friedrich_paulus
-		#		small=GFX_portrait_GER_friedrich_paulus_small
-		#	}
-		#}
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		corps_commander={
 			traits={ trait_cautious }
 			skill=1
@@ -480,12 +477,11 @@ characters = { #advisors
 
 	BLK_kuno_von_sydow={
 		name="Kuno Von Sydow"
-		#portraits={
-		#	army={
-		#		large=GFX_portrait_GER_erwin_rommel
-		#		small="GFX_idea_erwin_rommel"
-		#	}
-		#}
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		
 		corps_commander={
 			traits={ trait_reckless media_personality armor_officer war_hero trickster }
@@ -499,6 +495,11 @@ characters = { #advisors
 
 	BLK_artur_fleming={
 		name="Artur Fleming"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			cost = 150
 			slot = high_command
@@ -524,6 +525,11 @@ characters = { #advisors
 
 	BLK_harri_von_kautz={
 		name="Harri Von Kautz"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			cost = 200
 			slot = theorist
@@ -549,6 +555,11 @@ characters = { #advisors
 
 	BLK_ulrich_grebel={
 		name="Ulrich Grebel"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		corps_commander={
 			traits={ inflexible_strategist career_officer }
 			skill=2
@@ -561,6 +572,11 @@ characters = { #advisors
 
 	BLK_paskal_hasselbach={
 		name="Paskal Hasselbach"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		corps_commander={
 			traits={ trait_cautious armor_officer }
 			skill=2
@@ -573,6 +589,11 @@ characters = { #advisors
 
 	BLK_jannik_meier={
 		name="Jannik Meier"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		portraits={
 			army={
 				large=GFX_portrait_BLK_jannik_meier
@@ -606,6 +627,11 @@ characters = { #advisors
 	
 	BLK_caesar_saxer={
 		name="Caesar Saxer"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			cost = 100
 			slot = high_command
@@ -631,6 +657,11 @@ characters = { #advisors
 	
 	BLK_timon_rosenhain={
 		name="Timon Rosenhain"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			slot = high_command
 			idea_token = werner_von_fritsch
@@ -650,6 +681,11 @@ characters = { #advisors
 	
 	BLK_ernst_stockhausen={
 		name="Ernst Stockhausen"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={	
 			slot = army_chief
 			idea_token = BLK_ernst_stockhausen
@@ -667,6 +703,11 @@ characters = { #advisors
 	}
 	BLK_benjamin_von_fein={
 		name="Benjamin Von Fein"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			slot = army_chief
 			idea_token = BLK_benjamin_von_fein
@@ -685,6 +726,11 @@ characters = { #advisors
 	
 	BLK_hugo_sperrle={
 		name="Hugo Sperrle"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			slot = high_command
 			idea_token = BLK_hugo_sperrle
@@ -704,6 +750,11 @@ characters = { #advisors
 
 	BLK_kurt_student={
 		name="Kurt Student"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			slot = high_command
 			idea_token = BLK_kurt_student
@@ -735,6 +786,11 @@ characters = { #advisors
 	
 	BLK_jorg_von_henschel={
 		name="Jörg Von Henschel"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			slot = air_chief
 			idea_token = BLK_jorg_von_henschel
@@ -753,6 +809,11 @@ characters = { #advisors
 
 	BLK_kevin_heidenreich={
 		name="Kevin Heidenreich"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			slot = air_chief
 			idea_token = BLK_kevin_heidenreich
@@ -771,11 +832,11 @@ characters = { #advisors
 	
 	BLK_von_braun={
 		name="Von Braun"
-		#portraits={
-		#	army={
-		#		small="GFX_idea_von_braun"
-		#	}
-		#}
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			cost = 100
 			slot = theorist
@@ -795,11 +856,11 @@ characters = { #advisors
 
 	BLK_eckehard_hoffmann={
 		name="Eckehard Hoffmann"
-		#portraits={
-		#	army={
-		#		small="GFX_idea_heisenberg"
-		#	}
-		#}
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			cost = 100
 			slot = theorist
@@ -819,11 +880,11 @@ characters = { #advisors
 
 	BLK_anton_kupchenko={
 		name="Anton Kupchenko"
-		#portraits={
-		#	army={
-		#		small="GFX_idea_wolfram_von_richthofen"
-		#	}
-		#}
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			cost = 150
 			slot = theorist
@@ -842,6 +903,11 @@ characters = { #advisors
 	
 	BLK_aayden_kreutzberg={
 		name="Aayden Kreutzberg"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			slot = navy_chief
 			idea_token = BLK_aayden_kreutzberg
@@ -869,6 +935,11 @@ characters = { #advisors
 
 	BLK_karl_thomar={
 		name="Karl Thoma"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 		advisor={
 			slot = navy_chief
 			idea_token = raeder
@@ -898,21 +969,51 @@ characters = { #advisors
 	
 	BLK_niko_ungerer = {
 		name = "Niko Ungerer"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 	}
 	BLK_philipp_weitzmann = {
 		name = "Philipp Weitzmann"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 	}
 	BLK_ernst_stock = {
 		name = "Ernst Stock"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 	}
 	BLK_fritz_schoner = {
 		name = "Fritz Schöner"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 	}
 	BLK_tillmann_stemmler = {
 		name = "Tillmann Stemmler"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 	}
 	BLK_marius_kautz = {
 		name = "Marius Kautz"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
 	}
 	
 	#### Priests ####

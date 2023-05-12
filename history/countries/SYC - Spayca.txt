@@ -1,4 +1,4 @@
-capital = 343
+capital = 346
 
 set_research_slots = 3
 
@@ -14,17 +14,18 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1930.11.9"
+	ruling_party = neutrality
+	last_election = "1990.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 48
-	fascism = 50
-	democratic = 1
-	communism = 1
+	neutrality = 100
+	fascism = 0
+	democratic = 0
+	communism = 0
+	monarchism = 0
 }
 
 set_stability = 0.5

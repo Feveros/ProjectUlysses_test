@@ -15,6 +15,14 @@
  #ENG:0 "Britain"
  #ENG_DEF:0 "Britain"
  #ENG_ADJ:0 "British"
+ 
+ #_fascism:0 ""
+ #_communism:0 ""
+ #_democratic:0 ""
+ #_neutrality:0 ""
+ #_monarchism:0 ""
+ #_DEF:0 ""
+ #_ADJ:0 ""
 
  BLK_fascism:0 "Belkan Federation"
  BLK_communism:0 "Belkan Union"
@@ -124,7 +132,13 @@
  
  DAK_democratic:0 "Dakrain"
  
+ SYC_fascism:0 "Spayca"
+ SYC_communism:0 "Spayca"
  SYC_democratic:0 "Spayca"
+ SYC_neutrality:0 "Spayca"
+ SYC_monarchism:0 "Spayca"
+ SYC_DEF:0 "Spayca"
+ SYC_ADJ:0 "Spaycan"
  
  TEV_democratic:0 "Tevuros"
  

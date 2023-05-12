@@ -8,35 +8,44 @@ spriteTypes = {
 ############## BELKA #########################
 
 	spriteType = {
-		name = "GFX_portrait_BLK_abelard_straub"
+		name = GFX_portrait_BLK_generic
+		texturefile = "gfx/leaders/BLK/portrait_BLK_generic.dds"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_generic_small
+		texturefile = "gfx/leaders/portrait_empty_advisor.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_BLK_abelard_straub
 		texturefile = "gfx/leaders/BLK/portrait_BLK_abelard_straub.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_BLK_niklaus_weber"
+		name = GFX_portrait_BLK_niklaus_weber
 		texturefile = "gfx/leaders/BLK/portrait_BLK_niklaus_weber.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_BLK_berthold_lehmann"
+		name = GFX_portrait_BLK_berthold_lehmann
 		texturefile = "gfx/leaders/BLK/portrait_BLK_berthold_lehmann.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_BLK_waldemarr_rald"
+		name = GFX_portrait_BLK_waldemarr_rald
 		texturefile = "gfx/leaders/BLK/portrait_BLK_waldemarr_rald.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_BLK_FatherWilfriedJanRiesevonSergioLuoni"
+		name = GFX_portrait_BLK_FatherWilfriedJanRiesevonSergioLuoni
 		texturefile = "gfx/leaders/BLK/portrait_BLK_FatherWilfriedJanRiesevonSergioLuoni.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_BLK_FatherWilfriedJanRiesevonSergioLuoni_small"
+		name = GFX_portrait_BLK_FatherWilfriedJanRiesevonSergioLuoni_small
 		texturefile = "gfx/leaders/BLK/portrait_BLK_FatherWilfriedJanRiesevonSergioLuoni_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_BLK_jannik_meier"
+		name = GFX_portrait_BLK_jannik_meier
 		texturefile = "gfx/leaders/BLK/portrait_BLK_jannik_meier.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_BLK_jannik_meier_small"
+		name = GFX_portrait_BLK_jannik_meier_small
 		texturefile = "gfx/leaders/BLK/portrait_BLK_jannik_meier_small.dds"
 	}
 

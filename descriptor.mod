@@ -1,4 +1,15 @@
-version="1"
+version="0.1"
+name="Project Ulysses"
+picture="thumbnail.png"
+tags={
+	"Alternative History"
+	"Map"
+	"Gameplay"
+	"National Focuses"
+}
+supported_version="1.12.*"
+path="mod/ProjectUlyssesMain/"
+
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 replace_path="history/countries"
@@ -8,10 +19,4 @@ replace_path="common/bookmarks"
 replace_path="common/ai_templates"
 replace_path="common/ai_equipment"
 replace_path="common/ai_strategy"
-tags={
-	"Alternative History"
-	"Map"
-}
-name="Project Ulysses Resurected"
-supported_version="1.12.*"
-path="mod/ProjectUlysses_test/"
+replace_path = "gfx/loadingscreens"

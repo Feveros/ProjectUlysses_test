@@ -21,15 +21,15 @@ state={
 			air_base = 0
 
 		}
-		victory_points = { 2534 50 }
-		victory_points = { 6065 50 }
+		victory_points = { 2534 60 }
+		victory_points = { 6065 15 }
 
 	}
 
 	provinces={
 		1171 1276 2114 2534 3040 3200 4921 4957 5740 6065 9489 9494 9497 9504 
 	}
-	manpower=1000000
+	manpower=5678091
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

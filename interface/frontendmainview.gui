@@ -677,6 +677,19 @@ guiTypes = {
 			spriteType = "GFX_frontend_game_logo"
 			position = { x= 20 y = 20 }
 		}
+		###################
+		### MOD VERSION ###
+		###################
+		instantTextBoxType = {
+			name ="project_ulysses_version_label"
+			position = { x = 60 y = 240 }
+			textureFile = ""
+			font = "Aces24"
+			borderSize = {x = 0 y = 0}
+			text = "OPEN BETA v.0.1"
+			format = centre
+			maxWidth = 300
+		}
 		
 	}
 
@@ -818,7 +831,7 @@ guiTypes = {
 			name = "sp_back_button"
 			position = { x = 16 y = 218 }
 			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "BACK"
+			buttonText = "Back"
 			buttonFont = "Aces14" #was hoi_24header
 			clicksound = click_close
 			oversound = ui_menu_over
@@ -930,6 +943,33 @@ guiTypes = {
 			oversound = ui_menu_over
 			
 		}
+		
+		#ButtonType = {
+		#	name = "reddit_button"
+		#	position = { x = 100 y = 309 }
+		#	quadTextureSprite ="reddit"
+		#	#clicksound = click_default
+		#	pdx_tooltip = "MENU_REDDIT"
+		#	web_link = "xxx"
+		#}
+		
+		ButtonType = {
+			name = "discord_button"
+			position = { x = 140 y = 305 }
+			quadTextureSprite ="discord"
+			#clicksound = click_default
+			pdx_tooltip = "MENU_DISCORD"
+			web_link = "https://discord.gg/zUxWR8ze"
+		}
+
+		#ButtonType = {
+		#	name = "workshop_button"
+		#	position = { x = 180 y = 309 }
+		#	quadTextureSprite ="workshop"
+		#	#clicksound = click_default
+		#	pdx_tooltip = "MENU_WORKSHOP"
+		#	web_link = "xxx"
+		#}
 	}
 	
 	containerWindowType = {

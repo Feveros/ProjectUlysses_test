@@ -265,7 +265,6 @@ country_event = { #Elections
 		add_popularity = { ideology = fascism popularity = 0.1 }
 		hidden_effect = {
 			news_event = { id = ac_news_event.5 days = 1 }
-			country_event = utility.1
 		}
 	}
 }
@@ -814,6 +813,7 @@ country_event = { #FUNNY NUKES HAHAHAHAHAHHH ITS FUNNY COZ BELKA CRAZY HAMBURGER
 		name = belka_dlp_war.100.a
 		hidden_effect = {
 			country_event = { id = belka_dlp_war.101 days = 2 }
+			set_global_flag = belka_dropped_nukes
 			news_event = { id = ac_news_event.8 days = 1 }
 			PLH = {
 				set_technology = {

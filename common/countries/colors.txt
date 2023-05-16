@@ -12,8 +12,8 @@ SBK = {
 	color_ui = rgb { 252 255 104  }
 }
 SAP = {
-	color = rgb { 215 178 34 }
-	color_ui = rgb { 215 178 34 }
+	color = rgb { 145 174 28 }
+	color_ui = rgb { 145 174 28 }
 }
 RAT = {
 	color = rgb { 11 204 244 }
@@ -168,9 +168,9 @@ SYC = {
 	color_ui = rgb { 255 174 66 }
 }
 
-TEV = {
-	color = rgb { 255 201 14 }
-	color_ui = rgb { 255 201 14 }
+ARK = {
+	color = rgb { 108 58 183 }
+	color_ui = rgb { 108 58 183 }
 }
 
 SET = {
@@ -266,4 +266,9 @@ SCA = {
 VOS = {
 	color = rgb { 1 63 142  }
 	color_ui = rgb { 1 63 142  }
+}
+
+GIB = {
+	color = rgb { 185 122 87  }
+	color_ui = rgb { 185 122 87  }
 }

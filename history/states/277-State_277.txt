@@ -7,11 +7,20 @@ state={
 		owner = NRL
 		add_core_of = NRL
 		buildings = {
-			infrastructure = 0
+			infrastructure = 3
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 3
+			dockyard = 3
 			air_base = 0
+			242 = {
+				naval_base = 6
+			}
+			5270 = {
+				naval_base = 2
+			}
 		}
+		victory_points = { 1310 20 }
+		victory_points = { 5270 1 }
 	}
 	provinces={
 		165 168 242 333 485 1310 1363 2550 2601 2825 3004 5270 6074 7387 7403 7426 7452 7469 7516 
@@ -26,6 +35,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=1000000
+	manpower=3003456
 	buildings_max_level_factor=1.000
 }

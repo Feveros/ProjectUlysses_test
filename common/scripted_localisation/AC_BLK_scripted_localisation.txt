@@ -1,4 +1,6 @@
-defined_text = { # Country
+### BELKA ###
+
+defined_text = {
 	name = GetBLKDarkTimeName
 	text = {
 		trigger = {
@@ -14,7 +16,7 @@ defined_text = { # Country
 	}
 }
 
-defined_text = { # Country
+defined_text = {
 	name = GetBLKDarkTimeDesc
 	text = {
 		trigger = {
@@ -27,5 +29,43 @@ defined_text = { # Country
 			has_global_flag = great_lakes_went_bad
 		}
 		localization_key = BLK_dark_times_bad_desc
+	}
+}
+
+defined_text = {
+	name = GetBLKExcaliburStatus
+	text = {
+		trigger = {
+			has_global_flag = excalibur_destroyed
+		}
+		localization_key = excalibur_status_destroyed
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_active_mission = BLK_excalibur_cooling_after_aa
+				has_active_mission = BLK_excalibur_cooling_after_bombing
+			}
+		}
+		localization_key = excalibur_status_cooling
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_active_mission = BLK_excalibur_fire_during_aa
+			}
+		}
+		localization_key = excalibur_status_fire
+	}
+	text = {
+		trigger = {
+			AND = {
+				NOT = { has_active_mission = BLK_excalibur_fire_during_aa }
+				NOT = { has_active_mission = BLK_excalibur_cooling_after_bombing }
+				NOT = { has_active_mission = BLK_excalibur_cooling_after_aa }
+				NOT = { has_global_flag = excalibur_destroyed }
+			}
+		}
+		localization_key = excalibur_status_ready_fire
 	}
 }

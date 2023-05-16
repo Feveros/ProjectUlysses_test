@@ -16,6 +16,9 @@ bookmarks = {
 				BLK_chaos_in_the_assembly
 			}	
 			focuses = {
+				BLK_dlp_victory
+				BLK_nationalism_unleashed
+				BLK_excalibur
 			}
 		}
 		#"UST"={
@@ -29,9 +32,9 @@ bookmarks = {
 		#	}
 		#}
 
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
-		}
+		#"---"={
+		#	history = "OTHER_GATHERING_STORM_DESC"
+		#}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

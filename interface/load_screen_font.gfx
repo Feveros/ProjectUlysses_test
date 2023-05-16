@@ -19,7 +19,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "loadscreen_tip"
 		fontfiles = { 
-			"gfx/fonts/ACES_20"	
+			"gfx/fonts/ACES_18"	
 		}		
 		cursor_offset = { 0 4 }
 		color = 0xffffffff

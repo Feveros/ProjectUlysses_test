@@ -10,6 +10,11 @@ shared_focus = {
 	available = {
 		has_country_flag = BLK_DLP_won_flag
 	}
+	allow_branch = {
+		NOT = {
+			has_focus_tree = belka_dlp_belkan_war
+		}
+	}
     completion_reward = {
 		country_event = { id = belka_dlp.1 }
     }
@@ -160,14 +165,9 @@ shared_focus = {
 			}
 		}
 		590 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = synthetic_refinery
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = fuel_silo
 				level = 1
 				instant_build = yes
 			}
@@ -636,6 +636,9 @@ shared_focus = {
 	allow_branch = {
 		has_completed_focus = BLK_start_of_the_chain
 		has_completed_focus = BLK_end_of_the_chain
+		NOT = {
+			has_focus_tree = belka_dlp_belkan_war
+		}
 	}
 	prerequisite = {
 		focus = BLK_start_of_the_chain
@@ -709,6 +712,9 @@ shared_focus = {
 	}
 	allow_branch = {
 		has_completed_focus = BLK_pull_the_trigger
+		NOT = {
+			has_focus_tree = belka_dlp_belkan_war
+		}
 	}
 	prerequisite = {
 		focus = BLK_pull_the_trigger
@@ -736,6 +742,9 @@ shared_focus = {
 	}
 	allow_branch = {
 		has_completed_focus = BLK_pull_the_trigger
+		NOT = {
+			has_focus_tree = belka_dlp_belkan_war
+		}
 	}
 	prerequisite = {
 		focus = BLK_pull_the_trigger
@@ -1708,25 +1717,23 @@ shared_focus = {
 			category = synth_resources
 		}
 		random_owned_controlled_state = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = synthetic_refinery
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = fuel_silo
 				level = 1
 				instant_build = yes
 			}
 		}
 		random_owned_controlled_state = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = synthetic_refinery
 				level = 1
 				instant_build = yes
 			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = fuel_silo
 				level = 1

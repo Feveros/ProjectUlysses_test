@@ -63,9 +63,11 @@
  BLK_eco_crisis_10:0 "Economic Collapse"
  BLK_eco_crisis_10_desc:0 ""
  
- BLK_contest_lakes_belkan_war:0 ""
+ BLK_repair_squads_idea:0 "Organise Repair Squads"
+ BLK_repair_squads_idea_desc:0 ""
+ BLK_contest_lakes_belkan_war:0 "To Face The Giant"
  BLK_contest_lakes_belkan_war_desc:0 ""
- BLK_dig_in_belkan_war:0 ""
+ BLK_dig_in_belkan_war:0 "Crossing Operations"
  BLK_dig_in_belkan_war_desc:0 ""
  
  ###
@@ -453,13 +455,14 @@
  ### TOOLTIPS ###
  
  BLK_dark_times_tt:0 "The Future Awaits...\nOnly God Knows What Waits For Us There"
+ BLK_new_government_form_tt:0 "§YNew Cabinet And Government Will Be Formed§!"
  BLK_for_1_year_4_civs_tt:0 "For 1 Year Add §G4§! offmap §YCivilian Factories§!.\n"
  BLK_remove_6_dockyard_tt:0 "Replace §R6 Dockyards§! with §G6 Military Factories§!\n"
  BLK_unlock_focustt:0 "This Option Unlocks Focus"
  BLK_pillage_ustio_tt:0 "Completing this focus will allows us to §Rpillage Ustio§! for valiables and resurces to §Gfuel our war machine§!."
  BLK_pillage_ustio_dec_tt:0 "Completing this decisions will §Glower our army debuff§! and make it §Gimposible§! for our force to §Gcollapse entirely§!"
- BLK_reparations_tt:0 "Completing this focus will allows us to §Ymilitarily occupy and demand reparations§! from §Rnations we have defeated§! to §Gstablize our economy§!."
- BLK_reparations_army_tt:0 "\nAfter §Rdemanding all 3 reparations§! we will be able to partially §Gfuel our war machine§!."
+ BLK_reparations_tt:0 "Completing this focus will allows us to §Yset up Puppet Governments and demand reparations§! from §Rnorthern nations we have defeated§! to §Gstablize our economy§!."
+ BLK_reparations_army_tt:0 "\nAfter §Rsetting up all 3 puppets§! we will be able to partially §Grefuel our war machine§!."
  BLK_war_rep_tt:0 "Completing this decisions will §Glower our industry debuff§!."
  BLK_use_locals_tt:0 "Completing this focus will §Yunlock decisions§! to §Rsecure retaken land§! and §Grise morale and support for war effort§!."
 
@@ -493,8 +496,13 @@
  BLK_plan_z_dlp_desc:0 "adadad" #category only for plan z - fast and rapid expantion of belkan navy
  BLK_build_navy:0 "Construct the navy"
  
+ #Excalibur
  BLK_excalibur_cat:0 "Excalibur - Sword of Annihilation"
- BLK_excalibur_cat_desc:0 "fsdfsdfsfsdf" #category for everything related to excalibur so short ex desc should be ok, i think ???
+ BLK_excalibur_cat_desc:0 "Excalibur , also known as the Sword of Annihilation, and Tauberg's Sword is a chemical laser weapon conceived as a long-range, anti-ICBM defense system.\n\nBuilt under Ballistic Missile Defense (BMD) program, which was intended to safeguard against ICBM attacks in the event of worldwide nuclear warfare. The concept of an anti-ICBM laser interception system was eventually chosen as a symbol of the nation's technological strength.\n\nExcalibur Status: [Root.GetBLKExcaliburStatus]" #category for everything related to excalibur so short ex desc should be ok, i think ???
+ excalibur_status_destroyed:0 "§RDESTROYED§!"
+ excalibur_status_cooling:0 "§BCooling§!"
+ excalibur_status_fire:0 "§YFiring§!"
+ excalibur_status_ready_fire:0 "§GReady§!"
  BLK_excalibur_cooling_after_bombing:0 "Excalibur Is Cooling"
  BLK_excalibur_fire_land:0 "Excalibur is ready to conduct land bombardment"
  BLK_excalibur_fire_during_aa:0 "Excalibur is conducting Anti-Air fire"
@@ -506,23 +514,24 @@
  BLK_war_start_timer_dec:0 "Final War Preparations"
  BLK_cook_nukes_timer_dec:0 "The Last Option"
  BLK_force_osea_to_peace:0 "Force Osea To Bargaining Table"
+ #
  
- BLK_belkan_war_collapse:0 "§RSouth Rebels§!"
+ BLK_belkan_war_collapse:0 "§ROpposition To War§!"
  BLK_belkan_war_collapse_desc:0 "\nPart of the military and politicians, mainly those allied with democratic environments, do not see a way for us to win the war. If our §Roffensive comes to a halt§! or we §Rstart losing our core territory§!, there is high chance for §Ropen mutiny and rebellions§! to occur.\n\nOur only way to keep them in check is with §Gcontinuous victories and reconquest of our lost land§!."
  BLK_belkan_war_eco_crisis_1:0 "Belkan Economic Crisis - Stage 1"
  BLK_belkan_war_eco_crisis_2:0 "Belkan Economic Crisis - Stage 2"
  BLK_opillage_ustio_dec:0 "Pillage Ustio"
- BLK_war_rep_FAT:0 "Occupy And Demand War Reparations From FATO"
- BLK_war_rep_GEB:0 "Occupy And Demand War Reparations From Gebet"
- BLK_war_rep_REC:0 "Occupy And Demand War Reparations From Recta"
- BLK_war_rep_army:0 "Stabilise The Army Logistics"
+ BLK_war_rep_FAT:0 "Set up Puppet Government in FATO"
+ BLK_war_rep_GEB:0 "Set up Puppet Government in Gebet"
+ BLK_war_rep_REC:0 "Set up Puppet Government in Recta"
+ BLK_war_rep_army:0 "Stabilise the army logistics"
  BLK_use_locals_decision:0 ""
  
  ### FLAGS ###
  
  BLK_flag_sell_lands_yes:0 "Osea Have Sent Us Proposition"
  BLK_DLP_won_flag:0 "DLP Won The Elections"
- BLK_war_rep_going:0 "War Reparations Decision is Ongoing"
+ BLK_war_rep_going:0 "Setting up Puppet Government secision is ongoing"
  
  
  ### TEMP ### !!!!!!!!!!! REMEMBR ABOUT THIS SHIT #####

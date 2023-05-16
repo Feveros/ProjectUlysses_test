@@ -390,7 +390,7 @@ news_event = { ### Resurces in ustio
     }
 }
 
-news_event = { ### South Belka
+news_event = { ### Destruction of excalibur
     id = ac_news_event.11
 	picture = GFX_news_event_civil_war_turkey
     title = {

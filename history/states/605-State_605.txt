@@ -12,23 +12,28 @@ state={
 	}
 
 	history={
-		owner = TEV
-		add_core_of = TEV
+		owner = ARK
+		add_core_of = ARK
 		buildings = {
-			infrastructure = 0
+			infrastructure = 3
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 2
+			dockyard = 5
 			air_base = 0
+			9609 = {
+				naval_base = 4
+			}
 
 		}
+		victory_points = { 1922 35 }
 
 	}
 
 	provinces={
 		368 1922 1926 3381 3823 4676 5516 9589 9593 9602 9605 9609 9612 
 	}
-	manpower=1000000
+	manpower=3358009
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_city
 	local_supplies=0.000
 }

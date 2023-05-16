@@ -3,11 +3,11 @@ state={
 	id=112
 	name="STATE_112"
 	resources={
-		oil=0
+		oil=23
 		aluminium=0
 		rubber=0
-		tungsten=15
-		steel=15
+		tungsten=18
+		steel=17
 		chromium=0
 	}
 

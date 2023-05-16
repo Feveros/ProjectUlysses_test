@@ -88,7 +88,7 @@
  
  WIE_democratic:0 "Wielvakia"
  
- PBL_fascism:0 "State of Perbla"
+ PBL_fascism:0 "Perblan State"
  PBL_communism:0 "Socialist Federation of Perblan"
  PBL_democratic:0 "Federation of Perbla"
  PBL_neutrality:0 "Perbla"
@@ -146,7 +146,10 @@
  SYC_DEF:0 "Spayca"
  SYC_ADJ:0 "Spaycan"
  
- TEV_democratic:0 "Tevuros"
+ ARK_democratic:0 "Duchy of Arklith"
+ ARK_neutrality:0 "Duchy of Arklith"
+ 
+ GIB_neutrality:0 "Gibraltar Mining Zone"
  
  SET_democratic:0 "Seterano"
  

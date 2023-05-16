@@ -21,7 +21,7 @@ set_stability = 0.9
 set_war_support = 0.5
 
 starting_train_buffer = 2
-set_fuel_ratio = 0.8
+set_fuel_ratio = 0.4
 set_convoys = 200
 
 add_ideas = {

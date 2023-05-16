@@ -10,6 +10,7 @@ belka_won_belkan_war_DLP = {
     }
     
     happened = {
-		owns_state = 335
+		has_global_flag = belka_won_belkan_war
+		has_government = fascism
     }    
 }

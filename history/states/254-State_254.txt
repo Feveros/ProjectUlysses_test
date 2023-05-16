@@ -3,7 +3,7 @@ state={
 	id=254
 	name="STATE_254"
 	resources={
-		oil=0
+		oil=47
 		aluminium=0
 		rubber=0
 		tungsten=0
@@ -27,7 +27,7 @@ state={
 	provinces={
 		152 990 1573 4234 4238 5842 5937 7098 7147 
 	}
-	manpower=1000000
+	manpower=210987
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

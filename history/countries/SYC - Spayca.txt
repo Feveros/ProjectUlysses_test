@@ -20,7 +20,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-recruit_character = SYC_na_leader
+recruit_character = SYC_gilmore_harrison_wilks
 
 set_popularities = {
 	neutrality = 100

@@ -3,12 +3,12 @@ state={
 	id=120
 	name="STATE_120"
 	resources={
-		oil=0
-		aluminium=0
-		rubber=0
-		tungsten=0
-		steel=0
-		chromium=0
+		oil=0.000
+		aluminium=0.000
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		chromium=0.000
 	}
 
 	history={
@@ -19,15 +19,18 @@ state={
 			arms_factory = 0
 			industrial_complex = 0
 			air_base = 0
+			3786 = {
+				naval_base = 1
+			}
 
 		}
 
 	}
 
 	provinces={
-		3786 5119 9709 
+		99 3786 9707 9709 
 	}
-	manpower=1000000
+	manpower=8126740
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

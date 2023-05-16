@@ -5,6 +5,16 @@ on_actions = {
 				set_rule = {
 					can_join_factions = no
 				}
+				if = {
+					limit = {
+						is_ai = no
+					}
+					set_variable = { project_ulysses_welcome_screen_var = 1 }
+				}
+			}
+			GIB = {
+				give_resource_rights = { receiver = ARK state = 610 }
+				give_resource_rights = { receiver = AUR state = 118 }
 			}
 			BLK = {
 				add_opinion_modifier = { target = OSE modifier = historical_enemies }
@@ -58,15 +68,16 @@ on_actions = {
 				}
 				ROOT = {
 					white_peace = BLK
+					give_military_access = BLK
 					if = { limit = { is_in_faction_with = FAT }
 						leave_faction = yes
 					}
 				}
-				BLK = {
-					transfer_state = 293
-					transfer_state = 316
-					#puppet = ROOT
-				}
+				#BLK = {
+				#	transfer_state = 293
+				#	transfer_state = 316
+				#	#puppet = ROOT
+				#}
 			}
 			else_if = { #FATO peace with belka
 				limit = {
@@ -88,12 +99,13 @@ on_actions = {
 				}
 				ROOT = {
 					white_peace = BLK
+					give_military_access = BLK
 					dismantle_faction = yes
 				}
-				BLK = {
-					transfer_state = 220
-					#puppet = ROOT
-				}
+				#BLK = {
+				#	transfer_state = 220
+				#	#puppet = ROOT
+				#}
 			}
 			else_if = { #Gebet peace with belka
 				limit = {
@@ -105,14 +117,15 @@ on_actions = {
 				}
 				ROOT = {
 					white_peace = BLK
+					give_military_access = BLK
 					if = { limit = { is_in_faction_with = FAT }
 						leave_faction = yes
 					}
 				}
-				BLK = {
-					transfer_state = 256
-					#puppet = ROOT
-				}
+				#BLK = {
+				#	transfer_state = 256
+				#	puppet = ROOT
+				#}
 			}
 		}
 	}

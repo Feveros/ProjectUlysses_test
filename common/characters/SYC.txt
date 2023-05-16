@@ -1,6 +1,6 @@
 characters = { #placeholder leader
-	SYC_na_leader = { #Spayca Leader
-		name="N/A leader"
+	SYC_gilmore_harrison_wilks = { #Spayca Leader
+		name="Gilmore Harrison Wilks"
 		portraits = {
 			civilian = {
 				large="GFX_portrait_empty_leader"

@@ -15,19 +15,20 @@ state={
 		owner = WIE
 		add_core_of = WIE
 		buildings = {
-			infrastructure = 0
+			infrastructure = 2
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 1
 			air_base = 0
 
 		}
+		victory_points = { 7841 15 }
 
 	}
 
 	provinces={
 		361 710 2179 2571 3081 4360 4550 5487 7796 7841 7957 
 	}
-	manpower=1000000
+	manpower=989090
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

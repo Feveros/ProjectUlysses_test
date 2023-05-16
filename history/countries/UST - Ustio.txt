@@ -1,9 +1,8 @@
 capital = 335
 
 set_research_slots = 3
-
-set_research_slots = 3
 set_convoys = 200
+starting_train_buffer = 1
 
 set_politics = {
 	ruling_party = democratic

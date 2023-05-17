@@ -42,6 +42,8 @@ recruit_character = BLK_abelard_straub
 recruit_character = BLK_niklaus_weber
 recruit_character = BLK_berthold_lehmann
 recruit_character = BLK_waldemarr_rald
+recruit_character = BLK_georg_steube
+recruit_character = BLK_marek_hoffnung_von_belka
 
 recruit_character = BLK_advisor_1
 recruit_character = BLK_advisor_2

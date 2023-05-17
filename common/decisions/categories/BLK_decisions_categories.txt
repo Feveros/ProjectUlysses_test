@@ -47,3 +47,12 @@ BLK_excalibur_cat = {
 		original_tag = BLK
 	}
 }
+
+BLK_civil_war_cat = {
+	priority = 100
+	icon = GFX_decision_category_generic_communism
+	allowed = {
+		original_tag = BLK
+	}
+}
+

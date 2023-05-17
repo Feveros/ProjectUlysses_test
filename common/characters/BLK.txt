@@ -41,6 +41,21 @@ characters = { #starting leaders
 			id=-1
 		}
 	}
+	BLK_marek_hoffnung_von_belka = { #Belkan Prince
+		name ="Marek Hoffnung von Belka"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_BLK_marek_hoffnung_von_belka"
+			}
+		}
+		country_leader = {
+			ideology=absolutism  
+			traits = { }
+			expire="2050.1.1.1"
+			id=-1
+		}
+	}
+	
 	BLK_waldemarr_rald = { #FUCKING RALD
 		name ="Waldemarr Rald"
 		portraits = {
@@ -54,6 +69,20 @@ characters = { #starting leaders
 		#	expire="2050.1.1.1"
 		#	id=-1
 		#}
+	}
+	BLK_georg_steube = { #Gommies
+		name ="Georg Steube"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_BLK_georg_steube"
+			}
+		}
+		country_leader = {
+			ideology=belkan_national_syndicalism  
+			traits = { }
+			expire="2050.1.1.1"
+			id=-1
+		}
 	}
 	BLK_FatherWilfriedJanRiesevonSergioLuoni = { #THE CHAD PRIEST
 		name ="Father Wilfried Jan Riese von Sergio Luoni"

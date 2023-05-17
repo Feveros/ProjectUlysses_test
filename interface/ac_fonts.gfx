@@ -1,6 +1,13 @@
 bitmapfonts = {
 
 	bitmapfont = {
+		name = "invisiblefont"
+		path = "gfx/fonts/invisiblefont"
+		color = 0xffffffff
+		textcolors = { }
+	}
+
+	bitmapfont = {
 		name = "Aces12"
 		path = "gfx/fonts/ACES_12"
 		color = 0xffffffff

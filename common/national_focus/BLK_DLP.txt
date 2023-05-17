@@ -10,11 +10,6 @@ shared_focus = {
 	available = {
 		has_country_flag = BLK_DLP_won_flag
 	}
-	allow_branch = {
-		NOT = {
-			has_focus_tree = belka_dlp_belkan_war
-		}
-	}
     completion_reward = {
 		country_event = { id = belka_dlp.1 }
     }
@@ -126,6 +121,7 @@ shared_focus = {
 	y = 1
 	
 	completion_reward = {
+		set_country_flag = BLK_resources_focus_flag
 		add_tech_bonus = {
 			bonus = 1.0
 			uses = 1
@@ -151,6 +147,7 @@ shared_focus = {
 	y = 1
 	
 	completion_reward = {
+		set_country_flag = BLK_fuel_nationalisation_focus_flag
 		228 = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -636,9 +633,6 @@ shared_focus = {
 	allow_branch = {
 		has_completed_focus = BLK_start_of_the_chain
 		has_completed_focus = BLK_end_of_the_chain
-		NOT = {
-			has_focus_tree = belka_dlp_belkan_war
-		}
 	}
 	prerequisite = {
 		focus = BLK_start_of_the_chain
@@ -712,9 +706,6 @@ shared_focus = {
 	}
 	allow_branch = {
 		has_completed_focus = BLK_pull_the_trigger
-		NOT = {
-			has_focus_tree = belka_dlp_belkan_war
-		}
 	}
 	prerequisite = {
 		focus = BLK_pull_the_trigger
@@ -742,9 +733,6 @@ shared_focus = {
 	}
 	allow_branch = {
 		has_completed_focus = BLK_pull_the_trigger
-		NOT = {
-			has_focus_tree = belka_dlp_belkan_war
-		}
 	}
 	prerequisite = {
 		focus = BLK_pull_the_trigger
@@ -1811,6 +1799,7 @@ shared_focus = {
 	y = 1
 	
 	completion_reward = {
+		set_country_flag = BLK_contest_lakes_flag
 		add_timed_idea = { idea = BLK_build_up_navy_idea days = 360 }
 		302 = {
 			add_extra_state_shared_building_slots = 2
@@ -1858,6 +1847,7 @@ shared_focus = {
 	y = 1
 	
 	completion_reward = {
+		set_country_flag = BLK_dig_in_flag
 		584 = {
 			add_building_construction = {
 				type = bunker   
@@ -2047,6 +2037,7 @@ shared_focus = {
 	y = 1
 	
 	completion_reward = {
+		set_country_flag = BLK_build_up_navy_focus_flag
 		custom_effect_tooltip = BLK_plan_z_tt
 	}
 	search_filters = { }
@@ -2171,7 +2162,13 @@ shared_focus = {
 	y = 1
 	
 	completion_reward = {
-		add_ideas = BLK_south_belka_munitions_air_designer
+		if = {
+			limit = { NOT = { has_idea = BLK_grunder_air_designer } }
+			add_ideas = BLK_grunder_air_designer
+		}
+		else = {
+			add_political_power = 250
+		}
 		custom_effect_tooltip = unlock_dec
 	}
 	search_filters = { }
@@ -2633,13 +2630,13 @@ shared_focus = {
 	completion_reward = {
 		if = {
 			limit = {
-				has_completed_focus = BLK_contest_lakes
+				has_country_flag = BLK_contest_lakes_flag
 			}
 			add_timed_idea = { idea = BLK_contest_lakes_belkan_war days = 30 }
 		}
 		else_if = {
 			limit = {
-					has_completed_focus = BLK_dig_in
+					has_country_flag = BLK_dig_in_flag
 				}
 			add_timed_idea = { idea = BLK_dig_in_belkan_war days = 30 }
 		}

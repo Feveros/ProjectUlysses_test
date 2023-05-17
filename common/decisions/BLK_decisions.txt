@@ -647,7 +647,7 @@ BLK_resurces_DLP = {
 		visible = {
 			owns_state = 228
 			controls_state = 228
-			has_completed_focus = BLK_fuel_nationalisation
+			has_country_flag = BLK_fuel_nationalisation_focus_flag
 		}
 		fire_only_once = yes
 		cost = 25
@@ -690,7 +690,7 @@ BLK_resurces_DLP = {
 			controls_state = 228
 			owns_state = 590
 			controls_state = 590
-			has_completed_focus = BLK_fuel_nationalisation
+			has_country_flag = BLK_fuel_nationalisation_focus_flag
 		}
 		fire_only_once = yes
 		cost = 25
@@ -741,7 +741,7 @@ BLK_resurces_DLP = {
 		visible = {
 			owns_state = 8
 			controls_state = 8
-			has_completed_focus = BLK_resources
+			has_country_flag = BLK_resources_focus_flag
 		}
 		fire_only_once = yes
 		cost = 25
@@ -784,7 +784,7 @@ BLK_resurces_DLP = {
 		visible = {
 			owns_state = 270
 			controls_state = 270
-			has_completed_focus = BLK_resources
+			has_country_flag = BLK_resources_focus_flag
 		}
 		fire_only_once = yes
 		cost = 25
@@ -977,7 +977,7 @@ BLK_plan_z_dlp = {
 	BLK_build_navy = {
 		icon = GFX_decision_generic_merge_plant_ship
 		visible = {
-			has_completed_focus = BLK_build_up_navy
+			has_country_flag = BLK_build_up_navy_focus_flag
 			NOT = {
 				has_country_flag = BLK_navy_built
 			}

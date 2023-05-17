@@ -34,6 +34,14 @@ spriteTypes = {
 		texturefile = "gfx/leaders/BLK/portrait_BLK_berthold_lehmann.dds"
 	}
 	spriteType = {
+		name = GFX_portrait_BLK_georg_steube
+		texturefile = "gfx/leaders/BLK/portrait_BLK_georg_steube.dds"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_marek_hoffnung_von_belka
+		texturefile = "gfx/leaders/BLK/portrait_BLK_marek_hoffnung_von_belka.dds"
+	}
+	spriteType = {
 		name = GFX_portrait_BLK_waldemarr_rald
 		texturefile = "gfx/leaders/BLK/portrait_BLK_waldemarr_rald.dds"
 	}

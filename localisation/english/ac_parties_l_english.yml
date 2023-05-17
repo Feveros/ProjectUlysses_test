@@ -17,6 +17,9 @@
  constitutional_monarchy:0 "Constitutional Monarchy"
  constitutional_monarchy_desc:0 "A constitutional monarchy is a form of monarchy in which the sovereign exercise authority in accordance with a written or unwritten constitution."
  
+ belkan_national_syndicalism:0 "Belkan National Syndicalism"
+ belkan_national_syndicalism_desc:0 "NAZBOL GANG"
+ 
  conservatism:0 "Conservatism"
  conservatism_desc:0 "Considering rapid changes to society to be potentially harmful, conservatism espouses tradition and moderate reforms, sometimes advocating a return to old moral values."
  liberalism:0 "Liberalism"
@@ -48,7 +51,7 @@
  neutrality_desc:0 "Authoritarian Regime"
  despotism:0 "Despotic"
  despotism_desc:0 "Despotism is a form of government in which a single person rules with absolute power."
- oligarchism:0 "Oligarchic"
+ oligarchism:0 "Oligarchism"
  oligarchism_desc:0 "Oligarchy is a form of government in which a group of people rule with absolute power."
  moderatism:1 "Moderatism"
  moderatism_desc:1 "Moderatism is a form of government which avoids the extremes of left and right by taking a moderate position or course of action."

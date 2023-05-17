@@ -1,3 +1,8 @@
+#####################################################################################
+###    When adding a new subideology, please add an entry of the subideology in   ###
+### common/scripted_localisation/AC_subideology_display_scripted_localisation.txt ###
+#####################################################################################
+
 ideologies = {
 
 	democratic = {
@@ -81,6 +86,10 @@ ideologies = {
 			}
 
 			anarchist_communism = {
+			}
+			
+			belkan_national_syndicalism = {
+				can_be_randomly_selected = no
 			}
 		}
 
@@ -195,9 +204,8 @@ ideologies = {
 			centrism = {
 			}
 			
-					
 			awwnb = {
-				#can_be_randomly_selected = no 
+				can_be_randomly_selected = no 
 			}
 		}
 

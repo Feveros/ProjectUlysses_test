@@ -15,6 +15,9 @@
  
  ### IDEAS ###
  
+ BLK_grunder_air_designer:0 "South Belka Munitions"
+ BLK_south_belka_munitions_air_designer_trait:0 "Belkan Aircraft Designer"
+ 
  BLK_eco_crisis:0 "Belkan Economic Crisis"
  BLK_eco_crisis_desc:0 "Our economy is in utter shambles. Unemployment is at record heights, banks are defaulting, companies and individuals are filing for bankruptcy daily, and the value of our money is in freefall. Every industrial field has been grinding to a halt, and if nothing is done it's likely our entire nation will descend into chaos.\n\nTo make matters worse, this has given rise to §RCommunist§! and §RSyndicalist§! groups, who are fully capitalizing off these failures."
  BLK_eco_crisis_2:0 "Belkan Economic Crisis"

@@ -1105,19 +1105,22 @@ ideas = {
 			
 		designer = yes
 		
-		BLK_south_belka_munitions_air_designer = {
+		BLK_grunder_air_designer = {
+			picture = GFX_idea_BLK_grunder_air_designer
+			cost = 250
+			removal_cost = -1
 			
 			allowed = {
 				original_tag = BLK
 			}
 			
-			available = {
-				has_completed_focus = BLK_south_belka_munitions_monopoly
-			}
+			#available = {
+			#	has_country_flag = BLK_south_belka_munitions_monopoly_flag
+			#}
 			
-			allowed_to_remove = {
-				always = no
-			}
+			#allowed_to_remove = {
+			#	always = no
+			#}
 			
 			research_bonus = {
 				air_equipment = 0.2

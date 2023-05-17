@@ -20,7 +20,13 @@ spriteTypes = {
 		name = "GFX_idea_excalibur_fire_idea"
 		texturefile = "gfx/interface/ideas/excalibur_fire_idea.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_BLK_grunder_air_designer"
+		texturefile = "gfx/interface/ideas/BLK/BLK_grunder_air_designer.dds"
+	}
 }
+
+
 
 
 

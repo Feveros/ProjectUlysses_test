@@ -1452,6 +1452,7 @@ shared_focus = {
 	
 	completion_reward = {
 		add_ideas = BLK_infantry_army_idea
+		set_country_flag = BLK_infantry_focus_focus_flag
 	}
 	search_filters = { }
 }
@@ -1530,6 +1531,7 @@ shared_focus = {
 	y = 1
 	
 	completion_reward = {
+		set_country_flag = BLK_armor_focus_flag
 		if = {
 			limit = { has_dlc = "No Step Back" }
 			add_tech_bonus = {
@@ -1700,7 +1702,7 @@ shared_focus = {
 	
 	completion_reward = {
 		add_tech_bonus = {
-			bonus = 1
+			bonus = 0.5
 			uses = 1
 			category = synth_resources
 		}
@@ -2446,7 +2448,7 @@ shared_focus = {
 shared_focus = {
 	id = BLK_dlp_war
 	icon = GFX_focus_spa_the_war_of_vengeance
-	cost = 5
+	cost = 4.4
 	ai_will_do = {
 		factor = 90
 	}
@@ -2464,7 +2466,7 @@ shared_focus = {
 shared_focus = {
 	id = BLK_to_the_last_man
 	icon = GFX_focus_generic_provoke_border_clashes
-	cost = 5
+	cost = 4.4
 	ai_will_do = {
 		factor = 90
 	}
@@ -2472,7 +2474,7 @@ shared_focus = {
 		focus = BLK_dlp_war
 	}
 	relative_position_id = BLK_dlp_war
-	x = 2
+	x = 3
 	y = 1
 	
 	completion_reward = {
@@ -2491,7 +2493,7 @@ shared_focus = {
 shared_focus = {
 	id = BLK_use_locals
 	icon = GFX_goal_generic_construction
-	cost = 5
+	cost = 4.4
 	ai_will_do = {
 		factor = 90
 	}
@@ -2499,7 +2501,7 @@ shared_focus = {
 		focus = BLK_dlp_war
 	}
 	relative_position_id = BLK_dlp_war
-	x = -2
+	x = -3
 	y = 1
 	
 	completion_reward = {
@@ -2511,7 +2513,7 @@ shared_focus = {
 shared_focus = {
 	id = BLK_repair_squads
 	icon = GFX_goal_continuous_repairments
-	cost = 5
+	cost = 4.4
 	ai_will_do = {
 		factor = 90
 	}
@@ -2519,7 +2521,7 @@ shared_focus = {
 		focus = BLK_use_locals
 	}
 	relative_position_id = BLK_use_locals
-	x = -1
+	x = 0
 	y = 1
 	
 	completion_reward = {
@@ -2531,15 +2533,20 @@ shared_focus = {
 shared_focus = {
 	id = BLK_consript_workers
 	icon = GFX_focus_generic_manpower
-	cost = 5
+	cost = 4.4
 	ai_will_do = {
 		factor = 90
 	}
 	prerequisite = {
 		focus = BLK_to_the_last_man
 	}
+	bypass = {
+		NOT = {	has_idea = BLK_crush_unemploy_idea }
+		NOT = {	has_idea = BLK_mili_civ_infr_idea }
+		NOT = {	has_idea = BLK_expand_supply_idea }
+	}
 	relative_position_id = BLK_to_the_last_man
-	x = 1
+	x = 0
 	y = 1
 	
 	completion_reward = {
@@ -2562,7 +2569,7 @@ shared_focus = {
 shared_focus = {
 	id = BLK_pillage_ustio
 	icon = GFX_focus_generic_annex_country
-	cost = 5
+	cost = 4.4
 	ai_will_do = {
 		factor = 90
 	}
@@ -2573,7 +2580,7 @@ shared_focus = {
 		focus = BLK_dlp_war
 	}
 	relative_position_id = BLK_dlp_war
-	x = 1
+	x = 2
 	y = 3
 	
 	completion_reward = {
@@ -2585,7 +2592,7 @@ shared_focus = {
 shared_focus = {
 	id = BLK_reparations
 	icon = GFX_focus_generic_annex_country_2
-	cost = 5
+	cost = 4.4
 	ai_will_do = {
 		factor = 90
 	}
@@ -2600,21 +2607,22 @@ shared_focus = {
 		focus = BLK_dlp_war
 	}
 	relative_position_id = BLK_dlp_war
-	x = -1
+	x = -2
 	y = 3
 	
 	completion_reward = {
 		custom_effect_tooltip = BLK_reparations_tt
 		custom_effect_tooltip = BLK_reparations_army_tt
 		set_variable = { BLK_war_rep_taken = 0 }
+		set_variable = { BLK_war_rep_left = 0 }
 	}
 	search_filters = { }
 }
 
 shared_focus = {
-	id = BLK_cross_great_lakes
-	icon = GFX_focus_generic_the_suez
-	cost = 5
+	id = BLK_schlacht_um_die_Zukunft
+	icon = GFX_focus_POL_prussia_line
+	cost = 4.4
 	ai_will_do = {
 		factor = 90
 	}
@@ -2624,8 +2632,43 @@ shared_focus = {
 		focus = BLK_dlp_war
 	}
 	relative_position_id = BLK_dlp_war
-	x = 0
-	y = 2
+	x = 1
+	y = 1
+	
+	completion_reward = {
+		if = {
+			limit = {
+				has_country_flag = BLK_armor_focus_flag
+			}
+			add_timed_idea = { idea = BLK_schlacht_um_die_Zukunft_tank_idea days = 30 }
+		}
+		if = {
+			limit = {
+					has_country_flag = BLK_infantry_focus_focus_flag
+				}
+			add_timed_idea = { idea = BLK_schlacht_um_die_Zukunft_inf_idea days = 30 }
+		}
+		custom_effect_tooltip = BLK_schlacht_um_die_Zukunft_tt
+	}
+	search_filters = { }
+}
+
+
+shared_focus = {
+	id = BLK_cross_great_lakes
+	icon = GFX_focus_generic_the_suez
+	cost = 4.4
+	ai_will_do = {
+		factor = 90
+	}
+	available = {
+	}
+	prerequisite = {
+		focus = BLK_dlp_war
+	}
+	relative_position_id = BLK_dlp_war
+	x = -1
+	y = 1
 	
 	completion_reward = {
 		if = {
@@ -2640,6 +2683,28 @@ shared_focus = {
 				}
 			add_timed_idea = { idea = BLK_dig_in_belkan_war days = 30 }
 		}
+	}
+	search_filters = { }
+}
+
+shared_focus = {
+	id = BLK_to_fuel_the_front
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 4.4
+	ai_will_do = {
+		factor = 90
+	}
+	available = {
+	}
+	prerequisite = {
+		focus = BLK_dlp_war
+	}
+	relative_position_id = BLK_dlp_war
+	x = 0
+	y = 2
+	
+	completion_reward = {
+		add_timed_idea = { idea =  BLK_to_fuel_the_front_idea days = 30 }
 	}
 	search_filters = { }
 }

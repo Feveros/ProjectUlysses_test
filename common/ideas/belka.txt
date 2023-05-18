@@ -321,14 +321,14 @@ ideas = {
 			}
 			removal_cost = -1
 			equipment_bonus = {
-				fighter_equipment = {
+				small_plane_airframe = {
 					build_cost_ic = 0.1 
 					reliability = 0.1
 					air_attack = 0.1
 					air_agility = 0.05
 					instant = yes
 				}
-				heavy_fighter_equipment  = {
+				medium_plane_fighter_airframe  = {
 					build_cost_ic = 0.1
 					reliability = 0.1
 					air_attack = 0.1
@@ -348,14 +348,14 @@ ideas = {
 			}
 			removal_cost = -1
 			equipment_bonus = {
-				fighter_equipment = {
+				small_plane_airframe = {
 					build_cost_ic = -0.1
 					reliability = -0.1
 					air_attack = -0.05
 					air_agility = -0.05
 					instant = yes
 				}
-				heavy_fighter_equipment  = {
+				medium_plane_fighter_airframe  = {
 					build_cost_ic = -0.1
 					reliability = -0.1
 					air_attack = -0.05
@@ -1094,6 +1094,61 @@ ideas = {
 				naval_invasion_penalty = -0.2
 				max_planning_factor = 0.2
 				army_attack_factor = 0.1
+			}
+		}
+		
+		BLK_schlacht_um_die_Zukunft_tank_idea = {
+			picture = GFX_idea_generic_armor
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			on_remove = {
+				BLK_war_eco_crisis_up = yes
+				BLK_war_army_crisis_up = yes
+			}
+			modifier = {
+				army_armor_attack_factor = 0.15
+				breakthrough_factor = 0.15
+				army_armor_speed_factor = 0.1
+			}
+		}
+		
+		BLK_schlacht_um_die_Zukunft_inf_idea = {
+			picture = GFX_idea_generic_artillery_regiments
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			on_remove = {
+				BLK_war_eco_crisis_up = yes
+				BLK_war_army_crisis_up = yes
+			}
+			modifier = {
+				army_artillery_attack_factor = 0.15
+				army_infantry_attack_factor = 0.1
+				motorized_attack_factor = 0.1
+				army_org_Factor = 0.05
+			}
+		}
+		
+		BLK_to_fuel_the_front_idea = {
+			picture = GFX_idea_generic_supply_depot
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_supply_node_factor = 5
 			}
 		}
 		

@@ -322,12 +322,12 @@ BLK_belkan_war_category = {
 		targets = { FAT }
 		available = {
 			NOT = { has_war_with = FAT }
-			OR = {
-				has_idea = BLK_eco_crisis_7
-				has_idea = BLK_eco_crisis_8 
-				has_idea = BLK_eco_crisis_9
-				has_idea = BLK_eco_crisis_10
-			}
+			#OR = {
+			#	has_idea = BLK_eco_crisis_7
+			#	has_idea = BLK_eco_crisis_8 
+			#	has_idea = BLK_eco_crisis_9
+			#	has_idea = BLK_eco_crisis_10
+			#}
 			NOT = { has_country_flag = BLK_war_rep_going }
 		}
 		visible = {
@@ -369,6 +369,10 @@ BLK_belkan_war_category = {
 				var = BLK_war_rep_taken
 				value = 1
 			}
+			add_to_variable = {
+				var = BLK_war_rep_left
+				value = 1
+			}
 			clr_country_flag = BLK_war_rep_going
 		}
 	}
@@ -379,12 +383,12 @@ BLK_belkan_war_category = {
 		targets = { GEB }
 		available = {
 			NOT = { has_war_with = GEB }
-			OR = {
-				has_idea = BLK_eco_crisis_7
-				has_idea = BLK_eco_crisis_8 
-				has_idea = BLK_eco_crisis_9
-				has_idea = BLK_eco_crisis_10
-			}
+			#OR = {
+			#	has_idea = BLK_eco_crisis_7
+			#	has_idea = BLK_eco_crisis_8 
+			#	has_idea = BLK_eco_crisis_9
+			#	has_idea = BLK_eco_crisis_10
+			#}
 			NOT = { has_country_flag = BLK_war_rep_going }
 		}
 		visible = {
@@ -426,6 +430,10 @@ BLK_belkan_war_category = {
 				var = BLK_war_rep_taken
 				value = 1
 			}
+			add_to_variable = {
+				var = BLK_war_rep_left
+				value = 1
+			}
 			clr_country_flag = BLK_war_rep_going
 		}
 	}
@@ -436,12 +444,12 @@ BLK_belkan_war_category = {
 		targets = { REC }
 		available = {
 			NOT = { has_war_with = REC }
-			OR = {
-				has_idea = BLK_eco_crisis_7
-				has_idea = BLK_eco_crisis_8 
-				has_idea = BLK_eco_crisis_9
-				has_idea = BLK_eco_crisis_10
-			}
+			#OR = {
+			#	has_idea = BLK_eco_crisis_7
+			#	has_idea = BLK_eco_crisis_8 
+			#	has_idea = BLK_eco_crisis_9
+			#	has_idea = BLK_eco_crisis_10
+			#}
 			NOT = { has_country_flag = BLK_war_rep_going }
 		}
 		visible = {
@@ -484,7 +492,43 @@ BLK_belkan_war_category = {
 				var = BLK_war_rep_taken
 				value = 1
 			}
+			add_to_variable = {
+				var = BLK_war_rep_left
+				value = 1
+			}
 			clr_country_flag = BLK_war_rep_going
+		}
+	}
+	BLK_war_rep_industry = {
+		icon = GFX_decision_generic_industry
+		allowed = {
+		}
+		available = {
+			OR = {
+				has_idea = BLK_eco_crisis_7
+				has_idea = BLK_eco_crisis_8 
+				has_idea = BLK_eco_crisis_9
+				has_idea = BLK_eco_crisis_10
+			}
+			custom_trigger_tooltip = {
+				tooltip = BLK_war_rep_left_tt
+				check_variable = { BLK_war_rep_left > 0 }
+			}
+		}
+		visible = {
+			has_completed_focus = BLK_reparations
+		}
+		#cost = 100
+		days_remove = 7
+		ai_will_do = {
+			base = 20
+		}
+		remove_effect = {
+			BLK_war_eco_crisis_down = yes
+			subtract_from_variable = {
+				var = BLK_war_rep_left
+				value = -1
+			}
 		}
 	}
 	BLK_war_rep_army = {
@@ -492,7 +536,10 @@ BLK_belkan_war_category = {
 		allowed = {
 		}
 		available = {
-			check_variable = { BLK_war_rep_taken = 3 }
+			custom_trigger_tooltip = {
+				tooltip = BLK_war_rep_taken_tt
+				check_variable = { BLK_war_rep_taken = 3 }
+			}
 		}
 		visible = {
 			has_completed_focus = BLK_reparations
@@ -504,6 +551,7 @@ BLK_belkan_war_category = {
 			base = 20
 		}
 		remove_effect = {
+			custom_effect_tooltip = BLK_reparations_army_tt
 			BLK_war_army_crisis_down = yes
 		}
 	}
@@ -662,7 +710,12 @@ BLK_resurces_DLP = {
 			228 = {
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 10
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -707,13 +760,6 @@ BLK_resurces_DLP = {
 					type = oil
 					amount = 5
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			228 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -987,7 +1033,7 @@ BLK_plan_z_dlp = {
 				has_country_flag = BLK_navy_building
 			}
 		}
-		cost = 200
+		cost = 150
 		days_remove = 365
 		complete_effect = {
 			set_country_flag = BLK_navy_building

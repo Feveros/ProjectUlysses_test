@@ -72,6 +72,11 @@
  BLK_contest_lakes_belkan_war_desc:0 ""
  BLK_dig_in_belkan_war:0 "Crossing Operations"
  BLK_dig_in_belkan_war_desc:0 ""
+ BLK_schlacht_um_die_Zukunft_tank_idea:0 "Schlacht um die Zukunft"
+ BLK_schlacht_um_die_Zukunft_tank_idea_desc:0 ""
+ BLK_schlacht_um_die_Zukunft_inf_idea:0 "Schlacht um die Zukunft"
+ BLK_schlacht_um_die_Zukunft_inf_idea_desc:0 ""
+ BLK_to_fuel_the_front_idea:0 "Supply System Construction"
  
  ###
  
@@ -263,10 +268,14 @@
  BLK_consript_workers_desc:0 ""
  BLK_pillage_ustio:0 "Pillage Ustio"
  BLK_pillage_ustio_desc:0 ""
- BLK_reparations:0 "War Reparations"
+ BLK_reparations:0 "Secure The North"
  BLK_reparations_desc:0 ""
  BLK_cross_great_lakes:0 "Great Lakes Offensive"
  BLK_cross_great_lakes_desc:0 ""
+ BLK_schlacht_um_die_Zukunft:0 "Schlacht um die Zukunft"
+ BLK_schlacht_um_die_Zukunft_desc:0 "Schlacht um die Zukunft"
+ BLK_to_fuel_the_front:0 "To Fuel The Front"
+ BLK_to_fuel_the_front_desc:0 ""
  
  ### EVENTS ###
  
@@ -457,6 +466,7 @@
  
  ### TOOLTIPS ###
  
+ BLK_schlacht_um_die_Zukunft_tt:0 "\nSuch §Ymassive offensive§! will §Rput heavy weight§! on our industry and army."
  BLK_dark_times_tt:0 "The Future Awaits...\nOnly God Knows What Waits For Us There"
  BLK_new_government_form_tt:0 "§YNew Cabinet And Government Will Be Formed§!"
  BLK_for_1_year_4_civs_tt:0 "For 1 Year Add §G4§! offmap §YCivilian Factories§!.\n"
@@ -465,8 +475,9 @@
  BLK_pillage_ustio_tt:0 "Completing this focus will allows us to §Rpillage Ustio§! for valiables and resurces to §Gfuel our war machine§!."
  BLK_pillage_ustio_dec_tt:0 "Completing this decisions will §Glower our army debuff§! and make it §Gimposible§! for our force to §Gcollapse entirely§!"
  BLK_reparations_tt:0 "Completing this focus will allows us to §Yset up Puppet Governments and demand reparations§! from §Rnorthern nations we have defeated§! to §Gstablize our economy§!."
- BLK_reparations_army_tt:0 "\nAfter §Rsetting up all 3 puppets§! we will be able to partially §Grefuel our war machine§!."
- BLK_war_rep_tt:0 "Completing this decisions will §Glower our industry debuff§!."
+ BLK_reparations_army_tt:0 "After §Rsetting up all 3 puppets§! we will be able to partially §Grefuel our war machine§!."
+ BLK_war_rep_taken_tt:0 ""
+ BLK_war_rep_tt:0 "Completing this decisions will §Gallow§! us to §Glower our industry debuff§!."
  BLK_use_locals_tt:0 "Completing this focus will §Yunlock decisions§! to §Rsecure retaken land§! and §Grise morale and support for war effort§!."
 
  ### DECISIONS ###
@@ -527,6 +538,7 @@
  BLK_war_rep_FAT:0 "Set up Puppet Government in FATO"
  BLK_war_rep_GEB:0 "Set up Puppet Government in Gebet"
  BLK_war_rep_REC:0 "Set up Puppet Government in Recta"
+ BLK_war_rep_industry:0 "Stabilise the war industry"
  BLK_war_rep_army:0 "Stabilise the army logistics"
  BLK_use_locals_decision:0 ""
  
@@ -536,9 +548,7 @@
  BLK_DLP_won_flag:0 "DLP Won The Elections"
  BLK_war_rep_going:0 "Setting up Puppet Government secision is ongoing"
  
+ ### OTHER BELKA SPECIFIC LOC ###
  
- ### TEMP ### !!!!!!!!!!! REMEMBR ABOUT THIS SHIT #####
+ the_savior_of_the_belkan_nation:0 "The Savior of the Belkan Nation"
  
- cheap_combat_abilities_tt:0 "\nFinishing this focus greatly reduces the cost of §YForce Attack§! and §YLast Stand§! Command Abilities."
- kamikaze_focus_tooltip_tt:0 "\nFinishing this focus unlocks usage of §YSuicide Strike§! air missions."
- unlock_dec:0 "\nFinishing this focus §GUnlocks§! §YDecision(s)§!."

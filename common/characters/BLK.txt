@@ -474,7 +474,7 @@ characters = { #advisors
 		name="Arno Von Hardenberg"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large = "GFX_portrait_BLK_generic"
 			}
 		}
 		field_marshal={
@@ -556,7 +556,7 @@ characters = { #advisors
 		name="Harri Von Kautz"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large= "GFX_portrait_BLK_generic"
 			}
 		}
 		advisor={
@@ -1000,7 +1000,7 @@ characters = { #advisors
 		name = "Niko Ungerer"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large= "GFX_portrait_BLK_generic"
 			}
 		}
 	}
@@ -1008,7 +1008,7 @@ characters = { #advisors
 		name = "Philipp Weitzmann"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large= "GFX_portrait_BLK_generic"
 			}
 		}
 	}
@@ -1016,7 +1016,7 @@ characters = { #advisors
 		name = "Ernst Stock"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large= "GFX_portrait_BLK_generic"
 			}
 		}
 	}
@@ -1024,7 +1024,7 @@ characters = { #advisors
 		name = "Fritz Schöner"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large= "GFX_portrait_BLK_generic"
 			}
 		}
 	}
@@ -1032,7 +1032,7 @@ characters = { #advisors
 		name = "Tillmann Stemmler"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large= "GFX_portrait_BLK_generic"
 			}
 		}
 	}
@@ -1040,7 +1040,7 @@ characters = { #advisors
 		name = "Marius Kautz"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large= "GFX_portrait_BLK_generic"
 			}
 		}
 	}

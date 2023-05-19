@@ -36,7 +36,7 @@ characters = { #starting leaders
 		}
 		country_leader = {
 			ideology=fascism_ideology  
-			traits = { the_savior_of_the_belkan_nation }
+			traits = { }
 			expire="2050.1.1.1"
 			id=-1
 		}

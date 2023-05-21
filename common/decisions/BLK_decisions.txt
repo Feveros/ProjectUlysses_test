@@ -34,7 +34,7 @@ BLK_excalibur_cat = {
 		
 		}
 		complete_effect = {
-
+			custom_effect_tooltip = BLK_excalibur_fire_land_tt
 		}
 	}
 	BLK_excalibur_cooling_after_aa = {
@@ -289,7 +289,7 @@ BLK_belkan_war_category = {
 		}
 		fire_only_once = yes
 		cost = 100
-		days_remove = 7
+		days_remove = 10
 		ai_will_do = {
 			base = 20
 		}
@@ -342,6 +342,10 @@ BLK_belkan_war_category = {
 		}
 		complete_effect = {
 			set_country_flag = BLK_war_rep_going
+			add_days_mission_timeout = {
+				mission = BLK_belkan_war_collapse
+				days = 30
+			}
 		}
 		remove_effect = {
 			ROOT = {
@@ -359,10 +363,6 @@ BLK_belkan_war_category = {
 						}
 					}
 				}
-			}
-			add_days_mission_timeout = {
-				mission = BLK_belkan_war_collapse
-				days = 30
 			}
 			clr_country_flag = BLK_war_rep_going
 		}
@@ -393,6 +393,10 @@ BLK_belkan_war_category = {
 		}
 		complete_effect = {
 			set_country_flag = BLK_war_rep_going
+			add_days_mission_timeout = {
+				mission = BLK_belkan_war_collapse
+				days = 30
+			}
 		}
 		remove_effect = {
 			ROOT = {
@@ -410,10 +414,6 @@ BLK_belkan_war_category = {
 						}
 					}
 				}
-			}
-			add_days_mission_timeout = {
-				mission = BLK_belkan_war_collapse
-				days = 30
 			}
 			clr_country_flag = BLK_war_rep_going
 		}
@@ -444,6 +444,10 @@ BLK_belkan_war_category = {
 		}
 		complete_effect = {
 			set_country_flag = BLK_war_rep_going
+			add_days_mission_timeout = {
+				mission = BLK_belkan_war_collapse
+				days = 30
+			}
 		}
 		remove_effect = {
 			ROOT = {
@@ -462,10 +466,6 @@ BLK_belkan_war_category = {
 						}
 					}
 				}
-			}
-			add_days_mission_timeout = {
-				mission = BLK_belkan_war_collapse
-				days = 30
 			}
 			clr_country_flag = BLK_war_rep_going
 		}

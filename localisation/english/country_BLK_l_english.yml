@@ -528,6 +528,7 @@
  excalibur_status_ready_fire:0 "§GReady§!"
  BLK_excalibur_cooling_after_bombing:0 "Excalibur Is Cooling"
  BLK_excalibur_fire_land:0 "Excalibur is ready to conduct land bombardment"
+ BLK_excalibur_fire_land_tt:0 "§YTo conduct land statewide strategic bombardment select enemy controlled state and click Excalibur icon on the right side of state window.§!"
  BLK_excalibur_fire_during_aa:0 "Excalibur is conducting Anti-Air fire"
  BLK_excalibur_cooling_after_aa:0 "Excalibur is cooling"
  BLK_excalibur_fire_aa:0 "Activate Excalibur"

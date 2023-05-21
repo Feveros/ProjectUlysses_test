@@ -73,6 +73,9 @@ BLK_war_army_crisis_up = {
 	else_if = {
 		limit = {
 			NOT = { has_idea = BLK_eco_crisis_army_1 }
+			NOT = { has_idea = BLK_eco_crisis_army_2 }
+			NOT = { has_idea = BLK_eco_crisis_army_3 }
+			NOT = { has_idea = BLK_eco_crisis_army_4 }
 		}
 		add_ideas = BLK_eco_crisis_army_1
 	}

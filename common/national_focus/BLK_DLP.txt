@@ -2452,6 +2452,9 @@ shared_focus = {
 	ai_will_do = {
 		factor = 90
 	}
+	bypass = {
+		always = yes
+	}
 	x = 10
 	y = 0
 	available = {
@@ -2613,8 +2616,6 @@ shared_focus = {
 	completion_reward = {
 		custom_effect_tooltip = BLK_reparations_tt
 		custom_effect_tooltip = BLK_reparations_army_tt
-		set_variable = { BLK_war_rep_taken = 0 }
-		set_variable = { BLK_war_rep_left = 0 }
 	}
 	search_filters = { }
 }

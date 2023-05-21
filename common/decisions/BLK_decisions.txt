@@ -235,27 +235,23 @@ BLK_belkan_war_category = {
 			UST = {
 				has_capitulated = yes
 			}
+			FAT = { is_puppet_of = ROOT }
+			GEB = { is_puppet_of = ROOT }
+			REC = { is_puppet_of = ROOT }
 			BLK = {
-				NOT = {
-					AND = {
-						has_war_with = FAT
-						has_war_with = GEB
-						has_war_with = REC
-					}
+				AND = {
+					controls_state = 309
+					controls_state = 339
+					controls_state = 335
+					controls_state = 378
+					controls_state = 358
+					controls_state = 340
+					controls_state = 604
+					controls_state = 269
+					controls_state = 296
+					controls_state = 211
+					controls_state = 357
 				}
-			}
-			BLK = {
-				controls_state = 309
-				controls_state = 339
-				controls_state = 335
-				controls_state = 378
-				controls_state = 358
-				controls_state = 340
-				controls_state = 604
-				controls_state = 269
-				controls_state = 296
-				controls_state = 211
-				controls_state = 357
 			}
 		}
 		visible = {
@@ -300,6 +296,7 @@ BLK_belkan_war_category = {
 		remove_effect = {
 			custom_effect_tooltip = BLK_pillage_ustio_dec_tt
 			BLK_war_army_crisis_down = yes
+			custom_effect_tooltip = BLK_war_rep_industry_tt
 			BLK_war_eco_crisis_down = yes
 			335 = {
                 add_manpower = -50000
@@ -313,6 +310,10 @@ BLK_belkan_war_category = {
 				}
             }
 			set_country_flag = BLK_opillage_ustio_dec_flag
+			add_days_mission_timeout = {
+				mission = BLK_belkan_war_collapse
+				days = 30
+			}
 		}
 	}
 	BLK_war_rep_FAT = {
@@ -343,8 +344,6 @@ BLK_belkan_war_category = {
 			set_country_flag = BLK_war_rep_going
 		}
 		remove_effect = {
-			custom_effect_tooltip = BLK_war_rep_tt
-			BLK_war_eco_crisis_down = yes
 			ROOT = {
 				puppet = FAT
 				transfer_state = 220
@@ -364,14 +363,6 @@ BLK_belkan_war_category = {
 			add_days_mission_timeout = {
 				mission = BLK_belkan_war_collapse
 				days = 30
-			}
-			add_to_variable = {
-				var = BLK_war_rep_taken
-				value = 1
-			}
-			add_to_variable = {
-				var = BLK_war_rep_left
-				value = 1
 			}
 			clr_country_flag = BLK_war_rep_going
 		}
@@ -404,8 +395,6 @@ BLK_belkan_war_category = {
 			set_country_flag = BLK_war_rep_going
 		}
 		remove_effect = {
-			custom_effect_tooltip = BLK_war_rep_tt
-			BLK_war_eco_crisis_down = yes
 			ROOT = {
 				puppet = GEB
 				transfer_state = 256
@@ -425,14 +414,6 @@ BLK_belkan_war_category = {
 			add_days_mission_timeout = {
 				mission = BLK_belkan_war_collapse
 				days = 30
-			}
-			add_to_variable = {
-				var = BLK_war_rep_taken
-				value = 1
-			}
-			add_to_variable = {
-				var = BLK_war_rep_left
-				value = 1
 			}
 			clr_country_flag = BLK_war_rep_going
 		}
@@ -465,8 +446,6 @@ BLK_belkan_war_category = {
 			set_country_flag = BLK_war_rep_going
 		}
 		remove_effect = {
-			custom_effect_tooltip = BLK_war_rep_tt
-			BLK_war_eco_crisis_down = yes
 			ROOT = {
 				puppet = REC
 				transfer_state = 293
@@ -488,71 +467,7 @@ BLK_belkan_war_category = {
 				mission = BLK_belkan_war_collapse
 				days = 30
 			}
-			add_to_variable = {
-				var = BLK_war_rep_taken
-				value = 1
-			}
-			add_to_variable = {
-				var = BLK_war_rep_left
-				value = 1
-			}
 			clr_country_flag = BLK_war_rep_going
-		}
-	}
-	BLK_war_rep_industry = {
-		icon = GFX_decision_generic_industry
-		allowed = {
-		}
-		available = {
-			OR = {
-				has_idea = BLK_eco_crisis_7
-				has_idea = BLK_eco_crisis_8 
-				has_idea = BLK_eco_crisis_9
-				has_idea = BLK_eco_crisis_10
-			}
-			custom_trigger_tooltip = {
-				tooltip = BLK_war_rep_left_tt
-				check_variable = { BLK_war_rep_left > 0 }
-			}
-		}
-		visible = {
-			has_completed_focus = BLK_reparations
-		}
-		#cost = 100
-		days_remove = 7
-		ai_will_do = {
-			base = 20
-		}
-		remove_effect = {
-			BLK_war_eco_crisis_down = yes
-			subtract_from_variable = {
-				var = BLK_war_rep_left
-				value = -1
-			}
-		}
-	}
-	BLK_war_rep_army = {
-		icon = GFX_decision_generic_industry
-		allowed = {
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = BLK_war_rep_taken_tt
-				check_variable = { BLK_war_rep_taken = 3 }
-			}
-		}
-		visible = {
-			has_completed_focus = BLK_reparations
-		}
-		fire_only_once = yes
-		#cost = 100
-		days_remove = 7
-		ai_will_do = {
-			base = 20
-		}
-		remove_effect = {
-			custom_effect_tooltip = BLK_reparations_army_tt
-			BLK_war_army_crisis_down = yes
 		}
 	}
 	##########
@@ -674,6 +589,70 @@ BLK_special_eco_dec_DLP = {
 			BLK_war_army_crisis_up = yes
 		}
 	}
+	BLK_war_rep_industry = {
+		icon = GFX_decision_generic_industry
+		allowed = {
+		}
+		available = {
+			OR = {
+				AND = {
+					GEB = { is_puppet_of = ROOT }
+					REC = { is_puppet_of = ROOT }					
+				}
+				AND = {
+					FAT = { is_puppet_of = ROOT }
+				}
+			}
+			OR = {
+				has_idea = BLK_eco_crisis_7
+				has_idea = BLK_eco_crisis_8 
+				has_idea = BLK_eco_crisis_9
+				has_idea = BLK_eco_crisis_10
+			}
+		}
+		visible = {
+			has_completed_focus = BLK_reparations
+		}
+		fire_only_once = yes
+		#cost = 100
+		days_remove = 7
+		ai_will_do = {
+			base = 20
+		}
+		remove_effect = {
+			custom_effect_tooltip = BLK_war_rep_industry_tt
+			BLK_war_eco_crisis_down = yes
+		}
+	}
+	BLK_war_rep_army = {
+		icon = GFX_decision_generic_industry
+		allowed = {
+		}
+		available = {
+			FAT = { is_puppet_of = ROOT }
+			GEB = { is_puppet_of = ROOT }
+			REC = { is_puppet_of = ROOT }				
+			OR = {
+				has_idea = BLK_eco_crisis_army_1
+				has_idea = BLK_eco_crisis_army_2
+				has_idea = BLK_eco_crisis_army_3
+				has_idea = BLK_eco_crisis_army_4
+			}
+		}
+		visible = {
+			has_completed_focus = BLK_reparations
+		}
+		fire_only_once = yes
+		#cost = 100
+		days_remove = 7
+		ai_will_do = {
+			base = 20
+		}
+		remove_effect = {
+			custom_effect_tooltip = BLK_war_rep_army_tt
+			BLK_war_army_crisis_down = yes
+		}
+	}
 }
 
 BLK_resurces_DLP = {
@@ -710,7 +689,7 @@ BLK_resurces_DLP = {
 			228 = {
 				add_resource = {
 					type = oil
-					amount = 10
+					amount = 5
 				}
 				add_building_construction = {
 					type = infrastructure

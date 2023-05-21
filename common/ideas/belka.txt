@@ -991,11 +991,11 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_org_factor = -0.20
-				army_attack_factor = -0.20
+				army_org_factor = -0.2
+				army_attack_factor = -0.2
 				army_armor_attack_factor = -0.2
-				army_defence_factor = -0.20
-				army_morale_factor = -0.20
+				army_defence_factor = -0.2
+				army_morale_factor = -0.2
 			}
 		}
 		BLK_eco_crisis_army_3 = {
@@ -1059,7 +1059,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				industry_free_repair_factor = 0.5
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.1
 			}
 		}
 		
@@ -1149,6 +1149,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_supply_node_factor = 5
+				consumer_goods_factor = -0.50
 			}
 		}
 		

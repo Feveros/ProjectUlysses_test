@@ -488,6 +488,11 @@
  BLK_war_rep_industry_tt:0 "Completing this decisions will §Glower our industry debuff§!."
  BLK_war_rep_army_tt:0 "Completing this decisions will §Glower our army debuff§!."
  BLK_use_locals_tt:0 "Completing this focus will §Yunlock decisions§! to §Rsecure retaken land§! and §Grise morale and support for war effort§!."
+ 
+ BLK_belkan_war_controls_heart_lands_tt:0 "We control all core home states."
+ BLK_belkan_war_controls_north_tt:0 "We control all lost territory in the north-east and we set up puppet governments in FATO, Gebet and Recta."
+ BLK_belkan_war_controls_ustio_tt:0 "We capitulated and control entire Ustio territory."
+ BLK_belkan_war_controls_south_tt:0 "We control all lost territory to Osea and Sapin."
 
  ### DECISIONS ###
 

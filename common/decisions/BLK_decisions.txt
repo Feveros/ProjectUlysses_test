@@ -231,28 +231,10 @@ BLK_belkan_war_category = {
 		allowed = {
 		}
 		available = {
-			###BLK = { has_war_with = OSE }
-			UST = {
-				has_capitulated = yes
-			}
-			FAT = { is_puppet_of = ROOT }
-			GEB = { is_puppet_of = ROOT }
-			REC = { is_puppet_of = ROOT }
-			BLK = {
-				AND = {
-					controls_state = 309
-					controls_state = 339
-					controls_state = 335
-					controls_state = 378
-					controls_state = 358
-					controls_state = 340
-					controls_state = 604
-					controls_state = 269
-					controls_state = 296
-					controls_state = 211
-					controls_state = 357
-				}
-			}
+			BLK_belkan_war_controls_heart_lands = yes
+			BLK_belkan_war_controls_north = yes
+			BLK_belkan_war_controls_ustio = yes
+			BLK_belkan_war_controls_south = yes
 		}
 		visible = {
 			has_global_flag = belkan_war_is_happening

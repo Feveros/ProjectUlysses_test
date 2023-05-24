@@ -53,9 +53,9 @@ armor_generic = {
 			}
 
 			regiments = {
-				light_armor = 4
+				light_armor = 5
 				motorized = 4
-				mot_artillery_brigade = 2
+				mot_artillery_brigade = 1
 			}
 		}
 
@@ -136,7 +136,7 @@ armor_generic = {
 			}
 		}
 
-		target_width = 29.0
+		target_width = 28.0
 		width_weight = 3
 		column_swap_factor = 0.01
 		reinforce_prio = 1
@@ -252,7 +252,7 @@ armor_generic = {
 			}
 		}
 
-		target_width = 29
+		target_width = 28
 		width_weight = 3
 		column_swap_factor = 0.01
 		reinforce_prio = 1
@@ -341,7 +341,7 @@ garrison_generic = {
 		# workaround for a PDX bug https://forum.paradoxplaza.com/forum/threads/hoi-4-incremental-division-upgrade-does-not-work-in-most-cases.1414193/
 		can_upgrade_in_field = { always = no }
 
-		target_width = 8
+		target_width = 9
 		width_weight = 1.0
 		column_swap_factor = 0.01
 
@@ -350,7 +350,7 @@ garrison_generic = {
 			match_value = 8000.0
 
 			regiments = {
-				infantry = 4
+				infantry = 3
 			}
 		}
 
@@ -518,7 +518,7 @@ infantry_generic = {
 			}
 		}
 
-		target_width = 15
+		target_width = 19
 		width_weight = 1
 		column_swap_factor = 0.5
 		reinforce_prio = 1
@@ -536,7 +536,7 @@ infantry_generic = {
 			}
 			
 			regiments = {
-				infantry = 7
+				infantry = 6
 				artillery_brigade = 1
 			}
 		}
@@ -589,7 +589,7 @@ mountaineers_generic = {
 			}
 		}
 
-		target_width = 15
+		target_width = 21
 		width_weight = 3
 		column_swap_factor = 0.01
 
@@ -610,7 +610,6 @@ mountaineers_generic = {
 
 			regiments = {
 				mountaineers = 7
-				artillery_brigade = 1
 			}
 		}
 
@@ -697,7 +696,6 @@ marines_generic = {
 
 			regiments = {
 				marine = 7
-				artillery_brigade = 1
 			}
 		}
 
@@ -739,7 +737,7 @@ marines_generic = {
 			}
 		}
 	
-		target_width = 30
+		target_width = 27.0
 		width_weight = 1.0
 		column_swap_factor = 0.01
 
@@ -758,7 +756,6 @@ marines_generic = {
 			regiments = {
 				amphibious_armor = 6
 				amphibious_mechanized = 5
-				mot_artillery_brigade = 2
 			}
 		}
 
@@ -810,7 +807,7 @@ paratrooper_generic = {
 			}
 		}
 
-		target_width = 15
+		target_width = 21
 		width_weight = 3.0
 		column_swap_factor = 0.01
 
@@ -831,7 +828,6 @@ paratrooper_generic = {
 
 			regiments = {
 				paratrooper= 7
-				artillery_brigade = 1
 			}
 		}
 

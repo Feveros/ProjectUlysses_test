@@ -314,7 +314,7 @@ BLK_belkan_war_category = {
 			NOT = { has_country_flag = BLK_war_rep_going }
 		}
 		visible = {
-			#has_completed_focus = BLK_reparations
+			has_completed_focus = BLK_reparations
 		}
 		fire_only_once = yes
 		#cost = 10

@@ -314,7 +314,7 @@ BLK_belkan_war_category = {
 			NOT = { has_country_flag = BLK_war_rep_going }
 		}
 		visible = {
-			has_completed_focus = BLK_reparations
+			#has_completed_focus = BLK_reparations
 		}
 		fire_only_once = yes
 		#cost = 10
@@ -333,6 +333,18 @@ BLK_belkan_war_category = {
 			ROOT = {
 				puppet = FAT
 				transfer_state = 220
+			}
+			FAT = {
+				give_resource_rights = {
+					receiver = BLK
+					state = 75
+					resources = { oil }
+				}
+				give_resource_rights = {
+					receiver = BLK
+					state = 334
+					resources = { oil }
+				}
 			}
 			hidden_effect = {
 				every_country = {

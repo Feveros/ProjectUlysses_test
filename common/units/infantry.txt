@@ -26,7 +26,7 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 3
+		combat_width = 2
 		
 		#Size Definitions
 		max_strength = 40
@@ -68,7 +68,7 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 3
+		combat_width = 2
 		
 		#Size Definitions
 		max_strength = 40
@@ -143,7 +143,7 @@ sub_units = {
 			category_special_forces
 		}
 		
-		combat_width = 3
+		combat_width = 2
 		
 		#Size Definitions
 		max_strength = 30
@@ -198,7 +198,7 @@ sub_units = {
 			category_special_forces
 		}
 		
-		combat_width = 3
+		combat_width = 2
 		
 		#Size Definitions
 		max_strength = 30
@@ -254,7 +254,7 @@ sub_units = {
 			category_special_forces
 		}
 		
-		combat_width = 3
+		combat_width = 2
 		
 		#Size Definitions
 		max_strength = 35
@@ -296,7 +296,7 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 3
+		combat_width = 2
 		
 		#Size Definitions
 		max_strength = 40
@@ -366,7 +366,7 @@ sub_units = {
 			category_army
 		}
 
-		combat_width = 3
+		combat_width = 2
 
 		#Offensive Abilities
 		soft_attack = 0.1
@@ -490,7 +490,7 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 3
+		combat_width = 2
 		
 		#Size Definitions
 		max_strength = 25 #25 (HP)

@@ -892,6 +892,8 @@ country_event = {
 							elections_allowed = no
 						}
 					}
+					remove_resource_rights = 75
+					remove_resource_rights = 334
 				}
 				if = {
 					limit = { GEB = { is_subject_of = BLK } }

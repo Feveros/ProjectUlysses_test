@@ -6,6 +6,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8188;2734;sea;10937;-1;-1;-1;-1;;Great Lakes
 8259;8210;sea;10937;-1;-1;-1;-1;;Great Lakes
 5609;4369;sea;10439;-1;-1;-1;-1;;Great Lakes
+4385;5818;sea;10136;-1;-1;-1;-1;;Belkan Island
 11196;10937;;-1;-1;-1;-1;-1;FUTURO_CANAL;Futuro Canal
 10249;10424;;-1;-1;-1;-1;-1;EAGLIN_STRAIT;Eaglin Strait
 8136;8195;sea;10249;-1;-1;-1;-1;;Eaglin Strait

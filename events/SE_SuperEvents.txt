@@ -25,7 +25,7 @@ country_event = {
 		set_global_flag = SE_superevents_activate
 		set_global_flag = SE_belkan_war
 		#cue funni music
-		sound_effect = superevents_belkan_war
+		play_song = belkan_war
 	}
 
 	hidden = yes
@@ -53,7 +53,7 @@ country_event = {
 		set_global_flag = SE_superevents_activate
 		set_global_flag = SE_belkavic
 		#cue funni music
-		sound_effect = superevents_belkavic
+		play_song  = belkavic
 	}
 
 	hidden = yes
@@ -62,6 +62,34 @@ country_event = {
 
 	trigger = {
 		has_global_flag = belka_won_belkan_war
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+	}
+	
+	option = {
+		name = superevents.0.a
+	}
+}
+
+country_event = {
+	id = superevents.102
+	title = superevents.0.t
+	desc = superevents.0.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_belkanukes
+		#cue funni music
+		play_song  = belkanukes
+	}
+
+	hidden = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = belka_dropped_nukes
 		NOT = {
 			has_global_flag = SE_superevents_activate
 		}

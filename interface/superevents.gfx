@@ -5,6 +5,10 @@ spriteTypes = {
 		textureFile = "/gfx/superevents_gui/supereventsbg.dds"
 	}
 	spriteType = {
+		name = "GFX_supereventsbackground"
+		textureFile = "/gfx/superevents_gui/supereventsbackground.dds"
+	}
+	spriteType = {
 		name = "GFX_supereventsbg_test"
 		textureFile = "/gfx/superevents_gui/supereventsbg_test.dds"
 	}
@@ -25,5 +29,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_superevents_belkavic"
 		textureFile = "/gfx/superevents_pictures/superevents_belkavic.dds"
+	}
+	spriteType = {
+		name = "GFX_superevents_belkanukes"
+		textureFile = "/gfx/superevents_pictures/superevents_belkanukes.dds"
 	}
 }

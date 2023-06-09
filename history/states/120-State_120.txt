@@ -7,7 +7,7 @@ state={
 		aluminium=0.000
 		rubber=0.000
 		tungsten=0.000
-		steel=0.000
+		steel=15
 		chromium=0.000
 	}
 
@@ -15,15 +15,17 @@ state={
 		owner = AUR
 		add_core_of = AUR
 		buildings = {
-			infrastructure = 0
+			infrastructure = 5
 			arms_factory = 0
-			industrial_complex = 0
-			air_base = 0
+			industrial_complex = 5
+			dockyard = 5
+			air_base = 8
 			3786 = {
-				naval_base = 1
+				naval_base = 9
 			}
 
 		}
+		victory_points = { 3786 90 }
 
 	}
 
@@ -32,6 +34,6 @@ state={
 	}
 	manpower=8126740
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=megalopolis
 	local_supplies=0.000
 }

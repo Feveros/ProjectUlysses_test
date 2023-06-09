@@ -15,20 +15,29 @@ state={
 		owner = AUR
 		add_core_of = AUR
 		buildings = {
-			infrastructure = 0
+			infrastructure = 2
 			arms_factory = 0
-			industrial_complex = 0
-			air_base = 0
+			industrial_complex = 3
+			dockyard = 1
+			air_base = 6
+			1184 = {
+				naval_base = 2
+			}
+			9756 = {
+				naval_base = 4
+			}
 
 		}
+		victory_points = { 1184 30 }
+		victory_points = { 1491 20 }
 
 	}
 
 	provinces={
 		2 85 1184 1491 2061 2118 2133 2856 3717 4653 5422 5930 6002 6077 9730 9734 9740 9748 9749 9752 9754 9756 9758 9761 9762 9764 9766 9768 
 	}
-	manpower=3400379
+	manpower=4400379
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_town
 	local_supplies=0.000
 }

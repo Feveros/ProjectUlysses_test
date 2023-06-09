@@ -22,4 +22,10 @@ defined_text = {
 		}
 		localization_key = SE_belkavic_body
 	}
+text = {
+		trigger = {
+			has_global_flag = SE_belkanukes
+		}
+		localization_key = SE_belkanukes_body
+	}
 }

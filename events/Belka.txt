@@ -891,6 +891,12 @@ country_event = {
 							ruling_party = neutrality 
 							elections_allowed = no
 						}
+						set_popularities = {
+							neutrality = 50
+							fascism = 0
+							democratic = 45
+							communism = 5
+						}
 					}
 					remove_resource_rights = 75
 					remove_resource_rights = 334
@@ -898,20 +904,32 @@ country_event = {
 				if = {
 					limit = { GEB = { is_subject_of = BLK } }
 					end_puppet = GEB
-					FAT = {
+					GEB = {
 						set_politics = {
 							ruling_party = democratic 
 							elections_allowed = no
+						}
+						set_popularities = {
+							neutrality = 15
+							fascism = 0
+							democratic = 83
+							communism = 2
 						}
 					}
 				}
 				if = {
 					limit = { REC = { is_subject_of = BLK } }
 					end_puppet = REC
-					FAT = {
+					REC = {
 						set_politics = {
 							ruling_party = communism 
 							elections_allowed = no
+						}
+						set_popularities = {
+							neutrality = 5
+							fascism = 0
+							democratic = 5
+							communism = 90
 						}
 					}
 				}

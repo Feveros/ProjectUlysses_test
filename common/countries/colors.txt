@@ -239,8 +239,8 @@ CHO = {
 }
 
 SEA = {
-	color = rgb { 248 252 242 }
-	color_ui = rgb { 248 252 242 }
+	color = rgb { 184 0 0 }
+	color_ui = rgb { 184 0 0 }
 }
 
 RJR = {

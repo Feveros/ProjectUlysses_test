@@ -1,6 +1,6 @@
 version="0.1"
 name="Project Ulysses"
-picture="thumbnail.png"
+picture="Thumbnail.png"
 tags={
 	"Alternative History"
 	"Map"

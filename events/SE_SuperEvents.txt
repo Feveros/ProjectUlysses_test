@@ -73,7 +73,7 @@ country_event = {
 }
 
 country_event = {
-	id = superevents.102
+	id = superevents.103
 	title = superevents.0.t
 	desc = superevents.0.d
 	

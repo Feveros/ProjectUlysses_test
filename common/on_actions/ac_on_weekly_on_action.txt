@@ -11,7 +11,30 @@ on_actions = {
 					}
 					country_event = { id = world_event.1 }
 				}
-				
+			}
+			if = {
+				every_country = {
+					limit = {
+						has_war = yes
+						is_ai = yes
+					}
+					set_technology = {
+						popup = no
+						ai_war_uber_buff = 1
+					}
+				}
+			}
+			if = {
+				every_country = {
+					limit = {
+						has_war = no
+						has_tech = ai_war_uber_buff
+					}
+					set_technology = {
+						popup = no
+						ai_war_uber_buff = 0
+					}
+				}
 			}
 		}
 	}

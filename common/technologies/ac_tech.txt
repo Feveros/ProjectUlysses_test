@@ -6,4 +6,12 @@ technologies = {
 		}
 		nuclear_production = 1
 	}
+	ai_war_uber_buff = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		casualty_trickleback = 0.5
+		industrial_capacity_factory = 0.25
+	}
 }

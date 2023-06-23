@@ -37,7 +37,7 @@ scripted_gui = {
 					activate_mission = BLK_excalibur_cooling_after_bombing
 					add_to_variable = {
 						var = BLK_excalibur_destruction_meter
-						value = 1
+						value = 2
 					}
 				}
 			}

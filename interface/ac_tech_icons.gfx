@@ -1,0 +1,49 @@
+spriteTypes = {
+################################################################################
+	spriteType = {
+		name = GFX_efficiency_cap_tech_1_medium
+		texturefile = gfx/interface/technologies/efficiency_cap_1.dds
+	}
+	spriteType = {
+		name = GFX_efficiency_cap_tech_2_medium
+		texturefile = gfx/interface/technologies/efficiency_cap_2.dds
+	}
+	#spriteType = {
+	#	name = GFX_efficiency_cap_tech_3_medium
+	#	texturefile = gfx/interface/technologies/filename.dds
+	#}
+	#spriteType = {
+	#	name = GFX_efficiency_cap_tech_4_medium
+	#	texturefile = gfx/interface/technologies/filename.dds
+	#}
+###############################################################################
+	spriteType = {
+		name = GFX_factory_output_tech_1_medium
+		texturefile = gfx/interface/technologies/factory_output_1.dds
+	}
+	spriteType = {
+		name = GFX_factory_output_tech_2_medium
+		texturefile = gfx/interface/technologies/factory_output_2.dds
+	}
+	spriteType = {
+		name = GFX_factory_output_tech_3_medium
+		texturefile = gfx/interface/technologies/factory_output_3.dds
+	}
+	spriteType = {
+		name = GFX_factory_output_tech_4_medium
+		texturefile = gfx/interface/technologies/factory_output_4.dds
+	}
+##################################################################################
+	spriteType = {
+		name = GFX_state_slots_1_medium
+		texturefile = gfx/interface/technologies/state_slots_1.dds
+	}
+	spriteType = {
+		name = GFX_state_slots_2_medium
+		texturefile = gfx/interface/technologies/state_slots_2.dds
+	}
+	spriteType = {
+		name = GFX_state_slots_3_medium
+		texturefile = gfx/interface/technologies/state_slots_3.dds
+	}
+}

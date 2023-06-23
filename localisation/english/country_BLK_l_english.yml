@@ -19,7 +19,7 @@
  BLK_south_belka_munitions_air_designer_trait:0 "Belkan Aircraft Designer"
  
  BLK_eco_crisis:0 "Belkan Economic Crisis"
- BLK_eco_crisis_desc:0 "Our economy is in utter shambles. Unemployment is at record heights, banks are defaulting, companies and individuals are filing for bankruptcy daily, and the value of our money is in freefall. Every industrial field has been grinding to a halt, and if nothing is done it's likely our entire nation will descend into chaos.\n\nTo make matters worse, this has given rise to §RCommunist§! and §RSyndicalist§! groups, who are fully capitalizing off these failures."
+ BLK_eco_crisis_desc:0 "Our economy is in utter shambles. Unemployment is at record heights, banks are defaulting, companies and individuals are filing for bankruptcy daily, and the value of our currency is in freefall. Every industrial field has been grinding to a halt, and if nothing is done it's likely our entire nation will descend into chaos.\n\nTo make matters worse, this has given rise to §RCommunist§! and §RSyndicalist§! groups, who are fully capitalizing off these failures."
  BLK_eco_crisis_2:0 "Belkan Economic Crisis"
  BLK_eco_crisis_2_desc:0 "Through some desperate measures, we've managed to mitigate the collapse of our economy. Nothing much has changed, but the worsening is slowing down. We must contine though, else these efforts will be for nothing."
  BLK_eco_crisis_3:0 "Belkan Economic Crisis"
@@ -29,9 +29,9 @@
  BLK_eco_crisis_5:0 "Belkan Economic Crisis"
  BLK_eco_crisis_5_desc:0 "We have almost put the crisis behind us. Life is returning to normal, and our last relief programs are working hard to restore our citizens' wellbeing. The long road is finally coming to an end."
  BLK_overspending_for_military:0 "Overspending On Military"
- BLK_overspending_for_military_desc:0 "In attempts to not fall behind the militaries of Osea and our other neighbors, we have poured an overly large amount of our budget into the military. Not only has this crippled our economy and gives the military sizable influence over the entirety of our country, but has also turned our military into a logistical nightmare."
+ BLK_overspending_for_military_desc:0 "In attempt to not fall behind the militaries of Osea and our other neighbors, we have poured an overly large amount of our budget into the military. Not only has this crippled our economy and gives the military sizable influence over the entirety of our country, but has also turned our military into a logistical nightmare."
  BLK_chaos_in_the_assembly:0 "Chaos In The Assembly"
- BLK_chaos_in_the_assembly_desc:0 "The National Assembly, our parliament, has been in a state of near-gridlock ever since our last election. The §Bconservative BNCP§!, §Cliberal Wege§!, and §Onationalist DLP§! have failed to pass almost any resolutions, and as a result both our population and government are extremely restless and grow more polarized by the day.\n\nThis chaos has caused a number of politicians from all parties to support a return to an §Gabsolute monarchy§!, hoping it would return stability and order to the country."
+ BLK_chaos_in_the_assembly_desc:0 "The National Assembly, our parliament, has been in a state of near-gridlock ever since our last election. The §Bconservative BNCP§!, §Cliberal Wege§!, and §Onationalist DLP§! have failed to pass almost any resolution, and as a result both our population and government are extremely restless and grow more polarized by the day.\n\nThis chaos has caused a number of politicians from all parties to support a return to an §Gabsolute monarchy§!, hoping it would return stability and order to the country."
  BLK_research_department:0 "Special Military Research Department"
  BLK_research_department_desc:0 "The Belkan Special Military Research Department serves as the link between our scientific, military, and political organizations, and is at the forefront of military technology, both in Belka and the world."
  BLK_echos_of_history:0 "Echoes Of History"
@@ -50,6 +50,47 @@
  BLK_no_money_idea_desc:0 "Belka's government has gone into full bankruptcy, unable to support itself or get any kind of bailout, causing a complete collapse in the chain of command. No one knows where their next paycheck, if any, will come from."
  BLK_free_trade_idea:0 "State Controlled Trade"
  BLK_free_trade_idea_desc:0 "#Placeholder#"
+ 
+ BLK_cult_of_belka_idea:0 "Cult Of Belka"
+ BLK_cult_of_belka_idea_desc:0 "#Placeholder#"
+ BLK_army_with_state_idea:0 "An Army With A State"
+ BLK_army_with_state_idea_desc:0 "Belka's army has taken full control over all aspects of the government, and thus is now the state."
+ BLK_martial_law_idea:0 "Country Wide Martial Law"
+ BLK_martial_law_idea_desc:0 "Belka's military has taken control of the civillian government and law enforcement."
+ BLK_overspending_for_military_2:0 "Overspending On Military"
+ BLK_overspending_for_military_2_desc:0 "#Placeholder#"
+ BLK_crush_unemploy_idea:0 "New Anti Unemployment Laws"
+ BLK_crush_unemploy_idea_desc:0 "#Placeholder#"
+ BLK_mili_civ_infr_idea:0 "Mass Industrial Employment"
+ BLK_mili_civ_infr_idea_desc:0 "#Placeholder#"
+ BLK_expand_supply_idea:0 "Backline Supply Core"
+ BLK_expand_supply_idea_desc:0 "#Placeholder#"
+ BLK_woman_in_industry_idea:0 "Woman In The Industry"
+ BLK_woman_in_industry_idea_desc:0 "#Placeholder#"
+ BLK_woman_in_army_idea:0 "Woman In The Army"
+ BLK_woman_in_army_idea_desc:0 "#Placeholder#"
+ BLK_new_blood_1_idea:0 "New Blood In High Command"
+ BLK_new_blood_1_idea_desc:0 "#Placeholder#"
+ BLK_new_blood_2_idea:0 "Loyalty Above All"
+ BLK_new_blood_2_idea_desc:0 "#Placeholder#"
+ BLK_new_blood_3_idea:0 "Total Control Over Army"
+ BLK_new_blood_3_idea_desc:0 "#Placeholder#"
+ BLK_army_with_state_quantity_idea:0 "An Army With A State"
+ BLK_army_with_state_quantity_idea_desc:0 "#Placeholder#"
+ BLK_army_with_state_quantity_penal_idea:0 "An Army With A State"
+ BLK_army_with_state_quantity_penal_idea_desc:0 "#Placeholder#"
+ BLK_army_with_state_quality_idea:0 "An Army With A State"
+ BLK_army_with_state_quality_idea_desc:0 "#Placeholder#"
+ BLK_modern_army_idea:0 "Modern Panzer Amry"
+ BLK_modern_army_idea_desc:0 "#Placeholder#"
+ BLK_infantry_army_idea:0 "Core Of Every Army"
+ BLK_infantry_army_idea_desc:0 "#Placeholder#"
+ BLK_scrap_idea:0 "Scrap The Graveyards"
+ BLK_scrap_idea:0 "#Placeholder#"
+ BLK_master_of_the_craft_idea:0 "Masters Of The Craft"
+ BLK_master_of_the_craft_idea:0 "#Placeholder#"
+ BLK_build_up_navy_idea:0 "Grand Naval Rearmament"
+ BLK_build_up_navy_idea_desc:0 "#Placeholder#"
  
  BLK_eco_crisis_5_1:0 "Belkan Economic Crisis"
  BLK_eco_crisis_5_1_desc:0 "#Placeholder#"
@@ -90,23 +131,23 @@
  ###
  
  BLK_enemy_excalibur_fire_idea:0 "Under Fire From Excalibur"
- LK_enemy_excalibur_fire_idea_desc:0 "#Placeholder#"
+ LK_enemy_excalibur_fire_idea_desc:0 "Our forces are being constantly suppressed by fire from Belka's weapon known as Excalibur. Further advancement will be difficult"
  BLK_own_excalibur_fire_idea:0 "Excalibur Fire Support"
- BLK_own_excalibur_fire_idea_desc:0 "#Placeholder#"
+ BLK_own_excalibur_fire_idea_desc:0 "Enemy air operations are severly limited by Excalibur's laser. Push forward!"
  
  ### FOCUSES ###
  BLK_the_crisis_continues:0 "The Crisis Continues"
  BLK_the_crisis_continues_desc:0 "Our nation has been in a severe crisis for several years now, with no end in sight. The longer this drags on, the less likely we will be able to recover. It's time to look at this situation for what it is, and analyze the finer details of it."
  BLK_country_wide_protests:0 "Country Wide Protests"
- BLK_country_wide_protests_desc:0 "The complete collapse of living standards in our country has skyrocketed discontent with our administration, and hundreds of people across the nation are protesting en mass. If we are not careful, we could make things much worse. We will investigate these protests and see how we can alleviate, or at least placate them."
+ BLK_country_wide_protests_desc:0 "The complete collapse of living standards in our country has skyrocketed discontent with our administration, and hundreds of people across the nation are protesting en masse. If we are not careful, we could make things much worse. We will investigate these protests and see how we can alleviate, or at least placate, them."
  BLK_economy_in_pieces:0 "Economy Collapsing"
- BLK_economy_in_pieces_desc:0 "It goes without saying that all this trouble originated from the economic stagnation, then recession, which itself originated from poor management of our funds. We need to get perspective on just how bad the damage is, and what methods we can take to fix it."
+ BLK_economy_in_pieces_desc:0 "It goes without saying that all this trouble originated from the economic stagnation, then recession, which itself originated from poor management of our funds. We need to get a perspective on just how bad the damage is, and what methods we can take to fix it."
  BLK_no_work_place:0 "No Work For People"
  BLK_no_work_place_desc:0 "The closing of hundreds of both local and national businesses has laid off millions of people, which is a self-replicating issue in itself as well as causing many more issues. We need to study the scale of this unemployment and get stats on how much we have to work with, and how much time we have left before it becomes unrecoverable."
  BLK_no_money:0 "No Money"
  BLK_no_money_desc:0 "We have hit rock bottom. Our attempted programs to get a scale of the crisis have burned through the last of our resources, and we are now powerless to do anything. We are now forced to resort to desperate measures to keep our entire nation from falling apart."
  BLK_sell_the_land:0 "Sell Off The Belkan Land"
- BLK_sell_the_land_desc:0 "We may have found a way to buy time. Our rivals, the Osean Federation, have offered to purchase a portion of our western territories for a sizable sum of money, allowing us to kickstart some recovery programs. It pains us to take such a humiliating deal with our enemy, but we have no other option."
+ BLK_sell_the_land_desc:0 "We may have found a way to buy time. Our rival, the Osean Federation, has offered to purchase a portion of our western territories for a sizable sum of money, allowing us to kickstart some recovery programs. It pains us to take such a humiliating deal with our enemy, but we have no other option."
  BLK_osean_prop:0 "Great Lakes Resource Development Company"
  BLK_osean_prop_desc:0 "The Oseans have expressed interest in a joint resource excavation company focused around the Great Lakes region, which has shown great promise according to them. Their sudden cooperation is somewhat suspicious, but this could be key to restarting our economy."
  BLK_wait_for_profit:0 "Await The Results"
@@ -123,7 +164,7 @@
  BLK_to_save_what_we_can:0 "To Save What We Can"
  BLK_to_save_what_we_can_desc:0 "Desperate times call for desperate measures. The previous parties have left Belka in such a state of ruin that we will need to take drastic action to save the nation. However, this will show our people that we will not idly sit by and watch our nation decay, which if they are smart, they will see as worth the cost."
  BLK_downsizing_focus:0 "Downsizing And Downscaling"
- BLK_downsizing_focus_desc:0 "Despite the very obvious downsides, the previous governments continued to spend large amount of maintaining our oversized military. While a powerful military is important, we know that to survive we must spend our resources on developing a strong economic foundation on which to sustain that military."
+ BLK_downsizing_focus_desc:0 "Despite the very obvious downsides, the previous governments continued to spend large amount of money and resources to maintain our oversized military. While a powerful military is important, we know that to survive we must spend our resources on developing a strong economic foundation on which to sustain that military."
  BLK_revitalise_civ_eco:0 "Demobilisation And Revitalisation"
  BLK_revitalise_civ_eco_desc:0 "Rather than build completely new factories, tools, and machines for our industry, we have plenty of surplus equipment from our recent downsizing of the military. We can repurpose these into the civilian market to cut some costs of launching and maintaining new programs, allowing us to widen our options of industrial programs."
  BLK_new_workplaces:0 "Public Work Projects"
@@ -133,21 +174,21 @@
  BLK_seeds_of_industry:0 "Manipulation, Fabrication And Other Market Strategies"
  BLK_seeds_of_industry_desc:0 "The economic market is a ruthless battleground, and if we wish to harness it to our advantage we must be willing to use any means necessary to control it, even means which might not be well liked. It's all for the greater good, anyway."
  BLK_dev_south_belka:0 "Develop South Belka"
- BLK_dev_south_belka_desc:0 "South Belka is a region of our nation which has not had significant development, however there is plenty of space for new buildings there. We will develop this land specifically, as it will provide the greatest amount of possibilities for further development."
+ BLK_dev_south_belka_desc:0 "South Belka is a region of our nation which did not have significant development, however there is plenty of space for new buildings there. We will develop this land specifically, as it will provide the greatest amount of possibilities for further development."
  BLK_dev_heart_of_the_nation:0 "Develop Heart Of The Nation"
- BLK_dev_heart_of_the_nation_desc:0 "The north of Belka is well defended and central to our nation, as well as we can build off of existing infrastructure, we will continue developments here as it will give us the quickest return on investment as well as serve our nation for a long time to come."
+ BLK_dev_heart_of_the_nation_desc:0 "The north of Belka is well defended and central to our nation. We can build off existing infrastructure and continue developments here as it will give us a quick return on investment in addition to serving our nation for years to come."
  BLK_end_of_the_chain:0 "Domestic Stability"
  BLK_end_of_the_chain_desc:0 "Through some quick thinking, we've managed to stem the tide of the crisis and bring some badly needed relief to our people. From here, we can start planning our next moves to put this nightmare behind us."
  BLK_fuel_reconstruction:0 "To Fuel Our Reconstruction"
  BLK_fuel_reconstruction_desc:0 "Our own ability to recover has been crippled. If we are to survive this, as painful as it is, we will need to get help from outside nations. If we can scrounge up whatever resources we have and set a trading presence again, we will be able to attract international businesses to our borders once again."
  BLK_resources:0 "Develop Resources Excavation"
- BLK_resources_desc:0 "We've set up a nice foothold to base our international platform on, but this will not suffice. We must contine excavation efforts to increase the amount of resources we can export to other nations and create further demand."
+ BLK_resources_desc:0 "We've set up a nice foothold to base our international platform on, but this will not suffice. We must continue excavation efforts to increase the amount of resources we can export to other nations and create further demand."
  BLK_fuel_nationalisation:0 "Nationalise Remains Of "Crescens OIL""
  BLK_fuel_nationalisation_desc:0 "Crescens OIL was an offshore oil excavation company based off our northern coast which provided the majority of the oil to Belka. After being hit hard by the economic crisis and now with Crescens being owned by Osea, not much remains of this company. If we nationalize it, we can save what's left of it, as well as be able to extract further oil with no strings attached."
  BLK_tools_and_machinery:0 "Buy New Tools And Machinery"
  BLK_tools_and_machinery_desc:0 "Belka's industrial foundation hasn't been updated or even really analyzed since the beginning of the crisis, and as a result our tools are likely one or more generations out of date. If we empower our factories through modernizing their tools, we will see efficiency rise in factories all across the nation, not limited to a specific area, group, or company."
  BLK_focus_our_eco:0 "Focus Our Economic Efforts"
- BLK_focus_our_eco_desc:0 "Our economic policies and style of management are very old and suited to a much earlier era, and likely is not nearly as efficient as some of our neighbors. Reshuffling management and reforming laws and quotas to fit this will let our main factories run like a well oiled machine again."
+ BLK_focus_our_eco_desc:0 "Our economic policies and style of management are very old and suited to a much earlier era, and it's likely not nearly as efficient as some of our neighbors. Reshuffling management and reforming laws and quotas to fit this will let our main factories run like a well oiled machine again."
  BLK_expand_rails:0 "Expand National Rail System"
  BLK_expand_rails_desc:0 "Aside from incrasing our production capabilities, we need to make sure that resources and goods can be easily transported throughout our nation. In the old administration, deliveries could be lost or delayed rather easily, however by standardizing all railways and expanding the federal rail system we can coordinate transportation much more efficiently than ever before."
  BLK_start_of_the_chain:0 "Investment Opportunities"
@@ -165,16 +206,16 @@
  BLK_taking_off_the_kid_gloves_desc:0 "Too many politicians are afraid of other nations, and strive to placate them to save their own skin. Not ours. We are not afraid to show the world our strength. They have more reason to fear us than we do to fear them."
  
  BLK_cult_of_belka:0 "The Cult Of Belka"
- BLK_cult_of_belka_desc:0 "What is Belka? A nation, some might say. But no. Nor is it a place, a government, or even a people. Belka is an idea. A concept, which we all must work towards creating. We will spread the word far and wide, that every citizen must do their part to reveal what Belka is in it's truest form."
+ BLK_cult_of_belka_desc:0 "What is Belka? A nation, some might say. But no. Nor is it a place, a government, or even a people. Belka is an idea. A concept, which we all must work towards creating. We will spread the word far and wide, that every citizen must do their part to reveal what Belka is in its truest form."
  BLK_police_state:0 "Enact Martial Law"
- BLK_police_state_desc:0 "Although we have control for now, it is inevitable that misguided people will come to oppose us. Enacting martial law will give us more control over the nation, and will severely stunt oppposition efforts to foil our recovery."
+ BLK_police_state_desc:0 "Although we have control for now, it is inevitable that misguided people will come to oppose us. Enacting martial law will give us more control over the nation, and will severely stunt opposition efforts to foil our recovery."
  BLK_autarky:0 "Autarky Doctrine"
  BLK_autarky_desc:0 "If there is anything that the previous governments' experiences with trading with other nations has proved, is that they cannot be trusted. Why should we give them any resources when we know they will be used against us? From now on, all of Belka's resources belong to Belka, not any other nation."
  BLK_spirit_of_belkan_militarism:0 "An Army With A State"
- BLK_spirit_of_belkan_militarism_desc:0 "Going back all the way to the ancient Belkan Knights, Belka's existence has always been inseperable from the strength of it's military. We must think less of the government as the controller of the military, and more of a guider of the military. Most nations are states with armies, Belka is an army with a state."
+ BLK_spirit_of_belkan_militarism_desc:0 "Going all the way back to the ancient Belkan Knights, Belka's existence has always been inseperable from the strength of its military. We must think less of the government as the controller of the military, but more as a guide for it. Most nations are states with armies, Belka is an army with a state."
  BLK_fortify_the_west:0 "Fortify The East"
  BLK_fortify_the_west_desc:0 "After the conservatives foolishly allowed parts of our nation to secede, they have now taken up arms against us. We will bring these lands back into their rightful place, but first we must prepare. Fortifying our border with them will give us a safe place to strike from."
- BLK_new_blood:0 "New Blood In The Lidership"
+ BLK_new_blood:0 "New Blood In The Leadership"
  BLK_new_blood_desc:0 "After going through this many divisions, our government is rather understaffed. Bringing in new, promising, and loyal people will strengthen our position, and help pave the way to Belka's future."
  BLK_women_in_industry:0 "Women In The Workforce"
  BLK_women_in_industry_desc:0 "It is wrong for us to put women onto the battlefield, endangering them. A much safer option that still allows women to contribute to our nation is by opening up industry positions for them, further bolstering our industrial capabilites."
@@ -185,31 +226,31 @@
  BLK_excalibur:0 "Excalibur Project"
  BLK_excalibur_desc:0 "Excalibur, a long-range anti-missile laser defense system, has been in development for just over a decade now. It was nearly finished when the crisis occured and funding was cut. We will finish this program and protect our skies from missile attacks."
  BLK_form_bs:0 "Form BSF"
- BLK_form_bs_desc:0 "The Belkan Special Forces, elite divisions comprised of the best of the best, have been suggested by many people in the past, however were never successfully created. We will finally create them, serving as both a elite spearhead division for difficult operations, and as a symbol of Belka's might to the world."
+ BLK_form_bs_desc:0 "The Belkan Special Forces, elite divisions comprised of the best of the best, have been suggested by many people in the past, however were never successfully created. We will finally create them, serving as both an elite spearhead division for difficult operations, and as a symbol of Belka's might to the world."
  BLK_avalon:0 "Avalon Dam Project"
- BLK_avalon_desc:0 "Disguised as a simple hydroelectric dam, Avalon Dam is a high-tech testing facility as well as a launch site for ICBMs. Much like our other project, it was near completion when funding was cut. We will finish the facility and use it to continue research and development of cutting-edge military technology, before the lack of care allows someone to discover it's true purpose."
+ BLK_avalon_desc:0 "Disguised as a simple hydroelectric dam, Avalon Dam is a high-tech testing facility as well as a launch site for ICBMs. Much like our other project, it was near completion when funding was cut. We will finish the facility and use it to continue research and development of cutting-edge military technology, before the lack of care allows someone to discover its true purpose."
  BLK_drill_the_army:0 "Loyalty Above All"
  BLK_drill_the_army_desc:0 "After filling our ranks, we need to instill a sense of duty in our new recruits. All soldiers, politicians, workers, everyone, will be taught from a young age that loyalty to Belka is the utmost priority. Nothing else comes close."
  BLK_unemployment:0 "Crush The Unemployment"
- BLK_unemployment_desc:0 "Many people in our nation are adrift, lacking cause or purpose, without any drive. Conscripting anyone without a job into the army will give them a purpose and a sense of duty, as well as give them a productive use to our nation."
+ BLK_unemployment_desc:0 "Many people in our nation are adrift, lacking cause or purpose, without any drive. Forcing anyone without a job into the arms production sector will give them a purpose and a sense of duty, as well as give them a productive use to our nation while significantly boosting our production."
  BLK_militarise_civilian_infr:0 "Militarise Civilian Infrastructure"
  BLK_militarise_civilian_infr_desc:0 "Many people are showing resistance to our new consription policy. We will show them that in Belka, the military is not just a force, it is a way of life. We will bring the military into all aspects of the civilian sector, showing them they cannot simply escape it."
  BLK_new_supply_dep:0 "Expand Supply Network"
- BLK_new_supply_dep_desc:0 "Our conscription policy has forced many people into the military, some of whom don't seem to want to be there. Rather than force them to fight against their will, we will open up opportunities for them to help in supplying the frontline, putting them in far less danger while still making use from them."
+ BLK_new_supply_dep_desc:0 "Our conscription policy has forced many people into the military, some of whom don't seem to want to be there. Rather than force them to fight against their will, we will open up opportunities for them to help in supplying the frontline, putting them in far less danger while still making use of them."
  BLK_overspending_on_military:0 "Fuel The Engines"
- BLK_overspending_on_military_desc:0 "The pacifists and other parties described the previous government as "overspending" on the military. The truth is, they were not spending enough on it. The military is the spirit and strength of Belka, and no price is high enough to keep it strong. We will restore the budget to it's original state, empowering the military once again."
+ BLK_overspending_on_military_desc:0 "The pacifists and other parties described the previous government as "overspending" on the military. The truth is, they were not spending enough on it. The military is the spirit and strength of Belka, and no price is high enough to keep it strong. We will restore the budget to its original state, empowering the military once again."
  BLK_military_industrial_complex:0 "Reawake Belkan Military Industrial Complex"
- BLK_military_industrial_complex_desc:0 "The military and industrial companies are closely related to each other, and increasing their cooperation is a guranteed way to keep both strong and stable. Bringing the two together again will allow us to power our army like never before."
+ BLK_military_industrial_complex_desc:0 "The military and industrial companies are closely related to each other, and increasing their cooperation is a guranteed way to keep them both strong and stable. Bringing the two together again will allow us to power our army like never before."
  BLK_quantity:0 "Quantity Ideas"
- BLK_quantity_desc:0 "The enemy nations seek to control Belka's people. If every man, woman and child in Belka were to fight back, not only would they prove a near impossible enemy to defeat, but the lack of controllable people would render any invasion pointless, giving us unique power over our enemies. We will allow anyone who wishes to serve the ability to, arming the masses."
+ BLK_quantity_desc:0 "The enemy nations seek to control Belka's people. If every man, woman and child in Belka were to fight back, not only would they prove a near impossible enemy to defeat, but the lack of controllable people would render any invasion pointless, giving us unique power over our enemies. We will allow anyone who wishes to serve the the ability to do so by arming the masses."
  BLK_quantity_2:0 "Use The Unusable"
  BLK_quantity_2_desc:0 "Even those who might be overlooked by society have a purpose to us. Criminals have signed away their rights, and as a result there is no harm in us placing them on the frontlines. The promise of freedom for service will prevent them from rebelling, as well as a constant watch on their actions."
  BLK_quality:0 "Quality Ideas"
- BLK_quality_desc:0 "Belkan knights were the pride of the ancient world for their discipline and courage. Rather than carelessly throw waves of men at the enemy, we will train and drill our soldiers to the core, reminding them of the legacy they carry They will rival their ancient counterparts in their strength and glory."
+ BLK_quality_desc:0 "Belkan knights were the pride of the ancient world for their discipline and courage. Rather than carelessly throw waves of men at the enemy, we will train and drill our soldiers to the core, reminding them of the legacy they carry. They will rival their ancient counterparts in their strength and glory."
  BLK_quality_2:0 "Belkan Assault Tactics"
  BLK_quality_2_desc:0 "Good doctrine is just as critical to success as good soliders are. Our old doctrines are getting rather outdated, and as a result we may suffer against advanced foes. Reforming our doctrine and keeping it fresh in our soldiers' minds will keep them alive, and strengthen their efficiency."
  BLK_infantry_focus:0 "The Backbone Of The Army"
- BLK_infantry_focus_desc:0 "No army in history ever had success from neglecting it's infantry. The most versatile of any combat unit devised, if our army is mostly composed of infantry it makes sense to devote the most investments into the infantry as well."
+ BLK_infantry_focus_desc:0 "No army in history ever had success from neglecting its infantry. The most versatile of any combat unit devised, if our army is mostly composed of infantry it makes sense to devote the most investments into the infantry as well."
  BLK_mech:0 "Develop The Support Core"
  BLK_mech_desc:0 "Anyone can raise a massive army of soldiers, but keeping those soldiers supplied, accounted for, and well prepared in the midst of combat is a much more difficult task. We will invest into developing support for our infantry so that they can fight at their best at all times."
  BLK_tank_focus:0 "To Smash Through"
@@ -229,11 +270,11 @@
  BLK_contest_lakes:0 "Contest The Great Lakes"
  BLK_contest_lakes_desc:0 "Securing control of the Great Lakes would allow us to strike into the gateway to Osea proper, forcing them to pull back and giving us an advantage. It will not be easy though, as Osea currently posesses a greater navy than ours and holds more influence over the lakes than we do."
  BLK_dig_in:0 "Let Them Come"
- BLK_dig_in_desc:0 "Osea's main weakness is that any costly war will hurt the image of it's political party, meaning they will not commit to an offensive unless there is a low risk to it. We can exploit this by fortifying ourselves at the border, which Osea will be either forced to respond with a costly push, souring their public support for the war, or remain defensive, allowing us to pick them off at the edges until we can force them to accept our terms."
+ BLK_dig_in_desc:0 "Osea's main weakness is that any costly war will hurt the image of its political party, meaning they will not commit to an offensive unless there is a low risk to it. We can exploit this by fortifying ourselves at the border, forcing the Osean government to either lose domestic support in costly offensives, or play defensivley and give us the initative to strike."
  BLK_naval_bomb:0 "To Counter Osean Numbers"
  BLK_naval_bomb_desc:0 "Osea's massive fleet will be an extremely difficult opponent to topple. Rather than fight them in decisive battle, attacks from naval aircraft will likely be much cheaper and harass their fleet constantly, draining their resources to fight effectively."
  BLK_aa_air_ports:0 "Construct Aerial Infrastructure"
- BLK_aa_air_ports_desc:0 "In the war against Osea, no doubt will aerial combat prove critical, just as it has in the past. Constructing additional bases and support networks for aircraft should give us an edge against the Oseans in the air war."
+ BLK_aa_air_ports_desc:0 "In the war against Osea, no doubt will aerial combat prove critical, just as it did in the past. Constructing additional bases and support networks for aircraft should give us an edge against the Oseans in the air war."
  BLK_bunkers_lakes:0 "Schayne Line"
  BLK_bunkers_lakes_desc:0 "It is imperative that the Oseans and our eastern enemies cannot join together to combine armies. The Schayne Line is a proposed line of defenses across our southern tip that should serve as a strong defensive on both sides, making any push to unite the two fronts a highly difficult undertaking."
  BLK_build_up_navy:0 "Plan Z"
@@ -243,11 +284,11 @@
  BLK_south_belka_munitions_monopoly:0 "South Belka Munitions"
  BLK_south_belka_munitions_monopoly_desc:0 "The South Belka Munitions Factory, at the foot of the Waldreich Mountains, has long been a world leader in weapons and aircraft research and development. Managing to survive the crisis, boosting their industries will give our airforce a much needed bolstering."
  BLK_to_cover_the_skyes:0 "To Cover The Skies"
- BLK_to_cover_the_skyes_desc:0 "fsdfsdfdsfdsfdsfdsfdsdsfdsfdsfdsfdsfdsfsfsfdsfsdfdfsfsdffdsf"
+ BLK_to_cover_the_skyes_desc:0 "We are in an age where dominance over the skies determines the victor in warfare. Therefore, we must ensure that our own skies remain secure with an expansion of our air-defense network."
  BLK_crown_jewel:0 "The Crown Jewel"
- BLK_crown_jewel_desc:0 "Ever since it's inception, the Belkan Air Force has been the pride of our nation. The first of it's kind, the Belkan Air Force was created in 1907 during the Osean War. Compared to the Belkan Knights of old, our air force dutifully takes each task with pride and honor, setting a precedence for air forces across the globe."
+ BLK_crown_jewel_desc:0 "Ever since its inception, the Belkan Air Force has been the pride of our nation. The first of its kind, the Belkan Air Force was created in 1907 during the Osean War. Compared to the Belkan Knights of old, our air force dutifully takes each task with pride and honor, setting a precedent for air forces across the globe."
  BLK_keep_skies_clear:0 "Focus On Superiority"
- BLK_keep_skies_clear_desc:0 "Air superiority has been the main job of our air force ever since it's first days. Rather than being tied to the ground, our fighters fly best when they have no goal except to down the enemy by any means necessary, indirectly keeping our ground troops safe from any interference."
+ BLK_keep_skies_clear_desc:0 "Air superiority has been the main job of our air force ever since its first days. Rather than being tied to the ground, our fighters fly best when they have no goal except to down the enemy by any means necessary, indirectly keeping our ground troops safe from any interference."
  BLK_fighter:0 "Keep Skies Clear"
  BLK_fighter_desc:0 "Routine patrols and large formation flying of our air force will ensure they are always ready for a fight and never caught off guard by enemy attacks. With complete air dominance, our ground troops will have an easy time pushing through the enemy lines."
  BLK_blast_them_to_kingdom_come:0 "Focus On Support"
@@ -257,13 +298,13 @@
  BLK_eyes_on_the_sky:0 "Eyes In The Sky"
  BLK_eyes_on_the_sky_desc:0 "Scout planes and spy planes can easily relay large amounts of info as well as sweep a whole area, providing large amounts of intel on enemy positions and operations. Their funding and development will allow us to keep a constant eye on our enemy."
  BLK_eyes_on_thr_ground:0 "Eyes On The Ground"
- BLK_eyes_on_thr_ground_desc:0 "Radio stations can be easily manned and monitored, letting us dot them all over our nation. At the first sign of enemy incursion, quick-response fighters can be sent out to deal with threats, making this an idea solution to preserving our resources during war."
+ BLK_eyes_on_thr_ground_desc:0 "Radio stations can be easily manned and monitored, letting us dot them all over our nation. At the first sign of enemy incursion, quick-response fighters can be sent out to deal with threats, making this an ideal solution in preserving our resources during the war."
  BLK_masters_of_the_craft:0 "Masters Of The Craft"
  BLK_masters_of_the_craft_desc:0 "Belkan aircraft are among the highest quality of their kind, and are highly prestigious in their field. We should capitalize off this and invest heavily into quality designs, both for their practical value and to build our reputation as the masters of the sky even further."
  BLK_scrap_the_graveyards:0 "Scrap The Graveyards"
  BLK_scrap_the_graveyards_desc:0 "Many scrapyards full of old or damaged aircraft exist around our nation, and could be repurposed to be used instead of fashioning new parts entirely. Their quality might leave a little to be desired, but we will be able to produce aircraft much quicker than before."
  BLK_bm_335_project:0 "To Replace Bm-335"
- BLK_bm_335_project_desc:0 "The Bm-355 Lindwurm bomber is the oldest plane in the Belkan Air Force, and while it has served us well over it's 40 years of service, we are starting to fall short on bomber development and need to introduce a new bomber as our standard."
+ BLK_bm_335_project_desc:0 "The Bm-355 Lindwurm bomber is the oldest plane in the Belkan Air Force, and while it has served us well over its 40 years of service, we are starting to fall short on bomber development and need to introduce a new bomber as our standard."
  
  BLK_dlp_war:0 "The Belkan War"
  BLK_dlp_war_desc:0 "#Placeholder#"
@@ -272,7 +313,7 @@
  BLK_repair_squads:0 "Repair Squads"
  BLK_repair_squads_desc:0 "#Placeholder#"
  BLK_use_locals:0 "Secure What Was Ours"
- BLK_use_locals_desc:0 "#Placeholder#"
+ BLK_use_locals_desc:0 ""
  BLK_consript_workers:0 "Consript Factory Workers"
  BLK_consript_workers_desc:0 "#Placeholder#"
  BLK_pillage_ustio:0 "Pillage Ustio"
@@ -289,11 +330,11 @@
  ### EVENTS ###
  
  belka.1.t:0 "Nation In Pieces"
- belka.1.d:0 "Our nation is in pain. The continued overspending on military has wrecked our economy, which in turn has caused businesses to downsize, laying off workers, making them spend less, further drying up economic growth, causing company after company to close their doors. Without the goods and services offered by many of these companies, it has gotten harder and harder for our citizens to source food, pay bills, or provide for their families. This, in turn, has caused drastically increased radicalization and polarization of our populace, who turn to radical idealisms as their only hope of change. Even worse, now after the state of our nation being this way for a while, our resources in the government are beginning to run thin."
+ belka.1.d:0 "Our nation is in pain. The continued overspending on the military has wrecked our economy, which in turn has caused businesses to downsize, laying off workers, making them spend less, further drying up economic growth, causing company after company to close their doors. Without the goods and services offered by many of these companies, it has gotten harder and harder for our citizens to source food, pay bills, or provide for their families. This, in turn, has caused drastically increased radicalization and polarization of our populace, who turn to radical idealisms as their only hope of change. Even worse, due to this continued state of the nation, our resources in the government are now beginning to run thin."
  belka.1.a:0 "God Save Belka."
  
  belka.2.t:0 "People On The Streets"
- belka.2.d:0 "The scope of the protests is far greater than we ever imagined. Nearly every day has some kind of major protest happening somewhere in our country, and crimes have also seen exponential growth compared to when this all began. Masses of people are calling for all sorts of demands, from more reform programs all the way to calls for outright revolution. The silver lining in this is that the sheer mass of protesters makes them unable to unite or organize effectively, making them less of a threat than a organized group. Regardless, this will only buy us some time, as if we continue to leave this issue unresolved they will no doubt find a way to organize."
+ belka.2.d:0 "The scope of the protests is far greater than we ever imagined. Nearly every day has some kind of major protest happening somewhere in our country, and crimes have also seen exponential growth compared to when this all began. Masses of people are calling for all sorts of demands, from more reform programs all the way to calls for outright revolution. The silver lining in this is that the sheer mass of protesters makes them unable to unite or organize effectively, making them less of a threat than an organized group. Regardless, this will only buy us some time, as if we continue to leave this issue unresolved they will no doubt find a way to organize."
  belka.2.a:0 "They just need to wait a little longer."
  
  belka.3.t:0 "Economy Long Gone"
@@ -305,7 +346,7 @@
  belka.4.a:0 "Close the borders!"
  
  belka.5.t:0 "Complete Collapse"
- belka.5.d:0 "It appears, ironically, our last efforts to take inventory on the crisis pushed us over the tipping point. Our budget this month was unable to meet the expenses, and as a result we, as a nation, are in complete bankruptcy. As our officials find out, many are simply getting up and leaving. We are completely powerless and at the whims of whatever the future brings. The only influence we have is off goodwill alone, and that will not get us far. The future is dark."
+ belka.5.d:0 "It appears, ironically, that our last efforts to take inventory on the crisis pushed us over the tipping point. Our budget this month was unable to meet the expenses, and as a result we, as a nation, are in complete bankruptcy. As our officials find out, many are simply getting up and leaving. We are completely powerless and at the whims of whatever the future brings. The only influence we have is off goodwill alone, and that will not get us far. The future is dark."
  belka.5.a:0 "Just when we were getting started."
  
  belka.6.t:0 "Government Falls Apart"
@@ -317,15 +358,15 @@
  belka.7.a:0 "Time to sort this mess out."
  
  belka.8.t:0 "Osean Proposition"
- belka.8.d:0 "Our longtime rivals, the Osean Federation, have approached us with an interesting offer. In return for giving several of our eastern territories to the neighboring countries, and selling a portion of the Great Lakes to Osea itself, the Oseans will pay us a rather high sum of money, giving us the ability to start some recovery programs. Osea has even expressed that they would be willing to lease many of the resources in the area to us through a joint resource excavation company. Some in the government are suspicious of this deal, that it unlike Osea to offer us such a deal without a clear benefit to them, but others are hopeful that it could be the beginning of a new era of cooperation between our nations, as well as our lifeline to save our nation. It is a rather humiliating deal to take, but what other choice do we have?"
- belka.8.a:0 "Better to lose a part of our nation than lose the whole nation."
+ belka.8.d:0 "Our longtime rival, the Osean Federation, have approached us with an interesting offer. In return for giving several of our eastern territories to the neighboring countries, and selling a portion of the Great Lakes to Osea itself, the Oseans will pay us a rather high sum of money, giving us the ability to start some recovery programs. Osea has even expressed that they would be willing to lease many of the resources in the area to us through a joint resource excavation company. Some in the government are suspicious of this deal, since it's unlikley that Osea would offer us such a deal without a clear benefit to them, but others are hopeful that it could be the beginning of a new era of cooperation between our nations, as well as our lifeline to save our nation. It is a rather humiliating deal to take, but what other choice do we have?"
+ belka.8.a:0 "Better to lose a part of our nation than to lose the whole nation."
  
  belka.9.t:0 "Selling Of The Land"
  belka.9.d:0 "With all the paperwork in place, we've agreed to the Oseans' proposal and are preparing to remove our forces from the land. The transactions have been made and we now have enough money to get a few programs going. For their cooperation, [BLK.GetLeader] has suggested we take the Oseans up on their joint resource company offer, something that will give us a reliable income from which to rebuild the rest of our country off of."
  belka.9.a:0 "The best thing this deal gave us was hope."
  
- belka.10.t:0 "GLRDC Goes Life"
- belka.10.d:0 "The Great Lakes Resource Development Company opened up today, marking our second cooperation with the Oseans. Early reports they showed us show promising levels of resources in the area, meaning this will likely be a very lucrative deal. Digging has begun and we've invested more of our money into the program to see a profit as quickly as we can. Things are looking up for us, we may just be able to refloat our economy with this."
+ belka.10.t:0 "GLRDC Goes Live"
+ belka.10.d:0 "The Great Lakes Resource Development Company opened up today, marking our second cooperation with the Oseans. Early reports haves showed us show promising amounts of resources in the area, meaning this will likely be a very lucrative deal. Digging has begun and we've invested more of our money into the program to see a profit as quickly as we can. Things are looking up for us, we may just be able to refloat our economy with this."
  belka.10.a:0 "Maybe the Oseans aren't so bad after all."
  
  belka.11.t:0 "The Results Are In"
@@ -337,15 +378,15 @@
  belka.12.a:0 "What can even be done at this point?"
  
  belka.13.t:0 "New Power At The Top"
- belka.13.d:0 "Over the past few days, an intense battle between the DLP and the monarchists ensued across the country, with the DLP now the undisputed dominant power in the country. With the DLP's support in the military assisting them, they have secured control over all apparatuses of state and now are the new leaders of the country, with most of the opposition imprisoned or jailed. With it's third government in the last few months, it remains to be seen if the DLP will solve any of the issues plaguing the country."
+ belka.13.d:0 "Over the past few days, an intense battle between the DLP and the monarchists ensued across the country, with the DLP now the undisputed dominant power in the country. With the DLP's support in the military assisting them, they have secured control over all apparatuses of state and now are the new leaders of the country, with most of the opposition imprisoned or jailed. With its third government in the last few months, it remains to be seen if the DLP will solve any of the issues plaguing the country."
  belka.13.a:0 "Nothing will stand in our way."
  
  belka_dlp.1.t:0 "Many People, One Nation, One Goal"
- belka_dlp.1.d:0 "Belka has been wounded, not just by her enemies but also her own supposed leaders, each of whom pulled her apart seeking their own goals. The failiures of the previous governments showed they were not fit to lead Belka. Now it is our turn. We will unite the people and raise Belka from the ashes, ascendent to the top of the world. With no one left to stand in our way, the DLP will restore Belka to it's former glory and beyond. We have much to do, and the people's patience is thin because of the past, so we must waste no time in getting to work. Many of our members have already put forward ideas to start our recovery, which will provide us with a head start on our recovery."
+ belka_dlp.1.d:0 "Belka has been wounded, not just by her enemies but also by her own supposed leaders, each of whom pulled her apart seeking their own goals. The failiures of the previous governments showed they were not fit to lead Belka. Now it is our turn. We will unite the people and raise Belka from the ashes, ascendent to the top of the world. With no one left to stand in our way, the DLP will restore Belka to its former glory and beyond. We have much to do, and the people's patience is thin because of the past, so we must waste no time in getting to work. Many of our members have already put forward ideas to start our recovery, which will provide us with a head start on our recovery."
  belka_dlp.1.a:0 "Belka will rise again."
  
  belka_dlp.2.t:0 "The 2 Year Plan"
- belka_dlp.2.d:0 "After intense discussion, we have arrived at a conclusion on how to start our reconstruction. While it is true that the military is all we have left and is necessary for our self-preservation, however this is exactly what we will use to our advantage. Converting a large amount of our military production into civilan will allow us to start economic growth without many funds to go off of, and our military is powerfull enough as it is to ward off any potential invasions from Osea. This will upset the militarist faction in our government, but with all likelihood they will come around when our economy recovers, which from there we can expand the military once again."
+ belka_dlp.2.d:0 "After intense discussion, we have arrived at a conclusion on how to start our reconstruction. It is clear that the military is all we have left, as it is necessary for our self-preservation, and this is exactly what we will use to our advantage. Converting a large amount of our military production into civilan will allow us to start economic growth without many funds to go off of, and our military is powerfull enough as it is to ward off any potential invasions from Osea. This will upset the militarist faction in our government, but in all likelihood they will come around when our economy recovers, which we can use to expand the military from once again."
  belka_dlp.2.a:0 "We must use what we have."
  
  belka_dlp.3.t:0 "Magic Of Bureaucracy"
@@ -363,7 +404,7 @@
  ##########
  
  belka_dlp_coup.1.t:0 "Clashes Within The Party"
- belka_dlp_coup.1.d:0 "We always expected opposition, at least from the public, and from within our own party to an extent, but we didn't expect it to be around this long. We've begun a number of recovery programs and are already seeing the first fruits of recovery, and yet the militarist faction of our government led by Waldemarr Rald has only dissented louder and louder with each reform that we make, cutting into the military's budget. Unfortunately for us, many of the close-minded officers and generals in the Belkan Armed Forces are seeing these budget cuts as attacks on their livelihood and siding with Rald. It's begun to affect our ability to decision-make, meaning we'll likely need to find a way to please Rald and his militarists."
+ belka_dlp_coup.1.d:0 "We always expected opposition, at least from the public, and from within our own party to an extent, but we didn't expect it to be around this long. We've begun a number of recovery programs and are already seeing the first fruits of recovery, and yet the militarist faction of our government led by Waldemarr Rald has only dissented louder and louder with each reform that we make, cutting into the military's budget. Unfortunately for us, many of the close-minded officers and generals in the Belkan Armed Forces are seeing these budget cuts as attacks on their livelihood and siding with Rald. It's begun to affect our ability in decision-making, meaning we'll likely need to find a way to please Rald and his militarists."
  belka_dlp_coup.1.a:0 "Can't you just be patient?"
  
  belka_dlp_coup.2.t:0 "Support In The Military"
@@ -371,19 +412,19 @@
  belka_dlp_coup.2.a:0 "Back to business."
  
  belka_dlp_coup.3.t:0 "The Coup"
- belka_dlp_coup.3.d:0 "Early yesterday morning, during a regular meeting between Lehmann and several members of the Assembly, a division of the Belkan Army stormed the Dinsmark Parliment Building, killing or capturing all the security forces and the politicians themselves. Over the next 24 hours, similar attacks were carried out all across Belkan government buildings with large success, at which point Rald has come forward announcing that a large number of members of the incumbent government were intentionally weaking Belka with the intention of allowing an Osean invasion, and that he has rounded up most of these "traitors" and will be replacing Berthold Lehmann as the head of government. While not many people believe this story, Rald's grip on the military prevents any organized opposition to his new regime."
+ belka_dlp_coup.3.d:0 "Early yesterday morning, during a regular meeting between Lehmann and several members of the Assembly, a division of the Belkan Army stormed the Dinsmark Parliment Building, capturing those inside and killing any security forces or politicians who resisted. Over the next 24 hours, similar attacks were carried out all across Belkan government buildings with large success, at which point Rald has come forward announcing that a large number of members of the incumbent government were intentionally weakening Belka with the intention of allowing an Osean invasion, and that he has rounded up most of these "traitors" and will be replacing Berthold Lehmann as the head of government. While not many people believe this story, Rald's grip on the military prevents any organized opposition to his new regime."
  belka_dlp_coup.3.a:0 "Third time's the charm?"
  
  belka_dlp_coup.4.t:0 "Ein Volk, Ein Nation, Ein Ziel!"
- belka_dlp_coup.4.d:0 "President Rald held a public speech today, calling for the Belkan people to put aside their differences and remember that they are, above all else, Belkans, and that is what matters. Nationalism has always been high after the Osean scam in the Great Lakes, and it seems Rald is capitalizing off this, uniting the people off their nationality. This has alarmed several nations around us, mostly Osea and our former member nations, but domestically this speech has seen Rald's approval ratings increase greatly."
+ belka_dlp_coup.4.d:0 "President Rald held a public speech today, calling for the Belkan people to put aside their differences and remember that they are, above all else, Belkans, and that is what matters. Nationalism has always been high after the Osean scam in the Great Lakes, and it seems Rald is capitalizing on this, uniting the people under their nationality. This has alarmed several nations around us, mostly Osea and our former member nations, but domestically this speech has seen Rald's approval ratings increase greatly."
  belka_dlp_coup.4.a:0 "Belka must be one if she is to survive."
  
  belka_dlp_coup.5.t:0 "Total War"
- belka_dlp_coup.5.d:0 "The humliation and shame inflicted on us not just by Osea, but also the foolish conservatives who allowed Belkan territory to secede in the 1987 Federal Law Review, cannot be allowed to stand. Waldemarr Rald held a meeting with his cabinet today promising an immenent revenge war against Osea and the former states, reclaiming lost Belkan territory, as soon as the military is restored back to it's former level. While he has not gone public with this information, he has constantly blamed Osea and the other nations for poisoning Belka, and promises citizens that things will be made right. Rald promises to his cabinet a state of "total war," as he describes it: "To wage war with all tools, methods, resources, and weapons that you have at your disposal, to fight tooth and nail with everything you have until victory or annhilation.""
+ belka_dlp_coup.5.d:0 "The humliation and shame inflicted on us not just by Osea, but also the foolish conservatives who allowed Belkan territory to secede in the 1987 Federal Law Review, cannot be allowed to stand. Waldemarr Rald held a meeting with his cabinet today promising an immenent revenge war against Osea and the former states, reclaiming lost Belkan territory, as soon as the military is restored back to its former level. While he has not gone public with this information, he has constantly blamed Osea and the other nations for poisoning Belka, and promises citizens that things will be made right. Rald promises to his cabinet a state of 'total war,' as he describes it- 'To wage war with all tools, methods, resources, and weapons that you have at your disposal, to fight tooth and nail with everything you have until victory or annhilation.'"
  belka_dlp_coup.5.a:0 "Osea's days are numbered."
  
- belka_dlp_coup.6.t:0 "Excalibur Online" #constructio of the excalibur was finished, there is room for some modifications and improvments from original design
- belka_dlp_coup.6.d:0 "Excalibur, the chemical laser anti-ICBM system devised as a part of the large military build-up of the past couple decades, has finally been finished with our efforts. The designs have changed slightly since the original proposed design from 1981, however the core design has remained mostly unchanged. These designs have allowed us to make the design more modular, including swappable lenses for different ranges and targets, as well as heat transferring pipes to allow the main structure to assist in cooling as well as the six primary cooling towers. This also has allowed for possible future improvements on the design, but for now we have a simple choice to make on where to invest the last of the project's leftover budget. We could develop an electronic targeting system that syncs up with radar data, allowing Excalibur to more easily target agile targets like aircraft, boosting it's air superiority capabilities, we could invest in a denser power system, allowing the laser to reach higher temperatures and able to assist in ground attacks, or we could simply keep it to it's original purpose and improve it's ICBM destruction capabilities."
+ belka_dlp_coup.6.t:0 "Excalibur Online" #construction of the excalibur was finished, there is room for some modifications and improvments from original design
+ belka_dlp_coup.6.d:0 "Excalibur, the chemical laser anti-ICBM system devised as a part of the large military build-up of the past couple decades, has finally been finished with our efforts. The designs have changed slightly since the original proposed design from 1981, however the core design has remained mostly unchanged. These designs have allowed us to make the design more modular, including swappable lenses for different ranges and targets, as well as heat transferring pipes to allow the main structure to assist in cooling as well as the six primary cooling towers. This also has allowed for possible future improvements on the design, but for now we have a simple choice to make on where to invest the last of the project's leftover budget. We could develop an electronic targeting system that syncs up with radar data, allowing Excalibur to easily target agile objects like aircraft, boosting our air superiority capabilities. We could even invest in a denser power system, allowing the laser to reach higher temperatures and give it the ability to assist in ground attacks. Or we could simply keep it to its original purpose and improve its ICBM destruction capabilities."
  belka_dlp_coup.6.a:0 "Develop it to assist air superiority." #make it kill planes
  belka_dlp_coup.6.b:0 "Develop it to assist ground attacks." #make it bomb land
  belka_dlp_coup.6.c:0 "Develop it to target ICBMs better." #make it kill more ICBMs - MUST HAVE FOR AWWNB or Osea counter bomb them during V2 and everyone dies
@@ -411,37 +452,41 @@
  belka_dlp_coup.10.b:0 "Ensure South Belka's loyalty." #kill south belka guys
  
  belka_dlp_coup.11.t:0 "Belka Uber Alles" #BLK_cult_of_belka focus event
- belka_dlp_coup.11.d:0 "The idea of Belka must be firmly rooted in the mind of each soldier, worker, and citizen of Belka. Not the Belka of today, not the government of Belka nor it's people or it's land. Belkans must be obsessed with the idea of a Belka that is greater than anything we could imagine now. Closer than family, than work, than religion, than life itself. So close that they are willing to fight, work, and die to achieve it. Raising Belka to the status of a deity that we owe our lives, that we must serve with all we have. A Belka that is timeless and infinite, a Belka that is strong to it's core. A Belka over all."
+ belka_dlp_coup.11.d:0 "The idea of Belka must be firmly rooted in the mind of each soldier, worker, and citizen of Belka. Not the Belka of today, not the government of Belka nor its people or its land. Belkans must be obsessed with the idea of a Belka that is greater than anything we could imagine now. Closer than family, than work, than religion, than life itself. So close that they are willing to fight, work and die to achieve it. Raising Belka to the status of a deity that we owe our lives, that we must serve with all we have. A Belka that is timeless and infinite, a Belka that is strong to its core. A Belka over all."
  belka_dlp_coup.11.a:0 "Ave Belka."
  
  belka_dlp_coup.12.t:0 "Martial Law" #BLK_police_state event
  belka_dlp_coup.12.d:0 "Martial law is rolling out all over Belkan cities, tightening our grip on the state of affairs in our country. With expanded police forces, curfews, and routine patrols, we can monitor any potential threats to our future decisions very easily. A complete survelliance and police state can be easily controlled and run like a well-oiled machine, and any issues can be brought directly to us within hours."
  belka_dlp_coup.12.a:0 ""Waldemarr Rald is watching YOU!""
  
- belka_dlp_coup.13.t:0 "#Formation of The BSF" #BLK_form_bs
- belka_dlp_coup.13.d:0 "The Belkan Special Forces, taking spirit from the ancient Belkan Royal Guard, has been fully formed and now the best soldiers and officers from across the nation are being handpicked to stock it's ranks. Highly disciplined and routinely tested to stay in top shape, the BSF will be both the spearhead in any attack in war, and the centerpoint in any critical defense. No doubt will the BSF set a precedent for elite divisions around the world, and we hope to expand it's size and capabilities in the coming times."
+ belka_dlp_coup.13.t:0 "Formation of The BSF" #BLK_form_bs
+ belka_dlp_coup.13.d:0 "The Belkan Special Forces, taking spirit from the ancient Belkan Royal Guard, has been fully formed and now the best soldiers and officers from across the nation are being handpicked to stock its ranks. Highly disciplined and routinely tested to stay in top shape, the BSF will be both the spearhead in any attack in war, and the centerpoint in any critical defense. No doubt will the BSF set a precedent for elite divisions around the world, and we hope to expand its size and capabilities in the coming times."
  belka_dlp_coup.13.a:0 "Belka has never lost her spirit."
  
  ######################################
  
  belka_dlp_war.1.t:0 "Resources in Ustio" # event which starts timer for war start, rald goes nuts after info that resurces are in ustio
- belka_dlp_war.1.d:0 "Yesterday, a news report was published in Ustio detailing mass deposits of precious metals beneath the surface of it's mountains, extremely close to the surface, with the land market exploding overnight. Rald is beside himself with fury at the news, claiming that Ustio should cede all resource rights to Belka, as the resources had not been discovered when the conservatives foolishly allowed the Ustians to secede. With the new money, Ustio has already announced several new programs to stabilize themselves, much to our dismay. A small paper trail suggests that Osea might also have been intentionally hiding these resources until after Ustio declared it's independence, also lending credibility to the theory that Osea funded Ustian independence movements as well. Rald has declared to his cabinet that this has been the last straw, and is preparing the military for imminent war within the next six months."
+ belka_dlp_war.1.d:0 "Yesterday, a news report was published in Ustio detailing mass deposits of precious metals beneath the surface of its mountains, extremely close to the surface, with the land market exploding overnight. Rald is beside himself with fury at the news, claiming that Ustio should cede all resource rights to Belka, as the resources had not been discovered when the conservatives foolishly allowed the Ustians to secede. With the new money, Ustio has already announced several new programs to stabilize themselves, much to our dismay. A small paper trail suggests that Osea might also have been intentionally hiding these resources until Ustio declared its independence, also lending credibility to the theory that Osea funded Ustian independence movements as well. Rald has declared to his cabinet that this has been the last straw, and is preparing the military for imminent war within the next six months."
  belka_dlp_war.1.a:0 "We will take what is rightfully ours."
  
  belka_dlp_war.2.t:0 "Rald Declares War" # belkan war begun, event for belka, not global news event
- belka_dlp_war.2.d:0 "The time has come. Waldemarr Rald announced publicly that the crimes and humiliation comitted against Belka by it's neighbors had reached a breaking point, and announced that Belka would be moving into it's rightful territories, and that any resistance will be crushed, effectively declaring war against it's neighbors. In response, Osea has invited all nations to an alliance they refer to as the "Allied Forces" against Belka. Sapin, their ally, and Ustio have joined this faction while Recta, Gebet, and FATO, likely fearing Osean control, have declared their own alliance, the "Anti-Belkan Northern Front." Regardless, this war will be very costly for all sides, and seeing our unstable situation, it is critical that we show quick success in this war, else the public lose faith in our government, and our economy deteriorate back to it's original state, or worse."
+ belka_dlp_war.2.d:0 "The time has come. Waldemarr Rald announced publicly that the crimes and humiliation committed against Belka by its neighbours had reached a breaking point, and announced that Belka would be moving into it's rightful territories, and that any resistance will be crushed, effectively declaring war against its neighbors. In response, Osea has invited all nations to an alliance they refer to as the "Allied Forces" against Belka. Sapin, their ally, and Ustio have joined this faction while Recta, Gebet, and FATO, likely fearing Osean control, have declared their own alliance, the "Anti-Belkan Northern Front." Regardless, this war will be very costly for all sides, and seeing our unstable situation, it is critical that we show quick success in this war, else the public lose faith in our government and our economy deteriorate back to its original state, or worse."
  belka_dlp_war.2.a:0 "Time to teach them a lesson."
  
  belka_dlp_war.3.t:0 "Attack on Excalibur"
- belka_dlp_war.3.d:0 "Excalibur, our chemical laser anti-ICBM weapon, has been destroyed in a massive raid by the Osean Air Defense Force and Ustian Air Force, completely eliminating it's viability. Despite massive losses and fierce resistance from our forces, the four RTLS systems and the surrounding support weapons were slowly picked off by the aircraft, before destroying the lens itself, then finally targeting the central structure until it collapsed, rendering it completely unsalvageable. While we still own the territory underneath Excalibur, the weapon is completely unusable and would not be repairable without a complete rebuilding of the structure. While this does not mean a complete loss, this will greatly set back our ability to project power around our nation, and we will need to be much more careful about which battles we have the capacity to fight in the future."
+ belka_dlp_war.3.d:0 "Excalibur, our chemical laser anti-ICBM weapon, has been destroyed in a massive raid by the Osean Air Defense Force and Ustian Air Force, completely eliminating its viability. Despite massive losses and fierce resistance from our forces, the four RTLS systems and the surrounding support weapons were slowly picked off by the aircraft, before destroying the lens itself, then finally targeting the central structure until it collapsed, rendering it completely unsalvageable. While we still own the territory underneath Excalibur, the weapon is completely unusable and would not be repairable without a complete rebuilding of the structure. While this does not mean a complete loss, this will greatly set back our ability to project power around our nation, and we will need to be much more careful about which battles we have the capacity to fight in the future."
  belka_dlp_war.3.a:0 "Have we become too reliant on technology?"
+ 
+ belka_dlp_war.97.t:0 "The Belkan War"
+ belka_dlp_war.97.d:0 "The Belkan War was a large scale conflict that took part between the 25th of March, 1995 and June 20th of the same year. It involved two of the largest superpowers of the world, being the bellicose nation of Belka and the Osean Federation with addition of all other Belkan neighbors. It all started after an unprecedented economic crisis hit Belka a decade earlier, leading to territorial concessions and a desperate population to seek hope and revenge in a far-right, militarist party, who used all Belka's remaining economic might to wage war against Ustio, a country that recently seceded and found enormous amounts of resources.\n\nThus, Belka declared war on all surrounding countries in a last-ditch attempt to gain supremacy in the Osean continent and regain all lost territories. After an initial setback, the attacked countries formed an alliance that counterattacked and pushed back Belkan forces, expoliting the inability of Belkan state to sustain equipment losses. With rumors, later confirmed, of Belka developing weapons of mass destruction, Allied forces continued to penetrate Belkan lands leading to the secession of the southern part of the nation, until the Belkan government, in a desperate attempt to save the northern part of the country, launched a nuclear attack along the Waldreich Mountains on June 6th, 1995.\n\nSeeing the insanity unfold, the Allies accepted Belka's sue for peace resulting in the peace conference of Lumen of June 20th."
+ belka_dlp_war.97.a:0 "Understood"
  
  belka_dlp_war.98.t:0 "South Belkan Cities Demilitarize"
  belka_dlp_war.98.d:0 "Following a continued lack of success in our military campaign, and growing weary of the constant bombings, casualties, and state of war, almost all major cities and townships in South Belka have agreed to surrender and demilitarize, refusing to host soldiers or produce war-related products. Unable to reinforce in these cities, we have been forced to retreat, begrudgingly allowing the Osean Army to move through these territories unimpeded. While not shattering, this is a major setback and represents a large portion of our country effectively taken over by the enemy, which we will now have to reclaim. We have already prepared defensive positions in the north and are drafting new battle plans, even some rather extreme ones. Despite this precedent, and the now-constant stream of defections to this rebel state, the fight is not over yet."
  belka_dlp_war.98.a:0 "Traitors, the lot of them."
  
  belka_dlp_war.99.t:0 "Desperation"
- belka_dlp_war.99.d:0 "As much as it burns to admit, the outcome of this war is not looking in our favor. Our casualties have grown dangerously high both from a tactical and civilian perspective, and we are losing ground and resources rapidly. To say the situation is dire is an understatement. If nothing is done, we must end the war, else we are ousted from power. However, we may have one final option to still prevent complete surrender. We still possess the two V2 MIRV nuclear missile systems we developed as the result of Project Pendragon, as well as many V1 nuclear warheads that can still be utilized. To use these weapons against Osea or their allies would be to spell death for ourselves, as nuclear retaliation would be inevitable. However, a desperate, but possible plan has been proposed: Detonating seven nuclear warheads at key pass points in the Waldreich mountain range would either force the Allied Forces to either move through the mountain range itself, or through an irradiated wasteland. It is a costly move, one that will hurt our image greatly, and shock and horrify both our citizens and people worldwide, but this shock will grant us our survivial. None will wish to continue fighting us if they see how dedicated we are to our survival. We will not win this war, but we will not let Osea win either."
+ belka_dlp_war.99.d:0 "As much as it burns to admit, the outcome of this war is not looking in our favor. Our casualties have grown dangerously high both from a tactical and civilian perspective, and we are losing ground and resources rapidly. To say the situation is dire is an understatement. If nothing is done, we must end the war, else we are ousted from power. However, we may have one final option to still prevent complete surrender. We still possess the two V2 MIRV nuclear missile systems we developed as the result of Project Pendragon, as well as many V1 nuclear warheads that can still be utilized. To use these weapons against Osea or their allies would be to spell death for ourselves, as nuclear retaliation would be inevitable. However, a desperate, but possible plan has been proposed: Detonating seven nuclear warheads at key pass points in the Waldreich mountain range would either force the Allied Forces to either move through the mountain range itself, or through an irradiated wasteland. It is a costly move, one that will hurt our image greatly, and shock and horrify both our citizens and people worldwide, but this shock will grant us our survival. None will wish to continue fighting us if they see how dedicated we are to our survival. We will not win this war, but we will not let Osea win either."
  belka_dlp_war.99.a:0 "Begin preparations."
  belka_dlp_war.99.b:0 "WACHT AM WALDREICH"
  
@@ -450,7 +495,7 @@
  belka_dlp_war.100.a:0 "Commence the operation."
  
  belka_dlp_war.101.t:0 "Peace with Shame" #belka lost the war after using nukes, event for belka, not global news event
- belka_dlp_war.101.d:0 "A humiliating peace deal, but it allows our survival. The negotiations, signed in Lumen yesterday, cede the entirety of the demilitarized South Belka to Osea, finally completing their century-long conquest of the Great Lakes. While we are forced to return the territory we sold to the eastern nations, they do not gain any new territory, and South Belka is our only territorial loss. However, this is more than made up in the enormous quantity of reparations owed to all nations involved, despite our already pitiful economic state. To add insult to injury, massive limitations have been placed on our pride, the Belkan Armed Forces, limiting our soldiers, equipment, and research capabilities. If that wasn't enough, Osea will not return any companies, factories, or any kind of value in South Belka to us, leaving us even less tools to rebuild. Despite this extreme humiliation and defeat, we have managed to conceal the existence of the Avalon Dam facility as well as our remaining nuclear stockpile. Debate now remains on if we should use these weapons to enact a final revenge on Osea, even if it causes our demise, and to use these tools to maintain our independence as we enter the next era. With the debates still ongoing, the future is unsure, but at last, war is over for now."
+ belka_dlp_war.101.d:0 "A humiliating peace deal, but it allows our survival. The negotiations, signed in Lumen yesterday, cede the entirety of the demilitarized South Belka to Osea, finally completing their century-long conquest of the Great Lakes. While we are forced to return the territory we sold to the eastern nations, they do not gain any new territory, and South Belka is our only territorial loss. However, this is more than made up in the enormous quantity of reparations owed to all nations involved, despite our already pitiful economic state. To add insult to injury, massive limitations have been placed on our pride, the Belkan Armed Forces, limiting our soldiers, equipment, and research capabilities. If that wasn't enough, Osea will not return any companies, factories, or any kind of value in South Belka to us, leaving us even less tools to rebuild. Despite this extreme humiliation and defeat, we have managed to conceal the existence of the Avalon Dam facility as well as our remaining nuclear stockpile. Debate now remains on if we should use these weapons to enact a final revenge on Osea, even if it causes our demise, or using these tools to maintain our independence as we enter the next era. With the debates still ongoing, the future is unsure, but at last, war is over for now."
  belka_dlp_war.101.a:0 "Belka is saved, but at what cost?"
  
  belka_dlp_war.102.t:0 "Peace with Triumph" #belka won the war, event for belka, not global news event
@@ -470,9 +515,17 @@
  belka_dlp_war_crisis.2.a:0 "Time is running out."
  
  belka_dlp_war_crisis.3.t:0 "Collapse of Order"
- belka_dlp_war_crisis.3.d:0 "The economic situation has fallen out of our grasp and now we are paying the consequences in full. The state of civilian life has returned to depression status, and we are losing contact with several locations around our nation. While the instability has not yet reached our military, desertions by public servants, protests, and layoffs is severely limiting our ability to supply them properly, and if we do not get some sort of damage control immenently, it is unlikely we will be able to control our military, let alone continue the war effort."
+ belka_dlp_war_crisis.3.d:0 "The economic situation has fallen out of our grasp and now we are paying the consequences in full. The state of civilian life has returned to depression status, and we are losing contact with several locations around our nation. While the instability has not yet reached our military, desertions by public servants, protests, and layoffs is severely limiting our ability to supply them properly, and if we do not get some sort of damage control immediately, it is unlikely we will be able to control our military, let alone continue the war effort."
  belka_dlp_war_crisis.3.a:0 "We need a solution, fast."
- 
+
+ ############ SOUTH BELKA ################
+ south_belka.1.t:0 ""
+ south_belka.1.d:0 ""
+ south_belka.1.a:0 ""
+
+ south_belka.2.t:0 ""
+ south_belka.2.d:0 ""
+ south_belka.2.a:0 ""
  ### TOOLTIPS ###
  
  BLK_schlacht_um_die_Zukunft_tt:0 "\nSuch §Ymassive offensive§! will §Rput heavy weight§! on our industry and army."
@@ -481,13 +534,13 @@
  BLK_for_1_year_4_civs_tt:0 "For 1 Year Add §G4§! offmap §YCivilian Factories§!.\n"
  BLK_remove_6_dockyard_tt:0 "Replace §R6 Dockyards§! with §G6 Military Factories§!\n"
  BLK_unlock_focustt:0 "This Option Unlocks Focus"
- BLK_pillage_ustio_tt:0 "Completing this focus will allows us to §Rpillage Ustio§! for valiables and resurces to §Gfuel our war machine§!."
- BLK_pillage_ustio_dec_tt:0 "Completing this decisions will §Glower our army debuff§! and make it §Gimposible§! for our force to §Gcollapse entirely§!"
+ BLK_pillage_ustio_tt:0 "Completing this focus will allow us to §Rpillage Ustio§! for valuable resources to §Gfuel our war machine§!."
+ BLK_pillage_ustio_dec_tt:0 "Completing this decision will §Glower our army debuff§! and make it §Gimpossible§! for our force to §Gcollapse entirely§!"
  BLK_reparations_tt:0 "Completing this focus will allows us to §Yset up Puppet Governments and demand reparations§! from §Rnorthern nations we have defeated§! to §Gstablize our economy§!."
  BLK_reparations_army_tt:0 "After §Rsetting up the puppets§! we will be able to partially §Grefuel our war machine§!."
  BLK_war_rep_industry_tt:0 "Completing this decisions will §Glower our industry debuff§!."
  BLK_war_rep_army_tt:0 "Completing this decisions will §Glower our army debuff§!."
- BLK_use_locals_tt:0 "Completing this focus will §Yunlock decisions§! to §Rsecure retaken land§! and §Grise morale and support for war effort§!."
+ BLK_use_locals_tt:0 "Completing this focus will §Yunlock decisions§! to §Rsecure retaken land§! and §Graise morale and support for the war effort§!."
  
  BLK_belkan_war_controls_heart_lands_tt:0 "We control all core home states."
  BLK_belkan_war_controls_north_tt:0 "We control all lost territory in the north-east and we set up puppet governments in FATO, Gebet and Recta."
@@ -495,6 +548,8 @@
  BLK_belkan_war_controls_south_tt:0 "We control all lost territory to Osea and Sapin."
 
  ### DECISIONS ###
+
+ BLK_belkan_war_info_event:0 "Ace Combat Series Lore - Belkan War"
 
  BLK_resurces_DLP:0 "Resources Excavation"
  #BLK_resurces_DLP_desc:0 "" #category for excavation decisions
@@ -507,8 +562,8 @@
  #BLK_public_works_DLP_desc:0 "zzz" #category for public works DLP can order
  BLK_print_mefo_dec:0 "Print SBMB Promissory Notes"
  BLK_print_mefo_dec_desc:0 "A few government members proposed an idea to print and sell special Promissory Notes to the population. They will work similarly to common war bonds. But, thanks to a few loopholes and manipulations they will do far more work in the benefit of funding our military expansions while having almost endless time to pay them back with almost no interest rate."
- BLK_use_prisoners_dec:0 "12 Hours Shifts For Prisoners"
- BLK_use_prisoners_dec_desc:0 "To keep up with demands for military production we could expand on our Penal Labour Laws. As of right now short therm output is far more important we can lower total serving times while forcing them to work 4 aditional hours in factories and on constructin sites. This will also allow us to switch from three to two brigade work system."
+ BLK_use_prisoners_dec:0 "12 Hour Shifts For Prisoners"
+ BLK_use_prisoners_dec_desc:0 "To keep up with demands for military production we could expand on our Penal Labour Laws. As of right now short term output is far more important, and we can lower total serving times while forcing them to work 4 additional hours in factories and construction sites. This will also allow us to switch from three to two brigade work system."
  BLK_expand_south_belka_munitions:0 "Expand South Belka Munitions"
  #BLK_expand_south_belka_munitions_desc:0 "As our key arms manufacturer"
  BLK_borrow_from_perbla_civs:0 "Borrow Money From Perbla"
@@ -522,22 +577,25 @@
  BLK_4_civs_2_DLP:0 "New Workplaces §YCivilian Factories§! Timeout" #BLK_new_workplaces
  
  BLK_plan_z_dlp:0 "Plan Z"
+ BLK_plan_z_tt:0 "Unlocks decisions that aim to overhaul Belka's navy."
  #BLK_plan_z_dlp_desc:0 "adadad" #category only for plan z - fast and rapid expantion of belkan navy
  BLK_build_navy:0 "Construct The Navy"
+ BLK_navy_building:0 "Currently Constructing Navy"
+ BLK_build_navy_own_tt:0 "Our navy will be reinforced with a fleet consisting of destroyers, cruisers and battleships."
  
  #Excalibur
  BLK_excalibur_cat:0 "Excalibur - Sword of Annihilation"
- BLK_excalibur_cat_desc:0 "Excalibur , also known as the Sword of Annihilation, and Tauberg's Sword is a chemical laser weapon conceived as a long-range, anti-ICBM defense system.\n\nBuilt under Ballistic Missile Defense (BMD) program, which was intended to safeguard against ICBM attacks in the event of worldwide nuclear warfare. The concept of an anti-ICBM laser interception system was eventually chosen as a symbol of the nation's technological strength.\n\nExcalibur Status: [Root.GetBLKExcaliburStatus]" #category for everything related to excalibur so short ex desc should be ok, i think ???
+ BLK_excalibur_cat_desc:0 "Excalibur , also known as the Sword of Annihilation, and Tauberg's Sword is a chemical laser weapon conceived as a long-range anti-ICBM defense system.\n\nBuilt under Ballistic Missile Defense (BMD) program, which was intended to safeguard against ICBM attacks in the event of worldwide nuclear warfare. The concept of an anti-ICBM laser interception system was eventually chosen as a symbol of the nation's technological strength.\n\nExcalibur Status: [Root.GetBLKExcaliburStatus]" #category for everything related to excalibur so short ex desc should be ok, i think ???
  excalibur_status_destroyed:0 "§RDESTROYED§!"
  excalibur_status_cooling:0 "§BCooling§!"
  excalibur_status_fire:0 "§YFiring§!"
  excalibur_status_ready_fire:0 "§GReady§!"
  BLK_excalibur_cooling_after_bombing:0 "Excalibur Is Cooling"
- BLK_excalibur_fire_land:0 "Excalibur is ready to conduct land bombardment"
+ BLK_excalibur_fire_land:0 "Excalibur is ready to conduct land bombardment."
  BLK_excalibur_fire_land_tt:0 "§YTo conduct land statewide strategic bombardment select enemy controlled state and click Excalibur icon on the right side of state window.§!"
- BLK_excalibur_fire_during_aa:0 "Excalibur is conducting Anti-Air fire"
- BLK_excalibur_cooling_after_aa:0 "Excalibur is cooling"
- BLK_excalibur_fire_aa:0 "Activate Excalibur"
+ BLK_excalibur_fire_during_aa:0 "Excalibur is conducting Anti-Air fire."
+ BLK_excalibur_cooling_after_aa:0 "Excalibur is cooling."
+ BLK_excalibur_fire_aa:0 "Activate Excalibur."
  
  BLK_belkan_war_category:0 "The Belkan War"
  #BLK_belkan_war_category_desc:0 "sfsfsfsdf" #category for all decision and mission related to war itself so no idea what to write here
@@ -559,7 +617,7 @@
  BLK_use_locals_decision:0 ""
  
  ### FLAGS ###
- 
+ belka_dlp_pre_war:0 "DLP Focus Tree"
  BLK_flag_sell_lands_yes:0 "Osea Have Sent Us Proposition"
  BLK_DLP_won_flag:0 "DLP Won The Elections"
  BLK_war_rep_going:0 "Setting up Puppet Government secision is ongoing"

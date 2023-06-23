@@ -2911,7 +2911,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "engineering_year_left"
-				position = { x=100 y=40 }
+				position = { x=80 y=40 }
 				size = { width = 130 height = 100% }
 				orientation = upper_left
 
@@ -2947,7 +2947,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1994"
+					text = "1993"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3046,7 +3046,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1994"
+					text = "1993"
 					maxWidth = 130
 					maxHeight = 32
 					format = left
@@ -3112,7 +3112,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_subtitle"
-					position = { x = 957 y = 210 }
+					position = { x = 822 y = 210 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3125,7 +3125,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_subtitle_production"
-					position = { x = 400 y = 115  }
+					position = { x = 265 y = 115  }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}

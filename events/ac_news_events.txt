@@ -397,7 +397,7 @@ news_event = { ### Destruction of excalibur
         text = ac_news_event.11.t
     }
     desc = {
-        text = ac_news_event.1.d
+        text = ac_news_event.11.d
     }
     is_triggered_only = yes
     major = yes

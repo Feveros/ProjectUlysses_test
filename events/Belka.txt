@@ -753,6 +753,19 @@ country_event = {
 	}
 }
 
+country_event = { #belka war info event
+	id = belka_dlp_war.97
+	title = belka_dlp_war.97.t
+	desc = belka_dlp_war.97.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_war.97.a}
+	}
+}
+
 country_event = { #south belka spaws
 	id = belka_dlp_war.98
 	title = belka_dlp_war.98.t

@@ -22,6 +22,7 @@ BLK_excalibur_cat = {
 		}
 		available = {
 			NOT = { has_global_flag = excalibur_destroyed }
+			has_war = yes
 		}
 		visible = {
 			AND = {
@@ -80,6 +81,7 @@ BLK_excalibur_cat = {
 			NOT = { has_active_mission = BLK_excalibur_fire_during_aa }
 			NOT = { has_active_mission = BLK_excalibur_cooling_after_aa }
 			NOT = { has_global_flag = excalibur_destroyed }
+			has_war = yes
 		}
 		visible = {
 			has_country_flag = BLK_excalibur_anti_place
@@ -107,6 +109,28 @@ BLK_excalibur_cat = {
 }
 
 BLK_belkan_war_category = {
+	BLK_belkan_war_info_event = {
+		icon = GFX_decision_generic_decision
+		allowed = {
+		}
+		available = {
+			always = yes
+		}
+		visible = {
+			OR = {
+				has_active_mission = BLK_war_start_timer_dec
+				has_global_flag = belkan_war_is_happening
+			}
+		}
+		cost = 0
+		days_remove = 0
+		remove_effect = {
+			country_event = belka_dlp_war.97
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 	BLK_belkan_war_collapse = {
 		icon = GFX_decision_generic_scorched_earth
 		activation = {

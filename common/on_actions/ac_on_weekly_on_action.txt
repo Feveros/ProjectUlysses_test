@@ -17,23 +17,20 @@ on_actions = {
 					limit = {
 						has_war = yes
 						is_ai = yes
+						NOT = {
+							has_idea = ai_uber_buff_idea
+						}
 					}
-					set_technology = {
-						popup = no
-						ai_war_uber_buff = 1
-					}
+					add_ideas = ai_uber_buff_idea
 				}
 			}
 			if = {
 				every_country = {
 					limit = {
 						has_war = no
-						has_tech = ai_war_uber_buff
+						has_idea = ai_uber_buff_idea
 					}
-					set_technology = {
-						popup = no
-						ai_war_uber_buff = 0
-					}
+					remove_ideas = ai_uber_buff_idea
 				}
 			}
 		}

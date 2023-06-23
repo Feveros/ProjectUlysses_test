@@ -16,7 +16,7 @@ state={
 		add_core_of = SAP
 		buildings = {
 			infrastructure = 0
-			arms_factory = 0
+			arms_factory = 1
 			industrial_complex = 3
 			air_base = 0
 

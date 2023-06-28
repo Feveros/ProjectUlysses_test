@@ -139,9 +139,9 @@
  BLK_the_crisis_continues:0 "The Crisis Continues"
  BLK_the_crisis_continues_desc:0 "Our nation has been in a severe crisis for several years now, with no end in sight. The longer this drags on, the less likely we will be able to recover. It's time to look at this situation for what it is, and analyze the finer details of it."
  BLK_country_wide_protests:0 "Country Wide Protests"
- BLK_country_wide_protests_desc:0 "The complete collapse of living standards in our country has skyrocketed discontent with our administration, and hundreds of people across the nation are protesting en masse. If we are not careful, we could make things much worse. We will investigate these protests and see how we can alleviate, or at least placate, them."
- BLK_economy_in_pieces:0 "Economy Collapsing"
- BLK_economy_in_pieces_desc:0 "It goes without saying that all this trouble originated from the economic stagnation, then recession, which itself originated from poor management of our funds. We need to get a perspective on just how bad the damage is, and what methods we can take to fix it."
+ BLK_country_wide_protests_desc:0 "The complete collapse of living standards in our country has skyrocketed discontent with our administration, and hundreds of people across the nation are protesting en masse. If we are not careful, we could make things much worse. We will investigate these protests and see how we can alleviate their issues, or at least placate them."
+ BLK_economy_in_pieces:0 "Collapsing Economy"
+ BLK_economy_in_pieces_desc:0 "It goes without saying that all this trouble originated from the economic stagnation, then recession, which itself originated from poor management of our funds. We need to get a better perspective on just how bad the damage is, and what methods we can take to fix it."
  BLK_no_work_place:0 "No Work For People"
  BLK_no_work_place_desc:0 "The closing of hundreds of both local and national businesses has laid off millions of people, which is a self-replicating issue in itself as well as causing many more issues. We need to study the scale of this unemployment and get stats on how much we have to work with, and how much time we have left before it becomes unrecoverable."
  BLK_no_money:0 "No Money"
@@ -174,7 +174,7 @@
  BLK_seeds_of_industry:0 "Manipulation, Fabrication And Other Market Strategies"
  BLK_seeds_of_industry_desc:0 "The economic market is a ruthless battleground, and if we wish to harness it to our advantage we must be willing to use any means necessary to control it, even means which might not be well liked. It's all for the greater good, anyway."
  BLK_dev_south_belka:0 "Develop South Belka"
- BLK_dev_south_belka_desc:0 "South Belka is a region of our nation which did not have significant development, however there is plenty of space for new buildings there. We will develop this land specifically, as it will provide the greatest amount of possibilities for further development."
+ BLK_dev_south_belka_desc:0 "South Belka is a region of our nation which was never developed significantly, however there is plenty of space for new buildings there. We will develop this land specifically, as it will provide the greatest amount of possibilities for further development."
  BLK_dev_heart_of_the_nation:0 "Develop Heart Of The Nation"
  BLK_dev_heart_of_the_nation_desc:0 "The north of Belka is well defended and central to our nation. We can build off existing infrastructure and continue developments here as it will give us a quick return on investment in addition to serving our nation for years to come."
  BLK_end_of_the_chain:0 "Domestic Stability"
@@ -188,7 +188,7 @@
  BLK_tools_and_machinery:0 "Buy New Tools And Machinery"
  BLK_tools_and_machinery_desc:0 "Belka's industrial foundation hasn't been updated or even really analyzed since the beginning of the crisis, and as a result our tools are likely one or more generations out of date. If we empower our factories through modernizing their tools, we will see efficiency rise in factories all across the nation, not limited to a specific area, group, or company."
  BLK_focus_our_eco:0 "Focus Our Economic Efforts"
- BLK_focus_our_eco_desc:0 "Our economic policies and style of management are very old and suited to a much earlier era, and it's likely not nearly as efficient as some of our neighbors. Reshuffling management and reforming laws and quotas to fit this will let our main factories run like a well oiled machine again."
+ BLK_focus_our_eco_desc:0 "Our economic policies and style of management are very old and suited to a much earlier era, and are likely not nearly as efficient as some of our neighbors. Reshuffling management and reforming laws and quotas to fit this will let our main factories run like a well oiled machine again."
  BLK_expand_rails:0 "Expand National Rail System"
  BLK_expand_rails_desc:0 "Aside from incrasing our production capabilities, we need to make sure that resources and goods can be easily transported throughout our nation. In the old administration, deliveries could be lost or delayed rather easily, however by standardizing all railways and expanding the federal rail system we can coordinate transportation much more efficiently than ever before."
  BLK_start_of_the_chain:0 "Investment Opportunities"
@@ -240,7 +240,7 @@
  BLK_overspending_on_military:0 "Fuel The Engines"
  BLK_overspending_on_military_desc:0 "The pacifists and other parties described the previous government as "overspending" on the military. The truth is, they were not spending enough on it. The military is the spirit and strength of Belka, and no price is high enough to keep it strong. We will restore the budget to its original state, empowering the military once again."
  BLK_military_industrial_complex:0 "Reawake Belkan Military Industrial Complex"
- BLK_military_industrial_complex_desc:0 "The military and industrial companies are closely related to each other, and increasing their cooperation is a guranteed way to keep them both strong and stable. Bringing the two together again will allow us to power our army like never before."
+ BLK_military_industrial_complex_desc:0 "The military and industrial companies are closely related to each other and increasing their cooperation is a guranteed way to keep them both strong and stable. Bringing the two together again will allow us to power our army like never before."
  BLK_quantity:0 "Quantity Ideas"
  BLK_quantity_desc:0 "The enemy nations seek to control Belka's people. If every man, woman and child in Belka were to fight back, not only would they prove a near impossible enemy to defeat, but the lack of controllable people would render any invasion pointless, giving us unique power over our enemies. We will allow anyone who wishes to serve the the ability to do so by arming the masses."
  BLK_quantity_2:0 "Use The Unusable"
@@ -270,7 +270,7 @@
  BLK_contest_lakes:0 "Contest The Great Lakes"
  BLK_contest_lakes_desc:0 "Securing control of the Great Lakes would allow us to strike into the gateway to Osea proper, forcing them to pull back and giving us an advantage. It will not be easy though, as Osea currently posesses a greater navy than ours and holds more influence over the lakes than we do."
  BLK_dig_in:0 "Let Them Come"
- BLK_dig_in_desc:0 "Osea's main weakness is that any costly war will hurt the image of its political party, meaning they will not commit to an offensive unless there is a low risk to it. We can exploit this by fortifying ourselves at the border, forcing the Osean government to either lose domestic support in costly offensives, or play defensivley and give us the initative to strike."
+ BLK_dig_in_desc:0 "Osea's main weakness is that any costly war will hurt the image of its political party, meaning they will not commit to an offensive unless there is a low risk to it. We can exploit this by fortifying ourselves at the border, forcing the Osean government to either lose domestic support in costly offensives, or play defensivley and give us the initiative to strike."
  BLK_naval_bomb:0 "To Counter Osean Numbers"
  BLK_naval_bomb_desc:0 "Osea's massive fleet will be an extremely difficult opponent to topple. Rather than fight them in decisive battle, attacks from naval aircraft will likely be much cheaper and harass their fleet constantly, draining their resources to fight effectively."
  BLK_aa_air_ports:0 "Construct Aerial Infrastructure"
@@ -298,7 +298,7 @@
  BLK_eyes_on_the_sky:0 "Eyes In The Sky"
  BLK_eyes_on_the_sky_desc:0 "Scout planes and spy planes can easily relay large amounts of info as well as sweep a whole area, providing large amounts of intel on enemy positions and operations. Their funding and development will allow us to keep a constant eye on our enemy."
  BLK_eyes_on_thr_ground:0 "Eyes On The Ground"
- BLK_eyes_on_thr_ground_desc:0 "Radio stations can be easily manned and monitored, letting us dot them all over our nation. At the first sign of enemy incursion, quick-response fighters can be sent out to deal with threats, making this an ideal solution in preserving our resources during the war."
+ BLK_eyes_on_thr_ground_desc:0 "Radio stations can be easily manned and monitored, letting us dot them all over our nation. At the first sign of enemy incursion, quick-response fighters can be sent out to deal with threats, making this an ideal solution in preserving our resources during a war."
  BLK_masters_of_the_craft:0 "Masters Of The Craft"
  BLK_masters_of_the_craft_desc:0 "Belkan aircraft are among the highest quality of their kind, and are highly prestigious in their field. We should capitalize off this and invest heavily into quality designs, both for their practical value and to build our reputation as the masters of the sky even further."
  BLK_scrap_the_graveyards:0 "Scrap The Graveyards"
@@ -330,7 +330,7 @@
  ### EVENTS ###
  
  belka.1.t:0 "Nation In Pieces"
- belka.1.d:0 "Our nation is in pain. The continued overspending on the military has wrecked our economy, which in turn has caused businesses to downsize, laying off workers, making them spend less, further drying up economic growth, causing company after company to close their doors. Without the goods and services offered by many of these companies, it has gotten harder and harder for our citizens to source food, pay bills, or provide for their families. This, in turn, has caused drastically increased radicalization and polarization of our populace, who turn to radical idealisms as their only hope of change. Even worse, due to this continued state of the nation, our resources in the government are now beginning to run thin."
+ belka.1.d:0 "Our nation is in pain. The continued overspending on the military has wrecked our economy, which in turn has caused businesses to downsize, laying off workers, making them spend less, further drying up economic growth, causing company after company to close their doors. Without the goods and services offered by many of these companies, it has gotten harder and harder for our citizens to source food, pay bills, or provide for their families. This, in turn, has caused drastically increased radicalization and polarization of our populace, who turn to radical idealisms as their only hope of change. Even worse, due to our nation being in this state for quite some time, even our resources in the government are now beginning to run thin."
  belka.1.a:0 "God Save Belka."
  
  belka.2.t:0 "People On The Streets"
@@ -366,7 +366,7 @@
  belka.9.a:0 "The best thing this deal gave us was hope."
  
  belka.10.t:0 "GLRDC Goes Live"
- belka.10.d:0 "The Great Lakes Resource Development Company opened up today, marking our second cooperation with the Oseans. Early reports haves showed us show promising amounts of resources in the area, meaning this will likely be a very lucrative deal. Digging has begun and we've invested more of our money into the program to see a profit as quickly as we can. Things are looking up for us, we may just be able to refloat our economy with this."
+ belka.10.d:0 "The Great Lakes Resource Development Company opened up today, marking our second cooperation with the Oseans. Early reports have showed us show promising amounts of resources in the area, meaning this will likely be a very lucrative deal. Digging has begun and we've invested more of our money into the program to see a profit as quickly as we can. Things are looking up for us, we may just be able to refloat our economy with this."
  belka.10.a:0 "Maybe the Oseans aren't so bad after all."
  
  belka.11.t:0 "The Results Are In"
@@ -386,7 +386,7 @@
  belka_dlp.1.a:0 "Belka will rise again."
  
  belka_dlp.2.t:0 "The 2 Year Plan"
- belka_dlp.2.d:0 "After intense discussion, we have arrived at a conclusion on how to start our reconstruction. It is clear that the military is all we have left, as it is necessary for our self-preservation, and this is exactly what we will use to our advantage. Converting a large amount of our military production into civilan will allow us to start economic growth without many funds to go off of, and our military is powerfull enough as it is to ward off any potential invasions from Osea. This will upset the militarist faction in our government, but in all likelihood they will come around when our economy recovers, which we can use to expand the military from once again."
+ belka_dlp.2.d:0 "After intense discussion, we have arrived at a conclusion on how to start our reconstruction. While the military is all we have left, and is necessary for our self-preservation, this is exactly what we will use to our advantage. Converting a large amount of our military production into civilan will allow us to start economic growth without many funds to go off of, and our military is powerful enough as it is to ward off any potential invasions from Osea. This will upset the militarist faction in our government, but in all likelyhood they will come around when our economy recovers, which we can use to expand the military from once again."
  belka_dlp.2.a:0 "We must use what we have."
  
  belka_dlp.3.t:0 "Magic Of Bureaucracy"
@@ -470,7 +470,7 @@
  belka_dlp_war.1.a:0 "We will take what is rightfully ours."
  
  belka_dlp_war.2.t:0 "Rald Declares War" # belkan war begun, event for belka, not global news event
- belka_dlp_war.2.d:0 "The time has come. Waldemarr Rald announced publicly that the crimes and humiliation committed against Belka by its neighbours had reached a breaking point, and announced that Belka would be moving into it's rightful territories, and that any resistance will be crushed, effectively declaring war against its neighbors. In response, Osea has invited all nations to an alliance they refer to as the "Allied Forces" against Belka. Sapin, their ally, and Ustio have joined this faction while Recta, Gebet, and FATO, likely fearing Osean control, have declared their own alliance, the "Anti-Belkan Northern Front." Regardless, this war will be very costly for all sides, and seeing our unstable situation, it is critical that we show quick success in this war, else the public lose faith in our government and our economy deteriorate back to its original state, or worse."
+ belka_dlp_war.2.d:0 "The time has come. Waldemarr Rald announced publicly that the crimes and humiliation committed against Belka by its neighbors had reached a breaking point, announcing that Belka would be moving into it's rightful territories, and that any resistance will be crushed, effectively declaring war against its neighbors. In response, Osea has invited all nations to an alliance they refer to as the "Allied Forces" against Belka. Sapin, their ally, and Ustio have joined this faction while Recta, Gebet, and FATO, likely fearing Osean control, have declared their own alliance, the "Anti-Belkan Northern Front." Regardless, this war will be very costly for all sides, and seeing our unstable situation, it is critical that we show quick success in this war else the public lose faith in our government and our economy deteriorate back to its original state, or worse."
  belka_dlp_war.2.a:0 "Time to teach them a lesson."
  
  belka_dlp_war.3.t:0 "Attack on Excalibur"
@@ -511,11 +511,11 @@
  belka_dlp_war_crisis.1.a:0 "The clock is ticking."
  
  belka_dlp_war_crisis.2.t:0 "Resources Low"
- belka_dlp_war_crisis.2.d:0 "While we have been able to keep economic troubles down from our manual control over several aspects of life, the cracks are beginning to show, and our ability to manage industry and civilian infrastructure is beginning to slip. It is still currently manageable, but we must see an increase in the lucrativeness of our war else we lose control of the situation."
+ belka_dlp_war_crisis.2.d:0 "While we have been able to keep economic troubles down from our manual control over several aspects of life, the cracks are beginning to show, and our ability to manage industry and civilian infrastructure is beginning to slip. It is still currently manageable, but we must find a new source of income else we lose control of the situation."
  belka_dlp_war_crisis.2.a:0 "Time is running out."
  
  belka_dlp_war_crisis.3.t:0 "Collapse of Order"
- belka_dlp_war_crisis.3.d:0 "The economic situation has fallen out of our grasp and now we are paying the consequences in full. The state of civilian life has returned to depression status, and we are losing contact with several locations around our nation. While the instability has not yet reached our military, desertions by public servants, protests, and layoffs is severely limiting our ability to supply them properly, and if we do not get some sort of damage control immediately, it is unlikely we will be able to control our military, let alone continue the war effort."
+ belka_dlp_war_crisis.3.d:0 "The economic situation has fallen out of our grasp and now we are paying the consequences in full. The state of civilian life has returned to depression status, and we are losing contact with several locations around our nation. While the instability has not yet reached our military, desertions by public servants, protests, and layoffs is severely limiting our ability to supply them properly, and if we do not get some sort of damage control immediately, it is unlikely we will be able to control our military."
  belka_dlp_war_crisis.3.a:0 "We need a solution, fast."
 
  ############ SOUTH BELKA ################
@@ -548,7 +548,7 @@
  BLK_belkan_war_controls_south_tt:0 "We control all lost territory to Osea and Sapin."
 
  ### DECISIONS ###
-
+ 
  BLK_belkan_war_info_event:0 "Ace Combat Series Lore - Belkan War"
 
  BLK_resurces_DLP:0 "Resources Excavation"
@@ -563,7 +563,7 @@
  BLK_print_mefo_dec:0 "Print SBMB Promissory Notes"
  BLK_print_mefo_dec_desc:0 "A few government members proposed an idea to print and sell special Promissory Notes to the population. They will work similarly to common war bonds. But, thanks to a few loopholes and manipulations they will do far more work in the benefit of funding our military expansions while having almost endless time to pay them back with almost no interest rate."
  BLK_use_prisoners_dec:0 "12 Hour Shifts For Prisoners"
- BLK_use_prisoners_dec_desc:0 "To keep up with demands for military production we could expand on our Penal Labour Laws. As of right now short term output is far more important, and we can lower total serving times while forcing them to work 4 additional hours in factories and construction sites. This will also allow us to switch from three to two brigade work system."
+ BLK_use_prisoners_dec_desc:0 "To keep up with demands for military production we could expand on our Penal Labour Laws. As of right now short term output is far more important, and we can lower total serving times by forcing them to work 4 additional hours in factories and construction sites. This will also allow us to switch from a three to two brigade work system."
  BLK_expand_south_belka_munitions:0 "Expand South Belka Munitions"
  #BLK_expand_south_belka_munitions_desc:0 "As our key arms manufacturer"
  BLK_borrow_from_perbla_civs:0 "Borrow Money From Perbla"
@@ -578,14 +578,14 @@
  
  BLK_plan_z_dlp:0 "Plan Z"
  BLK_plan_z_tt:0 "Unlocks decisions that aim to overhaul Belka's navy."
- #BLK_plan_z_dlp_desc:0 "adadad" #category only for plan z - fast and rapid expantion of belkan navy
+ #BLK_plan_z_dlp_desc:0 "Plan Z is a series of projects put forward with the intention of rapidly building up the Belkan Navy to an extent that it might be able to contend with the Osean Navy in open naval warfare." #category only for plan z - fast and rapid expantion of belkan navy
  BLK_build_navy:0 "Construct The Navy"
  BLK_navy_building:0 "Currently Constructing Navy"
  BLK_build_navy_own_tt:0 "Our navy will be reinforced with a fleet consisting of destroyers, cruisers and battleships."
  
  #Excalibur
  BLK_excalibur_cat:0 "Excalibur - Sword of Annihilation"
- BLK_excalibur_cat_desc:0 "Excalibur , also known as the Sword of Annihilation, and Tauberg's Sword is a chemical laser weapon conceived as a long-range anti-ICBM defense system.\n\nBuilt under Ballistic Missile Defense (BMD) program, which was intended to safeguard against ICBM attacks in the event of worldwide nuclear warfare. The concept of an anti-ICBM laser interception system was eventually chosen as a symbol of the nation's technological strength.\n\nExcalibur Status: [Root.GetBLKExcaliburStatus]" #category for everything related to excalibur so short ex desc should be ok, i think ???
+ BLK_excalibur_cat_desc:0 ""Excalibur," also known as the "Sword of Annihilation", and "Tauberg's Sword" is a chemical laser weapon conceived as a long-range anti-ICBM defense system.\n\nExcalibur was built under the Ballistic Missile Defence program, which was intended to safeguard against ICBM attacks in the event of worldwide nuclear warfare. The concept of an anti-ICBM laser interception system was eventually chosen as a symbol of the nation's technological strength.\n\nExcalibur Status: [Root.GetBLKExcaliburStatus]" #category for everything related to excalibur so short ex desc should be ok, i think ???
  excalibur_status_destroyed:0 "§RDESTROYED§!"
  excalibur_status_cooling:0 "§BCooling§!"
  excalibur_status_fire:0 "§YFiring§!"

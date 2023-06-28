@@ -12,7 +12,7 @@ state={
 			industrial_complex = 2
 			air_base = 0
 		}
-		victory_points = { 2364 50 }
+		victory_points = { 2364 30 }
 	}
 	provinces={
 		109 191 507 1228 1326 1733 1877 2226 2364 2406 2419 2489 2976 5031 9067 9096 9104 9151 9218 9227 9248 
@@ -22,7 +22,7 @@ state={
 		aluminium = 0
 		rubber = 0
 		tungsten = 0
-		steel = 0
+		steel = 33
 		chromium = 0
 	}
 

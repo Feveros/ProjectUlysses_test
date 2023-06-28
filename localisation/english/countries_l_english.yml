@@ -60,8 +60,14 @@
  
  NRL_democratic:0 "Nordlands"
  
+ OSE_fascism:0 "Osean State"
  OSE_democratic:0 "Osean Federation"
- 
+ OSE_neutrality:0 "Osea"
+ OSE_communism:0 "Osean Socialist Union"
+ OSE_monarchism:0 "Kingdom Of Osea
+ OSE_DEF:0 "Osea"
+ OSE_ADJ:0 "Osean"
+
  GEB_fascism:0 "Gebet"
  GEB_communism:0 "Gebet"
  GEB_democratic:0 "Gebet"

@@ -16,7 +16,7 @@ state={
 				naval_base = 7
 			}
 		}
-		victory_points = { 2373 50 }
+		victory_points = { 2373 30 }
 	}
 	provinces={
 		1198 1924 2373 2548 7802 7929 7944 8065 8078 8079 

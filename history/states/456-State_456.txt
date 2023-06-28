@@ -16,9 +16,9 @@ state={
 				naval_base = 5
 			}
 		}
-		victory_points = { 8854 50 }
-		victory_points = { 2356 50 }
-		victory_points = { 4377 50 }
+		victory_points = { 8854 15 }
+		victory_points = { 2356 30 }
+		victory_points = { 4377 25 }
 		victory_points = { 855 50 }
 	}
 	provinces={
@@ -29,7 +29,7 @@ state={
 		aluminium = 0
 		rubber = 0
 		tungsten = 0
-		steel = 0
+		steel = 67
 		chromium = 0
 	}
 

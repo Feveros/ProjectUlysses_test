@@ -15,17 +15,17 @@ state={
 				naval_base = 5
 			}
 		}
-		victory_points = { 536 50 }
+		victory_points = { 536 20 }
 	}
 	provinces={
 		536 902 1304 2050 2224 2255 4035 4920 7336 7493 7494 
 	}
 	resources = {
 		oil = 0
-		aluminium = 0
+		aluminium = 16
 		rubber = 0
 		tungsten = 0
-		steel = 0
+		steel = 12
 		chromium = 0
 	}
 

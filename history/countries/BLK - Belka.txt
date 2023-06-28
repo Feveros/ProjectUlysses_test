@@ -34,6 +34,8 @@ add_ideas = {
 	BLK_research_department
 	BLK_echos_of_history
 	BLK_echos_air_real_idea ###WORKAROUND - DO NOT TOUCH
+	
+	#BLK_spring_of_nations
 }
 
 ####################################################

@@ -11,7 +11,12 @@ state={
 			arms_factory = 0
 			industrial_complex = 2
 			air_base = 0
+			9178 = {
+				naval_base = 3
+			}
+
 		}
+		victory_points = { 9178 25 }
 	}
 	provinces={
 		35 239 432 1845 2769 3148 3275 3682 3721 4648 9061 9118 9132 9143 9154 9169 9178 9180 9184 9185 9188 9213 

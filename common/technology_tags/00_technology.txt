@@ -19,7 +19,6 @@ technology_categories = {
 	naval_equipment
 	rocketry
 	nuclear
-	industry
 	electronics
 	land_doctrine
 	air_doctrine
@@ -54,8 +53,6 @@ technology_categories = {
 	radar_tech
 	infantry_tech
 	marine_tech
-	construction_tech
-	excavation_tech
 	submarine_doctrine
 	air_equipment
 	cat_mobile_warfare
@@ -82,16 +79,11 @@ technology_categories = {
 	signal_company_tech
 	maintenance_company_tech
 	naval_mines
-	concentrated_industry_category
-	dispersed_industry_category
 	asw_tech
 	naval_minesweeping
 	naval_minelaying
 	cat_scout_plane
 	train_tech
-	cat_production
-	cat_synth_rubber
-	cat_synth_oil
 	cat_armored_cars
 	cat_special_forces_generic
 	cat_torpedoes
@@ -104,9 +96,17 @@ technology_categories = {
 	cat_air_engine
 	cat_air_bombs
 	
-	#####################
+	# INDUSTRY #
 	
+	cat_synth_rubber
+	cat_synth_oil
+	cat_production
+	industry
 	dockyard_industry_category
+	construction_tech
+	excavation_tech
+	concentrated_industry_category
+	dispersed_industry_category
 }
 
 technology_folders = {

@@ -3,11 +3,11 @@ state={
 	id=116
 	name="STATE_116"
 	resources={
-		oil=0
+		oil=37
 		aluminium=0
 		rubber=0
 		tungsten=0
-		steel=0
+		steel=13
 		chromium=0
 	}
 
@@ -24,7 +24,7 @@ state={
 			}
 
 		}
-		victory_points = { 5860 50 }
+		victory_points = { 5860 35 }
 
 	}
 

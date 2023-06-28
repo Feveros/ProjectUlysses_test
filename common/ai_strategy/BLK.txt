@@ -33,7 +33,7 @@ hate_osea = {
 	}
 	ai_strategy = {
 		type = front_unit_request
-		id = "OSE"
+		tag = "OSE"
 		value = 100
 	}
 }
@@ -80,7 +80,7 @@ belka_war_coming_ust = {
 	}
 	ai_strategy = {
 		type = front_unit_request
-		id = "UST"
+		tag = "UST"
 		value = 100
 	}
 }
@@ -653,7 +653,7 @@ BLK_defend_vs_fato  = {
 	ai_strategy = {
 		type = front_control
 
-		id = "FAT"
+		tag = "FAT"
 
 		ratio = 0.5
 
@@ -678,7 +678,7 @@ BLK_attack_ustio  = {
 	ai_strategy = {
 		type = front_control
 
-		id = "FAT"
+		tag = "FAT"
 
 		ratio = 0.5
 

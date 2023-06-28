@@ -507,7 +507,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				surrender_limit = 0.1
-				war_support_factor 0.1
+				war_support_factor = 0.1
 				justify_war_goal_time = -0.25
 				offensive_war_stability_factor = 0.3
 				fascism_drift  = 0.02
@@ -525,7 +525,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				surrender_limit = 0.1
-				war_support_factor 0.1
+				war_support_factor = 0.1
 				justify_war_goal_time = -0.25
 				offensive_war_stability_factor = 0.3
 				political_power_gain = 0.1
@@ -737,7 +737,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				surrender_limit = 0.1
-				war_support_factor 0.1
+				war_support_factor = 0.1
 				justify_war_goal_time = -0.25
 				offensive_war_stability_factor = 0.3
 				political_power_gain = 0.1
@@ -758,7 +758,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				surrender_limit = 0.1
-				war_support_factor 0.1
+				war_support_factor = 0.1
 				justify_war_goal_time = -0.25
 				offensive_war_stability_factor = 0.3
 				political_power_gain = 0.1
@@ -780,7 +780,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				surrender_limit = 0.1
-				war_support_factor 0.1
+				war_support_factor = 0.1
 				justify_war_goal_time = -0.25
 				offensive_war_stability_factor = 0.3
 				political_power_gain = 0.1
@@ -1154,7 +1154,40 @@ ideas = {
 		}
 		
 	}
+	
+	#########################
+	### DEMOCRATIC BELKA ####
+	#########################
+	
+	country = {
+		#Frühling der Nordosesnischen Nationen
+		BLK_spring_of_nations = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			traits = {
+				belkan_militarism
+				fato_high_command
+				gebet_cabinet
+				rectan_socialeconomics
+				ustio_defiance
+				sapin_loyalty
+				nordlands_shipyards
+				wielvakian_farmlands
+				ratios_banking
+			}
+			modifier = {
+			}
+		}
+	}
 
+	##############################################
+	##############################################
+	##############################################
 	##############################################
 	
 	aircraft_manufacturer = {

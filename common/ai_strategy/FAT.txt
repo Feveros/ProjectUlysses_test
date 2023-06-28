@@ -13,7 +13,7 @@ FAT_defend_vs_belka  = {
 	ai_strategy = {
 		type = front_control
 
-		id = "BLK"
+		tag = BLK
 
 		#ratio = 0.5
 

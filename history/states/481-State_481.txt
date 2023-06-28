@@ -3,12 +3,12 @@ state={
 	id=481
 	name="STATE_481"
 	resources={
-		oil=1000
-		aluminium=1000
-		rubber=1000
-		tungsten=1000
-		steel=1000
-		chromium=1000
+		oil=40
+		aluminium=15
+		rubber=0
+		tungsten=0
+		steel=35
+		chromium=0
 	}
 
 	history={
@@ -34,10 +34,10 @@ state={
 			}
 
 		}
-		victory_points = { 8902 55 }
+		victory_points = { 8918 90 }
 		victory_points = { 5825 50 }
-		victory_points = { 9062 50 }
-		victory_points = { 1002 50 }
+		victory_points = { 9062 30 }
+		victory_points = { 1002 20 }
 	}
 
 	provinces={

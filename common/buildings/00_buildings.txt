@@ -220,4 +220,29 @@ buildings = {
 		value = 10
 		infrastructure_construction_effect = yes
 	}
+	stonehenge = {
+		show_on_map = 1
+		has_destroyed_mesh = yes
+		base_cost = 999999999999999999999999999999999999999999999
+		per_level_extra_cost = 999999999999999999999999999999999999999999999
+		provincial = yes
+		disabled_in_dmz = no
+		icon_frame = 99
+		max_level = 1
+		value = 999999999999999999999999999999999999999999999
+		infrastructure_construction_effect = yes
+	}
+	megalith = {
+		show_on_map = 1
+		always_shown = yes
+		base_cost = 999999999999999999999999999999999999999999999
+		per_level_extra_cost = 999999999999999999999999999999999999999999999
+		provincial = yes
+		disabled_in_dmz = no
+		icon_frame = 99
+		land_fort = 1
+		max_level = 1
+		value = 999999999999999999999999999999999999999999999
+		infrastructure_construction_effect = no
+	}
 }

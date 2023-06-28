@@ -3,7 +3,7 @@ state={
 	id=454
 	name="STATE_454"
 	resources={
-		oil=0
+		oil=127
 		aluminium=0
 		rubber=0
 		tungsten=0
@@ -26,9 +26,9 @@ state={
 				naval_base = 2
 			}
 		}
-		victory_points = { 118 50 }
+		victory_points = { 118 20 }
 		victory_points = { 9141 50 }
-		victory_points = { 3978 50 }
+		victory_points = { 3978 35 }
 
 	}
 

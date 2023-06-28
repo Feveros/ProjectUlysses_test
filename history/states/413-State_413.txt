@@ -17,11 +17,11 @@ state={
 		757 1295 2164 3249 4883 8335 8385 8386 8406 8430 8468 8560 8615 
 	}
 	resources = {
-		oil = 0
+		oil = 15
 		aluminium = 0
 		rubber = 0
 		tungsten = 0
-		steel = 0
+		steel = 11
 		chromium = 0
 	}
 

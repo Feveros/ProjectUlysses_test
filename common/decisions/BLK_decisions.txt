@@ -762,6 +762,8 @@ BLK_resurces_DLP = {
 					level = 1
 					instant_build = yes
 				}
+			}
+			BLK = {
 				random_owned_controlled_state = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -827,7 +829,7 @@ BLK_resurces_DLP = {
 			}
 		}
 		available = {
-			has_tech = excavation2
+			has_tech = construction2
 			num_of_civilian_factories_available_for_projects > 2
 			owns_state = 270
 			controls_state = 270

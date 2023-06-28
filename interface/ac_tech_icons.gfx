@@ -1,6 +1,11 @@
 spriteTypes = {
 ################################################################################
 	spriteType = {
+		name = GFX_efficiency_retention_tech_1
+		texturefile = gfx/interface/technologies/efficiency_retention_tech_1.dds
+	}
+################################################################################
+	spriteType = {
 		name = GFX_efficiency_cap_tech_1_medium
 		texturefile = gfx/interface/technologies/efficiency_cap_1.dds
 	}

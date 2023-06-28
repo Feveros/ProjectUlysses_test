@@ -44,6 +44,7 @@ type={
 	}
 }
 
+
 type={
 	type="avalondam"
 	use_animation=no
@@ -59,6 +60,7 @@ type={
 		}
 	}
 }
+
 
 type={
 	type="frame_border_logo_entity"

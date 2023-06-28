@@ -49,12 +49,8 @@ add_namespace = ac_news_event
 news_event = { ### Belka sells lands
     id = ac_news_event.1
 	picture = GFX_news_event_009
-    title = {
-        text = ac_news_event.1.t
-    }
-    desc = {
-        text = ac_news_event.1.d
-    }
+    title = ac_news_event.1.t
+    desc = ac_news_event.1.d
     is_triggered_only = yes
     major = yes
     option = {
@@ -93,12 +89,8 @@ news_event = { ### Belka sells lands
 news_event = { ### Ratio takes east ustio
     id = ac_news_event.2
 	picture = GFX_news_event_hitler_handshake
-    title = {
-        text = ac_news_event.2.t
-    }
-    desc = {
-        text = ac_news_event.2.d
-    }
+    title = ac_news_event.2.t
+    desc = ac_news_event.2.d
     is_triggered_only = yes
     major = yes
     option = {
@@ -122,12 +114,8 @@ news_event = { ### Ratio takes east ustio
 news_event = { ### Recta spawns
     id = ac_news_event.3
 	picture = GFX_news_event_canada_patriation
-    title = {
-        text = ac_news_event.3.t
-    }
-    desc = {
-        text = ac_news_event.3.d
-    }
+    title = ac_news_event.3.t
+    desc = ac_news_event.3.d
     is_triggered_only = yes
     major = yes
     option = {
@@ -156,12 +144,9 @@ news_event = { ### Recta spawns
 news_event = { ### GLR died
     id = ac_news_event.4
 	picture = GFX_news_event_worker_protests
-    title = {
-        text = ac_news_event.4.t
-    }
-    desc = {
-        text = ac_news_event.4.d
-    }
+    title = ac_news_event.4.t
+    desc = ac_news_event.4.d
+
     is_triggered_only = yes
     major = yes
     option = {
@@ -190,12 +175,9 @@ news_event = { ### GLR died
 news_event = { ### DLP won
     id = ac_news_event.5
 	picture = GFX_news_event_election_vote
-    title = {
-        text = ac_news_event.5.t
-    }
-    desc = {
-        text = ac_news_event.5.d
-    }
+    title = ac_news_event.5.t
+    desc = ac_news_event.5.d
+
     is_triggered_only = yes
     major = yes
     option = {
@@ -217,12 +199,9 @@ news_event = { ### DLP won
 news_event = { ### Rald Coup
     id = ac_news_event.6
 	picture = GFX_news_event_romania_poland_visit
-    title = {
-        text = ac_news_event.6.t
-    }
-    desc = {
-        text = ac_news_event.6.d
-    }
+    title = ac_news_event.6.t
+    desc = ac_news_event.6.d
+
     is_triggered_only = yes
     major = yes
     option = {
@@ -244,12 +223,9 @@ news_event = { ### Rald Coup
 news_event = { ### Belkan War
     id = ac_news_event.7
 	picture = GFX_news_event_soldiers_marching
-    title = {
-        text = ac_news_event.7.t
-    }
-    desc = {
-        text = ac_news_event.7.d
-    }
+    title = ac_news_event.7.t
+    desc = ac_news_event.7.d
+
     is_triggered_only = yes
     major = yes
     option = {
@@ -288,12 +264,10 @@ news_event = { ### Belkan War
 news_event = { ### Belkan Nukes
     id = ac_news_event.8
 	picture = GFX_news_event_nuke
-    title = {
-        text = ac_news_event.8.t
-    }
-    desc = {
-        text = ac_news_event.8.d
-    }
+    title = ac_news_event.8.t
+
+    desc = ac_news_event.8.d
+
     is_triggered_only = yes
     major = yes
     option = {
@@ -315,12 +289,9 @@ news_event = { ### Belkan Nukes
 news_event = { ### Belka Won
     id = ac_news_event.9
 	picture = GFX_news_event_german_soldiers
-    title = {
-        text = ac_news_event.9.t
-    }
-    desc = {
-        text = ac_news_event.9.d
-    }
+    title = ac_news_event.9.t
+    desc = ac_news_event.9.d
+
     is_triggered_only = yes
     major = yes
     option = {
@@ -359,12 +330,9 @@ news_event = { ### Belka Won
 news_event = { ### Resurces in ustio
     id = ac_news_event.10
 	picture = GFX_news_event_069
-    title = {
-        text = ac_news_event.10.t
-    }
-    desc = {
-        text = ac_news_event.10.d
-    }
+    title = ac_news_event.10.t
+    desc = ac_news_event.10.d
+
     is_triggered_only = yes
     major = yes
     option = {
@@ -393,12 +361,9 @@ news_event = { ### Resurces in ustio
 news_event = { ### Destruction of excalibur
     id = ac_news_event.11
 	picture = GFX_news_event_civil_war_turkey
-    title = {
-        text = ac_news_event.11.t
-    }
-    desc = {
-        text = ac_news_event.11.d
-    }
+    title = ac_news_event.11.t
+    desc = ac_news_event.11.d
+
     is_triggered_only = yes
     major = yes
     option = {

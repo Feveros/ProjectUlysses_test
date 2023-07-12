@@ -1,0 +1,30 @@
+add_namespace = osea_belkan_war
+
+country_event = {
+	id = osea_belkan_war.1
+	title = osea_belkan_war.1.t
+	desc = osea_belkan_war.1.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = osea_belkan_war.1.a
+		swap_ideas = { remove_idea = ose_overextended_military add_idea = ose_overextended_military_focus_belka }
+	}
+}
+
+country_event = {
+	id = osea_belkan_war.2
+	title = osea_belkan_war.2.t
+	desc = osea_belkan_war.2.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = osea_belkan_war.2.a
+		swap_ideas = { remove_idea = ose_logistical_nightmare add_idea = ose_logistical_nightmare_belkan_war }
+		swap_ideas = { remove_idea = ose_overextended_military_focus_belka add_idea = ose_overextended_military_belkan_war }
+	}
+}

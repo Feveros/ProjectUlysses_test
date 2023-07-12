@@ -1,0 +1,694 @@
+division_template = {
+	name = "Infantry Brigade"
+
+	division_names_group = OSE_Inf_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mot_artillery_brigade = { x = 0 y = 3 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = OSE_Inf_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		mot_artillery_brigade = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		mot_artillery_brigade = { x = 1 y = 3 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Tank Brigade"
+
+	division_names_group = OSE_Arm_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		ifv = { x = 0 y = 2 }
+        ifv = { x = 0 y = 3 }
+		mot_artillery_brigade = { x = 0 y = 4 }
+	}
+	support = {
+        mot_recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Tank Division"
+
+	division_names_group = OSE_Arm_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		ifv = { x = 0 y = 2 }
+        ifv = { x = 0 y = 3 }
+		mot_artillery_brigade = { x = 0 y = 4 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		ifv = { x = 1 y = 2 }
+        ifv = { x = 1 y = 3 }
+		mot_artillery_brigade = { x = 1 y = 4 }
+	}
+	support = {
+        mot_recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Motorised Infantry Brigade"
+
+	division_names_group = OSE_MOT_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+	    mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mot_artillery_brigade = { x = 0 y = 4 }
+	}
+	support = {
+	    engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorised Infantry Division"
+
+	division_names_group = OSE_MOT_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+	    mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mot_artillery_brigade = { x = 0 y = 4 }
+		mechanized = { x = 1 y = 0 }
+	    mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mot_artillery_brigade = { x = 1 y = 3 }
+	}
+	support = {
+	    engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+#######################################################
+units = {
+######################################################
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 13
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 14
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 15
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 16
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 17
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 18
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 19
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 20
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 21
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 22
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 23
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 24
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 25
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 26
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 27
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 28
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 29
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 30
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 31
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 32
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 33
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 34
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 35
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 36
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 37
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 38
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 39
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 40
+		}
+		location = 1160
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+#########################################################	
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1160
+		division_template = "Motorised Infantry Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 1160
+		division_template = "Motorised Infantry Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1160
+		division_template = "Motorised Infantry Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 1160
+		division_template = "Motorised Infantry Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 1160
+		division_template = "Motorised Infantry Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 1160
+		division_template = "Motorised Infantry Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 1160
+		division_template = "Motorised Infantry Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 1160
+		division_template = "Motorised Infantry Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 1160
+		division_template = "Motorised Infantry Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 1160
+		division_template = "Motorised Infantry Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	#########################################################	
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1160
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 1160
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1160
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 1160
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 1160
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 1160
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 1160
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 1160
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 1160
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 1160
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.1
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+}
+##############################################
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = 	motorized_equipment_1
+		amount = 5000
+	}
+}

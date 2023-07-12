@@ -1,0 +1,206 @@
+﻿l_english:
+
+ #ENG_fascism:0 "British Empire"
+ #ENG_fascism_DEF:0 "the British Empire"
+ #ENG_democratic:0 "United Kingdom"
+ #ENG_democratic_DEF:0 "the United Kingdom"
+ #ENG_neutrality:0 "Great Britain"
+ #ENG_neutrality_DEF:0 "Great Britain"
+ #ENG_communism:0 "Union of Britain"
+ #ENG_communism_DEF:0 "the Union of Britain"
+ #ENG_fascism_ADJ:0 "British"
+ #ENG_democratic_ADJ:0 "British"
+ #ENG_neutrality_ADJ:0 "British"
+ #ENG_communism_ADJ:0 "British"
+ #ENG:0 "Britain"
+ #ENG_DEF:0 "Britain"
+ #ENG_ADJ:0 "British"
+ 
+ #_fascism:0 ""
+ #_communism:0 ""
+ #_democratic:0 ""
+ #_neutrality:0 ""
+ #_monarchism:0 ""
+ #_DEF:0 ""
+ #_ADJ:0 ""
+
+ BLK_fascism:0 "Belkan Federation"
+ BLK_communism:0 "Belkan Union"
+ BLK_democratic:0 "Belkan Federation"
+ BLK_neutrality:0 "Belkan Federation"
+ BLK_monarchism:0 "Principality of Belka"
+ BLK_DEF:0 "Belka"
+ BLK_ADJ:0 "Belkan"
+ 
+ SBK_fascism:0 "South Belka"
+ SBK_communism:0 "South Belka"
+ SBK_democratic:0 "South Belka"
+ SBK_neutrality:0 "South Belka"
+ SBK_monarchism:0 "South Belka"
+ SBK_DEF:0 "South Belka"
+ SBK_ADJ:0 "South Belkan"
+ 
+ SAP_fascism:0 "Kingdom of Sapin"
+ SAP_communism:0 "Sapin"
+ SAP_democratic:0 "Sapin"
+ SAP_neutrality:0 "Kingdom of Sapin"
+ SAP_monarchism:0 "Kingdom of Sapin"
+ SAP_DEF:0 "Sapin"
+ SAP_ADJ:0 "Sapinian"
+ 
+ RAT_democratic:0 "Ratio"
+ 
+ FAT_fascism:0 "FATO"
+ FAT_communism:0 "FATO"
+ FAT_democratic:0 "FATO"
+ FAT_neutrality:0 "FATO"
+ FAT_monarchism:0 "FATO"
+ FAT_DEF:0 "FATO"
+ FAT_ADJ:0 "FATO"
+ 
+ NRL_democratic:0 "Nordlands"
+ 
+ OSE_fascism:0 "Osean State"
+ OSE_democratic:0 "Osean Federation"
+ OSE_neutrality:0 "Osea"
+ OSE_communism:0 "Osean Socialist Union"
+ OSE_monarchism:0 "Kingdom Of Osea
+ OSE_DEF:0 "Osea"
+ OSE_ADJ:0 "Osean"
+
+ GEB_fascism:0 "Gebet"
+ GEB_communism:0 "Gebet"
+ GEB_democratic:0 "Gebet"
+ GEB_neutrality:0 "Gebet"
+ GEB_monarchism:0 "Gebet"
+ GEB_DEF:0 "Gebet"
+ GEB_ADJ:0 "Gebetan"
+ 
+ REC_fascism:0 "Recta"
+ REC_communism:0 "Recta"
+ REC_democratic:0 "Recta"
+ REC_neutrality:0 "Recta"
+ REC_monarchism:0 "Recta"
+ REC_DEF:0 "Recta"
+ REC_ADJ:0 "Rectan"
+ 
+ UST_fascism:0 "Ustio"
+ UST_communism:0 "Ustio"
+ UST_democratic:0 "Ustio"
+ UST_neutrality:0 "Ustio"
+ UST_monarchism:0 "Ustio"
+ UST_DEF:0 "Ustio"
+ UST_ADJ:0 "Ustian"
+ 
+ WIE_democratic:0 "Wielvakia"
+ 
+ PBL_fascism:0 "Perblan State"
+ PBL_communism:0 "Socialist Federation of Perblan"
+ PBL_democratic:0 "Federation of Perbla"
+ PBL_neutrality:0 "Perbla"
+ PBL_monarchism:0 "Kingdom of Perbla"
+ PBL_DEF:0 "Perbla"
+ PBL_ADJ:0 "Perblan"
+ 
+ LEA_democratic:0 "Leasath"
+ 
+ AUR_democratic:0 "Aurelia"
+ 
+ YUK_democratic:0 "Union of Yuktobanian Republics"
+ 
+ ERU_fascism:0 "Erusea"
+ ERU_communism:0 "Erusea"
+ ERU_democratic:0 "Erusea"
+ ERU_neutrality:0 "Erusea"
+ ERU_monarchism:0 "Kingdom of Erusea"
+ ERU_DEF:0 "Erusea"
+ ERU_ADJ:0 "Erusean"
+ 
+ WEL_democratic:0 "Wellow"
+ 
+ UGE_democratic:0 "Ugellas"
+ 
+ AMB_democratic:0 "Amber"
+ 
+ SNS_democratic:0 "San Salvacion"
+ 
+ FCU_democratic:0 "Central Usea"
+ 
+ BLD_democratic:0 "Bulgurdarest"
+ 
+ NPT_democratic:0 "North Point"
+ 
+ DEL_democratic:0 "Delarus"
+ 
+ AZB_democratic:0 "Azbekerania"
+ 
+ SOA_democratic:0 "Sotoa"
+ 
+ ECH_democratic:0 "Echinata"
+ 
+ EHE_democratic:0 "Echea"
+ 
+ AEM_democratic:0 "Aemurraq"
+ 
+ DAK_democratic:0 "Dakrain"
+ 
+ SYC_fascism:0 "Spayca"
+ SYC_communism:0 "Spayca"
+ SYC_democratic:0 "Spayca"
+ SYC_neutrality:0 "Spayca"
+ SYC_monarchism:0 "Spayca"
+ SYC_DEF:0 "Spayca"
+ SYC_ADJ:0 "Spaycan"
+ 
+ ARK_democratic:0 "Duchy of Arklith"
+ ARK_neutrality:0 "Duchy of Arklith"
+ 
+ GIB_neutrality:0 "Gibraltar Mining Zone"
+ 
+ SET_democratic:0 "Seterano"
+ 
+ RMN_democratic:0 "Romny"
+ 
+ EMM_democratic:0 "Emmeria"
+ 
+ EVA_democratic:0 "Estovakia"
+ 
+ NEC_democratic:0 "Nordennavic"
+ 
+ VER_democratic:0 "Verusa"
+ 
+ KLG_democratic:0 "Kaluga"
+ 
+ ESN_democratic:0 "Silvonia"
+
+ SFA_democratic:0 "Sfaenland"
+
+ GLA_democratic:0 "Glaceland"
+
+ CRS_democratic:0 "Corscae"
+
+ ROH_democratic:0 "Rohden"
+ 
+ MAY_democratic:0 "Malynea"
+ 
+ DOR_democratic:0 "Dorondo"
+ 
+ FRU_democratic:0 "Ferustia"
+ 
+ CHO_democratic:0 "Chopinburg"
+ 
+ SEA_democratic:0 "Seals"
+ 
+ RJR_democratic:0 "Roca Roja"
+ 
+ PAY_democratic:0 "Payton"
+ 
+ EDW_democratic:0 "Edwards"
+ 
+ SCA_democratic:0 "Scandia"
+ 
+ VOS_democratic:0 "Voslage"
+ 
+ VLK_democratic:0 "Valka"
+ 
+ NIH_democratic:0 "Nihon"

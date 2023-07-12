@@ -1,0 +1,105 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+
+hate_belka = {
+	allowed = {
+		original_tag = OSE
+	}
+	enable = {
+		BLK = { has_government = fascism }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = antagonize
+		id = "BLK"
+		value = 300
+	}
+	ai_strategy = {
+		type = conquer
+		id = "BLK"
+		value = 100
+	}
+}
+
+do_not_protect_ustio_ose = {
+	allowed = {
+		tag = OSE
+	}
+	enable = {
+		#date < 1995.7.1
+		BLK = { is_ai = yes }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "UST"
+		value = 100
+	}
+}
+
+do_not_protect_sapin_ose = {
+	allowed = {
+		tag = OSE
+	}
+	enable = {
+		#date < 1995.7.1
+		BLK = { is_ai = yes }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "SAP"
+		value = 100
+	}
+}
+
+do_not_waste_units_on_garrison = {
+	allowed = {
+		original_tag = OSE
+	}
+	enable = {
+		has_global_flag = belkan_war_is_happening
+	}
+	ai_strategy = {
+		type = garrison
+		value = -100
+	}
+}
+
+ose_kill_weak_belka  = {
+	allowed = {
+		original_tag = OSE
+	}
+
+	enable = {
+		has_war_with = BLK
+		date > 1995.8.1
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+
+		tag = BLK
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+	}
+}

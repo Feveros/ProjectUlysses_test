@@ -1,0 +1,115 @@
+ideas = {
+
+	country = { #starting one
+		ose_logistical_nightmare = {
+			picture = generic_supply_lines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.8
+				industrial_capacity_dockyard = -0.8
+				conscription_factor = -0.25
+				training_time_army_factor = 1
+				production_factory_efficiency_gain_factor = -0.5
+				political_power_gain = -0.1
+				supply_consumption_factor = 0.1
+			}
+		}
+		ose_overextended_military = {
+			picture = chi_army_corruption3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.5
+				political_power_gain = -0.1
+				conscription_factor = -0.25
+				command_power_gain_mult = -0.5
+				experience_gain_army_factor = -0.5
+				supply_consumption_factor = 0.1
+			}
+		}
+		ose_federation_bureaucracy = {
+			picture = osean_federation
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				supply_consumption_factor = 0.1
+				surrender_limit = 0.1
+				political_advisor_cost_factor = 0.25
+				air_advisor_cost_factor = 0.25
+				army_advisor_cost_factor = 0.25
+				navy_advisor_cost_factor = 0.25
+				production_speed_buildings_factor = -0.2
+				conscription_factor = -0.25
+			}
+		}
+	}
+	
+	country = {
+		ose_overextended_military_focus_belka = {
+			picture = chi_army_corruption3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.25
+				political_power_gain = -0.1
+				conscription_factor = -0.25
+				command_power_gain_mult = -0.25
+				experience_gain_army_factor = -0.25
+				supply_consumption_factor = 0.1
+			}
+		}
+		ose_logistical_nightmare_belkan_war = {
+			picture = generic_supply_lines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				conscription_factor = -0.25
+				political_power_gain = -0.1
+			}
+		}
+		ose_overextended_military_belkan_war = {
+			picture = chi_army_corruption3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				conscription_factor = -0.25
+				supply_consumption_factor = 0.1
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+characters = {
+	OSE_daniel_andrews = { #Ustio Leader
+		name="Daniel Andrews"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_OSE_daniel_andrews"
+			}
+		}
+		country_leader = {
+			ideology=liberalism
+			traits = { }
+			expire="2050.1.1.1"
+			id=-1
+		}
+	}
+	
+	###################
+	
+	OSE_senator_armstrong = {
+		name = "Senator Armstrong"
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_OSE_senator_armstrong"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = OSE_senator_armstrong
+			allowed = {
+				original_tag = OSE
+			}
+			traits = {
+				war_industrialist
+				the_academic
+				smooth_talking_charmer
+			}
+			cost = 300
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

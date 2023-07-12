@@ -1,0 +1,224 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+leader_traits = {
+
+	### BELKA ###
+
+	BLK_echos_elitarism = {
+		random = no
+	
+		conscription_factor = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	BLK_echos_land = {
+		random = no
+	
+		army_org_factor = 0.05
+		army_attack_factor = 0.05
+		experience_gain_army = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BLK_echos_air = {
+		random = no
+	
+		#air_interception_agility_factor = 0.05
+		#air_interception_attack_factor = 0.05
+		#air_interception_defence_factor = 0.05
+		#equipment_bonus = {
+		#	small_plane_airframe = {
+		#		air_attack = 0.05
+		#		air_agility = 0.05
+		#		air_defence = 0.05
+		#		instant = yes
+		#	}
+		#}
+		experience_gain_air = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BLK_echos_air_REAL = { ###WORKAROUND - DO NOT TOUCH
+		random = no
+	
+		#air_interception_agility_factor = 0.05
+		#air_interception_attack_factor = 0.05
+		#air_interception_defence_factor = 0.05
+		equipment_bonus = {
+			small_plane_airframe = {
+				air_attack = 0.05
+				air_agility = 0.05
+				air_defence = 0.05
+				instant = yes
+			}
+		}
+		#experience_gain_air = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	BLK_echos_cas = {
+		random = no
+
+		army_bonus_air_superiority_factor = 0.2
+		ground_attack_factor = -0.25
+		air_superiority_bonus_in_combat = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BLK_land_department = {
+		random = no
+
+		land_doctrine_cost_factor = -0.1
+		experience_gain_army = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BLK_air_department = {
+		random = no
+
+		air_doctrine_cost_factor = -0.1
+		experience_gain_air = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BLK_GLRDC = {
+		random = no
+
+		consumer_goods_factor = -0.05
+		political_power_factor = 0.15
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BLK_south_belka_munitions_air_designer_trait = {
+		random = no
+
+		consumer_goods_factor = 0.025
+		political_power_factor = -0.1
+
+		equipment_bonus = {
+			small_plane_airframe = {
+				air_agility = 0.15 maximum_speed = 0.1
+			}
+			cv_small_plane_airframe = {
+				air_agility = 0.15 maximum_speed = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	mad_priest = {
+		random = no
+		
+		war_support_factor = -0.05
+		stability_factor = -0.05
+		army_core_defence_factor = 0.05
+		drift_defence_factor = 0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	the_savior_of_the_belkan_nation = {
+		random = no
+		
+		political_power_factor = 0.05
+		stability_factor = 0.2
+		war_support_factor = 0.2
+		fascism_drift = 0.05
+		surrender_limit = 0.05
+		army_org_factor = 0.05	
+	}
+	
+	### Democratic Belka ###
+	
+	###Frühling der Nordosesnischen Nationen###
+	
+	belkan_militarism = {
+		random = no
+		
+		army_defence_factor = 0.1
+		army_attack_factor = 0.1
+	}
+	fato_high_command = {
+		random = no
+		
+		max_planning = 0.2
+		command_power_gain = 0.2
+		max_command_power = 40
+	}
+	gebet_cabinet = {
+		random = no
+		
+		political_advisor_cost_factor = -0.5
+		air_advisor_cost_factor = -0.5
+		navy_advisor_cost_factor = -0.5
+		army_advisor_cost_factor = -0.5
+	}
+	rectan_socialeconomics = {
+		random = no
+		production_factory_max_efficiency_factor = 0.1
+		industrial_capacity_factory = 0.1
+	}
+	ustio_defiance = {
+		random = no
+		
+		army_org = 0.l #NOT WORKING ???#
+		army_org_regain = 0.1
+	}
+	sapin_loyalty = {
+		random = no
+		
+		army_org_factor = 0.1
+		stability_factor = 0.1
+	}
+	nordlands_shipyards = {
+		random = no
+		
+		industrial_capacity_dockyard = 0.2
+	}
+	wielvakian_farmlands = {
+		random = no
+		
+		supply_consumption_factor = -0.1
+		conscription_factor = 0.15
+		monthly_population = 0.15
+	}
+	ratios_banking = {
+		random = no	
+		
+		consumer_goods_factor = -0.05
+		political_power_factor = 0.15
+	}
+}

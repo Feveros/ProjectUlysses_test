@@ -1,0 +1,16 @@
+characters = { #starting leaders
+	REC_urs_gross = {
+		name="Urs Groß"
+		portraits = {
+			civilian = {
+				large="GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		country_leader = {
+			ideology=marxism   
+			traits = { }
+			expire="2050.1.1.1"
+			id=-1
+		}
+	}
+}

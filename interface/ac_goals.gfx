@@ -1,0 +1,31 @@
+spriteTypes = {	
+################# BELKA #############################
+	spriteType = {
+		name = "GFX_goal_BLK_dlp_won_elections"
+		texturefile = "gfx/interface/goals/BLK/goal_BLK_dlp_won_elections.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_BLK_country_wide_protests"
+		texturefile = "gfx/interface/goals/BLK/focus_BLK_country_wide_protests.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_BLK_great_lakes_resource_development_company"
+		texturefile = "gfx/interface/goals/BLK/focus_BLK_great_lakes_resource_development_company.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_BLK_cross_great_lakes"
+		texturefile = "gfx/interface/goals/BLK/focus_BLK_cross_great_lakes.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_BLK_to_the_last_man"
+		texturefile = "gfx/interface/goals/BLK/focus_BLK_to_the_last_man.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BLK_belkan_war"
+		texturefile = "gfx/interface/goals/BLK/goal_BLK_dlp_war.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BLK_belkan_air_force"
+		texturefile = "gfx/interface/goals/BLK/goal_BLK_belkan_air_force.png"
+	}
+}

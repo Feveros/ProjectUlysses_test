@@ -1,0 +1,16 @@
+characters = { #starting leaders
+	GEB_ilse_ebner = {
+		name="Ilse Ebner"
+		portraits = {
+			civilian = {
+				large="GFX_Portrait_GEB_Ilse_Ebner"
+			}
+		}
+		country_leader = {
+			ideology=conservatism  
+			traits = { }
+			expire="2050.1.1.1"
+			id=-1
+		}
+	}
+}

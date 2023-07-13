@@ -127,6 +127,11 @@ spriteTypes = {
 		texturefile = "gfx/leaders/OSE/portrait_OSE_SENATOR_small.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_OSE_herbert_weisskopf"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_herbert_weisskopf.png"
+	}
+
 ######### PERBLA ##################################
 
 	spriteType = {

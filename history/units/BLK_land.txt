@@ -444,7 +444,7 @@ units = {
 		location = 2626
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { medium_tank_equipment_1  = { owner = "BLK" } }
+		force_equipment_variants = { modern_tank_equipment_1  = { owner = "BLK" } }
 	}
 	division= {
 		division_name = {
@@ -454,7 +454,7 @@ units = {
 		location = 2626
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { medium_tank_equipment_1  = { owner = "BLK" } }
+		force_equipment_variants = { modern_tank_equipment_1  = { owner = "BLK" } }
 	}
 	division= {
 		division_name = {
@@ -464,7 +464,7 @@ units = {
 		location = 3757
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { medium_tank_equipment_1  = { owner = "BLK" } }
+		force_equipment_variants = { modern_tank_equipment_1  = { owner = "BLK" } }
 	}
 	division= {
 		division_name = {
@@ -474,7 +474,7 @@ units = {
 		location = 7557
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { medium_tank_equipment_1  = { owner = "BLK" } }
+		force_equipment_variants = { modern_tank_equipment_1  = { owner = "BLK" } }
 	}
 }
 

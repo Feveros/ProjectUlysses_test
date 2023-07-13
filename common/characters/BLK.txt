@@ -776,38 +776,38 @@ characters = { #advisors
 		}
 	}
 
-	#BLK_kurt_student={
-	#	name="Kurt Student"
-	#	portraits={
-	#		army={
-	#			large=GFX_portrait_BLK_generic
-	#		}
-	#	}
-	#	advisor={
-	#		slot = high_command
-	#		idea_token = BLK_kurt_student
-	#		ledger = air
-	#		allowed = {
-	#			original_tag = BLK
-	#		}
-	#		traits = {
-	#			air_airborne_2
-	#		}
-	#		cost = 100
-	#		ai_will_do = {
-	#			factor = 1.000
-	#		}
-	#	}
-	#	
-	#	corps_commander={
-	#		traits={ trait_reckless commando }
-	#		skill=2
-	#		attack_skill=2
-	#		defense_skill=1
-	#		planning_skill=2
-	#		logistics_skill=2
-	#	}
-	#}
+	BLK_kurt_student={
+		name="Kurt Student"
+		portraits={
+			army={
+				large=GFX_portrait_BLK_generic
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = BLK_kurt_student
+			ledger = air
+			allowed = {
+				original_tag = BLK
+			}
+			traits = {
+				air_airborne_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits={ trait_reckless commando }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
 	
 	
 	##### AIR ################

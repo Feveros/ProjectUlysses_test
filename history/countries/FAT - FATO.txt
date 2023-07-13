@@ -55,7 +55,6 @@ set_technology = {
 	tech_engineers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
-	gw_artillery = 1
 	interwar_antiair = 1
 	mobile_warfare = 1
 	fleet_in_being = 1
@@ -66,6 +65,9 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	
+	antiair_1 = 1
+	gw_artillery = 1
+	imv1 = 1
 	motorized_rocket_unit = 1
 	motorised_infantry = 1
 	mechanised_infantry = 1

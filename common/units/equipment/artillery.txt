@@ -7,6 +7,7 @@ equipments = {
 		picture = archetype_artillery_equipment		
 		type = {
 			artillery
+			infantry 
 		}
 		group_by = archetype
 		
@@ -91,10 +92,11 @@ equipments = {
 		picture = archetype_motorized_rocket_equipment			
 		type = { 
 			artillery
+			armor
 		}
 		group_by = archetype
 		
-		interface_category = interface_category_land
+		interface_category = interface_category_armor
 		
 		#Misc Abilities
 		reliability = 0.8

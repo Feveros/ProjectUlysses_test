@@ -156,4 +156,20 @@ on_actions = {
 			}
 		}
 	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 309 }
+				}
+				set_province_controller = 7570
+				set_province_controller = 7545
+				set_province_controller = 7569
+				set_province_controller = 7595
+				set_province_controller = 7603
+				set_province_controller = 1939
+				set_province_controller = 5906
+			}
+		}
+	}
 }

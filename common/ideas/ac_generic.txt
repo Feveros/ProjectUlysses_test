@@ -1,31 +1,21 @@
 ideas = {
-	#country = { 
-	#	ai_uber_buff_idea = {
-	#		allowed = {
-	#			is_ai = yes
-	#		}
-	#		allowed_civil_war = {
-	#			always = yes
-	#		}
-	#		removal_cost = -1
-	#		modifier = {
-	#			army_strength_factor = 1
-	#		}
-	#	}
-	#}
 	hidden_ideas = {
 		ai_uber_buff_idea = {
-			allowed = {
-				is_ai = yes
+			cancel = {
+				OR = {
+					is_ai = no
+					has_war = no
+				}
 			}
 			allowed_civil_war = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				army_strength_factor = 1
-				production_factory_efficiency_gain_factor = 0.25
+				army_strength_factor = 1.5
+				production_factory_efficiency_gain_factor = 0.3
 				production_factory_max_efficiency_factor = 0.25
+				supply_node_range = 0.5
 			}
 		}
 	}

@@ -72,6 +72,11 @@
  excavation3:0 "Excavation III"
  excavation3_desc:0 ""
  
+ ###### INFANTRY #######
+ 
+ support_equipment_1:0 "Support Equipment"
+ support_equipment_1_desc:0 "xxx"
+ 
  ###### TANKS AND CARS ########
  
  artillery_equipment_1:0 "Towed Artillery"
@@ -219,7 +224,7 @@
  
  tech_arti_terrain_1_bonus:0 "£unit_artillery_brigade_icon_small Barrel Artillery:\n   Forest & Jungle\n     Attack: §G+5%§!§W"
  tech_arti_terrain_2_bonus:0 "£unit_artillery_brigade_icon_small Barrel Artillery:\n   Mountain, Hill & Urban\n     Attack: §G+5%§!§W\n     Movement: §G+10%§!§W"
- tech_rocket_arti_terrain_1_bonus:0 "£GFX_unit_mot_rocket_artillery_brigade_icon_small MLRS Artillery:\n   Forest & Jungle\n     Attack: §G+5%§!§W"
+ tech_rocket_arti_terrain_1_bonus:0 "£GFX_unit_mot_rocket_artillery_brigade_icon_small MLRS Artillery:\n   Forest, Jungle & Urban\n     Attack: §G+5%§!§W"
 
  ###############
  ###         ###

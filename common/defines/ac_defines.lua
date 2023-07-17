@@ -15,7 +15,7 @@ NDefines.NDiplomacy.MAX_OPINION_VALUE = 200						-- Max opinion value cap.
 NDefines.NDiplomacy.MIN_OPINION_VALUE = -200					-- Min opinion value cap.
 
 NDefines.NProduction.BASE_FACTORY_SPEED = 5						-- Civs output
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5					-- Mils output
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 6					-- Mils output
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 10	-- Base start efficiency for factories expressed in %.
 NDefines.NProduction.BASE_FACTORY_MAX_EFFICIENCY_FACTOR = 50	-- Base max efficiency for factories expressed in %.

@@ -137,6 +137,16 @@
  BLK_own_excalibur_fire_idea:0 "Excalibur Fire Support"
  BLK_own_excalibur_fire_idea_desc:0 "Enemy air operations are severly limited by Excalibur's laser. Push forward!"
  
+ ###
+ BLK_belka_wach_am_wal_idea:0 "Die Wacht Am Waldreich"
+ BLK_belka_wach_am_wal_idea_desc:0 ""In the face of an impending cataclysm, when the very fabric of existence unravels, a symphony of unity resonates, defying the inevitable demise. Bound by an unbreakable bond, we stand as a united front, facing the abyss with unwavering resolve. As the tempest of annihilation approaches, we cast aside our differences, transcending the divides that once kept us apart. Hand in hand, we emerge from the shadows of discord, kindling a flame of collective strength that engulfs our souls. In this crucible of chaos, unity becomes our shield, and the strength of our solidarity knows no bounds. Together, we stand resolute, our hearts beating as one amidst the throes of the world's final breath. For when faced with the ultimate reckoning, it is our unwavering unity that becomes our greatest weapon, a beacon of hope amidst the encroaching darkness. And as the world's final chapter unfolds, we shall inscribe upon its pages a testament to our indomitable spirit, proving that even in the face of the end, our unity shall prevail, transcending the boundaries of time and etching a legacy that shall forever endure."\n\nHans Friedrich Sturmburg, 1220\n"Gotterdammerung III""
+ BLK_barghest:0 "Directive Barghest"
+ BLK_barghest_desc:0 ""With unwavering resolve and unyielding determination, they march forward, undeterred by the cost. Sacrificing blood and sweat, they unleash a torrent of unparalleled strength, wielding an unstoppable force that crushes all opposition. The battlefield trembles before them, as their indomitable will forges an enduring legacy, painting the annals of history with the colors of triumph."\n\nHans Friedrich Sturmburg, 1234\n"Gotterdammerung VII""
+ BLK_oberon:0 "Directive Oberon"
+ BLK_oberon_desc:0 ""Echoes of our homeland's fading heartbeat resonate. In a desperate plea, we beckon to those who have turned their backs on our nation, urging them to reclaim their place in its waning hours. The shadows of destruction loom large, and as the final act unfolds, we offer redemption to those who seize this fleeting chance. Yet, heed this warning: for those who refuse, who linger in exile, oblivion awaits. Our last breaths shall carry the weight of sacrifice, and those who refuse the call shall witness the annihilation of all they once knew. The choice is theirs to make, for in this final hour, salvation lies solely in our collective unity."\n\nHans Friedrich Sturmburg, 1245\n"Gotterdammerung XX""
+ BLK_albion:0 "Directive Albion"
+ BLK_albion_desc:0 ""As pages turn, we journey through the chronicles of craftsmanship, for in their heart beats the forge of destiny. With each dawn, a symphony of labor commences, as the hands of artisans and the sweat of toil shape the tapestry of our realm. Behold! The alchemical fusion of fire and metal kindles the sparks of progress, and within the anvil's embrace, our nation's soul is forged anew. As chimes of a smithy resound, let us heed the call of our old heritage, for in unity and labor, Albion's resplendent glory shall be rekindled, illuminating the path to a future carved by the hands of our ancestors."\n\nHans Friedrich Sturmburg, 1240\n"Gotterdammerung XIX""
+ 
  ### FOCUSES ###
  BLK_the_crisis_continues:0 "The Crisis Continues"
  BLK_the_crisis_continues_desc:0 "Our nation has been in a severe crisis for several years now, with no end in sight. The longer this drags on, the less likely we will be able to recover. It's time to look at this situation for what it is, and analyze the finer details of it."
@@ -328,6 +338,19 @@
  BLK_schlacht_um_die_Zukunft_desc:0 "#Placeholder#"
  BLK_to_fuel_the_front:0 "To Fuel The Front"
  BLK_to_fuel_the_front_desc:0 "#Placeholder#"
+ 
+ ############# WACHT AM WAL IDEAS ###########################
+ 
+ BLK_belka_wach_am_wal:0 "Die Wacht Am Waldreich"
+ BLK_belka_wach_am_wal_desc:0 "xxx"
+ BLK_plan_albion:0 "Directive Albion"
+ BLK_plan_albion_desc:0 "xxx"
+ BLK_plan_barghest:0 "Directive Barghest"
+ BLK_plan_barghest_desc:0 "xxx"
+ BLK_plan_baobhan_sith:0 "Directive Baobhan Sith"
+ BLK_plan_baobhan_sith_desc:0 "xxx"
+ BLK_plan_oberon:0 "Directive Oberon"
+ BLK_plan_oberon_desc:0 "xxx"
  
  ### EVENTS ###
  
@@ -559,6 +582,8 @@
  BLK_belkan_war_controls_north_tt:0 "We control all lost territory in the north-east and we set up puppet governments in FATO, Gebet and Recta."
  BLK_belkan_war_controls_ustio_tt:0 "We capitulated and control entire Ustio territory."
  BLK_belkan_war_controls_south_tt:0 "We control all lost territory to Osea and Sapin."
+ 
+ BLK_barghest_mod_tt:0 "\nOur soldiers are ready to make ultimate sacrifice for the nation, their §Gmorale is unbroken§! but such commitment and fanaticism will surely §Rincrease our losses§!."
 
  ### DECISIONS ###
  

@@ -5,11 +5,13 @@
  ###                 ###
  #######################
 
+ support_equipment:0 "Support Equipment"
+ support_equipment_desc:0 "xxx"
  mobile_anti_air_equipment:0 "Triple-A"
  mobile_anti_air_equipment_desc:0 "xxx"
  artillery_equipment:0 "Artillery"
  artillery_equipment_desc:0 "xxx"
- medium_tank_artillery_equipment:0 "Self-Propelled Howitzer
+ medium_tank_artillery_equipment:0 "S-P Howitzer"
  medium_tank_artillery_equipment_desc:0 "xxx"
  motorized_rocket_equipment:0 "MLRS"
  motorized_rocket_equipment_desc:0 "xxx"

@@ -14,3 +14,18 @@ belka_won_belkan_war_DLP = {
 		has_government = fascism
     }    
 }
+
+uno_reverse_card_DLP = {
+    possible = {
+        difficulty > 1
+        has_start_date < 1991.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		original_tag = BLK
+    }
+    
+    happened = {
+		has_global_flag = belka_won_belkan_war
+		date < 1995.06.20
+    }    
+}

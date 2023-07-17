@@ -2745,6 +2745,8 @@ shared_focus = {
 	available = {
 	}
     completion_reward = {
+		add_ideas = BLK_belka_wach_am_wal_idea
+		custom_effect_tooltip = BLK_belka_wach_am_wal_tt
     }
     search_filters = { }
 }
@@ -2765,6 +2767,7 @@ shared_focus = {
 	available = {
 	}
     completion_reward = {
+		add_timed_idea = { idea = BLK_albion days = 60 }
     }
     search_filters = { }
 }
@@ -2785,6 +2788,7 @@ shared_focus = {
 	available = {
 	}
     completion_reward = {
+		add_ideas = BLK_barghest
     }
     search_filters = { }
 }
@@ -2825,9 +2829,7 @@ shared_focus = {
 	available = {
 	}
     completion_reward = {
+		add_ideas = BLK_oberon
     }
     search_filters = { }
 }
-
-
-Baobhan Sith

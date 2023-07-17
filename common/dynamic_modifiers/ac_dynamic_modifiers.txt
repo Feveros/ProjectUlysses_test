@@ -27,3 +27,13 @@
 		state_resources_factor = -0.2
 		disable_strategic_redeployment = 1
 	}
+	
+	const_amount_cost_rise_modifier = {
+		enable = {
+			always = yes
+		}
+
+		production_speed_arms_factory_factor = mils_amount_cost_rise
+		production_speed_industrial_complex_factor = civs_amount_cost_rise
+		production_speed_dockyard_factor = docks_amount_cost_rise
+	}

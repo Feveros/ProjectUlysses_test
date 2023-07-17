@@ -167,17 +167,25 @@ country_event = { #SELLING LAND
 				transfer_state = 229 
 				transfer_state = 324
 				transfer_state = 211
-			}			
+			}	
 			
-			UST = { transfer_state = 309 }
-			UST = {	transfer_state = 339 }
+			UST = { 
+				transfer_state = 309 
+				transfer_state = 339
+			}
 		
-			FAT = { transfer_state = 220 }
+			FAT = {
+				transfer_state = 220 
+			}
 
-			GEB = { transfer_state = 293 }
-			GEB = {	transfer_state = 256 }
+			GEB = { 
+				transfer_state = 293
+				transfer_state = 256
+			}
 		
-			SAP = { transfer_state = 604 }
+			SAP = {
+				transfer_state = 604
+			}
 			
 			UST = { country_event = { id = ustio.1 days = 60 } }
 			GEB = { country_event = { id = recta.1 days = 90 } }
@@ -195,6 +203,7 @@ country_event = { #Osea proposes great lake
 
 	option = {
 		name = belka.10.a
+		set_country_flag = glrdc_on
 		add_ideas = BLK_GLRDC_company
 	}
 }
@@ -216,6 +225,7 @@ country_event = { #Great Lake Goes bad
 		add_political_power= -200
 		add_stability = -0.1
 		add_popularity = { ideology = democratic popularity = -0.2 }
+		clr_country_flag = glrdc_on
 		remove_ideas = BLK_GLRDC_company
 		set_global_flag = great_lakes_went_bad
 		hidden_effect = {
@@ -796,9 +806,9 @@ country_event = {
 	}
 	option = {
 		name = belka_dlp_war.99.b
-		trigger = {
-			check_variable = { BLK_wacht_am_wal_var = 5 }
-		}
+		#trigger = {
+		#	check_variable = { BLK_wacht_am_wal_var = 5 }
+		#}
 		country_event = belka_wacht_am_wal.1
 	}
 }

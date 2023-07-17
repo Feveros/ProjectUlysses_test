@@ -6,6 +6,7 @@ state={
 	history={
 		owner = BLK
 		add_core_of = BLK
+		add_core_of = SAP
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

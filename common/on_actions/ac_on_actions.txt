@@ -2,6 +2,33 @@ on_actions = {
 	on_startup = {
 		effect = {
 			every_possible_country = {
+			#####################################################################################
+				set_variable = {
+					var = mils_amount_cost_rise
+					value = num_of_military_factories
+				}
+				multiply_variable = {
+					var = mils_amount_cost_rise
+					value = -0.01
+				}
+				set_variable = {
+					var = civs_amount_cost_rise
+					value = num_of_civilian_factories
+				}
+				multiply_variable = {
+					var = civs_amount_cost_rise
+					value = -0.01
+				}
+				set_variable = {
+					var = docks_amount_cost_rise
+					value = num_of_naval_factories
+				}
+				multiply_variable = {
+					var = docks_amount_cost_rise
+					value = -0.02
+				}
+				add_dynamic_modifier = { modifier = const_amount_cost_rise_modifier }
+			#####################################################################################
 				set_rule = {
 					can_join_factions = no
 				}

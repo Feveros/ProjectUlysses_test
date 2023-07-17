@@ -1141,6 +1141,83 @@ ideas = {
 		
 	}
 	
+	### WACH AM WAL ###
+	
+	country = {
+		BLK_belka_wach_am_wal_idea = {
+			picture = GFX_idea_generic_supply_depot
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.5
+				war_support_factor = 0.5
+				fascism_drift = 0.1
+				surrender_limit = 1
+			}
+		
+		}
+		BLK_barghest = {
+			picture = GFX_idea_generic_supply_depot
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.25
+				army_defence_factor = -0.75
+				army_core_attack_factor = 0.5
+				hidden_modifier = {
+					army_strength_factor = -0.8
+					army_org_factor = 10
+					army_org_regain = 10
+				}
+				custom_modifier_tooltip = BLK_barghest_mod_tt
+			}
+		
+		}
+		BLK_oberon = {
+			picture = GFX_idea_generic_supply_depot
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = SBK
+				attack_bonus_against_cores = 0.2
+				defense_bonus_against = 0.2
+				breakthrough_bonus_against = 0.2
+			}
+		}
+		BLK_albion = {
+			picture = GFX_idea_generic_supply_depot
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.5
+				production_factory_efficiency_gain_factor = 0.5
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.25
+			}
+		}
+	
+	}
+	
 	#########################
 	### DEMOCRATIC BELKA ####
 	#########################
@@ -1394,7 +1471,7 @@ ideas = {
 				original_tag = BLK
 			}
 			visible = {
-				always = no
+				has_country_flag = glrdc_on
 			}
 			research_bonus = {
 				industry = 0.1

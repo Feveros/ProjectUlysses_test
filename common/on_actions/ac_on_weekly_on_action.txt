@@ -1,6 +1,34 @@
 on_actions = {
 	on_weekly = {
 		effect = {
+			set_variable = {
+				var = mils_amount_cost_rise
+				value = num_of_military_factories
+			}
+			multiply_variable = {
+				var = mils_amount_cost_rise
+				value = -0.01
+			}
+			set_variable = {
+				var = civs_amount_cost_rise
+				value = num_of_civilian_factories
+			}
+			multiply_variable = {
+				var = civs_amount_cost_rise
+				value = -0.01
+			}
+			set_variable = {
+				var = docks_amount_cost_rise
+				value = num_of_naval_factories
+			}
+			multiply_variable = {
+				var = docks_amount_cost_rise
+				value = -0.02
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
 			if = {
 				limit = {
 					date > 1995.01.15
@@ -22,15 +50,6 @@ on_actions = {
 						}
 					}
 					add_ideas = ai_uber_buff_idea
-				}
-			}
-			if = {
-				every_country = {
-					limit = {
-						has_war = no
-						has_idea = ai_uber_buff_idea
-					}
-					remove_ideas = ai_uber_buff_idea
 				}
 			}
 		}

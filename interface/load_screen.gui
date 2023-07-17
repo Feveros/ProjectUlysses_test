@@ -92,7 +92,7 @@ guiTypes = {
 				font = "loadscreen_tip"
 				borderSize = {x = 0 y = 0}
 				text = ""	
-				maxWidth = 900
+				maxWidth = 880
 				maxHeight =200
 				fixedsize = yes
 				format = centre

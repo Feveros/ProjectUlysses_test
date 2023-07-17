@@ -210,6 +210,22 @@ spriteTypes = {
 		texturefile = gfx/interface/technologies/BLK/BLK_spaag_2.dds
 	}
 	spriteType = {                                   
+		name = GFX_BLK_antiair_5_medium         
+		texturefile = gfx/interface/technologies/BLK/BLK_spaag_3.dds
+	}
+	spriteType = {                                   
+		name = GFX_BLK_spg_artillery_1_medium         
+		texturefile = gfx/interface/technologies/BLK/BLK_spg_1.dds
+	}
+	spriteType = {                                   
+		name = GFX_BLK_spg_artillery_3_medium         
+		texturefile = gfx/interface/technologies/BLK/BLK_spg_2.dds
+	}
+	spriteType = {                                   
+		name = GFX_BLK_spg_artillery_5_medium         
+		texturefile = gfx/interface/technologies/BLK/BLK_spg_3.dds
+	}
+	spriteType = {                                   
 		name = GFX_BLK_motorized_rocket_unit_medium         
 		texturefile = gfx/interface/technologies/BLK/BLK_motorized_rocket_unit_1.dds
 	}

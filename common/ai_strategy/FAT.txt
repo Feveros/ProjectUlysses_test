@@ -22,3 +22,33 @@ FAT_defend_vs_belka  = {
 		execution_type = careful
 	}
 }
+
+FAT_bunker_itself_GEB = {
+	allowed = {
+		original_tag = FAT
+	}
+	enable = {
+		has_war_with = BLK
+		surrender_progress > 0.25
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GEB"
+		value = 100
+	}
+}
+
+FAT_bunker_itself_REC = {
+	allowed = {
+		original_tag = FAT
+	}
+	enable = {
+		has_war_with = BLK
+		surrender_progress > 0.25
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "REC"
+		value = 100
+	}
+}

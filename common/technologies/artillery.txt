@@ -36,6 +36,12 @@ technologies = {
 	}
 	
 	antiair_2 = {
+		anti_air = {
+			air_attack = 0.05
+		}
+		medium_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
 
 		path = {
 			leads_to_tech = antiair_3
@@ -82,6 +88,12 @@ technologies = {
 	}
 	
 	antiair_4 = {
+		anti_air = {
+			air_attack = 0.05
+		}
+		medium_sp_anti_air_brigade = {
+			air_attack = 0.05
+		}
 
 		path = {
 			leads_to_tech = antiair_5
@@ -1103,6 +1115,9 @@ technologies = {
 				attack = 0.05
 			}
 			jungle = {
+				attack = 0.05
+			}
+			urban = {
 				attack = 0.05
 			}
 		}

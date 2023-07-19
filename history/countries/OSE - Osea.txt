@@ -35,10 +35,12 @@ add_ideas = {
 }
 
 #############################
-
+# Leaders
 recruit_character = OSE_daniel_andrews
-
+# Political Advisors
 recruit_character = OSE_senator_armstrong
+# Military Advisors
+
 # Generals
 recruit_character = OSE_herbert_weisskopf
 recruit_character = OSE_kevin_seinosuke
@@ -49,6 +51,8 @@ recruit_character = OSE_kai_george
 recruit_character = OSE_dominic_parry
 recruit_character = OSE_patrick_barnes
 recruit_character = OSE_Emerson_Clemens
+# Admirals
+
 
 ###############################
 ### COPIED FROM VANILLA USA ###

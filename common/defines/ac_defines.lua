@@ -21,3 +21,5 @@ NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 10	-- Base start eff
 NDefines.NProduction.BASE_FACTORY_MAX_EFFICIENCY_FACTOR = 50	-- Base max efficiency for factories expressed in %.
 NDefines.NProduction.BASE_FACTORY_EFFICIENCY_GAIN = 1			-- Base efficiency factor.
 
+NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.075					-- Max ammount of special forces battalions is total number of non-special forces battalions multiplied by this and modified by a country modifier
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 48					-- You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier

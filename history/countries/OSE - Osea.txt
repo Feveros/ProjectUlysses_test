@@ -21,6 +21,9 @@ set_popularities = {
 set_stability = 0.75
 set_war_support = 0.35
 
+starting_train_buffer = 2
+set_fuel_ratio = 1
+
 add_ideas = {
 	cold_war_eco
 	limited_conscription
@@ -36,6 +39,16 @@ add_ideas = {
 recruit_character = OSE_daniel_andrews
 
 recruit_character = OSE_senator_armstrong
+# Generals
+recruit_character = OSE_herbert_weisskopf
+recruit_character = OSE_kevin_seinosuke
+recruit_character = OSE_noah_powell
+recruit_character = OSE_richard_armstrong
+recruit_character = OSE_cullen_calhoun
+recruit_character = OSE_kai_george
+recruit_character = OSE_dominic_parry
+recruit_character = OSE_patrick_barnes
+recruit_character = OSE_Emerson_Clemens
 
 ###############################
 ### COPIED FROM VANILLA USA ###

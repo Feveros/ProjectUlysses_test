@@ -21,6 +21,9 @@ set_popularities = {
 set_stability = 0.73
 set_war_support = 0.8
 
+starting_train_buffer = 2
+set_fuel_ratio = 1
+
 add_ideas = {
 	limited_conscription
 	low_economic_mobilisation

@@ -692,6 +692,7 @@ shared_focus = {
 				value = 0
 			}
 			country_event = utility.1
+			country_event = { id = belka_dlp_war.98 days = 15 }
 		}
 	}
 	search_filters = { }

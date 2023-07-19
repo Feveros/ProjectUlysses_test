@@ -76,6 +76,23 @@ characters = {
 		}
 	}
 
+	OSE_kevin_seinosuke={
+		name="Kevin Seinosuke"
+		portraits={
+			army={
+				#large = 
+			}
+		}
+		field_marshal={
+			traits={ infantry_officer defensive_doctrine }
+			skill=3
+			attack_skill=1
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
 	OSE_noah_powell = {
 		name="Noah Powell"
 		portraits={

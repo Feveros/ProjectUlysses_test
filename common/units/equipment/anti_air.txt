@@ -41,7 +41,7 @@ equipments = {
 			#oil = 1
 			steel = 2
 		}
-		fuel_consumption = 0.6
+		fuel_consumption = 0.5
 	}
 	
 	mobile_anti_air_equipment_1 = {

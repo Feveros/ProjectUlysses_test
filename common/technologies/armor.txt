@@ -441,6 +441,10 @@ technologies = {
 			}
 		}
 		
+		on_research_complete = {
+			custom_effect_tooltip = tech_mech_terrain_1_bonus
+		}
+		
 		path = {
 			leads_to_tech = mechanised_infantry2
 			research_cost_coeff = 1
@@ -537,6 +541,9 @@ technologies = {
 				attack = 0.1
 				movement = 0.05
 			}
+		}
+		on_research_complete = {
+			custom_effect_tooltip = tech_mech_terrain_2_bonus
 		}
 		
 		path = {
@@ -940,6 +947,9 @@ technologies = {
 				attack = 0.05
 			}
 			breakthrough = 0.05
+		}
+		on_research_complete = {
+			custom_effect_tooltip = tech_lt_terrain_1_bonus
 		}
 		
 		path = {
@@ -1463,6 +1473,9 @@ technologies = {
 				movement = 0.05
 			}
 		}
+		on_research_complete = {
+			custom_effect_tooltip = tech_tank_terrain_1_bonus
+		}
 	
 		path = {
 			leads_to_tech = main_battle_tank_3
@@ -1615,6 +1628,9 @@ technologies = {
 				movement = 0.1
 			}
 		}
+		on_research_complete = {
+			custom_effect_tooltip = tech_tank_terrain_2_bonus
+		}
 	
 		path = {
 			leads_to_tech = main_battle_tank_4
@@ -1661,6 +1677,9 @@ technologies = {
 			mountain = {
 				movement = 0.05
 			}
+		}
+		on_research_complete = {
+			custom_effect_tooltip = tech_tank_terrain_3_bonus
 		}
 	
 		path = {

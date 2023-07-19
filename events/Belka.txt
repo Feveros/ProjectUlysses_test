@@ -778,6 +778,23 @@ country_event = {
 	}
 }
 
+country_event = {  ### event to check if belkan war is still ongoing - if yes - destroy excalibur
+	id = belka_dlp_war.4
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			ROOT = {
+				has_global_flag = belkan_war_is_happening
+			}
+		}
+		name = belka_dlp_war.4.a
+		country_event = belka_dlp_war.3
+	}
+}
+
 country_event = { #belka war info event
 	id = belka_dlp_war.97
 	title = belka_dlp_war.97.t
@@ -788,6 +805,19 @@ country_event = { #belka war info event
 
 	option = {
 		name = belka_dlp_war.97.a
+	}
+}
+
+country_event = { #rald plans war, event just after his coup, YES I KNOW IDs ARE A FUCKING MESS THANK YOU VERY MUCH 
+	id = belka_dlp_war.98
+	title = belka_dlp_war.98.t
+	desc = belka_dlp_war.98.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_war.98.a
 	}
 }
 

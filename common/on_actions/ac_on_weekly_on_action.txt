@@ -76,7 +76,7 @@ on_actions = {
 					check_variable = {	BLK_excalibur_destruction_meter = 2 }
 				}
 				clear_variable = BLK_excalibur_destruction_meter
-				country_event = { id = belka_dlp_war.3 days = 45 }	
+				country_event = { id = belka_dlp_war.4 days = 40 }	
 			}
 		}
 	}

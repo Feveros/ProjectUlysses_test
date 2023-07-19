@@ -15,30 +15,38 @@ FAT_defend_vs_belka  = {
 
 		tag = BLK
 
-		#ratio = 0.5
+		ratio = 0.5
 
 		priority = 100
 		ordertype = front
 		execution_type = careful
 	}
 }
-
-FAT_bunker_itself_GEB = {
+############ ONE OF THEM DOES NOT WORK, NO IDEA WHICH, I AM LEAVING BOTH COZ TOO LAZY TO TEST WHICH ###########
+FAT_bunker_itself = {
 	allowed = {
 		original_tag = FAT
 	}
 	enable = {
-		has_war_with = BLK
-		surrender_progress > 0.25
+		FAT = {
+			has_war_with = BLK
+			surrender_progress > 0.25
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = GEB
+		value = 1000
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = "GEB"
-		value = 100
+		id = REC
+		value = 1000
 	}
 }
 
-FAT_bunker_itself_REC = {
+FAT_bunker_itself = {
 	allowed = {
 		original_tag = FAT
 	}
@@ -46,9 +54,15 @@ FAT_bunker_itself_REC = {
 		has_war_with = BLK
 		surrender_progress > 0.25
 	}
+	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = "REC"
-		value = 100
+		id = GEB
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = REC
+		value = 1000
 	}
 }

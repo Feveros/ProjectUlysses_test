@@ -560,6 +560,7 @@ country_event = { #gott mit uns
 				value = 1
 			}
 		}
+		custom_effect_tooltip = WACHT_AM_WAL_PLUS_ONE
 	}
 	option = { #pick Father Wilfried Jan Riese von Sergio Luoni
 		name = belka_dlp_coup.8.c
@@ -653,6 +654,7 @@ country_event = { #new generals
 				value = 1
 			}
 		}
+		custom_effect_tooltip = WACHT_AM_WAL_PLUS_ONE
 	}
 }
 
@@ -677,6 +679,7 @@ country_event = { #purge
 				value = 1
 			}
 		}
+		custom_effect_tooltip = WACHT_AM_WAL_PLUS_ONE
 	}
 	option = { #kill south belka guys
 		name = belka_dlp_coup.10.b
@@ -752,8 +755,9 @@ country_event = {
 				var = BLK_wacht_am_wal_var
 				value = 1
 			}
+			country_event = { id = belka_dlp_coup.15 days = 35 }
 		}
-		country_event = { id = belka_dlp_coup.15 days = 35 }
+		custom_effect_tooltip = WACHT_AM_WAL_PLUS_ONE
 	}
 }
 
@@ -773,6 +777,7 @@ country_event = {
 				value = 1
 			}
 		}
+		custom_effect_tooltip = WACHT_AM_WAL_PLUS_ONE
 	}
 	option = {
 		name = belka_dlp_coup.15.b

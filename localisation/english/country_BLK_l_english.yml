@@ -554,7 +554,7 @@
  belka_dlp_coup.14.t:0 "Secret Meetings"
  belka_dlp_coup.14.d:0 "event about some secret meetings between officers, they are from south and north but there is no 100% confirmation they are part of the south belka rebelion movement"
  belka_dlp_coup.14.a:0 "Deal with them." #prevents wacht am wal
- belka_dlp_coup.14.b:0 "They pose real threat." # +1 to wacht am wal
+ belka_dlp_coup.14.b:0 "They pose no real threat." # +1 to wacht am wal
  
  belka_dlp_coup.15.t:0 "Assasination of The BSF Officer"
  belka_dlp_coup.15.d:0 "BSF Officer died - there is no 100% evidence who did it people are poiting out to one of the south belkan officer"

@@ -52,11 +52,14 @@ set_technology = {
 	tech_mountaineers = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	interwar_antitank = 1
-	gw_artillery = 1
-	interwar_antiair = 1
 	superior_firepower = 1
 	basic_train = 1
+	
+	antiair_1 = 1
+	gw_artillery = 1
+	motorised_infantry = 1
+	imv1 = 1
+	basic_light_tank = 1
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -72,23 +75,6 @@ if = {
 		set_technology = {
 			early_fighter = 1
 		}
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-	}
-}
-
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
 	}
 }
 if = {
@@ -151,11 +137,7 @@ if = {
 }
 
 ### STOCKPILE ###
-#add_equipment_to_stockpile = {
-#	type = motorized_equipment_1
-#	amount = 150
-#}
-#add_equipment_to_stockpile = {
-#	type = gw_armored_car_equipment
-#	amount = 150
-#} 
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 150
+}

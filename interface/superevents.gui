@@ -43,6 +43,12 @@ guiTypes = {
 			position = { x = 0 y = 0 }
 			alwaystransparent = yes
 		}
+		iconType = {
+			name = "superevents_WaW"
+			quadTextureSprite ="GFX_superevents_WaW"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
 		buttonType ={
 			name ="superevents_button"
 			spriteType = "GFX_supereventsbutton"
@@ -54,7 +60,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "superevents_title"
-			position = { x = -100 y = 57 }
+			position = { x = -105 y = 61 }
 			font = "Aces24"
 			format = CENTER
 			borderSize = {x = 0 y = 0}
@@ -65,8 +71,8 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "superevents_quote"
-			position = { x = 35 y = 436 }
-			font = "Aces18"
+			position = { x = 44 y = 436 }
+			font = "Aces20"
 			format = RIGHT
 			borderSize = {x = 0 y = 0}
 			text = "[GetSupereventsBody]"

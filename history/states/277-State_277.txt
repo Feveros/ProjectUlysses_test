@@ -9,18 +9,22 @@ state={
 		buildings = {
 			infrastructure = 3
 			arms_factory = 0
-			industrial_complex = 3
-			dockyard = 3
+			industrial_complex = 2
+			dockyard = 4
 			air_base = 0
 			242 = {
-				naval_base = 6
+				naval_base = 4
 			}
 			5270 = {
 				naval_base = 2
 			}
+			2825 = {
+				naval_base = 10
+			}
 		}
-		victory_points = { 1310 20 }
+		victory_points = { 1310 15 }
 		victory_points = { 5270 1 }
+		victory_points = { 2825 40 }
 	}
 	provinces={
 		165 168 242 333 485 1310 1363 2550 2601 2825 3004 5270 6074 7387 7403 7426 7452 7469 7516 
@@ -35,6 +39,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=3003456
+	manpower=5003456
 	buildings_max_level_factor=1.000
 }

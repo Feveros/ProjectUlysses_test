@@ -110,6 +110,120 @@ units = {
 
 ##########################################################################
 division_template = {
+	name = "Motor-Infanterie-Division"
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+        motorized = { x = 0 y = 2 }
+		mot_artillery_brigade = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 4996
+		division_template = "Motor-Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 8169
+		division_template = "Motor-Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 13
+		}
+		location = 3857
+		division_template = "Motor-Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 14
+		}
+		location = 8145
+		division_template = "Motor-Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 15
+		}
+		location = 8181
+		division_template = "Motor-Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 16
+		}
+		location = 4034
+		division_template = "Motor-Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 17
+		}
+		location = 8251
+		division_template = "Motor-Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 18
+		}
+		location = 2927
+		division_template = "Motor-Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 19
+		}
+		location = 8209
+		division_template = "Motor-Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 20
+		}
+		location = 8188
+		division_template = "Motor-Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+}
+##############################################################
+division_template = {
 	name = "Infanterie-Division"
 
 	division_names_group = GER_Inf_01
@@ -131,97 +245,6 @@ division_template = {
 }
 
 units = {
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 11
-		}
-		location = 4996
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 12
-		}
-		location = 8169
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 13
-		}
-		location = 3857
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 14
-		}
-		location = 8145
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 15
-		}
-		location = 8181
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 16
-		}
-		location = 4034
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 17
-		}
-		location = 8251
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 18
-		}
-		location = 2927
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 19
-		}
-		location = 8209
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 20
-		}
-		location = 8188
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	
 	division= {
 		division_name = {
 				is_name_ordered = yes
@@ -339,15 +362,16 @@ division_template = {
 	division_names_group = GER_Arm_01
 
 	regiments = {
-		medium_armor = { x = 0 y = 0 }
-		medium_armor = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-        motorized = { x = 0 y = 3 }
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		ifv = { x = 0 y = 2 }
+        ifv = { x = 0 y = 3 }
 	}
 	support = {
         mot_recon = { x = 0 y = 0 }
         engineer = { x = 0 y = 1 }
         artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
 	}
 }
 
@@ -393,20 +417,21 @@ division_template = {
 	division_names_group = GER_Arm_01
 
 	regiments = {
-		medium_armor = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-        motorized = { x = 0 y = 2 }
-		mot_artillery_brigade  = { x = 0 y = 3 }
-		medium_armor = { x = 1 y = 0 }
-        medium_armor = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-        motorized = { x = 1 y = 3 }
-		mot_artillery_brigade  = { x = 1 y = 4 }
+		modern_armor = { x = 0 y = 0 }
+		ifv = { x = 0 y = 1 }
+        ifv = { x = 0 y = 2 }
+		medium_sp_artillery_brigade  = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+        modern_armor = { x = 1 y = 1 }
+		ifv = { x = 1 y = 2 }
+        ifv = { x = 1 y = 3 }
+		motorized_rocket_brigade  = { x = 1 y = 4 }
 	}
 	support = {
         mot_recon = { x = 0 y = 0 }
         engineer = { x = 0 y = 1 }
         artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
 	}
 }
 
@@ -419,7 +444,7 @@ units = {
 		location = 2626
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { medium_tank_equipment_1  = { owner = "BLK" } }
+		force_equipment_variants = { modern_tank_equipment_1  = { owner = "BLK" } }
 	}
 	division= {
 		division_name = {
@@ -429,7 +454,7 @@ units = {
 		location = 2626
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { medium_tank_equipment_1  = { owner = "BLK" } }
+		force_equipment_variants = { modern_tank_equipment_1  = { owner = "BLK" } }
 	}
 	division= {
 		division_name = {
@@ -439,7 +464,7 @@ units = {
 		location = 3757
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { medium_tank_equipment_1  = { owner = "BLK" } }
+		force_equipment_variants = { modern_tank_equipment_1  = { owner = "BLK" } }
 	}
 	division= {
 		division_name = {
@@ -449,7 +474,7 @@ units = {
 		location = 7557
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { medium_tank_equipment_1  = { owner = "BLK" } }
+		force_equipment_variants = { modern_tank_equipment_1  = { owner = "BLK" } }
 	}
 }
 
@@ -460,18 +485,20 @@ division_template = {
 	division_names_group = GER_MOT_02
 
 	regiments = {
-		medium_armor = { x = 0 y = 0 }
-	    motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 0 }
+	    mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
 		
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
 	}
 	support = {
         mot_recon = { x = 0 y = 0 }
 	 	engineer = { x = 0 y = 1 }
         artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
 	}
 }
 
@@ -579,10 +606,10 @@ division_template = {
 	division_names_group = GER_Cav_01
 
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-        cavalry = { x = 0 y = 1 }
-        cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
+		imv = { x = 0 y = 0 }
+        imv = { x = 0 y = 1 }
+        imv = { x = 1 y = 0 }
+		imv = { x = 1 y = 1 }
 	}
 	support = {
 	}
@@ -664,13 +691,54 @@ units = {
 ######################################################
 
 instant_effect = {
+	add_equipment_to_stockpile = {
+		type = 	motorized_equipment_1
+		amount = 2000
+	}
+#######################################################	
     add_equipment_production = {
         equipment = {
 	    type = infantry_equipment_1
 	    creator = "BLK"
-	}
+		}
 	requested_factories = 5
 	progress = 0
-	efficiency = 0.2
+	efficiency = 25
+    }
+    add_equipment_production = {
+        equipment = {
+	    type = modern_tank_equipment_1
+	    creator = "BLK"
+		}
+	requested_factories = 15
+	progress = 0
+	efficiency = 25
+    }
+	add_equipment_production = {
+        equipment = {
+	    type = mechanized_equipment_1
+	    creator = "BLK"
+		}
+	requested_factories = 5
+	progress = 0
+	efficiency = 20
+    }
+	add_equipment_production = {
+        equipment = {
+	    type = ifv_equipment_1
+	    creator = "BLK"
+		}
+	requested_factories = 5
+	progress = 0
+	efficiency = 20
+    }
+	add_equipment_production = {
+        equipment = {
+	    type = motorized_equipment_1
+	    creator = "BLK"
+		}
+	requested_factories = 5
+	progress = 0
+	efficiency = 20
     }
 }

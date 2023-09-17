@@ -11,6 +11,11 @@ country_event = { ### Recta is born
 	option = {
 		name = recta.1.a
 		news_event = { id = ac_news_event.3 days = 1 }
+		hidden_effect = {
+			GEB = {
+				country_event = utility.1
+			}
+		}
 		REC = {
 			inherit_technology = GEB 
 			transfer_state = 345
@@ -23,13 +28,11 @@ country_event = { ### Recta is born
 			}
 			REC = { transfer_state = 293 }
 		}
+		add_popularity = {
+			ideology = communism
+			popularity = -20
+		}
 		hidden_effect = {
-			set_popularities = {
-				neutrality = 15
-				fascism = 10
-				democratic = 73
-				communism = 2
-			}
 			REC = { load_oob = "REC_land" }
 		}
 	}

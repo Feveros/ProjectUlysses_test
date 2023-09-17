@@ -3,4 +3,20 @@
  kamikaze_focus_tooltip_tt:0 "\nFinishing this focus unlocks usage of §YSuicide Strike§! air missions."
  unlock_dec:0 "\nFinishing this focus §GUnlocks§! §YDecision(s)§!."
  
+ cat_modern_armor:0 "Main Battle Tanks"
+ 
  monarchism_drift:0 "Daily Monarchism Support"
+ 
+ ac_special_ideas:0 "Additional Info"
+ nuke_lvl_trait:0 "Nuclear Arsenal Level"
+ nuke_lvl:0 "Nuclear Arsenal"
+ nuke_lvl_1:0 "No Nukes"
+ nuke_lvl_2:0 "Ability To Get Nukes"
+ nuke_lvl_3:0 "Small Arsenal"
+ nuke_lvl_4:0 "Medium Arsenal"
+ nuke_lvl_5:0 "Huge Arsenal"
+ nuke_lvl_5_desc:0 "This country poses a large stockpile of tactical, strategical, continental and other variants of nuclear warheads or bombs.\n\nIt's enormous enough that if the nation wished to do so they could alone §REND THE WORLD§!"
+ 
+ decision_cost_army_xp_50:0 "£army_experience  §Y50§!"
+ decision_cost_army_xp_50_blocked:0 "£army_experience  §R50§!"
+ decision_cost_army_xp_50_tooltip:0 "It costs £army_experience  §Y50§! to take the decision"

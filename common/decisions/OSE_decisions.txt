@@ -1,0 +1,1840 @@
+OSE_congress_dec = {
+	OSE_cut_taxes = { # Must be introduced in House
+		icon = xxx
+		available = {
+			NOT = {
+				has_country_flag = OSE_recently_proposed_bill
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = OSE_cut_taxes_proposed
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = ose_bill_introduced_house_needed_tt
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				OSE_decrease_taxes = yes
+			}
+			custom_effect_tooltip = generic_space_tt
+			set_variable = { ose_current_bill_chambers_passed = 0 }
+			set_variable = { ose_passed_house = 0 }
+			set_variable = { ose_passed_senate = 0 }
+			set_country_flag = {
+				flag = OSE_cut_taxes_proposed
+				days = 365
+				value = 1
+			}
+			set_country_flag = {
+				flag = OSE_recently_proposed_bill
+				days = 70
+				value = 1
+			}
+			set_country_flag = {
+				flag = OSE_litigating_bill
+				days = 70
+				value = 1
+			}
+			### Set Party Support
+			## Senate
+			# Unity
+            set_variable = { osea_senate_support_unity_percentage = osea_unity_party_libertarian }
+			# Liberty
+            set_variable = { osea_senate_support_liberty_percentage = osea_liberty_party_libertarian }
+			# Brotherhood
+            set_variable = { osea_senate_support_brotherhood_percentage = osea_osean_brotherhood_libertarian }
+			# Socialist
+            set_variable = { osea_senate_support_socialist_percentage = osea_socialist_libertarian }
+			# Monarchist
+            set_variable = { osea_senate_support_monarchist_percentage = osea_monarchist_libertarian }
+			# Independent
+            set_variable_to_random = {
+				var = osea_senate_support_independent_percentage
+				max = 100
+				integer = yes
+			}
+            divide_variable = {
+				var = osea_senate_support_independent_percentage
+				value = 100
+				integer = no
+			}
+			## House
+			# Unity
+            set_variable = { osea_house_support_unity_percentage = osea_unity_party_libertarian }
+			# Liberty
+            set_variable = { osea_house_support_liberty_percentage = osea_liberty_party_libertarian }
+			# Brotherhood
+            set_variable = { osea_house_support_brotherhood_percentage = osea_osean_brotherhood_libertarian }
+			# Socialist
+            set_variable = { osea_house_support_socialist_percentage = osea_socialist_libertarian }
+			# Monarchist
+            set_variable = { osea_house_support_monarchist_percentage = osea_monarchist_libertarian }
+			# Independent
+            set_variable_to_random = {
+				var = osea_house_support_independent_percentage
+				max = 100
+				integer = yes
+			}
+            divide_variable = {
+				var = osea_house_support_independent_percentage
+				value = 100
+				integer = no
+			}
+
+			OSE_calc_house_support = yes
+			OSE_calc_senate_support = yes
+
+			set_variable = { ose_current_bill = 1 }
+			# 1 = House of Representatives
+			# 2 = Senate
+			set_variable = { ose_current_bill_chamber = 1 }
+			activate_mission = OSE_cut_taxes_house_vote
+			hidden_effect = {
+				OSE_random_congressional_support_event = yes
+			}
+		}
+	}
+	OSE_cut_taxes_house_vote = {
+		icon = xxx
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				OSE_decrease_taxes = yes
+			}
+			custom_effect_tooltip = generic_space_tt
+			if = {
+				limit = {
+					check_variable = { osea_house_support > 217 }
+				}
+				custom_effect_tooltip = [osea_house_bill_pass_text]
+				set_country_flag = {
+					flag = OSE_cut_taxes_passed
+					days = 365
+				}
+				country_event = osea_congress.3
+				add_to_variable = { ose_current_bill_chambers_passed = 1 }
+				set_variable = { ose_current_bill_chamber = 2 }
+				set_variable = { ose_passed_house = 1 }
+				activate_mission = OSE_cut_taxes_senate_vote
+			}
+			else = {
+				custom_effect_tooltip = [osea_house_bill_pass_text]
+				country_event = osea_congress.6
+			}
+		}
+	}
+	OSE_cut_taxes_senate_vote = {
+		icon = xxx
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				OSE_decrease_taxes = yes
+			}
+			custom_effect_tooltip = generic_space_tt
+			if = {
+				limit = {
+					check_variable = { osea_senate_support > 76 }
+				} 
+				custom_effect_tooltip = [osea_senate_bill_pass_text]
+				set_variable = { ose_current_bill_chamber = 0 }
+				add_to_variable = { ose_current_bill_chambers_passed = 1 }
+				set_variable = { ose_passed_senate = 1 }
+				country_event = osea_congress.2
+				if = {
+					limit = {
+						check_variable = { ose_current_bill_chambers_passed = 2 }
+					}
+					country_event = {
+						id = osea_congress.4
+						days = 1
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = [osea_senate_bill_pass_text]
+				country_event = osea_congress.5
+			}
+			OSE_reset_senate_support = yes
+			OSE_reset_house_support = yes
+			set_country_flag = {
+				flag = OSE_cut_taxes_proposed
+				days = 365
+				value = 1
+			}
+		}
+	}
+	OSE_raise_taxes = { # Must be introduced in House
+		icon = xxx
+		available = {
+			NOT = {
+				has_country_flag = OSE_recently_proposed_bill
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = OSE_raise_taxes_proposed
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = ose_bill_introduced_house_needed_tt
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				OSE_increase_taxes = yes
+			}
+			custom_effect_tooltip = generic_space_tt
+			set_variable = { ose_current_bill_chambers_passed = 0 }
+			set_variable = { ose_passed_house = 0 }
+			set_variable = { ose_passed_senate = 0 }
+			set_country_flag = {
+				flag = OSE_raise_taxes_proposed
+				days = 365
+				value = 1
+			}
+			set_country_flag = {
+				flag = OSE_recently_proposed_bill
+				days = 70
+				value = 1
+			}
+			set_country_flag = {
+				flag = OSE_litigating_bill
+				days = 70
+				value = 1
+			}
+			### Set Party Support
+			## Senate
+			# Unity
+            set_variable = { osea_senate_support_unity_percentage = 1 }
+            subtract_from_variable = { osea_senate_support_unity_percentage = osea_unity_party_libertarian }
+			# Liberty
+            set_variable = { osea_senate_support_liberty_percentage = 1 }
+            subtract_from_variable = { osea_senate_support_liberty_percentage = osea_liberty_party_libertarian }
+			# Brotherhood
+            set_variable = { osea_senate_support_brotherhood_percentage = 1 }
+            subtract_from_variable = { osea_senate_support_brotherhood_percentage = osea_osean_brotherhood_libertarian }
+			# Socialist
+            set_variable = { osea_senate_support_socialist_percentage = 1 }
+            subtract_from_variable = { osea_senate_support_socialist_percentage = osea_socialist_libertarian }
+			# Monarchist
+            set_variable = { osea_senate_support_monarchist_percentage = 1 }
+            subtract_from_variable = { osea_senate_support_monarchist_percentage = osea_monarchist_libertarian }
+			# Independent
+            set_variable_to_random = {
+				var = osea_senate_support_independent_percentage
+				max = 100
+				integer = yes
+			}
+            divide_variable = {
+				var = osea_senate_support_independent_percentage
+				value = 100
+				integer = no
+			}
+			## House
+			# Unity
+            set_variable = { osea_house_support_unity_percentage = 1 }
+            subtract_from_variable = { osea_house_support_unity_percentage = osea_unity_party_libertarian }
+			# Liberty
+            set_variable = { osea_house_support_liberty_percentage = 1 }
+            subtract_from_variable = { osea_house_support_liberty_percentage = osea_liberty_party_libertarian }
+			# Brotherhood
+            set_variable = { osea_house_support_brotherhood_percentage = 1 }
+            subtract_from_variable = { osea_house_support_brotherhood_percentage = osea_osean_brotherhood_libertarian }
+			# Socialist
+            set_variable = { osea_house_support_socialist_percentage = 1 }
+            subtract_from_variable = { osea_house_support_socialist_percentage = osea_socialist_libertarian }
+			# Monarchist
+            set_variable = { osea_house_support_monarchist_percentage = 1 }
+            subtract_from_variable = { osea_house_support_monarchist_percentage = osea_monarchist_libertarian }
+			# Independent
+            set_variable_to_random = {
+				var = osea_house_support_independent_percentage
+				max = 100
+				integer = yes
+			}
+            divide_variable = {
+				var = osea_house_support_independent_percentage
+				value = 100
+				integer = no
+			}
+
+			OSE_calc_house_support = yes
+			OSE_calc_senate_support = yes
+
+			set_variable = { ose_current_bill = 2 }
+			# 1 = House of Representatives
+			# 2 = Senate
+			set_variable = { ose_current_bill_chamber = 1 }
+			activate_mission = OSE_raise_taxes_house_vote
+			hidden_effect = {
+				OSE_random_congressional_support_event = yes
+			}
+		}
+	}
+	OSE_raise_taxes_house_vote = {
+		icon = xxx
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				OSE_increase_taxes = yes
+			}
+			custom_effect_tooltip = generic_space_tt
+			if = {
+				limit = {
+					check_variable = { osea_house_support > 217 }
+				}
+				custom_effect_tooltip = [osea_house_bill_pass_text]
+				set_country_flag = {
+					flag = OSE_raise_taxes_passed
+					days = 365
+				}
+				country_event = osea_congress.3
+				add_to_variable = { ose_current_bill_chambers_passed = 1 }
+				set_variable = { ose_current_bill_chamber = 2 }
+				set_variable = { ose_passed_house = 1 }
+				activate_mission = OSE_raise_taxes_senate_vote
+			}
+			else = {
+				custom_effect_tooltip = [osea_house_bill_pass_text]
+				country_event = osea_congress.6
+			}
+		}
+	}
+	OSE_raise_taxes_senate_vote = {
+		icon = xxx
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				OSE_increase_taxes = yes
+			}
+			custom_effect_tooltip = generic_space_tt
+			if = {
+				limit = {
+					check_variable = { osea_senate_support > 76 }
+				} 
+				custom_effect_tooltip = [osea_senate_bill_pass_text]
+				set_variable = { ose_current_bill_chamber = 0 }
+				add_to_variable = { ose_current_bill_chambers_passed = 1 }
+				set_variable = { ose_passed_senate = 1 }
+				country_event = osea_congress.2
+				if = {
+					limit = {
+						check_variable = { ose_current_bill_chambers_passed = 2 }
+					}
+					country_event = {
+						id = osea_congress.4
+						days = 1
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = [osea_senate_bill_pass_text]
+				country_event = osea_congress.5
+			}
+			OSE_reset_senate_support = yes
+			OSE_reset_house_support = yes
+			set_country_flag = {
+				flag = OSE_raise_taxes_proposed
+				days = 365
+				value = 1
+			}
+		}
+	}
+	OSE_increase_defense_forces_budget = { # Must be introduced in House
+		icon = xxx
+		available = {
+			NOT = {
+				has_country_flag = OSE_recently_proposed_bill
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = OSE_increase_defense_forces_budget_proposed
+				has_idea = OSE_increase_defense_forces_budget_idea
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = ose_bill_introduced_house_needed_tt
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = OSE_increase_defense_forces_budget_idea
+					days = 365
+				}
+			}
+			custom_effect_tooltip = generic_space_tt
+			set_variable = { ose_current_bill_chambers_passed = 0 }
+			set_variable = { ose_passed_house = 0 }
+			set_variable = { ose_passed_senate = 0 }
+			set_country_flag = {
+				flag = OSE_increase_defense_forces_budget_proposed
+				days = 365
+				value = 1
+			}
+			set_country_flag = {
+				flag = OSE_recently_proposed_bill
+				days = 70
+				value = 1
+			}
+			set_country_flag = {
+				flag = OSE_litigating_bill
+				days = 70
+				value = 1
+			}
+			### Set Party Support
+			## Senate
+			# Unity
+			set_variable = { osea_senate_support_unity_percentage = osea_unity_party_hawkish }
+			# Liberty
+			set_variable = { osea_senate_support_liberty_percentage = osea_liberty_party_hawkish }
+			# Brotherhood
+			set_variable = { osea_senate_support_brotherhood_percentage = osea_osean_brotherhood_hawkish }
+			# Socialist
+			set_variable = { osea_senate_support_socialist_percentage = osea_socialist_hawkish }
+			# Monarchist
+			set_variable = { osea_senate_support_monarchist_percentage = osea_monarchist_hawkish }
+			# Independent
+			set_variable_to_random = {
+				var = osea_senate_support_independent_percentage
+				max = 100
+				integer = yes
+			}
+            divide_variable = {
+				var = osea_senate_support_independent_percentage
+				value = 100
+				integer = no
+			}
+			## House
+			# Unity
+			set_variable = { osea_house_support_unity_percentage = osea_unity_party_hawkish }
+			# Liberty
+			set_variable = { osea_house_support_liberty_percentage = osea_liberty_party_hawkish }
+			# Brotherhood
+			set_variable = { osea_house_support_brotherhood_percentage = osea_osean_brotherhood_hawkish }
+			# Socialist
+			set_variable = { osea_house_support_socialist_percentage = osea_socialist_hawkish }
+			# Monarchist
+			set_variable = { osea_house_support_monarchist_percentage = osea_monarchist_hawkish }
+			# Independent
+			set_variable_to_random = {
+				var = osea_house_support_independent_percentage
+				max = 100
+				integer = yes
+			}
+            divide_variable = {
+				var = osea_house_support_independent_percentage
+				value = 100
+				integer = no
+			}
+
+			OSE_calc_house_support = yes
+			OSE_calc_senate_support = yes
+
+			set_variable = { ose_current_bill = 3 }
+			# 1 = House of Representatives
+			# 2 = Senate
+			set_variable = { ose_current_bill_chamber = 1 }
+			activate_mission = OSE_increase_defense_forces_budget_house_vote
+			hidden_effect = {
+				OSE_random_congressional_support_event = yes
+			}
+		}
+	}
+	OSE_increase_defense_forces_budget_house_vote = {
+		icon = xxx
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = OSE_increase_defense_forces_budget_idea
+					days = 365
+				}
+			}
+			custom_effect_tooltip = generic_space_tt
+			if = {
+				limit = {
+					check_variable = { osea_house_support > 217 }
+				}
+				custom_effect_tooltip = [osea_house_bill_pass_text]
+				set_country_flag = {
+					flag = OSE_increase_defense_forces_budget_passed
+					days = 365
+				}
+				country_event = osea_congress.3
+				add_to_variable = { ose_current_bill_chambers_passed = 1 }
+				set_variable = { ose_current_bill_chamber = 2 }
+				set_variable = { ose_passed_house = 1 }
+				activate_mission = OSE_increase_defense_forces_budget_senate_vote
+			}
+			else = {
+				custom_effect_tooltip = [osea_house_bill_pass_text]
+				country_event = osea_congress.6
+			}
+		}
+	}
+	OSE_increase_defense_forces_budget_senate_vote = {
+		icon = xxx
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = OSE_increase_defense_forces_budget_idea
+					days = 365
+				}
+			}
+			custom_effect_tooltip = generic_space_tt
+			if = {
+				limit = {
+					check_variable = { osea_senate_support > 76 }
+				} 
+				custom_effect_tooltip = [osea_senate_bill_pass_text]
+				set_variable = { ose_current_bill_chamber = 0 }
+				add_to_variable = { ose_current_bill_chambers_passed = 1 }
+				set_variable = { ose_passed_senate = 1 }
+				country_event = osea_congress.2
+				if = {
+					limit = {
+						check_variable = { ose_current_bill_chambers_passed = 2 }
+					}
+					country_event = {
+						id = osea_congress.4
+						days = 1
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = [osea_senate_bill_pass_text]
+				country_event = osea_congress.5
+			}
+			OSE_reset_senate_support = yes
+			OSE_reset_house_support = yes
+		}
+	}
+	OSE_pay_farm_subsidies = { # Must be introduced in House
+		icon = xxx
+		available = {
+			NOT = {
+				has_country_flag = OSE_recently_proposed_bill
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = OSE_pay_farm_subsidies_proposed
+				has_idea = OSE_pay_farm_subsidies_idea
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = ose_bill_introduced_house_needed_tt
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = OSE_pay_farm_subsidies_idea
+					days = 365
+				}
+			}
+			custom_effect_tooltip = generic_space_tt
+			set_variable = { ose_current_bill_chambers_passed = 0 }
+			set_variable = { ose_passed_house = 0 }
+			set_variable = { ose_passed_senate = 0 }
+			set_country_flag = {
+				flag = OSE_pay_farm_subsidies_proposed
+				days = 365
+				value = 1
+			}
+			set_country_flag = {
+				flag = OSE_recently_proposed_bill
+				days = 70
+				value = 1
+			}
+			set_country_flag = {
+				flag = OSE_litigating_bill
+				days = 70
+				value = 1
+			}
+			### Set Party Support
+			## Senate
+			# Unity
+            set_variable = { osea_senate_support_unity_percentage = osea_unity_party_protectionist }
+			# Liberty
+            set_variable = { osea_senate_support_liberty_percentage = osea_liberty_party_protectionist }
+			# Brotherhood
+            set_variable = { osea_senate_support_brotherhood_percentage = osea_osean_brotherhood_protectionist }
+			# Socialist
+            set_variable = { osea_senate_support_socialist_percentage = osea_socialist_protectionist }
+			# Monarchist
+            set_variable = { osea_senate_support_monarchist_percentage = osea_monarchist_protectionist }
+			# Independent
+            set_variable_to_random = {
+				var = osea_senate_support_independent_percentage
+				max = 100
+				integer = yes
+			}
+            divide_variable = {
+				var = osea_senate_support_independent_percentage
+				value = 100
+				integer = no
+			}
+			## House
+			# Unity
+            set_variable = { osea_house_support_unity_percentage = osea_unity_party_protectionist }
+			# Liberty
+            set_variable = { osea_house_support_liberty_percentage = osea_liberty_party_protectionist }
+			# Brotherhood
+            set_variable = { osea_house_support_brotherhood_percentage = osea_osean_brotherhood_protectionist }
+			# Socialist
+            set_variable = { osea_house_support_socialist_percentage = osea_socialist_protectionist }
+			# Monarchist
+            set_variable = { osea_house_support_monarchist_percentage = osea_monarchist_protectionist }
+			# Independent
+            set_variable_to_random = {
+				var = osea_house_support_independent_percentage
+				max = 100
+				integer = yes
+			}
+            divide_variable = {
+				var = osea_house_support_independent_percentage
+				value = 100
+				integer = no
+			}
+
+			OSE_calc_house_support = yes
+			OSE_calc_senate_support = yes
+
+			set_variable = { ose_current_bill = 4 }
+			# 1 = House of Representatives
+			# 2 = Senate
+			set_variable = { ose_current_bill_chamber = 1 }
+			activate_mission = OSE_pay_farm_subsidies_house_vote
+			hidden_effect = {
+				OSE_random_congressional_support_event = yes
+			}
+		}
+	}
+	OSE_pay_farm_subsidies_house_vote = {
+		icon = xxx
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = OSE_pay_farm_subsidies_idea
+					days = 365
+				}
+			}
+			custom_effect_tooltip = generic_space_tt
+			if = {
+				limit = {
+					check_variable = { osea_house_support > 217 }
+				}
+				custom_effect_tooltip = [osea_house_bill_pass_text]
+				set_country_flag = {
+					flag = OSE_pay_farm_subsidies_passed
+					days = 365
+				}
+				country_event = osea_congress.3
+				add_to_variable = { ose_current_bill_chambers_passed = 1 }
+				set_variable = { ose_current_bill_chamber = 2 }
+				set_variable = { ose_passed_house = 1 }
+				activate_mission = OSE_pay_farm_subsidies_senate_vote
+			}
+			else = {
+				custom_effect_tooltip = [osea_house_bill_pass_text]
+				country_event = osea_congress.6
+			}
+		}
+	}
+	OSE_pay_farm_subsidies_senate_vote = {
+		icon = xxx
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = OSE_pay_farm_subsidies_idea
+					days = 365
+				}
+			}
+			custom_effect_tooltip = generic_space_tt
+			if = {
+				limit = {
+					check_variable = { osea_senate_support > 76 }
+				} 
+				custom_effect_tooltip = [osea_senate_bill_pass_text]
+				set_variable = { ose_current_bill_chamber = 0 }
+				add_to_variable = { ose_current_bill_chambers_passed = 1 }
+				set_variable = { ose_passed_senate = 1 }
+				country_event = osea_congress.2
+				if = {
+					limit = {
+						check_variable = { ose_current_bill_chambers_passed = 2 }
+					}
+					country_event = {
+						id = osea_congress.4
+						days = 1
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = [osea_senate_bill_pass_text]
+				country_event = osea_congress.5
+			}
+			OSE_reset_senate_support = yes
+			OSE_reset_house_support = yes
+		}
+	}
+	OSE_award_research_grants = { # Must be introduced in House
+		icon = xxx
+		available = {
+			NOT = {
+				has_country_flag = OSE_recently_proposed_bill
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = OSE_award_research_grants_proposed
+				has_idea = OSE_award_research_grants_idea
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = ose_bill_introduced_house_needed_tt
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = OSE_award_research_grants_idea
+					days = 365
+				}
+			}
+			custom_effect_tooltip = generic_space_tt
+			set_variable = { ose_current_bill_chambers_passed = 0 }
+			set_variable = { ose_passed_house = 0 }
+			set_variable = { ose_passed_senate = 0 }
+			set_country_flag = {
+				flag = OSE_award_research_grants_proposed
+				days = 365
+				value = 1
+			}
+			set_country_flag = {
+				flag = OSE_recently_proposed_bill
+				days = 70
+				value = 1
+			}
+			set_country_flag = {
+				flag = OSE_litigating_bill
+				days = 70
+				value = 1
+			}
+			### Set Party Support
+			## Senate
+			# Unity
+            set_variable = { osea_senate_support_unity_percentage = 1 }
+			subtract_from_variable = { osea_senate_support_unity_percentage = osea_unity_party_libertarian }
+			# Liberty
+            set_variable = { osea_senate_support_liberty_percentage = 1 }
+			subtract_from_variable = { osea_senate_support_liberty_percentage = osea_liberty_party_libertarian }
+			# Brotherhood
+            set_variable = { osea_senate_support_brotherhood_percentage = 1 }
+			subtract_from_variable = { osea_senate_support_brotherhood_percentage = osea_osean_brotherhood_libertarian }
+			# Socialist
+            set_variable = { osea_senate_support_socialist_percentage = 1 }
+			subtract_from_variable = { osea_senate_support_socialist_percentage = osea_socialist_libertarian }
+			# Monarchist
+            set_variable = { osea_senate_support_monarchist_percentage = 1 }
+			subtract_from_variable = { osea_senate_support_monarchist_percentage = osea_monarchist_libertarian }
+			# Independent
+            set_variable_to_random = {
+				var = osea_senate_support_independent_percentage
+				max = 100
+				integer = yes
+			}
+            divide_variable = {
+				var = osea_senate_support_independent_percentage
+				value = 100
+				integer = no
+			}
+			## House
+			# Unity
+            set_variable = { osea_house_support_unity_percentage = 1 }
+			subtract_from_variable = { osea_house_support_unity_percentage = osea_unity_party_libertarian }
+			# Liberty
+            set_variable = { osea_house_support_liberty_percentage = 1 }
+			subtract_from_variable = { osea_house_support_liberty_percentage = osea_liberty_party_libertarian }
+			# Brotherhood
+            set_variable = { osea_house_support_brotherhood_percentage = 1 }
+			subtract_from_variable = { osea_house_support_brotherhood_percentage = osea_osean_brotherhood_libertarian }
+			# Socialist
+            set_variable = { osea_house_support_socialist_percentage = 1 }
+			subtract_from_variable = { osea_house_support_socialist_percentage = osea_socialist_libertarian }
+			# Monarchist
+            set_variable = { osea_house_support_monarchist_percentage = 1 }
+			subtract_from_variable = { osea_house_support_monarchist_percentage = osea_monarchist_libertarian }
+			# Independent
+            set_variable_to_random = {
+				var = osea_house_support_independent_percentage
+				max = 100
+				integer = yes
+			}
+            divide_variable = {
+				var = osea_house_support_independent_percentage
+				value = 100
+				integer = no
+			}
+
+			OSE_calc_house_support = yes
+			OSE_calc_senate_support = yes
+
+			set_variable = { ose_current_bill = 5 }
+			# 1 = House of Representatives
+			# 2 = Senate
+			set_variable = { ose_current_bill_chamber = 1 }
+			activate_mission = OSE_award_research_grants_house_vote
+			hidden_effect = {
+				OSE_random_congressional_support_event = yes
+			}
+		}
+	}
+	OSE_award_research_grants_house_vote = {
+		icon = xxx
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = OSE_award_research_grants_idea
+					days = 365
+				}
+			}
+			custom_effect_tooltip = generic_space_tt
+			if = {
+				limit = {
+					check_variable = { osea_house_support > 217 }
+				}
+				custom_effect_tooltip = [osea_house_bill_pass_text]
+				set_country_flag = {
+					flag = OSE_award_research_grants_passed
+					days = 365
+				}
+				country_event = osea_congress.3
+				add_to_variable = { ose_current_bill_chambers_passed = 1 }
+				set_variable = { ose_current_bill_chamber = 2 }
+				set_variable = { ose_passed_house = 1 }
+				activate_mission = OSE_award_research_grants_senate_vote
+			}
+			else = {
+				custom_effect_tooltip = [osea_house_bill_pass_text]
+				country_event = osea_congress.6
+			}
+		}
+	}
+	OSE_award_research_grants_senate_vote = {
+		icon = xxx
+		is_good = yes
+		days_mission_timeout = 35
+		selectable_mission = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			custom_effect_tooltip = OSE_bill_proposal_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = OSE_award_research_grants_idea
+					days = 365
+				}
+			}
+			custom_effect_tooltip = generic_space_tt
+			if = {
+				limit = {
+					check_variable = { osea_senate_support > 76 }
+				} 
+				custom_effect_tooltip = [osea_senate_bill_pass_text]
+				set_variable = { ose_current_bill_chamber = 0 }
+				add_to_variable = { ose_current_bill_chambers_passed = 1 }
+				set_variable = { ose_passed_senate = 1 }
+				country_event = osea_congress.2
+				if = {
+					limit = {
+						check_variable = { ose_current_bill_chambers_passed = 2 }
+					}
+					country_event = {
+						id = osea_congress.4
+						days = 1
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = [osea_senate_bill_pass_text]
+				country_event = osea_congress.5
+			}
+			OSE_reset_senate_support = yes
+			OSE_reset_house_support = yes
+		}
+	}
+	OSE_lobby_house_unity = {
+		icon = xxx
+		available = {
+			has_country_flag = OSE_litigating_bill
+			custom_trigger_tooltip = {
+				tooltip = lobbying_limit_tt		
+				check_variable = { current_lobbying < lobbying_limit }
+			}
+			check_variable = { ose_passed_house = 0 }
+			check_variable = { osea_house_support_unity_percentage < 1 }
+			check_variable = { ose_house_unity_seats > 0 }
+		}
+		visible = {
+			has_country_flag = OSE_litigating_bill
+			check_variable = { ose_passed_house = 0 }
+			check_variable = { ose_house_unity_seats > 0 }
+		}
+		cost = 15
+		days_remove = 5
+		remove_effect = {
+			subtract_from_variable = { current_lobbying = 1 }
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_leader_ideology = conservatism
+				}
+				custom_effect_tooltip = OSE_lobby_house_unity_boosted_tt
+				add_to_variable = { osea_house_support_unity_percentage = 0.10 }
+				OSE_calc_house_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+			else = {
+				custom_effect_tooltip = OSE_lobby_house_unity_tt
+				add_to_variable = { osea_house_support_unity_percentage = 0.05 }
+				OSE_calc_house_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+		}
+	}
+	OSE_lobby_house_liberty = {
+		icon = xxx
+		available = {
+			has_country_flag = OSE_litigating_bill
+			custom_trigger_tooltip = {
+				tooltip = lobbying_limit_tt		
+				check_variable = { current_lobbying < lobbying_limit }
+			}
+			check_variable = { ose_passed_house = 0 }
+			check_variable = { osea_house_support_liberty_percentage < 1 }
+			check_variable = { ose_house_liberty_seats > 0 }
+		}
+		visible = {
+			has_country_flag = OSE_litigating_bill
+			check_variable = { ose_passed_house = 0 }
+			check_variable = { ose_house_liberty_seats > 0 }
+		}
+		cost = 15
+		days_remove = 5
+		remove_effect = {
+			subtract_from_variable = { current_lobbying = 1 }
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_leader_ideology = liberalism
+				}
+				custom_effect_tooltip = OSE_lobby_house_liberty_boosted_tt
+				add_to_variable = { osea_house_support_liberty_percentage = 0.10 }
+				OSE_calc_house_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+			else = {
+				custom_effect_tooltip = OSE_lobby_house_liberty_tt
+				add_to_variable = { osea_house_support_liberty_percentage = 0.05 }
+				OSE_calc_house_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+		}
+	}
+	OSE_lobby_house_brotherhood = {
+		icon = xxx
+		available = {
+			has_country_flag = OSE_litigating_bill
+			custom_trigger_tooltip = {
+				tooltip = lobbying_limit_tt		
+				check_variable = { current_lobbying < lobbying_limit }
+			}
+			check_variable = { ose_passed_house = 0 }
+			check_variable = { osea_house_support_brotherhood_percentage < 1 }
+			check_variable = { ose_house_brotherhood_seats > 0 }
+		}
+		visible = {
+			has_country_flag = OSE_litigating_bill
+			check_variable = { ose_passed_house = 0 }
+			check_variable = { ose_house_brotherhood_seats > 0 }
+		}
+		cost = 15
+		days_remove = 5
+		remove_effect = {
+			subtract_from_variable = { current_lobbying = 1 }
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				custom_effect_tooltip = OSE_lobby_house_brotherhood_boosted_tt
+				add_to_variable = { osea_house_support_brotherhood_percentage = 0.10 }
+				OSE_calc_house_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+			else = {
+				custom_effect_tooltip = OSE_lobby_house_brotherhood_tt
+				add_to_variable = { osea_house_support_brotherhood_percentage = 0.05 }
+				OSE_calc_house_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+		}
+	}
+	OSE_lobby_house_socialist = {
+		icon = xxx
+		available = {
+			has_country_flag = OSE_litigating_bill
+			custom_trigger_tooltip = {
+				tooltip = lobbying_limit_tt		
+				check_variable = { current_lobbying < lobbying_limit }
+			}
+			check_variable = { ose_passed_house = 0 }
+			check_variable = { osea_house_support_socialist_percentage < 1 }
+			check_variable = { ose_house_socialist_seats > 0 }
+		}
+		visible = {
+			has_country_flag = OSE_litigating_bill
+			check_variable = { ose_passed_house = 0 }
+			check_variable = { ose_house_socialist_seats > 0 }
+		}
+		cost = 15
+		days_remove = 5
+		remove_effect = {
+			subtract_from_variable = { current_lobbying = 1 }
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_government = communism
+				}
+				custom_effect_tooltip = OSE_lobby_house_socialist_boosted_tt
+				add_to_variable = { osea_house_support_socialist_percentage = 0.10 }
+				OSE_calc_house_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+			else = {
+				custom_effect_tooltip = OSE_lobby_house_socialist_tt
+				add_to_variable = { osea_house_support_socialist_percentage = 0.05 }
+				OSE_calc_house_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+		}
+	}
+	OSE_lobby_house_monarchist = {
+		icon = xxx
+		available = {
+			has_country_flag = OSE_litigating_bill
+			custom_trigger_tooltip = {
+				tooltip = lobbying_limit_tt		
+				check_variable = { current_lobbying < lobbying_limit }
+			}
+			check_variable = { ose_passed_house = 0 }
+			check_variable = { osea_house_support_monarchist_percentage < 1 }
+			check_variable = { ose_house_monarchist_seats > 0 }
+		}
+		visible = {
+			has_country_flag = OSE_litigating_bill
+			check_variable = { ose_passed_house = 0 }
+			check_variable = { ose_house_monarchist_seats > 0 }
+		}
+		cost = 15
+		days_remove = 5
+		remove_effect = {
+			subtract_from_variable = { current_lobbying = 1 }
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_leader_ideology = monarchism
+				}
+				custom_effect_tooltip = OSE_lobby_house_monarchist_boosted_tt
+				add_to_variable = { osea_house_support_monarchist_percentage = 0.10 }
+				OSE_calc_house_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+			else = {
+				custom_effect_tooltip = OSE_lobby_house_monarchist_tt
+				add_to_variable = { osea_house_support_monarchist_percentage = 0.05 }
+				OSE_calc_house_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+		}
+	}
+	OSE_lobby_house_independent = {
+		icon = xxx
+		available = {
+			has_country_flag = OSE_litigating_bill
+			custom_trigger_tooltip = {
+				tooltip = lobbying_limit_tt		
+				check_variable = { current_lobbying < lobbying_limit }
+			}
+			check_variable = { ose_passed_house = 0 }
+			check_variable = { osea_house_support_independent_percentage < 1 }
+			check_variable = { ose_house_independent_seats > 0 }
+		}
+		visible = {
+			has_country_flag = OSE_litigating_bill
+			check_variable = { ose_passed_house = 0 }
+			check_variable = { ose_house_independent_seats > 0 }
+		}
+		cost = 15
+		days_remove = 5
+		remove_effect = {
+			subtract_from_variable = { current_lobbying = 1 }
+		}
+		complete_effect = {
+			custom_effect_tooltip = OSE_lobby_house_independent_tt
+			add_to_variable = { osea_house_support_independent_percentage = 0.05 }
+			OSE_calc_house_support = yes
+			add_to_variable = { current_lobbying = 1 }
+		}
+	}
+	OSE_lobby_senate_unity = {
+		icon = xxx
+		available = {
+			has_country_flag = OSE_litigating_bill
+			custom_trigger_tooltip = {
+				tooltip = lobbying_limit_tt		
+				check_variable = { current_lobbying < lobbying_limit }
+			}
+			check_variable = { ose_passed_senate = 0 }
+			check_variable = { osea_senate_support_unity_percentage < 1 }
+			check_variable = { ose_senate_unity_seats > 0 }
+		}
+		visible = {
+			has_country_flag = OSE_litigating_bill
+			check_variable = { ose_passed_senate = 0 }
+			check_variable = { ose_senate_unity_seats > 0 }
+		}
+		cost = 15
+		days_remove = 5
+		remove_effect = {
+			subtract_from_variable = { current_lobbying = 1 }
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_leader_ideology = conservatism
+				}
+				custom_effect_tooltip = OSE_lobby_senate_unity_boosted_tt
+				add_to_variable = { osea_senate_support_unity_percentage = 0.10 }
+				OSE_calc_senate_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+			else = {
+				custom_effect_tooltip = OSE_lobby_senate_unity_tt
+				add_to_variable = { osea_senate_support_unity_percentage = 0.05 }
+				OSE_calc_senate_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+		}
+	}
+	OSE_lobby_senate_liberty = {
+		icon = xxx
+		available = {
+			has_country_flag = OSE_litigating_bill
+			custom_trigger_tooltip = {
+				tooltip = lobbying_limit_tt		
+				check_variable = { current_lobbying < lobbying_limit }
+			}
+			check_variable = { ose_passed_senate = 0 }
+			check_variable = { osea_senate_support_liberty_percentage < 1 }
+			check_variable = { ose_senate_liberty_seats > 0 }
+		}
+		visible = {
+			has_country_flag = OSE_litigating_bill
+			check_variable = { ose_passed_senate = 0 }
+			check_variable = { ose_senate_liberty_seats > 0 }
+		}
+		cost = 15
+		days_remove = 5
+		remove_effect = {
+			subtract_from_variable = { current_lobbying = 1 }
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_leader_ideology = liberalism
+				}
+				custom_effect_tooltip = OSE_lobby_senate_liberty_boosted_tt
+				add_to_variable = { osea_senate_support_liberty_percentage = 0.10 }
+				OSE_calc_senate_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+			else = {
+				custom_effect_tooltip = OSE_lobby_senate_liberty_tt
+				add_to_variable = { osea_senate_support_liberty_percentage = 0.05 }
+				OSE_calc_senate_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+		}
+	}
+	OSE_lobby_senate_brotherhood = {
+		icon = xxx
+		available = {
+			has_country_flag = OSE_litigating_bill
+			custom_trigger_tooltip = {
+				tooltip = lobbying_limit_tt		
+				check_variable = { current_lobbying < lobbying_limit }
+			}
+			check_variable = { ose_passed_senate = 0 }
+			check_variable = { osea_senate_support_brotherhood_percentage < 1 }
+			check_variable = { ose_senate_brotherhood_seats > 0 }
+		}
+		visible = {
+			has_country_flag = OSE_litigating_bill
+			check_variable = { ose_passed_senate = 0 }
+			check_variable = { ose_senate_brotherhood_seats > 0 }
+		}
+		cost = 15
+		days_remove = 5
+		remove_effect = {
+			subtract_from_variable = { current_lobbying = 1 }
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				custom_effect_tooltip = OSE_lobby_senate_brotherhood_boosted_tt
+				add_to_variable = { osea_senate_support_brotherhood_percentage = 0.10 }
+				OSE_calc_senate_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+			else = {
+				custom_effect_tooltip = OSE_lobby_senate_brotherhood_tt
+				add_to_variable = { osea_senate_support_brotherhood_percentage = 0.05 }
+				OSE_calc_senate_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+		}
+	}
+	OSE_lobby_senate_socialist = {
+		icon = xxx
+		available = {
+			has_country_flag = OSE_litigating_bill
+			custom_trigger_tooltip = {
+				tooltip = lobbying_limit_tt		
+				check_variable = { current_lobbying < lobbying_limit }
+			}
+			check_variable = { ose_passed_senate = 0 }
+			check_variable = { osea_senate_support_socialist_percentage < 1 }
+			check_variable = { ose_senate_socialist_seats > 0 }
+		}
+		visible = {
+			has_country_flag = OSE_litigating_bill
+			check_variable = { ose_passed_senate = 0 }
+			check_variable = { ose_senate_socialist_seats > 0 }
+		}
+		cost = 15
+		days_remove = 5
+		remove_effect = {
+			subtract_from_variable = { current_lobbying = 1 }
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_government = communism
+				}
+				custom_effect_tooltip = OSE_lobby_senate_socialist_boosted_tt
+				add_to_variable = { osea_senate_support_socialist_percentage = 0.10 }
+				OSE_calc_senate_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+			else = {
+				custom_effect_tooltip = OSE_lobby_senate_socialist_tt
+				add_to_variable = { osea_senate_support_socialist_percentage = 0.05 }
+				OSE_calc_senate_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+		}
+	}
+	OSE_lobby_senate_monarchist = {
+		icon = xxx
+		available = {
+			has_country_flag = OSE_litigating_bill
+			custom_trigger_tooltip = {
+				tooltip = lobbying_limit_tt		
+				check_variable = { current_lobbying < lobbying_limit }
+			}
+			check_variable = { ose_passed_senate = 0 }
+			check_variable = { osea_senate_support_monarchist_percentage < 1 }
+			check_variable = { ose_senate_monarchist_seats > 0 }
+		}
+		visible = {
+			has_country_flag = OSE_litigating_bill
+			check_variable = { ose_passed_senate = 0 }
+			check_variable = { ose_senate_monarchist_seats > 0 }
+		}
+		cost = 15
+		days_remove = 5
+		remove_effect = {
+			subtract_from_variable = { current_lobbying = 1 }
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_leader_ideology = monarchism
+				}
+				custom_effect_tooltip = OSE_lobby_senate_monarchist_boosted_tt
+				add_to_variable = { osea_senate_support_monarchist_percentage = 0.10 }
+				OSE_calc_senate_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+			else = {
+				custom_effect_tooltip = OSE_lobby_senate_monarchist_tt
+				add_to_variable = { osea_senate_support_monarchist_percentage = 0.05 }
+				OSE_calc_senate_support = yes
+				add_to_variable = { current_lobbying = 1 }
+			}
+		}
+	}
+	OSE_lobby_senate_independent = {
+		icon = xxx
+		available = {
+			has_country_flag = OSE_litigating_bill
+			custom_trigger_tooltip = {
+				tooltip = lobbying_limit_tt		
+				check_variable = { current_lobbying < lobbying_limit }
+			}
+			check_variable = { ose_passed_senate = 0 }
+			check_variable = { osea_senate_support_independent_percentage < 1 }
+			check_variable = { ose_senate_independent_seats > 0 }
+		}
+		visible = {
+			has_country_flag = OSE_litigating_bill
+			check_variable = { ose_passed_senate = 0 }
+			check_variable = { ose_senate_independent_seats > 0 }
+		}
+		cost = 15
+		days_remove = 5
+		remove_effect = {
+			subtract_from_variable = { current_lobbying = 1 }
+		}
+		complete_effect = {
+			custom_effect_tooltip = OSE_lobby_senate_independent_tt
+			add_to_variable = { osea_senate_support_independent_percentage = 0.05 }
+			OSE_calc_senate_support = yes
+			add_to_variable = { current_lobbying = 1 }
+		}
+	}
+}
+
+OSE_belkan_land_dec = {
+	ose_integrate_administration_dec = {
+		icon = xxx
+		state_target = yes
+		target_root_trigger = {
+			has_country_flag = ose_integrate_administration_flag
+		}
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+				NOT = { has_state_flag = ose_integrate_administration_dec_flag }
+				OR = {
+					state = 269
+					state = 296
+					state = 324
+					state = 357
+					state = 211
+				}
+			}
+		}
+		on_map_mode = map_only
+		cost = 50
+		complete_effect = {
+			FROM = {
+				set_state_flag = ose_integrate_administration_dec_flag
+				remove_dynamic_modifier = { modifier = ose_integrate_administration_blk_land }
+			}
+		}
+	}
+	ose_integrate_industry_dec = {
+		icon = xxx
+		state_target = yes
+		target_root_trigger = {
+			has_country_flag = ose_integrate_industry_flag
+		}
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+				NOT = { has_state_flag = ose_integrate_industry_dec_flag }
+				OR = {
+					state = 269
+					state = 296
+					state = 324
+					state = 357
+					state = 211
+				}
+			}
+		}
+		on_map_mode = map_only
+		cost = 50
+		complete_effect = {
+			FROM = {
+				set_state_flag = ose_integrate_industry_dec_flag 
+				remove_dynamic_modifier = { modifier = ose_integrate_industry_blk_land }
+			}
+		}
+	}
+	ose_deal_with_the_protests_dec = {
+		icon = xxx
+		state_target = yes
+		target_root_trigger = {
+			AND = {
+				has_country_flag = ose_integrate_industry_flag
+				has_country_flag = ose_integrate_administration_flag
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+				NOT = { has_state_flag = ose_deal_with_the_protests_dec_flag }
+				OR = {
+					state = 269
+					state = 296
+					state = 324
+					state = 357
+					state = 211
+				}
+			}
+		}
+		available  = {
+			FROM = {
+				has_state_flag = ose_integrate_industry_dec_flag
+				has_state_flag = ose_integrate_administration_dec_flag
+			}
+			divisions_in_state = {
+				state = FROM
+				size > 5
+			}
+		}
+		on_map_mode = map_only
+		#cost = 50
+		ai_will_do = {
+			base = 1000
+		}
+		complete_effect = {
+			FROM = {
+				set_state_flag = ose_deal_with_the_protests_dec_flag 
+				remove_dynamic_modifier = { modifier = ose_deal_with_the_protests_blk_land }
+				add_manpower = -10000
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+}
+
+OSE_economy_dec = {
+	ose_open_economic_zone_decision = {
+		icon = GFX_decision_generic_factory
+		activation = {
+			has_completed_focus = ose_open_economic_zone
+		}
+		available = {
+			always = no
+		}
+		fire_only_once = yes
+		days_mission_timeout = 5
+		selectable_mission = no
+		timeout_effect = {
+			random_list = {
+				10 = {
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				10 = {
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				10 = {
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				10 = {
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = synthetic_refinery 
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				10 = {
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = fuel_silo 
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+			add_political_power = -25
+			add_to_variable = {
+				var = ose_open_economic_zone_var
+				value = 1
+			}
+			if = {
+				limit = {
+					NOT = {
+						check_variable = { ose_open_economic_zone_var > 11 }
+					}
+				}
+				activate_mission = ose_open_economic_zone_decision
+			}
+			else = {
+				clear_variable = ose_open_economic_zone_var
+			}
+		}
+	}
+	ose_chrome_stage_one = {
+		icon = xxx
+		allowed = {
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 238
+			}	
+		}
+		available = {
+			has_tech = construction2
+			num_of_civilian_factories_available_for_projects > 3
+			238 = {
+				infrastructure > 1
+			}
+
+		}
+		visible = {
+			owns_state = 238
+			controls_state = 238
+			#has_completed_focus = ose_chrom_problems
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		ai_will_do = {
+			base = 20
+		}
+		remove_effect = {
+			set_country_flag = ose_chrome_stage_one_done_flag
+		}
+	}
+	ose_chrome_stage_two = {
+		icon = xxx
+		allowed = {
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 238
+			}	
+		}
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 3
+			has_country_flag = ose_chrome_stage_one_done_flag
+
+		}
+		visible = {
+			owns_state = 238
+			controls_state = 238
+			#has_completed_focus = ose_chrom_problems
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		ai_will_do = {
+			base = 20
+		}
+		remove_effect = {
+			set_country_flag = ose_chrome_stage_two_done_flag
+			238 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	ose_chrome_stage_three = {
+		icon = xxx
+		allowed = {
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 238
+			}	
+		}
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 3
+			has_country_flag = ose_chrome_stage_two_done_flag
+
+		}
+		visible = {
+			owns_state = 238
+			controls_state = 238
+			#has_completed_focus = ose_chrom_problems
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		ai_will_do = {
+			base = 20
+		}
+		remove_effect = {
+			set_country_flag = ose_chrome_stage_three_done_flag
+			238 = {
+				add_resource = {
+					type = chromium
+					amount = 31
+				}
+			}
+		}
+	}
+	ose_chrome_stage_four = {
+		icon = xxx
+		allowed = {
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 238
+			}	
+		}
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 3
+			has_country_flag = ose_chrome_stage_three_done_flag
+
+		}
+		visible = {
+			owns_state = 238
+			controls_state = 238
+			#has_completed_focus = ose_chrom_problems
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		ai_will_do = {
+			base = 20
+		}
+		remove_effect = {
+			238 = {
+				add_resource = {
+					type = chromium
+					amount = 35
+				}
+			}
+		}
+	}
+
+}
+
+OSE_fix_army = {
+	ose_fix_army_dec = {
+		icon = xxx
+		allowed = {
+		}
+		available = {
+			has_completed_focus = ose_urgent_war_committee
+		}
+		visible = {
+			always = yes
+			OR = {
+				has_idea = ose_no_need_for_land_army
+				has_idea = ose_no_need_for_land_army_2
+				has_idea = ose_no_need_for_land_army_3
+				has_idea = ose_no_need_for_land_army_4
+				has_idea = ose_no_need_for_land_army_5
+				has_idea = ose_no_need_for_land_army_6
+				has_idea = ose_no_need_for_land_army_7
+				has_idea = ose_no_need_for_land_army_8
+				has_idea = ose_no_need_for_land_army_9
+			}
+		}
+		custom_cost_trigger = {
+			has_army_experience > 49
+		}
+		custom_cost_text = decision_cost_army_xp_50
+		days_remove = 7
+		modifier = {
+
+		}
+		ai_will_do = {
+			base = 1000
+		}
+		complete_effect = {
+			hidden_effect = {
+				army_experience = -50
+			}
+		}
+		remove_effect = {
+			OSE_land_army_debuff_down = yes
+		}
+	}
+}

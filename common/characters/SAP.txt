@@ -1,11 +1,11 @@
 characters = { #placeholder leader
 	SAP_na_leader = { #Sapin Leader
-		#name="N/A leader"
-		#portraits = {
-		#	civilian = {
-		#		large=""
-		#	}
-		#}
+		name="Cándida Castro"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_SAP_Candida_Castro"
+			}
+		}
 		country_leader = {
 			ideology=constitutional_monarchy 
 			traits = { }

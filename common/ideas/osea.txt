@@ -1,8 +1,42 @@
 ideas = {
 
 	country = { #starting one
-		ose_logistical_nightmare = {
-			picture = generic_supply_lines
+		ose_political_machine = {
+            picture = OSE_political_machine
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				custom_modifier_tooltip = ose_political_machine_tt
+			}
+        }
+		ose_small_unit_tactics = {
+            picture = OSE_small_unit_tactics
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				army_leader_start_attack_level = 1
+				army_leader_start_logistics_level = 1
+				army_org_regain = 0.05
+                army_speed_factor = 0.05
+                initiative_factor = 0.10
+				pocket_penalty = -0.20
+                max_planning_factor = -0.10
+                planning_speed = -0.05
+                army_org_factor = -0.05
+			}
+        }
+		ose_uncontrolled_spending = {
+			picture = OSE_uncontrolled_spending
 			allowed = {
 				always = no
 			}
@@ -11,17 +45,81 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				industrial_capacity_factory = -0.8
-				industrial_capacity_dockyard = -0.8
-				conscription_factor = -0.25
-				training_time_army_factor = 1
 				production_factory_efficiency_gain_factor = -0.5
-				political_power_gain = -0.1
-				supply_consumption_factor = 0.1
+				industrial_capacity_dockyard = -0.7
+				production_factory_max_efficiency_factor = -0.3
+				consumer_goods_factor = 0.15
+				political_power_factor = -0.1
 			}
 		}
-		ose_overextended_military = {
-			picture = chi_army_corruption3
+		ose_uncontrolled_spending_2 = {
+			picture = OSE_uncontrolled_spending
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.5
+				industrial_capacity_dockyard = -0.4
+				production_factory_max_efficiency_factor = -0.4
+				consumer_goods_factor = 0.15
+				political_power_factor = -0.1
+			}
+		}
+		ose_uncontrolled_spending_3 = {
+			picture = OSE_uncontrolled_spending
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.6
+				industrial_capacity_dockyard = -0.5
+				production_factory_max_efficiency_factor = -0.5
+				consumer_goods_factor = 0.15
+				political_power_factor = -0.1
+			}
+		}
+		ose_uncontrolled_spending_4 = {
+			picture = OSE_uncontrolled_spending
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.4
+				industrial_capacity_dockyard = -0.7
+				production_factory_max_efficiency_factor = -0.3
+				consumer_goods_factor = 0.10
+				political_power_factor = -0.1
+			}
+		}
+		ose_uncontrolled_spending_5 = {
+			picture = XXX
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.2
+				industrial_capacity_dockyard = -0.4
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		ose_no_need_for_land_army = {
+			picture = OSE_no_need_for_army
 			allowed = {
 				always = no
 			}
@@ -32,14 +130,14 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.5
 				political_power_gain = -0.1
-				conscription_factor = -0.25
 				command_power_gain_mult = -0.5
-				experience_gain_army_factor = -0.5
-				supply_consumption_factor = 0.1
+				experience_gain_army_factor = -0.75
+				supply_consumption_factor = 0.25
+				conscription_factor = -0.75
 			}
 		}
-		ose_federation_bureaucracy = {
-			picture = osean_federation
+		ose_no_need_for_land_army_2 = {
+			picture = OSE_no_need_for_army
 			allowed = {
 				always = no
 			}
@@ -48,21 +146,281 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
+				army_org_factor = -0.5
 				political_power_gain = -0.1
+				command_power_gain_mult = -0.75
+				experience_gain_army_factor = -0.8
+				supply_consumption_factor = 0.3
+				conscription_factor = -0.8
+			}
+		}
+		ose_no_need_for_land_army_3 = {
+			picture = OSE_no_need_for_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.75
+				political_power_gain = -0.1
+				command_power_gain_mult = -0.8
+				experience_gain_army_factor = -0.9
+				supply_consumption_factor = 0.5
+				conscription_factor = -0.8
+			}
+		}
+		ose_no_need_for_land_army_4 = {
+			picture = OSE_no_need_for_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.7
+				political_power_gain = -0.1
+				command_power_gain_mult = -0.7
+				experience_gain_army_factor = -0.7
+				supply_consumption_factor = 0.4
+				conscription_factor = -0.7
+			}
+		}
+		ose_no_need_for_land_army_5 = {
+			picture = OSE_no_need_for_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.5
+				political_power_gain = -0.1
+				command_power_gain_mult = -0.75
+				experience_gain_army_factor = -0.75
+				supply_consumption_factor = 0.25
+				conscription_factor = -0.75
+			}
+		}
+		ose_no_need_for_land_army_6 = {
+			picture = OSE_no_need_for_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.4
+				political_power_gain = -0.1
+				command_power_gain_mult = -0.5
+				experience_gain_army_factor = -0.5
+				supply_consumption_factor = 0.2
+				conscription_factor = -0.5
+			}
+		}
+		ose_no_need_for_land_army_7 = {
+			picture = OSE_no_need_for_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.3
+				political_power_gain = -0.1
+				command_power_gain_mult = -0.4
+				experience_gain_army_factor = -0.4
+				supply_consumption_factor = 0.2
+				conscription_factor = -0.4
+			}
+		}
+		ose_no_need_for_land_army_8 = {
+			picture = OSE_no_need_for_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.2
+				political_power_gain = -0.1
+				command_power_gain_mult = -0.2
+				experience_gain_army_factor = -0.2
+				supply_consumption_factor = 0.2
+				conscription_factor = -0.2
+			}
+		}
+		ose_no_need_for_land_army_9 = {
+			picture = OSE_no_need_for_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.1
+				political_power_gain = -0.1
+				command_power_gain_mult = -0.1
+				experience_gain_army_factor = -0.1
 				supply_consumption_factor = 0.1
+				conscription_factor = -0.1
+			}
+		}
+		ose_federation_bureaucracy = {
+			picture = OSE_osean_federation
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.25
 				surrender_limit = 0.1
+				stability_factor = 0.2
+				war_stability_factor = 0.2
 				political_advisor_cost_factor = 0.25
 				air_advisor_cost_factor = 0.25
 				army_advisor_cost_factor = 0.25
 				navy_advisor_cost_factor = 0.25
+				mobilization_laws_cost_factor = 1
+				trade_laws_cost_factor = 1
+				economy_cost_factor = 1
 				production_speed_buildings_factor = -0.2
-				conscription_factor = -0.25
+			}
+		}
+		ose_federation_bureaucracy_2 = {
+			picture = OSE_osean_federation
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.25
+				surrender_limit = 0.1
+				stability_factor = 0.2
+				war_stability_factor = 0.2
+				political_advisor_cost_factor = 0.2
+				air_advisor_cost_factor = 0.2
+				army_advisor_cost_factor = 0.2
+				navy_advisor_cost_factor = 0.2
+				mobilization_laws_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		ose_excavation_idea = {
+			picture = OSE_osean_federation
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				consumer_goods_factor = -0.025
+				local_resources_factor = 0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ose_joined_command = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			cancel = {
+				has_war = no
+			}
+			removal_cost = -1
+			modifier = {
+				max_command_power = 50
+				command_power_gain_mult = 0.25
+				supply_consumption_factor = -0.1
+				army_org_factor = 0.1
+				experience_gain_army_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_speed_factor = 0.1
 			}
 		}
 	}
 	
+	### Cold war buildup ###
 	country = {
-		ose_overextended_military_focus_belka = {
+		ose_fortify_west_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.1
+			}
+		}
+		ose_fund_technologicala_dvancements_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.25
+				consumer_goods_factor = 0.1
+				research_speed_factor = -0.25
+			}
+		}
+		ose_andrews_army_election_promise_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				command_power_gain_mult = 0.5
+				experience_gain_army_factor = 0.5
+				training_time_factor = -0.25
+				production_speed_arms_factory_factor = 0.25
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		ose_refund_the_land_idea = {
 			picture = chi_army_corruption3
 			allowed = {
 				always = no
@@ -72,32 +430,34 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_org_factor = -0.25
-				political_power_gain = -0.1
-				conscription_factor = -0.25
-				command_power_gain_mult = -0.25
-				experience_gain_army_factor = -0.25
-				supply_consumption_factor = 0.1
-			}
-		}
-		ose_logistical_nightmare_belkan_war = {
-			picture = generic_supply_lines
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = no
-			}
-			removal_cost = -1
-			modifier = {
-				industrial_capacity_factory = -0.5
+				political_power_gain = -0.2
+				consumer_goods_factor = 0.1
 				industrial_capacity_dockyard = -0.5
-				conscription_factor = -0.25
-				political_power_gain = -0.1
+				production_speed_buildings_factor = -0.5
 			}
 		}
-		ose_overextended_military_belkan_war = {
-			picture = chi_army_corruption3
+	}
+	
+	### Belkan Land Integration ###
+	country = {
+		ose_belkan_protests_1 = {
+			picture = OSE_osean_federation
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.2
+				stability_weekly = -0.005
+				stability_factor = -0.2
+				drift_defence_factor = -0.25
+			}
+		}
+		ose_belkan_protests_2 = {
+			picture = OSE_osean_federation
 			allowed = {
 				always = no
 			}
@@ -107,8 +467,325 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_gain = -0.1
-				conscription_factor = -0.25
-				supply_consumption_factor = 0.1
+				stability_factor = -0.1
+				drift_defence_factor = -0.25
+			}
+		}
+	
+	}
+
+	### Boliticks ###
+	country = {
+		OSE_extremely_low_taxes_idea = {
+			picture = OSE_extremely_low_taxes
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.06
+				stability_factor = 0.06
+				production_speed_industrial_complex_factor = 0.075
+			}
+		}
+		OSE_very_low_taxes_idea = {
+			picture = OSE_very_low_taxes
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				political_power_gain = -0.10
+				consumer_goods_factor = 0.04
+				stability_factor = 0.04
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		OSE_low_taxes_idea = {
+			picture = OSE_low_taxes
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.02
+				stability_factor = 0.02
+				production_speed_industrial_complex_factor = 0.025
+			}
+		}
+		OSE_moderate_taxes_idea = {
+			picture = OSE_moderate_taxes
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				
+			}
+		}
+		OSE_high_taxes_idea = {
+			picture = OSE_high_taxes
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.02
+				stability_factor = -0.02
+				production_speed_industrial_complex_factor = -0.025
+			}
+		}
+		OSE_very_high_taxes_idea = {
+			picture = OSE_very_high_taxes
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				political_power_gain = 0.10
+				consumer_goods_factor = -0.04
+				stability_factor = -0.04
+				production_speed_industrial_complex_factor = -0.05
+			}
+		}
+		OSE_extremely_high_taxes_idea = {
+			picture = OSE_extremely_high_taxes
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.06
+				stability_factor = -0.06
+				production_speed_industrial_complex_factor = -0.075
+			}
+		}
+		OSE_increase_defense_forces_budget_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				political_power_gain = -0.05
+				industrial_capacity_factory = 0.10
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
+		OSE_pay_farm_subsidies_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.03
+				stability_weekly = 0.001
+				monthly_population = 0.10
+			}
+		}
+		OSE_award_research_grants_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				political_power_gain = -0.05
+				research_speed_factor = 0.10
+			}
+		}
+	}
+	hidden_ideas = {
+		OSE_senate_majority_unity_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				war_support_factor = 0.05
+			}
+		}
+		OSE_senate_majority_liberty_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		OSE_senate_majority_nationalists_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				offensive_war_stability_factor = 0.30
+			}
+		}
+		OSE_senate_majority_socialists_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				local_resources_factor = 0.05
+			}
+		}
+		OSE_senate_majority_monarchists_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
+		OSE_senate_majority_independents_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				drift_defence_factor = 0.50
+			}
+		}
+		OSE_house_majority_unity_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+		OSE_house_majority_liberty_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		OSE_house_majority_nationalists_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		OSE_house_majority_socialists_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		OSE_house_majority_monarchists_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		OSE_house_majority_independents_idea = {
+			picture = xxx
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				consumer_goods_factor = -0.05
 			}
 		}
 	}

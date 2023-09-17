@@ -1,0 +1,47 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_unit_ifv_icon_small"
+		texturefile = "gfx/texticons/unit_ifv_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	# OSE
+
+	spriteType = {
+		name = "GFX_OSE_unity_party_texticon"
+		texturefile = "gfx/texticons/OSE_unity_party_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_OSE_liberty_party_texticon"
+		texturefile = "gfx/texticons/OSE_liberty_party_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_OSE_brotherhood_party_texticon"
+		texturefile = "gfx/texticons/OSE_brotherhood_party_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_OSE_opp_party_texticon"
+		texturefile = "gfx/texticons/OSE_opp_party_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_OSE_socialist_party_texticon"
+		texturefile = "gfx/texticons/OSE_socialist_party_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_OSE_monarchist_party_texticon"
+		texturefile = "gfx/texticons/OSE_monarchist_party_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_OSE_independent_texticon"
+		texturefile = "gfx/texticons/OSE_independent_texticon.dds"
+		legacy_lazy_load = no
+	}
+}

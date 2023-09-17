@@ -7,7 +7,7 @@ characters = { #placeholder leader
 			}
 		}
 		country_leader = {
-			ideology=centrism 
+			ideology=centrism_na
 			traits = { }
 			expire="2050.1.1.1"
 			id=-1

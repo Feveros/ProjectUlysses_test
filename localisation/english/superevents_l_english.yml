@@ -7,9 +7,13 @@
  SE_belkavic_body:0 "There are many things that seem impossible only so long as one does not attempt them, and on that day the Belkans proved it more than enough.\n\n-An Emmerian History Book"
  SE_belkavic_remark:0 "Against All Odds."
  
+ SE_WaW_title:0 "Wacht Am Waldreich"
+ SE_WaW_body:0 "We will not go silent into that good night. Belka's sunset will shine brighter that it's noon.\n\n-Jannik Meier"
+ SE_WaW_remark:0 "Victory or Extinction."
+ 
 
  SE_belkanukes_title:0 ""
- SE_belkanukes_body:0 "[GetDateText]"
- SE_belkanukes_remark:0 ""
+ SE_belkanukes_body:0 ""
+ SE_belkanukes_remark:0 "War of Extinction."
  
  

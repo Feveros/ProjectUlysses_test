@@ -3,6 +3,11 @@ PLH = {
 	color_ui = rgb { 255 255 255 }
 }
 
+AWW = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+
 BLK = {
 	color = rgb { 255 204 0 }
 	color_ui = rgb { 255 204 0 }
@@ -238,9 +243,9 @@ CHO = {
 	color_ui = rgb { 207 211 209 }
 }
 
-SEA = {
-	color = rgb { 184 0 0 }
-	color_ui = rgb { 184 0 0 }
+PLA = {
+	color = rgb { 124 0 0 }
+	color_ui = rgb { 124 0 0 }
 }
 
 RJR = {
@@ -248,12 +253,12 @@ RJR = {
 	color_ui = rgb { 204 115 102 }
 }
 
-PAY = {
+ALR = {
 	color = rgb { 33 76 63 }
 	color_ui = rgb { 33 76 63 }
 }
 
-EDW = {
+CAL = {
 	color = rgb { 196 128 45 }
 	color_ui = rgb { 196 128 45 }
 }
@@ -265,10 +270,20 @@ SCA = {
 
 VOS = {
 	color = rgb { 1 63 142  }
-	color_ui = rgb { 1 63 142  }
+	color_ui = rgb { 1 63 142 }
 }
 
 GIB = {
 	color = rgb { 185 122 87  }
-	color_ui = rgb { 185 122 87  }
+	color_ui = rgb { 185 122 87 }
+}
+
+VLK = {
+	color = rgb { 0 44 132 }
+	color_ui = rgb { 0 44 132 }
+}
+
+NIH= {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
 }

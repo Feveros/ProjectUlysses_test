@@ -12,7 +12,7 @@ state={
 			industrial_complex = 4
 			air_base = 0
 		}
-		victory_points = { 5116 20 }
+		victory_points = { 5116 30 }
 	}
 	provinces={
 		3387 3419 3535 4326 5116 5191 5395 5631 7580 7717 7774 7788 7811 7836 7851 7852 7884 
@@ -27,6 +27,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=2067300
+	manpower=3067300
 	buildings_max_level_factor=1.000
 }

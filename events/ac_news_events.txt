@@ -300,7 +300,7 @@ news_event = { ### Belka Won
             tag = BLK
         }
     }
-	   option = {
+	option = {
         name = ac_news_event.9.b
         trigger = {
 			tag = FAT
@@ -341,7 +341,7 @@ news_event = { ### Resurces in ustio
             tag = BLK
         }
     }
-	   option = {
+	option = {
         name = ac_news_event.10.b
         trigger = {
 			tag = UST
@@ -358,7 +358,7 @@ news_event = { ### Resurces in ustio
     }
 }
 
-news_event = { ### Destruction of excalibur
+news_event = { ### South Belka
     id = ac_news_event.11
 	picture = GFX_news_event_civil_war_turkey
     title = ac_news_event.11.t
@@ -374,6 +374,30 @@ news_event = { ### Destruction of excalibur
     }
 	   option = {
         name = ac_news_event.11.b
+        trigger = {
+			NOT = {
+				tag = BLK
+			}
+        }
+    }
+}
+
+news_event = { ### Destruction of excalibur
+    id = ac_news_event.12
+	picture = GFX_news_event_civil_war_turkey
+    title = ac_news_event.12.t
+    desc = ac_news_event.12.d
+
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = ac_news_event.12.a
+        trigger = {
+            tag = BLK
+        }
+    }
+	option = {
+        name = ac_news_event.12.b
         trigger = {
 			NOT = {
 				tag = BLK

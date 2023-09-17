@@ -1,4 +1,4 @@
-characters = { #starting leaders
+characters = {
 	PBL_wilfredo_de_abarquero = { #Perblan King
 		name ="Wilfredo de Abarquero"
 		portraits = {
@@ -9,8 +9,9 @@ characters = { #starting leaders
 		country_leader = {
 			ideology=constitutional_monarchy  
 			traits = { }
-			expire="2050.1.1.1"
+			expire="2050.1.1"
 			id=-1
 		}
 	}
 }
+

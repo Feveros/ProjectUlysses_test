@@ -95,6 +95,9 @@ technology_categories = {
 	cat_air_guns
 	cat_air_engine
 	cat_air_bombs
+	cat_imvs
+	cat_ifvs
+	cat_apcs
 	
 	# INDUSTRY #
 	
@@ -105,8 +108,11 @@ technology_categories = {
 	dockyard_industry_category
 	construction_tech
 	excavation_tech
-	concentrated_industry_category
 	dispersed_industry_category
+	
+	###
+	
+	cat_modern_armor
 }
 
 technology_folders = {
@@ -118,18 +124,18 @@ technology_folders = {
 	}
 	armour_folder = {
 		ledger = army
-		available = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
-		}
+		#available = {
+		#	NOT = {
+		#		has_dlc = "No Step Back"
+		#	}
+		#}
 	}
-	nsb_armour_folder = {
-		ledger = army
-		available = {
-			has_dlc = "No Step Back"
-		}
-	}
+	#nsb_armour_folder = {
+	#	ledger = army
+	#	available = {
+	#		has_dlc = "No Step Back"
+	#	}
+	#}
 	artillery_folder = {
 		ledger = army
 	}
@@ -138,6 +144,12 @@ technology_folders = {
 		ledger = air
 	}
 	bba_air_techs_folder = {
+		available = {
+			has_dlc = "By Blood Alone"
+		}
+		ledger = air
+	}
+	bba_air_parts_folder = {
 		available = {
 			has_dlc = "By Blood Alone"
 		}

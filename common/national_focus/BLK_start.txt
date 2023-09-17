@@ -5,7 +5,7 @@ shared_focus = {
     ai_will_do = {
         factor = 90
     }
-    x = 5
+    x = 8
     y = 0
     completion_reward = {
 		country_event = { id = belka.1 }
@@ -15,7 +15,7 @@ shared_focus = {
 
 shared_focus = {
     id = BLK_country_wide_protests
-    icon = GFX_focus_generic_support_the_left_right
+    icon = GFX_focus_BLK_country_wide_protests
     cost = 5.8
     ai_will_do = {
         factor = 90
@@ -126,7 +126,7 @@ shared_focus = {
 
 shared_focus = {
     id = BLK_osean_prop
-    icon = GFX_focus_generic_develop_eritrea
+    icon = GFX_focus_BLK_great_lakes_resource_development_company
     cost = 4.3
     ai_will_do = {
         factor = 90
@@ -159,7 +159,18 @@ shared_focus = {
     y = 1
 
     completion_reward = {
-		country_event = { id = belka.11 }
+		if = {
+			limit = {
+				has_global_flag = glrdc_bad_flag
+			}
+			country_event = { id = belka.11 }
+		}
+		if = {
+			limit = {
+				has_global_flag = glrdc_good_flag
+			}
+			country_event = { id = xxx }
+		}
 	}
     search_filters = { }
 }

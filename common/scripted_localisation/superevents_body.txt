@@ -28,4 +28,12 @@ text = {
 		}
 		localization_key = SE_belkanukes_body
 	}
+
+
+text = {
+		trigger = {
+			has_global_flag = SE_WaW
+		}
+		localization_key = SE_WaW_body
+	}
 }

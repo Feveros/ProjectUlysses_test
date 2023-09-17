@@ -12,8 +12,8 @@ state={
 	}
 
 	history={
-		owner = SEA
-		add_core_of = SEA
+		owner = PLA
+		add_core_of = PLA
 		buildings = {
 			infrastructure = 0
 			arms_factory = 0
@@ -21,7 +21,7 @@ state={
 			air_base = 0
 
 		}
-
+		
 	}
 
 	provinces={

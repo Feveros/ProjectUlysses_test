@@ -3,6 +3,33 @@ ideas = {
 	mobilization_laws = {
 		law = yes
 		use_list_view = yes
+		
+		awwnb_cons_law = {
+			
+			cost = 0
+			removal_cost = -1
+			level = 8
+			picture = SPR_crush_the_revolution
+			
+			available = {
+				tag = AWW
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				weekly_manpower = 1000
+				special_forces_cap = 0.25
+				training_time_factor = 0.3
+				army_org_factor = 0.2
+				army_strength_factor = 0.2
+			}
+
+			cancel_if_invalid = no
+		
+		}
 
 		disarmed_nation = {
 

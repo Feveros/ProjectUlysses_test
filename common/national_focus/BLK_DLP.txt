@@ -3,7 +3,7 @@ shared_focus = {
     icon = GFX_goal_BLK_dlp_won_elections
     cost = 3
     ai_will_do = {
-        factor = 90
+        factor = 50
     }
     x = 10
     y = 0
@@ -21,7 +21,7 @@ shared_focus = {
     icon = GFX_focus_generic_national_security
     cost = 3
     ai_will_do = {
-        factor = 90
+        factor = 50
     }
     prerequisite = {
         focus = BLK_dlp_victory
@@ -41,7 +41,7 @@ shared_focus = {
 	icon = GFX_focus_hol_abandon_the_gold_standard
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_to_save_what_we_can
@@ -65,7 +65,7 @@ shared_focus = {
 	icon = GFX_goal_generic_positive_trade_relations
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_downsizing_focus
@@ -101,7 +101,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_infrastructure
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_fuel_reconstruction
@@ -127,7 +127,7 @@ shared_focus = {
 	icon = GFX_goal_generic_oil_refinery
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_resources
@@ -169,7 +169,7 @@ shared_focus = {
 	icon = GFX_goal_generic_production2
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_fuel_reconstruction
@@ -196,7 +196,7 @@ shared_focus = {
 	icon = GFX_focus_generic_industry_2
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_fuel_reconstruction
@@ -223,7 +223,7 @@ shared_focus = {
 	icon = GFX_focus_eng_concessions_to_the_trade_unions
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_tools_and_machinery
@@ -270,7 +270,7 @@ shared_focus = {
 	icon = GFX_goal_generic_trade
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_fuel_nationalisation
@@ -306,7 +306,7 @@ shared_focus = {
 	icon = GFX_focus_generic_railway_gun
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 500
 	}
 	prerequisite = {
 		focus = BLK_downsizing_focus
@@ -397,6 +397,41 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
+		hidden_effect = {
+			if = {
+				limit = {
+					BLK = { is_ai = yes }
+				}
+				224 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				331 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				602 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				302 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
 	}
 	search_filters = { }
 }
@@ -406,7 +441,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construction2
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_revitalise_civ_eco
@@ -448,7 +483,7 @@ shared_focus = {
 	icon = GFX_focus_LAT_suspend_constitution_of_latvia
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_new_workplaces
@@ -469,7 +504,7 @@ shared_focus = {
 	icon = GFX_focus_generic_railroad
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_revitalise_civ_eco
@@ -496,7 +531,7 @@ shared_focus = {
 	icon = GFX_goal_reichsautobahn
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_expand_rails
@@ -536,7 +571,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_civ_factory
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_expand_rails
@@ -589,7 +624,7 @@ shared_focus = {
 	icon = GFX_goal_generic_neutrality_focus
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_put_people_to_work
@@ -628,7 +663,7 @@ shared_focus = {
 	icon = GFX_focus_ETH_re-convene_the_parliament
 	cost = 1.5
 	ai_will_do = {
-		factor = 90
+		factor = 500
 	}
 	allow_branch = {
 		has_completed_focus = BLK_start_of_the_chain
@@ -655,7 +690,7 @@ shared_focus = {
 	icon = GFX_focus_generic_military_dictatorship
 	cost = 1.5
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_party_disagreements
@@ -675,7 +710,7 @@ shared_focus = {
 	icon = GFX_focus_rom_parties_end
 	cost = 1.5
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_talks_in_shadows
@@ -692,6 +727,13 @@ shared_focus = {
 				value = 0
 			}
 			country_event = utility.1
+			country_event = { id = belka_dlp_war.98 days = 15 }
+			if = {
+				limit = {
+					BLK = { is_ai = yes }
+				}
+				add_ideas = BLK_belkan_war_ai_buff_idea
+			}
 		}
 	}
 	search_filters = { }
@@ -702,7 +744,7 @@ shared_focus = {
 	icon = GFX_focus_generic_fascist_troops
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	allow_branch = {
 		has_completed_focus = BLK_pull_the_trigger
@@ -720,6 +762,9 @@ shared_focus = {
 		add_stability = 0.2
 		add_war_support = 0.2
 		add_popularity = { ideology = fascism popularity = 0.1 }
+		hidden_effect = {
+			load_oob = BLK_AI_army
+		}
 	}
 	search_filters = { }
 }
@@ -729,7 +774,7 @@ shared_focus = {
 	icon = GFX_focus_SWI_issue_war_bonds
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	allow_branch = {
 		has_completed_focus = BLK_pull_the_trigger
@@ -759,7 +804,7 @@ shared_focus = {
     icon = GFX_goal_support_fascism
     cost = 3
     ai_will_do = {
-        factor = 90
+        factor = 50
     }
 	prerequisite = {
         focus = BLK_nationalism_unleashed
@@ -785,7 +830,7 @@ shared_focus = {
     icon = GFX_focus_generic_secret_service_agency
     cost = 3
     ai_will_do = {
-        factor = 90
+        factor = 50
     }
 	prerequisite = {
         focus = BLK_nationalism_unleashed
@@ -811,7 +856,7 @@ shared_focus = {
     icon = GFX_focus_generic_industry_3
     cost = 3
     ai_will_do = {
-        factor = 90
+        factor = 500
     }
 	prerequisite = {
         focus = BLK_nationalism_unleashed
@@ -839,7 +884,7 @@ shared_focus = {
 	icon = GFX_focus_generic_infiltration	
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_cult_of_belka
@@ -863,7 +908,7 @@ shared_focus = {
 	icon = GFX_goal_generic_fortify_city
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_cult_of_belka
@@ -922,7 +967,7 @@ shared_focus = {
 	icon = GFX_focus_generic_military_mission
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_cult_of_belka
@@ -948,7 +993,7 @@ shared_focus = {
 	icon = GFX_goal_generic_production
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_spirit_of_belkan_militarism
@@ -971,7 +1016,7 @@ shared_focus = {
 	icon = GFX_focus_generic_women_in_military
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 0
 	}
 	prerequisite = {
 		focus = BLK_spirit_of_belkan_militarism
@@ -994,7 +1039,7 @@ shared_focus = {
 	icon = GFX_focus_generic_catholic_dominion
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_cult_of_belka
@@ -1018,7 +1063,7 @@ shared_focus = {
 	icon = GFX_focus_generic_strike_at_democracy1
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_fortify_the_west
@@ -1052,7 +1097,7 @@ shared_focus = {
 	icon = GFX_focus_YUG_zmaj
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_fortify_the_west
@@ -1077,7 +1122,7 @@ shared_focus = {
 	icon = GFX_focus_generic_hydroelectric_energy
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_form_bs
@@ -1111,7 +1156,7 @@ shared_focus = {
 	icon = GFX_goal_demand_sudetenland
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_new_blood
@@ -1134,7 +1179,7 @@ shared_focus = {
 	icon = GFX_goal_tfv_saf_support_ossebrandwag
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 500
 	}
 	prerequisite = {
 		focus = BLK_police_state
@@ -1158,7 +1203,7 @@ shared_focus = {
 	icon = GFX_focus_ITA_generic_fascist_workers
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 500
 	}
 	prerequisite = {
 		focus = BLK_unemployment
@@ -1269,7 +1314,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_mil_factory
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 500
 	}
 	prerequisite = {
 		focus = BLK_autarky
@@ -1291,7 +1336,7 @@ shared_focus = {
 	icon = GFX_focus_SOV_merge_plants
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 500
 	}
 	prerequisite = {
 		focus = BLK_overspending_on_military
@@ -1321,6 +1366,38 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
+		custom_effect_tooltip = BLK_remove_4_civs_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					BLK = { is_ai = no }
+				}
+				random_owned_controlled_state = {
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+		}
 	}
 	search_filters = { }
 }
@@ -1330,7 +1407,7 @@ shared_focus = {
 	icon = GFX_focus_SOV_mobilization_plan
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_spirit_of_belkan_militarism
@@ -1353,7 +1430,7 @@ shared_focus = {
 	icon = GFX_focus_SOV_penal_battalions
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_quantity
@@ -1376,7 +1453,7 @@ shared_focus = {
 	icon = GFX_goal_rhineland
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_spirit_of_belkan_militarism
@@ -1402,7 +1479,7 @@ shared_focus = {
 	icon = GFX_focus_prc_infiltration
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_quality
@@ -1432,7 +1509,7 @@ shared_focus = {
 	icon = GFX_focus_chi_army_reform
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_drill_the_army
@@ -1456,7 +1533,7 @@ shared_focus = {
 	icon = GFX_focus_generic_truck
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_infantry_focus
@@ -1491,7 +1568,7 @@ shared_focus = {
 	icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_military_industrial_complex
@@ -1514,7 +1591,7 @@ shared_focus = {
 	icon = GFX_focus_generic_army_tanks2
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_tank_focus
@@ -1583,7 +1660,7 @@ shared_focus = {
 	icon = GFX_goal_generic_small_arms
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_military_industrial_complex
@@ -1621,7 +1698,7 @@ shared_focus = {
 	icon = GFX_goal_generic_army_tanks
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_new_weapons
@@ -1653,7 +1730,7 @@ shared_focus = {
 	icon = GFX_goal_generic_occupy_states_ongoing_war
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_quantity_2
@@ -1684,7 +1761,7 @@ shared_focus = {
 	icon = GFX_focus_generic_stockpile_fuel
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_military_industrial_complex
@@ -1738,7 +1815,7 @@ shared_focus = {
 	icon = GFX_focus_LAT_ostland
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_fortify_the_west
@@ -1830,7 +1907,7 @@ shared_focus = {
 	icon = GFX_goal_generic_fortify_city
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_osean_front
@@ -1889,7 +1966,7 @@ shared_focus = {
 	icon = GFX_focus_generic_multi_role_aircraft
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_contest_lakes
@@ -1909,7 +1986,7 @@ shared_focus = {
 	icon = GFX_focus_YUG_ikarus
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_contest_lakes
@@ -1965,7 +2042,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_military
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_dig_in
@@ -2020,7 +2097,7 @@ shared_focus = {
 	icon = GFX_focus_generic_refit_civilian_ships
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_naval_bomb
@@ -2044,7 +2121,7 @@ shared_focus = {
 	icon =GFX_focus_POL_develop_polish_shipbuilding
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_aa_air_ports
@@ -2148,7 +2225,7 @@ shared_focus = {
 	icon = GFX_focus_generic_aircraft_production
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_military_industrial_complex
@@ -2175,7 +2252,7 @@ shared_focus = {
 	icon = GFX_focus_generic_air_defense
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_south_belka_munitions_monopoly
@@ -2198,10 +2275,10 @@ shared_focus = {
 
 shared_focus = {
 	id = BLK_crown_jewel
-	icon = GFX_focus_fra_regiment_normandie
+	icon = GFX_goal_BLK_belkan_air_force
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_south_belka_munitions_monopoly
@@ -2227,7 +2304,7 @@ shared_focus = {
 	icon = GFX_goal_generic_air_fighter
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_crown_jewel
@@ -2274,7 +2351,7 @@ shared_focus = {
 	icon = GFX_focus_generic_copy_plane_designs
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_keep_skies_clear
@@ -2300,7 +2377,7 @@ shared_focus = {
 	icon = GFX_focus_usa_escort_fighters
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_crown_jewel
@@ -2336,7 +2413,7 @@ shared_focus = {
 	icon = GFX_focus_generic_energy
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_crown_jewel
@@ -2363,7 +2440,7 @@ shared_focus = {
 	icon = GFX_focus_SOV_organize_wreckers
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_crown_jewel
@@ -2386,7 +2463,7 @@ shared_focus = {
 	icon = GFX_goal_continuous_air_production
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_crown_jewel
@@ -2409,7 +2486,7 @@ shared_focus = {
 	icon = GFX_goal_generic_air_bomber
 	cost = 3
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_crown_jewel
@@ -2441,10 +2518,10 @@ shared_focus = {
 
 shared_focus = {
 	id = BLK_dlp_war
-	icon = GFX_focus_spa_the_war_of_vengeance
+	icon = GFX_goal_BLK_belkan_war
 	cost = 4.4
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	bypass = {
 		always = yes
@@ -2456,16 +2533,24 @@ shared_focus = {
 	}
 	
 	completion_reward = {
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = { BLK_wacht_am_wal_var = 3 }
+				}
+				country_event = { id = belka_dlp_coup.14 days = 95 }
+			}
+		}
 	}
 	search_filters = { }
 }
 
 shared_focus = {
 	id = BLK_to_the_last_man
-	icon = GFX_focus_generic_provoke_border_clashes
+	icon = GFX_focus_BLK_to_the_last_man
 	cost = 4.4
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_dlp_war
@@ -2492,7 +2577,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construction
 	cost = 4.4
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_dlp_war
@@ -2512,7 +2597,7 @@ shared_focus = {
 	icon = GFX_goal_continuous_repairments
 	cost = 4.4
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_use_locals
@@ -2532,7 +2617,7 @@ shared_focus = {
 	icon = GFX_focus_generic_manpower
 	cost = 4.4
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	prerequisite = {
 		focus = BLK_to_the_last_man
@@ -2568,7 +2653,7 @@ shared_focus = {
 	icon = GFX_focus_generic_annex_country
 	cost = 4.4
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	available = {
 		#UST = { has_capitulated = yes }
@@ -2591,7 +2676,7 @@ shared_focus = {
 	icon = GFX_focus_generic_annex_country_2
 	cost = 4.4
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	available = {
 		#OR = {
@@ -2619,7 +2704,7 @@ shared_focus = {
 	icon = GFX_focus_POL_prussia_line
 	cost = 4.4
 	ai_will_do = {
-		factor = 90
+		factor = 0
 	}
 	available = {
 	}
@@ -2651,10 +2736,10 @@ shared_focus = {
 
 shared_focus = {
 	id = BLK_cross_great_lakes
-	icon = GFX_focus_generic_the_suez
+	icon = GFX_focus_BLK_cross_great_lakes
 	cost = 4.4
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	available = {
 	}
@@ -2687,7 +2772,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_infrastructure
 	cost = 4.4
 	ai_will_do = {
-		factor = 90
+		factor = 50
 	}
 	available = {
 	}
@@ -2704,3 +2789,257 @@ shared_focus = {
 	search_filters = { }
 }
 
+########## WACHT AM WAL ##############
+
+shared_focus = {
+    id = BLK_belka_wach_am_wal
+    icon = GFX_goal_wacht
+    cost = 1
+    ai_will_do = {
+        factor = 50
+    }
+    x = 8
+    y = 0
+	available = {
+	}
+    completion_reward = {
+		add_ideas = BLK_belka_wach_am_wal_idea
+		custom_effect_tooltip = BLK_belka_wach_am_wal_tt
+		hidden_effect = {
+			remove_ideas = BLK_eco_crisis
+			remove_ideas = BLK_overspending_for_military
+			remove_ideas = BLK_chaos_in_the_assembly
+			remove_ideas = BLK_people_leave_idea
+			remove_ideas = BLK_free_trade_idea
+			remove_ideas = BLK_master_of_the_craft_idea
+			remove_ideas = BLK_scrap_idea
+			remove_ideas = BLK_use_scrap_idea
+			remove_ideas = BLK_finest_pilots_idea
+			remove_ideas = BLK_strat_bomber_idea
+			remove_ideas = BLK_strat_bomber_finest_pilots_idea
+			remove_ideas = BLK_air_constest_lakes
+			remove_ideas = BLK_cult_of_belka_idea
+			remove_ideas = BLK_army_with_state_idea
+			remove_ideas = BLK_martial_law_idea
+			remove_ideas = BLK_overspending_for_military_2
+			remove_ideas = BLK_crush_unemploy_idea
+			remove_ideas = BLK_mili_civ_infr_idea
+			remove_ideas = BLK_expand_supply_idea
+			remove_ideas = BLK_woman_in_industry_idea
+			remove_ideas = BLK_woman_in_army_idea
+			remove_ideas = BLK_new_blood_1_idea
+			remove_ideas = BLK_new_blood_2_idea
+			remove_ideas = BLK_new_blood_3_idea
+			remove_ideas = BLK_army_with_state_quantity_idea
+			remove_ideas = BLK_army_with_state_quantity_penal_idea
+			remove_ideas = BLK_army_with_state_quality_idea
+			remove_ideas = BLK_modern_army_idea
+			remove_ideas = BLK_infantry_army_idea
+			remove_ideas = BLK_build_up_navy_idea
+			remove_ideas = BLK_repair_squads_idea
+			remove_ideas = BLK_contest_lakes_belkan_war
+			remove_ideas = BLK_dig_in_belkan_war
+			remove_ideas = BLK_schlacht_um_die_Zukunft_tank_idea
+			remove_ideas = BLK_schlacht_um_die_Zukunft_inf_idea
+			remove_ideas = BLK_to_fuel_the_front_idea
+		}
+    }
+    search_filters = { }
+}
+
+shared_focus = {
+    id = BLK_plan_albion
+    icon = GFX_goal_albion
+    cost = 2.2
+    ai_will_do = {
+        factor = 50
+    }
+	prerequisite = {
+		focus = BLK_belka_wach_am_wal
+	}
+	bypass = {
+		has_completed_focus = BLK_to_hold_the_line
+	}
+	relative_position_id = BLK_belka_wach_am_wal
+    x = -2
+    y = 1
+	available = {
+	}
+    completion_reward = {
+		custom_effect_tooltip = BLK_plan_albion_tt
+		hidden_effect = {
+			remove_ideas = BLK_no_money_idea
+			remove_ideas = BLK_eco_crisis_2
+			remove_ideas = BLK_eco_crisis_3
+			remove_ideas = BLK_eco_crisis_4
+			remove_ideas = BLK_eco_crisis_5
+			remove_ideas = BLK_eco_crisis_5_1
+			remove_ideas = BLK_eco_crisis_5_2
+			remove_ideas = BLK_eco_crisis_6
+			remove_ideas = BLK_eco_crisis_7
+			remove_ideas = BLK_eco_crisis_8
+			remove_ideas = BLK_eco_crisis_9
+			remove_ideas = BLK_eco_crisis_10
+		}
+		add_timed_idea = { idea = BLK_albion days = 60 }
+		custom_effect_tooltip = BLK_plan_albion_after_tt
+    }
+    search_filters = { }
+}
+
+shared_focus = {
+    id = BLK_plan_barghest
+    icon = GFX_goal_barghest
+    cost = 2.2
+    ai_will_do = {
+        factor = 50
+    }
+	prerequisite = {
+		focus = BLK_belka_wach_am_wal
+	}
+	bypass = {
+		has_completed_focus = BLK_to_hold_the_line
+	}
+	relative_position_id = BLK_belka_wach_am_wal
+    x = -1
+    y = 2
+	available = {
+	}
+    completion_reward = {
+		custom_effect_tooltip = BLK_plan_barghest_tt
+		hidden_effect = {
+			remove_ideas = BLK_eco_crisis_army_1
+			remove_ideas = BLK_eco_crisis_army_2
+			remove_ideas = BLK_eco_crisis_army_3
+			remove_ideas = BLK_eco_crisis_army_4
+		}
+		add_ideas = BLK_barghest
+    }
+    search_filters = { }
+}
+
+shared_focus = {
+    id = BLK_plan_baobhan_sith
+    icon = GFX_goal_sith
+    cost = 2.2
+    ai_will_do = {
+        factor = 50
+    }
+	prerequisite = {
+		focus = BLK_belka_wach_am_wal
+	}
+	bypass = {
+		has_completed_focus = BLK_to_hold_the_line
+	}
+	relative_position_id = BLK_belka_wach_am_wal
+    x = 1
+    y = 2
+	available = {
+	}
+    completion_reward = {
+		custom_effect_tooltip = BLK_plan_baobhan_sith_tt
+		hidden_effect = {
+			load_oob = "BLK_directive_sith"
+			end_puppet = FAT
+			remove_resource_rights = 75
+			remove_resource_rights = 334
+			end_puppet = GEB
+			end_puppet = REC
+			FAT = {
+				set_politics = {
+					ruling_party = neutrality 
+					elections_allowed = no
+				}
+				set_popularities = {
+					neutrality = 50
+					fascism = 0
+					democratic = 45
+					communism = 5
+				}
+			}
+			GEB = {
+				set_politics = {
+					ruling_party = democratic 
+					elections_allowed = no
+				}
+				set_popularities = {
+					neutrality = 15
+					fascism = 0
+					democratic = 83
+					communism = 2
+				}
+			}
+			REC = {
+				set_politics = {
+					ruling_party = communism 
+					elections_allowed = no
+				}
+				set_popularities = {
+					neutrality = 5
+					fascism = 0
+					democratic = 5
+					communism = 90
+				}
+			}
+		}
+    }
+    search_filters = { }
+}
+
+shared_focus = {
+    id = BLK_plan_oberon
+    icon = GFX_goal_oberon
+    cost = 2.2
+    ai_will_do = {
+        factor = 50
+    }
+	prerequisite = {
+		focus = BLK_belka_wach_am_wal
+	}
+	bypass = {
+		has_completed_focus = BLK_to_hold_the_line
+	}
+	relative_position_id = BLK_belka_wach_am_wal
+    x = 2
+    y = 1
+	available = {
+	}
+    completion_reward = {
+		custom_effect_tooltip = BLK_plan_oberon_tt
+		add_ideas = BLK_oberon
+    }
+    search_filters = { }
+}
+
+shared_focus = {
+    id = BLK_to_hold_the_line
+    icon = GFX_goal_lastorder
+    cost = 1
+    ai_will_do = {
+        factor = 50
+    }
+	prerequisite = {
+		focus = BLK_plan_barghest
+	}
+	prerequisite = {
+		focus = BLK_plan_baobhan_sith
+	}
+	available = {
+		BLK_wacht_am_wall_state_control = yes
+	}
+	relative_position_id = BLK_belka_wach_am_wal
+    x = 0
+    y = 3
+	available = {
+	}
+    completion_reward = {
+		custom_effect_tooltip = BLK_to_hold_the_line_tt
+		hidden_effect = {
+			remove_ideas = BLK_barghest
+			remove_ideas = BLK_oberon
+		}
+		activate_mission = BLK_wacht_am_wal_hold_timer
+		country_event = belka_wacht_am_wal.5
+    }
+    search_filters = { }
+}

@@ -7,9 +7,9 @@ characters = { #starting leaders
 			}
 		}
 		country_leader = {
-			ideology=oligarchism  
+			ideology=conservatism_na  
 			traits = { }
-			expire="2050.1.1.1"
+			expire="2050.1.1"
 			id=-1
 		}
 	}
@@ -23,7 +23,7 @@ characters = { #starting leaders
 		country_leader = {
 			ideology=conservatism   
 			traits = { }
-			expire="2050.1.1.1"
+			expire="2050.1.1"
 			id=-1
 		}
 	}
@@ -35,9 +35,9 @@ characters = { #starting leaders
 			}
 		}
 		country_leader = {
-			ideology=fascism_ideology  
+			ideology=ultranationalism  
 			traits = { }
-			expire="2050.1.1.1"
+			expire="2050.1.1"
 			id=-1
 		}
 	}
@@ -51,7 +51,7 @@ characters = { #starting leaders
 		country_leader = {
 			ideology=absolutism  
 			traits = { }
-			expire="2050.1.1.1"
+			expire="2050.1.1"
 			id=-1
 		}
 	}
@@ -66,7 +66,7 @@ characters = { #starting leaders
 		#country_leader = {
 		#	ideology=fascism_ideology  
 		#	traits = { }
-		#	expire="2050.1.1.1"
+		#	expire="2050.1.1"
 		#	id=-1
 		#}
 	}
@@ -80,7 +80,7 @@ characters = { #starting leaders
 		country_leader = {
 			ideology=belkan_national_syndicalism  
 			traits = { }
-			expire="2050.1.1.1"
+			expire="2050.1.1"
 			id=-1
 		}
 	}
@@ -113,7 +113,21 @@ characters = { #starting leaders
 		#country_leader = {
 		#	ideology=fascism_ideology  
 		#	traits = { }
-		#	expire="2050.1.1.1"
+		#	expire="2050.1.1"
+		#	id=-1
+		#}
+	}
+	BLK_no_gov = {
+		name ="No Government"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_eng_fallen_government"
+			}
+		}
+		#country_leader = {
+		#	ideology=fascism_ideology  
+		#	traits = { }
+		#	expire="2050.1.1"
 		#	id=-1
 		#}
 	}
@@ -441,7 +455,8 @@ characters = { #advisors
 		name="Niclas Von Cocceji"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large=GFX_portrait_BLK_niclas_von_cocceji
+				small=GFX_portrait_BLK_niclas_von_cocceji_small
 			}
 		}
 		advisor={
@@ -474,7 +489,7 @@ characters = { #advisors
 		name="Arno Von Hardenberg"
 		portraits={
 			army={
-				large = "GFX_portrait_BLK_generic"
+				large = GFX_portrait_BLK_arno_von_hardenberg
 			}
 		}
 		field_marshal={
@@ -491,7 +506,7 @@ characters = { #advisors
 		name="Peter Klepper"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large=GFX_portrait_BLK_peter_klepper
 			}
 		}
 		corps_commander={
@@ -508,7 +523,7 @@ characters = { #advisors
 		name="Kuno Von Sydow"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large=GFX_portrait_BLK_kuno_von_sydow
 			}
 		}
 		
@@ -526,7 +541,8 @@ characters = { #advisors
 		name="Artur Fleming"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large=GFX_portrait_BLK_artur_fleming
+				small=GFX_portrait_BLK_artur_fleming_small
 			}
 		}
 		advisor={
@@ -556,7 +572,7 @@ characters = { #advisors
 		name="Harri Von Kautz"
 		portraits={
 			army={
-				large= "GFX_portrait_BLK_generic"
+				large= GFX_portrait_BLK_harri_von_kautz
 			}
 		}
 		advisor={
@@ -586,7 +602,7 @@ characters = { #advisors
 		name="Ulrich Grebel"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large=GFX_portrait_BLK_ulric_grebel
 			}
 		}
 		corps_commander={
@@ -603,7 +619,7 @@ characters = { #advisors
 		name="Paskal Hasselbach"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large=GFX_portrait_BLK_paskal_hasselbach
 			}
 		}
 		corps_commander={
@@ -620,17 +636,12 @@ characters = { #advisors
 		name="Jannik Meier"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
-			}
-		}
-		portraits={
-			army={
 				large=GFX_portrait_BLK_jannik_meier
 				small=GFX_portrait_BLK_jannik_meier_small
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 200
 			slot = army_chief
 			idea_token = BLK_jannik_meier
 			ledger = army
@@ -638,19 +649,19 @@ characters = { #advisors
 				original_tag = BLK
 			}
 			traits = {
-				army_chief_offensive_2
+				army_chief_offensive_3
 			}
 			ai_will_do = {
-				factor = 10.000
+				factor = 100
 			}
 		}
 		field_marshal={
-			traits={ war_hero harsh_leader brilliant_strategist }
-			skill=5
-			attack_skill=5
+			traits={ war_hero brilliant_strategist politically_connected offensive_doctrine logistics_wizard adaptable }
+			skill=7
+			attack_skill=8
 			defense_skill=3
 			planning_skill=5
-			logistics_skill=3
+			logistics_skill=6
 		}
 	}
 	
@@ -658,7 +669,8 @@ characters = { #advisors
 		name="Caesar Saxer"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large=GFX_portrait_BLK_caesar_saxer
+				small=GFX_portrait_BLK_caesar_saxer_small
 			}
 		}
 		advisor={
@@ -689,6 +701,7 @@ characters = { #advisors
 		portraits={
 			army={
 				large=GFX_portrait_BLK_generic
+				small=GFX_portrait_BLK_timon_rosenhain_small
 			}
 		}
 		advisor={
@@ -777,11 +790,11 @@ characters = { #advisors
 		}
 	}
 
-	BLK_kurt_student={
-		name="Kurt Student"
+	BLK_kurt_schrader={
+		name="Kurt Schrader"
 		portraits={
 			army={
-				large=GFX_portrait_BLK_generic
+				large=GFX_portrait_BLK_kurt_schrader
 			}
 		}
 		advisor={

@@ -4,13 +4,13 @@ state={
 
 
 	history={
-		owner = PLH
-		add_core_of = PLH
+		owner = CSO
+		add_core_of = CSO
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
-			air_base = 0
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 4
+			air_base = 1
 		}
 	}
 	provinces={

@@ -21,11 +21,25 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 48
-	fascism = 50
-	democratic = 1
-	communism = 1
+	neutrality = 5
+	fascism = 5
+	democratic = 85
+	communism = 5
 }
 
-set_stability = 0.5
-set_war_support = 0.5
+create_faction = FCU_STARTING_FACTION
+add_to_faction = AMB
+add_to_faction = UGE
+add_to_faction = SNS
+add_to_faction = DEL
+
+set_stability = 0.6
+set_war_support = 0.4
+
+add_ideas = {
+
+	UTO_president_idea
+	CNEA_member_idea
+
+	nuke_lvl_1
+}

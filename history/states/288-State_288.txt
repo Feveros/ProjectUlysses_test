@@ -15,10 +15,15 @@ state={
 		owner = NPT 
 		add_core_of = NPT
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			arms_factory = 0
-			industrial_complex = 0
-			air_base = 0
+			industrial_complex = 1
+			air_base = 1
+			anti_air_building = 1
+			dockyard = 1
+			3800 = {
+				naval_base = 2
+			}
 
 		}
 

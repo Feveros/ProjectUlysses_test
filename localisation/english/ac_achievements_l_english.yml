@@ -3,4 +3,7 @@
 project_ulysses_achievements:0 "Project Ulysses"
 
 belka_won_belkan_war_DLP_NAME:0 "Belka Won"
-belka_won_belkan_war_DLP_DESC:0 "As Belka, under rule of DLP, win 1st Belkan War."
+belka_won_belkan_war_DLP_DESC:0 "As Belka, under rule of DLP, win (1st) Belkan War."
+
+uno_reverse_card_DLP_NAME:0 "Uno Reverse Card"
+uno_reverse_card_DLP_DESC:0 "As Belka, under rule of DLP, win (1st) Belkan War before end date of the canon one."

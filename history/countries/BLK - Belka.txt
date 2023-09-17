@@ -34,8 +34,10 @@ add_ideas = {
 	BLK_research_department
 	BLK_echos_of_history
 	BLK_echos_air_real_idea ###WORKAROUND - DO NOT TOUCH
-	
+
 	#BLK_spring_of_nations
+
+	nuke_lvl_5
 }
 
 ####################################################
@@ -46,6 +48,7 @@ recruit_character = BLK_berthold_lehmann
 recruit_character = BLK_waldemarr_rald
 recruit_character = BLK_georg_steube
 recruit_character = BLK_marek_hoffnung_von_belka
+recruit_character = BLK_no_gov
 
 recruit_character = BLK_advisor_1
 recruit_character = BLK_advisor_2
@@ -86,7 +89,7 @@ recruit_character = BLK_timon_rosenhain
 recruit_character = BLK_ernst_stockhausen
 recruit_character = BLK_benjamin_von_fein
 recruit_character = BLK_hugo_sperrle
-recruit_character = BLK_kurt_student
+recruit_character = BLK_kurt_schrader
 recruit_character = BLK_von_braun
 recruit_character = BLK_eckehard_hoffmann
 recruit_character = BLK_anton_kupchenko
@@ -110,9 +113,6 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
-	motorised_infantry = 1
-	gw_artillery = 1
-	interwar_antiair = 1
 	basic_train = 1
 	mobile_warfare = 1
 	synth_oil_experiments = 1
@@ -120,78 +120,20 @@ set_technology = {
 	fuel_refining = 1
 	basic_machine_tools = 1
 	marines = 1
+	
+	antiair_1 = 1
+	gw_artillery = 1
+	spg_artillery_1 = 1
+	motorized_rocket_unit = 1
+	motorised_infantry = 1
+	imv1 = 1
+	mechanised_infantry = 1
+	ifv1 = 1
+	basic_light_tank = 1
+	basic_light_td = 1
+	main_battle_tank_0 = 1
+	main_battle_tank = 1
 }
-################################################################
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-		basic_heavy_tank = 1
-		basic_medium_tank = 1
-	}
-}
-############################################################
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		basic_heavy_tank_chassis = 1
-		basic_medium_tank_chassis = 1
-		engine_tech_1 = 1
-	}
-}
-
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "Panzer II Ausf. A"
-		type = light_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_christie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 5
-			tank_nsb_armor_upgrade = 1
-		}
-		icon = "GFX_GER_basic_light_tank_medium"
-	}
-	create_equipment_variant = {
-		name = "Panzer III Ausf. B"
-		type = medium_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_close_support_gun
-			turret_type_slot = tank_medium_three_man_tank_turret
-			suspension_type_slot = tank_torsion_bar_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-			special_type_slot_2 = smoke_launchers
-			special_type_slot_3 = empty
-			special_type_slot_4 = empty
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 6
-			tank_nsb_armor_upgrade = 3
-		}
-		icon = "GFX_GER_basic_medium_tank_medium"
-	}
-}
-
 ########################################################
 
 if = {
@@ -375,6 +317,19 @@ if = {
 		icon = "GFX_GER_naval_bomber1_medium"
 	}
 }
+#############################################################
+set_oob = "BLK_land"
+################################################################
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_air_oob = "BLK_air_dlc"
+	else = {
+		set_air_oob = "BLK_air"
+	}
+}
+#########################################################
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -677,33 +632,3 @@ if = {
 	}
 	set_naval_oob = "BLK_navy_dlc"
 }
-################################################################
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	set_technology = {
-		armored_car1 = 1
-	}
-}
-################################################################
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "BLK_land_dlc"
-	else = {
-		set_oob = "BLK_land"
-	}
-}
-###################################################################
-if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	set_air_oob = "BLK_air_dlc"
-	else = {
-		set_air_oob = "BLK_air"
-	}
-}
-#########################################################

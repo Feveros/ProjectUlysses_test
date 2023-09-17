@@ -31,11 +31,6 @@ hate_osea = {
 		id = "OSE"
 		value = 50
 	}
-	ai_strategy = {
-		type = front_unit_request
-		tag = "OSE"
-		value = 100
-	}
 }
 
 hate_ustio = {
@@ -59,32 +54,6 @@ hate_ustio = {
 	}
 }
 
-belka_war_coming_ust = {
-	allowed = {
-		original_tag = BLK
-	}
-	enable = {
-		has_government = fascism
-		date > 1995.1.1
-	}
-	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = prepare_for_war
-		id = "UST"
-		value = 50
-	}
-	ai_strategy = {
-		type = front_armor_score
-		id = "UST"
-		value = 100
-	}
-	ai_strategy = {
-		type = front_unit_request
-		tag = "UST"
-		value = 100
-	}
-}
-
 do_not_waste_units_on_garrison = {
 	allowed = {
 		original_tag = BLK
@@ -96,6 +65,79 @@ do_not_waste_units_on_garrison = {
 		type = garrison
 		value = -100
 	}
+}
+
+war_with_ustio = {
+	allowed = {
+		tag = BLK
+	}
+	enable = {
+		tag = BLK
+		has_war_with = UST
+		UST = {
+			exists = yes
+			NOT = { is_subject_of = ROOT }
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = conquer
+		id = "UST"
+		value = 500
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 12
+	}
+}
+
+belkan_war_prep = {
+	allowed = {
+		original_tag = BLK
+	}
+	enable = {
+		has_government = fascism
+		date > 1995.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = conquer
+		id = "SAP"
+		value = 500
+	}
+	ai_strategy = {
+		type = conquer
+		id = "FAT"
+		value = 500
+	}
+	ai_strategy = {
+		type = conquer
+		id = "GEB"
+		value = 500
+	}
+}
+
+dont_focus_osea = {
+	allowed = {
+		tag = BLK
+	}
+	enable = {
+		tag = BLK
+		has_war_with = OSE
+		has_government = fascism
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = conquer
+		id = "OSE"
+		value = -500
+	}
+
 }
 
 hate_south_belka = {
@@ -296,7 +338,7 @@ BLK_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
-		value = 40 #20 to 40
+		value = 15
 	}
 
 	ai_strategy = {
@@ -359,178 +401,21 @@ BLK_highered_armored_production = {
 	}
 }
 
-BLK_dont_waste_xp_until_medium_armor = {
-	allowed = {
-		OR = { original_tag = BLK }
-	}
-	enable = {
-		always = yes
-	}
-
-	abort = {
-		has_template_majority_unit = medium_armor
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -100
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = mountaineers
-		value = -100
-	}
-}
-
-BLK_super_boost_light_for_med_armor = {
-	allowed = {
-		OR = { original_tag = BLK }
-	}
-	enable = {
-		OR = {
-			has_tech = basic_medium_tank
-			has_tech = basic_medium_tank_chassis
-		}
-		NOT = { has_template_ai_majority_unit = medium_armor }
-	}
-
-	abort = {
-		has_template_ai_majority_unit = medium_armor
-	}
-
-	# lets do changes more often during this period too
-	ai_strategy = {
-		type = land_xp_spend_priority
-		id = division_template
-		value = 100
-	}
-
-	# this is gateway
-	ai_strategy = {
-		type = template_prio
-		id = light_armor
-		value = 50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = medium_armor
-		value = 150
-	}
-}
-
-BLK_super_boost_light_for_modern_armor = {
-	allowed = {
-		OR = { original_tag = BLK }
-	}
-	enable = {
-		OR = {
-			has_tech = main_battle_tank
-			has_tech = main_battle_tank_chassis
-		}
-		NOT = { has_template_ai_majority_unit = modern_armor }
-	}
-
-	abort = {
-		has_template_ai_majority_unit = modern_armor
-	}
-
-	# lets do changes more often during this period too
-	ai_strategy = {
-		type = land_xp_spend_priority
-		id = division_template
-		value = 100
-	}
-
-	# this is gateway
-	ai_strategy = {
-		type = template_prio
-		id = medium_armor
-		value = 100
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = modern_armor
-		value = 150
-	}
-}
-
-BLK_template_design = {
-	allowed = {
-		OR = { original_tag = BLK }
-	}
-	enable = {
-		date < 1994.1.1
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = template_prio
-		id = infantry
-		value = 20
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = artillery
-		value = 20
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = motorized
-		value = -50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = cavalry
-		value = -100
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = light_armor
-		value = 20
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = medium_armor
-		value = 40
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = heavy_armor
-		value = -50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -50
-	}
-}
-
 BLK_mils_target = {
 	allowed = {
 		original_tag = BLK
 	}
 	enable = {
 		date > 1993.1.1
-		num_of_military_factories < 60
+		num_of_military_factories < 80
 	}
 	abort = {
-		num_of_military_factories > 61
+		num_of_military_factories > 79
 	}
 	ai_strategy = {
 		type = building_target
 		id = arms_factory
-		value = 61
+		value = 80
 	}
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
@@ -538,7 +423,7 @@ BLK_mils_target = {
 	}
 }
 
-BLK_stockpile_less_early_game = {
+BLK_stockpile_less_before_war = {
 	allowed = {
 		original_tag = BLK
 	}
@@ -570,122 +455,5 @@ BLK_highered_armored_production = {
 		type = role_ratio
 		id = armor
 		value = 10
-	}
-}
-
-war_with_ustio = {
-	allowed = {
-		tag = BLK
-	}
-	enable = {
-		tag = BLK
-		has_war_with = UST
-		UST = {
-			exists = yes
-			NOT = { is_subject_of = ROOT }
-		}
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = conquer
-		id = "UST"
-		value = 500
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = mountaineers
-		value = 12
-	}
-}
-
-war_with_sapin = {
-	allowed = {
-		tag = BLK
-	}
-	enable = {
-		tag = BLK
-		has_war_with = SAP
-		SAP = {
-			exists = yes
-			NOT = { is_subject_of = ROOT }
-		}
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = conquer
-		id = "SAP"
-		value = 500
-	}
-}
-
-do_not_kill_AI_fat = {
-	allowed = {
-		original_tag = FAT
-	}
-	enable = {
-		FAT = {
-			is_ai = yes
-		}
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = conquer
-		id = "FAT"
-		value = -1000
-	}
-}
-
-BLK_defend_vs_fato  = {
-	allowed = {
-		original_tag = BLK
-	}
-
-	enable = {
-		has_war_with = OSE
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = front_control
-
-		tag = "FAT"
-
-		ratio = 0.5
-
-		priority = 100
-		ordertype = front
-		execution_type = careful
-		execute_order = no
-	}
-}
-
-BLK_attack_ustio  = {
-	allowed = {
-		original_tag = BLK
-	}
-
-	enable = {
-		has_war_with = UST
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = front_control
-
-		tag = "FAT"
-
-		ratio = 0.5
-
-		priority = 100
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-        manual_attack = yes
 	}
 }

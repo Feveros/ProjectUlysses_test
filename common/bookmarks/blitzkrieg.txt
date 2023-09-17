@@ -21,17 +21,35 @@ bookmarks = {
 				BLK_excalibur
 			}
 		}
-		#"UST"={
-		#	history = "UST_GATHERING_STORM_DESC"
-		#	ideology = democratic
-		#	ideas = {
-		#
-		#	}
-		#	focuses = {
-		#
-		#	}
-		#}
-
+		"OSE"={
+			history = "OSE_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				ose_uncontrolled_spending
+				ose_no_need_for_land_army
+				ose_federation_bureaucracy
+			}
+			focuses = {
+				ose_1992_elections
+				ose_industrial_buildup
+				ose_urgent_war_committee
+			}
+		}
+		"GEB"={
+			minor = yes
+			history = "GEB_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				geb_anti_belka
+				geb_nonexistent_air_force
+				geb_unindustrialized_economy_3
+			}
+			focuses = {
+				GEB_1992_elections
+				GEB_our_violent_brothers
+				GEB_faulmann_doctrine
+			}
+		}
 		#"---"={
 		#	history = "OTHER_GATHERING_STORM_DESC"
 		#}

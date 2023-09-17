@@ -1,5 +1,4 @@
 ﻿l_english:
-
  #######################
  ###                 ###
  ### PROJECT ULYSSES ###
@@ -7,15 +6,15 @@
  #######################
 
  ### INDUSTRY TECH ###
- basic_machine_tools:0 "Mass Adaptation of Automated Tools"
+ basic_machine_tools:0 "Mass Adaptation Of Automated Tools"
  basic_machine_tools_desc:0 "Mass adoption of robotic equipment in our factories will ensure the continuing growth in economies and efficiencies in our industries"
- efficiency_retention_tech_1:0 ""
+ efficiency_retention_tech_1:0 "Old Trains The New"
  efficiency_retention_tech_1_desc:0 ""
- efficiency_retention_tech_2:0 ""
+ efficiency_retention_tech_2:0 "Strategic Promotions"
  efficiency_retention_tech_2_desc:0 ""
- efficiency_base_tech_1:0 ""
+ efficiency_base_tech_1:0 "New Worker Training Programs"
  efficiency_base_tech_1_desc:0 ""
- efficiency_base_tech_2:0 ""
+ efficiency_base_tech_2:0 "New Operators Manuals"
  efficiency_base_tech_2_desc:0 ""
  efficiency_cap_tech_1:0 ""
  efficiency_cap_tech_1_desc:0 ""
@@ -73,12 +72,210 @@
  excavation3:0 "Excavation III"
  excavation3_desc:0 ""
  
+ ###### INFANTRY #######
+ 
+ support_equipment_1:0 "Support Equipment"
+ support_equipment_1_desc:0 "xxx"
+ 
+ ###### TANKS AND CARS ########
+ 
+ artillery_equipment_1:0 "Towed Artillery"
+ 
+ motorized_equipment_1:0 "Tactical Trucks"
+ motorized_equipment_1_desc:0 "By extending the use of motor vehicles in infantry transports in the field, the mobility of otherwise slow-moving infantry units can be greatly improved, enabling faster responses and new strategies."
+ motorized_equipment_2:0 "Improved Tactical Trucks"
+ motorized_equipment_2_desc:0 "One of the biggest problems when transporting infantry by truck is the lack of protection offered. However, recent advancements in lightweight armor and engine technologies have allowed the production of lightly armored trucks to protect against small arms fire. "
+ motorized_equipment_3:0 "Advanced Tactical Trucks"
+ motorized_equipment_3_desc:0 "Lessons learned from the Usean Coup have showed that one of the biggest threats to convoys are IEDs and other roadside explosives. MRAP technology should therefore be extended to our tactical trucks to ensure maximum protection to infantry, while still maintaining their speed and reliability."
+
+ imv_equipment_1:0 "Inf. Mobility Vehicles"
+ imv_equipment_1_desc:0 "While trucks are useful for moving infantry around, they suffer from their heavy weight, and speed limitations when compared to cars. Infantry Mobility Vehicles provide an optimal solution to transporting infantry speedily and across terrain that trucks may have trouble moving through."
+
+ imv_equipment_2:0 "Improved Inf. Mobility Vehicles"
+ imv_equipment_2_desc:0 "IMVs were never initally desinged to protect against small arms fire, rather being a means of transporting infantry quickly across long distances. Increasing the armor and variety of weapons available to be mounted will increase crew survivabiltity and lethality on the battlefield."
+
+ mrap_equipment_1:0 "MRAP Vehicles"
+ mrap_equipment_1_desc:0 "Recent conflicts, espcially Ustian insurgents during the Belkan War have showcased the threat that improvised explosive devices have on lightly armored vehicles. Creating a chassis based on IMVs, but specially designed to protect against portable anti-tank systems such the RPG-7, and roadside IEDs will heavily increased crew survivability in the field, and in COIN operations."
+
+ mrap_equipment_2:0 "Improved MRAP Vehicles"
+ mrap_equipment_2_desc:0 "While the introduction of MRAP vehicles has been met with widespread success, they still feature some critical weaknesses. Manned turrets still provide a weakpoint to the vehicle, and leave the gunner vulnerable, and problems have been noted regarding the ease of exit for the crew. Therfore, better designed doors, and remotely controlled turrets can be a a huge boon to the effectiveness of our MRAP vehicles."
+
+ #amphibious_mechanized_infantry:0 "Amphibious Tractors"
+ #amphibious_mechanized_infantry_desc:0 "Amphibious Tractors, or Amtracs, allow Marines to be landed on a beach under armored protection. However, this comes at the cost of poor fuel efficiency."
+ #amphibious_mechanized_infantry_2:0 "Improved Amphibious Tractors"
+ #amphibious_mechanized_infantry_2_desc:0 "These Amtracs feature several improvements over the base version, such as a rear loading ramp for easier unloading on the beach."
+ 
+ mechanized_equipment_1:0 "APC"
+ mechanized_equipment_1_desc:0 "xxx"
+ mechanized_equipment_2:0 "Improved APC"
+ mechanized_equipment_2_desc:0 "xxx"
+ mechanized_equipment_3:0 "Advanced APC"
+ mechanized_equipment_3_desc:0 "xxx"
+ 
+ era_mech_1:0 "Reinforced Crew Compartment"
+ era_mech_1_desc:0 "xxx"
+ terrain_mech_1:0 "Tactical Bumper"
+ terrain_mech_1_desc:0 "xxx"
+ terrain_mech_2:0 "Advanced Shock Absorbers"
+ terrain_mech_2_desc:0 "xxx"
+ era_mech_2:0 "Frontal Armor Plating"
+ era_mech_2_desc:0 "xxx"
+
+ ifv_equipment_1:0 "IFV"
+ ifv_equipment_1_desc:0 "xxx"
+ ifv_equipment_2:0 "Improved IFV"
+ ifv_equipment_2_desc:0 "xxx"
+ ifv_equipment_3:0 "Advanced IFV"
+ ifv_equipment_3_desc:0 "xxx"
+ 
+ light_tank_equipment_1:0 "Light Tank"
+ light_tank_equipment_1_desc:0 "xxx"
+ light_tank_equipment_2:0 "Improved Light Tank"
+ light_tank_equipment_2_desc:0 "xxx"
+ light_tank_equipment_3:0 "Advanced Light Tank"
+ light_tank_equipment_3_desc:0 "xxx"
+ 
+ light_tank_td_equipment_1:0 "ATMC"
+ light_tank_td_equipment_1_desc:0 "xxx"
+ light_tank_td_equipment_2:0 "Improved ATMC"
+ light_tank_td_equipment_2_desc:0 "xxx"
+ light_tank_td_equipment_3:0 "Advanced ATMC"
+ light_tank_td_equipment_3_desc:0 "xxx"
+ 
+ recon_modules_1:0 "Electronic Recon Modules"
+ recon_modules_1_desc:0 "xxx"
+ support_modules_1:0 "Support Harsh Terrain Subsystem"
+ support_modules_1_desc:0 "xxx"
+ recon_modules_2:0 "Support Drone Recon Units"
+ recon_modules_2_desc:0 "xxx"
+ support_modules_2:0 "Small Caliber Phosphorus Ammunition"
+ support_modules_2_desc:0 "xxx"
+ 
+ era_blocks_1:0 "Improved Reactive Armour"
+ era_blocks_1_desc:0 "xxx"
+ improved_subsystems_1:0 "Advanced Computer Fire Support"
+ improved_subsystems_1_desc:0 "xxx"
+ improved_engine_1:0 "Turboshaft Engine Improvements"
+ improved_engine_1_desc:0 "xxx"
+ era_blocks_2:0 "Experimental Plating"
+ era_blocks_2_desc:0 "xxx"
+ improved_subsystems_2:0 "Basic AI Fire Control"
+ improved_subsystems_2_desc:0 "xxx"
+ improved_engine_2:0 "Mobility Upgrades"
+ improved_engine_2_desc:0 "xxx"
+
+ modern_tank_equipment_0:0 "Early Cold War MBT"
+ modern_tank_equipment_0_desc:0 "xxx"
+ modern_tank_equipment_1:0 "GEN II MBT"
+ modern_tank_equipment_1_desc:0 "Second generation MBTs feature enhanced night-fighting capabilities and in most cases NBC protection."
+ modern_tank_equipment_2:0 "Modernized GEN II MBT"
+ modern_tank_equipment_2_desc:0 "Second generation MBTs modernized with advanced night vision and thermal imaging, reactive armor, and improved armament and engines."
+ modern_tank_equipment_3:0 "Advanced GEN II MBT"
+ modern_tank_equipment_3_desc:0 "xxx"
+ modern_tank_equipment_4:0 "GEN III MBT"
+ modern_tank_equipment_4_desc:0 "Third generation of main battle tanks are characterized by composite armour and computer stabilized fire control systems, which allow firing on the move as well as very high first hit probability on targets up to 2,000 meters away."
+
+ cat_imvs:0 "Infantry Mobility Vehicles"
+ cat_imvs_desc:0 "xxx"
+ cat_ifvs:0 "Infantry Fighting Vehicles"
+ cat_ifvs_desc:0 "xxx"
+ cat_apcs:0 "Armored Personnel Carriers"
+ cat_apcs_desc:0 "xxx"
+ 
+ ### Artillery ###
+ mobile_anti_air_equipment_1:0 "Triple-A"
+ mobile_anti_air_equipment_1_desc:0 "xxx"
+ antiair_2:0 "AHEAD"
+ antiair_2_desc:0 "xxx"
+ mobile_anti_air_equipment_2:0 "Improved Triple-A"
+ mobile_anti_air_equipment_2_desc:0 "xxx"
+ antiair_4:0 ""
+ antiair_4_desc:0 "xxx"
+ mobile_anti_air_equipment_3:0 "Advanced Triple-A"
+ mobile_anti_air_equipment_3_desc:0 "xxx"
+ 
+ artillery_equipment_1:0 "Towed Artillery"
+ artillery_equipment_1_desc:0 "xxx"
+ artillery_ha_1:0 "Implement Cluster Munition"
+ artillery_ha_1_desc:0 "xxx"
+ artillery_terrain_1:0 "Incendiary Ammunition"
+ artillery_terrain_1_desc:0 "xxx"
+ artillery_def_1:0 "Improved Aiming Systems"
+ artillery_def_1_desc:0 "xxx"
+ artillery_tech_1:0 ""
+ artillery_tech_1_desc:0 "xxx"
+ artillery_brk_1:0 "Saturation Bombardment Plans"
+ artillery_brk_1_desc:0 "xxx"
+ artillery_ha_2:0 "Guided Anti-tank Rounds"
+ artillery_ha_2_desc:0 "xxx"
+ artillery_terrain_2:0 ""
+ artillery_terrain_2_desc:0 "xxx"
+ artillery_tech_3:0 ""
+ artillery_tech_3_desc:0 "xxx"
+ artillery_brk_2:0 ""
+ artillery_brk_2_desc:0 "xxx"
+ artillery_def_2:0 ""
+ artillery_def_2_desc:0 "xxx"
+ artillery_tech_5:0 ""
+ artillery_tech_5_desc:0 "xxx"
+ artillery_equipment_2:0 "Improved Towed Artillery"
+ artillery_equipment_2_desc:0 "xxx"
+ artillery_equipment_3:0 "Advanced Towed Artillery"
+ artillery_equipment_3_desc:0 "xxx"
+ 
+ medium_tank_artillery_equipment_1:0 "S-P Howitzer"
+ medium_tank_artillery_equipment_1_desc:0 "xxx"
+ spg_artillery_2:0 ""
+ spg_artillery_2_desc:0 "xxx"
+ medium_tank_artillery_equipment_2:0 "Improve S-P Howitzer"
+ medium_tank_artillery_equipment_2_desc:0 "xxx"
+ spg_artillery_4:0 ""
+ spg_artillery_4_desc:0 "xxx"
+ medium_tank_artillery_equipment_3:0 "Advanced S-P Howitzer"
+ medium_tank_artillery_equipment_3_desc:0 "xxx"
+ 
+ motorized_rocket_equipment_1:0 "MLRS"
+ motorized_rocket_equipment_1_desc:0 "xxx"
+ motorized_rocket_unit_ha_1:0 ""
+ motorized_rocket_unit_ha_1_desc:0 "xxx"
+ motorized_rocket_unit_terrain_1:0 ""
+ motorized_rocket_unit_terrain_1_desc:0 "xxx"
+ motorized_rocket_unit_0_5:0 ""
+ motorized_rocket_unit_0_5_desc:0 "xxx"
+ motorized_rocket_equipment_2:0 "Improved MLRS"
+ motorized_rocket_equipment_2_desc:0 "xxx"
+ motorized_rocket_unit_ha_2:0 ""
+ motorized_rocket_unit_ha_2_desc:0 "xxx"
+ motorized_rocket_unit_brk_1:0 ""
+ motorized_rocket_unit_brk_1_desc:0 "xxx"
+ motorized_rocket_unit_3:0 ""
+ motorized_rocket_unit_3_desc:0 "xxx"
+ 
+ ### TOOLTIPS ###
+ 
+ tech_arti_terrain_1_bonus:0 "£unit_artillery_brigade_icon_small  Barrel Artillery:\n   Forest & Jungle\n     Attack: §G+5%§!§W"
+ tech_arti_terrain_2_bonus:0 "£unit_artillery_brigade_icon_small  Barrel Artillery:\n   Mountain, Hill & Urban\n     Attack: §G+5%§!§W\n     Movement: §G+10%§!§W"
+ tech_rocket_arti_terrain_1_bonus:0 "£GFX_unit_motorized_rocket_brigade_icon_small  MLRS Artillery:\n   Forest, Jungle & Urban\n     Attack: §G+5%§!§W"
+ tech_mech_terrain_1_bonus:0 "£GFX_unit_mechanized_icon_small £GFX_unit_ifv_icon_small  Heavy Infantry:\n   Forest, Jungle & Marsh\n     Attack: §G+5%§!§W\n     Movement: §G+10%§!§W"
+ tech_mech_terrain_2_bonus:0 "£GFX_unit_mechanized_icon_small  Mechanized Infantry:\n   Mountain & Hill\n     Attack: §G+10%§!§W\n     Movement: §G+5%§!§W"
+ tech_lt_terrain_1_bonus:0 "£GFX_unit_light_armor_icon_small  Light Tank:\n   Mountain, Hill, Forest & Jungle\n     Attack: §G+5%§!§W\n     Movement: §G+5%§!§W"
+
+ tech_tank_terrain_1_bonus:0 "£GFX_unit_modern_armor_icon_small  Main Battle Tank:\n   Forest, Jungle & Marsh\n     Movement: §G+5%§!§W"
+ tech_tank_terrain_2_bonus:0 "£GFX_unit_modern_armor_icon_small  Main Battle Tank:\n   Urban\n     Attack: §G+10%§!§W\n     Movement: §G+10%§!§W"
+ tech_tank_terrain_3_bonus:0 "£GFX_unit_modern_armor_icon_small  Main Battle Tank:\n   Mountain & Hill\n     Movement: §G+5%§!§W"
+
+
+ ### 
+ 
+ bba_air_parts_folder:0 "Air Support"
+ bba_air_parts_folder_desc:0 "Air armaments and specialist plane equipment."
+
  ###############
  ###         ###
  ### VANILLA ###
  ###         ###
  ###############
- 
+
  RESEARCH_BONUSES_TOOLTIP:0 "Limited technology bonuses we have:"
  RESEARCH_BONUSES_EMPTY_TOOLTIP:0 "Limited technology bonuses will be listed here."
  RESEARCH_BONUS_SPEED_DESC:0 "§Y$COUNT$x§! $VALUE|G%0$ research speed $NAME$"
@@ -395,9 +592,12 @@
  tech_maintenance_company3_desc:0 "Making sure that our troops always have the basic materials in the field to perform common repairs will prevent the continued use of equipment known to be damaged."
  tech_maintenance_company4:0 "Maintenance Company IV"
  tech_maintenance_company4_desc:0 "Experiences with designing for active redundancy in the Great War can be renewed to work with more modern equipment to make maintenance easier."
- motorised_infantry:0 "Motorized Infantry"
- motorised_infantry_desc:0 "By extending the use of motor vehicles in infantry transports in the field, the mobility of otherwise slow-moving infantry units can be greatly improved, enabling faster responses and new strategies."
  night_vision:0 "Night Vision I"
+ night_vision_desc:0 "Being able to see the enemy without being seen is key to night operations. With the invention of infra-red technology, we can outfit our army with devices which, though unwieldy, makes this possible."
+ night_vision2:0 "Night Vision II"
+ night_vision2_desc:0 "Early infra-red scopes, although initially intended for use by snipers, had a limited vision range. As both portability and vision improves, these devices can be used by more troops operating at night."
+ night_vision:0 "Night Vision I"
+
  night_vision_desc:0 "Being able to see the enemy without being seen is key to night operations. With the invention of infra-red technology, we can outfit our army with devices which, though unwieldy, makes this possible."
  night_vision2:0 "Night Vision II"
  night_vision2_desc:0 "Early infra-red scopes, although initially intended for use by snipers, had a limited vision range. As both portability and vision improves, these devices can be used by more troops operating at night."
@@ -506,26 +706,8 @@
  rocket_interceptor_3_desc:0 "New landing techniques and safer fuel systems have improved rocket fighters' chance of success and survival significantly, fulfilling the once theoretical potential of these cutting-edge vehicles."
  nukes:0 "Nuclear Bombs"
  nukes_desc:0 "A project to construct an atomic bomb will be one of the most secretive and difficult tasks a nation can undertake, but, if successful, may change not only the course of today's wars but of the future of the world."
- interwar_artillery:1 "Inter-War Artillery"
- interwar_artillery_desc:0 "Lessons learned in the development of different types of artillery can be cross-applied to the design of other pieces."
- artillery1:0 "Artillery I"
- artillery1_desc:0 "With more modern materials and mechanisms, howitzers and field guns from the Great War can be rechambered and modernized for modern warfare."
- artillery2:0 "Improved Artillery Upgrade I"
- artillery2_desc:0 "Upgrading old pieces can only get us so far. New howitzer designs will be needed, taking advantage of new hydraulic recoil devices and longer barrels."
- artillery3:0 "Improved Artillery Upgrade II"
- artillery3_desc:0 "To enable heavier guns on lighter carriages, muzzle brakes can be included in howitzer designs."
- artillery4:0 "Artillery IV"
- artillery4_desc:0 "Developing light-weight artillery capable of being broken down for transport will make it possible to bring artillery support to areas previously difficult to reach."
- artillery5:0 "Advanced Artillery Upgrade"
- artillery5_desc:0 "Artillery designs with lower silhouettes will be more difficult for the enemy to target."
  mountain_gun:0 "Mountain Gun"
  mountain_gun_desc:0 "The mountainous terrain of Northern India led to the development of an artillery piece that could be dismantled and carried on muleback to wherever it was needed."
- rocket_artillery2:0 "Rocket Artillery Upgrade I"
- rocket_artillery2_desc:0 "Self-propelled artillery utilizing multiple rockets will be able to cause large-scale destruction rapidly, while maintaining mobility to avoid counter-fire."
- rocket_artillery3:0 "Rocket Artillery Upgrade II"
- rocket_artillery3_desc:0 "Sacrificing range for impact, we can mount heavier rockets on larger vehicles. Operating in teams, these artillery batteries can cooperate to reload and relocate quickly."
- rocket_artillery4:0 "Rocket Artillery III"
- rocket_artillery4_desc:0 "Spin-stabilized rockets can increase the range of lighter artillery batteries."
  interwar_antiair:0 "Anti-Air"
  antiair1:0 "Anti-Air Upgrade"
  antiair1_desc:0 "With faster reloading mechanisms, anti-air guns carrying large rounds can still maintain necessary firing rates."
@@ -923,8 +1105,6 @@
  mtg_landing_craft_desc:0 "Dedicated invasion craft make landing in hostile territory slightly less of a headache."
  mtg_tank_landing_craft:0 "Advanced Landing Craft"
  mtg_tank_landing_craft_desc:0 "Advanced Landing craft means that our boys can get on the beach quicker and more effectively during an invasion."
- motorized_rocket_unit:0 "Motorized Rocket Artillery"
- mot_rockets_research:3 "Motorized Rocket Artillery Research Speed"
  UNLOCK_DIVISION_TEMPLATE:0 "Unlocks a free §HDivision Template§!"
  INFANTRY_TITLE_WEAPONS:0 "WEAPONS & EQUIPMENT"
  INFANTRY_TITLE_SPECIAL:0 "SPECIAL FORCES"
@@ -960,6 +1140,7 @@
  amphibious_mechanized_infantry_desc:0 "Amphibious Tractors, or Amtracs, allow Marines to be landed on a beach under armored protection. However, this comes at the cost of poor fuel efficiency."
  amphibious_mechanized_infantry_2:0 "Improved Amphibious Tractors"
  amphibious_mechanized_infantry_2_desc:0 "These Amtracs feature several improvements over the base version, such as a rear loading ramp for easier unloading on the beach."
+
  amphibious_tank:0 "Amphibious Tank"
  amphibious_tank_desc:0 "Amphibious Tanks are designed to give Marines armored fire support during a beach assault."
  amphibious_tank_2:0 "Improved Amphibious Tank"
@@ -1168,7 +1349,14 @@
  railway_gun:0 "$railway_gun_equipment_1$"
  basic_train:0 "$train_equipment_1$"
  gwtank:0 "Great War Tank"
+
  basic_light_tank:0 "L. Tank I"
+ armored_car1:0 "$gw_armored_car_equipment$"
+ armored_car2:0 "$armored_car_equipment_1$"
+ armored_car3:0 "$armored_car_equipment_2$"
+
+
+
  armored_car1:0 "$gw_armored_car_equipment$"
  armored_car2:0 "$armored_car_equipment_1$"
  armored_car3:0 "$armored_car_equipment_2$"

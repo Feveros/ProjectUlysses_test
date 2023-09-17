@@ -7,10 +7,13 @@ state={
 		owner = NPT 
 		add_core_of = NPT 
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
-			air_base = 0
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+			7025 = {
+				naval_base = 3
+			}
 		}
 	}
 	provinces={

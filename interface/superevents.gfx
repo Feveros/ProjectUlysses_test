@@ -34,4 +34,8 @@ spriteTypes = {
 		name = "GFX_superevents_belkanukes"
 		textureFile = "/gfx/superevents_pictures/superevents_belkanukes.dds"
 	}
+	spriteType = {
+		name = "GFX_superevents_WaW"
+		textureFile = "/gfx/superevents_pictures/superevents_WaW.dds"
+	}
 }

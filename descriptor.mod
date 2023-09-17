@@ -8,7 +8,7 @@ tags={
 	"National Focuses"
 }
 supported_version="1.12.*"
-path="mod/ProjectUlysses_test/"
+path="mod/ProjectUlyssesMain/"
 
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"
@@ -19,4 +19,8 @@ replace_path="common/bookmarks"
 replace_path="common/ai_templates"
 replace_path="common/ai_equipment"
 replace_path="common/ai_strategy"
-replace_path = "gfx/loadingscreens"
+replace_path="common/characters"
+#replace_path="common/country_tags"
+replace_path="gfx/loadingscreens"
+replace_path="common/units"
+replace_path="common/units/equipment"

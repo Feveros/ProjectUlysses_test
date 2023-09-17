@@ -14,18 +14,41 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1930.11.9"
+	ruling_party = communism
+	last_election = "1988.7.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
-	neutrality = 48
-	fascism = 50
-	democratic = 1
-	communism = 1
+	communism = 70
+	fascism = 26
+	democratic = 4
+	neutrality = 0
+}
+
+set_party_name = {
+    ideology = communism
+    long_name = YUK_prp_party_long
+    name = YUK_prp_party
 }
 
 set_stability = 0.5
 set_war_support = 0.5
+
+add_ideas = {
+	yuk_top_heavy_command_structure
+}
+
+#############################
+# Leaders
+recruit_character = YUK_konstantin_antonov
+# Political Advisors
+
+# Military Advisors
+
+# Generals
+
+# Advisors
+
+# Admirals

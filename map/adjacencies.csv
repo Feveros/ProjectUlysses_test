@@ -1,4 +1,26 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+7570;3575;impassable;-1;-1;-1;-1;-1;;Round Table
+7570;7513;impassable;-1;-1;-1;-1;-1;;Round Table
+7570;7478;impassable;-1;-1;-1;-1;-1;;Round Table
+7570;4927;impassable;-1;-1;-1;-1;-1;;Round Table
+7545;7512;impassable;-1;-1;-1;-1;-1;;Round Table
+7545;7533;impassable;-1;-1;-1;-1;-1;;Round Table
+7545;4927;impassable;-1;-1;-1;-1;-1;;Round Table
+7569;7533;impassable;-1;-1;-1;-1;-1;;Round Table
+7569;4172;impassable;-1;-1;-1;-1;-1;;Round Table
+7595;4172;impassable;-1;-1;-1;-1;-1;;Round Table
+7595;2065;impassable;-1;-1;-1;-1;-1;;Round Table
+7595;7642;impassable;-1;-1;-1;-1;-1;;Round Table
+5906;2065;impassable;-1;-1;-1;-1;-1;;Round Table
+5906;7642;impassable;-1;-1;-1;-1;-1;;Round Table
+5906;7666;impassable;-1;-1;-1;-1;-1;;Round Table
+5906;7649;impassable;-1;-1;-1;-1;-1;;Round Table
+1939;7649;impassable;-1;-1;-1;-1;-1;;Round Table
+1939;3023;impassable;-1;-1;-1;-1;-1;;Round Table
+7603;4292;impassable;-1;-1;-1;-1;-1;;Round Table
+7603;7611;impassable;-1;-1;-1;-1;-1;;Round Table
+7603;3023;impassable;-1;-1;-1;-1;-1;;Round Table
+7603;3575;impassable;-1;-1;-1;-1;-1;;Round Table
 7737;7718;sea;10298;-1;-1;-1;-1;;Great Lakes
 8039;1410;sea;10439;-1;-1;-1;-1;;Great Lakes
 5035;1410;sea;10439;-1;-1;-1;-1;;Great Lakes

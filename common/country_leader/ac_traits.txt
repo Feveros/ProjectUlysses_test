@@ -3,6 +3,9 @@
 @tier3 = 10
 
 leader_traits = {
+	
+	nuke_lvl_trait = { random = no }
+	hates_yukto = { random = no }
 
 	### BELKA ###
 
@@ -15,12 +18,32 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	BLK_echos_elitarism_2 = {
+		random = no
+	
+		conscription_factor = -0.4
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	BLK_echos_land = {
 		random = no
 	
 		army_org_factor = 0.05
 		army_attack_factor = 0.05
+		experience_gain_army = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	BLK_echos_land_2 = {
+		random = no
+	
+		army_org_factor = 0.075
+		army_attack_factor = 0.1
 		experience_gain_army = 0.05
 		
 		ai_will_do = {
@@ -63,7 +86,7 @@ leader_traits = {
 				instant = yes
 			}
 		}
-		experience_gain_air = 0.05
+		#experience_gain_air = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -98,6 +121,18 @@ leader_traits = {
 
 		air_doctrine_cost_factor = -0.1
 		experience_gain_air = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BLK_GLRDC = {
+		random = no
+
+		consumer_goods_factor = -0.05
+		political_power_factor = 0.15
+		stability_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -158,54 +193,46 @@ leader_traits = {
 		army_defence_factor = 0.1
 		army_attack_factor = 0.1
 	}
-	fato_high_command = {
+	
+	### Perbla ###
+	
+	PBL_electronics_trait = {
+		random = no
+
+		consumer_goods_factor = 0.05
+		political_power_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### OSE ###
+	
+	OSE_senator_armstrong_trait_1 = {
 		random = no
 		
-		max_planning = 0.2
-		command_power_gain = 0.2
-		max_command_power = 40
+		war_support_factor = 0.05
+		consumer_goods_factor = -0.025
+		political_power_factor = 0.1
+		industrial_capacity_factory = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+		production_speed_arms_factory_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
 	}
-	gebet_cabinet = {
+	
+	OSE_senator_armstrong_trait_2 = {
 		random = no
 		
-		political_advisor_cost_factor = -0.5
-		air_advisor_cost_factor = -0.5
-		navy_advisor_cost_factor = -0.5
-		army_advisor_cost_factor = -0.5
-	}
-	rectan_socialeconomics = {
-		random = no
-		production_factory_max_efficiency_factor = 0.1
-		industrial_capacity_factory = 0.1
-	}
-	ustio_defiance = {
-		random = no
+		improve_relations_maintain_cost_factor = -0.5
+		trade_opinion_factor = 0.25
+		opinion_gain_monthly_factor = 0.15
 		
-		army_org = 0.l #NOT WORKING ???#
-		army_org_regain = 0.1
-	}
-	sapin_loyalty = {
-		random = no
-		
-		army_org_factor = 0.1
-		stability_factor = 0.1
-	}
-	nordlands_shipyards = {
-		random = no
-		
-		industrial_capacity_dockyard = 0.2
-	}
-	wielvakian_farmlands = {
-		random = no
-		
-		supply_consumption_factor = -0.1
-		conscription_factor = 0.15
-		monthly_population = 0.15
-	}
-	ratios_banking = {
-		random = no	
-		
-		consumer_goods_factor = -0.05
-		political_power_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
 	}
 }

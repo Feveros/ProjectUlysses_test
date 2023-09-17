@@ -78,3 +78,34 @@ BLK_belkan_war_controls_south = {
 		}
 	}
 }
+
+BLK_wacht_am_wall_state_control = {
+	custom_trigger_tooltip = {
+		tooltip = BLK_wacht_am_wall_state_control_tt
+		BLK = {
+			controls_state = 228
+			controls_state = 584
+			controls_state = 8
+			controls_state = 302
+			controls_state = 364
+			controls_state = 369
+			controls_state = 330
+			controls_state = 331
+			controls_state = 270
+			controls_state = 590
+			controls_state = 272
+			controls_state = 600
+			controls_state = 259
+			controls_state = 242
+			controls_state = 602
+			controls_state = 265
+			controls_state = 596
+			controls_state = 235
+			controls_state = 224
+			controls_state = 316
+			controls_state = 293
+			controls_state = 256
+			controls_state = 220
+		}
+	}
+}

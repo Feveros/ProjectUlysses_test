@@ -1,2 +1,13 @@
 ﻿l_english:
+ # NATIONAL SPIRITS
+ UTO_member_idea:0 "UTO Member"
+ UTO_president_idea:0 "UTO President"
+ CNEA_member_idea:0  "CNEA Member"
+
+ # ECONOMY
  cold_war_eco:0 "Cold War Economy"
+ 
+ const_amount_cost_rise_modifier:0 "Costs of Maintenance"
+ MILS_COST_LOC:0 "Due to rising costs of maintenance our next §YMilitary Factory§! will be built slower by: [?mils_amount_cost_rise|%R0]"
+ CIVS_COST_LOC:0 "Due to rising costs of maintenance our next §YCivilian Factory§! will be built slower by: [?civs_amount_cost_rise|%R0]"
+ DOCKS_COST_LOC:0 "Due to rising costs of maintenance our next §YDockyard§! will be built slower by: [?docks_amount_cost_rise|%R0]"

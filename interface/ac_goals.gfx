@@ -1,10 +1,307 @@
-spriteTypes = {	
-
+spriteTypes = {
+################# GENERIC ###########################
+	spriteType = {
+		name = "GFX_focus_generic_extract_chromium"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_extract_chromium.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_extract_oil"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_extract_oil.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_extract_rubber"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_extract_rubber.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_extract_steel"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_extract_steel.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_extract_tungsten"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_extract_tungsten.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_infantry_equipment_research"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_infantry_equipment_research.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_purchase_osean_arms"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_purchase_osean_arms.png"
+	}
+################# BELKA #############################
 	spriteType = {
 		name = "GFX_goal_BLK_dlp_won_elections"
 		texturefile = "gfx/interface/goals/BLK/goal_BLK_dlp_won_elections.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_BLK_country_wide_protests"
+		texturefile = "gfx/interface/goals/BLK/focus_BLK_country_wide_protests.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_BLK_great_lakes_resource_development_company"
+		texturefile = "gfx/interface/goals/BLK/focus_BLK_great_lakes_resource_development_company.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_BLK_cross_great_lakes"
+		texturefile = "gfx/interface/goals/BLK/focus_BLK_cross_great_lakes.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_BLK_to_the_last_man"
+		texturefile = "gfx/interface/goals/BLK/focus_BLK_to_the_last_man.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BLK_belkan_war"
+		texturefile = "gfx/interface/goals/BLK/goal_BLK_dlp_war.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BLK_belkan_air_force"
+		texturefile = "gfx/interface/goals/BLK/goal_BLK_belkan_air_force.png"
+	}
+	spriteType = {
+		name = "GFX_goal_wacht"
+		texturefile = "gfx/interface/goals/BLK/goal_BLK_wacht.png"
+	}
+	spriteType = {
+		name = "GFX_goal_albion"
+		texturefile = "gfx/interface/goals/BLK/goal_BLK_albion.png"
+	}
+	spriteType = {
+		name = "GFX_goal_oberon"
+		texturefile = "gfx/interface/goals/BLK/goal_BLK_oberon.png"
+	}
+	spriteType = {
+		name = "GFX_goal_lastorder"
+		texturefile = "gfx/interface/goals/BLK/goal_BLK_lastorder.png"
+	}
+	spriteType = {
+		name = "GFX_goal_sith"
+		texturefile = "gfx/interface/goals/BLK/goal_BLK_sith.png"
+	}
+	spriteType = {
+		name = "GFX_goal_barghest"
+		texturefile = "gfx/interface/goals/BLK/goal_BLK_barghest.png"
+	}
+	spriteType = {
+		name = "GFX_goal_BLK_project_rhongomyniad"
+		texturefile = "gfx/interface/goals/BLK/goal_BLK_project_rhongomyniad.png"
+	}
+################# OSEA ##############################
+	spriteType = {
+		name = "GFX_goal_OSE_1991_cold_war_build_up_plan"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_1991_cold_war_build_up_plan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_acquisition_of_belkan_land"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_acquisition_of_belkan_land.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_army_upgrade"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_army_upgrade.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_carrier_force"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_carrier_force.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_centralization"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_centralization.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_cottage_industry"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_cottage_industry.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_cover_from_the_air"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_cover_from_the_air.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_deal_with_the_protests"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_deal_with_the_protests.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_election"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_election.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_fund_army"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_fund_army.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_fund_navy"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_fund_navy.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_fund_technological_advancements"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_fund_technological_advancements.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_fund_technological_advancements"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_fund_technological_advancements.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_mackenzie_doctrine"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_mackenzie_doctrine.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_pre_election_campaign"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_pre_election_campaign.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_carrier_force"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_carrier_force.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_tyler_mackenzie_won_1992"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_tyler_mackenzie_won_1992.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_victory_over_belka"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_victory_over_belka.png"
+	}
+	# "Create dilemmas, not problems." - Master Oogway, 1776
+	spriteType = {
+		name = "GFX_goal_OSE_belka_problem"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_belka_problem.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_yukto_problem"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_yukto_problem.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_perbla_problem"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_perbla_problem.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_urgent_war_committee"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_urgent_war_committee.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_emergency_army_reforms"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_emergency_army_reforms.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_allied_joint_command"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_allied_joint_command.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_call_up_the_man"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_call_up_the_man.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_everything_for_the_front"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_everything_for_the_front.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_fuel_the_war_engine"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_fuel_the_war_engine.png"
+	}
+################# GEBET #############################
+	spriteType = {
+		name = "GFX_goal_GEB_gebetian_rangers"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_gebetian_rangers.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_desert_training"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_desert_training.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_desert_fortifications"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_desert_fortifications.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_baiting_fortifications"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_baiting_fortifications.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_mine_the_desert"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_mine_the_desert.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_urban_combat_training"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_urban_combat_training.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_the_burger_plan"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_the_burger_plan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_the_haller_plan"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_the_haller_plan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_the_jung_plan"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_the_jung_plan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_faulmann_doctrine"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_faulmann_doctrine.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_form_gebetian_air_force"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_form_gebetian_air_force.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_develop_new_strike_aircraft"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_develop_new_strike_aircraft.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_purchase_osean_strike_aircraft"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_purchase_osean_strike_aircraft.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_granley_mountains_exercises"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_granley_mountains_exercises.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_elections"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_elections.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_election_ilse_ebner"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_election_ilse_ebner.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_election_rafael_albrecht"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_election_rafael_albrecht.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_continue_land_reform"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_continue_land_reform.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_small_business_subsidization"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_small_business_subsidization.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_trickle_down_economics"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_trickle_down_economics.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_encourage_philanthropy"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_encourage_philanthropy.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_regional_prosperity"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_regional_prosperity.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_blast_furnace"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_blast_furnace.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_phase_1_industrialization"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_phase_1_industrialization.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_phase_2_industrialization"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_phase_2_industrialization.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_phase_3_industrialization"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_phase_3_industrialization.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GEB_mechanize_agriculture"
+		texturefile = "gfx/interface/goals/GEB/goal_GEB_mechanize_agriculture.png"
+	}
 }
-
-
-

@@ -3,12 +3,12 @@ state={
 	id=334
 	name="STATE_334"
 	resources={
-		oil=15
-		aluminium=0
-		rubber=0
-		tungsten=0
-		steel=0
-		chromium=0
+		oil=15.000
+		aluminium=0.000
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		chromium=0.000
 	}
 
 	history={
@@ -22,14 +22,18 @@ state={
 			air_base = 0
 			6991 = {
 				naval_base = 4
+
 			}
 
 		}
-		victory_points = { 6991 25 }
+		victory_points = {
+			6991 25 
+		}
+
 	}
 
 	provinces={
-		1109 1327 2350 2503 5877 5986 6991 7167 7218 
+		1109 2350 5877 5986 6991 
 	}
 	manpower=2532795
 	buildings_max_level_factor=1.000

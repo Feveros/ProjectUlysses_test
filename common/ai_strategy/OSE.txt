@@ -94,12 +94,15 @@ ose_kill_weak_belka  = {
 
 	ai_strategy = {
 		type = front_control
-
+	
 		tag = BLK
 
-		priority = 100
-		ordertype = front
-		execution_type = rush
-		manual_attack = yes
+		ratio = 0.25
+	
+		priority = 100 
+		ordertype = front  
+		execution_type = rush  
+		execute_order = yes  
+		manual_attack = yes  
 	}
 }

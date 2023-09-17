@@ -1,14 +1,55 @@
 characters = { #placeholder leader
-	FAT_na_leader = { #FATO Leader
-		#name="N/A leader"
-		#portraits = {
-		#	civilian = {
-		#		large=""
-		#	}
-		#}
+	FAT_jaroslav_dvorak = { #FATO Leader
+		name="Jaroslav Dvořák"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_FAT_Jaroslav_Dvorak"
+			}
+		}
 		country_leader = {
 			ideology=oligarchism
 			traits = { stout_defender }
+			expire="2050.1.1.1"
+			id=-1
+		}
+	}
+	FAT_hugo_havel = {
+		name="Hugo Havel"
+		portraits = {
+			civilian = {
+				large="xxx"
+			}
+		}
+		country_leader = {
+			ideology=fascism_ideology
+			traits = { stout_defender }
+			expire="2050.1.1.1"
+			id=-1
+		}
+	}
+	FAT_viktor_opustil = {
+		name="Viktor Opustil"
+		country_leader = {
+			ideology=centrism
+			traits = { }
+			expire="2050.1.1.1"
+			id=-1
+		}
+	}
+	FAT_commie_leader = {
+		name="Non Existent"
+		country_leader = {
+			ideology=socialism
+			traits = { }
+			expire="2050.1.1.1"
+			id=-1
+		}
+	}
+	FAT_monarch_leader = {
+		name="Non Existent"
+		country_leader = {
+			ideology=absolutism
+			traits = { }
 			expire="2050.1.1.1"
 			id=-1
 		}

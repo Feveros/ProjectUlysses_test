@@ -1,0 +1,189 @@
+shared_focus = {
+    id = BLK_war_lost
+    icon = GFX_focus_CZE_german_puppet
+    cost = 0
+    ai_will_do = {
+        factor = 90
+    }
+    x = 10
+    y = 0
+	available = {
+	}
+    completion_reward = {
+    }
+    search_filters = { }
+}
+
+shared_focus = {
+    id = BLK_shatered_army
+    icon = GFX_focus_generic_military_dictatorship
+    cost = 4.3
+    ai_will_do = {
+        factor = 90
+    }
+    prerequisite = {
+        focus = BLK_war_lost
+    }
+    relative_position_id = BLK_war_lost
+    x = -2
+    y = 1
+
+    completion_reward = {
+		add_ideas = BLK_shatered_army
+    }
+    search_filters = { }
+}
+
+shared_focus = {
+    id = BLK_shatered_industry
+    icon = GFX_focus_ETH_adopt_the_lira
+    cost = 4.3
+    ai_will_do = {
+        factor = 90
+    }
+    prerequisite = {
+        focus = BLK_war_lost
+    }
+    relative_position_id = BLK_war_lost
+    x = 0
+    y = 1
+
+    completion_reward = {
+		add_ideas = BLK_shatered_industry
+    }
+    search_filters = { }
+}
+
+shared_focus = {
+    id = BLK_shatered_pride
+    icon = GFX_focus_generic_anti_fascist_diplomacy
+    cost = 4.3
+    ai_will_do = {
+        factor = 90
+    }
+    prerequisite = {
+        focus = BLK_war_lost
+    }
+    relative_position_id = BLK_war_lost
+    x = 2
+    y = 1
+
+    completion_reward = {
+		add_ideas = BLK_shatered_pride
+    }
+    search_filters = { }
+}
+
+shared_focus = {
+    id = BLK_enforce_peace_requirements 
+    icon = GFX_focus_eng_move_to_secure_the_dominions
+    cost = 4.3
+    ai_will_do = {
+        factor = 90
+    }
+    prerequisite = {
+        focus = BLK_shatered_army
+    }
+	prerequisite = {
+        focus = BLK_shatered_industry
+    }
+	prerequisite = {
+        focus = BLK_shatered_pride
+    }
+    relative_position_id = BLK_shatered_industry
+    x = 0
+    y = 1
+
+    completion_reward = {
+		custom_effect_tooltip = BLK_enforce_peace_requirements_army_tt
+		custom_effect_tooltip = BLK_enforce_peace_requirements_mils_tt
+		custom_effect_tooltip = BLK_enforce_peace_requirements_civs_tt
+		custom_effect_tooltip = BLK_enforce_peace_requirements_dockyards_tt
+    }
+    search_filters = { }
+}
+
+shared_focus = {
+    id = BLK_disband_DLP
+    icon = GFX_goal_BLK_dlp_won_elections
+    cost = 4.3
+    ai_will_do = {
+        factor = 90
+    }
+    prerequisite = {
+        focus = BLK_enforce_peace_requirements
+    }
+    relative_position_id = BLK_enforce_peace_requirements
+    x = 0
+    y = 1
+
+    completion_reward = {
+		add_popularity = {
+			ideology = fascism
+			popularity = -1
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = BLK_fascism_party_radical_dead_long
+			name = BLK_fascism_party_radical_dead
+		}
+		add_country_leader_role = {
+			character = BLK_no_gov
+			promote_leader = yes
+			country_leader = {
+				ideology=fascism_ideology  
+				traits = { }
+				expire="2050.1.1.1"
+				id=-1
+			}
+		}
+		retire_country_leader = yes
+		BLK_advisor_12 = { retire = yes }
+		BLK_advisor_11 = { retire = yes }
+		BLK_advisor_10 = { retire = yes }
+		BLK_FatherWilfriedJanRiesevonSergioLuoni = { retire = yes }
+		BLK_arnold_weinmann = { retire = yes }
+		BLK_hannes_kellermann = { retire = yes }
+    }
+    search_filters = { }
+}
+
+shared_focus = {
+    id = BLK_hold_elections
+    icon = GFX_focus_generic_treaty
+    cost = 4.3
+    ai_will_do = {
+        factor = 90
+    }
+    prerequisite = {
+        focus = BLK_disband_DLP
+    }
+    relative_position_id = BLK_disband_DLP
+    x = 0
+    y = 1
+
+    completion_reward = {
+
+    }
+    search_filters = { }
+}
+
+shared_focus = {
+    id = BLK_return_of_the_old
+    icon = GFX_focus_generic_monarchy_2
+    cost = 10
+    ai_will_do = {
+        factor = 90
+    }
+    prerequisite = {
+        focus = BLK_hold_elections
+    }
+    relative_position_id = BLK_hold_elections
+    x = 0
+    y = 1
+
+    completion_reward = {
+
+    }
+    search_filters = { }
+}

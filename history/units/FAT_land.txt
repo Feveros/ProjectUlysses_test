@@ -12,7 +12,7 @@ division_template = {
 	}
 	
 	support = {
-        artillery = { x = 0 y = 1 }
+        artillery = { x = 0 y = 0 }
 	}
 }
 division_template = {
@@ -21,12 +21,12 @@ division_template = {
 	division_names_group = FAT_Arm_01
 
 	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-        light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
-		motorized = { x = 0 y = 2 }
-        motorized = { x = 1 y = 2 }
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+        modern_armor = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 0 y = 2 }
+        mechanized = { x = 1 y = 2 }
 	}
 	support = {
         mot_recon = { x = 0 y = 0 }
@@ -39,8 +39,8 @@ division_template = {
 	division_names_group = FAT_MOT_01
 
 	regiments = {
-		motorized = { x = 0 y = 0 }
-	    motorized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 0 }
+	    mechanized = { x = 0 y = 1 }
 		
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
@@ -64,8 +64,8 @@ units = {
 		location = 1867
 		division_template = "Tank Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "FAT" } }
+		start_equipment_factor = 0.9
+		force_equipment_variants = { modern_tank_equipment_0 = { owner = "FAT" } }
 	}
 	division= {
 		division_name = {
@@ -75,8 +75,8 @@ units = {
 		location = 7049
 		division_template = "Tank Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "FAT" } }
+		start_equipment_factor = 0.9
+		force_equipment_variants = { modern_tank_equipment_0 = { owner = "FAT" } }
 	}
 	division= {
 		division_name = {
@@ -86,8 +86,8 @@ units = {
 		location = 3511
 		division_template = "Tank Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "FAT" } }
+		start_equipment_factor = 0.9
+		force_equipment_variants = { modern_tank_equipment_0 = { owner = "FAT" } }
 	}
 	division= {
 		division_name = {
@@ -97,8 +97,8 @@ units = {
 		location = 7078
 		division_template = "Tank Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "FAT" } }
+		start_equipment_factor = 0.9
+		force_equipment_variants = { modern_tank_equipment_0 = { owner = "BLK" } }
 	}
 	division= {
 		division_name = {
@@ -108,8 +108,8 @@ units = {
 		location = 7102
 		division_template = "Tank Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "FAT" } }
+		start_equipment_factor = 0.9
+		force_equipment_variants = { modern_tank_equipment_0 = { owner = "FAT" } }
 	}
 	division= {
 		division_name = {
@@ -119,8 +119,30 @@ units = {
 		location = 7082
 		division_template = "Tank Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "FAT" } }
+		start_equipment_factor = 0.9
+		force_equipment_variants = { modern_tank_equipment_0 = { owner = "BLK" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 2413
+		division_template = "Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 2413
+		division_template = "Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+		force_equipment_variants = { modern_tank_equipment_1 = { owner = "OSE" } }
 	}
 #################################################################	
 	division= {
@@ -406,3 +428,85 @@ units = {
 		start_equipment_factor = 0.5
 	}
 }
+#####################################################
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = 	motorized_equipment_1
+		amount = 500
+	}
+#######################################################	
+    add_equipment_production = {
+        equipment = {
+			type = infantry_equipment_1
+			creator = "FAT"
+		}
+		requested_factories = 2
+		progress = 0
+		efficiency = 50
+    }
+	add_equipment_production = {
+        equipment = {
+			type = modern_tank_equipment_1
+			creator = "FAT"
+		}
+		requested_factories = 4
+		progress = 0
+		efficiency = 20
+    }
+	add_equipment_production = {
+        equipment = {
+			type = modern_tank_equipment_0
+			creator = "FAT"
+		}
+		requested_factories = 5
+		progress = 0
+		efficiency = 45
+    }
+	add_equipment_production = {
+        equipment = {
+			type = artillery_equipment_1
+			creator = "FAT"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 50
+    }
+	add_equipment_production = {
+        equipment = {
+			type = mechanized_equipment_1
+			creator = "FAT"
+		}
+		requested_factories = 1
+		progress = 2
+		efficiency = 40
+    }
+	add_equipment_production = {
+        equipment = {
+			type = motorized_equipment_1
+			creator = "FAT"
+		}
+		requested_factories = 1
+		progress = 2
+		efficiency = 50
+    }
+	add_equipment_production = {
+        equipment = {
+			type = support_equipment_1
+			creator = "FAT"
+		}
+		requested_factories = 1
+		progress = 2
+		efficiency = 50
+    }
+	add_equipment_production = {
+        equipment = {
+			type = train_equipment_1
+			creator = "FAT"
+		}
+		requested_factories = 1
+		progress = 2
+		efficiency = 50
+    }
+}
+
+ 

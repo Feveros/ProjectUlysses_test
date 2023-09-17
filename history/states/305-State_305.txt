@@ -16,7 +16,7 @@ state={
 				naval_base = 10
 			}
 		}
-		victory_points = { 7531 45 }
+		victory_points = { 7531 50 }
 	}
 	provinces={
 		2215 4274 7531 
@@ -31,6 +31,6 @@ state={
 	}
 
 	state_category = town 
-	manpower=4325679
+	manpower=5325679
 	buildings_max_level_factor=1.000
 }

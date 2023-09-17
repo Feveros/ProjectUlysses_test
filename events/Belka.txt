@@ -3,6 +3,10 @@ add_namespace = belka_dlp
 add_namespace = belka_dlp_coup
 add_namespace = belka_dlp_war
 add_namespace = belka_dlp_war_crisis
+add_namespace = belka_wacht_am_wal
+
+add_namespace = belka_dlp_won
+add_namespace = belka_l_monarchy
 
 country_event = { ### Event about how fucked Belka is
 	id = belka.1
@@ -42,7 +46,7 @@ country_event = { ### economy dead
 
 	option = {
 		name = belka.3.a
-		add_political_power= -50
+		add_political_power = -50
 		add_stability = -0.1
 		add_popularity = { ideology = neutrality popularity = -0.05 }
 	}
@@ -119,11 +123,11 @@ country_event = { ### democrats win
 			activate_advisor = BLK_advisor_4
 			activate_advisor = BLK_advisor_5
 			activate_advisor = BLK_advisor_6
+			OSE = {
+				country_event = osea_glrdc.1
+			}
 		}
 		add_popularity = { ideology = democratic popularity = 0.15 }
-		hidden_effect = {
-			country_event = { id = belka.8 days = 2 }
-		}
 	}
 }
 
@@ -158,7 +162,7 @@ country_event = { #SELLING LAND
 			news_event = { id = ac_news_event.1 days = 1 }
 		}
 		hidden_effect = {
-			OSE = { 
+			OSE = {
 				transfer_state = 269
 				transfer_state = 296 
 				transfer_state = 357 
@@ -166,17 +170,26 @@ country_event = { #SELLING LAND
 				transfer_state = 229 
 				transfer_state = 324
 				transfer_state = 211
-			}			
+				country_event = { id = osea_belka_land.1 days = 5 }
+			}	
 			
-			UST = { transfer_state = 309 }
-			UST = {	transfer_state = 339 }
+			UST = { 
+				transfer_state = 309 
+				transfer_state = 339
+			}
 		
-			FAT = { transfer_state = 220 }
+			FAT = {
+				transfer_state = 220 
+			}
 
-			GEB = { transfer_state = 293 }
-			GEB = {	transfer_state = 256 }
+			GEB = { 
+				transfer_state = 293
+				transfer_state = 256
+			}
 		
-			SAP = { transfer_state = 604 }
+			SAP = {
+				transfer_state = 604
+			}
 			
 			UST = { country_event = { id = ustio.1 days = 60 } }
 			GEB = { country_event = { id = recta.1 days = 90 } }
@@ -194,6 +207,13 @@ country_event = { #Osea proposes great lake
 
 	option = {
 		name = belka.10.a
+		set_country_flag = glrdc_on
+		add_ideas = BLK_GLRDC_company
+		hidden_effect = {
+			OSE = {
+				country_event = { id = osea_glrdc.3 days = 2 }
+			}
+		}
 	}
 }
 
@@ -214,6 +234,8 @@ country_event = { #Great Lake Goes bad
 		add_political_power= -200
 		add_stability = -0.1
 		add_popularity = { ideology = democratic popularity = -0.2 }
+		clr_country_flag = glrdc_on
+		remove_ideas = BLK_GLRDC_company
 		set_global_flag = great_lakes_went_bad
 		hidden_effect = {
 			country_event = utility.1
@@ -393,38 +415,43 @@ country_event = {
 
 	option = {
 		name = belka_dlp_coup.3.a
-		kill_country_leader = yes
+		retire_country_leader = yes
 		add_country_leader_role = {
 			character = BLK_waldemarr_rald
 			promote_leader = yes
 			country_leader = {
-				ideology=fascism_ideology  
+				ideology=ultranationalism  
 				traits = { dictator }
 				expire="2050.1.1.1"
 				id=-1
 			}
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = BLK_fascism_party_radical_long
+			name = BLK_fascism_party_radical
 		}
 		custom_effect_tooltip = BLK_new_government_form_tt
 		add_political_power= -100
 		add_stability = -0.05
 		hidden_effect = {
 			news_event = { id = ac_news_event.6 days = 1 }
-		}
-		hidden_effect = {
+			OSE = {
+				country_event = osea.74
+			}
+
 			deactivate_advisor = BLK_advisor_7
 			deactivate_advisor = BLK_advisor_8
 			deactivate_advisor = BLK_advisor_9
 			activate_advisor = BLK_advisor_10
 			activate_advisor = BLK_advisor_11
 			activate_advisor = BLK_advisor_12
-		}
-		hidden_effect = {
+
 			FAT = { set_country_flag = man_laws_unlocked_2 set_country_flag = eco_laws_unlocked_1 }
 			GEB = { set_country_flag = man_laws_unlocked_1 set_country_flag = eco_laws_unlocked_1 }
 			SAP = { set_country_flag = man_laws_unlocked_1 set_country_flag = eco_laws_unlocked_1 }
 			UST = { set_country_flag = man_laws_unlocked_1 set_country_flag = eco_laws_unlocked_1 }
 			REC = { set_country_flag = man_laws_unlocked_1 set_country_flag = eco_laws_unlocked_1 }
-			OSE = { country_event = { id = osea_belkan_war.1 } }
 			#if = {
 			#	limit = {
 			#		AND = {
@@ -539,8 +566,8 @@ country_event = { #gott mit uns
 		activate_advisor =  BLK_FatherWilfriedJanRiesevonSergioLuoni
 		#hidden_effect = {
 		#	add_to_variable = {
-		#	var = BLK_wacht_am_wal_var
-		#	value = 1
+		#		var = BLK_wacht_am_wal_var
+		#		value = 1
 		#	}
 		#}
 	}
@@ -622,8 +649,8 @@ country_event = { #new generals
 		}
 		hidden_effect = {
 			add_to_variable = {
-			var = BLK_wacht_am_wal_var
-			value = 1
+				var = BLK_wacht_am_wal_var
+				value = 1
 			}
 		}
 	}
@@ -646,8 +673,8 @@ country_event = { #purge
 		add_stability = -0.05
 		hidden_effect = {
 			add_to_variable = {
-			var = BLK_wacht_am_wal_var
-			value = 1
+				var = BLK_wacht_am_wal_var
+				value = 1
 			}
 		}
 	}
@@ -700,6 +727,60 @@ country_event = { #BSF
 	}
 }
 
+country_event = {
+	id = belka_dlp_coup.14 #wacht am wal purge south officers again event
+	title = belka_dlp_coup.14.t
+	desc = belka_dlp_coup.14.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_coup.14.a
+		add_days_mission_timeout = {
+			mission = BLK_belkan_war_collapse
+			days = 30
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_manpower = -1000
+	}
+	option = {
+		name = belka_dlp_coup.14.b
+		hidden_effect = {
+			add_to_variable = {
+				var = BLK_wacht_am_wal_var
+				value = 1
+			}
+		}
+		country_event = { id = belka_dlp_coup.15 days = 35 }
+	}
+}
+
+country_event = {
+	id = belka_dlp_coup.15 #wacht am wal specoal event 2
+	title = belka_dlp_coup.15.t
+	desc = belka_dlp_coup.15.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_coup.15.a
+		hidden_effect = {
+			add_to_variable = {
+				var = BLK_wacht_am_wal_var
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = belka_dlp_coup.15.b
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 50
+	}
+}
 
 ##############################################
 
@@ -714,6 +795,11 @@ country_event = {
 	option = {
 		name = belka_dlp_war.1.a
 		activate_mission = BLK_war_start_timer_dec
+		hidden_effect = {
+			OSE = {
+				country_event = osea.75
+			}
+		}
 		#remove_ideas = BLK_woman_in_industry_idea
 		#remove_ideas = BLK_expand_supply_idea
 		#remove_ideas = BLK_mili_civ_infr_idea
@@ -760,8 +846,25 @@ country_event = {
 		name = belka_dlp_war.3.a
 		set_global_flag = excalibur_destroyed
 		hidden_effect = {
-			news_event = { id = ac_news_event.11 days = 1 }
+			news_event = { id = ac_news_event.12 days = 1 }
 		}
+	}
+}
+
+country_event = {  ### event to check if belkan war is still ongoing - if yes - destroy excalibur
+	id = belka_dlp_war.4
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			ROOT = {
+				has_global_flag = belkan_war_is_happening
+			}
+		}
+		name = belka_dlp_war.4.a
+		country_event = belka_dlp_war.3
 	}
 }
 
@@ -774,11 +877,11 @@ country_event = { #belka war info event
 	is_triggered_only = yes
 
 	option = {
-		name = belka_dlp_war.97.a}
+		name = belka_dlp_war.97.a
 	}
 }
 
-country_event = { #south belka spaws
+country_event = { #rald plans war, event just after his coup, YES I KNOW IDs ARE A FUCKING MESS THANK YOU VERY MUCH 
 	id = belka_dlp_war.98
 	title = belka_dlp_war.98.t
 	desc = belka_dlp_war.98.d
@@ -788,7 +891,6 @@ country_event = { #south belka spaws
 
 	option = {
 		name = belka_dlp_war.98.a
-		country_event = { id = belka_dlp_war.99 }
 	}
 }
 
@@ -805,25 +907,13 @@ country_event = {
 		activate_mission = BLK_cook_nukes_timer_dec
 		#set_country_flag = BLK_cook_nukes_timer
 	}
-	#option = {
-	#	name = belka_dlp_war.99.b
-	#	#trigger = {
-	#	#	check_variable = { BLK_wacht_am_wal_var = 3 }
-	#	#}
-	#	set_country_flag = BLK_wacht_am_wal_flag
-	#	hidden_effect = {
-	#		remove_ideas = BLK_eco_crisis_army_1
-	#		remove_ideas = BLK_eco_crisis_army_2
-	#		remove_ideas = BLK_eco_crisis_army_3
-	#	}
-	#	add_ideas = BLK_wacht_am_wal_idea
-	#	every_owned_state = {
-	#	    limit = {
-	#			is_core_of = BLK
-	#		}
-	#		add_dynamic_modifier = { modifier = BLK_wacht_am_wal_state_mod }
-	#	}
-	#}
+	option = {
+		name = belka_dlp_war.99.b
+		trigger = {
+			check_variable = { BLK_wacht_am_wal_var = 5 }
+		}
+		country_event = belka_wacht_am_wal.1
+	}
 }
 
 country_event = { #FUNNY NUKES HAHAHAHAHAHHH ITS FUNNY COZ BELKA CRAZY HAMBURGER HAHAHAHA laugh
@@ -1011,10 +1101,11 @@ country_event = {
 		}
 		clr_global_flag = belkan_war_is_happening
 		set_global_flag = belka_won_belkan_war
+		country_event = { id = belka_dlp_war.104 days = 2 }
 		hidden_effect = {
 			news_event = { id = ac_news_event.9 days = 1 }
+			
 		}
-		country_event = { id = world_event.2 days = 1 }
 	}
 }
 
@@ -1058,6 +1149,20 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = belka_dlp_war.104
+	title = belka_dlp_war.104.t
+	desc = belka_dlp_war.104.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+	
+	option = {
+		name = belka_dlp_war.104.a
+		load_focus_tree = belka_belkan_war_won
+	}
+}
+
 #################################################################
 
 country_event = {
@@ -1071,6 +1176,14 @@ country_event = {
 	option = {
 		name = belka_dlp_war_crisis.1.a
 		swap_ideas = { remove_idea = BLK_eco_crisis_5_2 add_idea = BLK_eco_crisis_6 }
+		hidden_effect = {
+			if = {
+				limit = {
+					BLK = { is_ai = yes }
+				}
+				swap_ideas = { remove_idea = BLK_eco_crisis_5_2 add_idea = BLK_eco_crisis_6_ai }
+			}
+		}
 	}
 }
 
@@ -1085,6 +1198,12 @@ country_event = {
 	option = {
 		name = belka_dlp_war_crisis.2.a
 		swap_ideas = { remove_idea = BLK_eco_crisis_5 add_idea = BLK_eco_crisis_5_1 }
+		if = {
+			limit = {
+				BLK = { is_ai = yes }
+			}
+			add_ideas = BLK_eco_crisis_5_1_ai
+		}
 		hidden_effect = {
 			country_event = { id = belka_dlp_war_crisis.3 days = 240 }
 		}
@@ -1102,5 +1221,366 @@ country_event = {
 	option = {
 		name = belka_dlp_war_crisis.3.a
 		swap_ideas = { remove_idea = BLK_eco_crisis_5_1 add_idea = BLK_eco_crisis_5_2 }
+		if = {
+			limit = {
+				BLK = { is_ai = yes }
+			}
+			swap_ideas = { remove_idea = BLK_eco_crisis_5_1_ai add_idea = BLK_eco_crisis_5_2_ai }
+		}
+	}
+}
+
+#################################################
+#################################################
+#################################################
+
+country_event = {
+	id = belka_l_monarchy.1
+	title = belka_l_monarchy.1.t
+	desc = belka_l_monarchy.1.d
+	picture = GFX_report_event_belka_meme_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+	#########################################
+		set_variable = {
+			var = civs_to_delete
+			value = num_of_civilian_factories
+		}
+		multiply_variable = {
+			var = civs_to_delete
+			value = 0.5
+		}
+		round_variable = civs_to_delete
+		country_event = utility.2
+		######################################
+		set_variable = {
+			var = mils_to_delete
+			value = num_of_military_factories
+		}
+		multiply_variable = {
+			var = mils_to_delete
+			value = 0.75
+		}
+		round_variable = mils_to_delete
+		country_event = utility.4
+		#####################################
+		set_variable = {
+			var = docks_to_delete
+			value = num_of_naval_factories
+		}
+		multiply_variable = {
+			var = docks_to_delete
+			value = 0.5
+		}
+		round_variable = docks_to_delete
+		country_event = utility.6
+		###################################
+		set_variable = {
+			var = army_to_left
+			value = 100000
+		}
+		country_event = utility.8
+		###################################
+	}
+}
+#################################################################
+
+country_event = {
+	id = belka_wacht_am_wal.1
+	title = belka_wacht_am_wal.1.t
+	desc = belka_wacht_am_wal.1.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_wacht_am_wal.1.a
+		country_event = belka_wacht_am_wal.2
+	}
+}
+
+country_event = {
+	id = belka_wacht_am_wal.2
+	title = belka_wacht_am_wal.2.t
+	desc = belka_wacht_am_wal.2.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_wacht_am_wal.2.a
+		set_global_flag = wacht_am_wal_is_happening
+		load_focus_tree = belka_wach_am_wal
+		country_event = { id = belka_wacht_am_wal.3 days = 75 }
+	}
+}
+
+country_event = { ### Script event to force players to take all focuses
+	id = belka_wacht_am_wal.3
+	hidden = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_wacht_am_wal.3.a
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_completed_focus = BLK_belka_wach_am_wal
+						has_completed_focus = BLK_plan_albion
+						has_completed_focus = BLK_plan_barghest
+						has_completed_focus = BLK_plan_baobhan_sith
+						has_completed_focus = BLK_plan_oberon
+					}
+					has_completed_focus = BLK_to_hold_the_line
+					NOT = {
+						has_global_flag = wacht_am_wal_is_happening
+					}
+				}
+			}
+		}
+		else_if = {
+			country_event = belka_wacht_am_wal.4
+		}
+	}
+}
+
+country_event = { ### wacht am wal failed due to not doing focuses 
+	id = belka_wacht_am_wal.4
+	title = belka_wacht_am_wal.4.t
+	desc = belka_wacht_am_wal.4.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_wacht_am_wal.4.a
+	}
+}
+
+country_event = { ### hold the line event
+	id = belka_wacht_am_wal.5
+	title = belka_wacht_am_wal.5.t
+	desc = belka_wacht_am_wal.5.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_wacht_am_wal.5.a
+		add_ideas = BLK_last_order_hold_the_line
+	}
+}
+
+country_event = { ### osea backs down, wacht am wall is a win
+	id = belka_wacht_am_wal.6
+	title = belka_wacht_am_wal.6.t
+	desc = belka_wacht_am_wal.6.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_wacht_am_wal.6.a
+		country_event = { id = belka_wacht_am_wal.8 days = 1 }
+	}
+}
+
+country_event = { ### our deafnaces has been breached, everyone lost hope
+	id = belka_wacht_am_wal.7
+	title = belka_wacht_am_wal.7.t
+	desc = belka_wacht_am_wal.7.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_wacht_am_wal.7.a
+		remove_ideas = BLK_belka_wach_am_wal_idea
+		remove_ideas = BLK_last_order_hold_the_line
+		add_ideas = BLK_last_order_lost_hope
+	}
+}
+
+country_event = { ### wacht am wal peace event
+	id = belka_wacht_am_wal.8
+	title = belka_wacht_am_wal.8.t
+	desc = belka_wacht_am_wal.8.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_wacht_am_wal.8.a
+		BLK = {
+			white_peace = SAP
+			white_peace = OSE
+			white_peace = UST
+		}
+	}
+}
+
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+
+country_event = { #starting event of the tree
+	id = belka_dlp_won.1 
+	title = belka_dlp_won.1.t
+	desc = belka_dlp_won.1.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_won.1.a
+	}
+}
+
+country_event = { #grand celebration
+	id = belka_dlp_won.2 
+	title = belka_dlp_won.2.t
+	desc = belka_dlp_won.2.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_won.2.a
+	}
+}
+
+country_event = { #parade
+	id = belka_dlp_won.3
+	title = belka_dlp_won.3.t
+	desc = belka_dlp_won.3.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_won.3.a
+	}
+}
+
+country_event = { #rald's speech
+	id = belka_dlp_won.4
+	title = belka_dlp_won.4.t
+	desc = belka_dlp_won.4.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_won.4.a
+		custom_effect_tooltip = BLK_ralds_gets_trait_tt
+		hidden_effect = {
+			add_country_leader_trait = the_savior_of_the_belkan_nation
+		}
+	}
+}
+
+country_event = { #home front event
+	id = belka_dlp_won.5
+	title = belka_dlp_won.5.t
+	desc = belka_dlp_won.5.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_won.5.a
+	}
+}
+
+country_event = { #land to occupy
+	id = belka_dlp_won.6
+	title = belka_dlp_won.6.t
+	desc = belka_dlp_won.6.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_won.6.a
+	}
+}
+
+country_event = { #event about ustio
+	id = belka_dlp_won.7
+	title = belka_dlp_won.7.t
+	desc = belka_dlp_won.7.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_won.7.a
+	}
+}
+
+country_event = { #event about excalibur
+	id = belka_dlp_won.8
+	### excalibur never used ###
+	title = { 
+        text = belka_dlp_won.8.t.a
+        trigger = {
+			check_variable = { BLK_excalibur_destruction_meter = 0 }
+        }
+    }
+    desc = {
+        text = belka_dlp_won.8.d.a
+        trigger = {
+			check_variable = { BLK_excalibur_destruction_meter = 0 }
+        }
+    }
+	### excalibur used but not destroyed ###
+	title = {
+        text = belka_dlp_won.8.t.b
+        trigger = {
+			check_variable = { BLK_excalibur_destruction_meter = 1 }
+        }
+    }
+    desc = {
+        text = belka_dlp_won.8.d.b
+        trigger = {
+			check_variable = { BLK_excalibur_destruction_meter = 1 }
+        }
+    }
+	### excalibur destroyed ###
+	title = {
+        text = belka_dlp_won.8.t.c
+        trigger = {
+			has_global_flag = excalibur_destroyed
+        }
+    }
+    desc = {
+        text = belka_dlp_won.8.d.c
+        trigger = {
+			has_global_flag = excalibur_destroyed
+        }
+    }
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_won.8.a
+	}
+}
+
+country_event = { #event about RHONGOMYNIAD
+	id = belka_dlp_won.9
+	title = belka_dlp_won.9.t
+	desc = belka_dlp_won.9.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_won.9.a
 	}
 }

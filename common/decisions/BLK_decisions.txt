@@ -146,7 +146,7 @@ BLK_belkan_war_category = {
 		days_mission_timeout = 180
 		selectable_mission = no
 		timeout_effect = {
-			country_event = { id = south_belka.2 }
+			country_event = { id = south_belka.3 }
 		}
 	}
 	BLK_war_start_timer_dec = {
@@ -176,13 +176,6 @@ BLK_belkan_war_category = {
 			hidden_effect = {
 				#country_event = { id = belka_dlp_war_crisis.1 days = 5 }
 				set_global_flag = belkan_war_is_happening
-				if = {
-					limit = {
-						BLK = { is_ai = yes }
-					}
-					add_timed_idea  = { idea = BLK_belkan_war_ai_buff_idea  days = 90 }
-				}
-				OSE = { country_event = { id = osea_belkan_war.2 } }
 			}
 			declare_war_on = { 
 				type = annex_everything 
@@ -235,22 +228,7 @@ BLK_belkan_war_category = {
 			country_event = { id = belka_dlp_war.100 }
 		}
 	}
-	#BLK_wacht_am_wal_dec = {
-	#    activation = {
-	#		BLK = { has_country_flag = BLK_wacht_am_wal_flag }
-	#	}
-	#	cancel_trigger = {
-	#		surrender_progress > 0.5
-	#	}
-	#	fire_only_once = yes
-	#	icon = mission_icon
-	#	days_mission_timeout = 120
-	#	selectable_mission = no
-	#	timeout_effect = {
-	#		country_event = { id = belka_dlp_war.103 }
-	#	}
-	#}
-	BLK_force_osea_to_peace = {
+	BLK_force_osea_to_peace = { ###WIN WAR DEC
 		icon = GFX_decision_eng_trade_unions_demand
 		allowed = {
 		}
@@ -292,6 +270,7 @@ BLK_belkan_war_category = {
 		}
 		visible = {
 			has_completed_focus = BLK_pillage_ustio
+			has_global_flag = belkan_war_is_happening
 		}
 		fire_only_once = yes
 		cost = 100
@@ -339,6 +318,7 @@ BLK_belkan_war_category = {
 		}
 		visible = {
 			has_completed_focus = BLK_reparations
+			has_global_flag = belkan_war_is_happening
 		}
 		fire_only_once = yes
 		#cost = 10
@@ -402,6 +382,7 @@ BLK_belkan_war_category = {
 		}
 		visible = {
 			has_completed_focus = BLK_reparations
+			has_global_flag = belkan_war_is_happening
 		}
 		fire_only_once = yes
 		#cost = 100
@@ -453,6 +434,7 @@ BLK_belkan_war_category = {
 		}
 		visible = {
 			has_completed_focus = BLK_reparations
+			has_global_flag = belkan_war_is_happening
 		}
 		fire_only_once = yes
 		#cost = 100
@@ -494,6 +476,7 @@ BLK_belkan_war_category = {
 		state_target = yes
 		target_root_trigger = {
 			has_completed_focus = BLK_use_locals
+			has_global_flag = belkan_war_is_happening
 		}
 		#target_array = core_states
 		target_trigger = {
@@ -524,6 +507,31 @@ BLK_belkan_war_category = {
 				mission = BLK_belkan_war_collapse
 				days = 10
 			}
+		}
+	}
+	### WACHT AM WAL ###
+	
+	BLK_wacht_am_wal_hold_timer = {
+		icon = GFX_decision_generic_scorched_earth
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			NOT = {
+				BLK_wacht_am_wall_state_control = yes
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 60
+		selectable_mission = no
+		timeout_effect = {
+			country_event = belka_wacht_am_wal.6
+		}
+		cancel_effect = {
+			country_event = belka_wacht_am_wal.7
 		}
 	}
 }
@@ -584,7 +592,12 @@ BLK_special_eco_dec_DLP = {
 		timeout_effect = {
 			BLK_war_eco_crisis_up = yes
 			BLK_war_army_crisis_up = yes
-			set_country_flag = BLK_belkan_war_eco_crisis_2_flag
+			if = {
+				limit = {
+					BLK = { is_ai = no }
+				}
+				set_country_flag = BLK_belkan_war_eco_crisis_2_flag
+			}
 		}
 	}
 	BLK_belkan_war_eco_crisis_2 = {
@@ -630,6 +643,7 @@ BLK_special_eco_dec_DLP = {
 		}
 		visible = {
 			has_completed_focus = BLK_reparations
+			has_global_flag = belkan_war_is_happening
 		}
 		fire_only_once = yes
 		#cost = 100
@@ -659,6 +673,7 @@ BLK_special_eco_dec_DLP = {
 		}
 		visible = {
 			has_completed_focus = BLK_reparations
+			has_global_flag = belkan_war_is_happening
 		}
 		fire_only_once = yes
 		#cost = 100

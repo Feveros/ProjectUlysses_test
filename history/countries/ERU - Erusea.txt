@@ -21,12 +21,53 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 48
-	fascism = 50
-	democratic = 1
+	neutrality = 9
+	fascism = 38
+	democratic = 2
 	communism = 1
-	monarchism = 0
+	monarchism = 50
 }
 
-set_stability = 0.5
-set_war_support = 0.5
+set_party_name = {
+    ideology = democratic
+    long_name = ERU_parti_liberte_long
+    name = ERU_parti_liberte
+}
+set_party_name = {
+    ideology = communism
+    long_name = ERU_societe_des_ouvriers_long
+    name = ERU_societe_des_ouvriers
+}
+set_party_name = {
+    ideology = fascism
+    long_name = ERU_rassenblement_populaire_long
+    name = ERU_rassenblement_populaire
+}
+set_party_name = {
+    ideology = neutrality
+    long_name = ERU_forces_armees_d_erusie_long
+    name = ERU_forces_armees_d_erusie
+}
+set_party_name = {
+    ideology = monarchism
+    long_name = ERU_house_d_elise_long
+    name = ERU_house_d_elise
+}
+
+set_stability = 0.8
+set_war_support = 0.7
+
+#############################
+# Leaders
+recruit_character = ERU_valere_monette_d_elise
+recruit_character = ERU_romain_cosette_d_elise
+recruit_character = ERU_rosa_cosette_d_elise
+# Political Advisors
+
+# Military Advisors
+
+# Generals
+
+# Advisors
+
+# Admirals

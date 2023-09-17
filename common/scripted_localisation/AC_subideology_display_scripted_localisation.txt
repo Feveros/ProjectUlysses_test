@@ -1,5 +1,5 @@
 ##################################################
-### System stolen from AC, pls do not kill me ###
+### System stolen from EaW, pls do not kill me ###
 ##################################################
 
 # System ported from TNO, by Yard1 and Scars
@@ -37,7 +37,8 @@ defined_text = {
 		localization_key = "[AC_Get_monarchism_subideology]"
 	}
 }
-
+##################################################################################
+##################################################################################
 defined_text = {
 	name = AC_Get_democratic_subideology
 	text = {
@@ -54,43 +55,55 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = socialism
+			has_country_leader_ideology = social_democracy
 		}
-		localization_key = socialism
+		localization_key = social_democracy
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = centrism
+		}
+		localization_key = centrism
 	}
 }
-
+##################################################################
 defined_text = {
 	name = AC_Get_communism_subideology
 	text = {
 		trigger = {
-			has_country_leader_ideology = marxism
+			has_country_leader_ideology = socialism
 		}
-		localization_key = marxism
+		localization_key = socialism
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = leninism
+			has_country_leader_ideology = democratic_socialism
 		}
-		localization_key = leninism
+		localization_key = democratic_socialism
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = stalinism
+			has_country_leader_ideology = conservative_socialism
 		}
-		localization_key = stalinism
+		localization_key = conservative_socialism
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = anti_revisionism
+			has_country_leader_ideology = liberal_socialism
 		}
-		localization_key = anti_revisionism
+		localization_key = liberal_socialism
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = anarchist_communism
+			has_country_leader_ideology = authoritarian_socialism
 		}
-		localization_key = anarchist_communism
+		localization_key = authoritarian_socialism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = religious_socialism
+		}
+		localization_key = religious_socialism
 	}
 	text = {
 		trigger = {
@@ -99,21 +112,9 @@ defined_text = {
 		localization_key = belkan_national_syndicalism
 	}
 }
-
+##############################################################
 defined_text = {
 	name = AC_Get_fascism_subideology
-	text = {
-		trigger = {
-			has_country_leader_ideology = nazism
-		}
-		localization_key = nazism
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = gen_nazism
-		}
-		localization_key = gen_nazism
-	}
 	text = {
 		trigger = {
 			has_country_leader_ideology = fascism_ideology
@@ -122,20 +123,44 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = falangism
+			has_country_leader_ideology = ultranationalism
 		}
-		localization_key = falangism
+		localization_key = ultranationalism
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = rexism
+			has_country_leader_ideology = ethnonationalism
 		}
-		localization_key = rexism
+		localization_key = ethnonationalism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = nativism
+		}
+		localization_key = nativism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = religious_nationalism
+		}
+		localization_key = religious_nationalism
 	}
 }
-
+##############################################################
 defined_text = {
 	name = AC_Get_neutrality_subideology
+	text = {
+		trigger = {
+			has_country_leader_ideology = conservatism_na
+		}
+		localization_key = conservatism_na
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = centrism_na
+		}
+		localization_key = centrism_na
+	}
 	text = {
 		trigger = {
 			has_country_leader_ideology = despotism
@@ -150,18 +175,18 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = centrism
+			has_country_leader_ideology = stratocracy
 		}
-		localization_key = centrism
+		localization_key = stratocracy
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = awwnb
+			has_country_leader_ideology = awwnb_ideology
 		}
-		localization_key = awwnb
+		localization_key = awwnb_ideology
 	}
 }
-
+###############################################################
 defined_text = {
 	name = AC_Get_monarchism_subideology
 	text = {
@@ -175,5 +200,11 @@ defined_text = {
 			has_country_leader_ideology = constitutional_monarchy
 		}
 		localization_key = constitutional_monarchy
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = perblan_totalitarianism
+		}
+		localization_key = perblan_totalitarianism
 	}
 }

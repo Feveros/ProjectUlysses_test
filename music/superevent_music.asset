@@ -13,3 +13,8 @@ music = {
 	name = "belkanukes"
 	file = "belkanukes.ogg"
 }
+
+music = {
+	name = "wacht_am_waldreich"
+	file = "wacht_am_waldreich.ogg"
+}

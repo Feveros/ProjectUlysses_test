@@ -4,14 +4,15 @@ state={
 
 
 	history={
-		owner = PLH
-		add_core_of = PLH
+		owner = BAL
+		add_core_of = BAL
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
-			air_base = 0
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 1
 		}
+		victory_points = { 797 20 }
 	}
 	provinces={
 		797 1235 1628 3679 4771 

@@ -733,6 +733,10 @@ technologies = {
 			}
 		}
 	}
+	
+	################################################################
+	################################################################
+	################################################################
 
 	early_bombs = {
 		enable_equipment_modules = {
@@ -747,7 +751,7 @@ technologies = {
 		start_year = 1922
 
 		folder = {
-			name = bba_air_techs_folder
+			name = bba_air_parts_folder
 			position = { x = 0 y = 2 }
 		}
 
@@ -784,7 +788,7 @@ technologies = {
 		start_year = 1922
 
 		folder = {
-			name = bba_air_techs_folder
+			name = bba_air_parts_folder
 			position = { x = 0 y = 4 }
 		}
 
@@ -819,7 +823,7 @@ technologies = {
 		start_year = 1922
 
 		folder = {
-			name = bba_air_techs_folder
+			name = bba_air_parts_folder
 			position = { x = 0 y = 2 }
 		}
 
@@ -872,7 +876,7 @@ technologies = {
 		start_year = 1991
 
 		folder = {
-			name = bba_air_techs_folder
+			name = bba_air_parts_folder
 			position = { x = -2 y = 4 }
 		}
 
@@ -915,7 +919,7 @@ technologies = {
 		start_year = 1994
 
 		folder = {
-			name = bba_air_techs_folder
+			name = bba_air_parts_folder
 			position = { x = 0 y = 5 }
 		}
 
@@ -956,7 +960,7 @@ technologies = {
 		start_year = 1994
 
 		folder = {
-			name = bba_air_techs_folder
+			name = bba_air_parts_folder
 			position = { x = 2 y = 5 }
 		}
 		path = {
@@ -1003,7 +1007,7 @@ technologies = {
 		start_year = 1998
 
 		folder = {
-			name = bba_air_techs_folder
+			name = bba_air_parts_folder
 			position = { x = 2 y = 7 }
 		}
 
@@ -1048,7 +1052,7 @@ technologies = {
 		start_year = 1922
 
 		folder = {
-			name = bba_air_techs_folder
+			name = bba_air_parts_folder
 			position = { x = 0 y = 2 }
 		}
 
@@ -1120,7 +1124,7 @@ technologies = {
 		start_year = 1991
 
 		folder = {
-			name = bba_air_techs_folder
+			name = bba_air_parts_folder
 			position = { x = 0 y = 4 }
 		}
 
@@ -1174,7 +1178,7 @@ technologies = {
 		start_year = 1995
 
 		folder = {
-			name = bba_air_techs_folder
+			name = bba_air_parts_folder
 			position = { x = 0 y = 6 }
 		}
 
@@ -1228,7 +1232,7 @@ technologies = {
 		start_year = 1999
 
 		folder = {
-			name = bba_air_techs_folder
+			name = bba_air_parts_folder
 			position = { x = 0 y = 8 }
 		}
 
@@ -1276,7 +1280,7 @@ technologies = {
 		start_year = 1991
 
 		folder = {
-			name = bba_air_techs_folder
+			name = bba_air_parts_folder
 			position = { x = 2 y = 4 }
 		}
 
@@ -1333,7 +1337,7 @@ technologies = {
 		start_year = 1991
 
 		folder = {
-			name = bba_air_techs_folder
+			name = bba_air_parts_folder
 			position = { x = -2 y = 4 }
 		}
 

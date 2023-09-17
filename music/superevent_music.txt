@@ -17,3 +17,9 @@ music = {
 		factor = 0
 	}
 }
+music = {
+	song = "wacht_am_waldreich"
+	chance = {
+		factor = 0
+	}
+}

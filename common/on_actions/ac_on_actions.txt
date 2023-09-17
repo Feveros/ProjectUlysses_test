@@ -2,6 +2,64 @@ on_actions = {
 	on_startup = {
 		effect = {
 			every_possible_country = {
+			#####################################################################################
+				###############################################
+				set_variable = {
+					var = mils_amount_cost_rise
+					value = num_of_military_factories
+				}
+				multiply_variable = {
+					var = mils_amount_cost_rise
+					value = -0.01
+				}
+				if = {
+					limit = {
+						check_variable = { mils_amount_cost_rise <-0.75 }
+					}
+					set_variable = {
+						var = mils_amount_cost_rise
+						value = -0.75
+					}
+				}
+				###############################################
+				set_variable = {
+					var = civs_amount_cost_rise
+					value = num_of_civilian_factories
+				}
+				multiply_variable = {
+					var = civs_amount_cost_rise
+					value = -0.01
+				}
+				if = {
+					limit = {
+						check_variable = { civs_amount_cost_rise <-0.75 }
+					}
+					set_variable = {
+						var = civs_amount_cost_rise
+						value = -0.75
+					}
+				}
+				##############################################
+				set_variable = {
+					var = docks_amount_cost_rise
+					value = num_of_naval_factories
+				}
+				multiply_variable = {
+					var = docks_amount_cost_rise
+					value = -0.02
+				}
+				if = {
+					limit = {
+						check_variable = { docks_amount_cost_rise <-0.5 }
+					}
+					set_variable = {
+						var = docks_amount_cost_rise
+						value = -0.5
+					}
+				}
+				##############################################
+				add_dynamic_modifier = { modifier = const_amount_cost_rise_modifier }
+			#####################################################################################
 				set_rule = {
 					can_join_factions = no
 				}
@@ -18,15 +76,48 @@ on_actions = {
 			}
 			BLK = {
 				add_opinion_modifier = { target = OSE modifier = historical_enemies }
-				}
+				add_opinion_modifier = { target = PBL modifier = historical_friends }
+			}
 			OSE = {
 				add_opinion_modifier = { target = BLK modifier = historical_enemies }
+				add_opinion_modifier = { target = PBL modifier = historical_enemies }
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					load_oob = "OSE_land_ai"
+				}
 			}
 			BLK = {
 				add_opinion_modifier = { target = PBL modifier = historical_friends }
-				}
+			}
 			PBL = {
 				add_opinion_modifier = { target = BLK modifier = historical_friends }
+				add_opinion_modifier = { target = OSE modifier = historical_enemies }
+			}
+			GEB = {
+				country_event = gebet_startup.1
+				country_event = {
+					id = gebet_election.1
+					days = 659
+				}
+			}
+		}
+	}
+	on_daily_SBK = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = belkan_war_is_happening
+					has_global_flag = wacht_am_wal_is_happening
+					BLK = {
+						has_completed_focus = BLK_plan_oberon
+					}
+					surrender_progress > 0.5
+				}
+				BLK = {
+					country_event = { id = south_belka.4 }
+				}
 			}
 		}
 	}
@@ -43,7 +134,30 @@ on_actions = {
 				}
 				leave_faction = yes
 			}
-			if = { #Ustio resistance
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = BLK
+						has_global_flag = wacht_am_wal_is_happening
+					}
+				}
+				GEB = {
+					transfer_state = 256
+				}
+				REC = {
+					transfer_state = 293
+					transfer_state = 316
+				}
+				FAT = {
+					transfer_state = 220
+				}
+				OSE = {
+					annex_country = {
+						target = ROOT
+					}
+				}
+			}
+			else_if = { #Ustio resistance
 				limit = {
 					ROOT = {
 						original_tag = UST
@@ -126,6 +240,22 @@ on_actions = {
 				#	transfer_state = 256
 				#	puppet = ROOT
 				#}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 309 }
+				}
+				set_province_controller = 7570
+				set_province_controller = 7545
+				set_province_controller = 7569
+				set_province_controller = 7595
+				set_province_controller = 7603
+				set_province_controller = 1939
+				set_province_controller = 5906
 			}
 		}
 	}

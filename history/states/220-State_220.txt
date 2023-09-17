@@ -6,6 +6,7 @@ state={
 	history={
 		owner = BLK
 		add_core_of = BLK
+		add_core_of = FAT
 		buildings = {
 			infrastructure = 4
 			arms_factory = 3

@@ -7,7 +7,7 @@ characters = { #starting leaders
 			}
 		}
 		country_leader = {
-			ideology=marxism   
+			ideology=socialism  
 			traits = { }
 			expire="2050.1.1.1"
 			id=-1

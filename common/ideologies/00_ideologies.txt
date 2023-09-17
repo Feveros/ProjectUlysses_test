@@ -15,7 +15,10 @@ ideologies = {
 			liberalism = {
 			}
 
-			socialism = {
+			social_democracy = {
+			}
+			
+			centrism = {
 			}
 		}
 
@@ -73,19 +76,22 @@ ideologies = {
 
 		types = {
 
-			marxism = {
+			socialism = {
 			}
 
-			leninism = {
+			democratic_socialism = {
 			}
 
-			stalinism = {
+			conservative_socialism = {
 			}
 
-			anti_revisionism = {
+			liberal_socialism = {
 			}
 
-			anarchist_communism = {
+			authoritarian_socialism = {
+			}
+
+			religious_socialism = {
 			}
 			
 			belkan_national_syndicalism = {
@@ -137,19 +143,19 @@ ideologies = {
 
 		types = {
 
-			nazism = {
-			}
-
-			gen_nazism = {
-			}
-
 			fascism_ideology = {
 			}
 
-			falangism = {
+			ultranationalism = {
 			}
 
-			rexism = {
+			ethnonationalism = {
+			}
+
+			nativism = {
+			}
+
+			religious_nationalism = {
 			}
 		}
 
@@ -191,6 +197,12 @@ ideologies = {
 	neutrality = {
 
 		types = {
+			
+			conservatism_na = {
+			}
+			
+			centrism_na = {
+			}
 
 			despotism  = {
 			}
@@ -198,13 +210,10 @@ ideologies = {
 			oligarchism  = {
 			}
 
-			moderatism = {
-			}
-
-			centrism = {
+			stratocracy = {
 			}
 			
-			awwnb = {
+			awwnb_ideology = {
 				can_be_randomly_selected = no 
 			}
 		}
@@ -258,6 +267,10 @@ ideologies = {
 			}
 			
 			constitutional_monarchy = {
+			}
+			
+			perblan_totalitarianism  = {
+				can_be_randomly_selected = no 
 			}
 		}
 

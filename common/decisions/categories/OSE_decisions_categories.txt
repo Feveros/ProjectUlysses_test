@@ -1,0 +1,33 @@
+OSE_congress_dec = {
+	priority = 999
+	icon = GFX_decision_category_osean_congress
+	visible_when_empty = yes
+	allowed = {
+		original_tag = OSE
+	}
+	scripted_gui = OSE_congress_decisions_ui
+}
+OSE_belkan_land_dec  = {
+	priority = 2
+	icon = xxx
+
+	allowed = {
+		original_tag = OSE
+	}
+}
+OSE_economy_dec  = {
+	priority = 3
+	icon = xxx
+
+	allowed = { 
+		original_tag = OSE
+	}
+}
+OSE_fix_army  = {
+	priority = 99
+	icon = xxx
+
+	allowed = {
+		original_tag = OSE
+	}
+}

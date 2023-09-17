@@ -53,25 +53,221 @@ spriteTypes = {
 		name = GFX_portrait_BLK_FatherWilfriedJanRiesevonSergioLuoni_small
 		texturefile = "gfx/leaders/BLK/portrait_BLK_FatherWilfriedJanRiesevonSergioLuoni_small.dds"
 	}
+	### ARMY
 	spriteType = {
 		name = GFX_portrait_BLK_jannik_meier
 		texturefile = "gfx/leaders/BLK/portrait_BLK_jannik_meier.dds"
 	}
 	spriteType = {
+		name = GFX_portrait_BLK_arno_von_hardenberg
+		texturefile = "gfx/leaders/BLK/portrait_BLK_arno_von_hardenberg.png"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_artur_fleming
+		texturefile = "gfx/leaders/BLK/portrait_BLK_artur_fleming.png"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_artur_fleming_small
+		texturefile = "gfx/leaders/BLK/portrait_BLK_artur_fleming_small.png"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_caesar_saxer
+		texturefile = "gfx/leaders/BLK/portrait_BLK_caesar_saxer.png"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_caesar_saxer_small
+		texturefile = "gfx/leaders/BLK/portrait_BLK_caesar_saxer_small.png"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_harri_von_kautz
+		texturefile = "gfx/leaders/BLK/portrait_BLK_harri_von_kautz.png"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_kuno_von_sydow
+		texturefile = "gfx/leaders/BLK/portrait_BLK_kuno_von_sydow.png"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_niclas_von_cocceji
+		texturefile = "gfx/leaders/BLK/portrait_BLK_niclas_von_cocceji.png"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_niclas_von_cocceji_small
+		texturefile = "gfx/leaders/BLK/portrait_BLK_niclas_von_cocceji_small.png"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_paskal_hasselbach
+		texturefile = "gfx/leaders/BLK/portrait_BLK_paskal_hasselbach.png"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_peter_klepper
+		texturefile = "gfx/leaders/BLK/portrait_BLK_peter_klepper.png"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_ulric_grebel
+		texturefile = "gfx/leaders/BLK/portrait_BLK_ulric_grebel.png"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_kurt_schrader
+		texturefile = "gfx/leaders/BLK/portrait_BLK_kurt_schrader.png"
+	}
+	spriteType = {
+		name = GFX_portrait_BLK_timon_rosenhain_small
+		texturefile = "gfx/leaders/BLK/portrait_BLK_timon_rosenhain_small.png"
+	}
+	spriteType = {
 		name = GFX_portrait_BLK_jannik_meier_small
 		texturefile = "gfx/leaders/BLK/portrait_BLK_jannik_meier_small.dds"
+	}
+	
+######### AWWNB ####################################
+
+	spriteType = {
+		name = GFX_portrait_aww_junta
+		texturefile = "gfx/leaders/AWW/portrait_aww_junta.dds"
 	}
 
 ######### OSEA ######################################
 
 	spriteType = {
-		name = "GFX_portrait_OSE_daniel_andrews"
-		texturefile = "gfx/leaders/OSE/portrait_OSE_daniel_andrews.dds"
+		name = "GFX_portrait_OSE_vincent_harling"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_vincent_harling.png"
 	}
 	
 	spriteType = {
+		name = "GFX_portrait_OSE_vincent_harling_old"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_vincent_harling_old.png"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_OSE_senator_armstrong"
 		texturefile = "gfx/leaders/OSE/portrait_OSE_SENATOR_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_daniel_andrews"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_daniel_andrews.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_tyler_mackenzie"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_tyler_mackenzie.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_tanner_mackenzie"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_tanner_mackenzie.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_OSE_richard_cain"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_richard_cain.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_richard_cain_small"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_richard_cain_small.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_declan_russell"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_declan_russell.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_declan_russell_small"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_declan_russell_small.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_martin_buchanan"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_martin_buchanan.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_martin_buchanan_small"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_martin_buchanan_small.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_george_oured_iii"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_george_oured_iii.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_george_oured_iii_small"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_george_oured_iii_small.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_hector_blake"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_hector_blake.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_hector_blake_small"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_hector_blake_small.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_david_appelrouth"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_david_appelrouth.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_herbert_weisskopf"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_herbert_weisskopf.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_dominic_parry"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_dominic_parry.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_emerson_clemens"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_emerson_clemens.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_kai_george"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_kai_george.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_OSE_kevin_seinosuke"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_kevin_seinosuke.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_noah_powell"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_noah_powell.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_patrick_barnes"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_patrick_barnes.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_cullen_calhoun"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_cullen_calhoun.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_richard_armstrong"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_richard_armstrong.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_douglas_howell"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_douglas_howell.png"
+	}
+
+######### YUKTOBANIA ##############################
+
+	spriteType = {
+		name = "GFX_portrait_YUK_konstantin_antonov"
+		texturefile = "gfx/leaders/YUK/portrait_YUK_konstantin_antonov.png"
 	}
 
 ######### PERBLA ##################################
@@ -80,5 +276,84 @@ spriteTypes = {
 		name = "GFX_portrait_PBL_wilfredo_de_abarquero"
 		texturefile = "gfx/leaders/PBL/portrait_PBL_Wilfredo_de_Abarquero.dds"
 	}
+
+######### FATO ####################################
+
+	spriteType = {
+		name = "GFX_portrait_FAT_Jaroslav_Dvorak"
+		texturefile = "gfx/leaders/FAT/portrait_FAT_Jaroslav_Dvorak.png"
+	}
+
+######### SAPIN ###################################
+
+	spriteType = {
+		name = "GFX_portrait_SAP_Candida_Castro"
+		texturefile = "gfx/leaders/SAP/portrait_SAP_Candida_Castro.png"
+	}
+
+######### GEBET ###################################
+
+	spriteType = {
+		name = "GFX_portrait_GEB_ilse_ebner"
+		texturefile = "gfx/leaders/GEB/portrait_GEB_ilse_ebner.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_GEB_rafael_albrecht"
+		texturefile = "gfx/leaders/GEB/portrait_GEB_rafael_albrecht.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_GEB_christian_burger"
+		texturefile = "gfx/leaders/GEB/portrait_GEB_christian_burger.png"
+	}
 	
+	spriteType = {
+		name = "GFX_portrait_GEB_elli_jung"
+		texturefile = "gfx/leaders/GEB/portrait_GEB_elli_jung.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_GEB_emilia_knoll"
+		texturefile = "gfx/leaders/GEB/portrait_GEB_emilia_knoll.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_GEB_horscht_fischer"
+		texturefile = "gfx/leaders/GEB/portrait_GEB_horscht_fischer.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_GEB_janis_haller"
+		texturefile = "gfx/leaders/GEB/portrait_GEB_janis_haller.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_GEB_eric_allemann"
+		texturefile = "gfx/leaders/GEB/portrait_GEB_eric_allemann.png"
+	}
+
+######### ERUSEA ##################################
+	spriteType = {
+		name = "GFX_portrait_ERU_valere_monette_d_elise"
+		texturefile = "gfx/leaders/ERU/portrait_ERU_valere_monette_d_elise.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ERU_romain_cosette_d_elise"
+		texturefile = "gfx/leaders/ERU/portrait_ERU_romain_cosette_d_elise.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ERU_rosa_cosette_d_elise"
+		texturefile = "gfx/leaders/ERU/portrait_ERU_rosa_cosette_d_elise.png"
+	}
+
+######### NORTH POINT #############################
+
+	spriteType = {
+		name = "GFX_portrait_NPT_national_defense_council"
+		texturefile = "gfx/leaders/NPT/portrait_NPT_national_defense_council.png"
+	}
+
 }

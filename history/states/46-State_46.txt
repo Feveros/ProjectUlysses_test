@@ -3,17 +3,17 @@ state={
 	id=46
 	name="STATE_46"
 	resources={
-		oil=0
-		aluminium=0
-		rubber=0
-		tungsten=0
-		steel=0
-		chromium=0
+		oil=0.000
+		aluminium=0.000
+		rubber=0.000
+		tungsten=0.000
+		steel=0.000
+		chromium=0.000
 	}
 
 	history={
-		owner = PLH
-		add_core_of = PLH
+		owner = FCU
+		add_core_of = FCU
 		buildings = {
 			infrastructure = 0
 			arms_factory = 0
@@ -25,7 +25,7 @@ state={
 	}
 
 	provinces={
-		3082 9994 9996 9997 9998 9999 10000 10001 10002 10005 10007 
+		896 1192 5574 8603 8645 
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000

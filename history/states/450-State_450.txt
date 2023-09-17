@@ -15,10 +15,21 @@ state={
 		owner = NPT 
 		add_core_of = NPT
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
-			air_base = 0
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 6
+			anti_air_building = 1
+			4776 = {
+				naval_base = 6
+			}
+			2908 = {
+				naval_base = 3
+			}
+			9964 = {
+				naval_base = 1
+			}
 
 		}
 
@@ -29,6 +40,6 @@ state={
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=0.000
 }

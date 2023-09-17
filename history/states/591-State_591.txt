@@ -12,8 +12,8 @@ state={
 	}
 
 	history={
-		owner = SEA
-		add_core_of = SEA
+		owner = FCU
+		add_core_of = FCU
 		buildings = {
 			infrastructure = 0
 			arms_factory = 0

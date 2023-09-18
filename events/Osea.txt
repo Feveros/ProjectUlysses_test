@@ -119,9 +119,19 @@ country_event = { #mackenzie anti GLRDC campaign
 	
 	fire_only_once = yes
 	
-	trigger = {
-		tag = OSE
-		date >1992.7.1
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = osea.40
+				days = 15
+			}
+			country_event = {
+				id = osea_election.1
+				days = 15
+			}
+		}
 	}
 	option = {
 		name = osea.30.a
@@ -133,13 +143,10 @@ country_event = { #elections event
 	title = osea.40.t
 	desc = osea.40.d
 	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
 	
 	fire_only_once = yes
-	
-	trigger = {
-		tag = OSE
-		date > 1992.7.15
-	}
 
 	option = {
 		name = osea.40.a
@@ -1311,9 +1318,7 @@ country_event = { # Fire Party Platform Hidden Event
 	}
 }
 
-#
-
-country_event = { # Liberty Party Loses Popularity
+country_event = { # Liberty Party Loses Popularity (debug event)
 	id = osea_politics.8
 	title = osea_politics.8.t
 	desc = osea_politics.8.desc

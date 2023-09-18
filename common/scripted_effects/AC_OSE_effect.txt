@@ -3199,7 +3199,7 @@ OSE_unity_party_pop_loss_effect = {
 		min = 0
 		max = 1
 	}
-	# Run OSE_update_party_popularity to update the Congress window
+	# Run OSE_update_party_popularity to update the idea loc
 	OSE_update_party_popularity = yes
 }
 OSE_liberty_party_pop_loss_effect = {
@@ -3335,7 +3335,688 @@ OSE_liberty_party_pop_loss_effect = {
 		min = 0
 		max = 1
 	}
+	# Run OSE_update_party_popularity to update the idea loc
+	OSE_update_party_popularity = yes
+}
+
+OSE_obp_party_pop_loss_effect = {
+	# Set party loss to a variable declared in the event/decision/focus triggering the effect, which should be an integer (0-100) and not 0.10 for example
+	set_variable = { osea_party_pop_loss = osea_party_pop_loss_var }
+	if = { # OPP goes first since OPP and OBP are both fascist, also is guaranteed at least a 2% increase
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_opp_party_pop_gain
+			min = 2 # 2% increase guaranteed
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_opp_party_pop_gain }
+	}
+	if = { # Independents Second
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_independent_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_independent_party_pop_gain }
+	}
+	if = { # Unity Third
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_unity_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_unity_party_pop_gain }
+	}
+	if = { # Monarchists Fourth
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_monarchist_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_monarchist_party_pop_gain }
+	}
+	if = { # Liberty Fifth
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_liberty_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_liberty_party_pop_gain }
+	}
+	if = { # Socialists Last
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_socialist_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_socialist_party_pop_gain }
+	}
+
+	# Divide gains by 100 so they work with the party popularity system
+	divide_variable = { osea_unity_party_pop_gain = 100 }
+	divide_variable = { osea_socialist_party_pop_gain = 100 }
+	divide_variable = { osea_independent_party_pop_gain = 100 }
+	divide_variable = { osea_liberty_party_pop_gain = 100 }
+	divide_variable = { osea_opp_party_pop_gain = 100 }
+	divide_variable = { osea_monarchist_party_pop_gain = 100 }
+	# Divide original party pop loss variable by 100
+	divide_variable = { osea_party_pop_loss_var = 100 }
+
+	## Add/Subtract popularities from all parties
+	# OBP is the subject of the effect, so OBP loses populartity
+	subtract_from_variable = { osea_obp_party_popularity_fascism = osea_party_pop_loss_var }
+	# All other parties gain popularity
+	add_to_variable = { osea_unity_party_popularity_democratic = osea_unity_party_pop_gain }
+	add_to_variable = { osea_liberty_party_popularity_democratic = osea_liberty_party_pop_gain }
+	add_to_variable = { osea_opp_party_popularity_fascism = osea_opp_party_pop_gain }
+	add_to_variable = { osea_socialist_party_popularity = osea_socialist_party_pop_gain }
+	add_to_variable = { osea_monarchist_party_popularity = osea_monarchist_party_pop_gain }
+	add_to_variable = { osea_independent_popularity = osea_independent_party_pop_gain }
+
+	# Clamp all variables so they don't go over 1 (100% popularity) or below 0 (0%) popularity
+	clamp_variable = { # Unity
+		var = osea_unity_party_popularity_democratic
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Liberty
+		var = osea_liberty_party_popularity_democratic
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Brotherhood
+		var = osea_obp_party_popularity_fascism
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Purity
+		var = osea_opp_party_popularity_fascism
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Socialist
+		var = osea_socialist_party_popularity
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Monarchist
+		var = osea_monarchist_party_popularity
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Independent
+		var = osea_independent_popularity
+		min = 0
+		max = 1
+	}
+	# Run OSE_update_party_popularity to update the idea loc
+	OSE_update_party_popularity = yes
+}
+OSE_opp_party_pop_loss_effect = {
+	# Set party loss to a variable declared in the event/decision/focus triggering the effect, which should be an integer (0-100) and not 0.10 for example
+	set_variable = { osea_party_pop_loss = osea_party_pop_loss_var }
+	if = { # OBP goes first since OPP and OBP are both fascist, also is guaranteed at least a 2% increase
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_obp_party_pop_gain
+			min = 2 # 2% increase guaranteed
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_obp_party_pop_gain }
+	}
+	if = { # Independents Second
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_independent_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_independent_party_pop_gain }
+	}
+	if = { # Unity Third
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_unity_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_unity_party_pop_gain }
+	}
+	if = { # Monarchists Fourth
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_monarchist_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_monarchist_party_pop_gain }
+	}
+	if = { # Liberty Fifth
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_liberty_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_liberty_party_pop_gain }
+	}
+	if = { # Socialists Last
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_socialist_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_socialist_party_pop_gain }
+	}
+
+	# Divide gains by 100 so they work with the party popularity system
+	divide_variable = { osea_unity_party_pop_gain = 100 }
+	divide_variable = { osea_socialist_party_pop_gain = 100 }
+	divide_variable = { osea_independent_party_pop_gain = 100 }
+	divide_variable = { osea_obp_party_pop_gain = 100 }
+	divide_variable = { osea_liberty_party_pop_gain = 100 }
+	divide_variable = { osea_monarchist_party_pop_gain = 100 }
+	# Divide original party pop loss variable by 100
+	divide_variable = { osea_party_pop_loss_var = 100 }
+
+	## Add/Subtract popularities from all parties
+	# OPP is the subject of the effect, so OPP loses populartity
+	subtract_from_variable = { osea_opp_party_popularity_fascism = osea_party_pop_loss_var }
+	# All other parties gain popularity
+	add_to_variable = { osea_unity_party_popularity_democratic = osea_unity_party_pop_gain }
+	add_to_variable = { osea_obp_party_popularity_fascism = osea_obp_party_pop_gain }
+	add_to_variable = { osea_liberty_party_popularity_democratic = osea_liberty_party_pop_gain }
+	add_to_variable = { osea_socialist_party_popularity = osea_socialist_party_pop_gain }
+	add_to_variable = { osea_monarchist_party_popularity = osea_monarchist_party_pop_gain }
+	add_to_variable = { osea_independent_popularity = osea_independent_party_pop_gain }
+
+	# Clamp all variables so they don't go over 1 (100% popularity) or below 0 (0%) popularity
+	clamp_variable = { # Unity
+		var = osea_unity_party_popularity_democratic
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Liberty
+		var = osea_liberty_party_popularity_democratic
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Brotherhood
+		var = osea_obp_party_popularity_fascism
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Purity
+		var = osea_opp_party_popularity_fascism
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Socialist
+		var = osea_socialist_party_popularity
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Monarchist
+		var = osea_monarchist_party_popularity
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Independent
+		var = osea_independent_popularity
+		min = 0
+		max = 1
+	}
 	# Run OSE_update_party_popularity to update the Congress window
+	OSE_update_party_popularity = yes
+}
+OSE_socialist_party_pop_loss_effect = {
+	# Set party loss to a variable declared in the event/decision/focus triggering the effect, which should be an integer (0-100) and not 0.10 for example
+	set_variable = { osea_party_pop_loss = osea_party_pop_loss_var }
+	if = { # Independents First
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_independent_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_independent_party_pop_gain }
+	}
+	if = { # Liberty Second
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_liberty_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_liberty_party_pop_gain }
+	}
+	if = { # Unity Third
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_unity_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_unity_party_pop_gain }
+	}
+	if = { # OBP Fourth
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_obp_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_obp_party_pop_gain }
+	}
+	if = { # OPP Fifth
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_opp_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_opp_party_pop_gain }
+	}
+	if = { # Monarchists Last
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_monarchist_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_monarchist_party_pop_gain }
+	}
+
+	# Divide gains by 100 so they work with the party popularity system
+	divide_variable = { osea_unity_party_pop_gain = 100 }
+	divide_variable = { osea_opp_party_pop_gain = 100 }
+	divide_variable = { osea_independent_party_pop_gain = 100 }
+	divide_variable = { osea_obp_party_pop_gain = 100 }
+	divide_variable = { osea_liberty_party_pop_gain = 100 }
+	divide_variable = { osea_monarchist_party_pop_gain = 100 }
+	# Divide original party pop loss variable by 100
+	divide_variable = { osea_party_pop_loss_var = 100 }
+
+	## Add/Subtract popularities from all parties
+	# Socialists are the subject of the effect, so Socialists lose populartity
+	subtract_from_variable = { osea_socialist_party = osea_party_pop_loss_var }
+	# All other parties gain popularity
+	add_to_variable = { osea_unity_party_popularity_democratic = osea_unity_party_pop_gain }
+	add_to_variable = { osea_obp_party_popularity_fascism = osea_obp_party_pop_gain }
+	add_to_variable = { osea_liberty_party_popularity_democratic = osea_liberty_party_pop_gain }
+	add_to_variable = { osea_opp_party_popularity = osea_opp_party_pop_gain }
+	add_to_variable = { osea_monarchist_party_popularity = osea_monarchist_party_pop_gain }
+	add_to_variable = { osea_independent_popularity = osea_independent_party_pop_gain }
+
+	# Clamp all variables so they don't go over 1 (100% popularity) or below 0 (0%) popularity
+	clamp_variable = { # Unity
+		var = osea_unity_party_popularity_democratic
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Liberty
+		var = osea_liberty_party_popularity_democratic
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Brotherhood
+		var = osea_obp_party_popularity_fascism
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Purity
+		var = osea_opp_party_popularity_fascism
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Socialist
+		var = osea_socialist_party_popularity
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Monarchist
+		var = osea_monarchist_party_popularity
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Independent
+		var = osea_independent_popularity
+		min = 0
+		max = 1
+	}
+	# Run OSE_update_party_popularity to update the national spirit loc
+	OSE_update_party_popularity = yes
+}
+OSE_monarchist_party_pop_loss_effect = {
+	# Set party loss to a variable declared in the event/decision/focus triggering the effect, which should be an integer (0-100) and not 0.10 for example
+	set_variable = { osea_party_pop_loss = osea_party_pop_loss_var }
+	if = { # Independents First
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_independent_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_independent_party_pop_gain }
+	}
+	if = { # OPP Second
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_opp_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_opp_party_pop_gain }
+	}
+	if = { # OBP Third
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_obp_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_obp_party_pop_gain }
+	}
+	if = { # Unity Fourth
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_unity_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_unity_party_pop_gain }
+	}
+	if = { # Liberty Fifth
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_liberty_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_liberty_party_pop_gain }
+	}
+	if = { # Socialists Last
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_socialist_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_socialist_party_pop_gain }
+	}
+
+	# Divide gains by 100 so they work with the party popularity system
+	divide_variable = { osea_unity_party_pop_gain = 100 }
+	divide_variable = { osea_opp_party_pop_gain = 100 }
+	divide_variable = { osea_independent_party_pop_gain = 100 }
+	divide_variable = { osea_obp_party_pop_gain = 100 }
+	divide_variable = { osea_liberty_party_pop_gain = 100 }
+	divide_variable = { osea_socialist_party_pop_gain = 100 }
+	# Divide original party pop loss variable by 100
+	divide_variable = { osea_party_pop_loss_var = 100 }
+
+	## Add/Subtract popularities from all parties
+	# Socialists are the subject of the effect, so Socialists lose populartity
+	subtract_from_variable = { osea_monarchist_party = osea_party_pop_loss_var }
+	# All other parties gain popularity
+	add_to_variable = { osea_unity_party_popularity_democratic = osea_unity_party_pop_gain }
+	add_to_variable = { osea_obp_party_popularity_fascism = osea_obp_party_pop_gain }
+	add_to_variable = { osea_liberty_party_popularity_democratic = osea_liberty_party_pop_gain }
+	add_to_variable = { osea_opp_party_popularity = osea_opp_party_pop_gain }
+	add_to_variable = { osea_monarchist_party_popularity = osea_monarchist_party_pop_gain }
+	add_to_variable = { osea_independent_popularity = osea_independent_party_pop_gain }
+
+	# Clamp all variables so they don't go over 1 (100% popularity) or below 0 (0%) popularity
+	clamp_variable = { # Unity
+		var = osea_unity_party_popularity_democratic
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Liberty
+		var = osea_liberty_party_popularity_democratic
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Brotherhood
+		var = osea_obp_party_popularity_fascism
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Purity
+		var = osea_opp_party_popularity_fascism
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Socialist
+		var = osea_socialist_party_popularity
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Monarchist
+		var = osea_monarchist_party_popularity
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Independent
+		var = osea_independent_popularity
+		min = 0
+		max = 1
+	}
+	# Run OSE_update_party_popularity to update the national spirit loc
+	OSE_update_party_popularity = yes
+}
+OSE_independent_party_pop_loss_effect = {
+	# Set party loss to a variable declared in the event/decision/focus triggering the effect, which should be an integer (0-100) and not 0.10 for example
+	set_variable = { osea_party_pop_loss = osea_party_pop_loss_var }
+	if = { # Unity First
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_unity_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_unity_party_pop_gain }
+	}
+	if = { # Liberty Second
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_liberty_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_liberty_party_pop_gain }
+	}
+	if = { # OBP Third
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_obp_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_obp_party_pop_gain }
+	}
+	if = { # OPP Fourth
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_opp_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_opp_party_pop_gain }
+	}
+	if = { # Socialists Fifth
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_socialist_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_socialist_party_pop_gain }
+	}
+	if = { # Monarchists Last
+		limit = {
+			check_variable = { osea_party_pop_loss > 0 }
+		}
+		set_variable_to_random = {
+			var = osea_monarchist_party_pop_gain
+			min = 1
+			max = osea_party_pop_loss_var
+			integer = yes
+		}
+		subtract_from_variable = { osea_party_pop_loss = osea_monarchist_party_pop_gain }
+	}
+
+	# Divide gains by 100 so they work with the party popularity system
+	divide_variable = { osea_unity_party_pop_gain = 100 }
+	divide_variable = { osea_opp_party_pop_gain = 100 }
+	divide_variable = { osea_monarchist_party_pop_gain = 100 }
+	divide_variable = { osea_obp_party_pop_gain = 100 }
+	divide_variable = { osea_liberty_party_pop_gain = 100 }
+	divide_variable = { osea_socialist_party_pop_gain = 100 }
+	# Divide original party pop loss variable by 100
+	divide_variable = { osea_party_pop_loss_var = 100 }
+
+	## Add/Subtract popularities from all parties
+	# Independents are the subject of the effect, so Independents lose populartity
+	subtract_from_variable = { osea_independent_party = osea_party_pop_loss_var }
+	# All other parties gain popularity
+	add_to_variable = { osea_unity_party_popularity_democratic = osea_unity_party_pop_gain }
+	add_to_variable = { osea_obp_party_popularity_fascism = osea_obp_party_pop_gain }
+	add_to_variable = { osea_liberty_party_popularity_democratic = osea_liberty_party_pop_gain }
+	add_to_variable = { osea_opp_party_popularity = osea_opp_party_pop_gain }
+	add_to_variable = { osea_monarchist_party_popularity = osea_monarchist_party_pop_gain }
+	add_to_variable = { osea_socialist_popularity = osea_socialist_party_pop_gain }
+
+	# Clamp all variables so they don't go over 1 (100% popularity) or below 0 (0%) popularity
+	clamp_variable = { # Unity
+		var = osea_unity_party_popularity_democratic
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Liberty
+		var = osea_liberty_party_popularity_democratic
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Brotherhood
+		var = osea_obp_party_popularity_fascism
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Purity
+		var = osea_opp_party_popularity_fascism
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Socialist
+		var = osea_socialist_party_popularity
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Monarchist
+		var = osea_monarchist_party_popularity
+		min = 0
+		max = 1
+	}
+	clamp_variable = { # Independent
+		var = osea_independent_popularity
+		min = 0
+		max = 1
+	}
+	# Run OSE_update_party_popularity to update the national spirit loc
 	OSE_update_party_popularity = yes
 }
 

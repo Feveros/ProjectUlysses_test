@@ -87,6 +87,10 @@ on_actions = {
 					}
 					load_oob = "OSE_land_ai"
 				}
+				country_event = {
+					id = osea.30
+					days = 548
+				}
 			}
 			BLK = {
 				add_opinion_modifier = { target = PBL modifier = historical_friends }

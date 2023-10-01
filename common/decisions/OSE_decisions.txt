@@ -1,6 +1,7 @@
 OSE_congress_dec = {
 	OSE_cut_taxes = { # Must be introduced in House
 		icon = xxx
+		cost = 100
 		available = {
 			NOT = {
 				has_country_flag = OSE_recently_proposed_bill
@@ -190,6 +191,7 @@ OSE_congress_dec = {
 	}
 	OSE_raise_taxes = { # Must be introduced in House
 		icon = xxx
+		cost = 100
 		available = {
 			NOT = {
 				has_country_flag = OSE_recently_proposed_bill
@@ -389,6 +391,7 @@ OSE_congress_dec = {
 	}
 	OSE_increase_defense_forces_budget = { # Must be introduced in House
 		icon = xxx
+		cost = 100
 		available = {
 			NOT = {
 				has_country_flag = OSE_recently_proposed_bill
@@ -583,6 +586,7 @@ OSE_congress_dec = {
 	}
 	OSE_pay_farm_subsidies = { # Must be introduced in House
 		icon = xxx
+		cost = 100
 		available = {
 			NOT = {
 				has_country_flag = OSE_recently_proposed_bill
@@ -777,6 +781,7 @@ OSE_congress_dec = {
 	}
 	OSE_award_research_grants = { # Must be introduced in House
 		icon = xxx
+		cost = 100
 		available = {
 			NOT = {
 				has_country_flag = OSE_recently_proposed_bill
@@ -996,7 +1001,7 @@ OSE_congress_dec = {
 			check_variable = { ose_passed_house = 0 }
 			check_variable = { ose_house_unity_seats > 0 }
 		}
-		cost = 15
+		cost = 25
 		days_remove = 5
 		remove_effect = {
 			subtract_from_variable = { current_lobbying = 1 }
@@ -1036,7 +1041,7 @@ OSE_congress_dec = {
 			check_variable = { ose_passed_house = 0 }
 			check_variable = { ose_house_liberty_seats > 0 }
 		}
-		cost = 15
+		cost = 25
 		days_remove = 5
 		remove_effect = {
 			subtract_from_variable = { current_lobbying = 1 }
@@ -1076,7 +1081,7 @@ OSE_congress_dec = {
 			check_variable = { ose_passed_house = 0 }
 			check_variable = { ose_house_brotherhood_seats > 0 }
 		}
-		cost = 15
+		cost = 25
 		days_remove = 5
 		remove_effect = {
 			subtract_from_variable = { current_lobbying = 1 }
@@ -1116,7 +1121,7 @@ OSE_congress_dec = {
 			check_variable = { ose_passed_house = 0 }
 			check_variable = { ose_house_socialist_seats > 0 }
 		}
-		cost = 15
+		cost = 25
 		days_remove = 5
 		remove_effect = {
 			subtract_from_variable = { current_lobbying = 1 }
@@ -1156,7 +1161,7 @@ OSE_congress_dec = {
 			check_variable = { ose_passed_house = 0 }
 			check_variable = { ose_house_monarchist_seats > 0 }
 		}
-		cost = 15
+		cost = 25
 		days_remove = 5
 		remove_effect = {
 			subtract_from_variable = { current_lobbying = 1 }
@@ -1196,7 +1201,7 @@ OSE_congress_dec = {
 			check_variable = { ose_passed_house = 0 }
 			check_variable = { ose_house_independent_seats > 0 }
 		}
-		cost = 15
+		cost = 25
 		days_remove = 5
 		remove_effect = {
 			subtract_from_variable = { current_lobbying = 1 }
@@ -1225,7 +1230,7 @@ OSE_congress_dec = {
 			check_variable = { ose_passed_senate = 0 }
 			check_variable = { ose_senate_unity_seats > 0 }
 		}
-		cost = 15
+		cost = 25
 		days_remove = 5
 		remove_effect = {
 			subtract_from_variable = { current_lobbying = 1 }
@@ -1265,7 +1270,7 @@ OSE_congress_dec = {
 			check_variable = { ose_passed_senate = 0 }
 			check_variable = { ose_senate_liberty_seats > 0 }
 		}
-		cost = 15
+		cost = 25
 		days_remove = 5
 		remove_effect = {
 			subtract_from_variable = { current_lobbying = 1 }
@@ -1305,7 +1310,7 @@ OSE_congress_dec = {
 			check_variable = { ose_passed_senate = 0 }
 			check_variable = { ose_senate_brotherhood_seats > 0 }
 		}
-		cost = 15
+		cost = 25
 		days_remove = 5
 		remove_effect = {
 			subtract_from_variable = { current_lobbying = 1 }
@@ -1345,7 +1350,7 @@ OSE_congress_dec = {
 			check_variable = { ose_passed_senate = 0 }
 			check_variable = { ose_senate_socialist_seats > 0 }
 		}
-		cost = 15
+		cost = 25
 		days_remove = 5
 		remove_effect = {
 			subtract_from_variable = { current_lobbying = 1 }
@@ -1385,7 +1390,7 @@ OSE_congress_dec = {
 			check_variable = { ose_passed_senate = 0 }
 			check_variable = { ose_senate_monarchist_seats > 0 }
 		}
-		cost = 15
+		cost = 25
 		days_remove = 5
 		remove_effect = {
 			subtract_from_variable = { current_lobbying = 1 }
@@ -1425,7 +1430,7 @@ OSE_congress_dec = {
 			check_variable = { ose_passed_senate = 0 }
 			check_variable = { ose_senate_independent_seats > 0 }
 		}
-		cost = 15
+		cost = 25
 		days_remove = 5
 		remove_effect = {
 			subtract_from_variable = { current_lobbying = 1 }
@@ -1547,6 +1552,27 @@ OSE_belkan_land_dec = {
 					level = 1
 				}
 			}
+		}
+	}
+}
+
+OSE_belkan_war = {
+	ose_domestic_sytuation_opposed_to_war = {
+		icon = GFX_decision_generic_scorched_earth
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			NOT = { has_global_flag = belkan_war_is_happening }
+		}
+		fire_only_once = yes
+		days_mission_timeout = 365
+		selectable_mission = no
+		timeout_effect = {
+			country_event = { id = osea.79 }
 		}
 	}
 }

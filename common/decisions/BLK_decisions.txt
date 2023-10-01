@@ -149,6 +149,25 @@ BLK_belkan_war_category = {
 			country_event = { id = south_belka.3 }
 		}
 	}
+	BLK_belkan_war_collapse_AI = {
+		icon = GFX_decision_generic_scorched_earth
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			NOT = { has_global_flag = belkan_war_is_happening }
+		}
+		fire_only_once = yes
+		days_mission_timeout = 400
+		selectable_mission = no
+		timeout_effect = {
+			country_event = { id = belka_dlp_war.105 }
+			set_country_flag = BLK_belkan_war_collapse_AI_flag
+		}
+	}
 	BLK_war_start_timer_dec = {
 		icon = GFX_decision_generic_ignite_civil_war
 	    activation = {
@@ -205,6 +224,9 @@ BLK_belkan_war_category = {
 				create_faction = OSE_BELKAN_WAR_FACTION
 				add_to_faction = UST
 				add_to_faction = SAP
+				hidden_effect = {
+					country_event = osea.77
+				}
 			}
 			FAT = {
 				create_faction = FAT_BELKAN_WAR_FACTION
@@ -276,7 +298,7 @@ BLK_belkan_war_category = {
 		cost = 100
 		days_remove = 10
 		ai_will_do = {
-			base = 20
+			base = 100
 		}
 		remove_effect = {
 			custom_effect_tooltip = BLK_pillage_ustio_dec_tt
@@ -318,13 +340,16 @@ BLK_belkan_war_category = {
 		}
 		visible = {
 			has_completed_focus = BLK_reparations
-			has_global_flag = belkan_war_is_happening
+			OR = {
+				has_global_flag = belkan_war_is_happening
+				has_global_flag = ose_lost_belkan_war
+			}
 		}
 		fire_only_once = yes
 		#cost = 10
 		days_remove = 10
 		ai_will_do = {
-			base = 20
+			base = 100
 		}
 		complete_effect = {
 			set_country_flag = BLK_war_rep_going
@@ -382,13 +407,16 @@ BLK_belkan_war_category = {
 		}
 		visible = {
 			has_completed_focus = BLK_reparations
-			has_global_flag = belkan_war_is_happening
+			OR = {
+				has_global_flag = belkan_war_is_happening
+				has_global_flag = ose_lost_belkan_war
+			}
 		}
 		fire_only_once = yes
 		#cost = 100
 		days_remove = 10
 		ai_will_do = {
-			base = 20
+			base = 100
 		}
 		complete_effect = {
 			set_country_flag = BLK_war_rep_going
@@ -434,13 +462,16 @@ BLK_belkan_war_category = {
 		}
 		visible = {
 			has_completed_focus = BLK_reparations
-			has_global_flag = belkan_war_is_happening
+			OR = {
+				has_global_flag = belkan_war_is_happening
+				has_global_flag = ose_lost_belkan_war
+			}
 		}
 		fire_only_once = yes
 		#cost = 100
 		days_remove = 10
 		ai_will_do = {
-			base = 20
+			base = 100
 		}
 		complete_effect = {
 			set_country_flag = BLK_war_rep_going

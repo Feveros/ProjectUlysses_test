@@ -547,7 +547,7 @@ shared_focus = {
 
 shared_focus = {
     id = ose_elections_civs
-    icon = GFX_goal_BLK_dlp_won_elections
+    icon = GFX_goal_OSE_elections_civs
     cost = 4.3
     ai_will_do = {
         factor = 5
@@ -608,7 +608,7 @@ shared_focus = {
 
 shared_focus = {
     id = ose_elections_mils
-    icon = GFX_goal_BLK_dlp_won_elections
+    icon = GFX_goal_OSE_elections_mils
     cost = 4.3
     ai_will_do = {
         factor = 5
@@ -622,7 +622,7 @@ shared_focus = {
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = ose_election_focus_limit_tt
-			check_variable = { ose_election_focus_limit < 4 }
+			check_variable = { ose_election_focus_limit < 3 }
 		}
 	}
     completion_reward = {
@@ -663,7 +663,7 @@ shared_focus = {
 
 shared_focus = {
     id = ose_elections_dockyards
-    icon = GFX_goal_BLK_dlp_won_elections
+    icon = GFX_goal_OSE_elections_dockyards
     cost = 4.3
     ai_will_do = {
         factor = 5
@@ -677,7 +677,7 @@ shared_focus = {
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = ose_election_focus_limit_tt
-			check_variable = { ose_election_focus_limit < 4 }
+			check_variable = { ose_election_focus_limit < 3 }
 		}
 	}
     completion_reward = {
@@ -718,7 +718,7 @@ shared_focus = {
 
 shared_focus = {
     id = ose_elections_industry
-    icon = GFX_goal_BLK_dlp_won_elections
+    icon = GFX_goal_OSE_elections_industry
     cost = 4.3
     ai_will_do = {
         factor = 5
@@ -732,7 +732,7 @@ shared_focus = {
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = ose_election_focus_limit_tt
-			check_variable = { ose_election_focus_limit < 4 }
+			check_variable = { ose_election_focus_limit < 3 }
 		}
 	}
     completion_reward = {
@@ -766,7 +766,7 @@ shared_focus = {
 
 shared_focus = {
     id = ose_elections_army
-    icon = GFX_goal_BLK_dlp_won_elections
+    icon = GFX_goal_OSE_elections_army
     cost = 4.3
     ai_will_do = {
         factor = 5
@@ -780,7 +780,7 @@ shared_focus = {
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = ose_election_focus_limit_tt
-			check_variable = { ose_election_focus_limit < 4 }
+			check_variable = { ose_election_focus_limit < 3 }
 		}
 	}
     completion_reward = {
@@ -802,7 +802,7 @@ shared_focus = {
 
 shared_focus = {
     id = ose_elections_stab_pp_was
-    icon = GFX_goal_BLK_dlp_won_elections
+    icon = GFX_goal_OSE_elections_stab_pp_was
     cost = 4.3
     ai_will_do = {
         factor = 5
@@ -816,7 +816,7 @@ shared_focus = {
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = ose_election_focus_limit_tt
-			check_variable = { ose_election_focus_limit < 4 }
+			check_variable = { ose_election_focus_limit < 3 }
 		}
 	}
     completion_reward = {
@@ -836,7 +836,7 @@ shared_focus = {
 
 shared_focus = {
     id = ose_menace_of_perbla
-    icon = GFX_goal_BLK_dlp_won_elections
+    icon = GFX_goal_OSE_menace_of_perbla
     cost = 4.3
     ai_will_do = {
         factor = 5
@@ -850,7 +850,7 @@ shared_focus = {
 	available = {
 		custom_trigger_tooltip = {
 			tooltip = ose_election_focus_limit_tt
-			check_variable = { ose_election_focus_limit < 4 }
+			check_variable = { ose_election_focus_limit < 3 }
 		}
 	}
     completion_reward = {

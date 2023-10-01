@@ -15,8 +15,16 @@ OSE_belkan_land_dec  = {
 		original_tag = OSE
 	}
 }
-OSE_economy_dec  = {
+OSE_belkan_war  = {
 	priority = 3
+	icon = xxx
+
+	allowed = { 
+		original_tag = OSE
+	}
+}
+OSE_economy_dec  = {
+	priority = 4
 	icon = xxx
 
 	allowed = { 

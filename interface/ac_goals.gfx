@@ -91,6 +91,34 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/OSE/goal_OSE_1991_cold_war_build_up_plan.png"
 	}
 	spriteType = {
+		name = "GFX_goal_OSE_elections_army"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_elections_army.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_elections_civs"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_elections_civs.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_elections_dockyards"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_elections_dockyards.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_elections_industry"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_elections_industry.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_elections_mils"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_elections_mils.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_elections_stab_pp_was"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_elections_stab_pp_was.png"
+	}
+	spriteType = {
+		name = "GFX_goal_OSE_menace_of_perbla"
+		texturefile = "gfx/interface/goals/OSE/goal_OSE_menace_of_perbla.png"
+	}
+	spriteType = {
 		name = "GFX_goal_OSE_acquisition_of_belkan_land"
 		texturefile = "gfx/interface/goals/OSE/goal_OSE_acquisition_of_belkan_land.png"
 	}

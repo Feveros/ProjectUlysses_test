@@ -836,6 +836,13 @@ country_event = {
 			}
 			activate_mission = BLK_belkan_war_collapse
 		}
+		if = {
+			limit = {
+				BLK = { is_ai = yes }
+				OSE = { is_ai = no }
+			}
+			activate_mission = BLK_belkan_war_collapse_AI
+		}
 	}
 }
 
@@ -1165,6 +1172,29 @@ country_event = {
 	option = {
 		name = belka_dlp_war.104.a
 		load_focus_tree = belka_belkan_war_won
+	}
+}
+
+country_event = {
+	id = belka_dlp_war.105
+	title = belka_dlp_war.105.t
+	desc = belka_dlp_war.105.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+	
+	option = {
+		name = belka_dlp_war.105.a
+		add_ideas = BLK_eco_crisis_army_for_ai
+		add_ideas = BLK_eco_crisis_for_ai
+		hidden_effect = {
+			OSE = {
+				country_event = osea.78
+			}
+			GEB = {
+				country_event = gebet_belkan_war.5
+			}
+		}
 	}
 }
 

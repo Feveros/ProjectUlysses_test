@@ -405,6 +405,21 @@
  osea_politics.1.t: "National Mood Swings"
  osea_politics.1.desc: "The national mood of the country has shifted as a result of the current state of the nation's domestic and foreign policy."
  osea_politics.1.a: "Interesting"
+ osea_politics.2.t: "Unity Party Platform Published"
+ osea_politics.2.desc: "The Unity Party has held its annual conference made up of representatives from state-level Unity Party chapters and published a newly created party platform for the year's elections."
+ osea_politics.2.a: "Interesting"
+ osea_politics.3.t: "Liberty Party Platform Published"
+ osea_politics.3.desc: "The Liberty Party has held its annual conference made up of representatives from state-level Liberty Party chapters and published a newly created party platform for the year's elections."
+ osea_politics.3.a: "Interesting"
+ osea_politics.4.t: "Nationalist Union Platform Published"
+ osea_politics.4.desc: "The Nationalist Union has held its annual conference made up of representatives from state-level Nationalist Union chapters and published a newly created party platform for the year's elections."
+ osea_politics.4.a: "Interesting"
+ osea_politics.5.t: "Socialist Party Platform Published"
+ osea_politics.5.desc: "The Socialist Party of Osea has held its annual conference made up of representatives from state-level Socialist Party chapters and published a newly created party platform for the year's elections."
+ osea_politics.5.a: "Interesting"
+ osea_politics.6.t: "Monarchist Platform Published"
+ osea_politics.6.desc: "The Monarchists have held their annual conference made up of representatives from each state and published a newly created platform for the year."
+ osea_politics.6.a: "Interesting"
 
  ### Tooltips ###
  

@@ -352,6 +352,78 @@ country_event = { #uwc event
 	}
 }
 
+country_event = { #belka attacks
+	id = osea.77
+	title = osea.77.t
+	desc = osea.77.d
+	picture = GFX_report_event_belka_meme_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = osea.77.a
+	}
+}
+
+country_event = { #belka eco and army dead
+	id = osea.78
+	title = osea.78.t
+	desc = osea.78.d
+	picture = GFX_report_event_belka_meme_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = osea.78.a
+	}
+}
+
+country_event = { #domestic sytuation very bad
+	id = osea.79
+	title = osea.79.t
+	desc = osea.79.d
+	picture = GFX_report_event_belka_meme_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = osea.79.a
+		country_event = { id = osea.80 days = 1 }
+	}
+}
+
+country_event = { #we are forced to make peace
+	id = osea.80
+	title = osea.80.t
+	desc = osea.80.d
+	picture = GFX_report_event_belka_meme_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = osea.80.a
+		custom_effect_tooltip = ose_lost_war_coz_civilians_have_skill_issue
+		set_global_flag = ose_lost_belkan_war
+		hidden_effect = {
+			BLK = {
+				transfer_state = 269
+				transfer_state = 296 
+				transfer_state = 357 
+				transfer_state = 215
+				transfer_state = 229 
+				transfer_state = 324
+				transfer_state = 211
+				transfer_state = 604
+				white_peace = SAP
+				white_peace = OSE
+			}
+			UST = {
+				leave_faction = yes
+			}
+		}
+	}
+}
+
 ### POLITICKS ###
 
 country_event = { # Which chamber to introduce bill in? (Incomplete)

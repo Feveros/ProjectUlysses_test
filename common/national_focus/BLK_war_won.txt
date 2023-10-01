@@ -477,6 +477,7 @@ shared_focus = {
 			remove_ideas = BLK_expand_supply_idea
 			remove_ideas = BLK_woman_in_industry_idea
 			remove_ideas = BLK_build_up_navy_idea
+			remove_ideas = BLK_overspending_for_military_2
 		}
     }
     search_filters = { }

@@ -91,8 +91,31 @@ on_actions = {
 				limit = {
 					has_global_flag = belkan_war_is_happening
 					surrender_progress > 0.2
+					is_ai = yes
+					has_war_with = OSE
 				}
 				country_event = { id = south_belka.2 days = 7 }
+			}
+			if = {
+				limit = {
+					has_global_flag = belkan_war_is_happening
+					is_ai = yes
+					has_war_with = OSE
+					OR = {
+						AND = {
+							has_country_flag = BLK_belkan_war_collapse_AI_flag
+							surrender_progress > 0.25
+						}
+						AND = {
+							surrender_progress > 0.15
+							NOT = {
+								controls_state = 302
+								controls_state = 364
+							}
+						}
+					}
+				}
+				country_event = { id = south_belka.4 }
 			}
 			if = {
 				limit = {

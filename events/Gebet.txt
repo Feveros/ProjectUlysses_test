@@ -428,3 +428,16 @@ country_event = { # Faulmann Raid (Belkan Perspective)
         add_war_support = -0.01
 	}
 }
+
+country_event = {
+	id = gebet_belkan_war.5
+	title = gebet_belkan_war.5.t
+	desc = gebet_belkan_war.5.desc
+	picture = xxx
+	
+	is_triggered_only = yes
+
+	option = {
+		name = gebet_belkan_war.5.a
+	}
+}

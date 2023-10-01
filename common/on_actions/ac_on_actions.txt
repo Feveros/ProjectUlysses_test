@@ -86,6 +86,7 @@ on_actions = {
 						is_ai = yes
 					}
 					load_oob = "OSE_land_ai"
+					add_ideas = ose_small_ai_buff
 				}
 				country_event = {
 					id = osea.30

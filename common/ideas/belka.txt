@@ -1108,6 +1108,48 @@ ideas = {
 			}
 		}
 		
+		BLK_eco_crisis_for_ai = {
+			picture = usa_great_depression_3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.5
+				conscription_factor = -0.5
+				
+				consumer_goods_factor = 0.5
+				production_speed_industrial_complex_factor = -1
+				production_speed_arms_factory_factor = -1
+				stability_factor = -0.5
+				war_support_factor = -0.5
+				production_factory_max_efficiency_factor = -1
+				production_factory_efficiency_gain_factor = -1
+				industrial_capacity_factory = -1
+				industrial_capacity_dockyard = -1
+			}
+		}
+		BLK_eco_crisis_army_for_ai = {
+			picture = generic_army_problems
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.5
+				army_attack_factor = -0.5
+				army_armor_attack_factor = -0.5
+				army_defence_factor = -0.5
+				army_morale_factor = -0.5
+			}
+		}
+		
 		BLK_repair_squads_idea = {
 			picture = GFX_idea_tot_economic_mobilisation
 			allowed = {
@@ -1553,7 +1595,6 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_factory_max_efficiency_factor = -0.9
 				industrial_capacity_factory = -0.9
 				industrial_capacity_dockyard = -0.9
 				production_speed_buildings_factor = -0.75
@@ -1574,7 +1615,7 @@ ideas = {
 				industry_free_repair_factor = 0.5
 				industry_repair_factor = 0.5
 				production_speed_buildings_factor = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.1
 			}
 		}
 	}

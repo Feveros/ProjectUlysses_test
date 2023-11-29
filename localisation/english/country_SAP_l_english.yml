@@ -1,0 +1,41 @@
+﻿l_english:
+
+ ### NATIONAL FOCUSES
+ 
+ ### IDEAS
+ 
+ ### DECISION CATEGORIES
+ 
+ ### DECISIONS
+ 
+ ### EVENTS
+
+ ### BOP
+ SAP_power_balance: "Sapin Government Control"
+ SAP_balance_range: "Shared Power"
+ # Republican
+ SAP_republicans_side: "Republicans"
+ SAP_republicans_low_control_range: "Low Republican Dominance"
+ SAP_republicans_medium_control_range: "Medium Republican Dominance"
+ SAP_republicans_high_control_range: "High Republican Dominance"
+ SAP_republicans_total_control_range: "Total Republican Dominance"
+ # Monarchist
+ SAP_monarchists_side: "Monarchists"
+ SAP_monarchists_low_control_range: "Low Monarchist Dominance"
+ SAP_monarchists_medium_control_range: "Medium Monarchist Dominance"
+ SAP_monarchists_high_control_range: "High Monarchist Dominance"
+ SAP_monarchists_total_control_range: "Total Monarchist Dominance"
+ 
+ ### TOOLTIPS
+ sap_prepare_for_war_with_belka_tt: "Add §GLevel 1§! §YLand Forts§! along our Western border"
+ sap_north_osean_treaty_organization_tt: "Every §YNorth Osean§! country:"
+ 
+ ### COUNTRY FLAGS
+ 
+ ### DYNAMIC MODIFIERS
+ 
+ ### VARIABLES
+ 
+ ### MISC
+ FACTION_NOTO: "North Osean Treaty Organization"
+ 

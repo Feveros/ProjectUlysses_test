@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_bop_SAP_monarchists_side"
+		textureFile = "gfx/interface/bop/bop_SAP_monarchists_side.png"
+	}
+	spriteType = {
+		name = "GFX_bop_SAP_republicans_side"
+		textureFile = "gfx/interface/bop/bop_SAP_republicans_side.png"
+	}
+}

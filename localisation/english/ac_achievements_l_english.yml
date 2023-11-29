@@ -7,3 +7,9 @@ belka_won_belkan_war_DLP_DESC:0 "As Belka, under rule of DLP, win (1st) Belkan W
 
 uno_reverse_card_DLP_NAME:0 "Uno Reverse Card"
 uno_reverse_card_DLP_DESC:0 "As Belka, under rule of DLP, win (1st) Belkan War before end date of the canon one."
+
+greater_ustio_NAME:0 "Bustio"
+greater_ustio_DESC:0 "As Chauvinist Ustio, after times of martial law, war and conquest, proclaim 2nd Ustian Republic."
+
+merc_ustio_NAME:0 "The Dogs of Round Table" 
+merc_ustio_DESC:0 "As Ustio, proclaim Mercenery Republic"

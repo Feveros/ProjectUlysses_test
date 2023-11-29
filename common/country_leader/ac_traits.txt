@@ -235,4 +235,17 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	### SAP ###
+
+	SAP_traditionalist_militarist = {
+		sprite = 12
+		random = no
+		conscription = 0.01
+		experience_gain_army = 0.05
+		neutrality_drift = 0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

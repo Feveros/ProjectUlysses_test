@@ -197,7 +197,7 @@ country_event = { # 1992 Elections
         name = gebet_election.1.b
         complete_national_focus = GEB_1992_elections
         GEB_ilse_ebner = {
-            remove_country_leader_role = { ideology = democratic }
+            remove_country_leader_role = { ideology = social_democracy }
         }
         GEB_rafael_albrecht = {
             add_country_leader_role = {
@@ -342,12 +342,6 @@ country_event = { # Faulmann Raid (Faulmann's Perspective)
         }
         else = {
             event_target:faulmann_raid_victim = {
-                limit = {
-                    OR = {
-                        has_state_category = large_city
-                        has_state_category = city
-                    }
-                }
                 damage_units = {
                     state = THIS
                     damage = 0.20

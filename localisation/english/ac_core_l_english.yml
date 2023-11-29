@@ -7,6 +7,8 @@
  
  monarchism_drift:0 "Daily Monarchism Support"
  
+ block_cons:0 "\nWhile this §YIdea§! is active, you will §RNot§! be able to change §YConsciption Law§!."
+ 
  ac_special_ideas:0 "Additional Info"
  nuke_lvl_trait:0 "Nuclear Arsenal Level"
  nuke_lvl:0 "Nuclear Arsenal"

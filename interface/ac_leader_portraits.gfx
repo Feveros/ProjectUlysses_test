@@ -266,8 +266,8 @@ spriteTypes = {
 ######### YUKTOBANIA ##############################
 
 	spriteType = {
-		name = "GFX_portrait_YUK_konstantin_antonov"
-		texturefile = "gfx/leaders/YUK/portrait_YUK_konstantin_antonov.png"
+		name = "GFX_portrait_YUK_konstantin_samanov"
+		texturefile = "gfx/leaders/YUK/portrait_YUK_konstantin_samanov.png"
 	}
 
 ######### PERBLA ##################################

@@ -800,6 +800,7 @@ shared_focus = {
 		}
 		add_ideas = tot_economic_mobilisation
 		add_war_support = 0.2
+		set_country_flag = cons_laws_blocked
 	}
 	search_filters = { }
 }

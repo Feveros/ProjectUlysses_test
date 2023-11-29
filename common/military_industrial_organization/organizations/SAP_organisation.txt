@@ -1,0 +1,26 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+SAP_hercules_sistemas_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_SPR_hispano_suiza
+	allowed = {	
+		tag = SAP
+	}
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = SAP } }
+			}
+			FROM = { NOT = { has_war_with = SAP } }
+		}
+	}
+}

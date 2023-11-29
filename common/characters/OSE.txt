@@ -12,6 +12,7 @@ characters = {
 			traits = { hates_yukto }
 			expire="2050.1.1.1"
 			id=-1
+			desc=test
 		}
 	}
 	OSE_tyler_mackenzie = { #liberty leader
@@ -151,6 +152,21 @@ characters = {
 				factor = 1.500
 			}
 		}
+		advisor={
+			slot = army_chief
+			idea_token = OSE_herbert_weisskopf
+			ledger = army
+			allowed = {
+				original_tag = OSE
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
 		
 		field_marshal={
 			traits={ brilliant_strategist logistics_wizard fast_planner thorough_planner }
@@ -169,6 +185,22 @@ characters = {
 				large = GFX_portrait_OSE_kevin_seinosuke
 			}
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = OSE_herbert_weisskopf
+			ledger = army
+			allowed = {
+				original_tag = OSE
+			}
+			traits = {
+				army_entrenchment_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		
+		}
 		field_marshal={
 			traits={ old_guard infantry_officer defensive_doctrine }
 			skill=3
@@ -184,6 +216,21 @@ characters = {
 		portraits={
 			army={
 				large = GFX_portrait_OSE_noah_powell
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = OSE_herbert_weisskopf
+			ledger = army
+			allowed = {
+				original_tag = OSE
+			}
+			traits = {
+				air_airborne_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
 			}
 		}
 		field_marshal={

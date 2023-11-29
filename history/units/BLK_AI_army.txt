@@ -121,26 +121,6 @@ units = {
 		division_template =  "Infanterie-Division"
 		start_experience_factor = 0
 	}
-	division= {
-		location = 511
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0
-	}
-	division= {
-		location = 511
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0
-	}
-	division= {
-		location = 511
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0
-	}
-	division= {
-		location = 511
-		division_template =  "Infanterie-Division"
-		start_experience_factor = 0
-	}
 }
 ############################################################
 division_template = {
@@ -168,12 +148,6 @@ division_template = {
 }
 
 units = {
-	division= {
-		location = 511
-		division_template = "Panzer-Division"
-		start_experience_factor = 0
-		force_equipment_variants = { modern_tank_equipment_1  = { owner = "BLK" } }
-	}
 	division= {
 		location = 511
 		division_template = "Panzer-Division"

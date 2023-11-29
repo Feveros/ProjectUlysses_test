@@ -18,6 +18,7 @@ sub_unit_categories = {
 	category_tanks
 	
 	category_all_infantry
+	category_militia
 	category_light_infantry #leg inf, motor, mobile inf
 	category_heavy_infantry #APC, IFV
 	
@@ -28,6 +29,9 @@ sub_unit_categories = {
 	category_special_forces
 	category_support_battalions
 	category_recon
+	category_mountaineers
+	category_paratroopers
+	category_marines
 
 ###########################################################	
 	category_fighter

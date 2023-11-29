@@ -74,6 +74,7 @@ do_not_waste_units_on_garrison = {
 	enable = {
 		has_global_flag = belkan_war_is_happening
 	}
+	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = garrison
 		value = -100
@@ -104,5 +105,51 @@ ose_kill_weak_belka  = {
 		execution_type = rush  
 		execute_order = yes  
 		manual_attack = yes  
+	}
+}
+
+ose_lend_lease_belka_awwnb = {
+	allowed = {
+		original_tag = OSE
+	}
+
+	enable = {
+		AND = {
+			BLK = {
+				has_war_with = AWW
+			}
+			has_country_flag = ose_gwot_lend_lease_flag
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = BLK
+		value = 100
+	}
+}
+
+ose_intervene_belka_awwnb = {
+	allowed = {
+		original_tag = OSE
+	}
+
+	enable = {
+		AND = {
+			BLK = {
+				has_war_with = AWW
+			}
+			has_country_flag = ose_gwot_interventionist_flag
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = BLK
+		value = 100
 	}
 }

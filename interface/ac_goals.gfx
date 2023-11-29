@@ -28,6 +28,55 @@ spriteTypes = {
 		name = "GFX_focus_generic_purchase_osean_arms"
 		texturefile = "gfx/interface/goals/_generic/focus_generic_purchase_osean_arms.png"
 	}
+	spriteType = {
+		name = "GFX_focus_generic_globe_anea"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_globe_anea.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_globe_osea"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_globe_osea.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_globe_usea"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_globe_usea.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_globe_verusa"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_globe_verusa.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_conflict_ustio_ratio"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_conflict_ustio_ratio.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_diplomacy_osea"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_diplomacy_osea.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_war_belka"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_war_belka.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_question_perbla"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_question_perbla.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_army_expeditionary"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_army_expeditionary.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_army_defensive"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_army_defensive.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_army_internal_security"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_army_internal_security.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_army_palace_guard"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_army_palace_guard.png"
+	}
+
 ################# BELKA #############################
 	spriteType = {
 		name = "GFX_goal_BLK_dlp_won_elections"
@@ -222,6 +271,23 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_OSE_fuel_the_war_engine"
 		texturefile = "gfx/interface/goals/OSE/goal_OSE_fuel_the_war_engine.png"
+	}
+################# SAPIN #############################
+	spriteType = {
+		name = "GFX_goal_SAP_parliamentary_elections"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_parliamentary_elections.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_republican_victory"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_republican_victory.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_monarchist_victory"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_monarchist_victory.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_osea_sapin_treaty_of_reciprocal_assistance"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_osea_sapin_treaty_of_reciprocal_assistance.png"
 	}
 ################# GEBET #############################
 	spriteType = {

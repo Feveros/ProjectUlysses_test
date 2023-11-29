@@ -14,7 +14,7 @@
 		}
 		#remove_trigger = {
 		#	NOT = {
-		#		is_owned_by = CTH
+		#		is_owned_by = xxx
 		#	}
 		#}
 
@@ -26,6 +26,24 @@
 		resistance_decay = -0.3
 		state_resources_factor = -0.2
 		disable_strategic_redeployment = 1
+	}
+	
+	UST_vs_RAT_resistance = {
+		enable = {
+			always = yes
+		}
+		#remove_trigger = {
+		#	NOT = {
+		#		is_owned_by = xxx
+		#	}
+		#}
+
+		icon = GFX_modifiers_empowered_state_resistance
+
+		resistance_target = 0.2
+		resistance_decay = -0.3
+		state_resources_factor = -0.2
+		local_manpower = -0.5
 	}
 	
 	const_amount_cost_rise_modifier = {

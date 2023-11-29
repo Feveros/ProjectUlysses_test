@@ -108,9 +108,9 @@ technologies = {
 		mechanized = {
 			soft_attack = 0.05
 		}
-		amphibious_mechanized = {
-			soft_attack = 0.05
-		}
+		# amphibious_mechanized = {
+		# 	soft_attack = 0.05
+		# }
 		
 		path = {
 			leads_to_tech = improved_infantry_weapons
@@ -219,9 +219,9 @@ technologies = {
 		mechanized = {
 			soft_attack = 0.05
 		}
-		amphibious_mechanized = {
-			soft_attack = 0.05
-		}
+		# amphibious_mechanized = {
+		# 	soft_attack = 0.05
+		# }
 		
 		path = {
 			leads_to_tech = advanced_infantry_weapons
@@ -398,9 +398,9 @@ technologies = {
 		mechanized = {
 			soft_attack = 0.1
 		}
-		amphibious_mechanized = {
-			soft_attack = 0.1
-		}		
+		# amphibious_mechanized = {
+		# 	soft_attack = 0.1
+		# }	
 
 		research_cost = 1.5
 		start_year = 1999
@@ -1210,10 +1210,10 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+		# bicycle_battalion = {
+		# 	defense = 0.05
+		# 	breakthrough = 0.05
+		# }
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
@@ -1238,10 +1238,10 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+		# amphibious_mechanized = {
+		# 	defense = 0.05
+		# 	breakthrough = 0.05
+		# }
 		
 		path = {
 			leads_to_tech = support_weapons2
@@ -1301,10 +1301,10 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+		# bicycle_battalion = {
+		# 	defense = 0.05
+		# 	breakthrough = 0.05
+		# }
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
@@ -1329,10 +1329,10 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+		# amphibious_mechanized = {
+		# 	defense = 0.05
+		# 	breakthrough = 0.05
+		# }
 		
 		path = {
 			leads_to_tech = support_weapons3
@@ -1398,10 +1398,10 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+		# bicycle_battalion = {
+		# 	defense = 0.05
+		# 	breakthrough = 0.05
+		# }
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
@@ -1426,10 +1426,10 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+		# amphibious_mechanized = {
+		# 	defense = 0.05
+		# 	breakthrough = 0.05
+		# }
 		
 		path = {
 			leads_to_tech = support_weapons4
@@ -1482,10 +1482,10 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+		# bicycle_battalion = {
+		# 	defense = 0.05
+		# 	breakthrough = 0.05
+		# }
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
@@ -1510,10 +1510,10 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+		# amphibious_mechanized = {
+		# 	defense = 0.05
+		# 	breakthrough = 0.05
+		# }
 		
 		research_cost = 1.5
 		start_year = 1997

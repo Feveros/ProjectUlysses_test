@@ -14,7 +14,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.3
 				production_factory_efficiency_gain_factor = -0.3
 				production_speed_buildings_factor = -0.2
-				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
 				stability_factor = -0.2
 				war_support_factor = -0.2
 				political_power_factor = -0.2
@@ -34,7 +34,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.1
 				production_speed_arms_factory_factor = 0.15
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				political_power_gain = -0.15
 			}
 		}
@@ -72,7 +72,7 @@ ideas = {
 			}
 			modifier = {
 				research_speed_factor = 0.05
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				political_power_gain = -0.10			
 			}
 			traits = {
@@ -107,7 +107,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 1
+				consumer_goods_expected_value = 1
 				production_factory_max_efficiency_factor = -1
 				industrial_capacity_factory = -1
 				political_power_factor = -1
@@ -168,7 +168,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.2
 				production_factory_efficiency_gain_factor = -0.2
 				production_speed_buildings_factor = -0.15
-				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
 				stability_factor = -0.15
 				war_support_factor = -0.15
 				political_power_factor = -0.15
@@ -189,7 +189,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.15
 				production_factory_efficiency_gain_factor = -0.15
 				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
 				stability_factor = -0.1
 				war_support_factor = -0.1
 				political_power_factor = -0.1
@@ -210,7 +210,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1
 				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				conscription_factor = -0.25
 			}
 		}
@@ -242,7 +242,7 @@ ideas = {
 				political_power_gain = -0.15
 				conscription_factor = -0.25
 				stability_factor = -0.05
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				industrial_capacity_factory = -0.05
 				production_factory_max_efficiency_factor = -0.05
 				production_speed_industrial_complex_factor = -0.1
@@ -262,7 +262,7 @@ ideas = {
 				political_power_gain = -0.2
 				conscription_factor = -0.25
 				stability_factor = -0.1
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
 				industrial_capacity_factory = -0.1
 				production_factory_max_efficiency_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
@@ -304,14 +304,14 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				industrial_capacity_factory = 0.5
-				production_factory_efficiency_gain_factor = 0.5
-				production_speed_buildings_factor = 0.5
+				industrial_capacity_factory = 0.4
+				production_factory_efficiency_gain_factor = 0.4
+				production_speed_buildings_factor = 0.4
 				conscription_factor = 0.25
-				army_org_factor = 0.2
-				army_attack_factor = 0.3
-				army_defence_factor = 0.2
-				consumer_goods_factor = -0.2
+				army_org_factor = 0.15
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				consumer_goods_expected_value = -0.2
 				fuel_gain_factor = 1000
 				army_fuel_consumption_factor = -0.5
 			}
@@ -327,7 +327,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.15
 				stability_factor = 0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.05
 				production_speed_industrial_complex_factor = 0.1
@@ -345,7 +345,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.2
 				stability_factor = 0.1
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
 				industrial_capacity_factory = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				production_speed_industrial_complex_factor = 0.2
@@ -364,7 +364,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.5
 				stability_factor = -0.1
-				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.2
 				production_speed_industrial_complex_factor = 0.2
 				production_speed_arms_factory_factor = 0.2
 				industrial_capacity_factory = 0.5
@@ -637,7 +637,7 @@ ideas = {
 				industrial_capacity_factory = 0.2
 				production_speed_arms_factory_factor = 0.7
 				production_speed_buildings_factor = -0.5
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				political_power_gain = -0.2
 				production_factory_max_efficiency_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.1
@@ -714,7 +714,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.05
@@ -934,7 +934,7 @@ ideas = {
 				political_power_gain = -0.5
 				conscription_factor = -0.25
 				stability_factor = -0.1
-				consumer_goods_factor = 0.2
+				consumer_goods_expected_value = 0.2
 				production_speed_industrial_complex_factor = -0.2
 				production_speed_arms_factory_factor = -0.2
 				industrial_capacity_factory = -0.5
@@ -956,7 +956,7 @@ ideas = {
 				political_power_gain = -0.5
 				conscription_factor = -0.25
 				
-				consumer_goods_factor = 0.2
+				consumer_goods_expected_value = 0.2
 				production_speed_industrial_complex_factor = -0.6
 				production_speed_arms_factory_factor = -0.6
 				stability_factor = -0.2
@@ -980,7 +980,7 @@ ideas = {
 				political_power_gain = -0.5
 				conscription_factor = -0.25
 				
-				consumer_goods_factor = 0.25
+				consumer_goods_expected_value = 0.25
 				production_speed_industrial_complex_factor = -0.7
 				production_speed_arms_factory_factor = -0.7
 				stability_factor = -0.3
@@ -1004,7 +1004,7 @@ ideas = {
 				political_power_gain = -0.5
 				conscription_factor = -0.5
 				
-				consumer_goods_factor = 0.25
+				consumer_goods_expected_value = 0.25
 				production_speed_industrial_complex_factor = -0.8
 				production_speed_arms_factory_factor = -0.8
 				stability_factor = -0.4
@@ -1028,7 +1028,7 @@ ideas = {
 				political_power_gain = -0.5
 				conscription_factor = -0.5
 				
-				consumer_goods_factor = 0.5
+				consumer_goods_expected_value = 0.5
 				production_speed_industrial_complex_factor = -1
 				production_speed_arms_factory_factor = -1
 				stability_factor = -0.5
@@ -1121,7 +1121,7 @@ ideas = {
 				political_power_gain = -0.5
 				conscription_factor = -0.5
 				
-				consumer_goods_factor = 0.5
+				consumer_goods_expected_value = 0.5
 				production_speed_industrial_complex_factor = -1
 				production_speed_arms_factory_factor = -1
 				stability_factor = -0.5
@@ -1161,7 +1161,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				industry_free_repair_factor = 0.5
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
 			}
 		}
 		
@@ -1251,7 +1251,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_supply_node_factor = 5
-				consumer_goods_factor = -0.50
+				consumer_goods_expected_value = -0.50
 			}
 		}
 		
@@ -1300,7 +1300,7 @@ ideas = {
 				industrial_capacity_factory = -0.9
 				industrial_capacity_dockyard = -0.9
 				production_speed_buildings_factor = -0.75
-				consumer_goods_factor = 0.4
+				consumer_goods_expected_value = 0.4
 				stability_factor = -0.3
 				political_power_factor = -0.25
 			}
@@ -1441,7 +1441,7 @@ ideas = {
 			modifier = {
 				production_factory_max_efficiency_factor = 0.5
 				production_factory_efficiency_gain_factor = 0.5
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
 				industrial_capacity_factory = 0.75
 			}
 		}
@@ -1455,7 +1455,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 0.5
+				consumer_goods_expected_value = 0.5
 				production_speed_industrial_complex_factor = -1
 				production_speed_arms_factory_factor = -1
 				production_factory_max_efficiency_factor = -1
@@ -1598,7 +1598,7 @@ ideas = {
 				industrial_capacity_factory = -0.9
 				industrial_capacity_dockyard = -0.9
 				production_speed_buildings_factor = -0.75
-				consumer_goods_factor = 0.20
+				consumer_goods_expected_value = 0.20
 				political_power_factor = -0.25
 			}
 		}
@@ -1615,7 +1615,7 @@ ideas = {
 				industry_free_repair_factor = 0.5
 				industry_repair_factor = 0.5
 				production_speed_buildings_factor = 0.1
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
 			}
 		}
 	}

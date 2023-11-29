@@ -20,12 +20,12 @@ air_wings = {
 	481 = { 
 		# 1st Pursuit Group 
 		# 8th Pursuit Group 
-		small_plane_airframe_0 =  {
+		small_plane_airframe_1 =  {
 			owner = "OSE" 
 			amount = 72
 			version_name = "P-26A"
 		}
-		small_plane_airframe_0 =  {
+		small_plane_airframe_1 =  {
 			owner = "OSE" 
 			amount = 72
 			version_name = "P-26A"
@@ -41,7 +41,7 @@ air_wings = {
 
 	481 = { 
 		# 20th Pursuit Group 
-		small_plane_airframe_0 =  {
+		small_plane_airframe_1 =  {
 			owner = "OSE" 
 			amount = 96
 			version_name = "P-26A"
@@ -56,7 +56,7 @@ air_wings = {
 
 	481 = { 
 		# 18th Pursuit Group 
-		small_plane_airframe_0 =  {
+		small_plane_airframe_1 =  {
 			owner = "OSE" 
 			amount = 48
 			version_name = "P-26A"
@@ -71,7 +71,7 @@ air_wings = {
 
 	481 = { 
 		# 16th Pursuit Group 
-		small_plane_airframe_0 =  {
+		small_plane_airframe_1 =  {
 			owner = "OSE" 
 			amount = 96
 			version_name = "P-26A"
@@ -131,7 +131,7 @@ instant_effect = {
 		equipment = {
 			type = small_plane_airframe_1
 			creator = "OSE" 
-			version_name = "P-35A"
+			version_name = "P-26A"
 		}
 		requested_factories = 1
 		progress = 0.15

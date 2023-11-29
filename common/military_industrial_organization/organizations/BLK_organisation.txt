@@ -1,0 +1,21 @@
+
+
+########    ###    ##    ## ##    ##  ######  
+   ##      ## ##   ###   ## ##   ##  ##    ## 
+   ##     ##   ##  ####  ## ##  ##   ##       
+   ##    ##     ## ## ## ## #####     ######  
+   ##    ######### ##  #### ##  ##         ## 
+   ##    ##     ## ##   ### ##   ##  ##    ## 
+   ##    ##     ## ##    ## ##    ##  ######  
+
+BLK_Man_organisation = {
+	include = generic_medium_tank_organization
+	icon = BLK_MAN
+	
+	allowed = {
+		original_tag = BLK
+	}
+	
+	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank mio_cat_eq_all_armor_transport }
+	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules }
+}

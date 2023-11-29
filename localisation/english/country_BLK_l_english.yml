@@ -356,22 +356,22 @@
  
  ############# WAR LOST #############
  
- BLK_war_lost:0 "It's Over"
- BLK_war_lost_desc:0 "xxx"
+ BLK_war_lost:0 "Humiliation"
+ BLK_war_lost_desc:0 "Our glorious nation has fallen from power. The military is in tatters, our economy is worse than it was before, and now the last asset we had, our military, has been shattered. The people's hope is thin for the future."
  BLK_shatered_army:0 "Shattered Army"
- BLK_shatered_army_desc:0 "xxx"
+ BLK_shatered_army_desc:0 "Our army has suffered monumental casualties as a result of the war. We nearly have no men left in our army, and billions of dollars worth of equipment has been lost or destroyed. The once great army of Belka is no more."
  BLK_shatered_industry:0 "Shattered Industry"
- BLK_shatered_industry_desc:0 "xxx"
+ BLK_shatered_industry_desc:0 "War and devastation across our country has ruined almost all of our production facilities, rendering us unable to produce any kind of good or provide even the simplest services. The people have retreated into subsistence to survive."
  BLK_shatered_pride:0 "Shattered Pride"
- BLK_shatered_pride_desc:0 "xxx"
+ BLK_shatered_pride_desc:0 "Belkan patriotism and nationalism is nonexistent anymore. Being Belkan is among the least desirable peoples to be, as their nation is but a pitiful shell of itself."
  BLK_enforce_peace_requirements:0 "Enforce Peace Requirements"
- BLK_enforce_peace_requirements_desc:0 "xxx"
+ BLK_enforce_peace_requirements_desc:0 "Having lost the war, the Allied Forces have drawn up a list of requirements for our nation to abide by from the future. Powerless to refuse, we have no choice but to implement these demands. Starting off, we will now have severe limitations upon our army, navy, and industry, to prevent us from amassing a force that could threaten our neighbors again."
  BLK_disband_DLP:0 "Disband DLP"
- BLK_disband_DLP_desc:0 "xxx"
+ BLK_disband_DLP_desc:0 "Another clause of this treaty, the DLP will be indefinitely disbanded, and all members of it will be blacklisted from any kind of elected position in the future. Blaming them as the ones who caused this war, they will be removed from our government promptly."
  BLK_hold_elections:0 "New Elections"
- BLK_hold_elections_desc:0 "xxx"
+ BLK_hold_elections_desc:0 "Following the removal of the DLP, new snap elections have been called, albeit heavily monitored by the Allies. The last remaning political group, the Monarchists, are likely to win as the previously governing parties are all but extinct now."
  BLK_return_of_the_old:0 "Return Of The Old"
- BLK_return_of_the_old_desc:0 "xxx"
+ BLK_return_of_the_old_desc:0 "Belka's monarchy has been restored to the throne, as possibly the last bastion of stability in the nation, the King has a large task ahead of him to rebuild Belka from the ground up, from both the war and the depression, all while the Allied Forces breathe down his neck. However, the King has sworn that he plans to do all he can to restore Belka peacefully, and he seems to have the faith of the people behind him."
 
  
  ############ WAR WON ##################

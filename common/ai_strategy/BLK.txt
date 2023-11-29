@@ -61,6 +61,7 @@ do_not_waste_units_on_garrison = {
 	enable = {
 		always = yes
 	}
+	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = garrison
 		value = -100

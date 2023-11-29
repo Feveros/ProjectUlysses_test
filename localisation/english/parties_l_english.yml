@@ -69,7 +69,7 @@
  religious_nationalism_desc:0 "§8Religious Nationalism§! is a type of nationalism that is affiliated with religion, which primarily focuses on the internal politics of society, such as legislating civil and criminal laws that reflect a specific religious outlook and the role of religion in political and social life."
 
  belkan_liberal_democratic_party:0 "Democratic Liberal Party"
- belkan_liberal_democratic_party_desc:0 "xxx"
+ belkan_liberal_democratic_party_desc:0 "Formally founded by Belkan politician Berthold Lehmann in 1970, the Belkan §8Democratic Liberal Party§! is a broad coalition party for Belka's far-right. Formed out of a need for unity within the fringe right, and propped up by Lehmann's assets, the DLP has been the cornerstone of the Belkan far-right movement for the past two decades. Espouting authoritarian, nationalist beliefs, the DLP garnered much of it's support through Lehmann's empahisis on cooperation and unity, allowing the party to become a formidable force against it's oppositions. This in turn has become a weakness however, and as the DLP has grown more popular, it has also grown more divided, with only the core tenents of Belkan nationalism keeping the party together.
  
 #####################################################################
  
@@ -92,7 +92,7 @@
  stratocracy:0 "Stratocracy"
  stratocracy_desc:0 "§gStratocracy§! is a form of government headed by military chiefs. The branches of government are administered by military forces, the government is legal under the laws of the jurisdiction at issue, and is usually carried out by military workers."
 
- awwnb_ideology:0 "AWWNB"
+ awwnb_ideology:0 "A World With No Boundaries"
  awwnb_ideology_desc:0 ""Territories, peoples, authorities...\nall will be liberated. This is the new state, §g'A World With No Boundaries'§! will create. Neither nations nor nationalities have meaning. We will erase these unnecessary borders."\n\n§Y― Joshua Bristow§!"
 
 ######################################################################
@@ -136,15 +136,14 @@
  PBL_monarchism_party:0 "Perblan Royal Family"
 
 ### UST ###
- UST_communism_party:0 "xxx"
- UST_communism_party_long:0 "xxx"
- UST_democratic_party:0 "xxx"
- UST_fascism_party:0 "xxx"
- UST_fascism_party_long:0 "xxx"
- UST_fascism_party_radical:0 "xxx"
- UST_fascism_party_radical_long:0 "xxx"  
- UST_neutrality_party:0 "xxx"
- UST_neutrality_party_long:0 "xxx" 
+ UST_communism_party:0 "Left"
+ UST_democratic_party:0 "FEJ"
+ UST_democratic_party_long:0 "Freedom, Equality, Justice"
+ UST_fascism_party:0 "Falangs"
+ UST_neutrality_party:0 "New Coalition"
+ UST_neutrality_coalition:0 "FEJ-F Coalition"
+ UST_neutrality_coalition_long:0 "Freedom, Equality, Justice - Falangs Coalition"
+ UST_monarchism_party:0 "Non Existent"
 
 ### BLK ###
 # DEMOCRATIC #
@@ -169,11 +168,14 @@
 # DEMOCRATIC #
  OSE_democratic_party:0 "Unity Party"
  OSE_liberty_party:0 "Liberty Party"
+  OSE_democratic_party_long:0 "Unity Party"
+ OSE_liberty_party_long:0 "Liberty Party"
 # SOCIALISM #
  OSE_communism_party:0 "Socialist Party of Osea"
  OSE_communism_party_long:0 "Socialist Party of Osea"
 # FASCISM #
  OSE_fascism_party:0 "Nationalist Union"
+ OSE_fascism_party_long:0 "Nationalist Union"
  OSE_brotherhood:0 "Osean Brotherhood"
  OSE_brotherhood_long:0 "Osean Brotherhood"
 # NON-ALIGNED #
@@ -181,24 +183,41 @@
  OSE_neutrality_party_long:0 "Osean Defense Forces" 
 # MONARCHISM #
 
+### SAP ###
+# DEMOCRATIC #
+ SAP_democratic_party:0 "FRU(L)"
+ SAP_democratic_party_long:0 "Frente Republicano Unido - Liberals"
+# SOCIALISM #
+ SAP_communism_party:0 "FRU(S)"
+ SAP_communism_party_long:0 "Frente Republicano Unido - Socialists"
+# FASCISM #
+ SAP_fascism_party:0 "FET"
+ SAP_fascism_party_long:0 "Falange Esapiñola Tradicionalista"
+# NON-ALIGNED #
+ SAP_neutrality_party:0 "Fuerzas Armadas Reales"
+ SAP_neutrality_party_long:0 "Fuerzas Armadas Reales de Esapiña"
+# MONARCHISM #
+ SAP_monarchism_party:0 "House Castro"
+ SAP_monarchism_party_long:0 "House Castro"
+
 ### GEB ###
 # DEMOCRATIC #
- GEB_social_democratic_union: "SDU"
- GEB_social_democratic_union_long: "Social Democratic Union"
- GEB_progressive_democratic_party: "PDP"
- GEB_progressive_democratic_party_long: "Progressive Democratic Party"
+ GEB_social_democratic_union:0 "SDU"
+ GEB_social_democratic_union_long:0 "Social Democratic Union"
+ GEB_progressive_democratic_party:0 "PDP"
+ GEB_progressive_democratic_party_long:0 "Progressive Democratic Party"
  # COMMUNISM #
- GEB_gebetian_peoples_party: "GPP"
- GEB_gebetian_peoples_party_long: "Gebetian People's Party"
+ GEB_gebetian_peoples_party:0 "GPP"
+ GEB_gebetian_peoples_party_long:0 "Gebetian People's Party"
  # FASCISM #
- GEB_gebetian_freedom_party: "GFP"
- GEB_gebetian_freedom_party_long: "Gebetian Freedom Party"
+ GEB_gebetian_freedom_party:0 "GFP"
+ GEB_gebetian_freedom_party_long:0 "Gebetian Freedom Party"
  # NON-ALIGNED #
- GEB_progress_and_prosperity_party: "PPP"
- GEB_progress_and_prosperity_party_long: "Progress and Prosperity Party"
+ GEB_progress_and_prosperity_party:0 "PPP"
+ GEB_progress_and_prosperity_party_long:0 "Progress and Prosperity Party"
  # MONARCHISM #
- GEB_national_dignity_party: "NDP"
- GEB_national_dignity_party_long: "National Dignity Party"
+ GEB_national_dignity_party:0 "NDP"
+ GEB_national_dignity_party_long:0 "National Dignity Party"
 
 ### YUK ###
 # SOCIALISM #
@@ -242,4 +261,14 @@
  NPT_old_guard:0 "NDC - Old Guard"
  NPT_old_guard_long:0 "National Defense Council - Old Guard"
 # MONARCHISM #
- 
+
+### DEL ###
+
+DEL_democratic_party:0 "FDM"
+DEL_democratic_party_long:0 "Free Delarus Movement"
+DEL_fascism_party:0 "DL"
+DEL_fascism_party_long:0 "Delarusian Legion"
+DEL_communism_party:0 "AGL"
+DEL_communism_party_long:0 "Anti-Government League"
+DEL_neutrality_party:0 "DAF"
+DEL_neutrality_party_long:0 "Delarusian Armed Forces"

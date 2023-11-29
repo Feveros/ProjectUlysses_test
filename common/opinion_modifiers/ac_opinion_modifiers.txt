@@ -8,8 +8,8 @@
 # trade = yes/no
 
 opinion_modifiers = {
-
 	historical_enemies = { value = -100 }
 	historical_friends = { value = 100 }
 	great_lake_bad_opnion = { value = -100 }
+	considers_threat = { value = -50 }
 }

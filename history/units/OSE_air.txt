@@ -18,11 +18,11 @@ air_wings = {
 	481 = { 
 		# 1st Pursuit Group 
 		# 8th Pursuit Group 
-		fighter_equipment_0 =  {
+		fighter_equipment_1 =  {
 			owner = "OSE" 
 			amount = 72
 		}
-		fighter_equipment_0 =  {
+		fighter_equipment_1 =  {
 			owner = "OSE" 
 			amount = 72
 		}
@@ -36,7 +36,7 @@ air_wings = {
 
 	481 = { 
 		# 20th Pursuit Group 
-		fighter_equipment_0 =  {
+		fighter_equipment_1 =  {
 			owner = "OSE" 
 			amount = 96
 		}
@@ -49,7 +49,7 @@ air_wings = {
 
 	481 = { 
 		# 18th Pursuit Group 
-		fighter_equipment_0 =  {
+		fighter_equipment_1 =  {
 			owner = "OSE" 
 			amount = 48
 		}
@@ -62,7 +62,7 @@ air_wings = {
 
 	481 = { 
 		# 16th Pursuit Group 
-		fighter_equipment_0 =  {
+		fighter_equipment_1 =  {
 			owner = "OSE" 
 			amount = 96
 		}
@@ -90,19 +90,19 @@ air_wings = {
 		}
 	}
 	"OFS Ranger" = {
-		cv_fighter_equipment_0 =  { owner = "OSE" amount = 8 } # historical: 36
+		cv_fighter_equipment_1 =  { owner = "OSE" amount = 8 } # historical: 36
 		cv_CAS_equipment_1 =  { owner = "OSE" amount = 10 } # historical: 15
 		cv_CAS_equipment_1 =  { owner = "OSE" amount = 4 } # historical: 15
 		cv_nav_bomber_equipment_1 =  { owner = "OSE" amount = 8 } # historical: 12			
 	}
 	"OFS Lexington" = {
-		cv_fighter_equipment_0 =  { owner = "OSE" amount = 8 } # historical: 16
+		cv_fighter_equipment_1 =  { owner = "OSE" amount = 8 } # historical: 16
 		cv_CAS_equipment_1 =  { owner = "OSE" amount = 10 } # historical: 30
 		cv_CAS_equipment_1 =  { owner = "OSE" amount = 4 } # historical: 30
 		cv_nav_bomber_equipment_1 =  { owner = "OSE" amount = 8 } # historical: 12
 	}
 	"OFS Saratoga" = {
-		cv_fighter_equipment_0 =  { owner = "OSE" amount = 8 } # historical: 16
+		cv_fighter_equipment_1 =  { owner = "OSE" amount = 8 } # historical: 16
 		cv_CAS_equipment_1 =  { owner = "OSE" amount = 10 } # historical: 30
 		cv_CAS_equipment_1 =  { owner = "OSE" amount = 4 } # historical: 30
 		cv_nav_bomber_equipment_1 =  { owner = "OSE" amount = 8 } # historical: 12
@@ -116,7 +116,7 @@ air_wings = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = cv_fighter_equipment_0
+			type = cv_fighter_equipment_1
 			creator = "OSE" 
 		}
 		requested_factories = 1

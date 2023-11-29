@@ -4,6 +4,7 @@ add_namespace = osea_election
 add_namespace = osea_congress
 add_namespace = osea_glrdc
 add_namespace = osea_belka_land
+add_namespace = osea_gwot
 
 country_event = { #cold war buildup plan
 	id = osea.1
@@ -362,6 +363,37 @@ country_event = { #belka attacks
 
 	option = {
 		name = osea.77.a
+		hidden_effect = {
+			country_event = osea.81
+		}
+	}
+}
+
+country_event = { #belka attacks
+	id = osea.81
+	title = osea.81.t
+	desc = osea.81.d
+	picture = GFX_report_event_belka_meme_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = osea.81.a
+		add_ideas = ose_the_belkan_war
+		activate_mission = ose_domestic_sytuation_opposed_to_war
+	}
+}
+
+country_event = { #belka attacks
+	id = osea.77
+	title = osea.77.t
+	desc = osea.77.d
+	picture = GFX_report_event_belka_meme_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = osea.77.a
 	}
 }
 
@@ -424,7 +456,9 @@ country_event = { #we are forced to make peace
 	}
 }
 
+#################
 ### POLITICKS ###
+#################
 
 country_event = { # Which chamber to introduce bill in? (Incomplete)
 	id = osea_congress.1
@@ -1400,7 +1434,7 @@ country_event = { # Liberty Party Loses Popularity (debug event)
 
 	immediate = {
 		hidden_effect = {
-			osea_party_pop_loss_var = 10
+			set_variable = { osea_party_pop_loss_var = 10 }
 			OSE_liberty_party_pop_loss_effect = yes
 		}
 	}
@@ -1427,5 +1461,38 @@ country_event = { # Congressional/Midterm Elections
 
 	option = {
 		name = osea_election.1.a
+	}
+}
+
+### GREAT WAR ON TERROR ###
+country_event = { # AWWNB rises up in Belka
+	id = osea_gwot.1
+	title = osea_gwot.1.t
+	desc = osea_gwot.1.desc
+	picture = placeholder
+	is_triggered_only = yes
+
+	option = { # Stay out of it
+		name = osea_gwot.1.a
+		add_stability = 0.01
+		add_political_power = 50
+	}
+	option = { # Send aid to the Belkan government
+		name = osea_gwot.1.b
+		add_political_power = -25
+		add_ideas = OSE_gwot_lend_lease
+		set_country_flag = ose_gwot_lend_lease_flag
+	}
+	option = { # Intervene!
+		name = osea_gwot.1.c
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.02
+		add_political_power = -50
+		add_ideas = OSE_gwot_intervention
+		add_ideas = OSE_gwot_lend_lease
+		set_country_flag = ose_gwot_interventionist_flag
+		set_country_flag = ose_gwot_lend_lease_flag
 	}
 }

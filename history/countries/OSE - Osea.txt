@@ -24,6 +24,11 @@ set_war_support = 0.25
 starting_train_buffer = 2
 set_fuel_ratio = 1
 
+add_opinion_modifier = {
+	target = SAP
+	modifier = historical_friends
+}
+
 OSE_congress_startup = yes
 # Senate
 set_variable = { ose_senate_unity_seats = 55 }
@@ -286,7 +291,7 @@ if = {
 		icon = "GFX_USA_CAS1_medium"
 	}
 	create_equipment_variant = {
-		name = "P-35A" #
+		name = "P-25A" #
 		type = small_plane_airframe_1
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
@@ -297,7 +302,7 @@ if = {
 		icon = "GFX_USA_light_plane_4_medium"
 	}
 	create_equipment_variant = {
-		name = "P-36A" #
+		name = "P-26A" #
 		type = small_plane_airframe_1
 		modules = {
 			fixed_main_weapon_slot = light_mg_4x
@@ -376,6 +381,16 @@ if = {
 	create_equipment_variant = {
 		name = "F3F" #
 		type = cv_small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_USA_cv_fighter1_medium"
+	}
+	create_equipment_variant = {
+		name = "F4F" #
+		type = cv_small_plane_airframe_1
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
 			engine_type_slot = engine_2_1x

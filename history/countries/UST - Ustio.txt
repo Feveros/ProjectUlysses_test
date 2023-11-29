@@ -22,9 +22,13 @@ set_stability = 0.85
 set_war_support = 0.35
 
 add_ideas = {
-	UST_enduring_spirit
-
+	UST_militia_army
+	UST_undeveloped
+	UST_freedom
+	UST_ratio_nationalists
 }
+
+set_country_flag = cons_laws_blocked
 
 ######################################
 

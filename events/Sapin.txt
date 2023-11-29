@@ -1,0 +1,398 @@
+add_namespace = sapin
+add_namespace = sapin_politics
+add_namespace = sapin_election
+add_namespace = sapin_diplomacy
+add_namespace = sapin_civil_war
+
+country_event = { #sapinish parliamentary elections
+	id = sapin_politics.1
+	title = sapin_politics.1.t
+	desc = sapin_politics.1.desc
+	picture = placeholder
+	
+	is_triggered_only = yes
+
+	option = { # Republicans Win
+		name = sapin_politics.1.a
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+	}
+	option = { # Monarchists Win
+		name = sapin_politics.1.b
+		set_politics = {
+			ruling_party = monarchism
+			elections_allowed = yes
+		}
+	}
+}
+
+country_event = { #Prince of Sapin (Ernesto castro) grows up
+	id = sapin.1
+	title = sapin.1.t
+	desc = sapin.1.desc
+	picture = placeholder
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			SAP_ernesto_castro = {
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology=constitutional_monarchy 
+						traits = { }
+						expire="2050.1.1.1"
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology=liberalism 
+						traits = { }
+						expire="2050.1.1.1"
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology=democratic_socialism 
+						traits = { }
+						expire="2050.1.1.1"
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology=religious_nationalism 
+						traits = { }
+						expire="2050.1.1.1"
+					}
+				}
+				add_country_leader_role = {
+					promote_leader = yes
+					country_leader = {
+						ideology=conservatism_na 
+						traits = { }
+						expire="2050.1.1.1"
+					}
+				}
+			}
+		}
+	}
+
+	option = { # If Fascist Regent
+		name = sapin.1.a
+		trigger = {
+			SAP_alphonso_espinal = {
+				is_political_advisor = yes
+			}
+		}
+		add_country_leader_trait  = falangist_figurehead
+	}
+	option = { # If Democratic Regent
+		name = sapin.1.b
+		trigger = {
+			SAP_domingo_escalona = {
+				is_political_advisor = yes
+			}
+		}
+		add_country_leader_trait  = resolute_social_democrat
+	}
+	option = { # If Monarchist Regent
+		name = sapin.1.c
+		trigger = {
+			SAP_ramira_arguijo = {
+				is_political_advisor = yes
+			}
+		}
+		add_country_leader_trait  = staunch_monarchist
+	}
+	option = { # If Militarist Regent
+		name = sapin.1.desc
+		trigger = {
+			SAP_raul_de_haro = {
+				is_political_advisor = yes
+			}
+		}
+		add_country_leader_trait  = SAP_traditionalist_militarist
+	}
+}
+
+country_event = { # Ustio-Ratio Situation
+	id = sapin_diplomacy.1
+	title = sapin_diplomacy.1.t
+	desc = sapin_diplomacy.1.desc
+	picture = placeholder
+	
+	is_triggered_only = yes
+
+	option = { # Side with Ustio (Canonical)
+		name = sapin_diplomacy.1.a
+		give_guarantee = UST
+		set_country_flag = sap_sided_with_ustio_flag
+		UST = {
+			country_event  = sapin_diplomacy.2
+		}
+		# For Feveros: Add effects here based on the content for that situation
+	}
+	option = { # Side with Ratio
+		name = sapin_diplomacy.1.b
+		give_guarantee = RAT
+		set_country_flag = sap_sided_with_ustio_flag
+		RAT = {
+			country_event  = sapin_diplomacy.2
+		}
+		# For Feveros: Add effects here based on the content for that situation
+	}
+}
+country_event = { # Sapin sides with us!
+	id = sapin_diplomacy.2
+	title = sapin_diplomacy.2.t
+	desc = sapin_diplomacy.2.desc
+	picture = placeholder
+	
+	is_triggered_only = yes
+
+	option = { # Yippee!
+		name = sapin_diplomacy.2.a
+		add_political_power = 50
+		add_war_support = 0.025
+	}
+}
+country_event = { # The Belka Problem
+	id = sapin_diplomacy.3
+	title = sapin_diplomacy.3.t
+	desc = sapin_diplomacy.3.desc
+	picture = placeholder
+	
+	is_triggered_only = yes
+
+	option = { # Begin war preparations (Canonical)
+		name = sapin_diplomacy.3.a
+		add_timed_idea = {
+			idea = sap_pre_belkan_war_mobilization
+			days = 365
+		}
+	}
+	option = { # Seek peace with the Belkans
+		name = sapin_diplomacy.3.b
+		remove_state_core = 604
+		BLK = {
+			country_event = sapin_diplomacy.4
+		}
+	}
+}
+country_event = { # Sapin forgoes Futuro claims
+	id = sapin_diplomacy.4
+	title = sapin_diplomacy.4.t
+	desc = sapin_diplomacy.4.desc
+	picture = placeholder
+	
+	is_triggered_only = yes
+
+	option = {
+		name = sapin_diplomacy.4.a
+		add_stability = 0.01
+	}
+}
+country_event = { # Our friends in Oured
+	id = sapin_diplomacy.5
+	title = sapin_diplomacy.5.t
+	desc = sapin_diplomacy.5.desc
+	picture = placeholder
+	
+	is_triggered_only = yes
+
+	option = { # We stand by our historic ally
+		name = sapin_diplomacy.5.a
+		set_country_flag = sap_stayed_with_osea_flag
+		OSE =  {
+			news_event = sapin_diplomacy.6
+		}
+	}
+	option = { # We must go on our own path
+		name = sapin_diplomacy.5.a
+		set_country_flag = sap_on_its_own_path_flag
+		remove_opinion_modifier = {
+			target = OSE
+			modifier = historical_friends
+		}
+		OSE =  {
+			news_event = sapin_diplomacy.7
+		}
+	}
+}
+news_event = { # Sapin announces further cooperation with Osea
+	id = sapin_diplomacy.6
+	title = sapin_diplomacy.6.t
+	desc = sapin_diplomacy.6.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Good news!
+		name = sapin_diplomacy.6.a
+	}
+}
+news_event = { # Sapin announces independent foreign policy
+	id = sapin_diplomacy.7
+	title = sapin_diplomacy.7.t
+	desc = sapin_diplomacy.7.desc
+	picture = placeholder
+	
+	is_triggered_only = yes
+
+	option = { # Not good...
+		name = sapin_diplomacy.7.a
+		remove_opinion_modifier = {
+			target = SAP
+			modifier = historical_friends
+		}
+	}
+}
+news_event = { # Sapin announces NOTO
+	id = sapin_diplomacy.8
+	title = sapin_diplomacy.8.t
+	desc = sapin_diplomacy.8.desc
+	picture = placeholder
+	
+	is_triggered_only = yes
+
+	option = { # Interesting development
+		name = sapin_diplomacy.8.a
+		trigger = {
+			NOT = {
+				original_tag = OSE
+			}
+		}
+	}
+	option = { # This is our backyard!
+		name = sapin_diplomacy.8.b
+		trigger = {
+			original_tag = OSE
+		}
+	}
+}
+country_event = { # Joining NOTO?
+	id = sapin_diplomacy.9
+	title = sapin_diplomacy.9.t
+	desc = sapin_diplomacy.9.desc
+	picture = placeholder
+	
+	is_triggered_only = yes
+
+	option = { # We shall join
+		name = sapin_diplomacy.9.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = opinion@SAP
+				country_exists = SAP
+			}
+		}
+		trigger = {
+			NOT = {
+				is_in_faction = yes
+			}
+		}
+		FROM = {
+			add_to_faction = ROOT
+		}
+	}
+	option = { # Thanks but no thanks
+		name = sapin_diplomacy.9.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = opinion@BLK
+				country_exists = BLK
+			}
+		}
+	}
+}
+country_event = { # Our Perbla Position
+	id = sapin_diplomacy.10
+	title = sapin_diplomacy.10.t
+	desc = sapin_diplomacy.10.desc
+	picture = placeholder
+	
+	is_triggered_only = yes
+
+	option = { # They are a menace
+		name = sapin_diplomacy.10.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = opinion@OSE
+				country_exists = OSE
+			}
+		}
+		send_embargo = PBL
+	}
+	option = { # They are a fellow monarchy
+		name = sapin_diplomacy.10.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = opinion@PBL
+				country_exists = PBL
+			}
+		}
+		give_market_access = PBL
+	}
+}
+country_event = { # Our Border Policy
+	id = sapin_diplomacy.11
+	title = sapin_diplomacy.11.t
+	desc = sapin_diplomacy.11.desc
+	picture = placeholder
+	
+	is_triggered_only = yes
+
+	option = { # Loosen our immigration restrictions
+		name = sapin_diplomacy.11.a
+		add_ideas = sap_increased_immigration
+	}
+	option = { # Tighten our immigration restrictions
+		name = sapin_diplomacy.11.b
+		add_ideas = sap_decreased_immigration
+	}
+}
+country_event = { # Republican Revolt
+	id = sapin_civil_war.1
+	title = sapin_civil_war.1.t
+	desc = sapin_civil_war.1.desc
+	picture = placeholder
+	
+	is_triggered_only = yes
+
+	option = { # Stay with government
+		name = sapin_civil_war.1.a
+	}
+	option = { # Join republicans
+		name = sapin_civil_war.1.b
+		SAP_REPUBLICAN_REVOLT = {
+			change_tag_from = ROOT
+		}
+	}
+}
+country_event = { # Monarchist Revolt
+	id = sapin_civil_war.2
+	title = sapin_civil_war.2.t
+	desc = sapin_civil_war.2.desc
+	picture = placeholder
+	
+	is_triggered_only = yes
+
+	option = { # Stay with government
+		name = sapin_civil_war.2.a
+	}
+	option = { # Join republicans
+		name = sapin_civil_war.2.b
+		SAP_MONARCHIST_REVOLT = {
+			change_tag_from = ROOT
+		}
+	}
+}

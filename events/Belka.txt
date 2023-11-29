@@ -294,7 +294,7 @@ country_event = { #Elections
 }
 
 
-################# DLC EVENTS #####################################
+################# DLP EVENTS #####################################
 
 country_event = { #DLP won starting event
 	id = belka_dlp.1
@@ -1060,6 +1060,8 @@ country_event = {
 						}
 					}
 				}
+				load_focus_tree = belka_belkan_war_lost
+				mark_focus_tree_layout_dirty = yes
 			}
 			SBK = {
 				transfer_state = 228
@@ -1175,7 +1177,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #fev is this ai belka hitting it's crisis? it doesn't have a trigger yet as far as i can tell
 	id = belka_dlp_war.105
 	title = belka_dlp_war.105.t
 	desc = belka_dlp_war.105.d

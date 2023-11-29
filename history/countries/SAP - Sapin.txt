@@ -12,23 +12,42 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 20
-	fascism = 10
-	communism = 0
-	neutrality = 0
-	monarchism = 70
+	democratic = 23
+	fascism = 7
+	communism = 20
+	neutrality = 5
+	monarchism = 45
 }
 
-set_stability = 0.8
+set_stability = 0.5
 set_war_support = 0.4
+
+add_opinion_modifier = {
+	target = OSE
+	modifier = historical_friends
+}
+
+set_power_balance = {
+    id = SAP_power_balance
+}
 
 add_ideas = {
 	disarmed_nation
+
+	sap_dysfunctional_coalition
+	sap_economic_crisis_3
+	sap_nobility_influence_high
+	sap_noble_high_command
 }
 
 ######################################
-
-recruit_character = SAP_na_leader
+## UNIQUE LEADERS ##
+recruit_character = SAP_na_leader # Candida Castro
+recruit_character = SAP_alphonso_espinal
+recruit_character = SAP_domingo_escalona
+recruit_character = SAP_ramira_arguijo
+recruit_character = SAP_raul_de_haro
+## GENERIC LEADERS ##
 recruit_character = SPA_advisor_1
 recruit_character = SPA_advisor_2
 recruit_character = SPA_advisor_3
@@ -36,11 +55,19 @@ recruit_character = SPA_advisor_4
 recruit_character = SPA_advisor_5
 recruit_character = SPA_advisor_6
 
-recruit_character = SAP_army_1
-recruit_character = SAP_army_2
+recruit_character = SAP_alejandro_ramirez
+recruit_character = SAP_sofia_fernandez
+recruit_character = SAP_maria_torres
+recruit_character = SAP_juan_rodriguez
+recruit_character = SAP_pedro_hernandez
+recruit_character = SAP_sofia_lopez
+recruit_character = SAP_miguel_silva
+recruit_character = SAP_gabriella_garcia
+recruit_character = SAP_alejandro_delgado
+recruit_character = SAP_miguel_hernandez
 recruit_character = SAP_army_3
 recruit_character = SAP_army_4
-recruit_character = SAP_chief_air_1
+recruit_character = SAP_carlos_martinez
 recruit_character = SAP_chief_air_2
 recruit_character = SAP_chief_land_1
 recruit_character = SAP_chief_land_2

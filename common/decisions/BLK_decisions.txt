@@ -928,7 +928,7 @@ BLK_public_works_DLP = {
 		cost = 25
 		days_remove = 365
 		modifier = {
-			consumer_goods_factor = -0.05
+			consumer_goods_expected_value = -0.05
 			production_speed_buildings_factor = 0.05
 			political_power_factor = -0.1
 		}
@@ -951,7 +951,7 @@ BLK_public_works_DLP = {
 		cost = 25
 		days_remove = 365
 		modifier = {
-			consumer_goods_factor = -0.05
+			consumer_goods_expected_value = -0.05
 			industrial_capacity_factory = 0.1
 			production_factory_max_efficiency_factor = 0.05
 			production_speed_buildings_factor = 0.1

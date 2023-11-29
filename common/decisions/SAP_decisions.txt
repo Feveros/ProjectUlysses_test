@@ -1,0 +1,106 @@
+SAP_civil_war = {
+	SAP_imminent_republican_revolt = {
+		icon = placeholder
+		is_good = no
+		days_mission_timeout = 100
+		selectable_mission = no
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = sap_imminent_civil_war_flag
+			}
+		}
+		timeout_effect = {
+			set_temp_variable = { urf_popularity = popularity@democratc }
+			add_to_temp_variable = { urf_popularity = popularity@communism }
+			if = {
+				limit = {
+					has_country_flag = sap_urf_split_flag
+				}
+				start_civil_war = {
+					ruling_party = ROOT
+					ideology = communism
+					size = popularity@communism
+					capital = 14
+					keep_unit_leaders_trigger = {
+						NOT = {
+							has_trait = SAP_socialist_sympathies
+						}
+					}
+					set_country_flag = SAP_REPUBLICAN_REVOLT
+				}
+			}
+			else = {
+				start_civil_war = {
+					ruling_party = ROOT
+					ideology = democratic
+					size = urf_popularity
+					capital = 14
+					keep_unit_leaders_trigger = {
+						NOT = {
+							has_trait = SAP_socialist_sympathies
+							has_trait = SAP_liberal_sympathies
+						}
+					}
+					set_country_flag = SAP_REPUBLICAN_REVOLT
+				}
+			}
+		}
+	}
+}
+SAP_national_politics = {
+    SAP_call_1991_elections = {
+		icon = placeholder
+		is_good = yes
+		days_mission_timeout = 200
+		selectable_mission = yes
+		ai_chance = {
+			base = 0
+		}
+		activation = {
+			NOT = {
+				has_completed_focus = sap_1991_parliamentary_elections
+			}
+		}
+		available = {
+			NOT = {
+                has_completed_focus = sap_1991_parliamentary_elections
+            }
+		}
+		cancel_trigger = {
+			always = no
+		}
+		timeout_effect = {
+			complete_national_focus = sap_1991_parliamentary_elections
+            #Call event that removes sap_dysfunctional_coalition after an option for either monarchist or republican victory is selected
+		}
+        complete_effect = {
+            complete_national_focus = sap_1991_parliamentary_elections
+            #Call event that removes sap_dysfunctional_coalition after an option for either monarchist or republican victory is selected
+        }
+	}
+}
+SAP_national_guard = {
+	SAP_mobilize_state_national_guard = {
+		icon = placeholder
+		target_root_trigger = {
+			has_completed_focus = sap_sapinish_national_guard
+		}
+		target_array = SAP.core_states
+        target_trigger = {
+            FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = {
+					has_state_flag = sap_state_mobilized
+				}
+				is_demilitarized_zone = no
+			}
+        }
+		on_map_mode = map_and_decisions_view
+		cost = 25
+        remove_effect = {
+			FROM = {
+				mobilize_infantry = yes
+			}
+        }
+	}
+}

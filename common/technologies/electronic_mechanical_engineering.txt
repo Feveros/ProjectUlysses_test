@@ -963,15 +963,15 @@ technologies = {
 			rocket_engine_1
 		}
 		
-		rocket_artillery = {
-			soft_attack = 0.05
-		}
-		rocket_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		mot_rocket_artillery_brigade = {
-			soft_attack = 0.05
-		}
+		# rocket_artillery = {
+		# 	soft_attack = 0.05
+		# }
+		# rocket_artillery_brigade = {
+		# 	soft_attack = 0.05
+		# }
+		# mot_rocket_artillery_brigade = {
+		# 	soft_attack = 0.05
+		# }
 		motorized_rocket_brigade = {
 			soft_attack = 0.05
 		}
@@ -1027,15 +1027,15 @@ technologies = {
 			rocket_engine_2
 		}
 		
-		rocket_artillery = {
-			soft_attack = 0.05
-		}
-		rocket_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		mot_rocket_artillery_brigade = {
-			soft_attack = 0.05
-		}
+		# rocket_artillery = {
+		# 	soft_attack = 0.05
+		# }
+		# rocket_artillery_brigade = {
+		# 	soft_attack = 0.05
+		# }
+		# mot_rocket_artillery_brigade = {
+		# 	soft_attack = 0.05
+		# }
 		motorized_rocket_brigade = {
 			soft_attack = 0.05
 		}
@@ -1083,15 +1083,15 @@ technologies = {
 			guided_anti_ship_missile
 		}
 		
-		rocket_artillery = {
-			soft_attack = 0.05
-		}
-		rocket_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		mot_rocket_artillery_brigade = {
-			soft_attack = 0.05
-		}
+		# rocket_artillery = {
+		# 	soft_attack = 0.05
+		# }
+		# rocket_artillery_brigade = {
+		# 	soft_attack = 0.05
+		# }
+		# mot_rocket_artillery_brigade = {
+		# 	soft_attack = 0.05
+		# }
 		motorized_rocket_brigade = {
 			soft_attack = 0.05
 		}

@@ -35,6 +35,36 @@ bookmarks = {
 				ose_urgent_war_committee
 			}
 		}
+		"UST"={
+			minor = yes
+			history = "UST_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				UST_militia_army
+				UST_freedom
+				UST_ratio_nationalists
+			}
+			focuses = {
+				UST_mid_1992
+				UST_new_political_coalition
+				UST_guns_for_hire
+			}
+		}
+		"SAP"={
+			minor = yes
+			history = "SAP_GATHERING_STORM_DESC"
+			ideology = monarchism
+			ideas = {
+				sap_dysfunctional_coalition
+				sap_economic_crisis_3
+				sap_nobility_influence_high
+			}
+			focuses = {
+				sap_1991_republican_victory
+				sap_our_place_in_the_world
+				sap_1991_monarchist_victory
+			}
+		}
 		"GEB"={
 			minor = yes
 			history = "GEB_GATHERING_STORM_DESC"

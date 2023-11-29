@@ -1,0 +1,67 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+OSE_general_dynamics_land_systems_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_general_dynamics_land_systems
+	allowed = {	
+		tag = OSE
+	}
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = OSE } }
+			}
+			FROM = { NOT = { has_war_with = OSE } }
+		}
+	}
+	initial_trait = {
+		name = OSE_mio_trait_medium_tank_organization
+
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+
+		equipment_bonus = {
+			reliability = 0.1
+			soft_attack = 0.02
+			hard_attack = 0.03
+			defense = -0.15
+		}
+	}
+	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank mio_cat_eq_all_armor_transport }
+	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules }
+}
+OSE_bae_systems_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_bae_systems
+	allowed = {	
+		tag = OSE
+	}
+	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank mio_cat_eq_all_armor_transport }
+	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules }
+}
+OSE_general_motors_organization = {
+	include = generic_tank_organization
+	icon = GFX_idea_general_motors_organization
+	allowed = {	
+		tag = OSE
+	}
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = OSE } }
+			}
+			FROM = { NOT = { has_war_with = OSE } }
+		}
+	}
+	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank mio_cat_eq_all_armor_transport }
+	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules }
+}

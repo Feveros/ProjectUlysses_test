@@ -9,6 +9,17 @@ country_event = { ### Spawn AAWNB
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			OSE = {
+				country_event = {
+					id = osea_gwot.1
+					days = 7
+				}
+			}
+		}
+	}
+
 	option = {
 		name = awwnb.1.a
 		AWW = {

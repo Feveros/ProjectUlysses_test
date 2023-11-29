@@ -42,7 +42,7 @@ add_ideas = {
 
 #############################
 # Leaders
-recruit_character = YUK_konstantin_antonov
+recruit_character = YUK_konstantin_samanov
 # Political Advisors
 
 # Military Advisors

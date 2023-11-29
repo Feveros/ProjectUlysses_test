@@ -12,10 +12,180 @@ characters = { #placeholder leader
 			expire="2050.1.1.1"
 			id=-1
 		}
+		country_leader = {
+			ideology=liberalism 
+			traits = { }
+			expire="2050.1.1.1"
+			id=-1
+		}
+		country_leader = {
+			ideology=democratic_socialism 
+			traits = { }
+			expire="2050.1.1.1"
+			id=-1
+		}
+		country_leader = {
+			ideology=religious_nationalism 
+			traits = { }
+			expire="2050.1.1.1"
+			id=-1
+		}
+		country_leader = {
+			ideology=conservatism_na 
+			traits = { }
+			expire="2050.1.1.1"
+			id=-1
+		}
+	}
+	SAP_regency_council = { #Sapin Leader
+		name="Cándida Castro"
+		portraits = {
+			civilian = {
+				# large="GFX_portrait_SAP_Candida_Castro"
+			}
+		}
+		# country_leader = {
+		# 	ideology=constitutional_monarchy 
+		# 	traits = { }
+		# 	expire="2050.1.1.1"
+		# 	id=-1
+		# }
+		# country_leader = {
+		# 	ideology=liberalism 
+		# 	traits = { }
+		# 	expire="2050.1.1.1"
+		# 	id=-1
+		# }
+		# country_leader = {
+		# 	ideology=democratic_socialism 
+		# 	traits = { }
+		# 	expire="2050.1.1.1"
+		# 	id=-1
+		# }
+		# country_leader = {
+		# 	ideology=religious_nationalism 
+		# 	traits = { }
+		# 	expire="2050.1.1.1"
+		# 	id=-1
+		# }
+		# country_leader = {
+		# 	ideology=conservatism_na 
+		# 	traits = { }
+		# 	expire="2050.1.1.1"
+		# 	id=-1
+		# }
+	}
+	SAP_ernesto_castro = {
+		name="Ernesto Castro"
+		portraits = {
+			civilian = {
+				#large="GFX_portrait_SAP_Candida_Castro"
+			}
+		}
+		# country_leader = {
+		# 	ideology=constitutional_monarchy 
+		# 	traits = { }
+		# 	expire="2050.1.1.1"
+		# 	id=-1
+		# }
+		# country_leader = {
+		# 	ideology=liberalism 
+		# 	traits = { }
+		# 	expire="2050.1.1.1"
+		# 	id=-1
+		# }
+		# country_leader = {
+		# 	ideology=democratic_socialism 
+		# 	traits = { }
+		# 	expire="2050.1.1.1"
+		# 	id=-1
+		# }
+		# country_leader = {
+		# 	ideology=fascism_ideology 
+		# 	traits = { }
+		# 	expire="2050.1.1.1"
+		# 	id=-1
+		# }
+		# country_leader = {
+		# 	ideology=conservatism_na 
+		# 	traits = { }
+		# 	expire="2050.1.1.1"
+		# 	id=-1
+		# }
 	}
 }
 
 characters = { #placeholder advisors
+	# ADVISORS (STARTS AS ADVISORS)
+	SAP_alphonso_espinal = { #falangist regent
+		name = "Alphonso Espinal"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = alphonso_espinal
+			can_be_fired = no
+			available = {
+				has_completed_focus = sap_regent_alphonso_espinal
+			}
+			traits = { falangist_figurehead }
+		}
+	}
+	SAP_domingo_escalona = { #democratic regent
+		name = "Domingo Escalona"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = domingo_escalona
+			can_be_fired = no
+			available = {
+				always = no # temporary  line
+				#has_completed_focus = sap_regent_domingo_escalona
+			}
+			traits = { resolute_social_democrat }
+		}
+	}
+	SAP_ramira_arguijo = { #monarchist regent
+		name = "Ramira Arguijo"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ramira_arguijo
+			can_be_fired = no
+			available = {
+				always = no # added via event
+			}
+			traits = { staunch_monarchist }
+		}
+	}
+	SAP_raul_de_haro = { #military regent
+		name = "Raúl de Haro"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = raul_de_haro
+			can_be_fired = no
+			available = {
+				always = no # added via event
+			}
+			traits = { SAP_traditionalist_militarist }
+		}
+	}
 	SPA_advisor_1 = {
 		#name = "Advisor 1"
 		portraits = {
@@ -150,22 +320,30 @@ characters = { #placeholder advisors
 	}
 }
 
-characters = { #placeholder army
-	SAP_army_1 = {
-		#name = "Army 1"
+characters = {
+	SAP_alejandro_ramirez = {
+		name = "Alejandro Ramirez"
 		portraits = {
-			civilian = {
-				small ="GFX_portrait_empty_advisor"
+			army = {
+				#small ="GFX_portrait_empty_advisor"
 			}
+		}
+		field_marshal = {
+			traits = { old_guard infantry_officer infantry_leader }
+			skill = 3
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 4
+            logistics_skill = 3
 		}
 		advisor = {
 			slot = high_command
-			idea_token = SAP_army_1
+			idea_token = SAP_alejandro_ramirez
 			allowed = {
 				original_tag = SAP
 			}
 			traits = {
-				army_regrouping_3
+				army_infantry_1
 			}
 			cost = 150
 			ai_will_do = {
@@ -173,26 +351,162 @@ characters = { #placeholder army
 			}
 		}
 	}
-	SAP_army_2 = {
-		#name = "Army 2"
+	SAP_sofia_fernandez = {
+		name = "Sofia Fernandez"
 		portraits = {
-			civilian = {
-				small ="GFX_portrait_empty_advisor"
+			army = {
+				#small ="GFX_portrait_empty_advisor"
 			}
+		}
+		corps_commander = {
+			traits = { SAP_liberal_sympathies armor_officer trait_reckless }
+			skill = 3
+            attack_skill = 3
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 1
+		}
+	}
+	SAP_maria_torres = {
+		name = "Sofia Fernandez"
+		portraits = {
+			army = {
+				#small ="GFX_portrait_empty_advisor"
+			}
+		}
+		corps_commander = {
+			traits = { SAP_socialist_sympathies commando ranger paratrooper }
+			skill = 2
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 2
 		}
 		advisor = {
 			slot = high_command
-			idea_token = SAP_army_2
+			idea_token = SAP_maria_torres
 			allowed = {
 				original_tag = SAP
 			}
 			traits = {
-				air_bomber_interception_1
+				army_commando_1
 			}
 			cost = 150
 			ai_will_do = {
 				factor = 2.000
 			}
+		}
+	}
+	SAP_juan_rodriguez = {
+		name = "Juan Rodriguez"
+		portraits = {
+			army = {
+				#small ="GFX_portrait_empty_advisor"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery }
+			skill = 2
+            attack_skill = 1
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 1
+		}
+	}
+	SAP_pedro_hernandez = {
+		name = "Pedro Hernandez"
+		portraits = {
+			army = {
+				#small ="GFX_portrait_empty_advisor"
+			}
+		}
+		corps_commander = {
+			traits = { SAP_liberal_sympathies organizer }
+			skill = 2
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 1
+		}
+	}
+	SAP_sofia_lopez = {
+		name = "Sofia Lopez"
+		portraits = {
+			army = {
+				#small ="GFX_portrait_empty_advisor"
+			}
+		}
+		corps_commander = {
+			traits = { SAP_socialist_sympathies engineer_officer }
+			skill = 2
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 1
+		}
+	}
+	SAP_miguel_silva = {
+		name = "Miguel Silva"
+		portraits = {
+			army = {
+				#small ="GFX_portrait_empty_advisor"
+			}
+		}
+		field_marshal = {
+			traits = { old_guard logistics_wizard }
+			skill = 2
+            attack_skill = 2
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 3
+		}
+	}
+	SAP_gabriella_garcia = {
+		name = "Sofia Lopez"
+		portraits = {
+			army = {
+				#small ="GFX_portrait_empty_advisor"
+			}
+		}
+		corps_commander = {
+			traits = { SAP_liberal_sympathies engineer_officer }
+			skill = 2
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 1
+		}
+	}
+	SAP_alejandro_delgado = {
+		name = "Alejandro Delgado"
+		portraits = {
+			army = {
+				#small ="GFX_portrait_empty_advisor"
+			}
+		}
+		corps_commander = {
+			traits = { SAP_socialist_sympathies cavalry_officer cavalry_leader cavalry_expert }
+			skill = 2
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 2
+		}
+	}
+	SAP_miguel_hernandez = {
+		name = "Miguel Hernandez"
+		portraits = {
+			army = {
+				#small ="GFX_portrait_empty_advisor"
+			}
+		}
+		corps_commander = {
+			traits = { inflexible_strategist infantry_officer urban_assault_specialist }
+			skill = 3
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 4
+            logistics_skill = 2
 		}
 	}
 	SAP_army_3 = {
@@ -202,7 +516,7 @@ characters = { #placeholder army
 				small ="GFX_portrait_empty_advisor"
 			}
 		}
-		advisor = {
+		corps_commander = {
 			slot = high_command
 			idea_token = SAP_army_3
 			allowed = {
@@ -242,16 +556,16 @@ characters = { #placeholder army
 }
 
 characters = { #placeholder chiefs
-	SAP_chief_air_1 = {
-		#name = "Chief Air 1"
+	SAP_carlos_martinez = {
+		name = "Carlos Martinez"
 		portraits = {
-			civilian = {
-				small ="GFX_portrait_empty_advisor"
+			army = {
+				#small ="GFX_portrait_empty_advisor"
 			}
 		}
 		advisor = {
 			slot = air_chief
-			idea_token = SAP_chief_air_1
+			idea_token = SAP_carlos_martinez
 			allowed = {
 				original_tag = SAP
 			}

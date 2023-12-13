@@ -28,6 +28,10 @@ add_opinion_modifier = {
 	target = SAP
 	modifier = historical_friends
 }
+add_opinion_modifier = {
+	target = UST
+	modifier = historical_friends
+}
 
 OSE_congress_startup = yes
 # Senate

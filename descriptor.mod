@@ -7,7 +7,7 @@ tags={
 	"Gameplay"
 	"National Focuses"
 }
-supported_version="1.12.*"
+supported_version="1.13.*"
 path="mod/ProjectUlyssesMain/"
 
 replace_path="map/strategicregions"

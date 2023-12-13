@@ -287,3 +287,28 @@ NIH= {
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
+
+MST = {
+	color = rgb { 73 5 10 }
+	color_ui = rgb { 73 5 10 }
+}
+
+AQU = {
+	color = rgb { 196 0 38 }
+	color_ui = rgb { 196 0 38 }
+}
+
+BAL = {
+	color = rgb { 0 109 137 }
+	color_ui = rgb { 0 109 137 }
+}
+
+SLA = {
+	color = rgb { 105 60 90 }
+	color_ui = rgb { 105 60 90 }
+}
+
+CSO = {
+	color = rgb { 0 135 81 }
+	color_ui = rgb { 0 135 81 }
+}

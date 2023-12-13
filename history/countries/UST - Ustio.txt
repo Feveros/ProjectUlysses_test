@@ -18,21 +18,29 @@ set_popularities = {
 	neutrality = 16
 }
 
-set_stability = 0.85
-set_war_support = 0.35
+set_stability = 0.58
+set_war_support = 0.36
+
+add_opinion_modifier = {
+	target = OSE
+	modifier = historical_friends
+}
 
 add_ideas = {
 	UST_militia_army
 	UST_undeveloped
 	UST_freedom
 	UST_ratio_nationalists
+
+	nuke_lvl_1 
 }
 
 set_country_flag = cons_laws_blocked
 
 ######################################
 
-recruit_character = UST_grzegorz_brzeczyszczykiewicz
+recruit_character = UST_grzegorz_naruszewicz
+recruit_character = UST_kuba_morkawiecki
 recruit_character = UST_franek_dolas
 recruit_character = UST_hans_kloss
 recruit_character = UST_advisor_1
@@ -44,7 +52,6 @@ recruit_character = UST_army_1
 recruit_character = UST_army_2
 recruit_character = UST_army_3
 recruit_character = UST_army_4
-recruit_character = UST_army_5
 recruit_character = UST_chief_air_1
 recruit_character = UST_chief_land_1
 

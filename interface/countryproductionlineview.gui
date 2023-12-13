@@ -1914,6 +1914,7 @@ guiTypes = {
 		iconType = {
 			name = "has_mio_background"
 			quadTextureSprite ="GFX_production_item_has_mio"
+			alwaystransparent = yes			  
 		}
 
 		iconType = {				    
@@ -3208,7 +3209,7 @@ guiTypes = {
 
 		iconType = {				  
 			name ="production_line_selected"
-			spriteType = "GFX_production_line_selected"
+			spriteType = "GFX_naval_production_line_selected"
 			position = { x= 2 y = 0 }
 		}
 

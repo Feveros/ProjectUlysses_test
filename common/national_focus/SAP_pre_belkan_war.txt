@@ -37,7 +37,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_reinforce_state_secularism
-    icon = placeholder
+    icon = GFX_goal_SAP_reinforce_state_secularism
     cost = 7
     available = {
         
@@ -60,7 +60,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_rein_in_the_church
-    icon = placeholder
+    icon = GFX_goal_SAP_rein_in_the_church
     cost = 7
     available = {
         
@@ -84,7 +84,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_establish_a_public_school_system
-    icon = placeholder
+    icon = GFX_focus_generic_university_1
     cost = 7
     available = {
         
@@ -100,7 +100,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_regent_domingo_escalona
-    icon = placeholder
+    icon = GFX_goal_SAP_regent_alphonso_espinal
     cost = 7
     available = {
         
@@ -117,7 +117,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_increase_taxes_on_nobility
-    icon = placeholder
+    icon = GFX_goal_SAP_increase_taxes_on_nobility
     cost = 7
     available = {
         
@@ -139,7 +139,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_increase_social_spending
-    icon = placeholder
+    icon = GFX_goal_SAP_increase_social_spending
     cost = 7
     available = {
         
@@ -156,7 +156,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_economic_intervention
-    icon = placeholder
+    icon = GFX_goal_SAP_economic_intervention
     cost = 7
     available = {
 
@@ -175,7 +175,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_economic_stimulus
-    icon = placeholder
+    icon = GFX_goal_generic_consumer_goods
     cost = 7
     available = {
 
@@ -193,7 +193,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_the_welfare_state
-    icon = placeholder
+    icon = GFX_goal_SAP_the_welfare_state
     cost = 10
     available = {
 
@@ -282,6 +282,9 @@ shared_focus = {
     id = sap_osea_sapin_treaty_of_reciprocal_assistance
     icon = GFX_goal_SAP_osea_sapin_treaty_of_reciprocal_assistance
     cost = 4
+    ai_will_do = {
+        base = 100
+    }
     mutually_exclusive = { focus = sap_north_osean_treaty_organization }
     available = {
         has_country_flag = sap_stayed_with_osea_flag
@@ -369,7 +372,7 @@ shared_focus = {
 		set_rule = {
             can_send_volunteers = yes
         }
-        add_ideas = sap_expeditionary_army_1
+        add_ideas = generic_expeditionary_army_1
     }
     search_filters = { }
 }
@@ -473,7 +476,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_sapinish_national_guard
-    icon = placeholder
+    icon = GFX_focus_generic_limited_social_mobilization
     cost = 4
     available = {
 
@@ -516,14 +519,14 @@ shared_focus = {
     x = -1
     y = 1
     completion_reward = {
-		add_ideas = sap_defensive_army_1
+		add_ideas = generic_defensive_army_1
     }
     search_filters = { }
 }
 shared_focus = {
     id = sap_reform_the_high_command
     icon = placeholder
-    cost = 4
+    cost = 15
     available = {
 
     }
@@ -565,7 +568,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_promote_catholic_values
-    icon = placeholder
+    icon = GFX_focus_generic_pope
     cost = 7
     prerequisite = { focus = sap_1991_monarchist_victory }
     relative_position_id = sap_1991_monarchist_victory
@@ -585,7 +588,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_open_catholic_schools
-    icon = placeholder
+    icon = GFX_focus_generic_catholic_dominion
     cost = 7
     prerequisite = { focus = sap_promote_catholic_values }
     relative_position_id = sap_promote_catholic_values
@@ -598,7 +601,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_grant_church_autonomy
-    icon = placeholder
+    icon = GFX_focus_generic_vatican_state
     cost = 7
     prerequisite = { focus = sap_promote_catholic_values }
     relative_position_id = sap_promote_catholic_values
@@ -619,7 +622,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_regent_alphonso_espinal
-    icon = placeholder
+    icon = GFX_goal_SAP_regent_domingo_escalona
     cost = 7
     prerequisite = { focus = sap_open_catholic_schools }
     prerequisite = { focus = sap_grant_church_autonomy }
@@ -716,7 +719,7 @@ shared_focus = {
 ### ARMY
 shared_focus = {
     id = sap_modernize_the_royal_army
-    icon = placeholder
+    icon = GFX_goal_SAP_modernize_the_royal_army
     cost = 7
     x = 33
     y = 0
@@ -725,7 +728,37 @@ shared_focus = {
     }
     search_filters = { }
 }
-# Superior Firepower (Rodrigo Martinez)
+shared_focus = {
+    id = sap_protecting_our_infantry
+    icon = GFX_focus_generic_truck
+    cost = 7
+    prerequisite = { focus = sap_promote_rodrigo_martinez }
+    relative_position_id = sap_promote_rodrigo_martinez
+    x = -3
+    y = 1
+    completion_reward = {
+        add_tech_bonus = {
+            bonus = 0.50
+            uses = 1
+            category = cat_imvs
+        }
+    }
+    search_filters = { }
+}
+shared_focus = {
+    id = sap_overwhelming_advance
+    icon = placeholder
+    cost = 7
+    prerequisite = { focus = sap_protecting_our_infantry }
+    relative_position_id = sap_protecting_our_infantry
+    x = 0
+    y = 1
+    completion_reward = {
+        add_ideas = sap_overwhelming_advance_idea
+    }
+    search_filters = { }
+}
+# Mobile Warfare (Rodrigo Martinez)
 shared_focus = {
     id = sap_promote_rodrigo_martinez
     icon = placeholder
@@ -751,7 +784,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_develop_main_battle_tanks
-    icon = placeholder
+    icon = GFX_focus_generic_army_tanks2
     cost = 7
     prerequisite = { focus = sap_promote_rodrigo_martinez }
     relative_position_id = sap_promote_rodrigo_martinez
@@ -768,7 +801,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_our_armored_fist
-    icon = placeholder
+    icon = GFX_goal_generic_army_tanks
     cost = 7
     prerequisite = { focus = sap_promote_rodrigo_martinez }
     relative_position_id = sap_promote_rodrigo_martinez
@@ -820,7 +853,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_aggressive_military_thought
-    icon = placeholder
+    icon = GFX_focus_generic_tank_air_support
     cost = 7
     prerequisite = { focus = sap_concentrate_ifv_production }
     relative_position_id = sap_concentrate_ifv_production
@@ -854,7 +887,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_new_logistical_trucks
-    icon = placeholder
+    icon = GFX_focus_generic_supply_line
     cost = 7
     prerequisite = {
         focus = sap_promote_rodrigo_martinez
@@ -885,7 +918,7 @@ shared_focus = {
     }
     search_filters = { }
 }
-# Grand Battleplan (Sofia Hernandez)
+# Superior Firepower (Sofia Hernandez)
 shared_focus = {
     id = sap_promote_sofia_hernandez
     icon = placeholder
@@ -904,7 +937,7 @@ shared_focus = {
 		add_doctrine_cost_reduction = {
             cost_reduction = 0.5
             uses = 1
-            category = cat_grand_battle_plan
+            category = cat_superior_firepower
         }
     }
     search_filters = { }
@@ -928,7 +961,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_barrel_artillery_advancements
-    icon = placeholder
+    icon = GFX_goal_generic_army_artillery
     cost = 7
     prerequisite = { focus = sap_promote_sofia_hernandez }
     relative_position_id = sap_promote_sofia_hernandez
@@ -953,7 +986,7 @@ shared_focus = {
     x = 0
     y = 2
     completion_reward = {
-        mio:SAP_hercules_sistemas_organization = {
+        mio:SAP_ironclad_artillery_solutions_organization = {
             add_mio_size = 1
             add_mio_funds = 1000
         }
@@ -980,7 +1013,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_the_king_of_battle
-    icon = placeholder
+    icon = GFX_goal_generic_army_artillery2
     cost = 7
     prerequisite = { focus = sap_concentrate_artillery_production }
     relative_position_id = sap_concentrate_artillery_production
@@ -995,7 +1028,7 @@ shared_focus = {
     search_filters = { }
 }
 shared_focus = {
-    id = sap_a_thunder_across_the_land
+    id = sap_las_gran_bombardas
     icon = placeholder
     cost = 7
     prerequisite = { focus = sap_power_of_fire_superiority }
@@ -1012,7 +1045,40 @@ shared_focus = {
     }
     search_filters = { }
 }
-# Mobile Warfare (Juan Carlos Mendoza)
+shared_focus = {
+    id = sap_modern_howitzers
+    icon = GFX_focus_generic_self_propelled_gun
+    cost = 7
+    prerequisite = {
+        focus = sap_promote_sofia_hernandez
+        focus = sap_promote_juan_carlos_mendoza
+    }
+    relative_position_id = sap_promote_sofia_hernandez
+    x = 3
+    y = 1
+    completion_reward = {
+        add_tech_bonus = {
+            bonus = 0.50
+            uses = 1
+            category = artillery
+        }
+    }
+    search_filters = { }
+}
+shared_focus = {
+    id = sap_creeping_barrage
+    icon = GFX_focus_generic_provoke_border_clashes
+    cost = 7
+    prerequisite = { focus = sap_modern_howitzers }
+    relative_position_id = sap_modern_howitzers
+    x = 0
+    y = 1
+    completion_reward = {
+        add_ideas = sap_creeping_barrage_idea
+    }
+    search_filters = { }
+}
+# Grand Battleplan (Juan Carlos Mendoza)
 shared_focus = {
     id = sap_promote_juan_carlos_mendoza
     icon = placeholder
@@ -1028,8 +1094,144 @@ shared_focus = {
 		add_doctrine_cost_reduction = {
             cost_reduction = 0.5
             uses = 1
-            category = cat_superior_firepower
+            category = cat_grand_battle_plan
         }
+    }
+    search_filters = { }
+}
+shared_focus = {
+    id = sap_develop_infantry_defensive_weapons
+    icon = GFX_goal_generic_small_arms
+    cost = 7
+    prerequisite = { focus = sap_promote_juan_carlos_mendoza }
+    relative_position_id = sap_promote_juan_carlos_mendoza
+    x = -1
+    y = 1
+    completion_reward = {
+        add_tech_bonus = {
+            bonus = 0.25
+            uses = 2
+            technology = support_weapons
+            technology = support_weapons2
+            technology = support_weapons3
+            technology = support_weapons4
+        }
+    }
+    search_filters = { }
+}
+shared_focus = {
+    id = sap_better_portable_defenses
+    icon = placeholder
+    cost = 7
+    prerequisite = { focus = sap_promote_juan_carlos_mendoza }
+    relative_position_id = sap_promote_juan_carlos_mendoza
+    x = 1
+    y = 1
+    completion_reward = {
+        add_tech_bonus = {
+            bonus = 0.25
+            uses = 2
+            category = engineers_tech
+        }
+    }
+    search_filters = { }
+}
+shared_focus = {
+    id = sap_concentrate_rifle_production
+    icon = GFX_focus_generic_reorient_production
+    cost = 7
+    prerequisite = { focus = sap_develop_infantry_defensive_weapons }
+    prerequisite = { focus = sap_better_portable_defenses }
+    relative_position_id = sap_promote_juan_carlos_mendoza
+    x = 0
+    y = 2
+    completion_reward = {
+        mio:generic_infantry_equipment_organization = {
+            add_mio_size = 1
+            add_mio_funds = 1000
+        }
+        add_ideas = sap_concentrated_artillery_production
+    }
+    search_filters = { }
+}
+shared_focus = {
+    id = sap_modernize_an_old_doctrine
+    icon = GFX_goal_generic_army_doctrines
+    cost = 7
+    prerequisite = { focus = sap_concentrate_rifle_production }
+    relative_position_id = sap_concentrate_rifle_production
+    x = -1
+    y = 1
+    completion_reward = {
+        add_doctrine_cost_reduction = {
+            cost_reduction = 0.25
+            uses = 2
+            category = cat_grand_battle_plan
+        }
+    }
+    search_filters = { }
+}
+shared_focus = {
+    id = sap_bite_and_hold
+    icon = placeholder
+    cost = 7
+    prerequisite = { focus = sap_concentrate_rifle_production }
+    relative_position_id = sap_concentrate_rifle_production
+    x = 1
+    y = 1
+    completion_reward = {
+        add_ideas = sap_bite_and_hold_idea_1
+        every_unit_leader = {
+            add_defense = 1
+        }
+    }
+    search_filters = { }
+}
+shared_focus = {
+    id = sap_biting_hard
+    icon = placeholder
+    cost = 7
+    prerequisite = { focus = sap_modernize_an_old_doctrine }
+    prerequisite = { focus = sap_bite_and_hold }
+    relative_position_id = sap_concentrate_rifle_production
+    x = 0
+    y = 2
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = sap_bite_and_hold_idea_1
+            add_idea =  sap_bite_and_hold_idea_2
+        }
+        army_experience = 50
+    }
+    search_filters = { }
+}
+shared_focus = {
+    id = sap_forward_observers
+    icon = placeholder
+    cost = 7
+    prerequisite = { focus = sap_promote_juan_carlos_mendoza }
+    relative_position_id = sap_promote_juan_carlos_mendoza
+    x = 3
+    y = 1
+    completion_reward = {
+        add_tech_bonus = {
+            bonus = 0.50
+            uses = 1
+            category = recon_tech
+        }
+    }
+    search_filters = { }
+}
+shared_focus = {
+    id = sap_nighttime_operations
+    icon = placeholder
+    cost = 7
+    prerequisite = { focus = sap_forward_observers }
+    relative_position_id = sap_forward_observers
+    x = 0
+    y = 1
+    completion_reward = {
+        add_ideas = sap_nighttime_operations_idea
     }
     search_filters = { }
 }

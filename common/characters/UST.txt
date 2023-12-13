@@ -1,6 +1,6 @@
 characters = {
-	UST_grzegorz_brzeczyszczykiewicz = { #Ustio Leader
-		name="Grzegorz Brzeczyszczykiewicz"
+	UST_grzegorz_naruszewicz = { #Ustio Leader
+		name="Grzegorz Naruszewicz"
 		portraits = {
 			civilian = {
 				large="GFX_portrait_POL_walery_slawek"
@@ -8,7 +8,7 @@ characters = {
 		}
 		country_leader = {
 			ideology=conservatism
-			traits = { popular_figurehead2 reluctant_veteran }
+			traits = { father_of_the_nation_1 }
 			expire="2050.1.1.1"
 			id=-1
 		}
@@ -34,7 +34,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=fascism_ideology
+			ideology=stratocracy_fascism
 			traits = { }
 			expire="2050.1.1.1"
 			id=-1
@@ -42,19 +42,39 @@ characters = {
 		advisor = {
 			cost = 100
 			slot = theorist
-			idea_token = UST_franek_dolas
+			idea_token = UST_franek_dolas_1
 			allowed = {
 				original_tag = UST
 			}
-			traits = { military_theorist }
+			available = {
+				NOT = { has_idea = UST_franek_dolas_2 }
+			}
+			traits = { military_theorist army_chief_defensive_1 }
+		}
+		advisor = {
+			slot = high_command
+			idea_token = UST_franek_dolas_2
+			allowed = {
+				original_tag = UST
+			}
+			available = {
+				NOT = { has_idea = UST_franek_dolas_1 }
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
 		}
 		field_marshal = {
-			traits = { thorough_planner politically_connected }
-			skill = 3
-			attack_skill = 2
+			traits = { thorough_planner politically_connected adaptable trickster commando war_hero }
+			skill = 5
+			attack_skill = 3
 			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 2
+			planning_skill = 5
+			logistics_skill = 4
 		}
 	}
 	UST_hans_kloss = {
@@ -271,28 +291,6 @@ characters = { #placeholder army
 		advisor = {
 			slot = high_command
 			idea_token = UST_army_4
-			allowed = {
-				original_tag = UST
-			}
-			traits = {
-				army_commando_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 2.000
-			}
-		}
-	}
-	UST_army_5 = {
-		#name = "Army 5"
-		portraits = {
-			civilian = {
-				small ="GFX_portrait_empty_advisor"
-			}
-		}
-		advisor = {
-			slot = high_command
-			idea_token = UST_army_5
 			allowed = {
 				original_tag = UST
 			}

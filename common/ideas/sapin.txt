@@ -205,33 +205,7 @@ ideas = {
                 production_speed_industrial_complex_factor = 0.05
 			}
         }
-        sap_expeditionary_army_1 = {
-            picture = placeholder
-            allowed = {
-                always = yes
-            }
-            removal_cost = 0
-			modifier = {
-                army_attack_factor = 0.05
-                army_defence_factor = 0.05
-                army_speed_factor = 0.05
-                army_morale_factor = 0.05
-                send_volunteer_size = 2
-			}
-        }
-        sap_defensive_army_1 = {
-            picture = placeholder
-            allowed = {
-                always = yes
-            }
-            removal_cost = 0
-			modifier = {
-                army_core_attack_factor = 0.10
-                army_core_defence_factor = 0.10
-                dig_in_speed_factor = 0.10
-                max_dig_in_factor = 0.10
-			}
-        }
+    
         sap_pre_belkan_war_mobilization = {
             picture = placeholder
             allowed = {
@@ -281,6 +255,17 @@ ideas = {
                 cat_imvs = {
 					build_cost_ic = -0.1 instant = yes
 				}
+			}
+        }
+        sap_overwhelming_advance_idea = {
+            picture = placeholder
+            allowed = {
+                always = yes
+            }
+            removal_cost = 0
+			modifier = {
+                army_speed_factor = 0.05
+                army_fuel_consumption_factor = -0.05
 			}
         }
         sap_aggressive_military_thought_idea_1 = {
@@ -360,6 +345,55 @@ ideas = {
                 army_artillery_attack_factor = 0.10
                 army_artillery_defence_factor = 0.10
                 army_leader_start_planning_level = 1
+			}
+        }
+        sap_creeping_barrage_idea = {
+            picture = placeholder
+            allowed = {
+                always = yes
+            }
+            removal_cost = 0
+			modifier = {
+                army_artillery_attack_factor = 0.05
+                experience_gain_artillery_combat_factor = 0.10
+			}
+        }
+        sap_bite_and_hold_idea_1 = {
+            picture = placeholder
+            allowed = {
+                always = yes
+            }
+            removal_cost = 0
+			modifier = {
+                army_defence_factor = 0.05
+                max_planning_factor = 0.05
+                planning_speed = 0.05
+                army_leader_start_defense_level = 1
+			}
+        }
+        sap_bite_and_hold_idea_2 = {
+            picture = placeholder
+            allowed = {
+                always = yes
+            }
+            removal_cost = 0
+			modifier = {
+                army_defence_factor = 0.10
+                max_planning_factor = 0.15
+                planning_speed = 0.15
+                recon_factor_while_entrenched = 0.10
+                army_leader_start_defense_level = 1
+			}
+        }
+        sap_nighttime_operations_idea = {
+            picture = placeholder
+            allowed = {
+                always = yes
+            }
+            removal_cost = 0
+			modifier = {
+                recon_factor = 0.05
+                land_night_attack = 0.10
 			}
         }
     }

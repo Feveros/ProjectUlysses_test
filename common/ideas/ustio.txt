@@ -19,7 +19,7 @@ ideas = {
 				army_infantry_attack_factor = 0.15
 				army_infantry_defence_factor = 0.15
 				training_time_army_factor = 0.25
-				conscription_factor = -0.75
+				conscription_factor = -0.70
 				custom_modifier_tooltip = block_cons
 			}
 		}
@@ -54,7 +54,7 @@ ideas = {
 				war_support_factor = 0.05
 				defensive_war_stability_factor = 0.1
 				surrender_limit = 0.05
-				political_power_factor = 0.2
+				political_power_factor = 0.1
 				drift_defence_factor = 0.5
 			}
 		}
@@ -70,16 +70,50 @@ ideas = {
 			modifier = {
 				stability_weekly = -0.001
 				stability_factor = -0.2
+				war_support_factor = -0.2
 				political_power_gain = -0.25
 				fascism_drift = 0.02
 				democratic_drift = -0.01
 				army_core_defence_factor = -0.25
-				conscription_factor = -0.25
+				conscription_factor = -0.2
 			}
 		}
 	}
 	
 	country = {
+		UST_better_schooling = {
+			picture = hol_liberation
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = -0.1
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.025
+			}
+		}
+		UST_pay_for_museum_bitch = {
+			picture = hol_liberation`
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.25
+				production_speed_buildings_factor = -0.25
+				consumer_goods_expected_value = 0.25
+				stability_weekly = 0.002
+				war_support_weekly = 0.002`
+			}
+		}
 		UST_ratio_nationalists_2 = {
 			picture = hol_liberation
 			allowed = {
@@ -92,10 +126,11 @@ ideas = {
 			modifier = {
 				stability_weekly = -0.001
 				stability_factor = -0.15
+				war_support_factor = -0.15
 				political_power_gain = -0.2
 				fascism_drift = 0.02
 				army_core_defence_factor = -0.2
-				conscription_factor = -0.2
+				conscription_factor = -0.15
 			}
 		}
 		UST_ratio_nationalists_war_1 = {
@@ -364,6 +399,39 @@ ideas = {
 				training_time_army_factor = -0.5
 			}
 		}
+		UST_first_strike = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+				breakthrough_factor = 0.25
+				army_speed_factor = 0.15
+				org_loss_when_moving = -0.1
+				planning_speed = 0.5
+				fascism_drift = 0.05
+			}
+		}
+		RAT_got_attacked_by_ust = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.5
+				army_morale_factor = -0.5
+				army_defence_factor = -0.5
+			}
+		}
 		UST_critical_expenses_1 = {
 			picture = xxx
 			allowed = {
@@ -420,9 +488,57 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.25
 				consumer_goods_expected_value = 0.1
 				political_power_factor = -0.2
-				conscription_factor = -0.25
+				conscription_factor = -0.5
 				communism_drift = 0.02
 				democratic_drift = 0.02
+			}
+		}
+		UST_unstable_economy_2 = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				consumer_goods_expected_value = 0.1
+				political_power_factor = -0.15
+				conscription_factor = -0.5
+			}
+		}
+		UST_unstable_economy_3 = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				political_power_factor = -0.1
+				conscription_factor = -0.5
+			}
+		}
+		UST_unstable_economy_4 = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				political_power_factor = -0.1
 			}
 		}
 		UST_fear_for_freedom = {
@@ -454,27 +570,9 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 				political_power_gain = 0.15
-				communism_drift = 0.03
-				democratic_drift = 0.03
+				communism_drift = 0.02
+				democratic_drift = 0.04
 				party_popularity_stability_factor = 0.5
-			}
-		}
-		UST_first_strike = {
-			picture = xxx
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = no
-			}
-			removal_cost = -1
-			modifier = {
-				army_attack_factor = 0.1
-				breakthrough_factor = 0.25
-				army_speed_factor = 0.15
-				org_loss_when_moving = -0.1
-				planning_speed = 0.5
-				fascism_drift = 0.05
 			}
 		}
 		UST_freedom_fascism_1 = {
@@ -491,7 +589,7 @@ ideas = {
 				war_support_factor = 0.1
 				defensive_war_stability_factor = 0.2
 				surrender_limit = 0.1
-				political_power_factor = 0.25
+				political_power_factor = 0.15
 				drift_defence_factor = 0.5
 			}
 		}
@@ -510,7 +608,7 @@ ideas = {
 				defensive_war_stability_factor = 0.2
 				offensive_war_stability_factor = 0.2
 				surrender_limit = 0.1
-				political_power_factor = 0.25
+				political_power_factor = 0.15
 				drift_defence_factor = 0.5
 				neutrality_drift = 0.2
 			}
@@ -586,7 +684,98 @@ ideas = {
 		}
 	}
 	
-	country = {
+	country = { #Grzegorz ideas
+		UST_loyal_army_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				max_command_power = 50
+				command_power_gain_mult = 0.15
+				max_planning_factor = -0.25
+				planning_speed = -0.25
+				experience_gain_army_factor = 0.25
+				recruitable_population_factor = 0.1
+				war_support_factor = 0.1
+				army_chief_cost_factor = 0.25
+				navy_chief_cost_factor = 0.25
+				air_chief_cost_factor = 0.25
+				high_command_cost_factor = 0.25
+				theorist_cost_factor = 0.25
+			}
+		}
+		UST_church_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				MONTHLY_POPULATION = 0.10
+				political_power_gain = -0.10
+			}
+		}
+		UST_church_idea_2 = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor 0.05
+				MONTHLY_POPULATION = 0.15
+				political_power_gain = -0.15
+				consumer_goods_expected_value = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+		UST_central_bank_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				global_building_slots_factor = -0.1
+				political_power_factor = -0.2
+			}
+		}
+		UST_labor_board_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_start_efficiency_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				communism_acceptance = 25
+				industrial_capacity_factory = -0.05
+			}
+		}
 		UST_social_country_idea = {
 			picture = xxx
 			allowed = {
@@ -597,12 +786,363 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-			    consumer_goods_factor = 0.15
+			    consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				stability_factor = 0.10
-				political_power_gain = 0.1
-				research_speed_factor = 0.1
+				political_power_gain = -0.1
+				research_speed_factor = 0.05
 				industrial_capacity_factory = -0.05
 				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		UST_social_country_abe_act_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			    consumer_goods_factor = 0.01
+				consumer_goods_expected_value = 0.05
+				stability_factor = 0.10
+				political_power_gain = -0.2
+				research_speed_factor = 0.05
+				industrial_capacity_factory = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				recruitable_population_factor = 0.1
+				MONTHLY_POPULATION = 0.2
+			}
+		}
+	}
+	
+	country = { #Kuba ideas
+		UST_liberal_shock_1_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				party_popularity_stability_factor = 0.1
+				opinion_gain_monthly_same_ideology = 0.1
+				democratic_drift = 0.02
+				stability_factor = 0.05
+			}
+		}
+		UST_liberal_shock_2_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				party_popularity_stability_factor = 0.1
+				opinion_gain_monthly_same_ideology = 0.1
+				democratic_drift = 0.02
+				stability_factor = 0.05
+				political_power_gain = 0.15
+				political_advisor_cost_factor = -0.10
+				surrender_limit = 0.05
+			}
+		}
+		UST_liberal_shock_3_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				party_popularity_stability_factor = 0.3
+				opinion_gain_monthly_same_ideology = 0.3
+				democratic_drift = 0.03
+				stability_factor = 0.1
+				political_power_gain = 0.2
+				political_advisor_cost_factor = -0.25
+				surrender_limit = 0.05
+				trade_opinion_factor = 0.25
+				opinion_gain_monthly_factor = 0.25
+				consumer_goods_factor = -0.1
+			}
+		}
+		UST_decen_army_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				command_power_gain_mult = -0.2
+				max_planning_factor = 0.2
+				planning_speed = 0.2
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				defensive_war_stability_factor = 0.1
+				army_chief_cost_factor = -0.1
+				navy_chief_cost_factor = -0.1
+				air_chief_cost_factor = -0.1
+				high_command_cost_factor = -0.1
+				theorist_cost_factor = -0.1
+			}
+		}
+		UST_deregulate_banking_sector_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.15
+				consumer_goods_factor = 0.05
+				global_building_slots_factor = 0.15
+				political_power_gain = 0.1
+			}
+		}
+		UST_outlaw_trade_unions_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = -0.05
+				consumer_goods_expected_value = -0.1
+			}
+		}
+		UST_private_health_care_idea = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			    consumer_goods_factor = -0.2
+				stability_factor = -0.05
+				political_power_factor = 0.1
+				MONTHLY_POPULATION = -0.10
+				industrial_capacity_factory = 0.1
+			}
+		}
+		UST_better_schooling_2 = {
+			picture = hol_liberation
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.15
+				stability_factor = -0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		UST_civil_war_idea_1 = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.5
+				conscription_factor = -0.75
+				pocket_penalty = -0.2
+				army_org_factor = 0.25
+				army_morale_factor = 0.25
+				training_time_army_factor = 0.35
+				stability_factor = -0.5
+				war_support_factor = -0.5
+				political_power_factor = -0.4
+			}
+		}
+		UST_civil_war_idea_2 = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.5
+				conscription_factor = -0.75
+				pocket_penalty = -0.5
+				army_org_factor = 0.25
+				army_morale_factor = 0.25
+				training_time_army_factor = 0.35
+				org_loss_when_moving = -0.15
+				stability_factor = -0.5
+				war_support_factor = -0.5
+				political_power_factor = -0.4
+				surrender_limit = 0.4
+			}
+		}
+		UST_vs_ratio_idea = {
+			picture = generic_democratic_drift_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = RAT
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		UST_flower_offensive = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.75
+				breakthrough_factor = 0.25
+				pocket_penalty = -0.5
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				max_planning_factor = 0.25
+				planning_speed = 0.25
+			}
+		}
+		UST_shatered_economy = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+
+			}
+		}
+		
+		UST_military_occupation_police = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				required_garrison_factor = -0.1
+				compliance_gain = 0.02
+				resistance_damage_to_garrison = -0.1
+				resistance_target = -0.1
+			}
+		}
+		RAT_UST_military_occupation_1 = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				cic_to_overlord_factor = 0.25
+				mic_to_overlord_factor = 0.25
+			}
+		}
+		RAT_UST_military_occupation_2 = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				cic_to_overlord_factor = 0.25
+				mic_to_overlord_factor = 0.25
+				extra_trade_to_overlord_factor = 0.5
+				can_master_build_for_us = 1
+				master_ideology_drift = 0.05
+				autonomy_manpower_share = 0.5
+				autonomy_gain = -0.2
+			}
+		}
+		UST_ratio_autonomy = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.05
+				local_resources_factor = -0.05
+				stability_factor = 0.05
+				recruitable_population_factor = -0.05
+				party_popularity_stability_factor = -0.15
+				communism_acceptance = 25
+			}
+		}
+		UST_deal_with_gebet_aristocracy = {
+			picture = xxx
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.05
+				political_power_cost = 0.15
+				consumer_goods_factor = 0.1
+				stability_factor = 0.05
+				industrial_capacity_factory = -0.05
+				party_popularity_stability_factor = -0.15
+				neutrality_acceptance = 25
 			}
 		}
 	}

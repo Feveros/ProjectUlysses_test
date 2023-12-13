@@ -368,7 +368,7 @@ characters = {
 		}
 	}
 	SAP_maria_torres = {
-		name = "Sofia Fernandez"
+		name = "Maria Torres"
 		portraits = {
 			army = {
 				#small ="GFX_portrait_empty_advisor"

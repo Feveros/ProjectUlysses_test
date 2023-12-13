@@ -46,8 +46,8 @@ bookmarks = {
 			}
 			focuses = {
 				UST_mid_1992
-				UST_new_political_coalition
-				UST_guns_for_hire
+				UST_strike_first
+				UST_army_debate
 			}
 		}
 		"SAP"={

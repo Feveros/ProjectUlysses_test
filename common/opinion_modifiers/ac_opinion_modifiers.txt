@@ -12,4 +12,5 @@ opinion_modifiers = {
 	historical_friends = { value = 100 }
 	great_lake_bad_opnion = { value = -100 }
 	considers_threat = { value = -50 }
+	considers_friend = { value = 50 }
 }

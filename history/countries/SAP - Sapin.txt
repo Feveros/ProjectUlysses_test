@@ -38,6 +38,8 @@ add_ideas = {
 	sap_economic_crisis_3
 	sap_nobility_influence_high
 	sap_noble_high_command
+
+	nuke_lvl_1 
 }
 
 ######################################
@@ -54,7 +56,7 @@ recruit_character = SPA_advisor_3
 recruit_character = SPA_advisor_4
 recruit_character = SPA_advisor_5
 recruit_character = SPA_advisor_6
-
+## MILITARY LEADERS
 recruit_character = SAP_alejandro_ramirez
 recruit_character = SAP_sofia_fernandez
 recruit_character = SAP_maria_torres

@@ -12,3 +12,12 @@ REC_BLK = {
 	color = rgb { 255 204 0 }
 	color_ui = rgb { 255 204 0 }
 }
+
+UST_military_dictat = {
+	color = rgb { 150 17 10 }
+	color_ui = rgb { 150 17 10 }
+}
+PBL_queendom = {
+	color = rgb { 0 60 110 }
+	color_ui = rgb { 0 60 110 }
+}

@@ -157,6 +157,9 @@ ideologies = {
 
 			religious_nationalism = {
 			}
+			
+			stratocracy_fascism = {
+			}
 		}
 
 		dynamic_faction_names = {

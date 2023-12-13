@@ -1,4 +1,10 @@
+add_namespace = ustio_main
+add_namespace = ustio_grzegorz
+add_namespace = ustio_na
+
 add_namespace = ustio
+
+################################################################
 
 country_event = { ### ustio gives up east
 	id = ustio.1
@@ -8,16 +14,336 @@ country_event = { ### ustio gives up east
 
 	is_triggered_only = yes
 
-	option = {
+	option = { ### YES
 		name = ustio.1.a
-		RAT = {
-			transfer_state = 336
-			transfer_state = 376
-			transfer_state = 365
+		set_country_flag = UST_sold_land_to_ratio_flag
+		add_opinion_modifier = {
+			target = RAT
+			modifier = considers_friend 
 		}
-		336 = { add_core_of = RAT remove_core_of = UST }
-		376 = { add_core_of = RAT remove_core_of = UST }
-		365 = { add_core_of = RAT remove_core_of = UST }
-		news_event = { id = ac_news_event.2 days = 1 }
+		hidden_effect = {
+			RAT = {
+				add_opinion_modifier = {
+					target = ust
+					modifier = considers_friend 
+				}
+			}
+		}
+		add_war_support = -0.2
+		add_stability = 0.1
+	}
+	option = { ### NO
+		name = ustio.1.b
+		set_country_flag = UST_not_sold_land_to_ratio_flag
+		add_opinion_modifier = {
+			target = RAT
+			modifier = considers_threat 
+		}
+		hidden_effect = {
+			RAT = {
+				add_opinion_modifier = {
+					target = ust
+					modifier = considers_threat 
+				}
+			}
+		}
+		add_war_support = 0.2
+		add_stability = -0.1
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { ### ustio gets info about Osea idea land for GLRDC
+	id = ustio.2
+	title = ustio.2.t
+	desc = ustio.2.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio.2.a
+	}
+}
+
+country_event = { ### ustio gets land from belka
+	id = ustio.3
+	title = ustio.3.t
+	desc = ustio.3.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio.3.a
+	}
+}
+
+country_event = { ### ustio gets tank div from Belka
+	id = ustio.4
+	title = ustio.4.t
+	desc = ustio.4.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio.4.a
+		load_oob = UST_belkan_units
+	}
+}
+
+########################################################
+
+country_event = { ### starting event
+	id = ustio_main.1
+	title = ustio_main.1.t
+	desc = ustio_main.1.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_main.1.a
+	}
+}
+
+country_event = { ### start making museum event
+	id = ustio_main.2
+	title = ustio_main.2.t
+	desc = ustio_main.2.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_main.2.a
+	}
+}
+
+country_event = { ### museum is DONE
+	id = ustio_main.3
+	title = ustio_main.3.t
+	desc = ustio_main.3.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_main.3.a
+	}
+}
+
+country_event = { ### 1st event about ratio partisants fired after military bases focus
+	id = ustio_main.4
+	title = ustio_main.4.t
+	desc = ustio_main.4.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_main.4.a
+	}
+}
+
+country_event = { ### 2nd event about ratio partisants  fired after deal with partisants focus
+	id = ustio_main.5
+	title = ustio_main.5.t
+	desc = ustio_main.5.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_main.5.a
+	}
+}
+
+country_event = { ### deal with ratio, land is transefred
+	id = ustio_main.6
+	title = ustio_main.6.t
+	desc = ustio_main.6.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_main.6.a
+	}
+}
+
+country_event = { ### START OF ELECTIONS EVENT CHAIN
+	id = ustio_main.7
+	title = ustio_main.7.t
+	desc = ustio_main.7.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_main.7.a
+	}
+}
+
+########## GRZEGORZ ###############
+
+
+country_event = { ### Grzegorz won elections
+	id = ustio_grzegorz.1
+	title = ustio_grzegorz.1.t
+	desc = ustio_grzegorz.1.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_grzegorz.1.a
+	}
+}
+
+country_event = {
+	id = ustio_grzegorz.2
+	title = ustio_grzegorz.2.t
+	desc = ustio_grzegorz.2.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_grzegorz.2.a
+	}
+}
+
+country_event = {
+	id = ustio_grzegorz.3
+	title = ustio_grzegorz.3.t
+	desc = ustio_grzegorz.3.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_grzegorz.3.a
+	}
+}
+
+country_event = {
+	id = ustio_grzegorz.4
+	title = ustio_grzegorz.4.t
+	desc = ustio_grzegorz.4.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_grzegorz.4.a
+	}
+}
+
+######## War with ratio + n/a path ########
+
+country_event = {
+	id = ustio_na.1
+	title = ustio_na.1.t
+	desc = ustio_na.1.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_na.1.a
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		hidden_effect = {
+			RAT = {
+				add_stability = 0.2
+				add_war_support = 0.3
+			}
+		}
+		activate_mission = UST_ratio_war_timer
+	}
+}
+
+country_event = {
+	id = ustio_na.2
+	title = ustio_na.2.t
+	desc = ustio_na.2.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_na.2.a
+		add_war_support = 0.1
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = ustio_na.3
+	title = ustio_na.3.t
+	desc = ustio_na.3.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_na.3.a
+	}
+}
+
+country_event = {
+	id = ustio_na.4
+	title = ustio_na.4.t
+	desc = ustio_na.4.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_na.4.a
+		RAT = {
+			add_timed_idea = { idea = RAT_got_attacked_by_ust days = 14 }
+		}
+	}
+}
+
+country_event = { ### WE WON
+	id = ustio_na.5
+	title = ustio_na.5.t
+	desc = ustio_na.5.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_na.5.a
+		country_event = { id = ustio_na.6 days = 1 } 
+	}
+}
+
+country_event = { ### Domestic sytuation critical after war with Ratio
+	id = ustio_na.6
+	title = ustio_na.6.t
+	desc = ustio_na.6.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio_na.6.a
+		add_ideas = UST_unstable_economy
+		add_ideas = UST_fear_for_freedom
 	}
 }

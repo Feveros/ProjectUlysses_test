@@ -145,6 +145,12 @@ defined_text = {
 		}
 		localization_key = religious_nationalism
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = stratocracy_fascism
+		}
+		localization_key = stratocracy_fascism
+	}
 }
 ##############################################################
 defined_text = {

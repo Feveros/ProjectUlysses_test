@@ -4,6 +4,7 @@ SAP_civil_war = {
 		is_good = no
 		days_mission_timeout = 100
 		selectable_mission = no
+		activation = { has_country_flag = sap_imminent_civil_war_flag }
 		cancel_trigger = {
 			NOT = {
 				has_country_flag = sap_imminent_civil_war_flag
@@ -85,21 +86,21 @@ SAP_national_guard = {
 		target_root_trigger = {
 			has_completed_focus = sap_sapinish_national_guard
 		}
-		target_array = SAP.core_states
+		target_array = ROOT.core_states
         target_trigger = {
-            FROM = {
+			FROM = {
 				is_owned_and_controlled_by = ROOT
 				NOT = {
 					has_state_flag = sap_state_mobilized
 				}
 				is_demilitarized_zone = no
 			}
-        }
+		}
 		on_map_mode = map_and_decisions_view
 		cost = 25
         remove_effect = {
 			FROM = {
-				mobilize_infantry = yes
+				SAP_mobilize_state_national_guard_effect = yes
 			}
         }
 	}

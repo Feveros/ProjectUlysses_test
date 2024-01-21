@@ -109,6 +109,7 @@ recruit_character = BLK_marius_kautz
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	infantry_manpads = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
@@ -202,119 +203,102 @@ if = {
 	limit = {
 		has_dlc = "By Blood Alone"
 	}
-
 	create_equipment_variant = {
-		name = "Do 23"
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = empty
-			fixed_auxiliary_weapon_slot_2 = empty
-			fixed_auxiliary_weapon_slot_3 = empty
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = empty
-			special_type_slot_2 = empty
-			special_type_slot_3 = empty
-			special_type_slot_4 = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Ju 86"
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = empty
-			fixed_auxiliary_weapon_slot_2 = empty
-			fixed_auxiliary_weapon_slot_3 = empty
-			engine_type_slot = engine_2_2x
-			special_type_slot_1 = lmg_defense_turret_2x
-			special_type_slot_2 = fuel_tanks_medium
-			special_type_slot_3 = empty
-			special_type_slot_4 = empty
-		}
-		obsolete = yes
-	}
-
-	create_equipment_variant = {
-		name = "He 111"
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_2 = empty
-			fixed_auxiliary_weapon_slot_3 = empty
-			engine_type_slot = engine_2_2x
-			special_type_slot_1 = lmg_defense_turret_2x
-			special_type_slot_2 = lmg_defense_turret_2x
-			special_type_slot_3 = empty
-			special_type_slot_4 = empty
-		}
-		icon = "GFX_GER_tactical_bomber1_medium"
-	}
-	
-	create_equipment_variant = {
-		name = "Do 17"
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = lmg_defense_turret_2x
-		}
-		icon = "GFX_GER_medium_plane_1_medium"
-	}
-
-	create_equipment_variant = {
-		name = "He 51" #also covers Ar 68
-		type = small_plane_airframe_0
+		name = "Guinevere Mark I"
+		type = small_plane_airframe_1
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
+			fixed_auxiliary_weapon_slot_1 = qaam_1_1x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = airframe_swept_wing
 		}
-		obsolete = yes
+		icon = "GFX_BLK_iw_light_plane_medium"
 	}
 	create_equipment_variant = {
-		name = "Hs 123"
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Bf 109 D"
+		icon = "xxx"
+		name = "Guinevere Mark II"
 		type = small_plane_airframe_1
 		modules = {
 			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = qaam_1_1x
 			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
+			special_type_slot_1 = airframe_swept_wing
 		}
-		icon = "GFX_GER_fighter1_medium"
+		icon = "GFX_BLK_iw_light_plane_medium"
 	}
 	create_equipment_variant = {
-		name = "Ju 87"
-		type = small_plane_cas_airframe_1
+		name = "ADF-00"
+		type = small_plane_airframe_1
 		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = lmg_defense_turret
-			special_type_slot_2 = dive_brakes_small
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = sasm_1_1x
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = airframe_reverse_swept_wing
+			special_type_slot_2 = airframe_mod_canards
 		}
-		icon = "GFX_GER_CAS1_medium"
+		icon = "GFX_BLK_basic_small_airframe_medium"
 	}
 	create_equipment_variant = {
-		name = "Do 22"
-		type = small_plane_naval_bomber_airframe_1
+		name = "Merlin Mark II"
+		type = medium_plane_airframe_1
 		modules = {
-			fixed_main_weapon_slot = torpedo_mounting
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = lmg_defense_turret
-			special_type_slot_2 = floats
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			fixed_auxiliary_weapon_slot_2 = saam_1_2x
+			fixed_auxiliary_weapon_slot_3 = lagm_1_1x
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = airframe_swept_wing
+			special_type_slot_2 = stealth_coating_1_medium
 		}
-		icon = "GFX_GER_naval_bomber1_medium"
+		icon = "GFX_BLK_iw_medium_plane_medium"
+	}
+	create_equipment_variant = {
+		name = "ADB-00"
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = lagm_1_1x
+			fixed_auxiliary_weapon_slot_2 = lagm_1_1x
+			fixed_auxiliary_weapon_slot_3 = lagm_1_1x
+			engine_type_slot = engine_2_4x
+			special_type_slot_1 = airframe_flying_wing
+			special_type_slot_2 = stealth_coating_1_medium
+			special_type_slot_3 = non_strategic_materials_medium
+		}
+		icon = "xxx"
+	}
+	create_equipment_variant = {
+		name = "Locust Mark III"
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = airframe_straight_wing
+		}
+		icon = "GFX_BLK_medium_plane_1_medium"
+	}
+	create_equipment_variant = {
+		name = "Bm-355 Lindwurm"
+		type = large_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = large_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+			engine_type_slot = engine_2_4x
+			special_type_slot_1 = airframe_swept_wing
+		}
+		icon = "GFX_BLK_iw_heavy_plane_medium"
+	}
+	create_equipment_variant = {
+		name = "E-767"
+		type = medium_plane_scout_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = awacs_radar
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = airframe_swept_wing
+		}
+		obsolete = no
+		icon = "GFX_scout_plane3_medium"
 	}
 }
 #############################################################

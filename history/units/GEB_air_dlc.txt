@@ -1,10 +1,10 @@
 air_wings = {
 	263 = {
-		medium_plane_airframe_0 = {
+		medium_plane_airframe_1 = {
 			owner = "GEB" 
 			amount = 1
 			creator = "BLK"
-			version_name = "Ju 86"
+			version_name = "ADB-00"
 		}
 	}
 }

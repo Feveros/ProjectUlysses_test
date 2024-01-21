@@ -95,6 +95,10 @@ on_actions = {
 					id = osea.30
 					days = 548
 				}
+				country_event = {
+					id = osea_politics.9
+					days = 274
+				}
 			}
 			BLK = {
 				add_opinion_modifier = { target = PBL modifier = historical_friends }

@@ -15,9 +15,10 @@ state={
 		owner = ERU
 		add_core_of = ERU
 		buildings = {
-			infrastructure = 0
+			infrastructure = 2
 			arms_factory = 0
 			industrial_complex = 0
+			dockyard = 2
 			air_base = 0
 
 		}
@@ -27,7 +28,7 @@ state={
 	provinces={
 		1903 4999 9925 9928 9929 9933 9934 9935 9938 
 	}
-	manpower=1000000
+	manpower=176001
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

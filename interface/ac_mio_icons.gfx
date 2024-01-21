@@ -1,0 +1,22 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_mio_grunder"
+		texturefile = "gfx/interface/military_industrial_organization/mio_icons/mio_grunder.png"
+	}
+	spriteType = {
+		name = "GFX_mio_lockheed_martin"
+		texturefile = "gfx/interface/military_industrial_organization/mio_icons/mio_lockheed_martin.png"
+	}
+	spriteType = {
+		name = "GFX_mio_mcdonnell_douglas"
+		texturefile = "gfx/interface/military_industrial_organization/mio_icons/mio_mcdonnell_douglas.png"
+	}
+	spriteType = {
+		name = "GFX_mio_northrop_grumman"
+		texturefile = "gfx/interface/military_industrial_organization/mio_icons/mio_northrop_grumman.png"
+	}
+	spriteType = {
+		name = "GFX_mio_boeing"
+		texturefile = "gfx/interface/military_industrial_organization/mio_icons/mio_boeing.png"
+	}
+}

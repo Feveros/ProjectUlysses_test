@@ -757,6 +757,10 @@ instant_effect = {
 		type = 	motorized_equipment_1
 		amount = 5000
 	}
+	add_equipment_to_stockpile = {
+		type = 	infantry_equipment_0
+		amount = 26000
+	}
 #######################################################	
     add_equipment_production = {
         equipment = {

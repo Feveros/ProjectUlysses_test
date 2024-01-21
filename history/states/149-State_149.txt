@@ -14,20 +14,25 @@ state={
 	history={
 		owner = DOR
 		add_core_of = DOR
+		add_claim_by = FRU
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
+			infrastructure = 4
+			arms_factory = 4
+			industrial_complex = 4
 			air_base = 0
+			3853 = {
+				naval_base = 7
+			}
 
 		}
+		victory_points = { 7989 60 }
 
 	}
 
 	provinces={
 		2188 3853 7989 8075 
 	}
-	manpower=1000000
+	manpower=5009467
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

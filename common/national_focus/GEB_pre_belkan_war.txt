@@ -591,7 +591,7 @@ shared_focus = {
     x = 1
     y = 1
 	available = {
-		num_of_civilian_factories > 20
+		num_of_factories > 20
 	}
     completion_reward = {
         swap_ideas = {
@@ -1070,7 +1070,7 @@ shared_focus = {
     y = 0
 	available = {
 		has_deployed_air_force_size = {
-            size > 50
+            size > 100
         }
 	}
     completion_reward = {
@@ -1290,7 +1290,7 @@ shared_focus = {
 		
 	}
     completion_reward = {
-        unlock_decision_tooltip = GEB_mobilize_reserves
+        custom_effect_tooltip = GEB_reinstate_conscription_tt
 		add_ideas = limited_conscription
         division_template = {
             name = "Conscript Division"

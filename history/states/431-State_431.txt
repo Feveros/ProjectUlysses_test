@@ -4,17 +4,14 @@ state={
 
 
 	history={
-		owner = NPT
-		add_core_of = NPT
+		owner = NIH
+		add_core_of = NIH
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 5
-			anti_air_building = 1
-			2918 = {
-				naval_base = 5
-			}
+			infrastructure = 0
+			arms_factory = 0
+			industrial_complex = 0
+			air_base = 0
+			anti_air_building = 0
 		}
 	}
 	provinces={

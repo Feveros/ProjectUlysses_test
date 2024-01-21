@@ -19,10 +19,6 @@ spriteTypes = {
 	}
 	### BELKA
 	spriteType = {
-		name = "GFX_idea_BLK_grunder_air_designer"
-		texturefile = "gfx/interface/ideas/BLK/BLK_grunder_air_designer.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_BLK_GLRDC_company"
 		texturefile = "gfx/interface/ideas/BLK/BLK_GLRDC_company.dds"
 	}
@@ -140,6 +136,20 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_GEB_unmechanized_agriculture"
 		texturefile = "gfx/interface/ideas/GEB/idea_GEB_unmechanized_agriculture.png"
+	}
+	### YUKTOBANIA
+	spriteType = {
+		name = "GFX_idea_YUK_top_heavy_command_structure"
+		texturefile = "gfx/interface/ideas/YUK/idea_YUK_top_heavy_command_structure.png"
+	}
+	### SAPIN
+	spriteType = {
+		name = "GFX_idea_SAP_dysfunctional_coalition"
+		texturefile = "gfx/interface/ideas/SAP/idea_SAP_dysfunctional_coalition.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SAP_nobility_influence_high"
+		texturefile = "gfx/interface/ideas/SAP/idea_SAP_nobility_influence_high.png"
 	}
 	### NORTH POINT
 	spriteType = {

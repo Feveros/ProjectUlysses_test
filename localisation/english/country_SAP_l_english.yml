@@ -62,13 +62,64 @@
  sap_cut_social_spending: "Cut Social Spending"
  sap_cut_social_spending_desc: "Sapiniards have historically been self-sufficient people, working their land, going to church, and helping their local community. A large overbearing government has no place in Sapin."
  sap_shift_tax_obligations_to_merchants: "Shift Tax Obligations To Merchants"
- sap_shift_tax_obligations_to_merchants_desc: "xxx"
+ sap_shift_tax_obligations_to_merchants_desc: "The noble families of Sapin have worked long and hard providing advisors, regents, champions, and scholars to the crown. Their wealth is well-earned and should not be forcibly taken from them by the crown they swore fealty to. If we want to increase our revenue, it should come from the merchant class."
+ sap_promote_public_austerity: "Promote Public Austerity"
+ sap_promote_public_austerity_desc: "To help ride through the storm of the current economic crisis, we must promote public austerity to the people of Sapin. Advising them on ways to conserve their money as much as possible until the economy rebounds."
+ sap_cut_taxes_for_nobility: "Cut Taxes For The Nobility"
+ sap_cut_taxes_for_nobility_desc: "The Sapinish nobility ought to exist outside of the general society, being the caretakers of the nation without having to be burdened by the economic requirements of it."
+ sap_charity_not_welfare: "Charity, Not Welfare"
+ sap_charity_not_welfare_desc: "Support for the poor and needy of Sapin should not come from the central government, but be conducted by individual communities within Sapin and their churches. They will know the best way to help out their own better than Gran Rugido can."
+ sap_modernize_the_royal_air_force: "Modernize the Royal Air Force"
+ sap_modernize_the_royal_air_force_desc: "Sapin's Royal Air Force has long been neglected as we have merely relied on our ally Osea for air support. However, with troubling times ahead and support from Osea not guranteed we must build up our own air force to level that will allow it to function independently. Starting with a review of the current state of our air force will allow us to spot the areas in which we need the most improvement."
+ sap_promote_diego_lopez: "Promote Diego Lopez"
+ sap_promote_diego_lopez_desc: "Diego Lopez, the Chief Engineer of our aeronautical design company, is both an excellent designer and teacher. Inviting him into our government will provide him witht he funding he needs to design new, better aircraft, as well as we will place him in charge of a new series of classes on teaching new aircraft mechanics on how to effectively repair and maintain our nation's aircraft."
+ sap_promote_mateo_gonzalez: "Promote Mateo Gonzalez"
+ sap_promote_mateo_gonzalez_desc: "Mateo Gonzalez, a reknowned squadron leader in the Sapnish Royal Air Force, has spent many hours in the air on missions, both real and in training. Having a vast breadth of experience on what kind of equipment we use, how effective it is, and where it can be improved makes him a valuable choice for promotion in the Air Force. His knowledge will help educate new support pilots and help us to improve the design of our support weaponry and aircraft to better fit their mission."
+ sap_promote_elena_sanchez: "Promote Elena Sanchez"
+ sap_promote_elena_sanchez_desc: "Elena Sanchez, an executive of civilian airliner service Air Ixiom and native Sapiniard, is an expert in large, heavy aircraft design and piloting. Recruiting her into our Air Force program will give us valuable insight into improving our heavy aircraft such as bombers, and provide excellent training for pilots of these aircraft."
+ sap_future_combat_fighter_program: "Future Combat Fighter Program"
+ sap_future_combat_fighter_program_desc: "Our current fighter designs are rather outdated compared to the models of our neighbors. To modernize, we must do away with production of old models and begin retrofitting to build a new line of fighters to form the backbone of our air force."
+ sap_toledo_fighter_weapons_school: "Toledo Fighter Weapons School"
+ sap_toledo_fighter_weapons_school_desc: "A team is only as strong as it's weakest link. Two seater fighter aircraft require both a pilot and a weapons officer to operate, and the training of the weapons officer is just as important as the training of the pilot. Rather than a side program, we will construct a new university for weapons officers, training them into mastery of their craft."
+ sap_refine_our_fighter_airframes: "xxx"
 
  ### IDEAS
- 
+ sap_dysfunctional_coalition: "Dysfunctional Coalition"
+ sap_dysfunctional_coalition_desc: "The Sapinish government is currently ran by a wild coalition of liberals, socialists, monarchists, and Catholics designed to maintain political stability during a time of great economic instability. Unsurprisingly, it has resulted in a government that is effectively paralyzed until new elections can be held."
+ sap_republican_agitation: "Republican Agitation"
+ sap_noble_high_command_5: "Nobility-run High Command"
+ sap_noble_high_command_4: "Nobility-run High Command"
+ sap_noble_high_command_3: "Nobility-run High Command"
+ sap_noble_high_command_2: "Nobility-run High Command"
+ sap_noble_high_command_1: "Nobility-run High Command"
+ sap_economic_crisis_3: "Economic Crisis"
+ sap_economic_crisis_2: "Economic Crisis"
+ sap_economic_crisis_1: "Economic Crisis"
+ sap_nobility_influence_very_high: "Nobility Influence - Very High"
+ sap_nobility_influence_high: "Nobility Influence - High"
+ sap_nobility_influence_medium: "Nobility Influence - Middling"
+ sap_nobility_influence_low: "Nobility Influence - Low"
+ sap_nobility_influence_very_low: "Nobility Influence - Very Low"
+ sap_reinforced_state_secularism: "Reinforced State Secularism"
+ sap_public_schooling: "Public Schooling"
+ sap_welfare_state_1: "Welfare State"
+ sap_promoted_catholic_values: "Promoted Catholic Values"
+ sap_catholic_schooling: "Catholic Schooling"
+ sap_charity_not_welfare: "Charity, Not Welfare"
+ sap_pre_belkan_war_mobilization: "Pre-Belkan War Mobilization"
+ sap_increased_immigration: "Increased Immigration"
+ sap_decreased_immigration: "Decreased Immigration"
+ sap_concentrated_ifv_production: "Concentrated IFV Production"
+ sap_overwhelming_advance_idea: "Overwhelming Advance"
+ sap_aggressive_military_thought_idea_1: "Aggressive Military Thought"
+ sap_aggressive_military_thought_idea_2: "Aggressive Military Thought"
+ sap_helicopter_logistics_idea: "Helicopter Logistics"
+ sap_concentrated_artillery_production: "Concentrated Artillery Production"
+
  ### DECISION CATEGORIES
  
  ### DECISIONS
+ SAP_mobilize_state_national_guard:  "Mobilize [FROM.GetMobilizationDivisionCount] Divisions in [FROM.GetName]"
  
  ### EVENTS
 
@@ -87,6 +138,13 @@
  SAP_monarchists_medium_control_range: "Medium Monarchist Dominance"
  SAP_monarchists_high_control_range: "High Monarchist Dominance"
  SAP_monarchists_total_control_range: "Total Monarchist Dominance"
+
+ ### ORGANIZATIONS
+ SAP_hercules_sistemas_organization: "Sistemas Hércules"
+ SAP_ironclad_artillery_solutions_organization: "Soluciones Artillería Torres"
+ SAP_vanguard_ordnance_organization: "Ordenanza García"
+ SAP_vuelotech_aviacion_organization: "VueloTech Aviación"
+ SAP_aerodinamica_esapina: "Aerodinámica Esapiña"
  
  ### TOOLTIPS
  sap_prepare_for_war_with_belka_tt: "Add §GLevel 1§! §YLand Forts§! along our Western border"

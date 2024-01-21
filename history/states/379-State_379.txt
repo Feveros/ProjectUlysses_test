@@ -16,18 +16,19 @@ state={
 		add_core_of = BLD 
 		buildings = {
 			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
+			arms_factory = 1
+			industrial_complex = 3
 			air_base = 0
 
 		}
+		victory_points = { 8569 30 }
 
 	}
 
 	provinces={
 		2475 2761 3385 3923 4109 4983 5627 8426 8427 8456 8481 8551 8569 8612 8670 
 	}
-	manpower=1000000
+	manpower=2901334
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

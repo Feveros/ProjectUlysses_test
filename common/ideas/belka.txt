@@ -304,13 +304,13 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				industrial_capacity_factory = 0.4
-				production_factory_efficiency_gain_factor = 0.4
-				production_speed_buildings_factor = 0.4
+				industrial_capacity_factory = 0.5
+				production_factory_efficiency_gain_factor = 0.2
+				production_speed_buildings_factor = 0.2
 				conscription_factor = 0.25
-				army_org_factor = 0.15
-				army_attack_factor = 0.15
-				army_defence_factor = 0.15
+				army_org_factor = 0.2
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
 				consumer_goods_expected_value = -0.2
 				fuel_gain_factor = 1000
 				army_fuel_consumption_factor = -0.5
@@ -363,7 +363,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_gain = 0.5
-				stability_factor = -0.1
+				stability_factor = 0.1
 				consumer_goods_expected_value = -0.2
 				production_speed_industrial_complex_factor = 0.2
 				production_speed_arms_factory_factor = 0.2
@@ -1624,216 +1624,6 @@ ideas = {
 	##############################################
 	##############################################
 	##############################################
-	
-	aircraft_manufacturer = {
-			
-		designer = yes
-		
-		BLK_grunder_air_designer = {
-			picture = GFX_idea_BLK_grunder_air_designer
-			cost = 250
-			removal_cost = -1
-			
-			allowed = {
-				original_tag = BLK
-			}
-			
-			#available = {
-			#	has_country_flag = BLK_south_belka_munitions_monopoly_flag
-			#}
-			
-			#allowed_to_remove = {
-			#	always = no
-			#}
-			
-			research_bonus = {
-				air_equipment = 0.2
-			}
-			
-			traits = { BLK_south_belka_munitions_air_designer_trait }
-			
-			equipment_bonus = {
-				
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		messerschmitt = {
-			
-			allowed = {
-				original_tag = BLK
-			}
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { light_aircraft_manufacturer }
-			
-			equipment_bonus = {
-				
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		junkers = { 
-			allowed = {
-				original_tag = BLK
-			}
-						
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { CAS_manufacturer }
-			
-			equipment_bonus = {
-				
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-		
-
-		focke_wulf = { 
-
-			
-			allowed = {
-				original_tag = BLK
-			}
-			
-						
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { medium_aircraft_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		heinkel = {
-
-			
-			allowed = {
-				original_tag = BLK
-			}
-			
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		dornier = {
-
-			allowed = {
-				original_tag = BLK
-			}
-			
-						
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { naval_aircraft_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-	
-	tank_manufacturer = { 
-		designer = yes
-		
-		porsche = {
-			allowed = {
-				original_tag = BLK
-			}
-			research_bonus = {
-				armor = 0.15
-			}
-			traits = { heavy_tank_manufacturer }
-			ai_will_do = {
-				factor = 10
-			}
-		}
-		
-		henschel = {
-			allowed = {
-				original_tag = BLK
-			}
-			research_bonus = {
-				armor = 0.15
-			}
-			traits = { fast_tank_manufacturer }
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		BLK_MAN = {
-			picture = BLK_MAN
-			allowed = {
-				original_tag = BLK
-			}
-			research_bonus = {
-				armor = 0.15
-			}
-			traits = { medium_tank_manufacturer }
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	
-	naval_manufacturer = {
-		designer = yes
-		
-		BLKmaniawerft = {
-			allowed = {
-				original_tag = BLK
-			}
-			research_bonus = {
-				naval_equipment = 0.15
-			}
-			equipment_bonus = {
-				
-			}
-			traits = { atlantic_fleet_naval_manufacturer }
-		}
-		
-		blohm_und_voss = {
-			allowed = {
-				original_tag = BLK
-			}
-			research_bonus = {
-				naval_equipment = 0.15
-			}
-			traits = { raiding_fleet_naval_manufacturer }
-			equipment_bonus = {
-				
-			}
-		}	
-	}
 	
 	industrial_concern = {
 	

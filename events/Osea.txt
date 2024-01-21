@@ -1,10 +1,12 @@
 add_namespace = osea
+add_namespace = osea_startup
 add_namespace = osea_politics
 add_namespace = osea_election
 add_namespace = osea_congress
 add_namespace = osea_glrdc
 add_namespace = osea_belka_land
 add_namespace = osea_gwot
+add_namespace = osea_oia
 
 country_event = { #cold war buildup plan
 	id = osea.1
@@ -230,6 +232,9 @@ country_event = { ### osea forms GLRDC plan
 			BLK = {
 				country_event = { id = belka.8 days = 1 }
 			}
+			UST = {
+				country_event = { id = ustio.2 days = 1 }
+			}
 		}
 	}
 }
@@ -379,21 +384,13 @@ country_event = { #belka attacks
 
 	option = {
 		name = osea.81.a
-		add_ideas = ose_the_belkan_war
-		activate_mission = ose_domestic_sytuation_opposed_to_war
-	}
-}
-
-country_event = { #belka attacks
-	id = osea.77
-	title = osea.77.t
-	desc = osea.77.d
-	picture = GFX_report_event_belka_meme_read_write
-	
-	is_triggered_only = yes
-
-	option = {
-		name = osea.77.a
+		if = {
+			limit = {
+				OSE = { is_ai = no }
+			}
+			add_ideas = ose_the_belkan_war
+			activate_mission = ose_domestic_sytuation_opposed_to_war
+		}
 	}
 }
 
@@ -515,44 +512,48 @@ country_event = { # Bill passes Congress
 		ai_chance = {
 			base = 100
 		}
-		if = {
+		if = { # Cut Taxes
 			limit = {
 				check_variable = { ose_current_bill = 1 }
 			}
 			OSE_decrease_taxes = yes
 			clear_variable = ose_current_bill
 		}
-		else_if = {
+		else_if = { # Raise Taxes
 			limit = {
 				check_variable = { ose_current_bill = 2 }
 			}
 			OSE_increase_taxes = yes
 			clear_variable = ose_current_bill
 		}
-		else_if = {
+		else_if = { # Increase Defense Forces Budget
 			limit = {
 				check_variable = { ose_current_bill = 3 }
 			}
+			OSE_congress_bill_3_pass = yes
 			add_timed_idea = {
 				idea = OSE_increase_defense_forces_budget_idea
 				days = 365
 			}
+			OSE_land_army_debuff_down = yes
 			clear_variable = ose_current_bill
 		}
-		else_if = {
+		else_if = { # Pay Farm Subsidies
 			limit = {
 				check_variable = { ose_current_bill = 4 }
 			}
+			OSE_congress_bill_4_pass = yes
 			add_timed_idea = {
 				idea = OSE_pay_farm_subsidies_idea
 				days = 365
 			}
 			clear_variable = ose_current_bill
 		}
-		else_if = {
+		else_if = { # Award Research Grants
 			limit = {
 				check_variable = { ose_current_bill = 5 }
 			}
+			OSE_congress_bill_5_pass = yes
 			add_timed_idea = {
 				idea = OSE_award_research_grants_idea
 				days = 365
@@ -1420,6 +1421,10 @@ country_event = { # Fire Party Platform Hidden Event
 	immediate = {
 		hidden_effect = {
 			OSE_fire_party_ideology_shift_events = yes
+			country_event = {
+				id = osea_politics.7
+				days = 365
+			}
 		}
 	}
 }
@@ -1441,6 +1446,38 @@ country_event = { # Liberty Party Loses Popularity (debug event)
 
 	option = { # Interesting
 		name = osea_politics.8.a
+	}
+}
+
+country_event = { # New Fiscal Year
+	id = osea_politics.9
+	title = osea_politics.9.t
+	desc = osea_politics.9.desc
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			OSE_annual_budget_gain = yes
+			if = {
+				limit = {
+					check_variable = { osea_budget_gain < 0 }
+				}
+				add_stability = -0.05
+			}
+		}
+	}
+
+	option = {
+		name = osea_politics.9.a
+		effect_tooltip = {
+			OSE_annual_budget_gain = yes
+			if = {
+				limit = {
+					check_variable = { osea_budget_gain < 0 }
+				}
+				add_stability = -0.05
+			}
+		}
 	}
 }
 
@@ -1494,5 +1531,76 @@ country_event = { # AWWNB rises up in Belka
 		add_ideas = OSE_gwot_lend_lease
 		set_country_flag = ose_gwot_interventionist_flag
 		set_country_flag = ose_gwot_lend_lease_flag
+	}
+}
+
+### OIA OPERATIONS ###
+country_event = { # Belkan WMD Protocol Discovered
+	id = osea_oia.1
+	title = osea_oia.1.t
+	desc = osea_oia.1.desc
+	picture = placeholder
+	is_triggered_only = yes
+
+	option = { # We need to tell the world about this now
+		name = osea_oia.1.a
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = -50
+		add_stability = -0.05
+		news_event = osea_oia.2
+	}
+	option = { # We don't want to scare anyone, send a mission to look for their cache
+		name = osea_oia.1.b
+		add_political_power = 50
+	}
+}
+news_event = { # Osea reveals Belkan WMD protocol
+	id = osea_oia.2
+	title = osea_oia.2.t
+	desc = osea_oia.2.desc
+	picture = placeholder
+	is_triggered_only = yes
+
+	option = { # Oh god...
+		name = osea_oia.2.a
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = OSE
+					original_tag = BLK
+				}
+			}
+		}
+		add_opinion_modifier = {
+			target = BLK
+			modifier = wmd_plan
+		}
+	}
+	option = { # Hopefully the pressure mounts against them
+		name = osea_oia.2.b
+		trigger = {
+			original_tag = OSE
+		}
+		add_war_support	= 0.05
+		add_days_mission_timeout = {
+			mission = ose_domestic_sytuation_opposed_to_war
+			days = 50
+		}
+	}
+	option = { # How did they know?!
+		name = osea_oia.2.c
+		trigger = {
+			original_tag = BLK
+		}
+		every_controlled_state = {
+			limit = {
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+			add_resistance = 20
+		}
 	}
 }

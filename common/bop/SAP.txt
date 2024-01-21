@@ -84,7 +84,7 @@ SAP_power_balance = {
 				stability_factor = -0.05
 			}
 			on_activate = {
-				
+				country_event = sapin_civil_war.2
 			}
 			on_deactivate = {
 				
@@ -154,7 +154,7 @@ SAP_power_balance = {
 				stability_factor = -0.05
 			}
 			on_activate = {
-				
+				country_event = sapin_civil_war.1
 			}
 			on_deactivate = {
 				

@@ -162,7 +162,7 @@
  GEB_granley_mountains_excavations_desc: "The Granley Mountains are a veritable treasure trove of raw materials that haven't been utilized. By actually extracting and utilizing these resources, we can start to strengthen the Gebetian economy and turn it into a strong trade powerhouse."
  ### DECISIONS
  GEB_land_reform_in_state: "Land Reform In [FROM.GetName]"
- GEB_mobilize_reserves: "Mobilize Reserves In [FROM.GetName]"
+ GEB_mobilize_reserves: "Mobilize [FROM.GetMobilizationDivisionCount] Divisions in [FROM.GetName]"
  GEB_plant_land_mines: "Plant Land Mines In [FROM.GetName]"
  GEB_purchase_osean_guns: "Purchase Osean Guns"
  GEB_expand_iron_mines_1: "Establish Iron Mines"
@@ -203,6 +203,7 @@
  GEB_liquidate_aristocrat_assets_trigger_tt: "At least §G1§! §YLand Reform§! decision taken"
  GEB_liquidate_aristocrat_assets_tt: "§YLand Reform§! decisions will now take only §Y30§! days\nAdd §G1§! offmap §YCivilian Factory§! for each Land Reform decision taken:"
  GEB_encourage_philanthropy_tt: "Every §Y180§! days, get an event giving you a free §Yrandom building§! in a random owned state"
+ GEB_reinstate_conscription_tt: "Unlocks Decision: §YMobilize Divisions in State§!"
  # COUNTRY FLAGS
  election_1992_winner_sdu: "SDU Won The 1992 Elections"
  election_1992_winner_pdp: "PDP Won The 1992 Elections"

@@ -1,8 +1,6 @@
 ﻿l_english:
  ### PLACEHOLDER ###
- UST_one_last_time_into_the_breach:0 "One Last Time Into The Breach"
- UST_one_last_time_into_the_breach_desc:0 "It is thanks to them that we have our freedom now. It is thanks to them we were able to march again. Sadly, now they have become the last obstacle, the last storm we need to cross to never again look into the future uncertain. Osean Federation once stood with us - and that's why we will face them with pride and honor in this last war for Ustian supremacy."
- 
+
  UST_mercs_are_up:0 "Fullfil The Deal To The End"
  UST_mercs_are_up_desc:0 "\n\n\nbut we got a contract and payment in advance. And as merceneries we always could and did only one thing right - fullfil the deal to the end."
  UST_mercs_are_up_tt:0 "§RIt's time for the Dogs to guard the Herd...§!"
@@ -32,6 +30,12 @@
  UST_social_country_idea_desc:0 ""
  UST_social_country_abe_act_idea:0 "The Abe Act"
  UST_social_country_abe_act_idea_desc:0 ""
+ 
+ UST_sorton_act_idea:0 "Sorton Act"
+ 
+ 
+ 
+ UST_forged_in_war_idea:0 "Forged In War"
  
  ### FOCUSES ###
  UST_start:0 "Free Once Again"
@@ -81,8 +85,8 @@
  UST_friends_in_osea_desc:0 ""
  UST_nationalize_post_belkan_land:0 "Nationalize Post Belkan Property"
  UST_nationalize_post_belkan_land_desc:0 ""
- UST_1:0 ""
- UST_1_desc:0 ""#UST_#
+ UST_1:0 "Osean Army Instructors"
+ UST_1_desc:0 ""
  UST_I_AM_SEXO:0 "The Abe Act"
  UST_I_AM_SEXO_desc:0 ""
  UST_no_more_lagging_behind:0 "No More Lagging Behind"
@@ -107,8 +111,8 @@
  UST_privatize_post_belkan_land:0 "Privatize Post Belkan Property"
  UST_privatize_post_belkan_land_desc:0 ""
  UST_sorton_act:0 "Sorton Act"
- UST_sorton_act_desc:0 ""
- UST_2:0 ""
+ UST_sorton_act_desc:0 ""A well regulated Militia, being necessary to the security of a free Ustio, the right of the people to keep and bear Arms, shall not be infringed." - Text of Sorton Act, The 11th Amendment of the Republic of Ustio Constitution"
+ UST_2:0 "Laissez-Faire"
  UST_2_desc:0 ""
  
  UST_two_year_plan:0 "Two Year Plan"
@@ -139,6 +143,19 @@
  UST_hand_of_free_market_desc:0 ""
  UST_privatize_healthcare:0 "Privatize Healthcare"
  UST_privatize_healthcare_desc:0 ""
+ 
+ UST_they_are_coming:0 "They Are Coming"
+ UST_they_are_coming_desc:0 ""
+ UST_get_people_ready:0 "Get People Ready"
+ UST_get_people_ready_desc:0 ""
+ UST_make_shift_bunkers:0 "Makeshift Defense Line"
+ UST_make_shift_bunkers_desc:0 ""
+ UST_convert_production:0 "Convert Factories"
+ UST_convert_production_desc:0 ""
+ UST_import_MANPATS:0 "Import MANPATS"
+ UST_import_MANPATS_desc:0 ""
+ UST_ask_ratio_for_help:0 "Ask Ratio For Help"
+ UST_ask_ratio_for_help_desc:0 ""
  
  UST_rush_the_trenches:0 "Rush The Trenches"
  UST_rush_the_trenches_desc:0 ""
@@ -185,7 +202,7 @@
  UST_west_wall_desc:0 ""
  UST_expand_back_yard:0 "Expand Back Yard"
  UST_expand_back_yard_desc:0 ""
- UST_critical_plan_tyrann:0 "Critical Plan Tyrann"
+ UST_critical_plan_tyrann:0 "Plan "Tyrann""
  UST_critical_plan_tyrann_desc:0 ""
  UST_ensure_the_power_of_constitution:0 "Ensure The Power Of The Constitution"
  UST_ensure_the_power_of_constitution_desc:0 ""
@@ -212,7 +229,6 @@
  UST_some_leap_forward:0 "Technological Leap Forward"
  UST_some_leap_forward_desc:0 ""
 
- 
  UST_civil_war:0 "Ustian Civil War"
  UST_civil_war_desc:0 ""
  UST_they_are_back:0 "They Have Returned"
@@ -237,7 +253,58 @@
  UST_the_flower_offensive_desc:0 ""
  UST_total_emergency_powers:0 "Total Emergency Powers"
  UST_total_emergency_powers_desc:0 ""
- ###
+ UST_issue_of_security:0 "Issue Of Security"
+ UST_issue_of_security_desc:0 ""
+ UST_breach_the_tech_gap:0 "Breach The Technological Gap"
+ UST_breach_the_tech_gap_desc:0 ""
+ UST_get_ready_what_we_can:0 "Get Ready What We Can"
+ UST_get_ready_what_we_can_desc:0 ""
+ UST_arch_enemy:0 "Arch Enemy"
+ UST_arch_enemy_desc:0 ""
+ UST_last_man_woman:0 "Every Man and Woman"
+ UST_last_man_woman_desc:0 ""
+ UST_break_armored_fist:0 "Critical Plan Tyrann"
+ UST_break_armored_fist_desc:0 ""
+ UST_cover_the_frontlines:0 "To Supply The Frontlines"
+ UST_cover_the_frontlines_desc:0 ""
+ UST_we_will_stand_ethernal:0 "Forged In War"
+ UST_we_will_stand_ethernal_desc:0 "We Ustians were always people of freedom, of peace. We never wanted more than just our place on the planet. But the world decided otherwise for us. Occupations, conflicts, wars, invasions, even our siblings standing against us. And at this dark hour, our Arch Enemy comes back to take what's ours. But this time, we are different - the past reforged us. Now it's time for us to thrive in conflict ahead."
+ UST_war_plan_vesuvius:0 "War Plan Vesuvius"
+ UST_war_plan_vesuvius_desc:0 ""
+ UST_hole_in_the_wall:0 "Through A Hole In Their "Wall""
+ UST_hole_in_the_wall_desc:0 ""
+ UST_deal_with_fato:0 "Deal With FATO"
+ UST_deal_with_fato_desc:0 ""
+ UST_just_another_threat:0 "Just Another Target"
+ UST_just_another_threat_desc:0 ""
+ UST_pax_oseana:0 "Pax North Oseana"
+ UST_pax_oseana_desc:0 ""
+ UST_one_last_time_into_the_breach:0 "One Last Time Into The Breach"
+ UST_one_last_time_into_the_breach_desc:0 "It is thanks to them that we have our freedom now. It is thanks to them we were able to march again. Sadly, now they have become the last obstacle, the last storm we need to cross to never again look into the future uncertain. Osean Federation once stood with us - and that's why we will face them with pride and honor in this last war for Ustian supremacy."
+ UST_issue_of_nation:0 "Issue Of Nation"
+ UST_issue_of_nation_desc:0 ""
+ UST_left_of_nation:0 "What is Left Of The Nation"
+ UST_left_of_nation_desc:0 ""
+ UST_left_of_economy:0 "What is Left Of The Economy"
+ UST_left_of_economy_desc:0 ""
+ UST_full_martial_law:0 "Full Martial Law"
+ UST_full_martial_law_desc:0 ""
+ UST_crack_on_radicals:0 "Crack On The Radicals"
+ UST_crack_on_radicals_desc:0 ""
+ UST_no_such_thing_as_civilians:0 "No Such Thing As Civilians"
+ UST_no_such_thing_as_civilians_desc:0 ""
+ UST_reform_the_gov:0 "Reform The Government"
+ UST_reform_the_gov_desc:0 ""
+ UST_pardon_the_left:0 "Pardon The Left"
+ UST_pardon_the_left_desc:0 ""
+ UST_democracy_in_authoritarianism:0 "Liberty In Authoritarianism"
+ UST_democracy_in_authoritarianism_desc:0 ""
+ UST_repair_the_damage:0 "Repair The Wars' Damage"
+ UST_repair_the_damage_desc:0 ""
+ UST_redirect_military_to_fixing:0 "Redirect Military to Reconstruction Efforts"
+ UST_redirect_military_to_fixing_desc:0 ""
+ UST_focus_assets_on_revitalisation:0 "Focus Assets On Revitalisation"
+ UST_focus_assets_on_revitalisation_desc:0 ""
  UST_issue_of_integration:0 "Issue Of Integration"
  UST_issue_of_integration_desc:0 ""
  UST_land_of_ratio:0 "The Lands Of Ratio"
@@ -248,7 +315,7 @@
  UST_colonize_dormakaj_desc:0 ""
  UST_paint_them_as_agressors:0 "Paint Them As Agressors"
  UST_paint_them_as_agressors_desc:0 ""
- UST_trasfer_industry:0 "Transfer Or Industrial Assets"
+ UST_trasfer_industry:0 "Transfer Of Industrial Assets"
  UST_trasfer_industry_desc:0 ""
  UST_partial_military_occupation:0 "Partial Military Occupation"
  UST_partial_military_occupation_desc:0 ""
@@ -264,6 +331,20 @@
  UST_integration_of_authority_desc:0 ""
  UST_part_of_us:0 "Part Of Us"
  UST_part_of_us_desc:0 ""
+ UST_the_lands_of_belka:0 "The Lands Of Belka"
+ UST_the_lands_of_belka_desc:0 ""
+ UST_like_they_like_us:0 "Like They To Us, We To Them"
+ UST_like_they_like_us_desc:0 ""
+ UST_dismantle_their_might:0 "Dismantle Their Might"
+ UST_dismantle_their_might_desc:0 ""
+ UST_diffrent_aproach:0 "Diffrent Aproach"
+ UST_diffrent_aproach_desc:0 ""
+ UST_reconstruction_investments:0 "Reconstruction Investments"
+ UST_reconstruction_investments_desc:0 ""
+ UST_south_and_north:0 "South And North"
+ UST_south_and_north_desc:0 ""
+ UST_proclaim_second_ustian_republic:0 "Proclaim The Second Republic"
+ UST_proclaim_second_ustian_republic_desc:0 ""
  
  UST_army_debate:0 "Debate Over Army"
  UST_army_debate_desc:0 ""
@@ -277,7 +358,6 @@
  UST_ustian_children_of_the_hills_desc:0 ""
  UST_resist_and_bite:0 "Resist And Bite"
  UST_resist_and_bite_desc:0 ""
- 
  UST_national_army:0 "True National Army"
  UST_national_army_desc:0 ""
  UST_to_catch_up:0 "To Catch Up"
@@ -288,26 +368,213 @@
  UST_to_expand_the_width_desc:0 ""
  UST_to_expand_the_depth:0 "Expand The Depth"
  UST_to_expand_the_depth_desc:0 ""
- 
  UST_guns_for_hire:0 "Guns For Hire"
  UST_guns_for_hire_desc:0 ""
+ UST_international_arms_market:0 "International Arms Market"
+ UST_international_arms_market_desc:0 ""
+ UST_they_only_know_gold:0 "They Only Know Gold"
+ UST_they_only_know_gold_desc:0 ""
+ UST_hire_huzar:0 "Hire "Huzar""
+ UST_hire_huzar_desc:0 ""
+ UST_the_wolfs_are_up:0 "The Wolfs Are Up"
+ UST_the_wolfs_are_up_desc:0 ""
  
  ### EVENTS ###
  
  ustio.1.t:0 "Offer from Ratio"
  ustio.1.d:0 "Following our recent acquisition of territory from Belka, our eastern neighbor of Ratio has approached us with a deal. The lands of Tyrann and Boikos are primarily Ratian in culture, as they were relatively recently conquered from them by Belka. Even after falling under our control in the Belkan Federal Law Review of 1988, Ratio has never renounced their claim on the lands, however they appear to be far friendlier to us than Belka. They have offered a deal to purchase the lands back from us for a generous price, far exceeding the actual value of the territories. This, combined with several clauses allowing us to move Ustian assets out of the land and into our core areas, and a parnership with our nation for future cooperations. This deal appears to be extremely beneficial for us, as in addition to the obvious monetary benefits, we have had extensive trouble dealing with partisan forces in the area, and as a relatively new nation in the world, the presence of another ally would be greatly valued. The only protest against this deal has come from Franek Dolas, who argues that we have spent extensive resources on the lands, and even if it was under Belkan leadership, many Ustians fought and died to conquer the land. As he argues, the strongest nation will be the one who succeeds, first it was Belka, and when they were proven weak, we rose to that position instead, and if Ratio thinks they should have the land they will need to prove their strength over us to obtain it. Aside from his ramblings, the advisory board is unanimous that this deal should be taken."
  ustio.1.a:0 "We gleefully accept!"
- ustio.1.b:0 "Dolas is right. The strongest nation is the one who deserves the land."
+ ustio.1.b:0 "Dolas is right. The stronger nation is the one who deserves the land."
+ 
+ ustio.2.t:0 "Osea's Plan "Land For Money""
+ ustio.2.d:0 ""
+ ustio.2.a:0 "We have no reason to say "No" to this offer."
+ 
+ ustio.3.t:0 "The Return of the West"
+ ustio.3.d:0 ""
+ ustio.3.a:0 "Finally whole again."
+ 
+ ustio.4.t:0 "Ustian Desertes from The Belkan Army"
+ ustio.4.d:0 "ustian deserters from Belkan army join us"
+ ustio.4.a:0 "Welcome home brothers."
+ 
+ ustio.5.t:0 ""
+ ustio.5.d:0 "1st event of get ready vs Belka tree"
+ ustio.5.a:0 ""
+ 
+ ustio.6.t:0 ""
+ ustio.6.d:0 "ask ratio for help"
+ ustio.6.a:0 ""
+ 
+ ustio.7.t:0 "border skirms between us and ratio"
+ ustio.7.d:0 ""
+ ustio.7.a:0 "we are sowwy"
+ ustio.7.b:0 "fuck them harder"
+ 
+ ustio.8.t:0 ""
+ ustio.8.d:0 "we found out about plans or ratio resistance to bomb rails but we dont have info exactly who they are"
+ ustio.8.a:0 "rise military patrols"
+ ustio.8.b:0 "arrest everyone"
+ 
+ ustio.9.t:0 ""
+ ustio.9.d:0 "we will try to ask great power to mediate"
+ ustio.9.a:0 "belka"
+ ustio.9.b:0 "yukto"
+ 
+ ustio.10.t:0 ""
+ ustio.10.d:0 "CONSTRUCTION"
+ ustio.10.a:0 ""
+ ustio.10.b:0 "ratio angy"
+ 
+ ustio.11.t:0 ""
+ ustio.11.d:0 "CONSTRUCTION"
+ ustio.11.a:0 ""
+ ustio.11.b:0 "ratio angy"
+ 
+ ustio.12.t:0 ""
+ ustio.12.d:0 "ratio demands to demilitrize the border at once "
+ ustio.12.a:0 "yes"
+ ustio.12.b:0 "no"
+ 
+ ustio.13.t:0 ""
+ ustio.13.d:0 "break demilitrization agreement and send army to the border - event activates while doing "strike first" focus"
+ ustio.13.a:0 "they will not be ready"
+ 
+ ustio.14.t:0 ""
+ ustio.14.d:0 "ykto proposes referendum"
+ ustio.14.a:0 ""
+ 
+ ustio.15.t:0 ""
+ ustio.15.d:0 "belka said to fuck off"
+ ustio.15.a:0 ""
+ 
+ ustio.16.t:0 ""
+ ustio.16.d:0 "referendum results are 50/50 - tyran wants to stay while boikos wants to leave - nobody agrees on this outcome"
+ ustio.16.a:0 ""
+ 
+ ustio.17.t:0 ""
+ ustio.17.d:0 "Belka moblizes"
+ ustio.17.a:0 ""
+ 
+ ustio.18.t:0 ""
+ ustio.18.d:0 "USTIO RESURCES"
+ ustio.18.a:0 ""
+ 
+ ustio_main.1.t:0 ""
+ ustio_main.1.d:0 "1st event of the tree"
+ ustio_main.1.a:0 ""
+ 
+ ustio_main.2.t:0 ""
+ ustio_main.2.d:0 "start building museum"
+ ustio_main.2.a:0 ""
+ 
+ ustio_main.3.t:0 "Opening of the Ustian National Museum"
+ ustio_main.3.d:0 ""
+ ustio_main.3.a:0 ""
+ 
+ ustio_main.4.t:0 ""
+ ustio_main.4.d:0 "1st event about ratio partisants fired after military bases focus"
+ ustio_main.4.a:0 ""
+ 
+ ustio_main.5.t:0 ""
+ ustio_main.5.d:0 "2nd event about ratio partisants  fired after deal with partisants focus"
+ ustio_main.5.a:0 ""
+ 
+ ustio_main.6.t:0 ""
+ ustio_main.6.d:0 "deal with ratio, land is transefred"
+ ustio_main.6.a:0 ""
+ 
+ ustio_main.7.t:0 ""
+ ustio_main.7.d:0 "START OF ELECTIONS EVENT CHAIN"
+ ustio_main.7.a:0 ""
+ 
+ ustio_main.8.t:0 ""
+ ustio_main.8.d:0 "election 1"
+ ustio_main.8.a:0 "Grzegorz"
+ ustio_main.8.b:0 "Morkawiecki"
+ 
+ ustio_main.9.t:0 ""
+ ustio_main.9.d:0 "election 2"
+ ustio_main.9.a:0 "Grzegorz"
+ ustio_main.9.b:0 "Morkawiecki"
+ 
+ ustio_main.10.t:0 ""
+ ustio_main.10.d:0 "election 3"
+ ustio_main.10.a:0 "Grzegorz"
+ ustio_main.10.b:0 "Morkawiecki"
+ 
+ ustio_main.11.t:0 ""
+ ustio_main.11.d:0 "election 4"
+ ustio_main.11.a:0 "Grzegorz"
+ ustio_main.11.b:0 "Morkawiecki"
+ 
+ ustio_main.12.t:0 ""
+ ustio_main.12.d:0 "election 5"
+ ustio_main.12.a:0 "Grzegorz"
+ ustio_main.12.b:0 "Morkawiecki"
+ 
+ ustio_main.13.t:0 "Election Day"
+ ustio_main.13.d:0 ""
+ ustio_main.13.a:0 ""
+ 
+ ustio_grzegorz.1.t:0 ""
+ ustio_grzegorz.1.d:0 ""
+ ustio_grzegorz.1.a:0 ""
+ 
+ ustio_grzegorz.2.t:0 ""
+ ustio_grzegorz.2.d:0 ""
+ ustio_grzegorz.2.a:0 ""
+ 
+ ustio_grzegorz.3.t:0 ""
+ ustio_grzegorz.3.d:0 ""
+ ustio_grzegorz.3.a:0 ""
+ 
+ ustio_grzegorz.4.t:0 ""
+ ustio_grzegorz.4.d:0 ""
+ ustio_grzegorz.4.a:0 ""
+ 
+ ustio_grzegorz.5.t:0 ""
+ ustio_grzegorz.5.d:0 ""
+ ustio_grzegorz.5.a:0 ""
+ 
+ ustio_grzegorz.6.t:0 ""
+ ustio_grzegorz.6.d:0 ""
+ ustio_grzegorz.6.a:0 ""
+ 
+ ustio_morka.1.t:0 ""
+ ustio_morka.1.d:0 ""
+ ustio_morka.1.a:0 ""
+ 
+ ustio_morka.2.t:0 ""
+ ustio_morka.2.d:0 ""
+ ustio_morka.2.a:0 ""
+ 
+ ustio_morka.3.t:0 ""
+ ustio_morka.3.d:0 ""
+ ustio_morka.3.a:0 ""
+ 
+ ustio_morka.4.t:0 ""
+ ustio_morka.4.d:0 ""
+ ustio_morka.4.a:0 ""
+ 
+ ustio_morka.5.t:0 ""
+ ustio_morka.5.d:0 ""
+ ustio_morka.5.a:0 ""
+ 
+ ustio_morka.6.t:0 ""
+ ustio_morka.6.d:0 ""
+ ustio_morka.6.a:0 ""
  
  ### TOOLTIPS ###
  
- UST_move_part_of_industry_tt:0 "Upon complementing this focus §Gone Civilian Factory and one Military Factory§! will be moved from the land we §Yreturned,§! to §YSolis Ortus§!."
+ UST_move_part_of_industry_tt:0 "Upon complementing this focus §Gtwo Civilian Factories and one Military Factory§! will be moved from the land we §Yreturned,§! to §YSolis Ortus§!."
  UST_resetle_the_people_tt_1:0 "From land given to Ratio:"
  UST_resetle_the_people_tt_2:0 "\nTo land of Ustio:"
  UST_supress_partisants_tt:0 "We will §Gremove any real threat§! from §RPartisants§! for now."
  UST_strike_first_tt:0 "\n§RThey won't be ready.§!"
  UST_to_pay_back_the_loan_tt:0 "Finishing this focus §GUnlocks Decision(s)§! to §YRepay§! our §RLoans§!."
- UST_new_political_coalition_tt:0 "§YMajor Political Party Support Changes Will Happen.§!"
+ UST_new_political_coalition_tt:0 "\n§YMajor Political Shift And Party Support Changes Will Happen.§!"
+ UST_nationalize_post_belkan_land_tt:0 "§GWe will appropriate some land and property in §Y2 random states§! for the Ustian people and Government...§!\n\n"
  
  UST_money_for_military_complex_tt:0 "\n§YComplementing this focus§! will §GUnlock§! §YArmy Focus Tree§!."
  ust_rangers_tt:0 "\nAdd technology: §YUstian Rangers§!, which gives:\n§YMountaineers§!:\nForest:\n     Attack: §G+10%§!\n     Defence: §G+10%§!\n     Movement: §G+10%§!\n\nJungle:\n     Attack: §G+10%§!\n     Defence: §G+10%§!\n     Movement: §G+10%§!\n\nHills:\n     Attack: §G+10%§!\n     Defence: §G+10%§!\n     Movement: §G+10%§!\n\nMountain:\n     Attack: §G+10%§!\n     Defence: §G+10%§!\n     Movement: §G+10%§!\n\nPlains:\n     Attack: §G+10%§!\n     Defence: §G+10%§!\n     Movement: §G+10%§!\n\nMarsh:\n     Attack: §G+10%§!\n     Defence: §G+10%§!\n     Movement: §G+10%§!\n\n"
@@ -316,3 +583,5 @@
  unlock_dec_ust_to_catch_up:0 "Finishing this focus §GUnlocks Decision(s)§! to help us §GExpand§! our §YTank Forces§!."
  unlock_dec_ust_to_expand_the_width:0 "\nFinishing this focus §GUnlocks Decision(s)§! to help us §GExpand§! our §YArmy Size§!."
  unlock_dec_ust_to_expand_the_depth:0 "Finishing this focus §GUnlocks Decision(s)§! to help us §GExpand§! our §YMotorised Forces§!."
+ 
+ UST_they_are_back_tt:0 "§RRatio did it's move again...§!"

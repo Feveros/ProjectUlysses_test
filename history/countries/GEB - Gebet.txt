@@ -46,6 +46,8 @@ if = {
 	}
 }
 
+set_variable = { geb_mobilization_round_cost = 25 }
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1987.10.20"
@@ -128,8 +130,8 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Ju 86"
-		type = tac_bomber_equipment_0
+		name = "Guinevere Mark I"
+		type = fighter_equipment_1
 		upgrades = {
 			plane_tac_bomb_upgrade = 5
 			plane_range_upgrade = 5
@@ -145,19 +147,25 @@ if = {
 		has_dlc = "By Blood Alone"
 	}
 	create_equipment_variant = {
-		name = "Ju 86"
+		name = "Igraine Mark III" #
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			fixed_auxiliary_weapon_slot_1 = qaam_1_1x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = airframe_delta_wing
+		}
+	}
+	create_equipment_variant = {
+		name = "Merlin Mark I" #
 		type = medium_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = empty
-			fixed_auxiliary_weapon_slot_2 = empty
-			fixed_auxiliary_weapon_slot_3 = empty
-			engine_type_slot = engine_2_2x
-			special_type_slot_1 = lmg_defense_turret_2x
-			special_type_slot_2 = fuel_tanks_medium
-			special_type_slot_3 = empty
-			special_type_slot_4 = empty
+			fixed_auxiliary_weapon_slot_1 = lagm_1_1x
+			fixed_auxiliary_weapon_slot_2 = lagm_1_1x
+			engine_type_slot = engine_2_4x
+			special_type_slot_1 = airframe_delta_wing
 		}
-		obsolete = no
+		icon = "xxx"
 	}
 }

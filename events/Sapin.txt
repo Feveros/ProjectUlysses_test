@@ -18,6 +18,8 @@ country_event = { #sapinish parliamentary elections
 			ruling_party = democratic
 			elections_allowed = yes
 		}
+		complete_national_focus = sap_1991_parliamentary_elections
+		remove_ideas = sap_dysfunctional_coalition
 	}
 	option = { # Monarchists Win
 		name = sapin_politics.1.b
@@ -25,6 +27,22 @@ country_event = { #sapinish parliamentary elections
 			ruling_party = monarchism
 			elections_allowed = yes
 		}
+		complete_national_focus = sap_1991_parliamentary_elections
+		remove_ideas = sap_dysfunctional_coalition
+	}
+}
+
+country_event = { # Republican agitation
+	id = sapin_politics.2
+	title = sapin_politics.2.t
+	desc = sapin_politics.2.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	option = { # Let them complain
+		name = sapin_politics.2.a
+		add_ideas = sap_republican_agitation
 	}
 }
 
@@ -207,6 +225,9 @@ country_event = { # Our friends in Oured
 
 	option = { # We stand by our historic ally
 		name = sapin_diplomacy.5.a
+		ai_chance = {
+			base = 100
+		}
 		set_country_flag = sap_stayed_with_osea_flag
 		OSE =  {
 			news_event = sapin_diplomacy.6
@@ -368,17 +389,81 @@ country_event = { # Republican Revolt
 	
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = sap_republicans_split # liberals and socialists have split
+				}
+				start_civil_war = {
+					ideology = communism
+					size = party_popularity@communism
+					set_country_flag = SAP_REPUBLICAN_REVOLT
+				}
+				SAR = {
+					set_cosmetic_tag = SAP_REPUBLIC
+					add_ideas = sap_milicia_popular
+				}
+			}
+			else = {
+				set_temp_variable = { republican_revolt_size = party_popularity@communism }
+				add_to_temp_variable = { republican_revolt_size = party_popularity@democratic }
+				set_temp_variable = { sap_republican_revolt_communism_size = party_popularity@communism }
+				divide_temp_variable = { sap_republican_revolt_communism_size = republican_revolt_size }
+				start_civil_war = {
+					ideology = democratic
+					size = republican_revolt_size
+					set_country_flag = SAP_REPUBLICAN_REVOLT
+				}
+				SAR = {
+					set_cosmetic_tag = SAP_REPUBLIC
+					add_popularity = {
+						ideology = communism
+						popularity = sap_republican_revolt_communism_size
+					}
+					add_ideas = {
+						sap_fuerzas_de_defensa_local
+						sap_milicia_popular
+					}
+				}
+				set_temp_variable = { communism_pop_loss = party_popularity@communism }
+				multiply_temp_variable = { communism_pop_loss = -1 }
+				set_temp_variable = { democratic_pop_loss = party_popularity@democratic }
+				multiply_temp_variable = { democratic_pop_loss = -1 }
+				SAP = {
+					add_popularity = {
+						ideology = democratic
+						popularity = democratic_pop_loss
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = communism_pop_loss
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = sap_nationalists_split
+					}
+				}
+				SAP = {
+					add_ideas = sap_los_cruzados
+				}
+			}
+		}
+	}
 	option = { # Stay with government
 		name = sapin_civil_war.1.a
 	}
 	option = { # Join republicans
 		name = sapin_civil_war.1.b
-		SAP_REPUBLICAN_REVOLT = {
+		SAR = {
 			change_tag_from = ROOT
 		}
 	}
 }
-country_event = { # Monarchist Revolt
+country_event = { # Nationalist Revolt
 	id = sapin_civil_war.2
 	title = sapin_civil_war.2.t
 	desc = sapin_civil_war.2.desc
@@ -386,12 +471,65 @@ country_event = { # Monarchist Revolt
 	
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = sap_nationalists_split # monarchists and fascists have split
+				}
+				start_civil_war = {
+					ideology = fascism
+					size = party_popularity@fascism
+					set_country_flag = SAP_NATIONALIST_REVOLT
+				}
+				SAR = {
+					add_ideas = sap_los_cruzados
+				}
+			}
+			else = {
+				set_temp_variable = { nationalist_revolt_size = party_popularity@fascism }
+				add_to_temp_variable = { nationalist_revolt_size = party_popularity@monarchism }
+				set_temp_variable = { sap_republican_revolt_fascism_size = party_popularity@fascism }
+				divide_temp_variable = { sap_republican_revolt_fascism_size = nationalist_revolt_size }
+				start_civil_war = {
+					ideology = monarchism
+					size = nationalist_revolt_size
+					set_country_flag = SAP_NATIONALIST_REVOLT
+				}
+				SAM = {
+					add_popularity = {
+						ideology = fascism
+						popularity = sap_republican_revolt_fascism_size
+					}
+					add_ideas = {
+						sap_los_cruzados
+						sap_guardia_real
+					}
+				}
+				set_temp_variable = { monarchism_pop_loss = party_popularity@monarchism }
+				multiply_temp_variable = { monarchism_pop_loss = -1 }
+				set_temp_variable = { fascism_pop_loss = party_popularity@fascism }
+				multiply_temp_variable = { fascism_pop_loss = -1 }
+				SAP = {
+					add_popularity = {
+						ideology = monarchism
+						popularity = monarchism_pop_loss
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = fascism_pop_loss
+					}
+				}
+			}
+		}
+	}
+
 	option = { # Stay with government
 		name = sapin_civil_war.2.a
 	}
-	option = { # Join republicans
+	option = { # Join monarchists
 		name = sapin_civil_war.2.b
-		SAP_MONARCHIST_REVOLT = {
+		SAM = {
 			change_tag_from = ROOT
 		}
 	}

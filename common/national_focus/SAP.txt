@@ -11,5 +11,6 @@ focus_tree = {
     continuous_focus_position = { x = 1700 y = 1700 }
     
 	shared_focus = sap_1991_parliamentary_elections
+    shared_focus = sap_modernize_the_royal_air_force
     shared_focus = sap_modernize_the_royal_army
 }

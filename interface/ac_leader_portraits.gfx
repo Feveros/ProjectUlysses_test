@@ -128,6 +128,7 @@ spriteTypes = {
 
 ######### OSEA ######################################
 
+	### POLITICAL LEADERS
 	spriteType = {
 		name = "GFX_portrait_OSE_vincent_harling"
 		texturefile = "gfx/leaders/OSE/portrait_OSE_vincent_harling.png"
@@ -213,6 +214,47 @@ spriteTypes = {
 		texturefile = "gfx/leaders/OSE/portrait_OSE_david_appelrouth.png"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_OSE_hiroto_george"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_hiroto_george.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_hiroto_george_small"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_hiroto_george_small.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_howard_mclaughlin"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_howard_mclaughlin.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_howard_mclaughlin_small"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_howard_mclaughlin_small.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_maryam_boone"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_maryam_boone.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_maryam_boone_small"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_maryam_boone_small.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_sterling_schulz"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_sterling_schulz.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_OSE_sterling_schulz_small"
+		texturefile = "gfx/leaders/OSE/portrait_OSE_sterling_schulz_small.png"
+	}
+
+	### MILITARY LEADERS
 	spriteType = {
 		name = "GFX_portrait_OSE_herbert_weisskopf"
 		texturefile = "gfx/leaders/OSE/portrait_OSE_herbert_weisskopf.png"

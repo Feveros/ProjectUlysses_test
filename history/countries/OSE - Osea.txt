@@ -80,6 +80,16 @@ set_variable = { osea_national_mood_imperialist_swing_loc = 0 }
 set_variable = { osea_national_mood_xenophobic_swing_loc = 0 }
 set_variable = { osea_national_mood_protectionist_swing_loc = 0 }
 
+set_variable = { osea_federal_discretionary_budget = 587.91 } # in millions
+set_variable = { osea_federal_spending = 0 } # Just in case I want to add to some ideas/focuses/events
+OSE_add_to_budget = yes
+set_variable = { osea_oia_funding = 250 } # in millions
+
+create_intelligence_agency = {
+    name = "Osean Intelligence Agency"
+    icon = GFX_intelligence_agency_logo_ose
+}
+
 country_event = {
 	id = osea_politics.7
 	days = 365
@@ -108,7 +118,16 @@ add_ideas = {
 recruit_character = OSE_daniel_andrews
 recruit_character = OSE_tyler_mackenzie
 # Political Advisors
-recruit_character = OSE_senator_armstrong
+recruit_character = OSE_richard_cain
+recruit_character = OSE_declan_russell
+recruit_character = OSE_martin_buchanan
+recruit_character = OSE_hector_blake
+recruit_character = OSE_george_oured_iii
+recruit_character = OSE_hiroto_george
+recruit_character = OSE_howard_mclaughlin
+recruit_character = OSE_maryam_boone
+recruit_character = OSE_hiroto_george
+recruit_character = OSE_sterling_schulz
 # Military Advisors
 
 # Generals
@@ -121,12 +140,6 @@ recruit_character = OSE_kai_george
 recruit_character = OSE_dominic_parry
 recruit_character = OSE_patrick_barnes
 recruit_character = OSE_emerson_clemens
-# Advisors
-recruit_character = OSE_richard_cain
-recruit_character = OSE_declan_russell
-recruit_character = OSE_martin_buchanan
-recruit_character = OSE_hector_blake
-recruit_character = OSE_george_oured_iii
 # Admirals
 
 
@@ -221,186 +234,132 @@ if = {
 		has_dlc = "By Blood Alone"
 	}
 	create_equipment_variant = {
-		name = "P-6" #export models only
+		name = "F-5A Tiger II" #
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = gun_pods_1_2x
+			fixed_auxiliary_weapon_slot_1 = qaam_1_1x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = airframe_swept_wing
+		}
+		obsolete = yes
+		icon = "GFX_light_plane_4_medium"
+	}
+	create_equipment_variant = {
+		name = "F-4C Phantom II" #
 		type = small_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
+			fixed_auxiliary_weapon_slot_1 = unguided_bomb
 			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
+			special_type_slot_1 = airframe_swept_wing
+			special_type_slot_2 = airframe_mod_dihedral_wings
 		}
 		obsolete = yes
+		icon = "GFX_iw_medium_airframe_medium"
 	}
 	create_equipment_variant = {
-		name = "P-26A" #
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = yes
-		icon = "GFX_USA_light_plane_2_medium"
-	}
-	create_equipment_variant = {
-		name = "O2U" #
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			fixed_auxiliary_weapon_slot_1 = light_mg_2x
-			engine_type_slot = engine_1_1x
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "SBU Corsair" #
-		type = cv_small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = dive_brakes_small
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "BM-2" #
-		type = cv_small_plane_naval_bomber_airframe_0
-		modules = {
-			fixed_main_weapon_slot = torpedo_mounting
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "A-12" #
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = light_mg_4x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = yes
-		icon = "GFX_USA_CAS1_medium"
-	}
-	create_equipment_variant = {
-		name = "A-17" #
-		type = small_plane_cas_airframe_1
-		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = light_mg_4x
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_USA_CAS1_medium"
-	}
-	create_equipment_variant = {
-		name = "P-25A" #
+		name = "F-5E Tiger II" #
 		type = small_plane_airframe_1
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
-			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_1 = qaam_1_1x
 			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
+			special_type_slot_1 = airframe_swept_wing
 		}
-		icon = "GFX_USA_light_plane_4_medium"
+		icon = "GFX_light_plane_4_medium"
 	}
 	create_equipment_variant = {
-		name = "P-26A" #
-		type = small_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = light_mg_4x
-			fixed_auxiliary_weapon_slot_1 = light_mg_2x
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_USA_fighter1_medium"
-	}
-	create_equipment_variant = {
-		name = "B-6A" #also covers other Keystone bombers
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = lmg_defense_turret
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "B-10" #
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = lmg_defense_turret
-		}
-		icon = "GFX_medium_plane_1_medium"
-	}
-	create_equipment_variant = {
-		name = "B-18" #
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			engine_type_slot = engine_2_2x
-			special_type_slot_1 = lmg_defense_turret
-		}
-		icon = "GFX_USA_early_bomber_medium"
-	}
-	create_equipment_variant = {
-		name = "P2Y" #
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = bomb_locks
-			engine_type_slot = engine_2_2x
-			special_type_slot_1 = flying_boat_medium
-			special_type_slot_2 = lmg_defense_turret
-		}
-		obsolete = yes
-		icon = "GFX_USA_naval_bomber1_medium"
-	}
-	create_equipment_variant = {
-		name = "PBY" #
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-			engine_type_slot = engine_2_2x
-			special_type_slot_1 = flying_boat_medium
-			special_type_slot_2 = lmg_defense_turret
-		}
-		icon = "GFX_USA_naval_bomber1_medium"
-	}
-	create_equipment_variant = {
-		name = "F4B" #also covers F2F
-		type = cv_small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = yes
-		icon = "GFX_USA_cv_fighter1_medium"
-	}
-	create_equipment_variant = {
-		name = "F3F" #
-		type = cv_small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_USA_cv_fighter1_medium"
-	}
-	create_equipment_variant = {
-		name = "F4F" #
+		name = "F-4J Phantom II" #
 		type = cv_small_plane_airframe_1
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
+			fixed_auxiliary_weapon_slot_1 = unguided_bomb_large
 			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
+			special_type_slot_1 = airframe_swept_wing
+			special_type_slot_2 = airframe_mod_dihedral_wings
+			special_type_slot_3 = dive_brakes_small
 		}
-		icon = "GFX_USA_cv_fighter1_medium"
+		icon = "GFX_light_plane_5_medium"
+	}
+	create_equipment_variant = {
+		name = "A-10 Thunderbolt II" #
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = tank_buster_1
+			fixed_auxiliary_weapon_slot_1 = rocket_rails
+			fixed_auxiliary_weapon_slot_2 = bomb_locks
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = airframe_straight_wing
+		}
+		icon = "GFX_medium_plane_3_medium"
+	}
+	create_equipment_variant = {
+		name = "F-4E Phantom II" #
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = unguided_bomb_large
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = airframe_swept_wing
+			special_type_slot_2 = airframe_mod_dihedral_wings
+		}
+		icon = "GFX_iw_medium_airframe_medium"
+	}
+	create_equipment_variant = {
+		name = "F-117A Nighthawk" #
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			fixed_auxiliary_weapon_slot_2 = qaam_1_1x
+			fixed_auxiliary_weapon_slot_3 = lagm_1_1x
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = airframe_swept_wing
+			special_type_slot_2 = airframe_mod_faceted_frame
+			special_type_slot_3 = stealth_coating_1_medium
+			special_type_slot_4 = air_air_radar_2
+		}
+		icon = "GFX_advanced_medium_airframe_medium"
+	}
+	create_equipment_variant = {
+		name = "B-52 Stratofortress" #
+		type = large_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = large_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+			fixed_auxiliary_weapon_slot_2 = large_bomb_bay
+			engine_type_slot = engine_2_6x
+			special_type_slot_1 = airframe_swept_wing
+			special_type_slot_2 = lmg_defense_turret
+		}
+		icon = "GFX_basic_large_airframe_medium"
+	}
+	create_equipment_variant = {
+		name = "P-3 Orion" #
+		type = large_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			fixed_auxiliary_weapon_slot_1 = airdropped_mines
+			fixed_auxiliary_weapon_slot_2 = airdropped_mines
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = airframe_straight_wing
+			special_type_slot_2 = flying_boat_medium
+			special_type_slot_3 = lmg_defense_turret
+		}
+		obsolete = no
+		icon = "GFX_naval_bomber2_medium"
+	}
+	create_equipment_variant = {
+		name = "E-3 Sentry" #
+		type = medium_plane_scout_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = awacs_radar
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = airframe_swept_wing
+		}
+		obsolete = no
+		icon = "GFX_scout_plane3_medium"
 	}
 }
 if = {
@@ -723,12 +682,14 @@ if = {
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	infantry_manpads = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
 	superior_firepower = 1
 	base_strike = 1
 	motorised_infantry = 1
+	electronic_mechanical_engineering = 1
 	synth_oil_experiments = 1
 	fuel_silos = 1
 	fuel_refining = 1
@@ -814,6 +775,8 @@ if = {
 			basic_small_airframe = 1
 			iw_medium_airframe = 1
 			basic_medium_airframe = 1
+			iw_large_airframe = 1
+			basic_large_airframe = 1
 			engines_1 = 1
 			engines_2 = 1
 			aa_lmg = 1

@@ -209,6 +209,17 @@ leader_traits = {
 		recruitable_population_factor = 0.05
 		drift_defence_factor = 0.25
 	}
+	father_of_the_nation_3 = {
+		stability_factor = 0.2
+		war_support_factor = 0.2
+		political_power_factor = 0.1
+		recruitable_population_factor = 0.1
+		drift_defence_factor = 0.5
+		political_advisor_cost_factor = 0.5
+		economy_cost_factor = -0.5
+		trade_laws_cost_factor = -0.5
+		mobilization_laws_cost_factor = -0.5
+	}
 	
 	### Perbla ###
 	
@@ -224,6 +235,52 @@ leader_traits = {
 	}
 	
 	### OSE ###
+
+	liberal_hawk = {
+		random = yes
+		sprite = 13
+		political_power_gain = 0.025
+		democratic_drift = 0.01
+		opinion_gain_monthly_factor = 0.125
+		trade_opinion_factor = 0.125
+		war_support_factor = 0.05
+		stability_factor = -0.025
+		justify_war_goal_time = -0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	liberal_ideologue = {
+		random = yes
+		sprite = 13
+		fascism_drift = -0.025
+		communism_drift = -0.025
+		democratic_drift = 0.025
+		democratic_acceptance = 60
+		fascism_acceptance = -60
+		communism_acceptance = -60
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	liberal_internationalist = {
+		random = yes
+		sprite = 13
+		democratic_drift = 0.025
+		justify_war_goal_time = -0.25
+		guarantee_cost = -0.50
+		guarantee_tension = -0.50
+		fascism_acceptance = -40
+		communism_acceptance = -40
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	OSE_senator_armstrong_trait_1 = {
 		random = no

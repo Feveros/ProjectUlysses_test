@@ -13,12 +13,113 @@ UST_ratio_negotiation = {
 		
 		war_with_on_timeout = RAT
 		
+		cancel_trigger = {
+			ROOT = {
+				has_war_with = RAT
+			}
+		}
 		timeout_effect = {
 			RAT = {
 				declare_war_on = { 
 					type = annex_everything 
 					target = UST 
 				}
+			}
+			hidden_effect = {
+				news_event = { id = ac_news_event.14 days = 1 }
+			}
+		}
+	}
+	UST_demilitarize_industry = {
+		icon = xxx
+		available = {
+			always = yes
+		}
+		visible = {
+			has_active_mission = UST_ratio_war_timer
+		}
+		fire_only_once = yes
+		days_remove = 10
+		cost = 50
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = -1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_days_mission_timeout = {
+				mission = UST_ratio_war_timer
+				days = 15
+			}
+		}
+	}
+	UST_release_ratio_prisoners = {
+		icon = xxx
+		available = {
+			always = yes
+		}
+		visible = {
+			has_active_mission = UST_ratio_war_timer
+		}
+		fire_only_once = yes
+		cost = 50
+		remove_effect = {
+			RAT = {
+				add_manpower = 1000
+			}
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_days_mission_timeout = {
+				mission = UST_ratio_war_timer
+				days = 15
+			}
+		}
+	}
+	UST_arrest_butchers = {
+		icon = xxx
+		available = {
+			always = yes
+		}
+		visible = {
+			has_active_mission = UST_ratio_war_timer
+		}
+		fire_only_once = yes
+		cost = 50
+		remove_effect = {
+			UST = {
+				add_manpower = -500
+			}
+			add_war_support = -0.1
+			custom_effect_tooltip = kill_general_NOTE
+			add_days_mission_timeout = {
+				mission = UST_ratio_war_timer
+				days = 15
+			}
+		}
+	}
+	UST_buy_mercs = {
+		icon = xxx
+		available = {
+			always = yes
+		}
+		visible = {
+			has_active_mission = UST_ratio_war_timer
+		}
+		fire_only_once = yes
+		cost = 150
+		remove_effect = {
+			load_oob = UST_mercs_1
+			add_to_variable = { ratio_hate = 1 }
+			add_days_mission_timeout = {
+				mission = UST_ratio_war_timer
+				days = 30
 			}
 		}
 	}

@@ -1,0 +1,30 @@
+﻿l_english:
+
+ ############
+ ### OSEA ###
+ ############
+ # Names
+ OSE_general_dynamics_land_systems_organization: "General Dynamics Land Systems"
+ OSE_general_motors_organization: "General Motors"
+ OSE_bae_systems_organization: "BAE Systems"
+ OSE_lockheed_organization: "Lockheed-Martin"
+ OSE_mcdonnell_douglas_aircraft_company_organization: "McDonnell Douglas"
+ OSE_northrop_grumman_organization: "Northrop Grumman"
+ OSE_boeing_organization: "Boeing"
+ 
+ # Traits
+ OSE_mio_trait_medium_tank_organization: "Main Battle Tank Manufacturer"
+ OSE_mio_trait_lockeed_aircraft: "Skunk Works"
+ OSE_mio_trait_mcdonnell_douglas: "Strike Aircraft Designer"
+ OSE_mio_trait_smooth_finish: "Smooth Finish"
+ OSE_mio_trait_jet_fighter_design: "Jet Fighter Designer"
+ OSE_mio_trait_superfortress: "Superfortress Designer"
+
+ #############
+ ### BELKA ###
+ #############
+ # Names
+ BLK_grunder_air:0 "South Belka Munitions"
+ 
+ # Traits
+ BLK_mio_trait_grunder_air:0 "Belkan Advanced Technology Laboratory"

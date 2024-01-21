@@ -32,5 +32,40 @@ equipments = {
 		archetype = support_equipment
 		priority = 20	
 	}
+	
+	manpads = {
+		year = 1991
+
+		is_archetype = yes
+		picture = archetype_manpads
+		is_buildable = no
+		type = {
+			infantry
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.8
+		
+		hard_attack = 10
+		ap_attack = 200
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 5
+		resources = {
+			tungsten = 1
+			steel = 2
+		}
+	}
+
+	manpads_1 = {
+		year = 1991
+
+		archetype = manpads
+		priority = 20	
+	}
 
 }

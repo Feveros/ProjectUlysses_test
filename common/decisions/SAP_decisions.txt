@@ -47,6 +47,59 @@ SAP_civil_war = {
 			}
 		}
 	}
+	SAP_civil_war_recruitment = {
+		icon = placeholder 
+        state_target = yes
+        target_root_trigger = {
+			has_civil_war = yes
+		}
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+                is_core_of = ROOT
+				NOT = { has_state_flag = civil_war_state_infantry_mobilized }
+			}
+		}
+        on_map_mode = map_and_decisions_view
+        days_remove = 7
+        remove_effect = {
+            FROM = {
+                if = {
+                    limit = {
+                        state_population_k < 999
+                    }
+                    create_unit = {
+                        division = "name = \"División Guardia Nacional\" division_template = \"División Guardia Nacional\" start_experience_factor = 0.2"
+                        allow_spawning_on_enemy_provs = no
+                        owner = ROOT
+                        id = draft_infantry_id
+                    }
+                }
+                else = {
+                    set_variable = { recruitable_pop = state_population_k }
+                    multiply_variable = { recruitable_pop = 0.01 }
+                    set_variable = { units_to_spawn = recruitable_pop }
+                    divide_variable = { units_to_spawn = 9 }
+                    for_loop_effect = {
+                        start = 1
+                        end = units_to_spawn
+                        compare = less_than_or_equals
+                        create_unit = {
+                            division = "name = \"División Guardia Nacional\" division_template = \"División Guardia Nacional\" start_experience_factor = 0.2"
+                            allow_spawning_on_enemy_provs = no
+                            owner = ROOT
+                            id = sap_draft_infantry_id
+                        }
+                    }
+                }
+                set_state_flag = {
+					flag = civil_war_state_infantry_mobilized
+					days = 60
+					value = 1
+				}
+            }
+        }
+	}
 }
 SAP_national_politics = {
     SAP_call_1991_elections = {
@@ -55,7 +108,7 @@ SAP_national_politics = {
 		days_mission_timeout = 200
 		selectable_mission = yes
 		ai_chance = {
-			base = 0
+			base = 100
 		}
 		activation = {
 			NOT = {
@@ -71,37 +124,156 @@ SAP_national_politics = {
 			always = no
 		}
 		timeout_effect = {
-			complete_national_focus = sap_1991_parliamentary_elections
-            #Call event that removes sap_dysfunctional_coalition after an option for either monarchist or republican victory is selected
+			country_event = sapin_politics.1
 		}
         complete_effect = {
             complete_national_focus = sap_1991_parliamentary_elections
-            #Call event that removes sap_dysfunctional_coalition after an option for either monarchist or republican victory is selected
+            country_event = sapin_politics.1
         }
 	}
 }
 SAP_national_guard = {
 	SAP_mobilize_state_national_guard = {
-		icon = placeholder
-		target_root_trigger = {
+		icon = placeholder 
+        state_target = yes
+        target_root_trigger = {
 			has_completed_focus = sap_sapinish_national_guard
 		}
-		target_array = ROOT.core_states
-        target_trigger = {
+		target_trigger = {
 			FROM = {
-				is_owned_and_controlled_by = ROOT
-				NOT = {
-					has_state_flag = sap_state_mobilized
-				}
-				is_demilitarized_zone = no
+				is_controlled_by = ROOT
+                is_core_of = ROOT
+				NOT = { has_state_flag = state_infantry_mobilized }
 			}
 		}
-		on_map_mode = map_and_decisions_view
-		cost = 25
+        available = {
+            OR = {
+                has_defensive_war = yes
+                any_other_country = {
+                    OR = {
+                        is_justifying_wargoal_against = ROOT
+                        has_wargoal_against = ROOT
+                    }
+                }
+            }
+        }
+        on_map_mode = map_and_decisions_view
+        days_remove = 14
         remove_effect = {
-			FROM = {
-				SAP_mobilize_state_national_guard_effect = yes
+            FROM = {
+                if = {
+                    limit = {
+                        state_population_k < 999
+                    }
+                    create_unit = {
+                        division = "name = \"División Guardia Nacional\" division_template = \"División Guardia Nacional\" start_experience_factor = 0.2"
+                        allow_spawning_on_enemy_provs = no
+                        owner = ROOT
+                        id = draft_infantry_id
+                    }
+                }
+                else = {
+                    set_variable = { recruitable_pop = state_population_k }
+                    multiply_variable = { recruitable_pop = 0.01 }
+                    set_variable = { units_to_spawn = recruitable_pop }
+                    divide_variable = { units_to_spawn = 9 }
+                    for_loop_effect = {
+                        start = 1
+                        end = units_to_spawn
+                        compare = less_than_or_equals
+                        create_unit = {
+                            division = "name = \"División Guardia Nacional\" division_template = \"División Guardia Nacional\" start_experience_factor = 0.2"
+                            allow_spawning_on_enemy_provs = no
+                            owner = ROOT
+                            id = sap_draft_infantry_id
+                        }
+                    }
+                }
+                set_state_flag = state_infantry_mobilized
+            }
+        }
+	}
+	SAP_begin_new_round_of_mobilization = {
+		icon = placeholder
+        available = {
+			AND = {
+				every_owned_state = {
+					limit = {
+						is_controlled_by = ROOT
+                		is_core_of = ROOT
+					}
+					has_state_flag = state_infantry_mobilized
+				}
+				OR = {
+					has_defensive_war = yes
+					any_other_country = {
+						OR = {
+							is_justifying_wargoal_against = ROOT
+							has_wargoal_against = ROOT
+						}
+					}
+				}
 			}
         }
+        visible = { has_completed_focus = sap_sapinish_national_guard }
+        cost = var:sap_mobilization_round_cost
+        days_remove = 30
+		complete_effect = {
+			add_to_variable = { sap_mobilization_round_cost = 25 }
+		}
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					has_state_flag = state_infantry_mobilized
+				}
+				clr_state_flag = state_infantry_mobilized
+			}
+		}
+	}
+	SAP_demobilize = {
+		icon = placeholder
+		is_good = yes
+		days_mission_timeout = 30
+		selectable_mission = yes
+		activation = {
+            AND = {
+                has_country_flag = SAP_has_mobilized
+                has_war = no
+            }
+        }
+		cancel_trigger = {
+            OR = {
+                NOT = {
+                    has_country_flag = SAP_has_mobilized
+                    has_defensive_war = yes
+                }
+            }
+		}
+        complete_effect = {
+            clr_country_flag = SAP_has_mobilized
+            delete_unit = { id = sap_draft_infantry_id }
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					has_state_flag = state_infantry_mobilized
+				}
+				clr_state_flag = state_infantry_mobilized
+			}
+        }
+		timeout_effect = {
+			clr_country_flag = SAP_has_mobilized
+            delete_unit = { id = sap_draft_infantry_id }
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					has_state_flag = state_infantry_mobilized
+				}
+				clr_state_flag = state_infantry_mobilized
+			}
+		}
 	}
 }

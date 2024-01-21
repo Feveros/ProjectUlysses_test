@@ -51,7 +51,7 @@
 #This marks the first time the Osean Federation has lost a war in almost a century, and the President has been attempting to salvage the situation as best he can, despite his approval ratings already beginning to plummet. <---- Re-add later if enough space in event
  
  ac_news_event.10.t:0 "Natural Resources Discovered in Ustio"
- ac_news_event.10.d:0 "A recent prospecting company employed by the new government of Ustio has reportedly found massive deposits of gold, silver, and other precious metals in the mountains and deserts of the country, located close enough to the surface to be harvested with minimal expense. Land sales have skyrocketed, and the government is scrambling to authorize excavation companies and teams to begin taking advantage of this discovery. While most celebrate this discovery, as it will empower the new country, the Belkan government has claimed these resources belong to Belka, as they were not aware of these resources when Ustio was allowed to secede. The failure of the Great Lakes Resource Development Company fresh in their minds, some are also accusing Osea of having orchestrated the whole thing."
+ ac_news_event.10.d:0 "A recent prospecting company employed by the government of Ustio has reportedly found massive deposits of gold, silver, and other precious metals in the mountains and deserts of the country, located close enough to the surface to be harvested with minimal expense. Land sales have skyrocketed, and the government is scrambling to authorize excavation companies and teams to begin taking advantage of this discovery. While most celebrate this discovery, as it will empower the new country, the Belkan government has claimed these resources belong to Belka, as they were not aware of these resources when Ustio was allowed to secede. The failure of the Great Lakes Resource Development Company fresh in their minds, some are also accusing Osea of having orchestrated the whole thing."
  ac_news_event.10.a:0 "Those were meant to be ours!"
  ac_news_event.10.b:0 "We're gonna be rich!"
  ac_news_event.10.c:0 "Ustian Gold"
@@ -65,3 +65,21 @@
  ac_news_event.12.d:0 "Excalibur, a large experimental chemical laser weapon in Belka designed to shoot down ICBMs, then repurposed to assist in military combat, has been completely and utterly destroyed by a flight of aircraft, rendering it inoperable for the forseeable future. The large laser tower, the product of Belka's intense militarization program, was originally devised and designed for self-defense, allowing Belka to defend itself against missile attacks, however some small modifications allowed it to become an effective area denial tool for use in war. Despite this, it appears that an attack force was able to make it to the structure itself and destroy the facility, negating it's advantage. This is a severe blow to Belka, and some question if this victory will permanately tip the scales in the Allied Forces' favor."
  ac_news_event.12.a:0 "We don't need superweapons to win."
  ac_news_event.12.b:0 "The sword has been pulled from it's stone."
+ 
+ ac_news_event.13.t:0 "Ustio Refuses to Sell Land To Ratio"
+ ac_news_event.13.d:0 ""
+ ac_news_event.13.a:0 "" ### For Ustio
+ ac_news_event.13.b:0 "" ### For Ratio
+ ac_news_event.13.c:0 "" ### For Rest
+ 
+ ac_news_event.14.t:0 "Ratio Invades Ustio"
+ ac_news_event.14.d:0 ""
+ ac_news_event.14.a:0 "" ### For Ustio
+ ac_news_event.14.b:0 "" ### For Ratio
+ ac_news_event.14.c:0 "" ### For Rest
+ 
+ ac_news_event.15.t:0 "Ustio Unexpected Attack"
+ ac_news_event.15.d:0 ""
+ ac_news_event.15.a:0 "" ### For Ustio
+ ac_news_event.15.b:0 "" ### For Ratio
+ ac_news_event.15.c:0 "" ### For Rest

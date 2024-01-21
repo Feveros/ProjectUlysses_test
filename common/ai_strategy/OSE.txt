@@ -81,6 +81,72 @@ do_not_waste_units_on_garrison = {
 	}
 }
 
+ose_prep_belkan_war = {
+	allowed = {
+		original_tag = OSE
+	}
+
+	enable = {
+		BLK = {
+			has_government = fascism
+		}
+		date < 1995.7.1
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = BLK
+		value = 1000
+	}
+}
+
+ose_shore_bombard_belka = {
+	allowed = {
+		original_tag = OSE
+	}
+
+	enable = {
+		has_war_with = BLK
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_NAVAL_INVASION_SUPPORT
+		value = 1000
+	}
+}
+
+ose_hold_strong_belka = {
+	allowed = {
+		original_tag = OSE
+	}
+
+	enable = {
+		has_war_with = BLK
+		date < 1995.8.1
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+	
+		tag = BLK
+
+		ratio = 0.25
+	
+		priority = 100 
+		ordertype = front  
+		execution_type = balanced
+		execute_order = no  
+		manual_attack = yes  
+	}
+}
+
 ose_kill_weak_belka  = {
 	allowed = {
 		original_tag = OSE
@@ -100,9 +166,44 @@ ose_kill_weak_belka  = {
 
 		ratio = 0.25
 	
-		priority = 100 
+		priority = 100
 		ordertype = front  
 		execution_type = rush  
+		execute_order = yes  
+		manual_attack = yes  
+	}
+}
+
+ose_balanced_kill_weak_belka  = {
+	allowed = {
+		original_tag = OSE
+	}
+
+	enable = {
+		has_war_with = BLK
+		date > 1995.8.1
+		OR = {
+			SAP = {
+				has_capitulated = yes
+			}
+			UST = {
+				has_capitulated = yes
+			}
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+	
+		tag = BLK
+
+		ratio = 0.25
+	
+		priority = 150 
+		ordertype = front  
+		execution_type = balanced  
 		execute_order = yes  
 		manual_attack = yes  
 	}

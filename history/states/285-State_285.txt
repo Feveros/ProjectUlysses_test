@@ -15,19 +15,20 @@ state={
 		owner = FRU
 		add_core_of = FRU
 		buildings = {
-			infrastructure = 0
-			arms_factory = 0
-			industrial_complex = 0
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 1
 			air_base = 0
 
 		}
+		victory_points = { 271 45 }
 
 	}
 
 	provinces={
 		51 240 271 852 2048 3099 4793 4977 5402 5585 5663 5720 7962 8100 8129 8130 8131 8214 8269 8309 
 	}
-	manpower=1000000
+	manpower=4578001
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

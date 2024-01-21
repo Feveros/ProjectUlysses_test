@@ -31,8 +31,8 @@ ideas = {
                 experience_gain_army_factor = -0.05
                 army_attack_factor = -0.05
                 army_defence_factor = -0.05
-                army_core_attack_factor = 0.15
-                army_core_defence_factor = 0.15
+                army_core_attack_factor = 0.20
+                army_core_defence_factor = 0.20
                 consumer_goods_factor = -0.05
                 enemy_justify_war_goal_time = 0.15
                 generate_wargoal_tension = 0.15
@@ -45,6 +45,9 @@ ideas = {
         geb_nonexistent_air_force = {
             picture = GEB_nonexistent_air_force
             allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
                 always = yes
             }
             removal_cost = 0
@@ -62,6 +65,9 @@ ideas = {
             allowed = {
                 always = yes
             }
+            allowed_civil_war = {
+                always = yes
+            }
             removal_cost = 0
             modifier = {
                 production_speed_buildings_factor = -0.30
@@ -75,6 +81,9 @@ ideas = {
         geb_unindustrialized_economy_2 = {
             picture = GEB_unindustrialized_economy_2
             allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
                 always = yes
             }
             removal_cost = 0
@@ -92,6 +101,9 @@ ideas = {
             allowed = {
                 always = yes
             }
+            allowed_civil_war = {
+                always = yes
+            }
             removal_cost = 0
             modifier = {
                 production_speed_buildings_factor = -0.10
@@ -107,6 +119,9 @@ ideas = {
             allowed = {
                 always = yes
             }
+            allowed_civil_war = {
+                always = yes
+            }
             removal_cost = 0
             modifier = {
                 monthly_population = -0.15
@@ -117,6 +132,9 @@ ideas = {
             allowed = {
                 always = yes
             }
+            allowed_civil_war = {
+                always = yes
+            }
             removal_cost = 0
             modifier = {
                 production_speed_infrastructure_factor = 0.15
@@ -125,6 +143,9 @@ ideas = {
         geb_internal_trade_subsidies = {
             picture = can_wartime_prices_and_trade_board
             allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
                 always = yes
             }
             removal_cost = 0
@@ -138,6 +159,9 @@ ideas = {
             allowed = {
                 always = yes
             }
+            allowed_civil_war = {
+                always = yes
+            }
             removal_cost = 0
 			modifier = {
                 acclimatization_hot_climate_gain_factor = 0.30
@@ -147,6 +171,9 @@ ideas = {
         geb_defensive_militarism = {
             picture = GEB_defensive_militarism
             allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
                 always = yes
             }
             removal_cost = 0
@@ -161,6 +188,12 @@ ideas = {
             picture = GEB_progressive_tax_system
             allowed = {
                 always = yes
+            }
+            allowed_civil_war = {
+                OR = {
+                    has_government = democratic
+                    has_government = communism
+                }
             }
             removal_cost = 0
 			modifier = {
@@ -177,6 +210,9 @@ ideas = {
             allowed = {
                 always = yes
             }
+            allowed_civil_war = {
+                always = yes
+            }
             removal_cost = 0
 			modifier = {
                 consumer_goods_factor = -0.05
@@ -187,6 +223,9 @@ ideas = {
         geb_shared_prosperity = {
             picture = GEB_regional_prosperity
             allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
                 always = yes
             }
             removal_cost = 0
@@ -205,6 +244,9 @@ ideas = {
             allowed = {
                 always = yes
             }
+            allowed_civil_war = {
+                always = yes
+            }
             removal_cost = 0
 			modifier = {
                 air_cas_efficiency = 0.05
@@ -218,6 +260,9 @@ ideas = {
             allowed = {
                 always = yes
             }
+            allowed_civil_war = {
+                always = yes
+            }
             removal_cost = 0
 			modifier = {
                 weekly_manpower = -500
@@ -229,6 +274,9 @@ ideas = {
         geb_rampant_wealth_inequality = {
             picture = placeholder
             allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
                 always = yes
             }
             removal_cost = 0

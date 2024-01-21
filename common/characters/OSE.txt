@@ -42,6 +42,18 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = richard_cain
+			visible = {
+				OR = {
+					has_country_leader_ideology = conservatism
+					has_country_leader_ideology = centrism
+				}
+			}
+			available = {
+				OR = {
+					has_country_leader_ideology = conservatism
+					has_country_leader_ideology = centrism
+				}
+			}
 			traits = { hawk }
 		}
 	}
@@ -56,6 +68,18 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = declan_russell
+			visible = {
+				OR = {
+					has_country_leader_ideology = conservatism
+					has_country_leader_ideology = centrism
+				}
+			}
+			available = {
+				OR = {
+					has_country_leader_ideology = conservatism
+					has_country_leader_ideology = centrism
+				}
+			}
 			traits = { irredentist_academic }
 		}
 	}
@@ -70,6 +94,18 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = martin_buchanan
+			visible = {
+				OR = {
+					has_country_leader_ideology = conservatism
+					has_country_leader_ideology = centrism
+				}
+			}
+			available = {
+				OR = {
+					has_country_leader_ideology = conservatism
+					has_country_leader_ideology = centrism
+				}
+			}
 			traits = { empire_builder }
 		}
 	}
@@ -84,10 +120,22 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = hector_blake
+			visible = {
+				OR = {
+					has_country_leader_ideology = conservatism
+					has_country_leader_ideology = centrism
+				}
+			}
+			available = {
+				OR = {
+					has_country_leader_ideology = conservatism
+					has_country_leader_ideology = centrism
+				}
+			}
 			traits = { silent_workhorse }
 		}
 	}
-	OSE_george_oured_iii = { #unity advisor, popular figurehead
+	OSE_george_oured_iii = { #democratic advisor, popular figurehead
 		name="George Oured III"
 		portraits = {
 			civilian = {
@@ -98,7 +146,112 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = george_oured_iii
+			visible = { has_government = democratic }
 			traits = { popular_figurehead }
+		}
+	}
+	OSE_hiroto_george = { #liberty advisor, liberal internationalist
+		name="Hiroto George"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_OSE_hiroto_george"
+				small="GFX_portrait_OSE_hiroto_george_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = hiroto_george
+			visible = {
+				OR = {
+					has_country_leader_ideology = liberalism
+					has_country_leader_ideology = social_democracy
+				}
+			}
+			available = {
+				OR = {
+					has_country_leader_ideology = liberalism
+					has_country_leader_ideology = social_democracy
+				}
+			}
+			traits = { liberal_internationalist }
+		}
+	}
+	OSE_howard_mclaughlin = { #liberty advisor, liberal hawk
+		name="Howard McLaughlin"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_OSE_howard_mclaughlin"
+				small="GFX_portrait_OSE_howard_mclaughlin_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = howard_mclaughlin
+			visible = {
+				OR = {
+					has_country_leader_ideology = liberalism
+					has_country_leader_ideology = social_democracy
+				}
+			}
+			available = {
+				OR = {
+					has_country_leader_ideology = liberalism
+					has_country_leader_ideology = social_democracy
+				}
+			}
+			traits = { liberal_hawk }
+		}
+	}
+	OSE_maryam_boone = { #liberty advisor, liberal ideologue
+		name="Maryam Boone"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_OSE_maryam_boone"
+				small="GFX_portrait_OSE_maryam_boone_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = maryam_boone
+			visible = {
+				OR = {
+					has_country_leader_ideology = liberalism
+					has_country_leader_ideology = social_democracy
+				}
+			}
+			available = {
+				OR = {
+					has_country_leader_ideology = liberalism
+					has_country_leader_ideology = social_democracy
+				}
+			}
+			traits = { liberal_ideologue }
+		}
+	}
+	OSE_sterling_schulz = { #liberty advisor, economic reformer
+		name="Sterling Schulz"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_OSE_sterling_schulz"
+				small="GFX_portrait_OSE_sterling_schulz_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = sterling_schulz
+			visible = {
+				OR = {
+					has_country_leader_ideology = liberalism
+					has_country_leader_ideology = social_democracy
+				}
+			}
+			available = {
+				OR = {
+					has_country_leader_ideology = liberalism
+					has_country_leader_ideology = social_democracy
+				}
+			}
+			traits = { economic_reformer }
 		}
 	}
 	

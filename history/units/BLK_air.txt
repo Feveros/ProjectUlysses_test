@@ -3,106 +3,120 @@
 air_wings = {
 
 	220 = { 
-		fighter_equipment_0 =  {		# He 51
+		fighter_equipment_1 =  {
 			owner = "BLK" 
 			amount = 40
 		}
-		name = "Jagdgeschwader 232"
 	}
-
-
-	296 = { 		
-		fighter_equipment_0 =  {		# Ar 68
-			owner = "BLK" 
-			amount = 80
-		}
-		name = "Jagdgeschwader 132"	
-		tac_bomber_equipment_0 = {		# Do 23
-			owner = "BLK" 
-			amount = 80
-		}
-		tac_bomber_equipment_0 = {		# Ju 86
+	
+	256 = { 
+		fighter_equipment_1 =  {
 			owner = "BLK" 
 			amount = 40
-			version_name = "Ju 86"
 		}
-		name = "Kampfgeschwader 153"
-
+	}
+	
+	296 = {
+		fighter_equipment_1 =  {
+			owner = "BLK" 
+			amount = 80
+		}
+		CAS_equipment_1 =  {
+			owner = "BLK" 
+			amount = 80
+		}
+		tac_bomber_equipment_1=  {
+			owner = "BLK" 
+			amount = 40
+		}
 		transport_plane_equipment_1 = {
 			owner = "BLK" 
 			amount = 10
 		}
 	}
-
-	364 = { 
-		
-		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
-			owner = "BLK" 
-			amount = 60
-		}
-		name = "Kampfgeschwader 253"
-		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
-			owner = "BLK" 
-			amount = 60
-		}
 	
-		CAS_equipment_1 =  {			# Hs 123
-			owner = "BLK" 
-			amount = 80
-		}
-		name = "Sturzkampfgeschwader 162"	
-	}
-
-
-	330 = { 
-		# Jagdgeschwader 134 'Horst Wessel'		
-		fighter_equipment_0 =  {		# He 51 # Ar 68
+	364 = {
+		fighter_equipment_1 =  {
 			owner = "BLK" 
 			amount = 60
 		}
-		name = "Jagdgeschwader 134"
-		fighter_equipment_0 =  {		# He 51 # Ar 68
+		CAS_equipment_1 =  {
 			owner = "BLK" 
 			amount = 60
 		}
-
-		tac_bomber_equipment_1 = {		# Do 23
-			owner = "BLK" 
-			amount = 80
-		}
-		name = "Kampfgeschwader 152"
-
-		tac_bomber_equipment_0 = {		# He 45 or Do 23 ? (light bomber)
-			owner = "BLK" 
-			amount = 80
-		}
-		name = "Kampfgeschwader 155"
 	}
-
-
-	590 = { 
-		
-		fighter_equipment_0 =  {		# He 51
+	
+	330 = {
+		fighter_equipment_1 =  {
+			owner = "BLK" 
+			amount = 60
+		}
+		fighter_equipment_1 =  {
+			owner = "BLK" 
+			amount = 60
+		}
+		fighter_equipment_1 =  {
+			owner = "BLK" 
+			amount = 80
+		}
+		CAS_equipment_1 =  {
+			owner = "BLK" 
+			amount = 80
+		}
+	}
+	
+	590 = {
+		tac_bomber_equipment_1 =  {
 			owner = "BLK" 
 			amount = 40
 		}
-		name = "Jagdgeschwader 136"
-	
-		tac_bomber_equipment_0 = {		# Do 23
+		CAS_equipment_1 =  {
 			owner = "BLK" 
 			amount = 80
 		}
-		name = "Kampfgeschwader 154"
 	}
-
-
-	215 = { 
-		nav_bomber_equipment_1 =  {		# He 59, Do 18
+	
+	600 = {
+		tac_bomber_equipment_1 =  {
 			owner = "BLK" 
-			amount = 72
+			amount = 50
 		}
-		name = "Küstenfliegergruppe 106"
+		fighter_equipment_1 =  {
+			owner = "BLK" 
+			amount = 50
+		}
 	}
+	
+	265 = {
+		strat_bomber_equipment_1 =  {
+			owner = "BLK" 
+			amount = 25
+		}
+		strat_bomber_equipment_1 =  {
+			owner = "BLK" 
+			amount = 25
+		}
+		strat_bomber_equipment_1 =  {
+			owner = "BLK" 
+			amount = 25
+		}
+		strat_bomber_equipment_1 =  {
+			owner = "BLK" 
+			amount = 25
+		}
+	}
+	
+	302 = {
+		nav_bomber_equipment_1 =  {
+			owner = "BLK" 
+			amount = 45
+		}
+		nav_bomber_equipment_1 =  {
+			owner = "BLK" 
+			amount = 45
+		}
+	}
+
 }
 
 #########################

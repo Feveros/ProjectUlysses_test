@@ -12,8 +12,9 @@ state={
 	}
 
 	history={
-		owner = SOA
-		add_core_of = SOA
+		owner = NIH
+		add_core_of = NIH
+		add_claim_by = SOA
 		buildings = {
 			infrastructure = 0
 			arms_factory = 0

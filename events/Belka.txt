@@ -191,7 +191,11 @@ country_event = { #SELLING LAND
 				transfer_state = 604
 			}
 			
-			UST = { country_event = { id = ustio.1 days = 60 } }
+			UST = {
+				country_event = { id = ustio.1 days = 60 }
+				country_event = { id = ustio.4 days = 7 }
+				country_event = ustio.2
+			}
 			GEB = { country_event = { id = recta.1 days = 90 } }
 		}
 	}
@@ -505,16 +509,25 @@ country_event = { #Excalibur
 	is_triggered_only = yes
 
 	option = { #make it kill planes
+		ai_chance = {
+			factor = 100
+		}
 		name = belka_dlp_coup.6.a 
 		set_country_flag = BLK_excalibur_anti_place
 		set_variable = { BLK_excalibur_destruction_meter = 0 }
 	}
 	option = { #make it bomb land
+		ai_chance = {
+			factor = 0
+		}
 		name = belka_dlp_coup.6.b
 		set_country_flag = BLK_excalibur_anti_land
 		set_variable = { BLK_excalibur_destruction_meter = 0 }
 	}
 	option = { #make it kill more ICBMs
+		ai_chance = {
+			factor = 0
+		}
 		name = belka_dlp_coup.6.c
 		set_country_flag = BLK_excalibur_anti_icbm
 	}
@@ -839,7 +852,6 @@ country_event = {
 		if = {
 			limit = {
 				BLK = { is_ai = yes }
-				OSE = { is_ai = no }
 			}
 			activate_mission = BLK_belkan_war_collapse_AI
 		}
@@ -877,6 +889,47 @@ country_event = {  ### event to check if belkan war is still ongoing - if yes - 
 		}
 		name = belka_dlp_war.4.a
 		country_event = belka_dlp_war.3
+	}
+}
+
+country_event = { #AI Belka fires excalibur
+	id = belka_dlp_war.5
+	title = belka_dlp_war.5.t
+	desc = belka_dlp_war.5.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			ROOT = {
+				has_global_flag = belkan_war_is_happening
+			}
+		}
+		name = belka_dlp_war.5.a
+		add_ideas = BLK_own_excalibur_fire_idea
+		every_other_country = {
+			limit = {
+				has_war_with = BLK
+			}
+			country_event = belka_dlp_war.6
+		}
+	}
+}
+
+country_event = { #Belka uses Excalibur for hostile nations
+	id = belka_dlp_war.6
+	title = belka_dlp_war.6.t
+	desc = belka_dlp_war.6.d
+	picture = GFX_report_event_belka_meme_read_write
+	
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_war.6.a
+		add_ideas = BLK_enemy_excalibur_fire_idea
+		add_war_support = -0.05
+		add_stability = -0.05
 	}
 }
 
@@ -1189,6 +1242,8 @@ country_event = { #fev is this ai belka hitting it's crisis? it doesn't have a t
 		name = belka_dlp_war.105.a
 		add_ideas = BLK_eco_crisis_army_for_ai
 		add_ideas = BLK_eco_crisis_for_ai
+		remove_ideas = BLK_eco_crisis_6_ai
+		remove_ideas = BLK_belkan_war_ai_buff_idea
 		hidden_effect = {
 			OSE = {
 				country_event = osea.78

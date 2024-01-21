@@ -36,3 +36,19 @@ guard_frontline_belkan_war = {
 		execute_order = yes
 	}
 }
+
+geb_build_20_civs = {
+	allowed = {
+		original_tag = GEB
+	}
+	enable = {
+		GEB = { num_of_civilian_factories < 20 }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 100
+	}
+}

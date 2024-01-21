@@ -7,8 +7,17 @@ OSE_congress_dec = {
 	}
 	scripted_gui = OSE_congress_decisions_ui
 }
+OSE_oia_operations_dec  = {
+	priority = 998
+	icon = GFX_decision_category_oia_operations
+	visible_when_empty = yes
+
+	allowed = {
+		original_tag = OSE
+	}
+}
 OSE_belkan_land_dec  = {
-	priority = 2
+	priority = 997
 	icon = xxx
 
 	allowed = {
@@ -16,7 +25,7 @@ OSE_belkan_land_dec  = {
 	}
 }
 OSE_belkan_war  = {
-	priority = 3
+	priority = 996
 	icon = xxx
 
 	allowed = { 
@@ -24,7 +33,7 @@ OSE_belkan_war  = {
 	}
 }
 OSE_economy_dec  = {
-	priority = 4
+	priority = 995
 	icon = xxx
 
 	allowed = { 
@@ -32,7 +41,7 @@ OSE_economy_dec  = {
 	}
 }
 OSE_fix_army  = {
-	priority = 99
+	priority = 994
 	icon = xxx
 
 	allowed = {

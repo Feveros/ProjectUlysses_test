@@ -1144,6 +1144,7 @@ technologies = {
 		}
 
 		categories = {
+			mot_rockets
 			artillery
 		}
 		
@@ -1184,6 +1185,7 @@ technologies = {
 		}
 
 		categories = {
+			mot_rockets
 			artillery
 		}
 		
@@ -1219,6 +1221,7 @@ technologies = {
 		}
 
 		categories = {
+			mot_rockets
 			artillery
 		}
 		
@@ -1310,6 +1313,7 @@ technologies = {
 		}
 
 		categories = {
+			mot_rockets
 			artillery
 		}
 		
@@ -1339,6 +1343,7 @@ technologies = {
 		}
 
 		categories = {
+			mot_rockets
 			artillery
 		}
 		
@@ -1368,6 +1373,7 @@ technologies = {
 		}
 
 		categories = {
+			mot_rockets
 			artillery
 		}
 		

@@ -17,17 +17,18 @@ state={
 		buildings = {
 			infrastructure = 0
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 1
 			air_base = 0
 
 		}
+		victory_points = { 8727 15 }
 
 	}
 
 	provinces={
 		1155 4000 4728 5927 8646 8727 8746 8765 8779 8781 
 	}
-	manpower=1000000
+	manpower=1245778
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

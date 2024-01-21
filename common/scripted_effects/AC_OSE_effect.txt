@@ -2189,6 +2189,7 @@ OSE_increase_taxes = {
 			remove_idea = OSE_extremely_low_taxes_idea
 			add_idea = OSE_very_low_taxes_idea
 		}
+		custom_effect_tooltip = OSE_high_taxes_idea_tt
 	}
 	else_if = {
 		limit = {
@@ -2198,6 +2199,7 @@ OSE_increase_taxes = {
 			remove_idea = OSE_very_low_taxes_idea
 			add_idea = OSE_low_taxes_idea
 		}
+		custom_effect_tooltip = OSE_high_taxes_idea_tt
 	}
 	else_if = {
 		limit = {
@@ -2207,6 +2209,7 @@ OSE_increase_taxes = {
 			remove_idea = OSE_low_taxes_idea
 			add_idea = OSE_moderate_taxes_idea
 		}
+		custom_effect_tooltip = OSE_high_taxes_idea_tt
 	}
 	else_if = {
 		limit = {
@@ -2216,6 +2219,7 @@ OSE_increase_taxes = {
 			remove_idea = OSE_moderate_taxes_idea
 			add_idea = OSE_high_taxes_idea
 		}
+		custom_effect_tooltip = OSE_high_taxes_idea_tt
 	}
 	else_if = {
 		limit = {
@@ -2225,6 +2229,7 @@ OSE_increase_taxes = {
 			remove_idea = OSE_high_taxes_idea
 			add_idea = OSE_very_high_taxes_idea
 		}
+		custom_effect_tooltip = OSE_high_taxes_idea_tt
 	}
 	else_if = {
 		limit = {
@@ -2234,6 +2239,7 @@ OSE_increase_taxes = {
 			remove_idea = OSE_very_high_taxes_idea
 			add_idea = OSE_extremely_high_taxes_idea
 		}
+		custom_effect_tooltip = OSE_high_taxes_idea_tt
 	}
 	else = {
 		add_political_power = 100
@@ -2248,6 +2254,7 @@ OSE_decrease_taxes = {
 			remove_idea = OSE_extremely_high_taxes_idea
 			add_idea = OSE_very_high_taxes_idea
 		}
+		custom_effect_tooltip = OSE_low_taxes_idea_tt
 	}
 	else_if = {
 		limit = {
@@ -2257,6 +2264,7 @@ OSE_decrease_taxes = {
 			remove_idea = OSE_very_high_taxes_idea
 			add_idea = OSE_high_taxes_idea
 		}
+		custom_effect_tooltip = OSE_low_taxes_idea_tt
 	}
 	else_if = {
 		limit = {
@@ -2266,6 +2274,7 @@ OSE_decrease_taxes = {
 			remove_idea = OSE_high_taxes_idea
 			add_idea = OSE_moderate_taxes_idea
 		}
+		custom_effect_tooltip = OSE_low_taxes_idea_tt
 	}
 	else_if = {
 		limit = {
@@ -2275,6 +2284,7 @@ OSE_decrease_taxes = {
 			remove_idea = OSE_moderate_taxes_idea
 			add_idea = OSE_low_taxes_idea
 		}
+		custom_effect_tooltip = OSE_low_taxes_idea_tt
 	}
 	else_if = {
 		limit = {
@@ -2284,6 +2294,7 @@ OSE_decrease_taxes = {
 			remove_idea = OSE_low_taxes_idea
 			add_idea = OSE_very_low_taxes_idea
 		}
+		custom_effect_tooltip = OSE_low_taxes_idea_tt
 	}
 	else_if = {
 		limit = {
@@ -2293,6 +2304,7 @@ OSE_decrease_taxes = {
 			remove_idea = OSE_very_low_taxes_idea
 			add_idea = OSE_extremely_low_taxes_idea
 		}
+		custom_effect_tooltip = OSE_low_taxes_idea_tt
 	}
 	else = {
 		add_stability = 0.025
@@ -4195,4 +4207,102 @@ OSE_congressional_election = {
 	}
 	OSE_calc_senate_seats = yes
 	OSE_reset_senate_support = yes
+}
+
+OSE_annual_budget_gain = {
+	# Initial funding
+	set_temp_variable = { osea_budget_gain = 0 }
+	# Civ Bonus
+	set_temp_variable = { osea_budget_gain_civ_bonus = num_of_civilian_factories }
+	multiply_temp_variable = { osea_budget_gain_civ_bonus = 10 }
+	set_temp_variable = { osea_budget_gain_civ_bonus_mult = 1 }
+	subtract_from_temp_variable = { osea_budget_gain_civ_bonus_mult = modifier@consumer_goods_expected_value }
+	subtract_from_temp_variable = { osea_budget_gain_civ_bonus_mult = modifier@consumer_goods_factor }
+	multiply_temp_variable = { osea_budget_gain_civ_bonus = osea_budget_gain_civ_bonus_mult }
+	add_to_temp_variable = { osea_budget_gain = osea_budget_gain_civ_bonus }
+	# Mil Bonus
+	set_temp_variable = { osea_budget_gain_mil_bonus = num_of_military_factories }
+	multiply_temp_variable = { osea_budget_gain_mil_bonus = 10 }
+	set_temp_variable = { osea_budget_gain_mil_bonus_add = osea_budget_gain_mil_bonus }
+	multiply_temp_variable = { osea_budget_gain_mil_bonus_add = modifier@industrial_capacity_factory }
+	add_to_temp_variable = { osea_budget_gain_mil_bonus = osea_budget_gain_mil_bonus_add }
+	add_to_temp_variable = { osea_budget_gain = osea_budget_gain_mil_bonus }
+	# Dockyard Bonus
+	set_temp_variable = { osea_budget_gain_dock_bonus = num_of_available_naval_factories }
+	multiply_temp_variable = { osea_budget_gain_dock_bonus = 10 }
+	set_temp_variable = { osea_budget_gain_dock_bonus_add = osea_budget_gain_dock_bonus }
+	multiply_temp_variable = { osea_budget_gain_dock_bonus_add = modifier@industrial_capacity_dockyard }
+	add_to_temp_variable = { osea_budget_gain_dock_bonus = osea_budget_gain_dock_bonus_add }
+	add_to_temp_variable = { osea_budget_gain = osea_budget_gain_dock_bonus }
+	# Taxes
+	if = {
+		limit = {
+			has_idea = OSE_extremely_low_taxes_idea
+		}
+		multiply_temp_variable = { osea_budget_gain = 0.10 }
+	}
+	else_if = {
+		limit = {
+			has_idea = OSE_very_low_taxes_idea
+		}
+		multiply_temp_variable = { osea_budget_gain = 0.20 }
+	}
+	else_if = {
+		limit = {
+			has_idea = OSE_low_taxes_idea
+		}
+		multiply_temp_variable = { osea_budget_gain = 0.30 }
+	}
+	else_if = {
+		limit = {
+			has_idea = OSE_moderate_taxes_idea
+		}
+		multiply_temp_variable = { osea_budget_gain = 0.40 }
+	}
+	else_if = {
+		limit = {
+			has_idea = OSE_high_taxes_idea
+		}
+		multiply_temp_variable = { osea_budget_gain = 0.50 }
+	}
+	else_if = {
+		limit = {
+			has_idea = OSE_very_high_taxes_idea
+		}
+		multiply_temp_variable = { osea_budget_gain = 0.60 }
+	}
+	else_if = {
+		limit = {
+			has_idea = OSE_extremely_high_taxes_idea
+		}
+		multiply_temp_variable = { osea_budget_gain = 0.70 }
+	}
+	# Expenses
+	subtract_from_variable = { osea_budget_gain = osea_federal_spending }
+	# Fin
+	add_to_variable = { osea_federal_discretionary_budget = osea_budget_gain }
+	custom_effect_tooltip = OSE_annual_budget_gain_tt
+}
+
+OSE_add_to_federal_budget = {
+	custom_effect_tooltip = OSE_add_to_federal_budget_tt
+	add_to_variable = { osea_federal_discretionary_budget = OSE_budget_to_add }
+}
+
+OSE_congress_bill_3_pass = { # Increase Defense Forces Budget Cost
+	set_temp_variable = { OSE_budget_to_add = num_battalions }
+	multiply_temp_variable = { OSE_budget_to_add = -0.20 }
+	OSE_add_to_federal_budget = OSE_budget_to_add
+}
+
+OSE_congress_bill_4_pass = { # Pay Farm Subisidies Cost
+	set_temp_variable = { OSE_budget_to_add = max_manpower_k }
+	divide_temp_variable = { OSE_budget_to_add = -1000 }
+	OSE_add_to_federal_budget = OSE_budget_to_add
+}
+
+OSE_congress_bill_5_pass = { # Award Research Grants Cost
+	set_temp_variable = { OSE_budget_to_add = amount_research_slots }
+	multiply_temp_variable = { OSE_budget_to_add = -37.5 }
+	OSE_add_to_federal_budget = OSE_budget_to_add
 }

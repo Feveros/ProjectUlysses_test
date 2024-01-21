@@ -164,7 +164,7 @@ BLK_belkan_war_category = {
 		days_mission_timeout = 400
 		selectable_mission = no
 		timeout_effect = {
-			country_event = { id = belka_dlp_war.105 }
+			country_event = belka_dlp_war.105
 			set_country_flag = BLK_belkan_war_collapse_AI_flag
 		}
 	}
@@ -194,6 +194,12 @@ BLK_belkan_war_category = {
 			}
 			hidden_effect = {
 				#country_event = { id = belka_dlp_war_crisis.1 days = 5 }
+				if = {
+					limit = {
+						BLK = { is_ai = yes }
+					}
+					country_event = { id = belka_dlp_war.5 days = 90 }
+				}
 				set_global_flag = belkan_war_is_happening
 			}
 			declare_war_on = { 
@@ -223,7 +229,14 @@ BLK_belkan_war_category = {
 			OSE = {
 				create_faction = OSE_BELKAN_WAR_FACTION
 				add_to_faction = UST
-				add_to_faction = SAP
+				if = {
+					limit = {
+						SAP = {
+							is_in_faction = no
+						}
+					}
+					add_to_faction = SAP
+				}
 				hidden_effect = {
 					country_event = osea.77
 				}
@@ -232,6 +245,12 @@ BLK_belkan_war_category = {
 				create_faction = FAT_BELKAN_WAR_FACTION
 				add_to_faction = GEB
 				add_to_faction = REC
+			}
+			YUK = {
+				country_event = {
+					id = yuktobania_fp.1
+					days = 7
+				}
 			}
 		}
 	}

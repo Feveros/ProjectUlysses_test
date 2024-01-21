@@ -31,13 +31,16 @@ set_power_balance = {
     id = SAP_power_balance
 }
 
+set_variable = { sap_mobilization_round_cost = 25 }
+
 add_ideas = {
 	disarmed_nation
 
 	sap_dysfunctional_coalition
 	sap_economic_crisis_3
 	sap_nobility_influence_high
-	sap_noble_high_command
+	sap_noble_high_command_5
+	sap_guardia_real
 
 	nuke_lvl_1 
 }
@@ -69,8 +72,9 @@ recruit_character = SAP_alejandro_delgado
 recruit_character = SAP_miguel_hernandez
 recruit_character = SAP_army_3
 recruit_character = SAP_army_4
-recruit_character = SAP_carlos_martinez
-recruit_character = SAP_chief_air_2
+recruit_character = SAP_diego_lopez
+recruit_character = SAP_mateo_gonzalez
+recruit_character = SAP_elena_sanchez
 recruit_character = SAP_chief_land_1
 recruit_character = SAP_chief_land_2
 recruit_character = SAP_chief_navy_1
@@ -83,6 +87,7 @@ recruit_character = SAP_theorist_2
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	infantry_manpads = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
@@ -183,7 +188,7 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = light_mg_4x
 			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
+			special_type_slot_1 = airframe_swept_wing
 		}
 	}
 	create_equipment_variant = {
@@ -192,7 +197,7 @@ if = {
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
 			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
+			special_type_slot_1 = airframe_swept_wing
 		}
 	}
 }

@@ -556,21 +556,24 @@ characters = {
 }
 
 characters = { #placeholder chiefs
-	SAP_carlos_martinez = {
-		name = "Carlos Martinez"
+	SAP_diego_lopez = {
+		name = "Diego Lopez"
 		portraits = {
-			army = {
+			civilian = {
 				#small ="GFX_portrait_empty_advisor"
 			}
 		}
 		advisor = {
 			slot = air_chief
-			idea_token = SAP_carlos_martinez
+			idea_token = SAP_diego_lopez
 			allowed = {
 				original_tag = SAP
 			}
+			available = {
+				has_completed_focus = sap_promote_diego_lopez
+			}
 			traits = {
-				air_chief_ground_support_2
+				air_air_superiority_2
 			}
 			cost = 150
 			ai_will_do = {
@@ -578,21 +581,49 @@ characters = { #placeholder chiefs
 			}
 		}
 	}
-	SAP_chief_air_2 = {
-		#name = "Chief Air 2"
+	SAP_mateo_gonzalez = {
+		name = "Mateo Gonzalez"
 		portraits = {
 			civilian = {
-				small ="GFX_portrait_empty_advisor"
+				#small ="GFX_portrait_empty_advisor"
 			}
 		}
 		advisor = {
 			slot = air_chief
-			idea_token = SAP_chief_air_2
+			idea_token = SAP_mateo_gonzalez
 			allowed = {
 				original_tag = SAP
 			}
+			available = {
+				has_completed_focus = sap_promote_mateo_gonzalez
+			}
 			traits = {
-				air_chief_safety_2
+				air_close_air_support_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	SAP_elena_sanchez = {
+		name = "Elena Sanchez"
+		portraits = {
+			civilian = {
+				#small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = SAP_elena_sanchez
+			allowed = {
+				original_tag = SAP
+			}
+			available = {
+				has_completed_focus = sap_promote_elena_sanchez
+			}
+			traits = {
+				air_strategic_bombing_2
 			}
 			cost = 150
 			ai_will_do = {

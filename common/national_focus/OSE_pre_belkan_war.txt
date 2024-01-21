@@ -3,7 +3,7 @@ shared_focus = {
     icon = GFX_goal_OSE_acquisition_of_belkan_land
     cost = 1
     ai_will_do = {
-        factor = 5
+        base = 5
     }
     x = 12
     y = 0
@@ -13,7 +13,7 @@ shared_focus = {
     completion_reward = {
 		country_event = osea_belka_land.2
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_ANNEXATION }
 }
 
 shared_focus = {
@@ -21,7 +21,7 @@ shared_focus = {
     icon = GFX_goal_OSE_deal_with_the_protests
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
     prerequisite = {
         focus = ose_acquisition_of_belkan_land
@@ -34,7 +34,7 @@ shared_focus = {
     completion_reward = {
 		swap_ideas = { remove_idea = ose_belkan_protests_1 add_idea = ose_belkan_protests_2 }
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_STABILITY }
 }
 
 shared_focus = {
@@ -42,7 +42,7 @@ shared_focus = {
     icon = GFX_focus_generic_self_management
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
     prerequisite = {
         focus = ose_deal_with_the_protests
@@ -56,7 +56,7 @@ shared_focus = {
 		custom_effect_tooltip = ose_integrate_administration_tt
 		set_country_flag = ose_integrate_administration_flag
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
 }
 
 shared_focus = {
@@ -64,7 +64,7 @@ shared_focus = {
     icon = GFX_goal_generic_construct_civ_factory
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
     prerequisite = {
         focus = ose_deal_with_the_protests
@@ -78,7 +78,7 @@ shared_focus = {
 		custom_effect_tooltip = ose_integrate_industry_tt
 		set_country_flag = ose_integrate_industry_flag
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -86,7 +86,7 @@ shared_focus = {
     icon = GFX_goal_generic_construct_military
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
     prerequisite = {
         focus = ose_integrate_administration
@@ -177,7 +177,7 @@ shared_focus = {
     icon = GFX_focus_generic_air_defense
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
     prerequisite = {
         focus = ose_integrate_administration
@@ -283,7 +283,7 @@ shared_focus = {
     icon = GFX_goal_OSE_1991_cold_war_build_up_plan
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
     x = 5
     y = 0
@@ -301,7 +301,7 @@ shared_focus = {
     icon = GFX_goal_generic_fortify_city
     cost = 8.6
     ai_will_do = {
-        factor = 5
+        base = 5
     }
     prerequisite = {
         focus = OSE_1991_cold_war_build_up_plan
@@ -367,7 +367,7 @@ shared_focus = {
 			}
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -375,7 +375,7 @@ shared_focus = {
     icon = GFX_goal_OSE_fund_navy
     cost = 8.6
     ai_will_do = {
-        factor = 5
+        base = 5
     }
     prerequisite = {
         focus = OSE_1991_cold_war_build_up_plan
@@ -401,7 +401,7 @@ shared_focus = {
 		navy_experience = 50
 		
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
 }
 
 shared_focus = {
@@ -409,7 +409,7 @@ shared_focus = {
     icon = GFX_focus_wonderweapons
     cost = 8.6
     ai_will_do = {
-        factor = 5
+        base = 5
     }
     prerequisite = {
         focus = ose_fortify_west
@@ -426,7 +426,7 @@ shared_focus = {
 			category = nuclear
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_RESEARCH }
 }
 
 shared_focus = {
@@ -434,7 +434,7 @@ shared_focus = {
     icon = GFX_goal_OSE_fund_technological_advancements
     cost = 8.6
     ai_will_do = {
-        factor = 5
+        base = 5
     }
     prerequisite = {
         focus = ose_fortify_west
@@ -474,7 +474,7 @@ shared_focus = {
 			category = synth_resources
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 }
 
 shared_focus = {
@@ -482,7 +482,7 @@ shared_focus = {
     icon = GFX_goal_OSE_cover_from_the_air
     cost = 8.6
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_redirect_spending_to_naval_effort
@@ -508,7 +508,7 @@ shared_focus = {
 		}
 		air_experience = 50
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 }
 
 #######################
@@ -518,7 +518,7 @@ shared_focus = {
     icon = GFX_goal_OSE_pre_election_campaign
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	available = {
 		has_country_flag = ose_pre_election_start_flag
@@ -543,7 +543,7 @@ shared_focus = {
 			value = 0
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_POLITICAL }
 }
 
 shared_focus = {
@@ -551,7 +551,7 @@ shared_focus = {
     icon = GFX_goal_OSE_elections_civs
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_pre_election_campaign
@@ -604,7 +604,7 @@ shared_focus = {
 			}
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -612,7 +612,7 @@ shared_focus = {
     icon = GFX_goal_OSE_elections_mils
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_pre_election_campaign
@@ -659,7 +659,7 @@ shared_focus = {
 		}
 
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -667,7 +667,7 @@ shared_focus = {
     icon = GFX_goal_OSE_elections_dockyards
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_pre_election_campaign
@@ -714,7 +714,7 @@ shared_focus = {
 		}
 
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -722,7 +722,7 @@ shared_focus = {
     icon = GFX_goal_OSE_elections_industry
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_pre_election_campaign
@@ -762,7 +762,7 @@ shared_focus = {
 			}
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -770,7 +770,7 @@ shared_focus = {
     icon = GFX_goal_OSE_elections_army
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_pre_election_campaign
@@ -798,7 +798,7 @@ shared_focus = {
 		}
 
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP }
 }
 
 shared_focus = {
@@ -806,7 +806,7 @@ shared_focus = {
     icon = GFX_goal_OSE_elections_stab_pp_was
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_pre_election_campaign
@@ -832,7 +832,7 @@ shared_focus = {
 		add_war_support = 0.1
 		add_political_power = 100 
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 }
 
 shared_focus = {
@@ -840,7 +840,7 @@ shared_focus = {
     icon = GFX_goal_OSE_menace_of_perbla
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_pre_election_campaign
@@ -863,7 +863,7 @@ shared_focus = {
 			}
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_POLITICAL }
 }
 
 ############################################
@@ -873,7 +873,7 @@ shared_focus = {
     icon = GFX_goal_OSE_election
     cost = 0
     ai_will_do = {
-        factor = 5
+        base = 5
     }
     relative_position_id = OSE_1991_cold_war_build_up_plan
     x = 5
@@ -887,7 +887,7 @@ shared_focus = {
     completion_reward = {
 
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_POLITICAL }
 }
 
 shared_focus = {
@@ -895,7 +895,7 @@ shared_focus = {
     icon = GFX_goal_OSE_tyler_mackenzie_won_1992
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_1992_elections
@@ -908,7 +908,7 @@ shared_focus = {
     completion_reward = {
 		country_event = osea.50
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_POLITICAL }
 }
 
 shared_focus = {
@@ -916,7 +916,7 @@ shared_focus = {
     icon = GFX_goal_generic_construction
     cost = 8.7
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_tyler_mackenzie_won_1992
@@ -937,7 +937,7 @@ shared_focus = {
 			add_extra_state_shared_building_slots = 2
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -945,7 +945,7 @@ shared_focus = {
     icon = GFX_focus_generic_railroad
     cost = 8.7
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_infra_deving
@@ -965,7 +965,7 @@ shared_focus = {
             path = { 2224 1304 7312 3461 7295 1443 7318 3393 993 1333 3826 5022 3265 4539 }
         }
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -973,7 +973,7 @@ shared_focus = {
     icon = GFX_goal_generic_construct_infrastructure
     cost = 8.7
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_infra_deving
@@ -1006,7 +1006,7 @@ shared_focus = {
 			}
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -1014,7 +1014,7 @@ shared_focus = {
     icon = GFX_goal_OSE_centralization
     cost = 8.7
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_rails_dev
@@ -1030,7 +1030,7 @@ shared_focus = {
     completion_reward = {
 		swap_ideas = { remove_idea = ose_federation_bureaucracy add_idea = ose_federation_bureaucracy_2 }
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_STABILITY }
 }
 
 shared_focus = {
@@ -1038,7 +1038,11 @@ shared_focus = {
     icon = GFX_focus_generic_the_giant_wakes
     cost = 8.7
     ai_will_do = {
-        factor = 500
+        base = 0
+		modifier = {
+			has_completed_focus = ose_partialy_rebuilt
+			add = 500
+		}
     }
 	prerequisite = {
         focus = ose_tyler_mackenzie_won_1992
@@ -1052,11 +1056,125 @@ shared_focus = {
 		custom_effect_tooltip = ose_industrial_buildup_tt
 		if = {
 			limit = {
-				has_completed_focus = 
+				has_completed_focus = ose_partialy_rebuilt
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = ose_small_centralization
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = ose_new_diplo_policy
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = ose_general_expantion_plans
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 
@@ -1065,7 +1183,7 @@ shared_focus = {
     icon = GFX_goal_OSE_cottage_industry
     cost = 8.7
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_industrial_buildup
@@ -1101,7 +1219,7 @@ shared_focus = {
 			}
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -1109,7 +1227,7 @@ shared_focus = {
     icon = GFX_goal_generic_positive_trade_relations
     cost = 8.7
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_industrial_buildup
@@ -1126,7 +1244,7 @@ shared_focus = {
 			value = 0
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -1134,7 +1252,7 @@ shared_focus = {
     icon = GFX_goal_generic_construct_mil_factory
     cost = 8.7
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_cottage_industry
@@ -1160,7 +1278,7 @@ shared_focus = {
     completion_reward = {
 		swap_ideas = { remove_idea = ose_uncontrolled_spending_3 add_idea = ose_uncontrolled_spending_4 }
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -1168,7 +1286,7 @@ shared_focus = {
     icon = GFX_goal_generic_construction2
     cost = 8.7
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_tyler_mackenzie_won_1992
@@ -1190,7 +1308,7 @@ shared_focus = {
 			category =  construction_tech
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -1198,7 +1316,7 @@ shared_focus = {
     icon = GFX_focus_generic_extract_oil
     cost = 8.7
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_excavation_start
@@ -1210,7 +1328,7 @@ shared_focus = {
 	}
     completion_reward = {
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -1218,7 +1336,7 @@ shared_focus = {
     icon = GFX_focus_generic_extract_chromium
     cost = 8.7
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_excavation_start
@@ -1231,7 +1349,7 @@ shared_focus = {
     completion_reward = {
 		unlock_decision_tooltip = ose_chrome_stage_one
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -1239,7 +1357,7 @@ shared_focus = {
     icon = GFX_focus_generic_land_reclamation
     cost = 8.7
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_dig_for_oil
@@ -1255,7 +1373,7 @@ shared_focus = {
     completion_reward = {
 		add_ideas = ose_excavation_idea
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -1263,7 +1381,7 @@ shared_focus = {
     icon = GFX_goal_OSE_fund_army
     cost = 8.7
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_tyler_mackenzie_won_1992
@@ -1299,7 +1417,7 @@ shared_focus = {
 		add_stability = -0.05
 		add_war_support = -0.05
 	}
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_ARMY_XP }
 }
 
 shared_focus = {
@@ -1307,7 +1425,7 @@ shared_focus = {
     icon = GFX_focus_secret_rearmament
     cost = 8.7
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_refund_the_land
@@ -1335,7 +1453,7 @@ shared_focus = {
 		}
 		add_political_power = -50
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_RESEARCH }
 }
 
 shared_focus = {
@@ -1343,7 +1461,7 @@ shared_focus = {
     icon = GFX_focus_generic_tank_production
     cost = 8.7
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_refund_the_land
@@ -1367,7 +1485,7 @@ shared_focus = {
 		add_political_power = -50
 		add_stability = -0.05
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_RESEARCH }
 }
 
 shared_focus = {
@@ -1375,7 +1493,7 @@ shared_focus = {
     icon = GFX_goal_OSE_army_upgrade
     cost = 8.7
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_to_re_equip_the_man
@@ -1394,7 +1512,7 @@ shared_focus = {
 		add_stability = -0.05
 		add_war_support = -0.1
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_ARMY_XP }
 }
 
 shared_focus = {
@@ -1402,7 +1520,7 @@ shared_focus = {
     icon = GFX_goal_OSE_belka_problem
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_tyler_mackenzie_won_1992
@@ -1423,7 +1541,7 @@ shared_focus = {
     icon = GFX_goal_OSE_yukto_problem
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_tyler_mackenzie_won_1992
@@ -1444,7 +1562,7 @@ shared_focus = {
     icon = GFX_goal_OSE_perbla_problem
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_tyler_mackenzie_won_1992
@@ -1465,7 +1583,7 @@ shared_focus = {
     icon = GFX_goal_OSE_mackenzie_doctrine
     cost = 4.3
     ai_will_do = {
-        factor = 5
+        base = 5
     }
 	prerequisite = {
         focus = ose_belka_problem
@@ -1482,7 +1600,7 @@ shared_focus = {
 	available = {
 	}
     completion_reward = {
-
+		add_ideas = OSE_mackenzie_doctrine_idea
     }
     search_filters = { }
 }
@@ -1494,7 +1612,7 @@ shared_focus = {
     icon = GFX_goal_OSE_urgent_war_committee
     cost = 4.3
     ai_will_do = {
-        factor = 500
+        base = 500
     }
     relative_position_id = ose_tyler_mackenzie_won_1992
     x = 0
@@ -1514,7 +1632,7 @@ shared_focus = {
     icon = GFX_goal_OSE_emergency_army_reforms
     cost = 4.3
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_urgent_war_committee
@@ -1532,7 +1650,7 @@ shared_focus = {
 			category = land_doctrine
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
 }
 
 shared_focus = {
@@ -1540,7 +1658,7 @@ shared_focus = {
     icon = GFX_goal_OSE_army_upgrade
     cost = 4.3
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_urgent_war_committee
@@ -1553,7 +1671,7 @@ shared_focus = {
     completion_reward = {
 		OSE_land_army_debuff_down = yes
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_ARMY_XP }
 }
 
 shared_focus = {
@@ -1561,7 +1679,7 @@ shared_focus = {
     icon = GFX_goal_generic_construct_mil_factory
     cost = 4.3
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_to_get_it_up_again
@@ -1596,7 +1714,7 @@ shared_focus = {
 			}
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -1604,7 +1722,7 @@ shared_focus = {
     icon = GFX_goal_OSE_call_up_the_man
     cost = 4.3
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_rectructure_to_war_economy
@@ -1617,7 +1735,7 @@ shared_focus = {
     completion_reward = {
 		add_ideas = extensive_conscription
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_MANPOWER }
 }
 
 shared_focus = {
@@ -1625,7 +1743,7 @@ shared_focus = {
     icon = GFX_goal_OSE_everything_for_the_front
     cost = 4.3
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_rectructure_to_war_economy
@@ -1649,7 +1767,7 @@ shared_focus = {
 			swap_ideas = { remove_idea = ose_uncontrolled_spending_3 add_idea = ose_uncontrolled_spending_4 }
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -1657,7 +1775,7 @@ shared_focus = {
     icon = GFX_goal_OSE_fuel_the_war_engine
     cost = 4.3
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_rectructure_to_war_economy
@@ -1671,7 +1789,7 @@ shared_focus = {
 		add_ideas = limited_exports
 		add_timed_idea = { idea = ose_to_catch_up days = 185 }
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 shared_focus = {
@@ -1679,7 +1797,7 @@ shared_focus = {
     icon = GFX_goal_OSE_allied_joint_command
     cost = 4.3
     ai_will_do = {
-        factor = 500
+        base = 500
     }
 	prerequisite = {
         focus = ose_rectructure_to_war_economy
@@ -1690,15 +1808,24 @@ shared_focus = {
 	available = {
 	}
     completion_reward = {
-		OSE = {
+		every_country = {
+			limit = {
+				OR = {
+					is_in_faction_with = ROOT
+				}
+			}
 			add_ideas = ose_joined_command
 		}
-		UST = {
-			add_ideas = ose_joined_command
-		}
-		SAP = {
-			add_ideas = ose_joined_command
+		if = {
+			limit = {
+				YUK  = {
+					has_idea = yuk_belkan_war_intervention
+				}
+			}
+			YUK = {
+				add_ideas = ose_joined_command
+			}
 		}
     }
-    search_filters = { }
+    search_filters = { FOCUS_FILTER_ARMY_XP }
 }

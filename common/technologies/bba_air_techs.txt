@@ -769,7 +769,6 @@ technologies = {
 		enable_equipment_modules = {
 			unguided_bomb
 			unguided_bomb_large
-			tank_buster_1
 			rocket_rails # Rocket Launcher
 			bomb_locks # Multi-Lock AGMs
 			small_bomb_bay # Guided Penetration Bombs
@@ -825,7 +824,7 @@ technologies = {
 
 	heavy_bombs = {
 		enable_equipment_modules = {
-					heavy_bomb_locks
+			heavy_bomb_locks
 		}
 			
 		research_cost = 1
@@ -864,16 +863,229 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1991
+		start_year = 1988
 
 		folder = {
 			name = bba_air_parts_folder
 			position = { x = -2 y = 2 }
 		}
+
+		path = {
+			leads_to_tech = air_tank_buster_2
+			research_cost_coeff = 1
+		}
 		
 		categories = {
 			air_equipment
 			plane_modules_tech
+			cat_air_tank_busters
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+
+	air_tank_buster_2 = {
+		enable_equipment_modules = {
+			tank_buster_2
+		}
+			
+		research_cost = 1
+		start_year = 1991
+
+		folder = {
+			name = bba_air_parts_folder
+			position = { x = -2 y = 4 }
+		}
+
+		path = {
+			leads_to_tech = air_tank_buster_3
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_tank_busters
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+
+	air_tank_buster_3 = {
+		enable_equipment_modules = {
+			tank_buster_3
+		}
+			
+		research_cost = 1
+		start_year = 1995
+
+		folder = {
+			name = bba_air_parts_folder
+			position = { x = -2 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = air_tank_buster_4
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_tank_busters
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+
+	air_tank_buster_4 = {
+		enable_equipment_modules = {
+			tank_buster_4
+		}
+			
+		research_cost = 1
+		start_year = 1999
+
+		folder = {
+			name = bba_air_parts_folder
+			position = { x = -2 y = 8 }
+		}
+
+		path = {
+			leads_to_tech = air_tank_buster_5
+			research_cost_coeff = 1
+		}
+
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_tank_busters
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+
+	air_tank_buster_5 = {
+		enable_equipment_modules = {
+			tank_buster_5
+		}
+			
+		research_cost = 1
+		start_year = 1999
+
+		folder = {
+			name = bba_air_parts_folder
+			position = { x = -2 y = 10 }
+		}
+
+		path = {
+			leads_to_tech = air_tank_buster_6
+			research_cost_coeff = 1
+		}
+
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_tank_busters
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+
+	air_tank_buster_6 = {
+		enable_equipment_modules = {
+			tank_buster_6
+		}
+			
+		research_cost = 1
+		start_year = 2000
+
+		folder = {
+			name = bba_air_parts_folder
+			position = { x = -2 y = 12 }
+		}
+
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_tank_busters
 			mio_cat_all_cas_and_modules
 			mio_cat_all_medium_aircraft_and_modules
 			mio_cat_all_light_aircraft_and_modules
@@ -896,7 +1108,6 @@ technologies = {
 		enable_equipment_modules = {
 			armor_piercing_bomb_locks
 			napalm_bombs
-			tank_buster_2
 		}
 			
 		research_cost = 1

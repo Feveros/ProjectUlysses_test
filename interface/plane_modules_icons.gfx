@@ -405,6 +405,26 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_buster_3"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_tank_buster_3_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_buster_4"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_tank_buster_4_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_buster_5"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_tank_buster_5_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_buster_6"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_tank_buster_6_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_airdropped_mines"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_mines_icon.dds"
 		legacy_lazy_load = no

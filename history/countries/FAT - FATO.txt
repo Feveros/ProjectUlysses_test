@@ -60,7 +60,7 @@ recruit_character = FAT_theorist_2
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	infantry_manpads = 1
+	infantry_manpats = 1
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
@@ -142,30 +142,43 @@ if = {
 ###############################################
 
 ### Land ###
-set_oob = "FAT_land"
+if = {
+	limit = {
+		BLK = {
+			is_ai = yes
+		}
+	}
+	set_oob = "FAT_land_vs_ai"
+	
+	else = {
+		set_oob = "FAT_land"
+	}
+}
 
 ### Air ###
 if = {
 	limit = {
 		has_dlc = "By Blood Alone"
 	}
-		set_air_oob  = "FAT_air_dlc"
+	set_air_oob  = "FAT_air_dlc"
+	
 	else = {
 		set_air_oob  = "FAT_air"
 	}
 }
+
 
 ### Navy ###
 if = {
 	limit = {
 		has_dlc = "Man the Guns" 
 	}
-		set_naval_oob = "FAT_navy_dlc"
+	set_naval_oob = "FAT_navy_dlc"
+	
 	else = {
 		set_naval_oob = "FAT_navy"
 	}
 }
-
 
 
 #########################

@@ -44,6 +44,42 @@ do_not_hold_ose_sap = {
 	}
 }
 
+SAP_send_volunteers_ustio = {
+	allowed = {
+		tag = SAP
+	}
+	enable = {
+		has_idea = sap_supported_ustio
+		UST = {
+			has_war_with = RAT
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = UST
+		value = 100
+	}
+}
+
+SAP_send_volunteers_ratio = {
+	allowed = {
+		tag = SAP
+	}
+	enable = {
+		has_idea = sap_supported_ratio
+		UST = {
+			has_war_with = RAT
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = RAT
+		value = 100
+	}
+}
+
 SAP_defend_vs_belka  = {
 	allowed = {
 		original_tag = SAP

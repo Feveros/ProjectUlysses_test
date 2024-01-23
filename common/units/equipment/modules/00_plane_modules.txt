@@ -1446,14 +1446,28 @@ equipment_modules = {
 		mission_type_stats = {
 			limit = {
 				cas
+			}
+			add_stats = {
+				weight = 6
+				air_ground_attack = 2
+			}
+			multiply_stats = {
+				air_agility = -0.10
+			}
+		}
+		mission_type_stats = {
+			limit = {
 				attack_logistics
 			}
 			add_stats = {
 				weight = 6
-				air_ground_attack = 15
+				air_ground_attack = 9
 			}
 			multiply_stats = {
 				air_agility = -0.10
+			}
+			add_average_stats = {
+				naval_strike_targetting = 4
 			}
 		}
 		dismantle_cost_ic = 0.5
@@ -1637,8 +1651,8 @@ equipment_modules = {
 		add_equipment_type = { cas tactical_bomber }
 
 		add_stats = {
-			air_ground_attack = 8
-			build_cost_ic = 5
+			air_ground_attack = 5
+			build_cost_ic = 3
 			weight = 8
 		}
 		multiply_stats = {
@@ -1659,8 +1673,96 @@ equipment_modules = {
 		add_equipment_type = { cas tactical_bomber }
 
 		add_stats = {
+			air_ground_attack = 7
+			build_cost_ic = 5
+			weight = 12
+		}
+		multiply_stats = {
+			air_agility = -0.10
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+		}
+		dismantle_cost_ic = 3.5
+	}
+
+	tank_buster_3 = {
+		abbreviation = "tb3"
+		category = tac_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { cas tactical_bomber }
+
+		add_stats = {
+			air_ground_attack = 9
+			build_cost_ic = 7
+			weight = 12
+		}
+		multiply_stats = {
+			air_agility = -0.10
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+		}
+		dismantle_cost_ic = 3.5
+	}
+
+	tank_buster_4 = {
+		abbreviation = "tb4"
+		category = tac_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { cas tactical_bomber }
+
+		add_stats = {
+			air_ground_attack = 11
+			build_cost_ic = 9
+			weight = 12
+		}
+		multiply_stats = {
+			air_agility = -0.10
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+		}
+		dismantle_cost_ic = 3.5
+	}
+
+	tank_buster_5 = {
+		abbreviation = "tb5"
+		category = tac_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { cas tactical_bomber }
+
+		add_stats = {
+			air_ground_attack = 13
+			build_cost_ic = 11
+			weight = 12
+		}
+		multiply_stats = {
+			air_agility = -0.10
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+		}
+		dismantle_cost_ic = 3.5
+	}
+
+	tank_buster_6 = {
+		abbreviation = "tb6"
+		category = tac_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { cas tactical_bomber }
+
+		add_stats = {
 			air_ground_attack = 15
-			build_cost_ic = 8
+			build_cost_ic = 13
 			weight = 12
 		}
 		multiply_stats = {

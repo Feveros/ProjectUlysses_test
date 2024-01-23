@@ -95,6 +95,7 @@ technology_categories = {
 	cat_air_guns
 	cat_air_engine
 	cat_air_bombs
+	cat_air_tank_busters
 	cat_imvs
 	cat_ifvs
 	cat_apcs

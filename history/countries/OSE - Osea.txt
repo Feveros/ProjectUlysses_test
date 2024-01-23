@@ -682,7 +682,7 @@ if = {
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	infantry_manpads = 1
+	infantry_manpats = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
@@ -781,6 +781,7 @@ if = {
 			engines_2 = 1
 			aa_lmg = 1
 			early_bombs = 1
+			air_tank_buster_1 = 1
 			aircraft_construction = 1
 		}
 	else = {

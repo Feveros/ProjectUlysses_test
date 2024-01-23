@@ -148,19 +148,41 @@ country_event = { # Ustio-Ratio Situation
 
 	option = { # Side with Ustio (Canonical)
 		name = sapin_diplomacy.1.a
-		give_guarantee = UST
 		set_country_flag = sap_sided_with_ustio_flag
+		add_ideas = sap_supported_ustio
 		UST = {
 			country_event  = sapin_diplomacy.2
+		}
+		effect_tooltip = {
+			UST = {
+				add_political_power = 150
+				add_war_support = 0.025
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = SAP
+				}
+			}
 		}
 		# For Feveros: Add effects here based on the content for that situation
 	}
 	option = { # Side with Ratio
 		name = sapin_diplomacy.1.b
-		give_guarantee = RAT
 		set_country_flag = sap_sided_with_ustio_flag
+		add_ideas = sap_supported_ratio
 		RAT = {
 			country_event  = sapin_diplomacy.2
+		}
+		effect_tooltip = {
+			RAT = {
+				add_political_power = 150
+				add_war_support = 0.025
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = SAP
+				}
+			}
 		}
 		# For Feveros: Add effects here based on the content for that situation
 	}
@@ -175,8 +197,13 @@ country_event = { # Sapin sides with us!
 
 	option = { # Yippee!
 		name = sapin_diplomacy.2.a
-		add_political_power = 50
+		add_political_power = 150
 		add_war_support = 0.025
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = SAP
+		}
 	}
 }
 country_event = { # The Belka Problem

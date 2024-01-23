@@ -929,5 +929,25 @@ ideas = {
                 monarchism_drift = 0.01
 			}
         }
+        sap_supported_ustio = {
+            picture = placeholder
+            allowed = {
+                always = yes
+            }
+            removal_cost = 0
+			modifier = {
+                send_volunteer_size = 2
+			}
+        }
+        sap_supported_ratio = {
+            picture = placeholder
+            allowed = {
+                always = yes
+            }
+            removal_cost = 0
+			modifier = {
+                send_volunteer_size = 2
+			}
+        }
     }
 }

@@ -105,7 +105,17 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_archetype_infantry_equipment_medium"
 		texturefile = "gfx/interface/archetypes/archetype_infantry_equipment.dds"
-	}	
+	}
+
+	SpriteType = {
+		name = "GFX_archetype_support_equipment_medium"
+		texturefile = "gfx/interface/archetypes/archetype_support_equipment.dds"
+	}
+
+	#SpriteType = {
+	#	name = "GFX_archetype_manpats_equipment_medium"
+	#	texturefile = "gfx/interface/archetypes/archetype_manpats_equipment.dds"
+	#}
 	
 	### generic equipment tech ###
 
@@ -187,6 +197,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/infantry1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_manpats_medium"
+		texturefile = "gfx/interface/technologies/infantry_manpats1.dds"
 	}
 	
 	SpriteType = {
@@ -7266,7 +7281,32 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_air_tank_buster_1_medium"
-		texturefile = "gfx/interface/technologies/bba_tech_armor_piercing_bombs.dds"
+		texturefile = "gfx/interface/technologies/bba_tech_air_tank_buster_1_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_air_tank_buster_2_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_air_tank_buster_2_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_air_tank_buster_3_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_air_tank_buster_3_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_air_tank_buster_4_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_air_tank_buster_4_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_air_tank_buster_5_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_air_tank_buster_5_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_air_tank_buster_6_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_air_tank_buster_6_icon.dds"
 	}
 
 	SpriteType = {

@@ -33,11 +33,11 @@ equipments = {
 		priority = 20	
 	}
 	
-	manpads = {
+	manpats = {
 		year = 1991
 
 		is_archetype = yes
-		picture = archetype_manpads
+		picture = archetype_anti_tank_equipment
 		is_buildable = no
 		type = {
 			infantry
@@ -61,10 +61,10 @@ equipments = {
 		}
 	}
 
-	manpads_1 = {
+	manpats_1 = {
 		year = 1991
 
-		archetype = manpads
+		archetype = manpats
 		priority = 20	
 	}
 

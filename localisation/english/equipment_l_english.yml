@@ -419,8 +419,8 @@ OSE_modern_tank_equipment_0:0 "M47"
  infantry_equipment_3_short:0 "Weapons III"
  infantry_equipment_3_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs. Further modernized to include personal Assault Rifles and anti-tank rockets."
  
- manpads_1:0 "MANPADS"
- manpads_1_desc:0 ""
+ manpats_1:0 "MANPATS"
+ manpats_1_desc:0 "Man-portable anti-tank systems (MANPATS) are traditionally portable shoulder-launched projectile systems firing heavy shell-type projectiles, typically designed to combat protected targets, such as armoured vehicles, field fortifications and at times even low-flying aircraft, especially helicopters."
 
  gw_armored_car_equipment:1 "Inter-War Armored Car"
  gw_armored_car_equipment_desc:0 "Where previous armored cars were simple commercial models with thin steel plating, this model was designed from the ground up to carry armor and light armament."

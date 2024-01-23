@@ -368,7 +368,7 @@ BLK_belkan_war_category = {
 		#cost = 10
 		days_remove = 10
 		ai_will_do = {
-			base = 100
+			base = 1000
 		}
 		complete_effect = {
 			set_country_flag = BLK_war_rep_going
@@ -435,7 +435,7 @@ BLK_belkan_war_category = {
 		#cost = 100
 		days_remove = 10
 		ai_will_do = {
-			base = 100
+			base = 1000
 		}
 		complete_effect = {
 			set_country_flag = BLK_war_rep_going
@@ -490,7 +490,7 @@ BLK_belkan_war_category = {
 		#cost = 100
 		days_remove = 10
 		ai_will_do = {
-			base = 100
+			base = 1000
 		}
 		complete_effect = {
 			set_country_flag = BLK_war_rep_going

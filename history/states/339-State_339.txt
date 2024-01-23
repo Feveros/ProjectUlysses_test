@@ -22,7 +22,7 @@ state={
 			air_base = 1
 
 		}
-		victory_points = { 7762 20 }
+		victory_points = { 7762 15 }
 		victory_points = { 5042 20 }
 
 	}
@@ -30,7 +30,7 @@ state={
 	provinces={
 		1033 1344 2117 4196 4346 5042 5181 5329 5407 5486 5968 7711 7719 7762 7791 7804 7820 7821 7839 7874 7892 7906 7936 7945 7947 7994 8002 8021 
 	}
-	manpower=3900942
+	manpower=3400942
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

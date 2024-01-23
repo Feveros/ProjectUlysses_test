@@ -117,7 +117,7 @@ country_event = { ### event for ustio about Belka mobilisaztion after resurces
 		add_stability = -0.05
 		add_war_support = 0.05
 		add_political_power = 50
-		add_country_flag = UST_they_are_coming
+		add_country_flag = UST_they_are_coming_flag
 	}
 }
 

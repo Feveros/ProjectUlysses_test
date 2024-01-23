@@ -60,7 +60,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = infantry_manpads
+			leads_to_tech = infantry_manpats
 			research_cost_coeff = 1
 		}		
 
@@ -259,14 +259,14 @@ technologies = {
 		}
 	}
 	
-	infantry_manpads = {
+	infantry_manpats = {
 		
 		enable_equipments = {
-			manpads_1
+			manpats_1
 		}
 		
 		enable_subunits = {
-			support_manpads
+			support_manpats
 		}
 
 		path = {
@@ -300,7 +300,7 @@ technologies = {
 		ifv = {
 			hard_attack = 0.25
 		}
-		support_manpads = {
+		support_manpats = {
 			hard_attack = 0.25
 		}
 		
@@ -345,7 +345,7 @@ technologies = {
 		ifv = {
 			hard_attack = 0.25
 		}
-		support_manpads = {
+		support_manpats = {
 			hard_attack = 0.25
 		}
 		

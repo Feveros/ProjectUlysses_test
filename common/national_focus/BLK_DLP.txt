@@ -2516,7 +2516,7 @@ shared_focus = {
 	icon = GFX_focus_BLK_to_the_last_man
 	cost = 4.4
 	ai_will_do = {
-		base =  50
+		base =  5
 	}
 	prerequisite = {
 		focus = BLK_dlp_war
@@ -2543,7 +2543,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construction
 	cost = 4.4
 	ai_will_do = {
-		base =  50
+		base =  5
 	}
 	prerequisite = {
 		focus = BLK_dlp_war
@@ -2563,7 +2563,7 @@ shared_focus = {
 	icon = GFX_goal_continuous_repairments
 	cost = 4.4
 	ai_will_do = {
-		base =  50
+		base =  5
 	}
 	prerequisite = {
 		focus = BLK_use_locals
@@ -2583,7 +2583,7 @@ shared_focus = {
 	icon = GFX_focus_generic_manpower
 	cost = 4.4
 	ai_will_do = {
-		base =  50
+		base =  5
 	}
 	prerequisite = {
 		focus = BLK_to_the_last_man
@@ -2619,7 +2619,7 @@ shared_focus = {
 	icon = GFX_focus_generic_annex_country
 	cost = 4.4
 	ai_will_do = {
-		base =  50
+		base =  5
 	}
 	available = {
 		#UST = { has_capitulated = yes }
@@ -2642,7 +2642,7 @@ shared_focus = {
 	icon = GFX_focus_generic_annex_country_2
 	cost = 4.4
 	ai_will_do = {
-		base =  50
+		base =  500
 	}
 	available = {
 		#OR = {
@@ -2705,7 +2705,7 @@ shared_focus = {
 	icon = GFX_focus_BLK_cross_great_lakes
 	cost = 4.4
 	ai_will_do = {
-		base =  50
+		base =  5
 	}
 	available = {
 	}
@@ -2738,7 +2738,7 @@ shared_focus = {
 	icon = GFX_goal_generic_construct_infrastructure
 	cost = 4.4
 	ai_will_do = {
-		base =  50
+		base =  5
 	}
 	available = {
 	}

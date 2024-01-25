@@ -17,7 +17,7 @@ state={
 		add_core_of = REC
 		buildings = {
 			infrastructure = 4
-			arms_factory = 3
+			arms_factory = 2
 			industrial_complex = 5
 			air_base = 3
 

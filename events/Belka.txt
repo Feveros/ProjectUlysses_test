@@ -194,7 +194,7 @@ country_event = { #SELLING LAND
 			UST = {
 				country_event = { id = ustio.1 days = 60 }
 				country_event = { id = ustio.4 days = 7 }
-				country_event = ustio.2
+				country_event = ustio.3
 			}
 			GEB = { country_event = { id = recta.1 days = 90 } }
 		}

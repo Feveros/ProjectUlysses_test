@@ -460,6 +460,18 @@
  ustio.18.d:0 "USTIO RESURCES"
  ustio.18.a:0 ""
  
+ ustio.19.t:0 ""
+ ustio.19.d:0 "world community forces Ratio to peace out - we WON"
+ ustio.19.a:0 ""
+ 
+ ustio.20.t:0 ""
+ ustio.20.d:0 "world community forces us to peace out - we lost"
+ ustio.20.a:0 ""
+ 
+ ustio.21.t:0 ""
+ ustio.21.d:0 "we lost - back to being shit - forces player back into hist path"
+ ustio.21.a:0 ""
+ 
  ustio_main.1.t:0 ""
  ustio_main.1.d:0 "1st event of the tree"
  ustio_main.1.a:0 ""

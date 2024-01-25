@@ -117,7 +117,7 @@ country_event = { ### event for ustio about Belka mobilisaztion after resurces
 		add_stability = -0.05
 		add_war_support = 0.05
 		add_political_power = 50
-		add_country_flag = UST_they_are_coming_flag
+		set_country_flag = UST_they_are_coming_flag
 	}
 }
 
@@ -361,6 +361,7 @@ country_event = { ###demoblize the border
                 type = annex_everything
             }
         }
+		set_global_flag = first_ustian_war
 		hidden_effect = {
 			news_event = { id = ac_news_event.14 days = 1 }
 		}
@@ -424,6 +425,61 @@ country_event = { ### referendum results
 
 	option = {
 		name = ustio.16
+	}
+}
+
+country_event = { ### world community forces Ratio to peace out - we WON
+	id = ustio.19
+	title = ustio.19.t
+	desc = ustio.19.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio.19
+		white_peace = RAT
+		set_country_flag = UST_won_ratio_war_flag
+		clr_global_flag = first_ustian_war
+		news_event = { id = ac_news_event.16 days = 1 }
+	}
+}
+
+country_event = { ### world community forces us to peace out - we lost
+	id = ustio.20
+	title = ustio.20.t
+	desc = ustio.20.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio.20
+		white_peace = RAT
+		set_country_flag = UST_lost_ratio_war_flag
+		clr_global_flag = first_ustian_war
+		RAT = {
+			transfer_state = 365
+			transfer_state = 336
+			transfer_state = 376
+		}
+		news_event = { id = ac_news_event.17 days = 1 }
+	}
+}
+
+country_event = { ### we lost - back to being shit - forces player back into hist path
+	id = ustio.21
+	title = ustio.21.t
+	desc = ustio.21.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio.21
+		hidden_effect = {
+			
+		}
 	}
 }
 
@@ -952,7 +1008,7 @@ country_event = {
 			ideology = fascism
 			popularity = 0.05
 		}
-		add_political_power = 100
+		add_political_power = 200
 	}
 }
 

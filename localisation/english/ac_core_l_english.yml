@@ -23,3 +23,13 @@
  decision_cost_army_xp_50:0 "£army_experience  §Y50§!"
  decision_cost_army_xp_50_blocked:0 "£army_experience  §R50§!"
  decision_cost_army_xp_50_tooltip:0 "It costs £army_experience  §Y50§! to take the decision"
+
+ wellow:0 "Wellow"
+ north_osea:0 "North Osea"
+ osea:0 "Osea"
+ south_osea:0 "South Osea"
+ usea:0 "Usea"
+ north_verusa:0 "North Verusa"
+ south_verusa:0 "South Verusa"
+ west_verusa:0 "West Verusa"
+ anea:0 "Anea"

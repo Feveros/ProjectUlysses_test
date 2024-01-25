@@ -111,96 +111,6 @@ news_event = { ### Ratio takes east ustio
     }
 }
 
-news_event = { ### Ustio refuses to give land to Ratio
-    id = ac_news_event.13
-	picture = xxx
-    title = ac_news_event.13.t
-    desc = ac_news_event.13.d
-    is_triggered_only = yes
-    major = yes
-    option = {
-        name = ac_news_event.13.a
-        trigger = {
-			tag = UST
-        }
-    }
-	   option = {
-        name = ac_news_event.13.b
-        trigger = {
-			tag = RAT
-        }
-    }
-    option = {
-        name = ac_news_event.13.c
-        trigger = {
-			NOT = {
-				tag = RAT
-				tag = UST
-			}
-        }
-    }
-}
-
-news_event = { ### Ratio Attacks
-    id = ac_news_event.14
-	picture = xxx
-    title = ac_news_event.14.t
-    desc = ac_news_event.14.d
-    is_triggered_only = yes
-    major = yes
-    option = {
-        name = ac_news_event.14.a
-        trigger = {
-			tag = UST
-        }
-    }
-	   option = {
-        name = ac_news_event.14.b
-        trigger = {
-			tag = RAT
-        }
-    }
-    option = {
-        name = ac_news_event.14.c
-        trigger = {
-			NOT = {
-				tag = RAT
-				tag = UST
-			}
-        }
-    }
-}
-
-news_event = { ### Ustio Attacks - they finished "Strike First"
-    id = ac_news_event.15
-	picture = xxx
-    title = ac_news_event.15.t
-    desc = ac_news_event.15.d
-    is_triggered_only = yes
-    major = yes
-    option = {
-        name = ac_news_event.15.a
-        trigger = {
-			tag = UST
-        }
-    }
-	   option = {
-        name = ac_news_event.15.b
-        trigger = {
-			tag = RAT
-        }
-    }
-    option = {
-        name = ac_news_event.15.c
-        trigger = {
-			NOT = {
-				tag = RAT
-				tag = UST
-			}
-        }
-    }
-}
-
 news_event = { ### Recta spawns
     id = ac_news_event.3
 	picture = GFX_news_event_canada_patriation
@@ -512,6 +422,156 @@ news_event = { ### Destruction of excalibur
         trigger = {
 			NOT = {
 				tag = BLK
+			}
+        }
+    }
+}
+
+news_event = { ### Ustio refuses to give land to Ratio
+    id = ac_news_event.13
+	picture = xxx
+    title = ac_news_event.13.t
+    desc = ac_news_event.13.d
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = ac_news_event.13.a
+        trigger = {
+			tag = UST
+        }
+    }
+	   option = {
+        name = ac_news_event.13.b
+        trigger = {
+			tag = RAT
+        }
+    }
+    option = {
+        name = ac_news_event.13.c
+        trigger = {
+			NOT = {
+				tag = RAT
+				tag = UST
+			}
+        }
+    }
+}
+
+news_event = { ### Ratio Attacks
+    id = ac_news_event.14
+	picture = xxx
+    title = ac_news_event.14.t
+    desc = ac_news_event.14.d
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = ac_news_event.14.a
+        trigger = {
+			tag = UST
+        }
+    }
+	   option = {
+        name = ac_news_event.14.b
+        trigger = {
+			tag = RAT
+        }
+    }
+    option = {
+        name = ac_news_event.14.c
+        trigger = {
+			NOT = {
+				tag = RAT
+				tag = UST
+			}
+        }
+    }
+}
+
+news_event = { ### Ustio Attacks - they finished "Strike First"
+    id = ac_news_event.15
+	picture = xxx
+    title = ac_news_event.15.t
+    desc = ac_news_event.15.d
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = ac_news_event.15.a
+        trigger = {
+			tag = UST
+        }
+    }
+	   option = {
+        name = ac_news_event.15.b
+        trigger = {
+			tag = RAT
+        }
+    }
+    option = {
+        name = ac_news_event.15.c
+        trigger = {
+			NOT = {
+				tag = RAT
+				tag = UST
+			}
+        }
+    }
+}
+
+news_event = { ### Ustio Won Ustian War
+    id = ac_news_event.16
+	picture = xxx
+    title = ac_news_event.16.t
+    desc = ac_news_event.16.d
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = ac_news_event.16.a
+        trigger = {
+			tag = UST
+        }
+    }
+	   option = {
+        name = ac_news_event.16.b
+        trigger = {
+			tag = RAT
+        }
+    }
+    option = {
+        name = ac_news_event.16.c
+        trigger = {
+			NOT = {
+				tag = RAT
+				tag = UST
+			}
+        }
+    }
+}
+
+news_event = { ### Ustio Lost Ustian War
+    id = ac_news_event.17
+	picture = xxx
+    title = ac_news_event.17.t
+    desc = ac_news_event.17.d
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = ac_news_event.17.a
+        trigger = {
+			tag = UST
+        }
+    }
+	   option = {
+        name = ac_news_event.17.b
+        trigger = {
+			tag = RAT
+        }
+    }
+    option = {
+        name = ac_news_event.17.c
+        trigger = {
+			NOT = {
+				tag = RAT
+				tag = UST
 			}
         }
     }

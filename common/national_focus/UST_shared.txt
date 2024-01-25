@@ -1851,6 +1851,9 @@ shared_focus = {
 	prerequisite = {
         focus = UST_band_of_brothers
     }
+	bypass = {
+		has_global_flag = first_ustian_war
+	}
     relative_position_id = UST_external_arms_market
     x = 1
     y = 1
@@ -1878,6 +1881,7 @@ shared_focus = {
 		hidden_effect = {
 			news_event = { id = ac_news_event.15 days = 1 }
 		}
+		set_global_flag = first_ustian_war
     }
     search_filters = { }
 }
@@ -3156,6 +3160,8 @@ shared_focus = {
 
     completion_reward = {
 		swap_ideas = { remove_idea = UST_militia_army add_idea = UST_national_army_idea }
+		custom_effect_tooltip = UST_to_expand_the_width_tt
+		clr_country_flag = cons_laws_blocked
     }
     search_filters = { }
 }
@@ -3263,9 +3269,7 @@ shared_focus = {
 			}
 			swap_ideas = { remove_idea = UST_national_army_2 add_idea = UST_national_army_4 }
 		}
-		custom_effect_tooltip = UST_to_expand_the_width_tt
 		custom_effect_tooltip = unlock_dec_ust_to_expand_the_width
-		clr_country_flag = cons_laws_blocked
     }
     search_filters = { }
 }

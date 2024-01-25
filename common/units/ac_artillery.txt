@@ -16,7 +16,6 @@ sub_units = {
 		
 		categories = {
 			category_army
-			category_line_artillery
 			category_artillery
 		}
 

@@ -40,9 +40,7 @@
 
 		icon = GFX_modifiers_empowered_state_resistance
 
-		resistance_target = 1
-		resistance_decay = -0.3
-		state_resources_factor = -0.2
+		state_resources_factor = -0.5
 		local_manpower = -0.5
 	}
 	

@@ -148,7 +148,8 @@ on_actions = {
 				}
 				ROOT = {
 					white_peace = BLK
-					if = { limit = { is_in_faction_with = FAT }
+					if = { 
+						limit = { is_in_faction_with = FAT }
 						leave_faction = yes
 					}
 				}
@@ -159,13 +160,28 @@ on_actions = {
 			}
 		}
 	}
-	#on_weekly_UST = {
-	#	effect = {
-	#		if = {
-	#			limit = {
-	#			
-	#			}
-	#		}
-	#	}
-	#}
+	on_weekly_UST = {
+		effect = {
+			if = {
+				limit = {
+					has_war_with = RAT
+					has_global_flag = first_ustian_war
+					UST = {
+						controls_state = 306
+					}
+				}
+				country_event = ustio.19
+			}
+			if = {
+				limit = {
+					has_war_with = RAT
+					has_global_flag = first_ustian_war
+					RAT = {
+						controls_state = 365
+					}
+				}
+				country_event = ustio.20
+			}
+		}
+	}
 }

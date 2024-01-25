@@ -8,7 +8,7 @@ state={
 		add_core_of = GEB
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
+			arms_factory = 2
 			industrial_complex = 3
 			air_base = 2
 		}
@@ -27,7 +27,7 @@ state={
 		chromium = 0
 	}
 
-	state_category = large_city
+	state_category = metropolis
 	manpower=4283186
 	buildings_max_level_factor=1.000
 }

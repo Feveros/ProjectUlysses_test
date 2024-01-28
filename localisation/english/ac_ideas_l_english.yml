@@ -3,6 +3,8 @@
  UTO_member_idea:0 "UTO Member"
  UTO_president_idea:0 "UTO President"
  CNEA_member_idea:0  "CNEA Member"
+ generic_expeditionary_army_1: "Expeditionary Army"
+ generic_defensive_army_1: "Defensive Army"
 
  # ECONOMY
  cold_war_eco:0 "Cold War Economy"

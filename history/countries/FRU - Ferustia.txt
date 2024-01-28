@@ -28,9 +28,19 @@ set_popularities = {
 }
 
 set_stability = 0.63
-set_war_support = 0.81
+set_war_support = 0.80
+
+recruit_character = FRU_korbinian_tiedemann
 
 add_ideas = {
-
+	FRU_dorondian_rebelion
+	FRU_industry_stolen
+	FRU_martial_society
+	FRU_city_of_ganzir
+	
+	limited_conscription
+	low_economic_mobilisation
+	free_trade 
+	
 	nuke_lvl_1
 }

@@ -2,7 +2,20 @@ default = {
 	small_plane_airframe = {
 		pool = {
 			icons = {
+				GFX_jet_plane_7_medium
+				GFX_jet_plane_6_medium
+				GFX_jet_plane_5_medium
+				GFX_jet_plane_4_medium
+				GFX_jet_plane_3_medium
+				GFX_jet_plane_2_medium
 				GFX_jet_plane_1_medium
+				GFX_light_plane_43_medium
+				GFX_light_plane_42_medium
+				GFX_light_plane_41_medium
+				GFX_light_plane_40_medium
+				GFX_light_plane_39_medium
+				GFX_light_plane_38_medium
+				GFX_light_plane_37_medium
 				GFX_light_plane_36_medium
 				GFX_light_plane_35_medium
 				GFX_light_plane_34_medium
@@ -52,7 +65,16 @@ default = {
 	cv_small_plane_airframe = {
 		pool = {
 			icons = { 
+				GFX_jet_plane_7_medium
+				GFX_jet_plane_6_medium
+				GFX_jet_plane_5_medium
+				GFX_jet_plane_4_medium
+				GFX_jet_plane_3_medium
+				GFX_jet_plane_2_medium
 				GFX_jet_plane_1_medium
+				GFX_light_plane_43_medium
+				GFX_light_plane_42_medium
+				GFX_light_plane_41_medium
 				GFX_light_plane_40_medium
 				GFX_light_plane_39_medium
 				GFX_light_plane_38_medium
@@ -107,19 +129,19 @@ default = {
 				GFX_scout_plane1_medium
 				GFX_scout_plane2_medium
 				GFX_scout_plane3_medium
-				GFX_medium_plane_3_medium
-				GFX_iw_medium_airframe_medium
-				GFX_basic_medium_airframe_medium
-				GFX_improved_medium_airframe_medium
-				GFX_advanced_medium_airframe_medium
-				GFX_modern_medium_airframe_medium
 				GFX_medium_plane_8_medium
 				GFX_medium_plane_7_medium
 				GFX_medium_plane_6_medium
 				GFX_medium_plane_5_medium
 				GFX_medium_plane_4_medium
+				GFX_medium_plane_3_medium
 				GFX_medium_plane_2_medium
 				GFX_medium_plane_1_medium
+				GFX_modern_medium_airframe_medium
+				GFX_advanced_medium_airframe_medium
+				GFX_improved_medium_airframe_medium
+				GFX_basic_medium_airframe_medium
+				GFX_iw_medium_airframe_medium
 			}
 		}
 		pool = {

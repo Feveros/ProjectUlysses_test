@@ -33,15 +33,33 @@ default = {
 ##################################################################################
 
 continent = {
-	name = north_osea
+	name = wellow
 	army = {
 		male = {
-			"GFX_Portrait_Europe_Generic_land_1"
-			"GFX_Portrait_Europe_Generic_land_2"
-			"GFX_Portrait_Europe_Generic_land_3"
-			"GFX_Portrait_Europe_Generic_land_4"
-			"GFX_Portrait_Europe_Generic_land_5"
-			"GFX_portrait_europe_generic_land_13"
+			"GFX_portrait_generic_land_1"
+			"GFX_portrait_generic_land_2"
+			"GFX_portrait_generic_land_3"
+			"GFX_portrait_generic_land_4"
+			"GFX_portrait_generic_land_5"
+			"GFX_portrait_generic_land_6"
+			"GFX_portrait_generic_land_7"
+			"GFX_portrait_generic_land_8"
+			"GFX_portrait_generic_land_9"
+			"GFX_portrait_generic_land_10"
+			"GFX_portrait_generic_land_11"
+			"GFX_portrait_generic_land_12"
+			"GFX_portrait_generic_land_13"
+			"GFX_portrait_generic_land_14"
+			"GFX_portrait_generic_land_15"
+			"GFX_portrait_generic_land_16"
+			"GFX_portrait_generic_land_17"
+			"GFX_portrait_generic_land_18"
+			"GFX_portrait_generic_land_19"
+			"GFX_portrait_generic_land_20"
+			"GFX_portrait_generic_land_21"
+			"GFX_portrait_generic_land_22"
+			"GFX_portrait_generic_land_23"
+			"GFX_portrait_generic_land_24"
 		}
 	}
 	
@@ -80,19 +98,104 @@ continent = {
 			}
 		}
 	}
+}
 
+continent = {
+	name = north_osea
+	army = {
+		male = {
+			"GFX_portrait_generic_land_1"
+			"GFX_portrait_generic_land_2"
+			"GFX_portrait_generic_land_3"
+			"GFX_portrait_generic_land_4"
+			"GFX_portrait_generic_land_5"
+			"GFX_portrait_generic_land_6"
+			"GFX_portrait_generic_land_7"
+			"GFX_portrait_generic_land_8"
+			"GFX_portrait_generic_land_9"
+			"GFX_portrait_generic_land_10"
+			"GFX_portrait_generic_land_11"
+			"GFX_portrait_generic_land_12"
+			"GFX_portrait_generic_land_13"
+			"GFX_portrait_generic_land_14"
+			"GFX_portrait_generic_land_15"
+			"GFX_portrait_generic_land_16"
+			"GFX_portrait_generic_land_17"
+			"GFX_portrait_generic_land_18"
+			"GFX_portrait_generic_land_19"
+			"GFX_portrait_generic_land_20"
+			"GFX_portrait_generic_land_21"
+			"GFX_portrait_generic_land_22"
+			"GFX_portrait_generic_land_23"
+			"GFX_portrait_generic_land_24"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		monarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
 }
 
 continent = {
 	name = osea
 	army = {
 		male = {
-			"GFX_Portrait_Europe_Generic_land_1"
-			"GFX_Portrait_Europe_Generic_land_2"
-			"GFX_Portrait_Europe_Generic_land_3"
-			"GFX_Portrait_Europe_Generic_land_4"
-			"GFX_Portrait_Europe_Generic_land_5"
-			"GFX_portrait_europe_generic_land_13"
+			"GFX_portrait_generic_land_1"
+			"GFX_portrait_generic_land_2"
+			"GFX_portrait_generic_land_3"
+			"GFX_portrait_generic_land_4"
+			"GFX_portrait_generic_land_5"
+			"GFX_portrait_generic_land_6"
+			"GFX_portrait_generic_land_7"
+			"GFX_portrait_generic_land_8"
+			"GFX_portrait_generic_land_9"
+			"GFX_portrait_generic_land_10"
+			"GFX_portrait_generic_land_11"
+			"GFX_portrait_generic_land_12"
+			"GFX_portrait_generic_land_13"
+			"GFX_portrait_generic_land_14"
+			"GFX_portrait_generic_land_15"
+			"GFX_portrait_generic_land_16"
+			"GFX_portrait_generic_land_17"
+			"GFX_portrait_generic_land_18"
+			"GFX_portrait_generic_land_19"
+			"GFX_portrait_generic_land_20"
+			"GFX_portrait_generic_land_21"
+			"GFX_portrait_generic_land_22"
+			"GFX_portrait_generic_land_23"
+			"GFX_portrait_generic_land_24"
 		}
 	}
 	
@@ -138,12 +241,30 @@ continent = {
 	name = south_osea
 	army = {
 		male = {
-			"GFX_Portrait_Europe_Generic_land_1"
-			"GFX_Portrait_Europe_Generic_land_2"
-			"GFX_Portrait_Europe_Generic_land_3"
-			"GFX_Portrait_Europe_Generic_land_4"
-			"GFX_Portrait_Europe_Generic_land_5"
-			"GFX_portrait_europe_generic_land_13"
+			"GFX_portrait_generic_land_1"
+			"GFX_portrait_generic_land_2"
+			"GFX_portrait_generic_land_3"
+			"GFX_portrait_generic_land_4"
+			"GFX_portrait_generic_land_5"
+			"GFX_portrait_generic_land_6"
+			"GFX_portrait_generic_land_7"
+			"GFX_portrait_generic_land_8"
+			"GFX_portrait_generic_land_9"
+			"GFX_portrait_generic_land_10"
+			"GFX_portrait_generic_land_11"
+			"GFX_portrait_generic_land_12"
+			"GFX_portrait_generic_land_13"
+			"GFX_portrait_generic_land_14"
+			"GFX_portrait_generic_land_15"
+			"GFX_portrait_generic_land_16"
+			"GFX_portrait_generic_land_17"
+			"GFX_portrait_generic_land_18"
+			"GFX_portrait_generic_land_19"
+			"GFX_portrait_generic_land_20"
+			"GFX_portrait_generic_land_21"
+			"GFX_portrait_generic_land_22"
+			"GFX_portrait_generic_land_23"
+			"GFX_portrait_generic_land_24"
 		}
 	}
 	
@@ -189,12 +310,30 @@ continent = {
 	name = usea
 	army = {
 		male = {
-			"GFX_Portrait_Europe_Generic_land_1"
-			"GFX_Portrait_Europe_Generic_land_2"
-			"GFX_Portrait_Europe_Generic_land_3"
-			"GFX_Portrait_Europe_Generic_land_4"
-			"GFX_Portrait_Europe_Generic_land_5"
-			"GFX_portrait_europe_generic_land_13"
+			"GFX_portrait_generic_land_1"
+			"GFX_portrait_generic_land_2"
+			"GFX_portrait_generic_land_3"
+			"GFX_portrait_generic_land_4"
+			"GFX_portrait_generic_land_5"
+			"GFX_portrait_generic_land_6"
+			"GFX_portrait_generic_land_7"
+			"GFX_portrait_generic_land_8"
+			"GFX_portrait_generic_land_9"
+			"GFX_portrait_generic_land_10"
+			"GFX_portrait_generic_land_11"
+			"GFX_portrait_generic_land_12"
+			"GFX_portrait_generic_land_13"
+			"GFX_portrait_generic_land_14"
+			"GFX_portrait_generic_land_15"
+			"GFX_portrait_generic_land_16"
+			"GFX_portrait_generic_land_17"
+			"GFX_portrait_generic_land_18"
+			"GFX_portrait_generic_land_19"
+			"GFX_portrait_generic_land_20"
+			"GFX_portrait_generic_land_21"
+			"GFX_portrait_generic_land_22"
+			"GFX_portrait_generic_land_23"
+			"GFX_portrait_generic_land_24"
 		}
 	}
 	
@@ -233,7 +372,346 @@ continent = {
 			}
 		}
 	}
+}
 
+continent = {
+	name = usea
+	army = {
+		male = {
+			"GFX_portrait_generic_land_1"
+			"GFX_portrait_generic_land_2"
+			"GFX_portrait_generic_land_3"
+			"GFX_portrait_generic_land_4"
+			"GFX_portrait_generic_land_5"
+			"GFX_portrait_generic_land_6"
+			"GFX_portrait_generic_land_7"
+			"GFX_portrait_generic_land_8"
+			"GFX_portrait_generic_land_9"
+			"GFX_portrait_generic_land_10"
+			"GFX_portrait_generic_land_11"
+			"GFX_portrait_generic_land_12"
+			"GFX_portrait_generic_land_13"
+			"GFX_portrait_generic_land_14"
+			"GFX_portrait_generic_land_15"
+			"GFX_portrait_generic_land_16"
+			"GFX_portrait_generic_land_17"
+			"GFX_portrait_generic_land_18"
+			"GFX_portrait_generic_land_19"
+			"GFX_portrait_generic_land_20"
+			"GFX_portrait_generic_land_21"
+			"GFX_portrait_generic_land_22"
+			"GFX_portrait_generic_land_23"
+			"GFX_portrait_generic_land_24"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		monarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+
+continent = {
+	name = north_verusa
+	army = {
+		male = {
+			"GFX_portrait_generic_land_1"
+			"GFX_portrait_generic_land_2"
+			"GFX_portrait_generic_land_3"
+			"GFX_portrait_generic_land_4"
+			"GFX_portrait_generic_land_5"
+			"GFX_portrait_generic_land_6"
+			"GFX_portrait_generic_land_7"
+			"GFX_portrait_generic_land_8"
+			"GFX_portrait_generic_land_9"
+			"GFX_portrait_generic_land_10"
+			"GFX_portrait_generic_land_11"
+			"GFX_portrait_generic_land_12"
+			"GFX_portrait_generic_land_13"
+			"GFX_portrait_generic_land_14"
+			"GFX_portrait_generic_land_15"
+			"GFX_portrait_generic_land_16"
+			"GFX_portrait_generic_land_17"
+			"GFX_portrait_generic_land_18"
+			"GFX_portrait_generic_land_19"
+			"GFX_portrait_generic_land_20"
+			"GFX_portrait_generic_land_21"
+			"GFX_portrait_generic_land_22"
+			"GFX_portrait_generic_land_23"
+			"GFX_portrait_generic_land_24"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		monarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+
+continent = {
+	name = south_verusa
+	army = {
+		male = {
+			"GFX_portrait_generic_land_1"
+			"GFX_portrait_generic_land_2"
+			"GFX_portrait_generic_land_3"
+			"GFX_portrait_generic_land_4"
+			"GFX_portrait_generic_land_5"
+			"GFX_portrait_generic_land_6"
+			"GFX_portrait_generic_land_7"
+			"GFX_portrait_generic_land_8"
+			"GFX_portrait_generic_land_9"
+			"GFX_portrait_generic_land_10"
+			"GFX_portrait_generic_land_11"
+			"GFX_portrait_generic_land_12"
+			"GFX_portrait_generic_land_13"
+			"GFX_portrait_generic_land_14"
+			"GFX_portrait_generic_land_15"
+			"GFX_portrait_generic_land_16"
+			"GFX_portrait_generic_land_17"
+			"GFX_portrait_generic_land_18"
+			"GFX_portrait_generic_land_19"
+			"GFX_portrait_generic_land_20"
+			"GFX_portrait_generic_land_21"
+			"GFX_portrait_generic_land_22"
+			"GFX_portrait_generic_land_23"
+			"GFX_portrait_generic_land_24"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		monarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+
+continent = {
+	name = west_verusa
+	army = {
+		male = {
+			"GFX_portrait_generic_land_1"
+			"GFX_portrait_generic_land_2"
+			"GFX_portrait_generic_land_3"
+			"GFX_portrait_generic_land_4"
+			"GFX_portrait_generic_land_5"
+			"GFX_portrait_generic_land_6"
+			"GFX_portrait_generic_land_7"
+			"GFX_portrait_generic_land_8"
+			"GFX_portrait_generic_land_9"
+			"GFX_portrait_generic_land_10"
+			"GFX_portrait_generic_land_11"
+			"GFX_portrait_generic_land_12"
+			"GFX_portrait_generic_land_13"
+			"GFX_portrait_generic_land_14"
+			"GFX_portrait_generic_land_15"
+			"GFX_portrait_generic_land_16"
+			"GFX_portrait_generic_land_17"
+			"GFX_portrait_generic_land_18"
+			"GFX_portrait_generic_land_19"
+			"GFX_portrait_generic_land_20"
+			"GFX_portrait_generic_land_21"
+			"GFX_portrait_generic_land_22"
+			"GFX_portrait_generic_land_23"
+			"GFX_portrait_generic_land_24"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		monarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+
+continent = {
+	name = anea
+	army = {
+		male = {
+			"GFX_portrait_generic_land_1"
+			"GFX_portrait_generic_land_2"
+			"GFX_portrait_generic_land_3"
+			"GFX_portrait_generic_land_4"
+			"GFX_portrait_generic_land_5"
+			"GFX_portrait_generic_land_6"
+			"GFX_portrait_generic_land_7"
+			"GFX_portrait_generic_land_8"
+			"GFX_portrait_generic_land_9"
+			"GFX_portrait_generic_land_10"
+			"GFX_portrait_generic_land_11"
+			"GFX_portrait_generic_land_12"
+			"GFX_portrait_generic_land_13"
+			"GFX_portrait_generic_land_14"
+			"GFX_portrait_generic_land_15"
+			"GFX_portrait_generic_land_16"
+			"GFX_portrait_generic_land_17"
+			"GFX_portrait_generic_land_18"
+			"GFX_portrait_generic_land_19"
+			"GFX_portrait_generic_land_20"
+			"GFX_portrait_generic_land_21"
+			"GFX_portrait_generic_land_22"
+			"GFX_portrait_generic_land_23"
+			"GFX_portrait_generic_land_24"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		monarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
 }
 
 ##################################################################################
@@ -648,23 +1126,47 @@ BLK = {
 OSE = {
 	army = {
 		male = {
-			"GFX_Portrait_USA_Generic_land_1"
-			"GFX_Portrait_USA_Generic_land_2"
-			"GFX_Portrait_USA_Generic_land_3"
-			"GFX_Portrait_USA_Generic_land_4"
-			"GFX_Portrait_USA_Generic_land_5"
-			"GFX_Portrait_USA_Generic_land_6"
-			"GFX_Portrait_USA_Generic_land_7"
-			"GFX_Portrait_USA_Generic_land_8"
-			"GFX_Portrait_USA_Generic_land_9"
+			"GFX_Portrait_OSE_Generic_land_1"
+			"GFX_Portrait_OSE_Generic_land_2"
+			"GFX_Portrait_OSE_Generic_land_3"
+			"GFX_Portrait_OSE_Generic_land_4"
+			"GFX_Portrait_OSE_Generic_land_5"
+			"GFX_Portrait_OSE_Generic_land_6"
+			"GFX_Portrait_OSE_Generic_land_7"
+			"GFX_Portrait_OSE_Generic_land_8"
+			"GFX_Portrait_OSE_Generic_land_9"
+			"GFX_Portrait_OSE_Generic_land_10"
+			"GFX_Portrait_OSE_Generic_land_11"
+			"GFX_Portrait_OSE_Generic_land_12"
+			"GFX_Portrait_OSE_Generic_land_13"
+			"GFX_Portrait_OSE_Generic_land_14"
+			"GFX_Portrait_OSE_Generic_land_15"
+			"GFX_Portrait_OSE_Generic_land_16"
+			"GFX_Portrait_OSE_Generic_land_17"
+			"GFX_Portrait_OSE_Generic_land_18"
+			"GFX_Portrait_OSE_Generic_land_19"
+			"GFX_Portrait_OSE_Generic_land_20"
+			"GFX_Portrait_OSE_Generic_land_21"
+			"GFX_Portrait_OSE_Generic_land_22"
+			"GFX_Portrait_OSE_Generic_land_23"
+			"GFX_Portrait_OSE_Generic_land_24"
+			"GFX_Portrait_OSE_Generic_land_25"
+			"GFX_Portrait_OSE_Generic_land_26"
+			"GFX_Portrait_OSE_Generic_land_27"
+			"GFX_Portrait_OSE_Generic_land_28"
+			"GFX_Portrait_OSE_Generic_land_29"
+			"GFX_Portrait_OSE_Generic_land_30"
+			"GFX_Portrait_OSE_Generic_land_31"
+			"GFX_Portrait_OSE_Generic_land_32"
+			"GFX_Portrait_OSE_Generic_land_33"
 		}
 	}
 	
 	navy = {
 		male = {
-			"GFX_Portrait_USA_Generic_navy_1"
-			"GFX_Portrait_USA_Generic_navy_2"
-			"GFX_Portrait_USA_Generic_navy_3"
+			"GFX_Portrait_OSE_Generic_navy_1"
+			"GFX_Portrait_OSE_Generic_navy_2"
+			"GFX_Portrait_OSE_Generic_navy_3"
 		}
 	}
 }

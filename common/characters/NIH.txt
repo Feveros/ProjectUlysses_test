@@ -3,7 +3,7 @@ characters = { #starting leaders
 		name ="Yamato no Orochi"
 		portraits = {
 			civilian = {
-				large="GFX_portrait_BLK_abelard_straub"
+				large="GFX_portrait_NIH_yamato_no_orochi"
 			}
 		}
 		country_leader = {

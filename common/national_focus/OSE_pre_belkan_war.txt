@@ -1040,7 +1040,13 @@ shared_focus = {
     ai_will_do = {
         base = 0
 		modifier = {
-			has_completed_focus = ose_partialy_rebuilt
+			AND = {
+				has_completed_focus = ose_partialy_rebuilt
+				has_completed_focus = ose_small_centralization
+				has_completed_focus = ose_new_diplo_policy
+				has_completed_focus = ose_general_expantion_plans
+			}
+			
 			add = 500
 		}
     }

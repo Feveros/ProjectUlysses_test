@@ -2825,7 +2825,7 @@ shared_focus = {
     y = 1
 
     completion_reward = {
-
+		swap_ideas = { remove_idea = UST_better_schooling add_idea = UST_national_uni_idea }
     }
     search_filters = { }
 }
@@ -3125,15 +3125,7 @@ shared_focus = {
     y = 1
 
     completion_reward = {
-		if = {
-			limit = {
-				is_ai = no
-			}
-			add_ideas = UST_enduring_spirit_player
-		}
-		else = {
-			add_ideas = UST_enduring_spirit_ai
-		}
+		add_ideas = UST_enduring_spirit_player
     }
     search_filters = { }
 }
@@ -4937,6 +4929,9 @@ shared_focus = {
     ai_will_do = {
         factor = 50
     }
+	available = {
+		always = no
+	}
     relative_position_id = UST_start
     x = 0
     y = 15

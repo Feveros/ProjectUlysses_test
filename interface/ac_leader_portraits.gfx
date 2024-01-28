@@ -397,5 +397,12 @@ spriteTypes = {
 		name = "GFX_portrait_NPT_national_defense_council"
 		texturefile = "gfx/leaders/NPT/portrait_NPT_national_defense_council.png"
 	}
+	
+######### NIHON #############################
+
+	spriteType = {
+		name = "GFX_portrait_NIH_yamato_no_orochi"
+		texturefile = "gfx/leaders/NIH/portrait_NIH_yamato_no_orochi.png"
+	}
 
 }

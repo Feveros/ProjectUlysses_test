@@ -386,7 +386,7 @@ suppression_generic = {
 		column_swap_factor = 0.01
 		
 		can_upgrade_in_field = {
-			has_equipment = { armored_car_equipment > 10 }
+			has_equipment = { imv_equipment > 10 }
 		}
 
 		replace_at_match = 0.4

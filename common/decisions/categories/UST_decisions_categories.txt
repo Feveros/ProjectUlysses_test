@@ -4,6 +4,12 @@ UST_ratio_negotiation = {
 	visible_when_empty = no
     allowed = { original_tag = UST }
 }
+UST_economy_dec = {
+    priority = 10
+    icon = placeholder
+	visible_when_empty = no
+    allowed = { original_tag = UST }
+}
 UST_critical_plan_tyrann_dec = {
 	priority = 8
     icon = placeholder

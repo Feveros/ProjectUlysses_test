@@ -201,6 +201,9 @@ BLK_belkan_war_category = {
 					country_event = { id = belka_dlp_war.5 days = 90 }
 				}
 				set_global_flag = belkan_war_is_happening
+				UST = {
+					add_ideas = UST_enduring_spirit_ai
+				}
 			}
 			declare_war_on = { 
 				type = annex_everything 

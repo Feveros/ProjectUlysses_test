@@ -46,6 +46,352 @@ country_event = { # Republican agitation
 	}
 }
 
+country_event = { # Random political event
+	id = sapin_politics.3
+	title = sapin_politics.3.t
+	desc = sapin_politics.3.desc
+	picture = placeholder
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random = { # MPs break for Republicans
+				chance = 10
+			}
+			random = { # MPs break for Monarchists
+				chance = 10
+			}
+			random = { # Moderates make joint declaration
+				chance = 10
+			}
+			random = { # Extremists derail session
+				chance = 10
+			}
+			random = { # Moderates join against extremists
+				chance = 10
+			}
+			random = { # Extremists join against moderates
+				chance = 10
+			}
+			random = { # Republican delivers rousing speech
+				chance = 10
+			}
+			random = { # Monarchist delivers rousing speech
+				chance = 10
+			}
+			random = { # Leader speaks in parliament
+				chance = 10
+			}
+			random = { # Extremist MP censured
+				chance = 10
+			}
+		}
+	}
+}
+
+country_event = { # MPs break for Republicans
+	id = sapin_politics.4
+	title = sapin_politics.4.t
+	desc = sapin_politics.4.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sapin_politics.3
+				days = 7
+				random_days = 28
+			}
+		}
+	}
+
+	option = {
+		name = sapin_politics.4.a
+		add_power_balance_value = {
+            id = SAP_power_balance
+            value = -0.025
+        }
+	}
+}
+
+country_event = { # MPs break for Monarchists
+	id = sapin_politics.5
+	title = sapin_politics.5.t
+	desc = sapin_politics.5.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sapin_politics.3
+				days = 7
+				random_days = 28
+			}
+		}
+	}
+
+	option = {
+		name = sapin_politics.5.a
+		add_power_balance_value = {
+            id = SAP_power_balance
+            value = 0.025
+        }
+	}
+}
+
+country_event = { # Moderates make joint declaration
+	id = sapin_politics.6
+	title = sapin_politics.6.t
+	desc = sapin_politics.6.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sapin_politics.3
+				days = 7
+				random_days = 28
+			}
+		}
+	}
+
+	option = {
+		name = sapin_politics.6.a
+		add_stability = 0.02
+	}
+}
+
+country_event = { # Extremists derail session
+	id = sapin_politics.7
+	title = sapin_politics.7.t
+	desc = sapin_politics.7.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sapin_politics.3
+				days = 7
+				random_days = 28
+			}
+		}
+	}
+
+	option = {
+		name = sapin_politics.7.a
+		add_stability = -0.02
+	}
+}
+
+country_event = { # Moderates join against extremists
+	id = sapin_politics.8
+	title = sapin_politics.8.t
+	desc = sapin_politics.8.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sapin_politics.3
+				days = 7
+				random_days = 28
+			}
+		}
+	}
+
+	option = {
+		name = sapin_politics.8.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.025
+		}
+		add_popularity = {
+			ideology = monarchism
+			popularity = 0.025
+		}
+		if = {
+			limit = {
+				power_balance_value = {
+					id = SAP_power_balance
+					value > 0
+				}
+			}
+			add_power_balance_value = {
+				id = SAP_power_balance
+				value = -0.025
+			}
+		}
+		else = {
+			add_power_balance_value = {
+				id = SAP_power_balance
+				value = 0.025
+			}
+		}
+		add_stability = 0.01
+	}
+}
+
+country_event = { # Extremists join against moderates
+	id = sapin_politics.9
+	title = sapin_politics.9.t
+	desc = sapin_politics.9.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sapin_politics.3
+				days = 7
+				random_days = 28
+			}
+		}
+	}
+
+	option = {
+		name = sapin_politics.9.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.025
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.025
+		}
+		add_stability = -0.015
+	}
+}
+
+country_event = { # Republican delivers rousing speech
+	id = sapin_politics.10
+	title = sapin_politics.10.t
+	desc = sapin_politics.10.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sapin_politics.3
+				days = 7
+				random_days = 28
+			}
+		}
+	}
+
+	option = {
+		name = sapin_politics.10.a
+		add_power_balance_value = {
+            id = SAP_power_balance
+            value = -0.05
+        }
+	}
+}
+
+country_event = { # Monarchist delivers rousing speech
+	id = sapin_politics.11
+	title = sapin_politics.11.t
+	desc = sapin_politics.11.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sapin_politics.3
+				days = 7
+				random_days = 28
+			}
+		}
+	}
+
+	option = {
+		name = sapin_politics.11.a
+		add_power_balance_value = {
+            id = SAP_power_balance
+            value = 0.05
+        }
+	}
+}
+
+country_event = { # Leader speaks in parliament
+	id = sapin_politics.12
+	title = sapin_politics.12.t
+	desc = sapin_politics.12.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sapin_politics.3
+				days = 7
+				random_days = 28
+			}
+		}
+	}
+
+	option = {
+		name = sapin_politics.12.a
+		add_stability = 0.02
+		add_political_power = 50
+	}
+}
+
+country_event = { # Extremist MP censured
+	id = sapin_politics.13
+	title = sapin_politics.13.t
+	desc = sapin_politics.13.desc
+	picture = placeholder
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sapin_politics.3
+				days = 7
+				random_days = 28
+			}
+		}
+	}
+
+	option = {
+		name = sapin_politics.13.a
+		add_stability = -0.02
+		add_political_power = -50
+		random = {
+			chance = 50
+			add_popularity = {
+				ideology = communism
+				popularity = -0.02
+			}
+		}
+		random = {
+			chance = 50
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.02
+			}
+		}
+	}
+}
+
 country_event = { #Prince of Sapin (Ernesto castro) grows up
 	id = sapin.1
 	title = sapin.1.t

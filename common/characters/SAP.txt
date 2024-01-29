@@ -462,7 +462,7 @@ characters = {
 		}
 	}
 	SAP_gabriella_garcia = {
-		name = "Sofia Lopez"
+		name = "Gabriella Garcia"
 		portraits = {
 			army = {
 				#small ="GFX_portrait_empty_advisor"
@@ -631,8 +631,8 @@ characters = { #placeholder chiefs
 			}
 		}
 	}
-	SAP_chief_land_1 = {
-		#name = "Chief Land 1"
+	SAP_rodrigo_martinez = {
+		name = "Rodrigo Martinez"
 		portraits = {
 			civilian = {
 				small ="GFX_portrait_empty_advisor"
@@ -640,12 +640,15 @@ characters = { #placeholder chiefs
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = SAP_chief_land_1
+			idea_token = SAP_rodrigo_martinez
 			allowed = {
 				original_tag = SAP
 			}
+			available = {
+				has_completed_focus = sap_promote_rodrigo_martinez
+			}
 			traits = {
-				army_chief_morale_2
+				army_armored_1
 			}
 			cost = 150
 			ai_will_do = {
@@ -653,8 +656,8 @@ characters = { #placeholder chiefs
 			}
 		}
 	}
-	SAP_chief_land_2 = {
-		#name = "Chief Land 2"
+	SAP_sofia_hernandez = {
+		name = "Sofia Hernandez"
 		portraits = {
 			civilian = {
 				small ="GFX_portrait_empty_advisor"
@@ -662,12 +665,40 @@ characters = { #placeholder chiefs
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = SAP_chief_land_2
+			idea_token = SAP_sofia_hernandez
 			allowed = {
 				original_tag = SAP
 			}
+			available = {
+				has_completed_focus = sap_promote_sofia_hernandez
+			}
 			traits = {
-				army_chief_defensive_1
+				army_artillery_1
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
+	SAP_juan_carlos_mendoza = {
+		name = "Juan Carlos Mendoza"
+		portraits = {
+			civilian = {
+				small ="GFX_portrait_empty_advisor"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SAP_juan_carlos_mendoza
+			allowed = {
+				original_tag = SAP
+			}
+			available = {
+				has_completed_focus = sap_promote_juan_carlos_mendoza
+			}
+			traits = {
+				army_chief_entrenchment_1
 			}
 			cost = 150
 			ai_will_do = {

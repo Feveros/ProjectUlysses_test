@@ -210,6 +210,7 @@
  sap_nobility_influence_medium: "Nobility Influence - Middling"
  sap_nobility_influence_low: "Nobility Influence - Low"
  sap_nobility_influence_very_low: "Nobility Influence - Very Low"
+ sap_guardia_real: "Guardia Real"
  sap_reinforced_state_secularism: "Reinforced State Secularism"
  sap_public_schooling: "Public Schooling"
  sap_welfare_state_1: "Welfare State"
@@ -253,9 +254,18 @@
  sap_supported_ratio: "Supported Ratio"
 
  ### DECISION CATEGORIES
- 
+ SAP_civil_war: "Sapinish Civil War"
+ SAP_national_politics: "National Politics"
+ SAP_national_guard: "National Guard"
+
  ### DECISIONS
+ SAP_imminent_republican_revolt: "Imminent Republican Revolt"
+ SAP_civil_war_recruitment: "Civil War Recruitment"
+ SAP_call_1991_elections: "Call [GetYear] Elections"
  SAP_mobilize_state_national_guard:  "Mobilize [FROM.GetMobilizationDivisionCount] Divisions in [FROM.GetName]"
+ SAP_begin_new_round_of_mobilization: "Begin New Round Of Mobilization"
+ SAP_demobilize: "Demobilize The Royal Army"
+ 
  
  ### EVENTS
 
@@ -285,6 +295,9 @@
  ### TOOLTIPS
  sap_prepare_for_war_with_belka_tt: "Add §GLevel 1§! §YLand Forts§! along our Western border"
  sap_north_osean_treaty_organization_tt: "Every §YNorth Osean§! country:"
+ sap_national_politics_decision_in_progress: "§YNational Politics§! decision in progress"
+ sap_republicans_split_tt: "§2United Republican Front§! will split"
+ sap_nationalists_split_tt: "§0Monarchist Coalition§! will split"
  
  ### COUNTRY FLAGS
  

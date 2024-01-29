@@ -1493,6 +1493,10 @@ country_event = { # Congressional/Midterm Elections
 	immediate = {
 		hidden_effect = {
 			OSE_congressional_election = yes
+			country_event = {
+				id = osea_election.1
+				days = 730
+			}
 		}
 	}
 

@@ -58,33 +58,43 @@ country_event = { # Random political event
 		hidden_effect = {
 			random = { # MPs break for Republicans
 				chance = 10
+				country_event = sapin_politics.4
 			}
 			random = { # MPs break for Monarchists
 				chance = 10
+				country_event = sapin_politics.5
 			}
 			random = { # Moderates make joint declaration
 				chance = 10
+				country_event = sapin_politics.6
 			}
 			random = { # Extremists derail session
 				chance = 10
+				country_event = sapin_politics.7
 			}
 			random = { # Moderates join against extremists
 				chance = 10
+				country_event = sapin_politics.8
 			}
 			random = { # Extremists join against moderates
 				chance = 10
+				country_event = sapin_politics.9
 			}
 			random = { # Republican delivers rousing speech
 				chance = 10
+				country_event = sapin_politics.10
 			}
 			random = { # Monarchist delivers rousing speech
 				chance = 10
+				country_event = sapin_politics.11
 			}
 			random = { # Leader speaks in parliament
 				chance = 10
+				country_event = sapin_politics.12
 			}
 			random = { # Extremist MP censured
 				chance = 10
+				country_event = sapin_politics.13
 			}
 		}
 	}
@@ -100,10 +110,29 @@ country_event = { # MPs break for Republicans
 
 	immediate = {
 		hidden_effect = {
-			country_event = {
-				id = sapin_politics.3
-				days = 7
-				random_days = 28
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = sap_political_crisis_over
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sap_center_united
+					}
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 63
+					}
+				}
+				else = {
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 28
+					}
+				}
 			}
 		}
 	}
@@ -127,10 +156,29 @@ country_event = { # MPs break for Monarchists
 
 	immediate = {
 		hidden_effect = {
-			country_event = {
-				id = sapin_politics.3
-				days = 7
-				random_days = 28
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = sap_political_crisis_over
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sap_center_united
+					}
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 63
+					}
+				}
+				else = {
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 28
+					}
+				}
 			}
 		}
 	}
@@ -154,10 +202,29 @@ country_event = { # Moderates make joint declaration
 
 	immediate = {
 		hidden_effect = {
-			country_event = {
-				id = sapin_politics.3
-				days = 7
-				random_days = 28
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = sap_political_crisis_over
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sap_center_united
+					}
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 63
+					}
+				}
+				else = {
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 28
+					}
+				}
 			}
 		}
 	}
@@ -178,10 +245,29 @@ country_event = { # Extremists derail session
 
 	immediate = {
 		hidden_effect = {
-			country_event = {
-				id = sapin_politics.3
-				days = 7
-				random_days = 28
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = sap_political_crisis_over
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sap_center_united
+					}
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 63
+					}
+				}
+				else = {
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 28
+					}
+				}
 			}
 		}
 	}
@@ -202,10 +288,29 @@ country_event = { # Moderates join against extremists
 
 	immediate = {
 		hidden_effect = {
-			country_event = {
-				id = sapin_politics.3
-				days = 7
-				random_days = 28
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = sap_political_crisis_over
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sap_center_united
+					}
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 63
+					}
+				}
+				else = {
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 28
+					}
+				}
 			}
 		}
 	}
@@ -252,10 +357,29 @@ country_event = { # Extremists join against moderates
 
 	immediate = {
 		hidden_effect = {
-			country_event = {
-				id = sapin_politics.3
-				days = 7
-				random_days = 28
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = sap_political_crisis_over
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sap_center_united
+					}
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 63
+					}
+				}
+				else = {
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 28
+					}
+				}
 			}
 		}
 	}
@@ -284,10 +408,29 @@ country_event = { # Republican delivers rousing speech
 
 	immediate = {
 		hidden_effect = {
-			country_event = {
-				id = sapin_politics.3
-				days = 7
-				random_days = 28
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = sap_political_crisis_over
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sap_center_united
+					}
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 63
+					}
+				}
+				else = {
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 28
+					}
+				}
 			}
 		}
 	}
@@ -311,10 +454,29 @@ country_event = { # Monarchist delivers rousing speech
 
 	immediate = {
 		hidden_effect = {
-			country_event = {
-				id = sapin_politics.3
-				days = 7
-				random_days = 28
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = sap_political_crisis_over
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sap_center_united
+					}
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 63
+					}
+				}
+				else = {
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 28
+					}
+				}
 			}
 		}
 	}
@@ -338,10 +500,29 @@ country_event = { # Leader speaks in parliament
 
 	immediate = {
 		hidden_effect = {
-			country_event = {
-				id = sapin_politics.3
-				days = 7
-				random_days = 28
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = sap_political_crisis_over
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sap_center_united
+					}
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 63
+					}
+				}
+				else = {
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 28
+					}
+				}
 			}
 		}
 	}
@@ -363,10 +544,29 @@ country_event = { # Extremist MP censured
 
 	immediate = {
 		hidden_effect = {
-			country_event = {
-				id = sapin_politics.3
-				days = 7
-				random_days = 28
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = sap_political_crisis_over
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = sap_center_united
+					}
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 63
+					}
+				}
+				else = {
+					country_event = {
+						id = sapin_politics.3
+						days = 7
+						random_days = 28
+					}
+				}
 			}
 		}
 	}

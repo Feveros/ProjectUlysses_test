@@ -167,4 +167,8 @@ SAP_decrease_noble_high_command = {
             popularity = -0.05
         }
     }
+    add_power_balance_value = {
+        id = SAP_power_balance
+        value = -0.05
+    }
 }

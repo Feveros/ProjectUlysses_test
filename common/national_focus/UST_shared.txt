@@ -3259,7 +3259,7 @@ shared_focus = {
 			limit = {
 				has_idea = UST_national_army_3
 			}
-			swap_ideas = { remove_idea = UST_national_army_2 add_idea = UST_national_army_4 }
+			swap_ideas = { remove_idea = UST_national_army_3 add_idea = UST_national_army_4 }
 		}
 		custom_effect_tooltip = unlock_dec_ust_to_expand_the_width
     }

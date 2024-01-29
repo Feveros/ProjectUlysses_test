@@ -1,15 +1,16 @@
 shared_focus = {
     id = BLK_war_lost
     icon = GFX_focus_CZE_german_puppet
-    cost = 0
+    cost = 1
     ai_will_do = {
         factor = 90
     }
-    x = 10
+    x = 8
     y = 0
 	available = {
 	}
     completion_reward = {
+		country_event = belka_dlp_lost.1
     }
     search_filters = { }
 }
@@ -29,7 +30,44 @@ shared_focus = {
     y = 1
 
     completion_reward = {
-		add_ideas = BLK_shatered_army
+		country_event = belka_dlp_lost.2
+		if = {
+			limit = {
+				has_idea = BLK_eco_crisis_army_1
+			}
+			swap_ideas = { remove_idea = BLK_eco_crisis_army_1 add_idea = BLK_shatered_army }
+		}
+		else_if = {
+			limit = {
+				has_idea = BLK_eco_crisis_army_2
+			}
+			swap_ideas = { remove_idea = BLK_eco_crisis_army_2 add_idea = BLK_shatered_army }
+		}
+		else_if = {
+			limit = {
+				has_idea = BLK_eco_crisis_army_3
+			}
+			swap_ideas = { remove_idea = BLK_eco_crisis_army_3 add_idea = BLK_shatered_army }
+		}
+		else_if = {
+			limit = {
+				has_idea = BLK_eco_crisis_army_4
+			}
+			swap_ideas = { remove_idea = BLK_eco_crisis_army_4 add_idea = BLK_shatered_army }
+		}
+		hidden_effect = {
+			remove_ideas = BLK_repair_squads_idea
+			remove_ideas = BLK_finest_pilots_idea
+			remove_ideas = BLK_strat_bomber_idea
+			remove_ideas = BLK_strat_bomber_finest_pilots_idea
+			remove_ideas = BLK_air_constest_lakes
+			remove_ideas = BLK_woman_in_army_idea
+			remove_ideas = BLK_new_blood_1_idea
+			remove_ideas = BLK_new_blood_2_idea
+			remove_ideas = BLK_new_blood_3_idea
+			remove_ideas = BLK_modern_army_idea
+			remove_ideas = BLK_infantry_army_idea
+		}
     }
     search_filters = { }
 }
@@ -49,7 +87,48 @@ shared_focus = {
     y = 1
 
     completion_reward = {
-		add_ideas = BLK_shatered_industry
+		country_event = belka_dlp_lost.3
+		if = {
+			limit = {
+				has_idea = BLK_eco_crisis_6
+			}
+			swap_ideas = { remove_idea = BLK_eco_crisis_6 add_idea = BLK_shatered_industry }
+		}
+		else_if = {
+			limit = {
+				has_idea = BLK_eco_crisis_7
+			}
+			swap_ideas = { remove_idea = BLK_eco_crisis_7 add_idea = BLK_shatered_industry }
+		}
+		else_if = {
+			limit = {
+				has_idea = BLK_eco_crisis_8
+			}
+			swap_ideas = { remove_idea = BLK_eco_crisis_8 add_idea = BLK_shatered_industry }
+		}
+		else_if = {
+			limit = {
+				has_idea = BLK_eco_crisis_9
+			}
+			swap_ideas = { remove_idea = BLK_eco_crisis_9 add_idea = BLK_shatered_industry }
+		}
+		else_if = {
+			limit = {
+				has_idea = BLK_eco_crisis_10
+			}
+			swap_ideas = { remove_idea = BLK_eco_crisis_10 add_idea = BLK_shatered_industry }
+		}
+		hidden_effect = {
+			remove_ideas = BLK_master_of_the_craft_idea
+			remove_ideas = BLK_scrap_idea
+			remove_ideas = BLK_use_scrap_idea
+			remove_ideas = BLK_crush_unemploy_idea
+			remove_ideas = BLK_mili_civ_infr_idea
+			remove_ideas = BLK_expand_supply_idea
+			remove_ideas = BLK_woman_in_industry_idea
+			remove_ideas = BLK_build_up_navy_idea
+			remove_ideas = BLK_overspending_for_military_2
+		}
     }
     search_filters = { }
 }
@@ -69,6 +148,7 @@ shared_focus = {
     y = 1
 
     completion_reward = {
+		country_event = belka_dlp_lost.4
 		add_ideas = BLK_shatered_pride
     }
     search_filters = { }
@@ -99,6 +179,52 @@ shared_focus = {
 		custom_effect_tooltip = BLK_enforce_peace_requirements_mils_tt
 		custom_effect_tooltip = BLK_enforce_peace_requirements_civs_tt
 		custom_effect_tooltip = BLK_enforce_peace_requirements_dockyards_tt
+		hidden_effect = {
+			add_ideas = disarmed_nation
+			add_ideas = civilian_economy
+		}
+		hidden_effect = {
+			#########################################
+			set_variable = {
+				var = civs_to_delete
+				value = num_of_civilian_factories
+			}
+			multiply_variable = {
+				var = civs_to_delete
+				value = 0.5
+			}
+			round_variable = civs_to_delete
+			country_event = utility.2
+			######################################
+			set_variable = {
+				var = mils_to_delete
+				value = num_of_military_factories
+			}
+			multiply_variable = {
+				var = mils_to_delete
+				value = 0.75
+			}
+			round_variable = mils_to_delete
+			country_event = utility.4
+			#####################################
+			set_variable = {
+				var = docks_to_delete
+				value = num_of_naval_factories
+			}
+			multiply_variable = {
+				var = docks_to_delete
+				value = 0.5
+			}
+			round_variable = docks_to_delete
+			country_event = utility.6
+			###################################
+			set_variable = {
+				var = army_to_left
+				value = 100000
+			}
+			country_event = utility.8
+			####################################
+		}
     }
     search_filters = { }
 }
@@ -118,32 +244,7 @@ shared_focus = {
     y = 1
 
     completion_reward = {
-		add_popularity = {
-			ideology = fascism
-			popularity = -1
-		}
-		set_party_name = {
-			ideology = fascism
-			long_name = BLK_fascism_party_radical_dead_long
-			name = BLK_fascism_party_radical_dead
-		}
-		add_country_leader_role = {
-			character = BLK_no_gov
-			promote_leader = yes
-			country_leader = {
-				ideology=fascism_ideology  
-				traits = { }
-				expire="2050.1.1.1"
-				id=-1
-			}
-		}
-		retire_country_leader = yes
-		BLK_advisor_12 = { retire = yes }
-		BLK_advisor_11 = { retire = yes }
-		BLK_advisor_10 = { retire = yes }
-		BLK_FatherWilfriedJanRiesevonSergioLuoni = { retire = yes }
-		BLK_arnold_weinmann = { retire = yes }
-		BLK_hannes_kellermann = { retire = yes }
+		country_event = belka_dlp_lost.5
     }
     search_filters = { }
 }
@@ -163,7 +264,7 @@ shared_focus = {
     y = 1
 
     completion_reward = {
-
+		country_event = belka_dlp_lost.6
     }
     search_filters = { }
 }
@@ -183,7 +284,7 @@ shared_focus = {
     y = 1
 
     completion_reward = {
-
+		country_event = belka_dlp_lost.7
     }
     search_filters = { }
 }

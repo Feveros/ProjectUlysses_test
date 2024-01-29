@@ -178,23 +178,31 @@ shared_focus = {
 	
 		###################################
 		custom_effect_tooltip = BLK_send_veterans_home_tt
-		hidden_effect = {
-			ROOT = {
-				transfer_units_fraction = {
-					target = PLH
-					target_organization = 1
-					source_organization = 1
-					keep_unit_leaders_trigger = { always = yes }
-					size = 0.5
-				}
-			}
-			PLH = {
-				delete_unit = {
-					state = 171
-					disband = no
-				}
-			}
+		set_variable = {
+			var = army_to_delete
+			value = 0.5 
 		}
+		hidden_effect = {
+			country_event = utility.10
+		}
+		#hidden_effect = {
+		#	ROOT = {
+		#		transfer_units_fraction = {
+		#			target = PLH
+		#			target_organization = 1
+		#			source_organization = 1
+		#			keep_unit_leaders_trigger = { always = yes }
+		#			size = 0.5
+		#		}
+		#	}
+		#	PLH = {
+		#		delete_unit = {
+		#			state = 171
+		#			disband = no
+		#		}
+		#		add_manpower = -10000000
+		#	}
+		#}
 		###################################
     }
     search_filters = { }

@@ -172,10 +172,7 @@ country_event = { #delete army
 					state = 171
 					disband = no
 				}
-				delete_unit = {
-					state = 46
-					disband = no
-				}
+				add_manpower = -1000000
 			}
 			country_event = { id = utility.9 hours = 6 }
 		}
@@ -193,5 +190,32 @@ country_event = { #delete army
 	option = {
 		name = utility.9.a
 		country_event = { id = utility.8 hours = 6 }
+	}
+}
+country_event = { #delete army by %%%
+	id = utility.10
+	hidden = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = utility.10.a
+		ROOT = {
+			transfer_units_fraction = {
+				target = PLH
+				target_organization = 1
+				source_organization = 1
+				keep_unit_leaders_trigger = { always = yes }
+				size = army_to_delete
+			}
+			clear_variable = army_to_delete
+		}
+		PLH = {
+			delete_unit = {
+				state = 171
+				disband = no
+			}
+			add_manpower = -10000000
+		}
 	}
 }

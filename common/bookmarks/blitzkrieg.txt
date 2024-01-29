@@ -8,6 +8,7 @@ bookmarks = {
 		default = yes
 		
 		"BLK"={
+			minor = yes
 			history = "BLK_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
@@ -22,6 +23,7 @@ bookmarks = {
 			}
 		}
 		"OSE"={
+			minor = yes
 			history = "OSE_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {

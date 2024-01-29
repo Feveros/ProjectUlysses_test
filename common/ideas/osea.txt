@@ -473,9 +473,9 @@ ideas = {
 			}
 			removal_cost = 0
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
 				industrial_capacity_dockyard = 0.1
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
 			}
 		}
 	}

@@ -6,6 +6,7 @@ add_namespace = belka_dlp_war_crisis
 add_namespace = belka_wacht_am_wal
 
 add_namespace = belka_dlp_won
+add_namespace = belka_dlp_lost
 add_namespace = belka_l_monarchy
 
 country_event = { ### Event about how fucked Belka is
@@ -1230,7 +1231,7 @@ country_event = {
 	}
 }
 
-country_event = { #fev is this ai belka hitting it's crisis? it doesn't have a trigger yet as far as i can tell
+country_event = {
 	id = belka_dlp_war.105
 	title = belka_dlp_war.105.t
 	desc = belka_dlp_war.105.d
@@ -1252,6 +1253,20 @@ country_event = { #fev is this ai belka hitting it's crisis? it doesn't have a t
 				country_event = gebet_belkan_war.5
 			}
 		}
+	}
+}
+
+country_event = { ### remove Belka AI uber buff
+	id = belka_dlp_war.106
+	title = belka_dlp_war.106.t
+	desc = belka_dlp_war.106.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+	
+	option = {
+		name = belka_dlp_war.106.a
+		swap_ideas = { remove_idea = BLK_belkan_war_ai_buff_idea add_idea = BLK_belkan_war_ai_buff_idea_2 }
 	}
 }
 
@@ -1511,6 +1526,144 @@ country_event = { ### wacht am wal peace event
 			white_peace = SAP
 			white_peace = OSE
 			white_peace = UST
+		}
+	}
+}
+
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+
+country_event = { #starting event of the tree
+	id = belka_dlp_lost.1 
+	title = belka_dlp_lost.1.t
+	desc = belka_dlp_lost.1.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_lost.1.a
+		add_political_power = -500
+		hidden_effect = {
+		
+		
+		
+		
+		}
+	}
+}
+
+country_event = { #shattered army
+	id = belka_dlp_lost.2
+	title = belka_dlp_lost.2.t
+	desc = belka_dlp_lost.2.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_lost.2.a
+	}
+}
+
+country_event = { #shattered industry
+	id = belka_dlp_lost.3
+	title = belka_dlp_lost.3.t
+	desc = belka_dlp_lost.3.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_lost.3.a
+	}
+}
+
+country_event = { #shattered pride
+	id = belka_dlp_lost.4 
+	title = belka_dlp_lost.4.t
+	desc = belka_dlp_lost.4.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_lost.4.a
+	}
+}
+
+country_event = { #end of the DLP
+	id = belka_dlp_lost.5
+	title = belka_dlp_lost.5.t
+	desc = belka_dlp_lost.5.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_lost.5.a
+		add_popularity = {
+			ideology = fascism
+			popularity = -1
+		}
+		set_party_name = {
+			ideology = fascism
+			long_name = BLK_fascism_party_radical_dead_long
+			name = BLK_fascism_party_radical_dead
+		}
+		add_country_leader_role = {
+			character = BLK_no_gov
+			promote_leader = yes
+			country_leader = {
+				ideology=fascism_ideology  
+				traits = { }
+				expire="2050.1.1.1"
+				id=-1
+			}
+		}
+		hidden_effect = {
+			retire_country_leader = yes
+		}
+		BLK_advisor_12 = { retire = yes }
+		BLK_advisor_11 = { retire = yes }
+		BLK_advisor_10 = { retire = yes }
+		BLK_FatherWilfriedJanRiesevonSergioLuoni = { retire = yes }
+		BLK_arnold_weinmann = { retire = yes }
+		BLK_hannes_kellermann = { retire = yes }
+	}
+}
+
+country_event = { #new elections
+	id = belka_dlp_lost.6 
+	title = belka_dlp_lost.6.t
+	desc = belka_dlp_lost.6.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_lost.6.a
+		add_popularity = {
+			ideology = monarchism
+			popularity = 0.5
+		}
+	}
+}
+
+country_event = { #return of the king
+	id = belka_dlp_lost.7 
+	title = belka_dlp_lost.7.t
+	desc = belka_dlp_lost.7.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_lost.7.a
+		set_politics = {
+			ruling_party = monarchism 
+			elections_allowed = no
 		}
 	}
 }

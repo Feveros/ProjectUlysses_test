@@ -1037,7 +1037,7 @@ shared_focus = {
         add_tech_bonus = {
             bonus = 0.5
             uses = 1
-            category = cat_air_bombs
+            category = mio_cat_all_cas_and_modules
         }
     }
     search_filters = { }

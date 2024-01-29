@@ -451,7 +451,19 @@
  
  GIB_neutrality:0 "Gibraltar Mining Zone"
  
- SET_democratic:0 "Seterano"
+ SET_democratic:0 "Seteranoan Federation"
+ SET_democratic_DEF:0 "the Seteranoan Federation"
+ SET_neutrality:0 "Seteranoan Federation"
+ SET_neutrality_DEF:0 "the Seteranoan Federation"
+ SET_communism:0 "Union of Seteranoan Republics"
+ SET_communism_DEF:0 "the Union of Seteranoan Republics"
+ SET_fascism:0 "Seteranoan Empire"
+ SET_fascism_DEF:0 "the Seteranoan Empire"
+ SET_monarchism:0 "Kingdom of Seterano"
+ SET_monarchism_DEF:0 "the Kingdom of Seterano"
+ SET:0 "Seterano"
+ SET_DEF:0 "Seterano"
+ SET_ADJ:0 "Seteranoan"
  
  RMN_democratic:0 "Romny"
  
@@ -606,8 +618,20 @@
  VOS:0 "Voslage"
  VOS_DEF:0 "Voslage"
  VOS_ADJ:0 "Voslagian"
- 
- VLK_democratic:0 "Valka"
+
+ VLK_democratic:0 "Valkan Union"
+ VLK_democratic_DEF:0  "the Valkan Union"
+ VLK_neutrality:0 "Valkan Union"
+ VLK_neutrality_DEF:0  "the Valkan Union"
+ VLK_communism:0 "Valkan Union"
+ VLK_communism_DEF:0  "the Valkan Union"
+ VLK_fascism:0 "Valkan Reich"
+ VLK_fascism_DEF:0 "the Valkan Reich"
+ VLK_monarchism:0 "Kingdom of Valka"
+ VLK_monarchism_DEF:0 "the Kingdom of Valka"
+ VLK:0 "Valka"
+ VLK_DEF:0 "Valka"
+ VLK_ADJ:0 "Valkan"
 
  BAL:0 "Baltica"
  BAL_DEF:0 "Baltica"

@@ -635,16 +635,32 @@
  
  ############# WACHT AM WAL ###########################
  belka_wacht_am_wal.1.t:0 "Intervention"
- belka_wacht_am_wal.1.d:0 "event about pro north "south belkan" officers couping high command and taking control over armed forces to prevent their mad ideas + info about squadron of Belkan separatists (google it formore inf) shot down all 7 nuclear bombers omn their order"
+ belka_wacht_am_wal.1.d:0 "We knew about huge opposition to war in some parts of the military, especially in South Belkan and forces connected to Liberal politicians. We knew that at some point they would betray our Fatherland and run away like cawords - exactly what they did not short time ago.\n\nBut we were totally blind to another group of military officials hiding and planning under the noses of everyone else. We were thinking that we - true sons of North Belka - are real patriots without equal. Only we knew how to protect Belka or whatever will remain from it.\n\nBut today we were proven wrong.\n\nIn a span of mere minutes after the High Command meeting and decision to deploy nuclear weapons we were all handcuffs. We thought it was part of the plan of traitors from the South but we could not be more far from the truth. For them abandoning half of the country, abandoning the glory of Belka in shameful defeat, abandoning our pride - was ultimate treason to the state. Cause to be Belkan is to march forward with head high into even darkest of the forests of stormy seas. It was us who were blind, wanting to preserve what would become a dead corpse without its spirit.\n\nTo them, if Belka is to die it should do it with a sword in hand, fighting like it always did, refusing to go quite into that good night."
  belka_wacht_am_wal.1.a:0 "Belka is not yet lost."
 
  belka_wacht_am_wal.2.t:0 "Sunset of Belka"
  belka_wacht_am_wal.2.d:0 "xxxxxx"
  belka_wacht_am_wal.2.a:0 "Begun Operation "Wacht am Waldreich""
  
+ belka_wacht_am_wal.4.t:0 ""
+ belka_wacht_am_wal.4.d:0 "DO FOCUSES YOU DONKEY"
+ belka_wacht_am_wal.4.a:0 ""
+ 
  belka_wacht_am_wal.5.t:0 "For Belka"
- belka_wacht_am_wal.5.d:0 ""
+ belka_wacht_am_wal.5.d:0 "hold the line"
  belka_wacht_am_wal.5.a:0 ""
+ 
+ belka_wacht_am_wal.6.t:0 ""
+ belka_wacht_am_wal.6.d:0 "you won"
+ belka_wacht_am_wal.6.a:0 ""
+ 
+ belka_wacht_am_wal.7.t:0 "The Fire Faids"
+ belka_wacht_am_wal.7.d:0 "our deafnaces has been breached, everyone lost hope"
+ belka_wacht_am_wal.7.a:0 ""
+ 
+ belka_wacht_am_wal.8.t:0 ""
+ belka_wacht_am_wal.8.d:0 "wacht am wal peace event"
+ belka_wacht_am_wal.8.a:0 ""
  
  ############# BELKA WON ###########################
  

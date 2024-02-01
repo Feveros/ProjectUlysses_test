@@ -977,6 +977,15 @@ country_event = {
 		name = belka_dlp_war.99.b
 		trigger = {
 			check_variable = { BLK_wacht_am_wal_var = 5 }
+			FAT = {
+				is_subject_of = BLK
+			}
+			GEB = {
+				is_subject_of = BLK
+			}
+			REC = {
+				is_subject_of = BLK
+			}
 		}
 		country_event = belka_wacht_am_wal.1
 	}

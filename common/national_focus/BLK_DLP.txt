@@ -2499,14 +2499,6 @@ shared_focus = {
 	}
 	
 	completion_reward = {
-		hidden_effect = {
-			if = {
-				limit = {
-					check_variable = { BLK_wacht_am_wal_var = 3 }
-				}
-				country_event = { id = belka_dlp_coup.14 days = 95 }
-			}
-		}
 	}
 	search_filters = { }
 }

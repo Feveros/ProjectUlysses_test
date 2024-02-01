@@ -576,3 +576,27 @@ news_event = { ### Ustio Lost Ustian War
         }
     }
 }
+
+news_event = { ### wacht am wal
+    id = ac_news_event.18
+	picture = xxx
+    title = ac_news_event.18.t
+    desc = ac_news_event.18.d
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = ac_news_event.18.a
+        trigger = {
+			tag = BLK
+        }
+    }
+	   option = {
+        name = ac_news_event.18.b
+        trigger = {
+			NOT = {
+				tag = BLK
+			}
+        }
+    }
+
+}

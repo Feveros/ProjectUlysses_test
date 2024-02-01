@@ -193,6 +193,14 @@ BLK_belkan_war_category = {
 				news_event = { id = ac_news_event.7 days = 1 }
 			}
 			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = { BLK_wacht_am_wal_var = 3 }
+					}
+					country_event = { id = belka_dlp_coup.14 days = 95 }
+				}
+			}
+			hidden_effect = {
 				#country_event = { id = belka_dlp_war_crisis.1 days = 5 }
 				if = {
 					limit = {

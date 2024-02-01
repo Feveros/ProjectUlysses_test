@@ -126,7 +126,7 @@ characters = { #placeholder advisors
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = alphonso_espinal
+			idea_token = SAP_alphonso_espinal
 			can_be_fired = no
 			available = {
 				has_completed_focus = sap_regent_alphonso_espinal
@@ -143,7 +143,7 @@ characters = { #placeholder advisors
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = domingo_escalona
+			idea_token = SAP_domingo_escalona
 			can_be_fired = no
 			available = {
 				always = no # temporary  line
@@ -161,7 +161,7 @@ characters = { #placeholder advisors
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = ramira_arguijo
+			idea_token = SAP_ramira_arguijo
 			can_be_fired = no
 			available = {
 				always = no # added via event
@@ -178,7 +178,7 @@ characters = { #placeholder advisors
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = raul_de_haro
+			idea_token = SAP_raul_de_haro
 			can_be_fired = no
 			available = {
 				always = no # added via event

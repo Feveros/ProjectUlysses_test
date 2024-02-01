@@ -111,7 +111,7 @@ shared_focus = {
     x = 1
     y = 1
     completion_reward = {
-		activate_advisor = domingo_escalona
+		activate_advisor = SAP_domingo_escalona
     }
     search_filters = { }
 }
@@ -645,7 +645,7 @@ shared_focus = {
     x = 0
     y = 2
     completion_reward = {
-        activate_advisor = alphonso_espinal
+        activate_advisor = SAP_alphonso_espinal
     }
     search_filters = { }
 }
@@ -1346,6 +1346,7 @@ shared_focus = {
     y = 1
     completion_reward = {
         # Promote Rodrigo Martinez to Field Marshal
+        activate_advisor = SAP_rodrigo_martinez
 		add_doctrine_cost_reduction = {
             cost_reduction = 0.5
             uses = 1
@@ -1509,6 +1510,7 @@ shared_focus = {
     y = 1
     completion_reward = {
         # Promote Sofia Hernandez to Field Marshal
+        activate_advisor = SAP_sofia_hernandez
 		add_doctrine_cost_reduction = {
             cost_reduction = 0.5
             uses = 1
@@ -1669,6 +1671,7 @@ shared_focus = {
     y = 1
     completion_reward = {
         # Promote Juan Carlos to Field Marshal
+        activate_advisor = SAP_juan_carlos_mendoza
 		add_doctrine_cost_reduction = {
             cost_reduction = 0.5
             uses = 1

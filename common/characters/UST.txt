@@ -17,7 +17,7 @@ characters = {
 		name="Kuba Morkawiecki"
 		portraits = {
 			civilian = {
-				large="xxx"
+				large="GFX_portrait_UST_kuba_morkawiecki"
 			}
 		}
 	}
@@ -98,6 +98,129 @@ characters = {
 				head_of_intelligence 
 			}
 		}		
+	}
+}
+
+characters = { ### generals
+	UST_korneliusz_obremski = {
+		name = "Korneliusz Obremski"
+		portraits = {
+			army = {
+				large="GFX_portrait_UST_general_1"
+			}
+		}
+		field_marshal = {
+			traits = { infantry_expert harsh_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	UST_herbert_sulkowski = {
+		name = "Herbert Sulkowski"
+		portraits = {
+			army = {
+				large="GFX_portrait_UST_general_2"
+			}
+		}
+		corps_commander = {
+			traits = { ambusher }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 1
+		}
+	}
+	UST_albert_kaczmarek = {
+		name = "Albert Kaczmarek"
+		portraits = {
+			army = {
+				large="GFX_portrait_UST_general_3"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	UST_ludomil_salak = {
+		name = "Ludomił Salak"
+		portraits = {
+			army = {
+				large="GFX_portrait_UST_general_4"
+			}
+		}
+		corps_commander = {
+			traits = { scavenger camouflage_expert }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	UST_dawid_osmanski = {
+		name = "Dawid Osmański"
+		portraits = {
+			army = {
+				large="GFX_portrait_UST_general_8"
+			}
+		}
+		corps_commander = {
+			traits = { expert_improviser }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	UST_bartosz_rudy = {
+		name = "Bartosz Rudy"
+		portraits = {
+			army = {
+				large="GFX_portrait_UST_general_6"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	UST_lech_archacki = {
+		name = "Lech Archacki"
+		portraits = {
+			army = {
+				large="GFX_portrait_UST_general_7"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless infantry_officer career_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	UST_urban_klimczak = {
+		name = "Urban Klimczak"
+		portraits = {
+			army = {
+				large="GFX_portrait_UST_general_5"
+			}
+		}
 	}
 }
 

@@ -3,4 +3,16 @@ spriteTypes = {
 		name = "GFX_report_event_geb_faulmann_raid"
 		texturefile = "gfx/event_pictures/report_event_geb_faulmann_raid.dds"
 	}
+	spriteType = {
+		name = "GFX_report_event_ose_election"
+		texturefile = "gfx/event_pictures/report_event_ose_election.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ose_president"
+		texturefile = "gfx/event_pictures/report_event_ose_president.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ose_election_liberty_win"
+		texturefile = "gfx/event_pictures/report_event_ose_election_liberty_win.dds"
+	}
 }

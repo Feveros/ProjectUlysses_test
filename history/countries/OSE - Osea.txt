@@ -783,6 +783,7 @@ if = {
 			early_bombs = 1
 			air_tank_buster_1 = 1
 			aircraft_construction = 1
+			air_torpedoe_1 = 1
 		}
 	else = {
 		set_air_oob = "OSE_air"

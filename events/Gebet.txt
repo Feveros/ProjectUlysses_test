@@ -172,7 +172,7 @@ country_event = { # Capital Flight
     }
 }
 
-country_event = { # Capital Flight
+country_event = { # Growing Wealth Inequality
     id = gebet.4
     title = gebet.4.t
     desc = gebet.4.desc
@@ -218,7 +218,7 @@ country_event = { # 1992 Elections
     }
 }
 
-country_event = { # 1992 Elections
+country_event = { # 1996 Elections
     id = gebet_election.2
     title = gebet_election.2.t
     desc = gebet_election.2.desc

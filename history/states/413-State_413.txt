@@ -7,7 +7,7 @@ state={
 		owner = OSE
 		add_core_of = OSE
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 			arms_factory = 0
 			industrial_complex = 0
 			air_base = 2
@@ -25,7 +25,7 @@ state={
 		chromium = 0
 	}
 
-	state_category = town 
+	state_category = pastoral
 	manpower=123780
 	buildings_max_level_factor=1.000
 }

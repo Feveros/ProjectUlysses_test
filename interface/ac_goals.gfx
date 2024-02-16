@@ -599,4 +599,21 @@ spriteTypes = {
 		name = "GFX_goal_REC_rectan_air_force"
 		texturefile = "gfx/interface/goals/REC/goal_REC_rectan_air_force.png"
 	}
+################# USTIO #############################
+	spriteType = {
+		name = "GFX_goal_UST_grzegorz_wins"
+		texturefile = "gfx/interface/goals/UST/goal_UST_grzegorz_wins.png"
+	}
+	spriteType = {
+		name = "GFX_goal_UST_kuba_wins"
+		texturefile = "gfx/interface/goals/UST/goal_UST_kuba_wins.png"
+	}
+	spriteType = {
+		name = "GFX_goal_UST_no_step_on_our_land"
+		texturefile = "gfx/interface/goals/UST/goal_UST_no_step_on_our_land.png"
+	}
+	spriteType = {
+		name = "GFX_goal_UST_resettle_the_people"
+		texturefile = "gfx/interface/goals/UST/goal_UST_resettle_the_people.png"
+	}
 }

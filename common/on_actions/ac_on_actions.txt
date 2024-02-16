@@ -119,6 +119,10 @@ on_actions = {
 			PBL = {
 				add_opinion_modifier = { target = BLK modifier = historical_friends }
 				add_opinion_modifier = { target = OSE modifier = historical_enemies }
+				random_list = {
+					99 = { }
+					1 = { set_country_flag = pbl_help_belka_flag }
+				}
 			}
 			GEB = {
 				country_event = gebet_startup.1

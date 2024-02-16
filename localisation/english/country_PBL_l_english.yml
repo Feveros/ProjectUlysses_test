@@ -20,3 +20,17 @@
  PBL_electronics:0 "Perbla's Electronics Ltda."
  PBL_electronics_desc:0 "Perbla's high-tech electronics research and production company, famous around the world. It produces almost all parts for the nation's military and civilian market.\n\n§RIf anything bad would happen to it, the entire Kingdom will for sure feel the effect. Comapny's bankruptcy could mean the collapse of a huge part of Perbla's economy.§!"
  PBL_electronics_trait:0 "xxx"
+ 
+ ### EVENT ###
+ 
+ perbla_intervention.1:0 ""
+ perbla_intervention.1:0 ""
+ perbla_intervention.1:0 ""
+ 
+ perbla_intervention.2:0 ""
+ perbla_intervention.2:0 ""
+ perbla_intervention.2:0 ""
+ 
+ perbla_intervention.3:0 ""
+ perbla_intervention.3:0 ""
+ perbla_intervention.3:0 ""

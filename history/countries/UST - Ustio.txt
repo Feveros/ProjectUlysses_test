@@ -41,8 +41,18 @@ set_country_flag = cons_laws_blocked
 
 recruit_character = UST_grzegorz_naruszewicz
 recruit_character = UST_kuba_morkawiecki
-recruit_character = UST_franek_dolas
 recruit_character = UST_hans_kloss
+
+recruit_character = UST_franek_dolas
+recruit_character = UST_korneliusz_obremski
+recruit_character = UST_herbert_sulkowski
+recruit_character = UST_albert_kaczmarek
+recruit_character = UST_ludomil_salak
+recruit_character = UST_dawid_osmanski
+recruit_character = UST_bartosz_rudy
+recruit_character = UST_lech_archacki
+recruit_character = UST_urban_klimczak
+
 recruit_character = UST_advisor_1
 recruit_character = UST_advisor_2
 recruit_character = UST_advisor_3

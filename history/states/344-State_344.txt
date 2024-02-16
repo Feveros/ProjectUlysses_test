@@ -25,7 +25,7 @@ state={
 		chromium = 0
 	}
 
-	state_category = town 
+	state_category = pastoral
 	manpower=45145
 	buildings_max_level_factor=1.000
 }

@@ -1442,6 +1442,11 @@ OSE = {
 			"GFX_Portrait_OSE_Generic_land_34"
 			"GFX_Portrait_OSE_Generic_land_35"
 			"GFX_Portrait_OSE_Generic_land_36"
+			"GFX_Portrait_OSE_Generic_land_37"
+			"GFX_Portrait_OSE_Generic_land_38"
+			"GFX_Portrait_OSE_Generic_land_39"
+			"GFX_Portrait_OSE_Generic_land_40"
+			"GFX_Portrait_OSE_Generic_land_41"
 		}
 	}
 	

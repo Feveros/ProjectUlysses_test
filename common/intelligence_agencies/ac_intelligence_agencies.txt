@@ -10,3 +10,12 @@ intelligence_agency = {
 	default = { tag = OSE }
 	available = { original_tag = OSE }
 }
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_ger
+	names = { "Bundesnachrichtendienst" }
+	
+	default = { tag = BLK }
+	available = { original_tag = BLK }
+}

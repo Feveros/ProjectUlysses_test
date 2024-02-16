@@ -193,7 +193,7 @@ country_event = { #SELLING LAND
 			}
 			
 			UST = {
-				country_event = { id = ustio.1 days = 60 }
+				country_event = { id = ustio.1 days = 65 }
 				country_event = { id = ustio.4 days = 7 }
 				country_event = ustio.3
 			}
@@ -1175,6 +1175,13 @@ country_event = {
 				transfer_state = 215
 				transfer_state = 229
 			}
+			if = {
+				limit = {
+					PBL = { has_war = yes }
+				}
+				white_peace = SAP
+				white_peace = OSE
+			}
 		}
 		clr_global_flag = belkan_war_is_happening
 		set_global_flag = belka_won_belkan_war
@@ -1197,6 +1204,18 @@ country_event = {
 	option = {
 		name = belka_dlp_war.103.a
 		BLK = {
+			white_peace = SAP
+			white_peace = OSE
+			white_peace = UST
+			white_peace = FAT
+			white_peace = GEB
+			white_peace = REC
+			white_peace = SBK
+		}
+		if = {
+			limit = {
+				PBL = { has_war = yes }
+			}
 			white_peace = SAP
 			white_peace = OSE
 			white_peace = UST
@@ -1430,6 +1449,7 @@ country_event = {
 		set_global_flag = wacht_am_wal_is_happening
 		load_focus_tree = belka_wach_am_wal
 		country_event = { id = belka_wacht_am_wal.3 days = 75 }
+		news_event = { id = ac_news_event.18 days = 1 }
 	}
 }
 
@@ -1536,6 +1556,8 @@ country_event = { ### wacht am wal peace event
 			white_peace = OSE
 			white_peace = UST
 		}
+		clr_global_flag = belkan_war_is_happening
+		set_global_flag = belka_won_belkan_war_wacht_am_wal
 	}
 }
 

@@ -1,7 +1,7 @@
 shared_focus = {
     id = UST_start
     icon = xxx
-    cost = 6.5
+    cost = 5.8
     ai_will_do = {
         factor = 50
     }
@@ -205,17 +205,8 @@ shared_focus = {
 	available = {
 		has_country_flag = UST_sold_land_to_ratio_flag
 	}
-    prerequisite = {
-        focus = UST_connect_miedzyrzecz
-    }
-	prerequisite = {
-        focus = UST_anti_partisant_training
-    }
-	prerequisite = {
-        focus = UST_upgrade_schooling_system
-    }
-	mutually_exclusive = {
-		focus = UST_no_step_on_our_land
+	bypass = {
+		has_country_flag = UST_lost_ratio_war_flag
 	}
     relative_position_id = UST_pay_for_museum
     x = -7
@@ -250,25 +241,13 @@ shared_focus = {
 
 shared_focus = {
     id = UST_no_step_on_our_land
-    icon = GFX_focus_FIN_keepers_of_the_baltic_countries
+    icon = GFX_goal_UST_no_step_on_our_land
     cost = 1
     ai_will_do = {
         factor = 50
     }
 	available = {
 		has_country_flag = UST_not_sold_land_to_ratio_flag
-	}
-    prerequisite = {
-        focus = UST_connect_miedzyrzecz
-    }
-	prerequisite = {
-        focus = UST_anti_partisant_training
-    }
-	prerequisite = {
-        focus = UST_upgrade_schooling_system
-    }
-	mutually_exclusive = {
-		focus = UST_deal
 	}
     relative_position_id = UST_pay_for_museum
     x = 7
@@ -300,6 +279,9 @@ shared_focus = {
     prerequisite = {
         focus = UST_deal
     }
+	bypass = {
+		has_country_flag = UST_lost_ratio_war_flag
+	}
     relative_position_id = UST_deal
     x = -2
     y = 1
@@ -312,7 +294,7 @@ shared_focus = {
 
 shared_focus = {
     id = UST_resetle_the_people
-    icon = GFX_focus_hol_gateway_to_europe
+    icon = GFX_goal_UST_resettle_the_people
     cost = 5.8
     ai_will_do = {
         factor = 50
@@ -320,6 +302,9 @@ shared_focus = {
     prerequisite = {
         focus = UST_deal
     }
+	bypass = {
+		has_country_flag = UST_lost_ratio_war_flag
+	}
     relative_position_id = UST_deal
     x = 0
     y = 1
@@ -360,6 +345,9 @@ shared_focus = {
     prerequisite = {
         focus = UST_deal
     }
+	bypass = {
+		has_country_flag = UST_lost_ratio_war_flag
+	}
     relative_position_id = UST_deal
     x = 2
     y = 1
@@ -434,7 +422,7 @@ shared_focus = {
 
 shared_focus = {
     id = UST_grzegorz_wins
-    icon = xxx
+    icon = GFX_goal_UST_grzegorz_wins
     cost = 8.6
     ai_will_do = {
         factor = 50
@@ -460,7 +448,7 @@ shared_focus = {
 
 shared_focus = {
     id = UST_kuba_wins
-    icon = xxx
+    icon = GFX_goal_UST_kuba_wins
     cost = 8.6
     ai_will_do = {
         factor = 50
@@ -607,7 +595,6 @@ shared_focus = {
 				amount = 5
 			}
 		}
-		custom_effect_tooltip = unlock_dec
     }
     search_filters = { }
 }
@@ -628,6 +615,7 @@ shared_focus = {
 
     completion_reward = {
 		swap_ideas = { remove_idea = UST_undeveloped_3 add_idea = UST_undeveloped_4 }
+		add_political_power = -150
     }
     search_filters = { }
 }
@@ -814,6 +802,10 @@ shared_focus = {
 
     completion_reward = {
 		custom_effect_tooltip = UST_hand_of_free_market_tt
+		hidden_effect = {
+			country_event = ustio.23
+			days = 50
+		}
     }
     search_filters = { }
 }
@@ -1058,7 +1050,7 @@ shared_focus = {
 
 shared_focus = {
     id = UST_1
-    icon = xxx
+    icon = GFX_focus_generic_military_academy
     cost = 8.6
     ai_will_do = {
         factor = 50
@@ -1624,7 +1616,10 @@ shared_focus = {
     y = 2
 
     completion_reward = {
-		country_event = ustio.6
+		custom_effect_tooltip = UST_ask_ratio_for_help_tt
+		hidden_effect = {
+			country_event = { id = ustio.6 days = 15 }
+		}
     }
     search_filters = { }
 }
@@ -1723,6 +1718,10 @@ shared_focus = {
 			amount = 200
 		}
 		add_equipment_to_stockpile = {
+			type = manpats 
+			amount = 100
+		}
+		add_equipment_to_stockpile = {
 			type = support_equipment 
 			amount = 100
 		}
@@ -1779,7 +1778,6 @@ shared_focus = {
 			popularity = 0.02
 		}
 		swap_ideas = { remove_idea = UST_ratio_nationalists_2 add_idea = UST_ratio_nationalists_war_1 }
-		custom_effect_tooltip = UST_supress_partisants_tt
     }
     search_filters = { }
 }
@@ -1862,7 +1860,12 @@ shared_focus = {
 
 	select_effect = {
 		hidden_effect = {
-			news_event = { id = ustio.13 days = 10 }
+			if = {
+				limit = {
+					365 = { is_demilitarized_zone = yes }
+				}
+				country_event = { id = ustio.13 days = 10 }
+			}
 		}
 	}
 
@@ -1909,6 +1912,7 @@ shared_focus = {
     y = 1
 
     completion_reward = {
+		country_event = ustio.22
     }
     search_filters = { }
 }
@@ -2324,26 +2328,26 @@ shared_focus = {
 		country_event = ustio_na.11
 		336 = { remove_dynamic_modifier = { modifier = UST_vs_RAT_resistance } }
 		365 = { remove_dynamic_modifier = { modifier = UST_vs_RAT_resistance } }
-		hidden_effect = {
-			if = {
-				limit = {
-					AND = {
-						NOT = { has_completed_focus = UST_subsidize_the_economy }
-						NOT = { has_completed_focus = UST_ensure_the_power_of_constitution }
-					}
-				}
-				add_to_variable = {
-					var = UST_death_meter
-					value = 1
-				}
-			}
-			if = {
-				limit = {
-					check_variable = { UST_death_meter > 3 }
-				}
-				country_event = { id = ustio_f.1 days = 5 }
-			}
-		}
+		#hidden_effect = {
+		#	if = {
+		#		limit = {
+		#			AND = {
+		#				NOT = { has_completed_focus = UST_subsidize_the_economy }
+		#				NOT = { has_completed_focus = UST_ensure_the_power_of_constitution }
+		#			}
+		#		}
+		#		add_to_variable = {
+		#			var = UST_death_meter
+		#			value = 1
+		#		}
+		#	}
+		#	if = {
+		#		limit = {
+		#			check_variable = { UST_death_meter > 3 }
+		#		}
+		#		country_event = { id = ustio_f.1 days = 5 }
+		#	}
+		#}
     }
     search_filters = { }
 }
@@ -2393,26 +2397,26 @@ shared_focus = {
 			}
 			remove_ideas = UST_ratio_nationalists_war_1
 		}
-		hidden_effect = {
-			if = {
-				limit = {
-					AND = {
-						NOT = { has_completed_focus = UST_subsidize_the_economy }
-						NOT = { has_completed_focus = UST_ensure_the_power_of_constitution }
-					}
-				}
-				add_to_variable = {
-					var = UST_death_meter
-					value = 1
-				}
-			}
-			if = {
-				limit = {
-					check_variable = { UST_death_meter > 3 }
-				}
-				country_event = { id = ustio_f.1 days = 5 }
-			}
-		}
+		#hidden_effect = {
+		#	if = {
+		#		limit = {
+		#			AND = {
+		#				NOT = { has_completed_focus = UST_subsidize_the_economy }
+		#				NOT = { has_completed_focus = UST_ensure_the_power_of_constitution }
+		#			}
+		#		}
+		#		add_to_variable = {
+		#			var = UST_death_meter
+		#			value = 1
+		#		}
+		#	}
+		#	if = {
+		#		limit = {
+		#			check_variable = { UST_death_meter > 3 }
+		#		}
+		#		country_event = { id = ustio_f.1 days = 5 }
+		#	}
+		#}
     }
     search_filters = { }
 }
@@ -2589,7 +2593,7 @@ shared_focus = {
 
 shared_focus = {
     id = UST_critical_plan_tyrann
-    icon = xxx
+    icon = GFX_goal_generic_construct_mil_factory
     cost = 8.6
     ai_will_do = {
         factor = 50
@@ -2674,7 +2678,7 @@ shared_focus = {
     y = 1
 
     completion_reward = {
-
+		custom_effect_tooltip = unlock_dec
     }
     search_filters = { }
 }
@@ -3290,120 +3294,121 @@ shared_focus = {
     search_filters = { }
 }
 
-shared_focus = {
-    id = UST_guns_for_hire
-    icon = GFX_focus_ITA_moschettieri_del_duce
-    cost = 2.2
-    ai_will_do = {
-        factor = 50
-    }
-    prerequisite = {
-        focus = UST_army_debate
-    }
-	mutually_exclusive = {
-		focus = UST_expand_militia_program
-	}
-	mutually_exclusive = {
-		focus = UST_national_army
-	}
-	available = {
-		NOT = { has_completed_focus = UST_no_step_on_our_land }
-		has_war = yes
-	}
-    relative_position_id = UST_army_debate
-    x = 4
-    y = 1
-
-    completion_reward = {
-    }
-    search_filters = { }
-}
-
-shared_focus = {
-    id = UST_international_arms_market
-    icon = GFX_goal_generic_positive_trade_relations
-    cost = 2.2
-    ai_will_do = {
-        factor = 50
-    }
-	prerequisite = {
-        focus = UST_guns_for_hire
-    }
-    relative_position_id = UST_guns_for_hire
-    x = -1
-    y = 1
-
-    completion_reward = {
-		
-    }
-    search_filters = { }
-}
-
-shared_focus = {
-    id = UST_they_only_know_gold
-    icon = GFX_focus_hol_abandon_the_gold_standard
-    cost = 2.2
-    ai_will_do = {
-        factor = 50
-    }
-	prerequisite = {
-        focus = UST_guns_for_hire
-    }
-    relative_position_id = UST_guns_for_hire
-    x = 1
-    y = 1
-
-    completion_reward = {
-		
-    }
-    search_filters = { }
-}
-
-shared_focus = {
-    id = UST_hire_huzar
-    icon = xxx
-    cost = 2.2
-    ai_will_do = {
-        factor = 50
-    }
-	prerequisite = {
-        focus = UST_international_arms_market	
-    }
-	prerequisite = {
-        focus = UST_they_only_know_gold
-    }
-    relative_position_id = UST_international_arms_market
-    x = 0
-    y = 1
-
-    completion_reward = {
-		
-    }
-    search_filters = { }
-}
-
-shared_focus = {
-    id = UST_the_wolfs_are_up
-    icon = GFX_focus_chi_army_reform
-    cost = 2.2
-    ai_will_do = {
-        factor = 50
-    }
-	prerequisite = {
-        focus = UST_international_arms_market
-    }
-	prerequisite = {
-        focus = UST_they_only_know_gold
-    }
-    relative_position_id = UST_they_only_know_gold
-    x = 0
-    y = 1
-
-    completion_reward = {
-		
-    }
-    search_filters = { }
-}
+#shared_focus = {
+#    id = UST_guns_for_hire
+#    icon = GFX_focus_ITA_moschettieri_del_duce
+#    cost = 2.2
+#    ai_will_do = {
+#        factor = 50
+#    }
+#    prerequisite = {
+#        focus = UST_army_debate
+#    }
+#	mutually_exclusive = {
+#		focus = UST_expand_militia_program
+#	}
+#	mutually_exclusive = {
+#		focus = UST_national_army
+#	}
+#	available = {
+#		always = no
+#		NOT = { has_completed_focus = UST_no_step_on_our_land }
+#		has_war = yes
+#	}
+#    relative_position_id = UST_army_debate
+#    x = 4
+#    y = 1
+#
+#    completion_reward = {
+#    }
+#    search_filters = { }
+#}
+#
+#shared_focus = {
+#    id = UST_international_arms_market
+#    icon = GFX_goal_generic_positive_trade_relations
+#    cost = 2.2
+#    ai_will_do = {
+#        factor = 50
+#    }
+#	prerequisite = {
+#        focus = UST_guns_for_hire
+#    }
+#    relative_position_id = UST_guns_for_hire
+#    x = -1
+#    y = 1
+#
+#    completion_reward = {
+#		
+#    }
+#    search_filters = { }
+#}
+#
+#shared_focus = {
+#    id = UST_they_only_know_gold
+#    icon = GFX_focus_hol_abandon_the_gold_standard
+#    cost = 2.2
+#    ai_will_do = {
+#        factor = 50
+#    }
+#	prerequisite = {
+#        focus = UST_guns_for_hire
+#    }
+#    relative_position_id = UST_guns_for_hire
+#    x = 1
+#    y = 1
+#
+#    completion_reward = {
+#		
+#    }
+#    search_filters = { }
+#}
+#
+#shared_focus = {
+#    id = UST_hire_huzar
+#    icon = xxx
+#    cost = 2.2
+#    ai_will_do = {
+#        factor = 50
+#    }
+#	prerequisite = {
+#        focus = UST_international_arms_market	
+#    }
+#	prerequisite = {
+#        focus = UST_they_only_know_gold
+#    }
+#    relative_position_id = UST_international_arms_market
+#    x = 0
+#    y = 1
+#
+#    completion_reward = {
+#		
+#    }
+#    search_filters = { }
+#}
+#
+#shared_focus = {
+#    id = UST_the_wolfs_are_up
+#    icon = GFX_focus_chi_army_reform
+#    cost = 2.2
+#    ai_will_do = {
+#        factor = 50
+#    }
+#	prerequisite = {
+#        focus = UST_international_arms_market
+#    }
+#	prerequisite = {
+#        focus = UST_they_only_know_gold
+#    }
+#    relative_position_id = UST_they_only_know_gold
+#    x = 0
+#    y = 1
+#
+#    completion_reward = {
+#		
+#    }
+#    search_filters = { }
+#}
 
 #################################
 

@@ -36,4 +36,10 @@ text = {
 		}
 		localization_key = SE_WaW_remark
 	}
+text = {
+		trigger = {
+			has_global_flag = SE_prb_intervention
+		}
+		localization_key = SE_prb_intervention_remark
+	}
 }

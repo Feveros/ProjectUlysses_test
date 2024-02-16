@@ -6077,4 +6077,173 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	### UST
+	SpriteType = {
+		name = "GFX_goal_UST_grzegorz_wins_shine"
+		texturefile = "gfx/interface/goals/UST/goal_UST_grzegorz_wins.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/UST/goal_UST_grzegorz_wins.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/UST/goal_UST_grzegorz_wins.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_UST_kuba_wins_shine"
+		texturefile = "gfx/interface/goals/UST/goal_UST_kuba_wins.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/UST/goal_UST_kuba_wins.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/UST/goal_UST_kuba_wins.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_UST_no_step_on_our_land_shine"
+		texturefile = "gfx/interface/goals/UST/goal_UST_no_step_on_our_land.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/UST/goal_UST_no_step_on_our_land.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/UST/goal_UST_no_step_on_our_land.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_UST_resettle_the_people_shine"
+		texturefile = "gfx/interface/goals/UST/goal_UST_resettle_the_people.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/UST/goal_UST_resettle_the_people.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/UST/goal_UST_resettle_the_people.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
 }

@@ -3045,8 +3045,6 @@ OSE_fire_party_ideology_shift_events = {
 				days = 7
 			}
 		}
-		set_variable = { osea_nationalist_party_popularity = osea_obp_party_popularity }
-		add_to_variable = { osea_nationalist_party_popularity = osea_opp_party_popularity_fascism }
 		if = {
 			limit = {
 				check_variable = { osea_nationalist_party_popularity > 0.01 }
@@ -4087,7 +4085,6 @@ OSE_congressional_election = {
 	}
 	OSE_calc_house_seats = yes
 	OSE_reset_house_support = yes
-
 	# Senate Seats
 	set_variable = { cleared_senate_seats = 0 }
 	while_loop_effect = {
@@ -4207,6 +4204,396 @@ OSE_congressional_election = {
 	}
 	OSE_calc_senate_seats = yes
 	OSE_reset_senate_support = yes
+	OSE_update_party_popularity = yes
+}
+
+OSE_calculate_majority_buffs = {
+	# House
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					ose_house_unity_seats > ose_house_liberty_seats
+				}
+				check_variable = {
+					ose_house_unity_seats > ose_house_brotherhood_seats
+				}
+				check_variable = {
+					ose_house_unity_seats > ose_house_socialist_seats
+				}
+				check_variable = {
+					ose_house_unity_seats > ose_house_monarchist_seats
+				}
+				check_variable = {
+					ose_house_unity_seats > ose_house_independent_seats
+				}
+			}
+		}
+		remove_ideas = {
+			OSE_house_majority_liberty_idea
+			OSE_house_majority_nationalists_idea
+			OSE_house_majority_socialists_idea
+			OSE_house_majority_monarchists_idea
+			OSE_house_majority_independents_idea
+		}
+		add_ideas = OSE_house_majority_unity_idea
+		set_variable = { ose_house_majority = 1 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = {
+					ose_house_liberty_seats > ose_house_unity_seats
+				}
+				check_variable = {
+					ose_house_liberty_seats > ose_house_brotherhood_seats
+				}
+				check_variable = {
+					ose_house_liberty_seats > ose_house_socialist_seats
+				}
+				check_variable = {
+					ose_house_liberty_seats > ose_house_monarchist_seats
+				}
+				check_variable = {
+					ose_house_liberty_seats > ose_house_independent_seats
+				}
+			}
+		}
+		remove_ideas = {
+			OSE_house_majority_unity_idea
+			OSE_house_majority_nationalists_idea
+			OSE_house_majority_socialists_idea
+			OSE_house_majority_monarchists_idea
+			OSE_house_majority_independents_idea
+		}
+		add_ideas = OSE_house_majority_liberty_idea
+		set_variable = { ose_house_majority = 2 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = {
+					ose_house_brotherhood_seats > ose_house_unity_seats
+				}
+				check_variable = {
+					ose_house_brotherhood_seats > ose_house_liberty_seats
+				}
+				check_variable = {
+					ose_house_brotherhood_seats > ose_house_socialist_seats
+				}
+				check_variable = {
+					ose_house_brotherhood_seats > ose_house_monarchist_seats
+				}
+				check_variable = {
+					ose_house_brotherhood_seats > ose_house_independent_seats
+				}
+			}
+		}
+		remove_ideas = {
+			OSE_house_majority_unity_idea
+			OSE_house_majority_liberty_idea
+			OSE_house_majority_socialists_idea
+			OSE_house_majority_monarchists_idea
+			OSE_house_majority_independents_idea
+		}
+		add_ideas = OSE_house_majority_nationalists_idea
+		set_variable = { ose_house_majority = 3 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = {
+					ose_house_socialist_seats > ose_house_unity_seats
+				}
+				check_variable = {
+					ose_house_socialist_seats > ose_house_liberty_seats
+				}
+				check_variable = {
+					ose_house_socialist_seats > ose_house_brotherhood_seats
+				}
+				check_variable = {
+					ose_house_socialist_seats > ose_house_monarchist_seats
+				}
+				check_variable = {
+					ose_house_socialist_seats > ose_house_independent_seats
+				}
+			}
+		}
+		remove_ideas = {
+			OSE_house_majority_unity_idea
+			OSE_house_majority_liberty_idea
+			OSE_house_majority_nationalists_idea
+			OSE_house_majority_monarchists_idea
+			OSE_house_majority_independents_idea
+		}
+		add_ideas = OSE_house_majority_socialists_idea
+		set_variable = { ose_house_majority = 4 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = {
+					ose_house_monarchist_seats > ose_house_unity_seats
+				}
+				check_variable = {
+					ose_house_monarchist_seats > ose_house_liberty_seats
+				}
+				check_variable = {
+					ose_house_monarchist_seats > ose_house_brotherhood_seats
+				}
+				check_variable = {
+					ose_house_monarchist_seats > ose_house_socialist_seats
+				}
+				check_variable = {
+					ose_house_monarchist_seats > ose_house_independent_seats
+				}
+			}
+		}
+		remove_ideas = {
+			OSE_house_majority_unity_idea
+			OSE_house_majority_liberty_idea
+			OSE_house_majority_nationalists_idea
+			OSE_house_majority_socialists_idea
+			OSE_house_majority_independents_idea
+		}
+		add_ideas = OSE_house_majority_monarchists_idea
+		set_variable = { ose_house_majority = 5 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = {
+					ose_house_independent_seats > ose_house_unity_seats
+				}
+				check_variable = {
+					ose_house_independent_seats > ose_house_liberty_seats
+				}
+				check_variable = {
+					ose_house_independent_seats > ose_house_brotherhood_seats
+				}
+				check_variable = {
+					ose_house_independent_seats > ose_house_socialist_seats
+				}
+				check_variable = {
+					ose_house_independent_seats > ose_house_monarchist_seats
+				}
+			}
+		}
+		remove_ideas = {
+			OSE_house_majority_unity_idea
+			OSE_house_majority_liberty_idea
+			OSE_house_majority_nationalists_idea
+			OSE_house_majority_socialists_idea
+			OSE_house_majority_monarchists_idea
+		}
+		add_ideas = OSE_house_majority_independents_idea
+		set_variable = { ose_house_majority = 6 }
+	}
+	else = {
+		remove_ideas = {
+			OSE_house_majority_unity_idea
+			OSE_house_majority_liberty_idea
+			OSE_house_majority_nationalists_idea
+			OSE_house_majority_socialists_idea
+			OSE_house_majority_monarchists_idea
+			OSE_house_majority_independents_idea
+		}
+		add_ideas = OSE_house_majority_none_idea
+		set_variable = { ose_house_majority = 7 }
+	}
+	# Senate
+	if = {
+		limit = {
+			AND = {
+				check_variable = {
+					ose_senate_unity_seats > ose_senate_liberty_seats
+				}
+				check_variable = {
+					ose_senate_unity_seats > ose_senate_brotherhood_seats
+				}
+				check_variable = {
+					ose_senate_unity_seats > ose_senate_socialist_seats
+				}
+				check_variable = {
+					ose_senate_unity_seats > ose_senate_monarchist_seats
+				}
+				check_variable = {
+					ose_senate_unity_seats > ose_senate_independent_seats
+				}
+			}
+		}
+		remove_ideas = {
+			OSE_senate_majority_liberty_idea
+			OSE_senate_majority_nationalists_idea
+			OSE_senate_majority_socialists_idea
+			OSE_senate_majority_monarchists_idea
+			OSE_senate_majority_independents_idea
+		}
+		add_ideas = OSE_senate_majority_unity_idea
+		set_variable = { ose_house_majority = 1 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = {
+					ose_senate_liberty_seats > ose_senate_unity_seats
+				}
+				check_variable = {
+					ose_senate_liberty_seats > ose_senate_brotherhood_seats
+				}
+				check_variable = {
+					ose_senate_liberty_seats > ose_senate_socialist_seats
+				}
+				check_variable = {
+					ose_senate_liberty_seats > ose_senate_monarchist_seats
+				}
+				check_variable = {
+					ose_senate_liberty_seats > ose_senate_independent_seats
+				}
+			}
+		}
+		remove_ideas = {
+			OSE_senate_majority_unity_idea
+			OSE_senate_majority_nationalists_idea
+			OSE_senate_majority_socialists_idea
+			OSE_senate_majority_monarchists_idea
+			OSE_senate_majority_independents_idea
+		}
+		add_ideas = OSE_senate_majority_liberty_idea
+		set_variable = { ose_house_majority = 2 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = {
+					ose_senate_brotherhood_seats > ose_senate_unity_seats
+				}
+				check_variable = {
+					ose_senate_brotherhood_seats > ose_senate_liberty_seats
+				}
+				check_variable = {
+					ose_senate_brotherhood_seats > ose_senate_socialist_seats
+				}
+				check_variable = {
+					ose_senate_brotherhood_seats > ose_senate_monarchist_seats
+				}
+				check_variable = {
+					ose_senate_brotherhood_seats > ose_senate_independent_seats
+				}
+			}
+		}
+		remove_ideas = {
+			OSE_senate_majority_unity_idea
+			OSE_senate_majority_liberty_idea
+			OSE_senate_majority_socialists_idea
+			OSE_senate_majority_monarchists_idea
+			OSE_senate_majority_independents_idea
+		}
+		add_ideas = OSE_senate_majority_nationalists_idea
+		set_variable = { ose_house_majority = 3 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = {
+					ose_senate_socialist_seats > ose_senate_unity_seats
+				}
+				check_variable = {
+					ose_senate_socialist_seats > ose_senate_liberty_seats
+				}
+				check_variable = {
+					ose_senate_socialist_seats > ose_senate_brotherhood_seats
+				}
+				check_variable = {
+					ose_senate_socialist_seats > ose_senate_monarchist_seats
+				}
+				check_variable = {
+					ose_senate_socialist_seats > ose_senate_independent_seats
+				}
+			}
+		}
+		remove_ideas = {
+			OSE_senate_majority_unity_idea
+			OSE_senate_majority_liberty_idea
+			OSE_senate_majority_nationalists_idea
+			OSE_senate_majority_monarchists_idea
+			OSE_senate_majority_independents_idea
+		}
+		add_ideas = OSE_senate_majority_socialists_idea
+		set_variable = { ose_house_majority = 4 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = {
+					ose_senate_monarchist_seats > ose_senate_unity_seats
+				}
+				check_variable = {
+					ose_senate_monarchist_seats > ose_senate_liberty_seats
+				}
+				check_variable = {
+					ose_senate_monarchist_seats > ose_senate_brotherhood_seats
+				}
+				check_variable = {
+					ose_senate_monarchist_seats > ose_senate_socialist_seats
+				}
+				check_variable = {
+					ose_senate_monarchist_seats > ose_senate_independent_seats
+				}
+			}
+		}
+		remove_ideas = {
+			OSE_senate_majority_unity_idea
+			OSE_senate_majority_liberty_idea
+			OSE_senate_majority_nationalists_idea
+			OSE_senate_majority_socialists_idea
+			OSE_senate_majority_independents_idea
+		}
+		add_ideas = OSE_senate_majority_monarchists_idea
+		set_variable = { ose_house_majority = 5 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = {
+					ose_senate_independent_seats > ose_senate_unity_seats
+				}
+				check_variable = {
+					ose_senate_independent_seats > ose_senate_liberty_seats
+				}
+				check_variable = {
+					ose_senate_independent_seats > ose_senate_brotherhood_seats
+				}
+				check_variable = {
+					ose_senate_independent_seats > ose_senate_socialist_seats
+				}
+				check_variable = {
+					ose_senate_independent_seats > ose_senate_monarchist_seats
+				}
+			}
+		}
+		remove_ideas = {
+			OSE_senate_majority_unity_idea
+			OSE_senate_majority_liberty_idea
+			OSE_senate_majority_nationalists_idea
+			OSE_senate_majority_socialists_idea
+			OSE_senate_majority_monarchists_idea
+		}
+		add_ideas = OSE_senate_majority_independents_idea
+		set_variable = { ose_house_majority = 6 }
+	}
+	else = {
+		remove_ideas = {
+			OSE_senate_majority_unity_idea
+			OSE_senate_majority_liberty_idea
+			OSE_senate_majority_nationalists_idea
+			OSE_senate_majority_socialists_idea
+			OSE_senate_majority_monarchists_idea
+			OSE_senate_majority_independents_idea
+		}
+		add_ideas = OSE_senate_majority_none_idea
+		set_variable = { ose_house_majority = 7 }
+	}
 }
 
 OSE_annual_budget_gain = {

@@ -1,9 +1,9 @@
 characters = { #starting leaders
 	FRU_korbinian_tiedemann = {
-		name ="Korbinian Tiedemann"
+		name ="Korbin Tiedemann"
 		portraits = {
 			civilian = {
-				large="xxx"
+				large="GFX_portrait_FRU_korbinian_tiedemann"
 			}
 		}
 		country_leader = {

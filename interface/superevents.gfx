@@ -38,4 +38,8 @@ spriteTypes = {
 		name = "GFX_superevents_WaW"
 		textureFile = "/gfx/superevents_pictures/superevents_WaW.dds"
 	}
+	spriteType = {
+		name = "GFX_superevents_prb_intervention"
+		textureFile = "/gfx/superevents_pictures/superevents_prb.dds"
+	}
 }

@@ -36,6 +36,14 @@ mio_cat_eq_all_armor_transport = {
 	}
 }
 
+mio_cat_tech_all_motorized_mechanized = {
+
+}
+
+mio_cat_tech_all_armor_and_modules = {
+
+}
+
 mio_cat_eq_all_support_armor = {
 	equipment_type = {
 		medium_tank_artillery_equipment

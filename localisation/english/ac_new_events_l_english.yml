@@ -100,3 +100,9 @@
  ac_news_event.18.d:0 "In total unexpectantly, World today got hold of the news that Belka High Command was arrested in almost its entirety by a group of young military officers after supposedly deciding to abandon South Belka and conduct a full retreat behind Waldreich Mountains. Young officers proclaimed that if Belka is to die, it should do it fighting and not by rotting, beaten and forgotten. This information shocked Allied Forced because what was looking like an already won war, with even a peace already in making, will probably now turn into slaughter and grind for every last bit of Belka. Coup was seemingly bloodless except 7 small incidents where Belkan fighters opened fire on their own Heavy Bombers and their escort over Waldreich Mountains. We still have no information on this topic but it was probably just misinformation in Army after a short period of chaos."
  ac_news_event.18.a:0 "We shall fight to the end."
  ac_news_event.18.b:0 "Those staborn bastards."
+ 
+ ac_news_event.19.t:0 ""
+ ac_news_event.19.d:0 "Perblan Intervention"
+ ac_news_event.19.a:0 "" ### For Belka
+ ac_news_event.19.b:0 "" ### For Osea
+ ac_news_event.19.c:0 "" ### For Rest

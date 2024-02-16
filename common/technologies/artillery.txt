@@ -32,6 +32,7 @@ technologies = {
 
 		categories = {
 			cat_anti_air
+			mio_cat_all_artillery_equipment
 		}
 	}
 	
@@ -59,6 +60,7 @@ technologies = {
 
 		categories = {
 			cat_anti_air
+			mio_cat_all_artillery_equipment
 		}
 	}
 	
@@ -84,6 +86,7 @@ technologies = {
 
 		categories = {
 			cat_anti_air
+			mio_cat_all_artillery_equipment
 		}
 	}
 	
@@ -111,6 +114,7 @@ technologies = {
 
 		categories = {
 			cat_anti_air
+			mio_cat_all_artillery_equipment
 		}
 	}
 	
@@ -131,6 +135,7 @@ technologies = {
 
 		categories = {
 			cat_anti_air
+			mio_cat_all_artillery_equipment
 		}
 	}
 ##########################################################
@@ -176,6 +181,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -211,6 +217,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -280,6 +287,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -321,6 +329,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -361,6 +370,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -422,6 +432,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -472,6 +483,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -513,6 +525,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -612,6 +625,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -652,6 +666,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -709,6 +724,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -759,6 +775,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -800,6 +817,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -841,6 +859,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -889,6 +908,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -920,6 +940,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -968,6 +989,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -1015,6 +1037,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -1067,6 +1090,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -1123,6 +1147,7 @@ technologies = {
 		categories = {
 			mot_rockets
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		ai_will_do = {
 			factor = 10
@@ -1146,6 +1171,7 @@ technologies = {
 		categories = {
 			mot_rockets
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -1187,6 +1213,7 @@ technologies = {
 		categories = {
 			mot_rockets
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -1223,6 +1250,7 @@ technologies = {
 		categories = {
 			mot_rockets
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -1277,6 +1305,7 @@ technologies = {
 		categories = {
 			mot_rockets
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		ai_will_do = {
 			factor = 5
@@ -1315,6 +1344,7 @@ technologies = {
 		categories = {
 			mot_rockets
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -1345,6 +1375,7 @@ technologies = {
 		categories = {
 			mot_rockets
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {
@@ -1375,6 +1406,7 @@ technologies = {
 		categories = {
 			mot_rockets
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 		
 		ai_will_do = {

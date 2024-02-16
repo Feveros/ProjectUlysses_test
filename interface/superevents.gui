@@ -49,6 +49,12 @@ guiTypes = {
 			position = { x = 0 y = 0 }
 			alwaystransparent = yes
 		}
+		iconType = {
+			name = "superevents_prb_intervention"
+			quadTextureSprite ="GFX_superevents_prb_intervention"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
 		buttonType ={
 			name ="superevents_button"
 			spriteType = "GFX_supereventsbutton"

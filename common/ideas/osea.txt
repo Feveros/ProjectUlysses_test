@@ -93,15 +93,15 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_factory_efficiency_gain_factor = -0.4
+				production_factory_efficiency_gain_factor = -0.3
 				industrial_capacity_dockyard = -0.7
-				production_factory_max_efficiency_factor = -0.3
+				production_factory_max_efficiency_factor = -0.2
 				consumer_goods_factor = 0.10
 				political_power_factor = -0.1
 			}
 		}
 		ose_uncontrolled_spending_5 = {
-			picture = XXX
+			picture = OSE_uncontrolled_spending
 			allowed = {
 				always = no
 			}
@@ -325,7 +325,7 @@ ideas = {
 			}
 		}
 		ose_cheaper_air = {
-			picture = xxx
+			picture = OSE_cheaper_air
 			allowed = {
 				always = no
 			}
@@ -353,7 +353,7 @@ ideas = {
 			}
 		}
 		ose_excavation_idea = {
-			picture = OSE_osean_federation
+			picture = generic_exploit_mines
 			allowed = {
 				always = no
 			}
@@ -370,7 +370,7 @@ ideas = {
 			}
 		}
 		ose_joined_command = {
-			picture = xxx
+			picture = OSE_joint_allied_command
 			allowed = {
 				always = no
 			}
@@ -396,7 +396,7 @@ ideas = {
 	### Cold war buildup ###
 	country = {
 		ose_fortify_west_idea = {
-			picture = xxx
+			picture = generic_fortify_the_borders
 			allowed = {
 				always = no
 			}
@@ -412,7 +412,7 @@ ideas = {
 			}
 		}
 		ose_fund_technologicala_dvancements_idea = {
-			picture = xxx
+			picture = generic_funding_research
 			allowed = {
 				always = no
 			}
@@ -427,7 +427,7 @@ ideas = {
 			}
 		}
 		ose_andrews_army_election_promise_idea = {
-			picture = xxx
+			picture = OSE_army_election_promise
 			allowed = {
 				always = no
 			}
@@ -483,7 +483,7 @@ ideas = {
 	### Belkan War ###
 	country = {
 		ose_to_catch_up = {
-			picture = OSE_osean_federation
+			picture = SOV_third_five_year_plan_military
 			allowed = {
 				always = no
 			}
@@ -497,7 +497,7 @@ ideas = {
 			}
 		}
 		ose_the_belkan_war = {
-			picture = OSE_osean_federation
+			picture = generic_the_belkan_war
 			allowed = {
 				always = no
 			}
@@ -522,7 +522,7 @@ ideas = {
 	### Belkan Land Integration ###
 	country = {
 		ose_belkan_protests_1 = {
-			picture = OSE_osean_federation
+			picture = chi_war_of_resistance2
 			allowed = {
 				always = no
 			}
@@ -538,7 +538,7 @@ ideas = {
 			}
 		}
 		ose_belkan_protests_2 = {
-			picture = OSE_osean_federation
+			picture = chi_war_of_resistance
 			allowed = {
 				always = no
 			}
@@ -685,7 +685,7 @@ ideas = {
 			}
 		}
 		OSE_increase_defense_forces_budget_idea = {
-			picture = xxx
+			picture = OSE_funding_ogdf
 			allowed = {
 				always = yes
 			}
@@ -699,7 +699,7 @@ ideas = {
 			}
 		}
 		OSE_pay_farm_subsidies_idea = {
-			picture = xxx
+			picture = LIT_invested_in_farms
 			allowed = {
 				always = yes
 			}
@@ -714,7 +714,7 @@ ideas = {
 			}
 		}
 		OSE_award_research_grants_idea = {
-			picture = xxx
+			picture = generic_research_bonus
 			allowed = {
 				always = yes
 			}
@@ -727,7 +727,7 @@ ideas = {
 			}
 		}
 		OSE_mackenzie_doctrine_idea = {
-			picture = xxx
+			picture = OSE_mackenzie_doctrine
 			allowed = {
 				always = yes
 			}
@@ -742,7 +742,7 @@ ideas = {
 		}
 		### GWOT
 		OSE_great_war_on_terror = {
-			picture = xxx
+			picture = OSE_great_war_on_terror
 			allowed = {
 				always = yes
 			}
@@ -759,7 +759,7 @@ ideas = {
 			}
 		}
 		OSE_gwot_lend_lease = {
-			picture = xxx
+			picture = OSE_gwot_lend_lease
 			allowed = {
 				always = yes
 			}
@@ -773,7 +773,7 @@ ideas = {
 			}
 		}
 		OSE_gwot_intervention = {
-			picture = xxx
+			picture = OSE_gwot_intervention
 			allowed = {
 				always = yes
 			}
@@ -790,7 +790,7 @@ ideas = {
 	}
 	hidden_ideas = {
 		OSE_senate_majority_unity_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -803,7 +803,7 @@ ideas = {
 			}
 		}
 		OSE_senate_majority_liberty_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -816,7 +816,7 @@ ideas = {
 			}
 		}
 		OSE_senate_majority_nationalists_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -829,7 +829,7 @@ ideas = {
 			}
 		}
 		OSE_senate_majority_socialists_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -842,7 +842,7 @@ ideas = {
 			}
 		}
 		OSE_senate_majority_monarchists_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -855,7 +855,7 @@ ideas = {
 			}
 		}
 		OSE_senate_majority_independents_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -867,8 +867,21 @@ ideas = {
 				drift_defence_factor = 0.50
 			}
 		}
+		OSE_senate_majority_none_idea = {
+			picture = hidden
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
 		OSE_house_majority_unity_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -881,7 +894,7 @@ ideas = {
 			}
 		}
 		OSE_house_majority_liberty_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -894,7 +907,7 @@ ideas = {
 			}
 		}
 		OSE_house_majority_nationalists_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -907,7 +920,7 @@ ideas = {
 			}
 		}
 		OSE_house_majority_socialists_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -920,7 +933,7 @@ ideas = {
 			}
 		}
 		OSE_house_majority_monarchists_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -933,7 +946,7 @@ ideas = {
 			}
 		}
 		OSE_house_majority_independents_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -945,9 +958,22 @@ ideas = {
 				consumer_goods_expected_value = -0.05
 			}
 		}
+		OSE_house_majority_none_idea = {
+			picture = hidden
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				consumer_goods_expected_value = 0.05
+			}
+		}
 		## OIA
 		OSE_oia_air_force_sabotage_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -963,7 +989,7 @@ ideas = {
 			}
 		}
 		OSE_oia_army_sabotage_idea = {
-			picture = xxx
+			picture = hidden
 			allowed = {
 				always = yes
 			}
@@ -972,9 +998,9 @@ ideas = {
 			}
 			removal_cost = 0
 			modifier = {
-				army_attack_factor = -0.15
-				army_defence_factor = -0.15
-				army_morale_factor = -0.15
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_morale_factor = -0.2
 				supply_consumption_factor = 0.25
 			}
 		}

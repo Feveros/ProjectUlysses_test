@@ -204,6 +204,12 @@ defined_text = {
 		}
 		localization_key = senate_independent_majority_tt
 	}
+	text = {
+		trigger = {
+			check_variable = { ose_senate_majority = 7 }
+		}
+		localization_key = senate_none_majority_tt
+	}
 }
 
 defined_text = {
@@ -243,6 +249,12 @@ defined_text = {
 			check_variable = { ose_house_majority = 6 }
 		}
 		localization_key = house_independent_majority_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { ose_senate_majority = 7 }
+		}
+		localization_key = house_none_majority_tt
 	}
 }
 

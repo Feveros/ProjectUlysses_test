@@ -1,3 +1,25 @@
+UST_army_dec = {
+	UST_get_mbt_research = {
+		icon = GFX_decision_generic_tank
+
+	}
+	UST_get_lt_parts_research = {
+		icon = GFX_decision_generic_tank
+
+	}
+	UST_get_tanks_parts_research = {
+		icon = GFX_decision_generic_tank
+
+	}
+	UST_get_motor_mech_research = {
+		icon = GFX_decision_generic_motorized
+
+	}
+	UST_get_trucks_research = {
+		icon = GFX_decision_generic_trucks
+
+	}
+}
 UST_ratio_negotiation = {
 	UST_ratio_war_timer = {
 		icon = GFX_decision_generic_ignite_civil_war
@@ -53,7 +75,7 @@ UST_ratio_negotiation = {
 		}
 	}
 	UST_demilitarize_industry = {
-		icon = xxx
+		icon = GFX_decision_generic_consumer_goods
 		available = {
 			always = yes
 		}
@@ -83,7 +105,7 @@ UST_ratio_negotiation = {
 		}
 	}
 	UST_release_ratio_prisoners = {
-		icon = xxx
+		icon = GFX_decision_generic_independence
 		available = {
 			always = yes
 		}
@@ -94,7 +116,7 @@ UST_ratio_negotiation = {
 		cost = 50
 		remove_effect = {
 			RAT = {
-				add_manpower = 1000
+				add_manpower = 10000
 			}
 			add_stability = -0.05
 			add_war_support = -0.05
@@ -105,7 +127,7 @@ UST_ratio_negotiation = {
 		}
 	}
 	UST_arrest_butchers = {
-		icon = xxx
+		icon = GFX_decision_generic_arrest
 		available = {
 			always = yes
 		}
@@ -117,6 +139,7 @@ UST_ratio_negotiation = {
 		remove_effect = {
 			UST = {
 				add_manpower = -500
+				retire_character = UST_lech_archacki
 			}
 			add_war_support = -0.1
 			custom_effect_tooltip = kill_general_NOTE
@@ -127,7 +150,7 @@ UST_ratio_negotiation = {
 		}
 	}
 	UST_buy_mercs = {
-		icon = xxx
+		icon = GFX_decision_hol_attract_foreign_investors
 		available = {
 			always = yes
 		}
@@ -149,7 +172,7 @@ UST_ratio_negotiation = {
 
 UST_critical_plan_tyrann_dec = {
 	plan_tyrann_move_civ_west = {
-		icon = xxx
+		icon = GFX_decision_generic_merge_plant_materiel
 		allowed = {
 		}
 		highlight_states = {
@@ -169,6 +192,7 @@ UST_critical_plan_tyrann_dec = {
 		}
 		visible = {
 			controls_state = 339
+			has_completed_focus = UST_critical_plan_tyrann
 		}
 		fire_only_once = no
 		cost = 25
@@ -181,7 +205,7 @@ UST_critical_plan_tyrann_dec = {
 		remove_effect = {
 			339 = {
 				add_extra_state_shared_building_slots = -1
-				add_building_construction = {
+				remove_building = {
 					type = industrial_complex
 					level = -1
 					instant_build = yes
@@ -204,7 +228,7 @@ UST_critical_plan_tyrann_dec = {
 		}
 	}
 	plan_tyrann_move_mil_west = {
-		icon = xxx
+		icon = GFX_decision_generic_merge_plant_tank
 		allowed = {
 		}
 		highlight_states = {
@@ -224,6 +248,7 @@ UST_critical_plan_tyrann_dec = {
 		}
 		visible = {
 			controls_state = 339
+			has_completed_focus = UST_critical_plan_tyrann
 		}
 		fire_only_once = no
 		cost = 25
@@ -236,7 +261,7 @@ UST_critical_plan_tyrann_dec = {
 		remove_effect = {
 			339 = {
 				add_extra_state_shared_building_slots = -1
-				add_building_construction = {
+				remove_building = {
 					type = arms_factory
 					level = -1
 					instant_build = yes
@@ -259,7 +284,7 @@ UST_critical_plan_tyrann_dec = {
 		}
 	}
 	plan_tyrann_move_civ_directus = {
-		icon = xxx
+		icon = GFX_decision_generic_merge_plant_materiel
 		allowed = {
 		}
 		highlight_states = {
@@ -279,6 +304,7 @@ UST_critical_plan_tyrann_dec = {
 		}
 		visible = {
 			controls_state = 335
+			has_completed_focus = UST_critical_plan_tyrann
 		}
 		fire_only_once = no
 		cost = 25
@@ -291,10 +317,9 @@ UST_critical_plan_tyrann_dec = {
 		remove_effect = {
 			335 = {
 				add_extra_state_shared_building_slots = -1
-				add_building_construction = {
+				remove_building = {
 					type = industrial_complex
 					level = -1
-					instant_build = yes
 				}
 			}
 			random_owned_controlled_state = {
@@ -314,7 +339,7 @@ UST_critical_plan_tyrann_dec = {
 		}
 	}
 	plan_tyrann_move_mil_directus = {
-		icon = xxx
+		icon = GFX_decision_generic_merge_plant_tank
 		allowed = {
 		}
 		highlight_states = {
@@ -334,6 +359,7 @@ UST_critical_plan_tyrann_dec = {
 		}
 		visible = {
 			controls_state = 335
+			has_completed_focus = UST_critical_plan_tyrann
 		}
 		fire_only_once = no
 		cost = 25
@@ -346,10 +372,9 @@ UST_critical_plan_tyrann_dec = {
 		remove_effect = {
 			335 = {
 				add_extra_state_shared_building_slots = -1
-				add_building_construction = {
+				remove_building = {
 					type = arms_factory
 					level = -1
-					instant_build = yes
 				}
 			}
 			random_owned_controlled_state = {
@@ -406,7 +431,7 @@ UST_coring_dec_dec = {
 
 UST_economy_dec = {
 	UST_pay_back_money = {
-		icon = xxx
+		icon = GFX_decision_generic_welfare
 		allowed = {
 		}
 		available = {
@@ -418,6 +443,11 @@ UST_economy_dec = {
 		}
 		visible = {
 			has_completed_focus = UST_to_pay_back_the_loan
+			OR = {
+				has_idea = UST_critical_expenses_1
+				has_idea = UST_critical_expenses_2
+				has_idea = UST_critical_expenses_3
+			}
 		}
 		fire_only_once = no
 		cost = 100
@@ -446,7 +476,140 @@ UST_economy_dec = {
 				limit = {
 					has_idea = UST_critical_expenses_3
 				}
-				swap_ideas = { remove_idea = UST_critical_expenses_2 add_idea = UST_critical_expenses_2 }
+				swap_ideas = { remove_idea = UST_critical_expenses_3 add_idea = UST_critical_expenses_2 }
+			}
+		}
+	}
+	UST_one_last_eco_push = {
+		icon = GFX_decision_generic_construction
+		allowed = {
+		}
+		available = {
+			has_idea = UST_undeveloped_4
+		}
+		visible = {
+			has_completed_focus = UST_grand_dev_plan
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+		modifier = {
+			consumer_goods_factor = 0.25
+			production_speed_buildings_factor = -0.25
+			political_power_factor = -0.2
+		}
+		ai_will_do = {
+		}
+		remove_effect = {
+			remove_ideas = UST_undeveloped_4
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	UST_build_civ = {
+		icon = GFX_decision_generic_factory
+		allowed = {
+		}
+		available = {
+			always = yes
+		}
+		visible = {
+			has_completed_focus = UST_grand_dev_plan
+		}
+		fire_only_once = yes
+		cost = 75
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 3
+			industrial_capacity_factory = -0.2
+			production_speed_buildings_factor = -0.2
+		}
+		ai_will_do = {
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	UST_build_mil = {
+		icon = GFX_decision_generic_industry
+		allowed = {
+		}
+		available = {
+			always = yes
+		}
+		visible = {
+			has_completed_focus = UST_grand_dev_plan
+		}
+		fire_only_once = yes
+		cost = 75
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 3
+			industrial_capacity_factory = -0.2
+			production_speed_buildings_factor = -0.2
+		}
+		ai_will_do = {
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	UST_build_inf = {
+		icon = GFX_decision_generic_train
+		allowed = {
+		}
+		available = {
+			always = yes
+		}
+		visible = {
+			has_completed_focus = UST_grand_dev_plan
+		}
+		fire_only_once = yes
+		cost = 75
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 3
+			industrial_capacity_factory = -0.2
+			production_speed_buildings_factor = -0.2
+		}
+		ai_will_do = {
+		}
+		remove_effect = {
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}

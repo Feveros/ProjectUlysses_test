@@ -1,15 +1,132 @@
-###########################
+################
+### MATERIEL ###
+################
 
-###  #    ##  #  # ###  ## 
-#  # #   #  # ## # #   #   
-###  #   #### # ## ##   #  
-#    #   #  # #  # #     # 
-#    ### #  # #  # ### ##  
+BLK_heckler_and_koch_organization = {
+	include = generic_infantry_equipment_organization
+	icon = xxx
+	
+	allowed = {	 
+		tag = BLK 
+	}
+}
 
-###########################
+BLK_krauss_maffei_wegmann_artillery_organization = {
+	include = generic_artillery_organization
+	icon = xxx
+	
+	allowed = {	 
+		tag = BLK
+	}
+}
+
+BLK_rheinmetall_motorized_mechanized_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = xxx
+
+	allowed = {	 
+		tag = BLK 
+	}
+}
+
+#############
+### TANKS ###
+#############
+
+BLK_krauss_maffei_wegmann_tank_organization = {
+	include = generic_medium_tank_organization
+	icon = xxx
+	allowed = {	
+		tag = BLK
+	}
+	equipment_type = { mio_cat_eq_all_medium_tank }
+	research_categories = { mio_cat_tech_medium_armor_and_modules }
+}
+
+BLK_rheinmetall_tank_organization = {
+	include = generic_tank_organization
+	icon = xxx
+	allowed = {	
+		tag = BLK
+	}
+	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank mio_cat_eq_all_armor_transport }
+	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules  mio_cat_tech_all_motorized_mechanized }
+}
+
+BLK_grunder_tank_organisation = {
+	include = generic_mobile_tank_organization
+	icon = GFX_mio_grunder
+	
+	allowed = {	
+		always = yes
+	}
+	
+	visible = {
+		owner = {
+			owns_state = 331
+		}
+	}
+	
+	available = {
+		owner = {
+			owns_state = 331
+		}
+	}
+	
+	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank mio_cat_eq_all_armor_transport }
+	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules mio_cat_tech_all_motorized_mechanized }
+	
+	initial_trait = {
+		name = BLK_mio_trait_grunder_tank
+		limit_to_equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank mio_cat_eq_all_armor_transport }
+
+		equipment_bonus = {
+			reliability = 0.15
+			soft_attack = 0.035
+			hard_attack = 0.035
+			defense = 0.05
+			build_cost_ic = 0.1
+		}
+	}
+}
+
+#############
+### SHIPS ###
+#############
+
+BLK_dinsmark_works_navy_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_2
+	
+	allowed = {	
+		tag = BLK
+	}
+}
+
+BLK_raider_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+	
+	allowed = {	
+		tag = BLK
+	}
+}
+
+BLK_belkan_great_lakes_naval_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_1
+	
+	allowed = {	
+		tag = BLK
+	}
+}
+
+
+##############
+### PLAINS ###
+##############
 
 BLK_grunder_air = {
-	#include = generic_high_agility_fighter_aircraft_organization
 	icon = GFX_mio_grunder
 	
 	allowed = {	
@@ -33,6 +150,8 @@ BLK_grunder_air = {
 		mio_cat_eq_all_medium_plane 
 		transport_plane_equipment
 	}
+	
+	research_categories = { air_equipment }
 	
 	initial_trait = {
 		name = BLK_mio_trait_grunder_air
@@ -371,26 +490,32 @@ BLK_grunder_air = {
 			air_attack = 0.1
 		}
 	}
-	
-
 }
 
-########    ###    ##    ## ##    ##  ######  
-   ##      ## ##   ###   ## ##   ##  ##    ## 
-   ##     ##   ##  ####  ## ##  ##   ##       
-   ##    ##     ## ## ## ## #####     ######  
-   ##    ######### ##  #### ##  ##         ## 
-   ##    ##     ## ##   ### ##   ##  ##    ## 
-   ##    ##     ## ##    ## ##    ##  ######  
 
-BLK_Man_organisation = {
-	include = generic_medium_tank_organization
-	icon = BLK_MAN
+BLK_messerschmitt_general_aircraft_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_messerschmitt
 	
-	allowed = {
-		original_tag = BLK
+	allowed = {	
+		tag = BLK
 	}
+}
+
+BLK_eurofighter_light_aircraft_organization = {
+	include = generic_light_aircraft_organization
+	icon = xxx
 	
-	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank mio_cat_eq_all_armor_transport }
-	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules }
+	allowed = {	
+		tag = BLK
+	}
+}
+
+BLK_dornier_medium_aircraft_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_dornier
+	
+	allowed = {	
+		tag = BLK
+	}
 }

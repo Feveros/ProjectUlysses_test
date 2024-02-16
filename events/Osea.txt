@@ -118,7 +118,7 @@ country_event = { #mackenzie anti GLRDC campaign
 	id = osea.30
 	title = osea.30.t
 	desc = osea.30.d
-	picture = GFX_report_event_belka_meme_read_write
+	picture = GFX_report_event_ose_election
 	
 	fire_only_once = yes
 	
@@ -145,7 +145,7 @@ country_event = { #elections event
 	id = osea.40
 	title = osea.40.t
 	desc = osea.40.d
-	picture = GFX_report_event_belka_meme_read_write
+	picture = GFX_report_event_ose_election
 
 	is_triggered_only = yes
 	
@@ -163,7 +163,7 @@ country_event = { #mackenzie won
 	id = osea.41
 	title = osea.41.t
 	desc = osea.41.d
-	picture = GFX_report_event_belka_meme_read_write
+	picture = GFX_report_event_ose_election_liberty_win
 	
 	is_triggered_only = yes
 
@@ -193,7 +193,7 @@ country_event = { #mackenzie presidency event
 	id = osea.50
 	title = osea.50.t
 	desc = osea.50.d
-	picture = GFX_report_event_belka_meme_read_write
+	picture = GFX_report_event_ose_president
 	
 	is_triggered_only = yes
 
@@ -271,30 +271,45 @@ country_event = {
 		name = osea_belka_land.1.a
 		set_country_flag = got_belka_land
 		add_ideas = ose_belkan_protests_1
-		269 = {
-			add_dynamic_modifier = { modifier = ose_integrate_administration_blk_land }
-			add_dynamic_modifier = { modifier = ose_integrate_industry_blk_land }
-			add_dynamic_modifier = { modifier = ose_deal_with_the_protests_blk_land }
+		if = {
+			limit = {
+				OSE = {
+					is_ai = no
+				}
+			}
+			269 = {
+				add_dynamic_modifier = { modifier = ose_integrate_administration_blk_land }
+				add_dynamic_modifier = { modifier = ose_integrate_industry_blk_land }
+				add_dynamic_modifier = { modifier = ose_deal_with_the_protests_blk_land }
+			}
+			296 = {
+				add_dynamic_modifier = { modifier = ose_integrate_administration_blk_land }
+				add_dynamic_modifier = { modifier = ose_integrate_industry_blk_land }
+				add_dynamic_modifier = { modifier = ose_deal_with_the_protests_blk_land }
+			}
+			324 = {
+				add_dynamic_modifier = { modifier = ose_integrate_administration_blk_land }
+				add_dynamic_modifier = { modifier = ose_integrate_industry_blk_land }
+				add_dynamic_modifier = { modifier = ose_deal_with_the_protests_blk_land }
+			}
+			357 = {
+				add_dynamic_modifier = { modifier = ose_integrate_administration_blk_land }
+				add_dynamic_modifier = { modifier = ose_integrate_industry_blk_land }
+				add_dynamic_modifier = { modifier = ose_deal_with_the_protests_blk_land }
+			}
+			211 = {
+				add_dynamic_modifier = { modifier = ose_integrate_administration_blk_land }
+				add_dynamic_modifier = { modifier = ose_integrate_industry_blk_land }
+				add_dynamic_modifier = { modifier = ose_deal_with_the_protests_blk_land }
+			}
 		}
-		296 = {
-			add_dynamic_modifier = { modifier = ose_integrate_administration_blk_land }
-			add_dynamic_modifier = { modifier = ose_integrate_industry_blk_land }
-			add_dynamic_modifier = { modifier = ose_deal_with_the_protests_blk_land }
-		}
-		324 = {
-			add_dynamic_modifier = { modifier = ose_integrate_administration_blk_land }
-			add_dynamic_modifier = { modifier = ose_integrate_industry_blk_land }
-			add_dynamic_modifier = { modifier = ose_deal_with_the_protests_blk_land }
-		}
-		357 = {
-			add_dynamic_modifier = { modifier = ose_integrate_administration_blk_land }
-			add_dynamic_modifier = { modifier = ose_integrate_industry_blk_land }
-			add_dynamic_modifier = { modifier = ose_deal_with_the_protests_blk_land }
-		}
-		211 = {
-			add_dynamic_modifier = { modifier = ose_integrate_administration_blk_land }
-			add_dynamic_modifier = { modifier = ose_integrate_industry_blk_land }
-			add_dynamic_modifier = { modifier = ose_deal_with_the_protests_blk_land }
+		if = {
+			limit = {
+				OSE = {
+					is_ai = yes
+				}
+			}
+			country_event = { id = osea_belka_land.2 days = 1000 }
 		}
 	}
 }
@@ -313,6 +328,31 @@ country_event = {
 		add_stability = 0.05
 		add_war_support = 0.1
 		add_popularity = { ideology = democratic popularity = 0.1 }
+	}
+}
+
+country_event = {
+	id = osea_belka_land.3
+	hidden = yes
+
+	is_triggered_only = yes
+
+	option = {
+		269 = {
+			add_core_of = OSE
+		}
+		296 = {
+			add_core_of = OSE
+		}
+		324 = {
+			add_core_of = OSE
+		}
+		357 = {
+			add_core_of = OSE
+		}
+		211 = {
+			add_core_of = OSE
+		}
 	}
 }
 
@@ -434,6 +474,12 @@ country_event = { #we are forced to make peace
 		custom_effect_tooltip = ose_lost_war_coz_civilians_have_skill_issue
 		set_global_flag = ose_lost_belkan_war
 		hidden_effect = {
+				if = {
+					limit = {
+						PBL = { has_war = yes }
+					}
+					white_peace = PBL
+				}
 			BLK = {
 				transfer_state = 269
 				transfer_state = 296 
@@ -1486,7 +1532,7 @@ country_event = { # Congressional/Midterm Elections
 	id = osea_election.1
 	title = osea_election.1.t
 	desc = osea_election.1.desc
-	picture = placeholder
+	picture = GFX_report_event_ose_election
 
 	is_triggered_only = yes
 
@@ -1548,15 +1594,15 @@ country_event = { # Belkan WMD Protocol Discovered
 
 	option = { # We need to tell the world about this now
 		name = osea_oia.1.a
-		ai_chance = {
-			base = 50
-		}
 		add_political_power = -50
 		add_stability = -0.05
 		news_event = osea_oia.2
 	}
 	option = { # We don't want to scare anyone, send a mission to look for their cache
 		name = osea_oia.1.b
+		ai_chance = {
+			base = 50
+		}
 		add_political_power = 50
 	}
 }
@@ -1590,7 +1636,7 @@ news_event = { # Osea reveals Belkan WMD protocol
 		add_war_support	= 0.05
 		add_days_mission_timeout = {
 			mission = ose_domestic_sytuation_opposed_to_war
-			days = 50
+			days = 150
 		}
 	}
 	option = { # How did they know?!
@@ -1606,5 +1652,17 @@ news_event = { # Osea reveals Belkan WMD protocol
 			}
 			add_resistance = 20
 		}
+	}
+}
+country_event = { # Belkan Details About Excalibur
+	id = osea_oia.3
+	title = osea_oia.3.t
+	desc = osea_oia.3.d
+	picture = placeholder
+	is_triggered_only = yes
+
+	option = {
+		name = osea_oia.3.a
+		
 	}
 }

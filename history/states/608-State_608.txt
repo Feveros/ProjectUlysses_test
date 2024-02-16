@@ -18,10 +18,13 @@ state={
 			infrastructure = 0
 			arms_factory = 0
 			industrial_complex = 0
-			air_base = 0
-
+			air_base = 1
+			anti_air_building = 1
+			9951 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
 		}
-
 	}
 
 	provinces={
@@ -29,6 +32,6 @@ state={
 	}
 	manpower=1432
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=small_island
 	local_supplies=0.000
 }

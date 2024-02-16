@@ -598,5 +598,35 @@ news_event = { ### wacht am wal
 			}
         }
     }
+}
+
+news_event = { ###Perbla intervention
+    id = ac_news_event.19
+	picture = xxx
+    title = ac_news_event.19.t
+    desc = ac_news_event.19.d
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = ac_news_event.19.a
+        trigger = {
+			tag = BLK
+        }
+    }
+	option = {
+        name = ac_news_event.19.a
+        trigger = {
+			tag = OSE
+        }
+    }
+	option = {
+        name = ac_news_event.19.b
+        trigger = {
+			NOT = {
+				tag = BLK
+				tag = OSE
+			}
+        }
+    }
 
 }

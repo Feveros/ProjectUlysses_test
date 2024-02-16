@@ -2201,6 +2201,10 @@ shared_focus = {
 	y = 1
 	
 	completion_reward = {
+		mio:BLK_grunder_air = {
+			add_mio_size = 4
+			add_mio_funds_gain_factor = 0.15
+		}
 		if = {
 			limit = { NOT = { has_idea = BLK_grunder_air_designer } }
 			add_ideas = BLK_grunder_air_designer
@@ -2255,7 +2259,7 @@ shared_focus = {
 	
 	completion_reward = {
 		add_doctrine_cost_reduction = {
-		    cost_reduction = 1
+		    cost_reduction = 0.75
 		    uses = 2
 		    category = air_doctrine
 		}
@@ -2914,6 +2918,9 @@ shared_focus = {
 					democratic = 45
 					communism = 5
 				}
+				white_peace = OSE
+				white_peace = SAP
+				white_peace = UST
 			}
 			GEB = {
 				set_politics = {
@@ -2926,6 +2933,9 @@ shared_focus = {
 					democratic = 83
 					communism = 2
 				}
+				white_peace = OSE
+				white_peace = SAP
+				white_peace = UST
 			}
 			REC = {
 				set_politics = {
@@ -2938,6 +2948,9 @@ shared_focus = {
 					democratic = 5
 					communism = 90
 				}
+				white_peace = OSE
+				white_peace = SAP
+				white_peace = UST
 			}
 		}
     }

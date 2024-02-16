@@ -155,6 +155,8 @@
  geb_road_expansion: "Road Expansion"
  geb_internal_trade_subsidies: "Internal Trade Subsidies"
  geb_precision_bombing_1: "Precision Bombing"
+ geb_capital_flight: "Capital Flight"
+ geb_rampant_wealth_inequality: "Rampant Wealth Inequality"
  ### DECISION CATEGORIES
  GEB_national_defense: "National Defense"
  GEB_land_reform: "Land Reform"
@@ -163,6 +165,8 @@
  ### DECISIONS
  GEB_land_reform_in_state: "Land Reform In [FROM.GetName]"
  GEB_mobilize_reserves: "Mobilize [FROM.GetMobilizationDivisionCount] Divisions in [FROM.GetName]"
+ GEB_begin_new_round_of_mobilization: "Begin New Round Of Mobilization"
+ GEB_demobilize: "Demobilize"
  GEB_plant_land_mines: "Plant Land Mines In [FROM.GetName]"
  GEB_purchase_osean_guns: "Purchase Osean Guns"
  GEB_expand_iron_mines_1: "Establish Iron Mines"
@@ -183,10 +187,22 @@
  gebet.2.t: "Philanthropy"
  gebet.2.desc: "A wealthy Gebetian businessman has decided to use his personal wealth to build [?gebet_philanthropy_building] in [FROM.GetName]. This act of generosity is thanks to our push to convince wealthy Gebetians to give back to the community.\n\nSome do argue, however, that it's not an act of generosity but rather a way for these "aristocrats" to increase their own popularity and wealth."
  gebet.2.a: "The gesture is appreciated"
+ gebet.3.t: "Capital Flight"
+ gebet.3.desc: "Due to efforts by the Gebetian government to tax the Gebetian aristocracy in order to fund social programs designed to uplift Gebet's lower classes, many frustrated Gebetian aristocrats have decided to pack up their bags, liquidate their assets, and leave for Belka. Though this will, in the long-term, result in an overall lower stranglehold by the aristocracy over Gebet's government, many of these aristocrats ran major businesses that employed hundreds of thousands, if not millions, of Gebetians who are now out of a job since their companies have just been liquidated."
+ gebet.3.a: "They...can be replaced, right?"
+ gebet.4.t: "Rampant Wealth Inequality"
+ gebet.4.desc: "The Gebetian's governments efforts to appease Gebet's aristocracy to make them more friendly towards the Gebetian government, though making them less overtly pro-Belkan, has led to the government instituting policies that have caused much of the nation's wealth to pool at the top. While this has led to explosive GDP growth, it's also led to rampant wealth inequality in Gebet."
+ gebet.4.a: "It'll trickle down eventually!"
+ # Election Events
  gebet_election.1.t: "1992 National Elections"
  gebet_election.1.desc: "The 1992 elections have come around with the frontrunners being the two major parties of the Social Democratic Union and the Progressive Democratic Party.\n\nThe Social Democratic Union campaigned on a platform of continued land reform, building a progressive tax system, developing the infrastructure of rural regions, making the aristocrats "pay their fair share," and focusing on strengthening the middle and lower class.\n\nThe Progressive Democratic Party has campaigned on cutting regulations passed by the SDU, lowering taxes, and freeing up trade. All in stark contrast to the policies of the SDU.\n\nThe two opposing parties are now waiting in anticipation to see who won over the people."
  gebet_election.1.a: "Ilse Ebner and the SDU wins!"
  gebet_election.1.b: "Rafael Albrecht and the PDP wins!"
+ gebet_election.2.t: "1996 National Elections"
+ gebet_election.2.desc: "The 1996 elections have come around with the frontrunners being the two major parties of the Social Democratic Union and the Progressive Democratic Party.\n\nThe Social Democratic Union campaigned on a platform of continued land reform, building a progressive tax system, developing the infrastructure of rural regions, making the aristocrats "pay their fair share," and focusing on strengthening the middle and lower class.\n\nThe Progressive Democratic Party has campaigned on cutting regulations passed by the SDU, lowering taxes, and freeing up trade. All in stark contrast to the policies of the SDU.\n\nThe two opposing parties are now waiting in anticipation to see who won over the people."
+ gebet_election.2.a: "Ilse Ebner and the SDU wins!" # Leader can change
+ gebet_election.2.b: "Rafael Albrecht and the PDP wins!" # Leader can change
+ # Belkan War Events
  gebet_belkan_war.1.t: "Faulmann Takes Off"
  gebet_belkan_war.1.desc: "Upon the outbreak of war, one of the first notable reports, out of many, was that the old Gebetian ace, Jakob "Raider" Faulmann, immediately took off from Kuhn Air Force Base the moment he heard about the outbreak of war. He turned off his transponder, but the people of the air base state that he was flying westward towards Belka, fully armed with missiles and bombs.\n\nHis intentions are not unclear, however. He left an envelope in the hangar his plane was stored in with a note and a set of pictures.\n\nThe pictures contained aerial pictures of a burning city, detailed enough to show civilians being burned alive by napalm bombs. Each picture is marked with the words "Rectan War."\n\nHow he got his hands on these pictures is unclear but the note simply states "I won't let this happen to us."\n\nHis intentions are clear. He wants to go launch an attack on the Belkans himself, military doctrine be damned."
  gebet_belkan_war.1.a: ""Godspeed, Taube 1.""

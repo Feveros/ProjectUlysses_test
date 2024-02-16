@@ -15,6 +15,7 @@ scripted_gui = {
 			clr_global_flag = SE_belkavic
 			clr_global_flag = SE_belkanukes
 			clr_global_flag = SE_WaW
+			clr_global_flag = SE_prb_intervention
 		}
     }
 
@@ -34,6 +35,9 @@ scripted_gui = {
 		}
 		superevents_WaW_visible = {
 			has_global_flag = SE_WaW
+		}
+		superevents_prb_intervention_visible = {
+			has_global_flag = SE_prb_intervention
 		}
 		
     }

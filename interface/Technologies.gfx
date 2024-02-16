@@ -2534,22 +2534,22 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ERU_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/ERU_infantry_equipment_0.dds"
+		texturefile = "gfx/interface/technologies/YUK_infantry_equipment_0.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_ERU_infantry_weapons1_medium"
-		texturefile = "gfx/interface/technologies/ERU_infantry_equipment_1.dds"
+		texturefile = "gfx/interface/technologies/YUK_infantry_equipment_1.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_ERU_improved_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/ERU_infantry_equipment_2.dds"
+		texturefile = "gfx/interface/technologies/YUK_infantry_equipment_2.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_ERU_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/ERU_infantry_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/YUK_infantry_equipment_3.dds"
 	}
 
 	### KALUGAN EQUIPMENT ###

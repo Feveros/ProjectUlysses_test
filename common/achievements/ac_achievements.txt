@@ -30,30 +30,30 @@ uno_reverse_card_DLP = {
     }    
 }
 
-greater_ustio = {
-    possible = {
-        difficulty > 1
-        has_start_date < 1991.01.02
-        has_any_custom_difficulty_setting = no
-        game_rules_allow_achievements = yes
-		original_tag = UST
-    }
-    
-    happened = {
-
-    }    
-}
-
-merc_ustio = {
-    possible = {
-        difficulty > 1
-        has_start_date < 1991.01.02
-        has_any_custom_difficulty_setting = no
-        game_rules_allow_achievements = yes
-		original_tag = UST
-    }
-    
-    happened = {
-
-    }    
-}
+#greater_ustio = {
+#    possible = {
+#        difficulty > 1
+#        has_start_date < 1991.01.02
+#        has_any_custom_difficulty_setting = no
+#        game_rules_allow_achievements = yes
+#		original_tag = UST
+#    }
+#    
+#    happened = {
+#
+#    }    
+#}
+#
+#merc_ustio = {
+#    possible = {
+#        difficulty > 1
+#        has_start_date < 1991.01.02
+#        has_any_custom_difficulty_setting = no
+#        game_rules_allow_achievements = yes
+#		original_tag = UST
+#    }
+#    
+#    happened = {
+#
+#    }    
+#}

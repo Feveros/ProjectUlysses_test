@@ -321,4 +321,45 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	SAP_enlightened_regent = {
+		sprite = 12
+		random = no
+		stability_factor = 0.05
+		democratic_drift = 0.05
+		communism_drift = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	SAP_cardinal_regent = {
+		sprite = 12
+		random = no
+		war_support_factor = 0.05
+		fascism_drift = 0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	SAP_traditional_regent = {
+		sprite = 12
+		random = no
+		political_power_factor = 0.05
+		monarchism_drift = 0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	SAP_militarist_regent = {
+		sprite = 12
+		random = no
+		experience_gain_army = 0.05
+		neutrality_drift = 0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

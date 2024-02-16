@@ -131,219 +131,6 @@ SAP_national_politics = {
             country_event = sapin_politics.1
         }
 	}
-	SAP_court_socialist_support = {
-		available = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-        }
-        visible = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-		}
-        cost = 25
-		days_remove = 30
-		remove_effect = {
-			clr_country_flag = sap_national_politics_decision_in_progress
-		}
-		complete_effect = {
-			set_country_flag = sap_national_politics_decision_in_progress
-			add_stability = -0.02
-			add_power_balance_value = {
-				id = SAP_power_balance
-				value = -0.05
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = 0.025
-			}
-		}
-	}
-	SAP_court_liberal_support = {
-		available = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-        }
-        visible = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-		}
-        cost = 25
-		days_remove = 30
-		remove_effect = {
-			clr_country_flag = sap_national_politics_decision_in_progress
-		}
-		complete_effect = {
-			set_country_flag = sap_national_politics_decision_in_progress
-			add_stability = -0.01
-			add_power_balance_value = {
-				id = SAP_power_balance
-				value = -0.025
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.025
-			}
-		}
-	}
-	SAP_court_monarchist_support = {
-		available = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-        }
-        visible = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-		}
-        cost = 25
-		days_remove = 30
-		remove_effect = {
-			clr_country_flag = sap_national_politics_decision_in_progress
-		}
-		complete_effect = {
-			set_country_flag = sap_national_politics_decision_in_progress
-			add_stability = -0.01
-			add_power_balance_value = {
-				id = SAP_power_balance
-				value = 0.025
-			}
-			add_popularity = {
-				ideology = monarchism
-				popularity = 0.025
-			}
-		}
-	}
-	SAP_court_falangist_support = {
-		available = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-        }
-        visible = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-		}
-        cost = 25
-		days_remove = 30
-		remove_effect = {
-			clr_country_flag = sap_national_politics_decision_in_progress
-		}
-		complete_effect = {
-			set_country_flag = sap_national_politics_decision_in_progress
-			add_stability = -0.02
-			add_power_balance_value = {
-				id = SAP_power_balance
-				value = 0.05
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.025
-			}
-		}
-	}
-	SAP_court_moderate_support = {
-		available = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-        }
-        visible = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-		}
-        cost = 50
-		days_remove = 30
-		remove_effect = {
-			clr_country_flag = sap_national_politics_decision_in_progress
-		}
-		complete_effect = {
-			set_country_flag = sap_national_politics_decision_in_progress
-			add_stability = 0.01
-			if = {
-				limit = {
-					if = {
-						limit = {
-							power_balance_value = {
-								id = SAP_power_balance
-								value > 0
-							}
-						}
-						add_power_balance_value = {
-							id = SAP_power_balance
-							value = -0.025
-						}
-					}
-					else = {
-						add_power_balance_value = {
-							id = SAP_power_balance
-							value = 0.025
-						}
-					}
-				}
-			}
-		}
-	}
-	SAP_attempt_to_mediate_differences = {
-		available = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-        }
-        visible = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-		}
-        cost = 25
-		days_remove = 30
-		remove_effect = {
-			clr_country_flag = sap_national_politics_decision_in_progress
-		}
-		complete_effect = {
-			set_country_flag = sap_national_politics_decision_in_progress
-			random = {
-				chance = 45
-				add_stability = 0.025
-			}
-			random = {
-				chance = 15
-				add_stability = -0.025
-			}
-		}
-	}
-	SAP_unite_the_center = {
-		available = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-			has_stability > 0.90
-        }
-        visible = {
-			NOT = {
-				has_idea = sap_dysfunctional_coalition
-			}
-		}
-        cost = 100
-		days_remove = 30
-		remove_effect = {
-			clr_country_flag = sap_national_politics_decision_in_progress
-		}
-		complete_effect = {
-			set_country_flag = sap_national_politics_decision_in_progress
-			custom_effect_tooltip = sap_republicans_split_tt
-			set_country_flag = sap_republicans_split
-			custom_effect_tooltip = sap_nationalists_split_tt
-			set_country_flag = sap_nationalists_split
-			set_country_flag = sap_center_united
-		}
-	}
 }
 SAP_national_guard = {
 	SAP_mobilize_state_national_guard = {
@@ -410,7 +197,7 @@ SAP_national_guard = {
 		icon = placeholder
         available = {
 			AND = {
-				every_owned_state = {
+				all_owned_state = {
 					limit = {
 						is_controlled_by = ROOT
                 		is_core_of = ROOT
@@ -487,6 +274,186 @@ SAP_national_guard = {
 				}
 				clr_state_flag = state_infantry_mobilized
 			}
+		}
+	}
+}
+SAP_balance_of_power_category = {
+	SAP_court_socialist_support = {
+		available = {
+			NOT = {
+				has_idea = sap_dysfunctional_coalition
+			}
+        }
+        cost = 25
+		days_remove = 30
+		remove_effect = {
+			clr_country_flag = sap_national_politics_decision_in_progress
+		}
+		complete_effect = {
+			set_country_flag = sap_national_politics_decision_in_progress
+			add_stability = -0.02
+			add_power_balance_value = {
+				id = SAP_power_balance
+				value = -0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.025
+			}
+		}
+	}
+	SAP_court_liberal_support = {
+		available = {
+			NOT = {
+				has_idea = sap_dysfunctional_coalition
+			}
+        }
+        cost = 25
+		days_remove = 30
+		remove_effect = {
+			clr_country_flag = sap_national_politics_decision_in_progress
+		}
+		complete_effect = {
+			set_country_flag = sap_national_politics_decision_in_progress
+			add_stability = -0.01
+			add_power_balance_value = {
+				id = SAP_power_balance
+				value = -0.025
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.025
+			}
+		}
+	}
+	SAP_court_monarchist_support = {
+		available = {
+			NOT = {
+				has_idea = sap_dysfunctional_coalition
+			}
+        }
+        cost = 25
+		days_remove = 30
+		remove_effect = {
+			clr_country_flag = sap_national_politics_decision_in_progress
+		}
+		complete_effect = {
+			set_country_flag = sap_national_politics_decision_in_progress
+			add_stability = -0.01
+			add_power_balance_value = {
+				id = SAP_power_balance
+				value = 0.025
+			}
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.025
+			}
+		}
+	}
+	SAP_court_falangist_support = {
+		available = {
+			NOT = {
+				has_idea = sap_dysfunctional_coalition
+			}
+        }
+        cost = 25
+		days_remove = 30
+		remove_effect = {
+			clr_country_flag = sap_national_politics_decision_in_progress
+		}
+		complete_effect = {
+			set_country_flag = sap_national_politics_decision_in_progress
+			add_stability = -0.02
+			add_power_balance_value = {
+				id = SAP_power_balance
+				value = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.025
+			}
+		}
+	}
+	SAP_court_moderate_support = {
+		available = {
+			NOT = {
+				has_idea = sap_dysfunctional_coalition
+			}
+        }
+        cost = 50
+		days_remove = 30
+		remove_effect = {
+			clr_country_flag = sap_national_politics_decision_in_progress
+		}
+		complete_effect = {
+			set_country_flag = sap_national_politics_decision_in_progress
+			add_stability = 0.01
+			if = {
+				limit = {
+					if = {
+						limit = {
+							power_balance_value = {
+								id = SAP_power_balance
+								value > 0
+							}
+						}
+						add_power_balance_value = {
+							id = SAP_power_balance
+							value = -0.025
+						}
+					}
+					else = {
+						add_power_balance_value = {
+							id = SAP_power_balance
+							value = 0.025
+						}
+					}
+				}
+			}
+		}
+	}
+	SAP_attempt_to_mediate_differences = {
+		available = {
+			NOT = {
+				has_idea = sap_dysfunctional_coalition
+			}
+        }
+        cost = 25
+		days_remove = 30
+		remove_effect = {
+			clr_country_flag = sap_national_politics_decision_in_progress
+		}
+		complete_effect = {
+			set_country_flag = sap_national_politics_decision_in_progress
+			random = {
+				chance = 45
+				add_stability = 0.025
+			}
+			random = {
+				chance = 15
+				add_stability = -0.025
+			}
+		}
+	}
+	SAP_unite_the_center = {
+		available = {
+			NOT = {
+				has_idea = sap_dysfunctional_coalition
+			}
+			has_stability > 0.90
+        }
+        cost = 100
+		days_remove = 30
+		remove_effect = {
+			clr_country_flag = sap_national_politics_decision_in_progress
+		}
+		complete_effect = {
+			set_country_flag = sap_national_politics_decision_in_progress
+			custom_effect_tooltip = sap_republicans_split_tt
+			set_country_flag = sap_republicans_split
+			custom_effect_tooltip = sap_nationalists_split_tt
+			set_country_flag = sap_nationalists_split
+			set_country_flag = sap_center_united
 		}
 	}
 }

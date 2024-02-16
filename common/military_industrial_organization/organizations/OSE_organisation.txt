@@ -1,16 +1,39 @@
-#####################
+################################### 
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+###################################
 
+OSE_colt_manufacturing_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_mio_colt_manufacturing
+	
+	allowed = {	 
+		tag = OSE 
+	}
+}
+OSE_bae_systems_artillery_organization = {
+	include = generic_artillery_organization
+	icon = GFX_mio_bae_systems
+	
+	allowed = {	 
+		tag = OSE
+	}
+}
+
+#####################
 ###  ##  #  # # #  ## 
  #  #  # ## # # # #   
  #  #### # ## ##   #  
  #  #  # #  # # #   # 
  #  #  # #  # # # ## 
-
 #####################
 
 OSE_general_dynamics_land_systems_organization = {
 	include = generic_medium_tank_organization
-	icon = GFX_idea_general_dynamics_land_systems
+	icon = GFX_mio_general_dynamics_land_systems
 	allowed = {	
 		tag = OSE
 	}
@@ -36,20 +59,20 @@ OSE_general_dynamics_land_systems_organization = {
 		}
 	}
 	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank mio_cat_eq_all_armor_transport }
-	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules }
+	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules mio_cat_tech_all_motorized_mechanized }
 }
-OSE_bae_systems_organization = {
+OSE_bae_systems_tank_organization = {
 	include = generic_mobile_tank_organization
-	icon = GFX_idea_bae_systems
+	icon = GFX_mio_bae_systems
 	allowed = {	
 		tag = OSE
 	}
 	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank mio_cat_eq_all_armor_transport }
-	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules }
+	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules mio_cat_tech_all_motorized_mechanized }
 }
 OSE_general_motors_organization = {
 	include = generic_tank_organization
-	icon = GFX_idea_general_motors_organization
+	icon = GFX_mio_general_motors
 	allowed = {	
 		tag = OSE
 	}
@@ -63,17 +86,33 @@ OSE_general_motors_organization = {
 		}
 	}
 	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank mio_cat_eq_all_armor_transport }
-	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules }
+	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules mio_cat_tech_all_motorized_mechanized }
+}
+
+##########################################
+ ######  ##     ## #### ########   ######  
+##    ## ##     ##  ##  ##     ## ##    ## 
+##       ##     ##  ##  ##     ## ##       
+ ######  #########  ##  ########   ######  
+      ## ##     ##  ##  ##              ## 
+##    ## ##     ##  ##  ##        ##    ## 
+ ######  ##     ## #### ##         ######  
+##########################################
+
+OSE_huntington_ingalls_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_mio_huntington_ingalls
+	allowed = {	
+		tag = OSE
+	}
 }
 
 ###########################
-
 ###  #    ##  #  # ###  ## 
 #  # #   #  # ## # #   #   
 ###  #   #### # ## ##   #  
 #    #   #  # #  # #     # 
 #    ### #  # #  # ### ##  
-
 ###########################
 
 OSE_lockheed_organization = {

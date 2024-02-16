@@ -1,19 +1,4 @@
-﻿#KEY:
-#
-#.0xx: country fall events
-#.1xx: historical war events 
-#.2xx: ahistorical war events
-#.3xx: new country cosmetic
-#.4xx: nation internal change events (excluding civil wars)
-#.5xx: powerful achievement events
-#
-#
-#
-#
-#
-#
-#EXAMPLE: .001 would be the first event for country fall events section.
-
+﻿
 add_namespace = superevents
 
 country_event = {
@@ -117,6 +102,34 @@ country_event = {
 
 	trigger = {
 		has_global_flag = wacht_am_wal_is_happening
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+	}
+	
+	option = {
+		name = superevents.0.a
+	}
+}
+
+country_event = {
+	id = superevents.105
+	title = superevents.0.t
+	desc = superevents.0.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_prb_intervention
+		#cue funni music
+		play_song  = prb
+	}
+
+	hidden = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = prb_intervention
 		NOT = {
 			has_global_flag = SE_superevents_activate
 		}

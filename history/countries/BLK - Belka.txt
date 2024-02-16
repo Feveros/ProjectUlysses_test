@@ -40,6 +40,11 @@ add_ideas = {
 	nuke_lvl_5
 }
 
+create_intelligence_agency = {
+    name = "Bundesnachrichtendienst"
+    icon = GFX_intelligence_agency_logo_ger
+}
+
 ####################################################
 
 recruit_character = BLK_abelard_straub
@@ -151,6 +156,7 @@ if = {
 			iw_medium_airframe = 1
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
+			air_torpedoe_1 = 1
 		}
 	else = {
 		set_technology = {

@@ -125,6 +125,9 @@ technology_categories = {
 	cat_marines_doctrine
 	cat_paratroopers_doctrine
 
+	mio_cat_tech_all_armor_and_modules
+	mio_cat_tech_all_motorized_mechanized
+
 	mio_cat_tech_light_armor_and_modules #Includes modules and stand-alone Amphibious Chassis
 	mio_cat_tech_medium_armor_and_modules #Includes modules and Modern Tank
 	mio_cat_tech_heavy_armor_and_modules #Includes modules and Super-Heavy Tank

@@ -14,7 +14,7 @@ ideas = {
 			}
         }
         sap_republican_agitation = {
-            picture = placeholder
+            picture = FRA_scw_intervention_republicans_focus
             allowed = {
                 always = yes
             }
@@ -32,7 +32,7 @@ ideas = {
 			}
         }
         sap_noble_high_command_5 = {
-            picture = placeholder
+            picture = SAP_noble_high_command
             allowed = {
                 always = yes
             }
@@ -46,11 +46,11 @@ ideas = {
                 land_doctrine_cost_factor = 0.50
                 air_doctrine_cost_factor = 0.50
                 naval_doctrine_cost_factor = 0.50
-                monarchism_drift = 0.10
+                monarchism_drift = 0.05
 			}
         }
         sap_noble_high_command_4 = {
-            picture = placeholder
+            picture = SAP_noble_high_command
             allowed = {
                 always = yes
             }
@@ -64,11 +64,11 @@ ideas = {
                 land_doctrine_cost_factor = 0.40
                 air_doctrine_cost_factor = 0.40
                 naval_doctrine_cost_factor = 0.40
-                monarchism_drift = 0.08
+                monarchism_drift = 0.04
 			}
         }
         sap_noble_high_command_3 = {
-            picture = placeholder
+            picture = SAP_noble_high_command
             allowed = {
                 always = yes
             }
@@ -82,11 +82,11 @@ ideas = {
                 land_doctrine_cost_factor = 0.30
                 air_doctrine_cost_factor = 0.30
                 naval_doctrine_cost_factor = 0.30
-                monarchism_drift = 0.06
+                monarchism_drift = 0.03
 			}
         }
         sap_noble_high_command_2 = {
-            picture = placeholder
+            picture = SAP_noble_high_command
             allowed = {
                 always = yes
             }
@@ -100,11 +100,11 @@ ideas = {
                 land_doctrine_cost_factor = 0.20
                 air_doctrine_cost_factor = 0.20
                 naval_doctrine_cost_factor = 0.20
-                monarchism_drift = 0.04
+                monarchism_drift = 0.02
 			}
         }
         sap_noble_high_command_1 = {
-            picture = placeholder
+            picture = SAP_noble_high_command
             allowed = {
                 always = yes
             }
@@ -118,11 +118,11 @@ ideas = {
                 land_doctrine_cost_factor = 0.10
                 air_doctrine_cost_factor = 0.10
                 naval_doctrine_cost_factor = 0.10
-                monarchism_drift = 0.02
+                monarchism_drift = 0.01
 			}
         }
         sap_economic_crisis_1 = {
-            picture = placeholder
+            picture = usa_great_depression_1
             allowed = {
                 always = yes
             }
@@ -139,7 +139,7 @@ ideas = {
 			}
         }
         sap_economic_crisis_2 = {
-            picture = placeholder
+            picture = usa_great_depression_2
             allowed = {
                 always = yes
             }
@@ -156,7 +156,7 @@ ideas = {
 			}
         }
         sap_economic_crisis_3 = {
-            picture = placeholder
+            picture = usa_great_depression_3
             allowed = {
                 always = yes
             }
@@ -250,7 +250,7 @@ ideas = {
 			}
         }
         sap_reinforced_state_secularism = {
-            picture = placeholder
+            picture = SAP_reinforced_state_secularism
             allowed = {
                 always = yes
             }
@@ -269,7 +269,7 @@ ideas = {
 			}
         }
         sap_public_schooling = {
-            picture = placeholder
+            picture = generic_research_bonus
             allowed = {
                 always = yes
             }
@@ -282,11 +282,11 @@ ideas = {
             removal_cost = 0
 			modifier = {
                 research_speed_factor = 0.075
-                democratic_drift = 0.01
+                democratic_drift = 0.05
 			}
         }
         sap_welfare_state_1 = {
-            picture = placeholder
+            picture = FIN_socialist_welfare
             allowed = {
                 always = yes
             }
@@ -304,7 +304,7 @@ ideas = {
 			}
         }
         sap_promoted_catholic_values = {
-            picture = placeholder
+            picture = MEX_church_power_5
             allowed = {
                 always = yes
             }
@@ -323,7 +323,7 @@ ideas = {
 			}
         }
         sap_catholic_schooling = {
-            picture = placeholder
+            picture = ITA_papal_state_ns
             allowed = {
                 always = yes
             }
@@ -361,7 +361,7 @@ ideas = {
         }
     
         sap_pre_belkan_war_mobilization = {
-            picture = placeholder
+            picture = man_five_year_plan_tank
             allowed = {
                 always = yes
             }
@@ -375,7 +375,7 @@ ideas = {
 			}
         }
         sap_increased_immigration = {
-            picture = placeholder
+            picture = generic_increased_immigration
             allowed = {
                 always = yes
             }
@@ -389,7 +389,7 @@ ideas = {
 			}
         }
         sap_decreased_immigration = {
-            picture = placeholder
+            picture = generic_decreased_immigration
             allowed = {
                 always = yes
             }
@@ -438,7 +438,7 @@ ideas = {
 			}
         }
         sap_aggressive_military_thought_idea_1 = {
-            picture = placeholder
+            picture = generic_aggressive_military_thought
             allowed = {
                 always = yes
             }
@@ -455,7 +455,7 @@ ideas = {
 			}
         }
         sap_aggressive_military_thought_idea_2 = {
-            picture = placeholder
+            picture = generic_aggressive_military_thought
             allowed = {
                 always = yes
             }
@@ -505,7 +505,7 @@ ideas = {
 			}
         }
         sap_king_of_battle_idea_1 = {
-            picture = placeholder
+            picture = generic_artillery_regiments
             allowed = {
                 always = yes
             }
@@ -520,7 +520,7 @@ ideas = {
 			}
         }
         sap_king_of_battle_idea_2 = {
-            picture = placeholder
+            picture = generic_artillery_regiments
             allowed = {
                 always = yes
             }
@@ -535,7 +535,7 @@ ideas = {
 			}
         }
         sap_creeping_barrage_idea = {
-            picture = placeholder
+            picture = generic_creeping_barrage
             allowed = {
                 always = yes
             }
@@ -549,7 +549,7 @@ ideas = {
 			}
         }
         sap_bite_and_hold_idea_1 = {
-            picture = placeholder
+            picture = FIN_lone_wolf
             allowed = {
                 always = yes
             }
@@ -565,7 +565,7 @@ ideas = {
 			}
         }
         sap_bite_and_hold_idea_2 = {
-            picture = placeholder
+            picture = FIN_lone_wolf
             allowed = {
                 always = yes
             }
@@ -789,20 +789,6 @@ ideas = {
                 air_ace_generation_chance_factor = 0.25
 			}
         }
-        sap_rectan_air_force_veterans = {
-            picture = placeholder
-            allowed = {
-                always = yes
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = 0
-			modifier = {
-                air_doctrine_cost_factor = -0.05
-                air_ace_generation_chance_factor = 0.25
-			}
-        }
         sap_improved_laser_guidance_systems = {
             picture = placeholder
             allowed = {
@@ -915,7 +901,7 @@ ideas = {
 			}
         }
         sap_guardia_real = {
-            picture = placeholder
+            picture = SAP_guardia_real
             allowed = {
                 always = yes
             }
@@ -930,7 +916,7 @@ ideas = {
 			}
         }
         sap_supported_ustio = {
-            picture = placeholder
+            picture = generic_support_ustio
             allowed = {
                 always = yes
             }
@@ -940,7 +926,7 @@ ideas = {
 			}
         }
         sap_supported_ratio = {
-            picture = placeholder
+            picture = generic_support_ratio
             allowed = {
                 always = yes
             }

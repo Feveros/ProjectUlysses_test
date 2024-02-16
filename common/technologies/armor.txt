@@ -55,6 +55,7 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 	}
 
@@ -73,6 +74,7 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 
 		path = {
@@ -116,6 +118,7 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -161,6 +164,7 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 			cat_imvs
 		}
 		
@@ -204,6 +208,7 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 			cat_imvs
 		}
 		
@@ -242,6 +247,7 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 			cat_imvs
 		}
 
@@ -286,6 +292,7 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 			cat_imvs
 		}
 		
@@ -341,6 +348,7 @@ technologies = {
 		
 		categories = {
 			cat_mechanized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -389,6 +397,7 @@ technologies = {
 
 		categories = {
 			cat_mechanized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -463,6 +472,7 @@ technologies = {
 
 		categories = {
 			cat_mechanized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -509,6 +519,7 @@ technologies = {
 		
 		categories = {
 			cat_mechanized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -560,6 +571,7 @@ technologies = {
 
 		categories = {
 			cat_mechanized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		ai_will_do = {
 			factor = 2
@@ -596,6 +608,7 @@ technologies = {
 		
 		categories = {
 			cat_mechanized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -641,6 +654,7 @@ technologies = {
 		
 		categories = {
 			cat_mechanized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -688,6 +702,7 @@ technologies = {
 		
 		categories = {
 			cat_mechanized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		ai_will_do = {
 			factor = 2
@@ -732,6 +747,7 @@ technologies = {
 
 		categories = {
 			cat_mechanized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		ai_will_do = {
 			factor = 2
@@ -768,6 +784,7 @@ technologies = {
 		
 		categories = {
 			cat_mechanized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		ai_will_do = {
 			factor = 2
@@ -843,6 +860,8 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
 		}
 	}
 	
@@ -882,6 +901,8 @@ technologies = {
 			armor
 			cat_light_armor
 			cat_anti_tank
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
 		}
 	}
 	
@@ -907,6 +928,8 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
 		}
 		ai_will_do = {
 			factor = 2
@@ -966,6 +989,8 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
 		}
 		ai_will_do = {
 			factor = 2
@@ -1020,6 +1045,8 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
 		}
 		ai_will_do = {
 			factor = 2
@@ -1073,6 +1100,8 @@ technologies = {
 			armor
 			cat_light_armor
 			cat_anti_tank
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
 		}
 	}
 	
@@ -1099,6 +1128,8 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
 		}
 		ai_will_do = {
 			factor = 2
@@ -1145,6 +1176,8 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
 		}
 		ai_will_do = {
 			factor = 2
@@ -1190,6 +1223,8 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
 		}
 		ai_will_do = {
 			factor = 2
@@ -1224,6 +1259,8 @@ technologies = {
 			armor
 			cat_light_armor
 			cat_anti_tank
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
 		}
 		ai_will_do = {
 			factor = 2
@@ -1289,6 +1326,8 @@ technologies = {
 		categories = {
 			armor
 			cat_modern_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
 		}
 	}
 
@@ -1345,6 +1384,8 @@ technologies = {
 		categories = {
 			armor
 			cat_modern_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
 		}
 	}
 	
@@ -1371,6 +1412,8 @@ technologies = {
 		categories = {
 			armor
 			cat_modern_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
 		}
 	}
 	
@@ -1395,6 +1438,8 @@ technologies = {
 		categories = {
 			armor
 			cat_modern_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
 		}
 		ai_will_do = {
 			factor = 2
@@ -1439,6 +1484,8 @@ technologies = {
 		categories = {
 			armor
 			cat_modern_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
 		}
 		ai_will_do = {
 			factor = 2
@@ -1492,6 +1539,8 @@ technologies = {
 		categories = {
 			armor
 			cat_modern_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
 		}
 		ai_will_do = {
 			factor = 2
@@ -1574,6 +1623,8 @@ technologies = {
 		categories = {
 			armor
 			cat_modern_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
 		}
 	}
 	
@@ -1598,6 +1649,8 @@ technologies = {
 		categories = {
 			armor
 			cat_modern_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
 		}
 		ai_will_do = {
 			factor = 2
@@ -1647,6 +1700,8 @@ technologies = {
 		categories = {
 			armor
 			cat_modern_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
 		}
 		ai_will_do = {
 			factor = 2
@@ -1697,6 +1752,8 @@ technologies = {
 		categories = {
 			armor
 			cat_modern_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
 		}
 		ai_will_do = {
 			factor = 2
@@ -1766,6 +1823,8 @@ technologies = {
 		categories = {
 			armor
 			cat_modern_armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
 		}
 	}
 

@@ -691,33 +691,33 @@ guiTypes = {
 		iconType = {
 			name = "minor_country_leader"
 			quadTextureSprite ="GFX_leader_unknown"
-			position = { x = 289 y = 441 }
+			position = { x = 1069 y = 446 }
 			scale=0.696
 			rotation=-0.04
 		}
-
+		
 		iconType = {
 				name ="minor_portrait_overlay"
 				spriteType = "GFX_minor_portrait_overlay"
-				position = { x= 280 y = 430 }
+				position = { x= 1060 y = 435 }
 		}
-
-
+		
+		
 		instantTextBoxType = {
 			name = "info_title"
-			position = { x = 10 y = 450 }
+			position = { x = 820 y = 450 }
 			font = "Aces16_black"
 			borderSize = {x = 0 y = 0}
 			text = "FE_COUNTRY_INFO_TITLE"
 			maxWidth = 340
-			maxHeight = 30
+			maxHeight = 30	
 			format = centre
 		}
-
+		
 		containerWindowType = {
-			name = "info"
-			position = { x = 35 y = 485 }
-
+			name = "info"				
+			position = { x = 810 y = 485 }
+			
 			instantTextBoxType = {
 				name = "leader_label"
 				position = { x = 0 y = -5 }
@@ -727,7 +727,7 @@ guiTypes = {
 				maxWidth = 340
 				format = left
 			}
-
+			
 			instantTextBoxType = {
 				name = "leader"
 				position = { x = 0 y = 12 }
@@ -738,80 +738,80 @@ guiTypes = {
 				maxWidth = 340
 				format = left
 			}
-
+			
 			instantTextBoxType = {
 				name = "ideology_label"
 				position = { x = 0 y = 35 }
 				textureFile = ""
-				font = "Aces14_black" #was hoi4_typewriter16
+				font = "Aces14_black"
 				borderSize = {x = 0 y = 0}
 				text = "IDEOLOGY"
 				maxWidth = 340
 				format = left
 			}
-
+			
 			instantTextBoxType = {
 				name = "ideology"
 				position = { x = 0 y = 52 }
-				font = "Aces14_black" #was hoi4_typewriter16
+				font = "Aces14_black"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
 				format = left
 			}
-
+			
 			instantTextBoxType = {
 				name = "government_label"
 				position = { x = 0 y = 75 }
-				font = "Aces14_black" #was hoi4_typewriter16
+				font = "Aces14_black"
 				borderSize = {x = 0 y = 0}
 				text = "GOVERNMENT"
 				maxWidth = 340
 				format = left
 			}
-
+			
 			instantTextBoxType = {
 				name = "government"
 				position = { x = 0 y = 92 }
-				font = "Aces14_black" #was hoi4_typewriter16
+				font = "Aces14_black"
 				borderSize = {x = 0 y = 0}
 				text = "FE_INTERESTING_COUNTRIES"
 				maxWidth = 340
 				format = left
 			}
-
+			
 			instantTextBoxType = {
 				name = "elections_label"
 				position = { x = 0 y = 115 }
-				font = "Aces14_black" #was hoi4_typewriter16
+				font = "Aces14_black"
 				borderSize = {x = 0 y = 0}
 				text = "ELECTIONS"
 				maxWidth = 340
 				format = left
 			}
-
+			
 			instantTextBoxType = {
 				name = "elections"
 				position = { x = 0 y = 132 }
-				font = "Aces14_black" #was hoi4_typewriter16
+				font = "Aces14_black"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
 				format = left
 			}
-
+			
 			instantTextBoxType = {
 				name = "party_label"
 				position = { x = 0 y = 155 }
-				font = "Aces14_black" #was hoi4_typewriter16
+				font = "Aces14_black"
 				borderSize = {x = 0 y = 0}
 				text = "RULING_PARTY"
 				maxWidth = 340
 				format = left
 			}
-
+			
 			instantTextBoxType = {
 				name = "party"
 				position = { x = 0 y = 172 }
-				font = "Aces14_black" #was hoi4_typewriter16
+				font = "Aces14_black"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
 				format = left
@@ -875,22 +875,22 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "history_title"
-			position = { x = 830 y = 450 }
+			position = { x = 50 y = 450 }
 			font = "Aces16_black"
 			borderSize = {x = 0 y = 0}
 			text = "FE_COUNTRY_HISTORY_TITLE"
 			maxWidth = 340
-			maxHeight = 30
+			maxHeight = 30	
 			format = centre
 		}
-
+		
 		instantTextBoxType = {
 			name = "history"
-			position = { x = 810 y = 490 }
-			font = "Aces12_black" #was hoi4_typewriter16
+			position = { x = 35 y = 455 }
+			font = "Aces12_black"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 380
-			maxHeight = 30
+			maxHeight = 30	
 			format = left
 		}
 	}

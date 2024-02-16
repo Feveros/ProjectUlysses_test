@@ -161,7 +161,7 @@ BLK_belkan_war_category = {
 			NOT = { has_global_flag = belkan_war_is_happening }
 		}
 		fire_only_once = yes
-		days_mission_timeout = 400
+		days_mission_timeout = 450
 		selectable_mission = no
 		timeout_effect = {
 			country_event = belka_dlp_war.105
@@ -189,6 +189,16 @@ BLK_belkan_war_category = {
 		
 		timeout_effect = {
 			country_event = { id = belka_dlp_war.2 }
+			hidden_effect = {
+				if = {
+					limit = {
+						PBL = {
+							has_country_flag = pbl_help_belka_flag 
+						}
+					}
+					country_event = { id = perbla_intervention.1 days = 30 }
+				}	
+			}
 			hidden_effect = {
 				news_event = { id = ac_news_event.7 days = 1 }
 			}
@@ -660,7 +670,10 @@ BLK_special_eco_dec_DLP = {
 			always = no
 		}
 		cancel_trigger = {
-			NOT = { has_global_flag = belkan_war_is_happening }
+			OR = {
+				NOT = { has_global_flag = belkan_war_is_happening }
+				NOT = { has_global_flag = wacht_am_wal_is_happening }
+			}
 		}
 		fire_only_once = yes
 		days_mission_timeout = 90
@@ -687,7 +700,10 @@ BLK_special_eco_dec_DLP = {
 			always = no
 		}
 		cancel_trigger = {
+			OR = {
 				NOT = { has_global_flag = belkan_war_is_happening }
+				NOT = { has_global_flag = wacht_am_wal_is_happening }
+			}
 		}
 		days_mission_timeout = 30
 		selectable_mission = no
@@ -720,6 +736,7 @@ BLK_special_eco_dec_DLP = {
 		visible = {
 			has_completed_focus = BLK_reparations
 			has_global_flag = belkan_war_is_happening
+			NOT = { has_global_flag = wacht_am_wal_is_happening }
 		}
 		fire_only_once = yes
 		#cost = 100
@@ -750,6 +767,7 @@ BLK_special_eco_dec_DLP = {
 		visible = {
 			has_completed_focus = BLK_reparations
 			has_global_flag = belkan_war_is_happening
+			NOT = { has_global_flag = wacht_am_wal_is_happening }
 		}
 		fire_only_once = yes
 		#cost = 100

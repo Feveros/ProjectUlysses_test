@@ -36,6 +36,10 @@ country_event = { ### ustio gives up east
 		}
 		add_war_support = -0.2
 		add_stability = 0.1
+		load_focus_tree = ustio_democracy
+		hidden_effect = {
+			country_event = utility.1
+		}
 	}
 	option = { ### NO
 		name = ustio.1.b
@@ -60,6 +64,10 @@ country_event = { ### ustio gives up east
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.05
+		}
+		load_focus_tree = ustio_non_ali
+		hidden_effect = {
+			country_event = utility.1
 		}
 	}
 }
@@ -101,6 +109,16 @@ country_event = { ### ustio gets tank div from Belka
 	option = {
 		name = ustio.4.a
 		load_oob = UST_belkan_units
+		add_corps_commander_role = {
+			character = UST_urban_klimczak
+
+			traits = { panzer_expert combined_arms_expert brilliant_strategist }
+			skill = 4
+			attack_skill = 7
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
 	}
 }
 
@@ -157,6 +175,16 @@ country_event = { ### ask ratio for help vs Belka
 
 	option = {
 		name = ustio.6.a
+		add_offsite_building = { 
+			type = arms_factory 
+			level = 1
+		}
+		add_manpower = 20000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+		}
+		add_political_power = 100
 	}
 }
 
@@ -177,6 +205,11 @@ country_event = { ### border skirms vs Ratio
 	option = {
 		name = ustio.7.b
 		add_war_support = 0.05
+		add_stability = -0.05
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -500
+		}
 		add_manpower = -250
 		add_to_variable = { ratio_hate = 1 }
 		hidden_effect = {
@@ -203,11 +236,11 @@ country_event = { ### partisants plan to do rails bombing
 		365 = {
 			damage_building = {
 				type = rail_way
-				damage = 2
+				damage = 5
 			}
 			damage_building = {
 				type = supply_node
-				damage = 1
+				damage = 2
 			}
 		}
 		add_days_mission_timeout = {
@@ -424,7 +457,7 @@ country_event = { ### referendum results
 	is_triggered_only = yes
 
 	option = {
-		name = ustio.16
+		name = ustio.16.a
 	}
 }
 
@@ -454,7 +487,7 @@ country_event = { ### world community forces us to peace out - we lost
 	is_triggered_only = yes
 
 	option = {
-		name = ustio.20
+		name = ustio.20.a
 		white_peace = RAT
 		set_country_flag = UST_lost_ratio_war_flag
 		clr_global_flag = first_ustian_war
@@ -476,12 +509,102 @@ country_event = { ### we lost - back to being shit - forces player back into his
 	is_triggered_only = yes
 
 	option = {
-		name = ustio.21
+		name = ustio.21.a
 		hidden_effect = {
 			
 		}
 	}
 }
+
+country_event = { ### we lost ratio war
+	id = ustio.22
+	title = ustio.22.t
+	desc = ustio.22.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio.22.a
+		load_focus_tree = ustio_democracy
+		hidden_effect = {
+			country_event = utility.1
+		}
+	}
+}
+
+country_event = { ### hand of free market event 1
+	id = ustio.23
+	title = ustio.23.t
+	desc = ustio.23.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio.23.a
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		hidden_effect = {
+			country_event = ustio.24
+			days = 100
+		}
+	}
+}
+
+country_event = { ### hand of free market event 2
+	id = ustio.24
+	title = ustio.23.t
+	desc = ustio.23.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio.23.a
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		hidden_effect = {
+			country_event = ustio.25
+			days = 100
+		}
+	}
+}
+
+country_event = { ### hand of free market event 3
+	id = ustio.25
+	title = ustio.23.t
+	desc = ustio.23.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = ustio.23.a
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
 
 ########################################################
 
@@ -854,6 +977,12 @@ country_event = {
 	option = {
 		name = ustio_grzegorz.5.a
 		swap_ruler_traits = { remove = father_of_the_nation_2 add = father_of_the_nation_3 }
+		swap_ideas = { remove_idea = UST_freedom add_idea = UST_freedom_2 }
+	}
+	option = {
+		name = ustio_grzegorz.5.b
+		swap_ruler_traits = { remove = father_of_the_nation_2 add = father_of_the_nation_3 }
+		swap_ideas = { remove_idea = UST_freedom add_idea = UST_freedom_2 }
 	}
 }
 

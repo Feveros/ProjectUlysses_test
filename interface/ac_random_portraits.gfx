@@ -356,6 +356,26 @@ spriteTypes = {
 		name = "GFX_Portrait_OSE_Generic_land_36"
 		texturefile = "gfx/leaders/OSE/Portrait_OSE_Generic_land_36.png"
 	}
+	spriteType = {
+		name = "GFX_Portrait_OSE_Generic_land_37"
+		texturefile = "gfx/leaders/OSE/Portrait_OSE_Generic_land_37.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_OSE_Generic_land_38"
+		texturefile = "gfx/leaders/OSE/Portrait_OSE_Generic_land_38.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_OSE_Generic_land_39"
+		texturefile = "gfx/leaders/OSE/Portrait_OSE_Generic_land_39.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_OSE_Generic_land_40"
+		texturefile = "gfx/leaders/OSE/Portrait_OSE_Generic_land_40.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_OSE_Generic_land_41"
+		texturefile = "gfx/leaders/OSE/Portrait_OSE_Generic_land_40.png"
+	}
 	# Navy
 	spriteType = {
 		name = "GFX_Portrait_OSE_Generic_navy_1"

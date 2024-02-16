@@ -374,6 +374,45 @@ spriteTypes = {
 		name = "GFX_portrait_GEB_eric_allemann"
 		texturefile = "gfx/leaders/GEB/portrait_GEB_eric_allemann.png"
 	}
+	
+######### USTIO ##################################
+
+	spriteType = {
+		name = "GFX_portrait_UST_kuba_morkawiecki"
+		texturefile = "gfx/leaders/UST/portrait_UST_kuba_morkawiecki.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_UST_general_1"
+		texturefile = "gfx/leaders/UST/portrait_UST_general_1.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_UST_general_2"
+		texturefile = "gfx/leaders/UST/portrait_UST_general_2.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_UST_general_3"
+		texturefile = "gfx/leaders/UST/portrait_UST_general_3.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_UST_general_4"
+		texturefile = "gfx/leaders/UST/portrait_UST_general_4.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_UST_general_5"
+		texturefile = "gfx/leaders/UST/portrait_UST_general_5.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_UST_general_6"
+		texturefile = "gfx/leaders/UST/portrait_UST_general_6.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_UST_general_7"
+		texturefile = "gfx/leaders/UST/portrait_UST_general_7.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_UST_general_8"
+		texturefile = "gfx/leaders/UST/portrait_UST_general_8.png"
+	}
 
 ######### ERUSEA ##################################
 	spriteType = {
@@ -397,6 +436,13 @@ spriteTypes = {
 		name = "GFX_portrait_NPT_national_defense_council"
 		texturefile = "gfx/leaders/NPT/portrait_NPT_national_defense_council.png"
 	}
+	
+######### FERUSTIA #############################
+
+spriteType = {
+	name = "GFX_portrait_FRU_korbinian_tiedemann"
+	texturefile = "gfx/leaders/FRU/portrait_FRU_korbinian_tiedemann.png"
+}
 	
 ######### NIHON #############################
 

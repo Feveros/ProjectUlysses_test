@@ -8,7 +8,7 @@ country_event = { #sapinish parliamentary elections
 	id = sapin_politics.1
 	title = sapin_politics.1.t
 	desc = sapin_politics.1.desc
-	picture = placeholder
+	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
 
@@ -36,7 +36,7 @@ country_event = { # Republican agitation
 	id = sapin_politics.2
 	title = sapin_politics.2.t
 	desc = sapin_politics.2.desc
-	picture = placeholder
+	picture = GFX_report_event_spain_civil_war_soldiers
 
 	is_triggered_only = yes
 
@@ -104,7 +104,7 @@ country_event = { # MPs break for Republicans
 	id = sapin_politics.4
 	title = sapin_politics.4.t
 	desc = sapin_politics.4.desc
-	picture = placeholder
+	picture = GFX_report_event_SWI_parliament_members
 
 	is_triggered_only = yes
 
@@ -150,7 +150,7 @@ country_event = { # MPs break for Monarchists
 	id = sapin_politics.5
 	title = sapin_politics.5.t
 	desc = sapin_politics.5.desc
-	picture = placeholder
+	picture = GFX_report_event_SWI_parliament_members
 
 	is_triggered_only = yes
 
@@ -196,7 +196,7 @@ country_event = { # Moderates make joint declaration
 	id = sapin_politics.6
 	title = sapin_politics.6.t
 	desc = sapin_politics.6.desc
-	picture = placeholder
+	picture = GFX_report_event_tur_ataturk_inonu_parliament
 
 	is_triggered_only = yes
 
@@ -239,7 +239,7 @@ country_event = { # Extremists derail session
 	id = sapin_politics.7
 	title = sapin_politics.7.t
 	desc = sapin_politics.7.desc
-	picture = placeholder
+	picture = GFX_report_event_ITA_democratic_parlament
 
 	is_triggered_only = yes
 
@@ -282,7 +282,7 @@ country_event = { # Moderates join against extremists
 	id = sapin_politics.8
 	title = sapin_politics.8.t
 	desc = sapin_politics.8.desc
-	picture = placeholder
+	picture = GFX_report_event_tur_ataturk_inonu_parliament
 
 	is_triggered_only = yes
 
@@ -351,7 +351,7 @@ country_event = { # Extremists join against moderates
 	id = sapin_politics.9
 	title = sapin_politics.9.t
 	desc = sapin_politics.9.desc
-	picture = placeholder
+	picture = GFX_report_event_ITA_democratic_parlament
 
 	is_triggered_only = yes
 
@@ -402,7 +402,7 @@ country_event = { # Republican delivers rousing speech
 	id = sapin_politics.10
 	title = sapin_politics.10.t
 	desc = sapin_politics.10.desc
-	picture = placeholder
+	picture = GFX_report_event_romania_parliament
 
 	is_triggered_only = yes
 
@@ -448,7 +448,7 @@ country_event = { # Monarchist delivers rousing speech
 	id = sapin_politics.11
 	title = sapin_politics.11.t
 	desc = sapin_politics.11.desc
-	picture = placeholder
+	picture = GFX_report_event_romania_parliament
 
 	is_triggered_only = yes
 
@@ -494,7 +494,7 @@ country_event = { # Leader speaks in parliament
 	id = sapin_politics.12
 	title = sapin_politics.12.t
 	desc = sapin_politics.12.desc
-	picture = placeholder
+	picture = GFX_report_event_romania_parliament
 
 	is_triggered_only = yes
 
@@ -538,7 +538,7 @@ country_event = { # Extremist MP censured
 	id = sapin_politics.13
 	title = sapin_politics.13.t
 	desc = sapin_politics.13.desc
-	picture = placeholder
+	picture = GFX_report_event_hungary_parliament
 
 	is_triggered_only = yes
 
@@ -596,7 +596,7 @@ country_event = { #Prince of Sapin (Ernesto castro) grows up
 	id = sapin.1
 	title = sapin.1.t
 	desc = sapin.1.desc
-	picture = placeholder
+	picture = GFX_report_event_bul_prince_simeon
 	is_triggered_only = yes
 
 	immediate = {
@@ -688,7 +688,7 @@ country_event = { # Ustio-Ratio Situation
 	id = sapin_diplomacy.1
 	title = sapin_diplomacy.1.t
 	desc = sapin_diplomacy.1.desc
-	picture = placeholder
+	picture = GFX_report_event_saf_soldiers_2
 	
 	is_triggered_only = yes
 
@@ -737,7 +737,7 @@ country_event = { # Sapin sides with us!
 	id = sapin_diplomacy.2
 	title = sapin_diplomacy.2.t
 	desc = sapin_diplomacy.2.desc
-	picture = placeholder
+	picture = GFX_report_event_gre_allied_diplomacy
 	
 	is_triggered_only = yes
 
@@ -756,7 +756,7 @@ country_event = { # The Belka Problem
 	id = sapin_diplomacy.3
 	title = sapin_diplomacy.3.t
 	desc = sapin_diplomacy.3.desc
-	picture = placeholder
+	picture = GFX_report_event_german_troops
 	
 	is_triggered_only = yes
 
@@ -779,7 +779,7 @@ country_event = { # Sapin forgoes Futuro claims
 	id = sapin_diplomacy.4
 	title = sapin_diplomacy.4.t
 	desc = sapin_diplomacy.4.desc
-	picture = placeholder
+	picture = GFX_report_event_gre_diplomacy
 	
 	is_triggered_only = yes
 
@@ -792,7 +792,7 @@ country_event = { # Our friends in Oured
 	id = sapin_diplomacy.5
 	title = sapin_diplomacy.5.t
 	desc = sapin_diplomacy.5.desc
-	picture = placeholder
+	picture = GFX_report_event_generic_handshake
 	
 	is_triggered_only = yes
 
@@ -822,7 +822,7 @@ news_event = { # Sapin announces further cooperation with Osea
 	id = sapin_diplomacy.6
 	title = sapin_diplomacy.6.t
 	desc = sapin_diplomacy.6.desc
-	picture = placeholder
+	picture = GFX_news_event_canadian_soldiers
 
 	is_triggered_only = yes
 
@@ -834,7 +834,7 @@ news_event = { # Sapin announces independent foreign policy
 	id = sapin_diplomacy.7
 	title = sapin_diplomacy.7.t
 	desc = sapin_diplomacy.7.desc
-	picture = placeholder
+	picture = GFX_news_event_spr_francoist_civil_war_victory
 	
 	is_triggered_only = yes
 
@@ -850,7 +850,7 @@ news_event = { # Sapin announces NOTO
 	id = sapin_diplomacy.8
 	title = sapin_diplomacy.8.t
 	desc = sapin_diplomacy.8.desc
-	picture = placeholder
+	picture = GFX_news_event_generic_sign_treaty1
 	
 	is_triggered_only = yes
 
@@ -873,7 +873,7 @@ country_event = { # Joining NOTO?
 	id = sapin_diplomacy.9
 	title = sapin_diplomacy.9.t
 	desc = sapin_diplomacy.9.desc
-	picture = placeholder
+	picture = GFX_report_event_gre_allied_diplomacy_military
 	
 	is_triggered_only = yes
 
@@ -910,7 +910,7 @@ country_event = { # Our Perbla Position
 	id = sapin_diplomacy.10
 	title = sapin_diplomacy.10.t
 	desc = sapin_diplomacy.10.desc
-	picture = placeholder
+	picture = GFX_report_event_generic_military_parade
 	
 	is_triggered_only = yes
 
@@ -941,7 +941,7 @@ country_event = { # Our Border Policy
 	id = sapin_diplomacy.11
 	title = sapin_diplomacy.11.t
 	desc = sapin_diplomacy.11.desc
-	picture = placeholder
+	picture = GFX_report_event_riot_police_poland
 	
 	is_triggered_only = yes
 
@@ -958,7 +958,7 @@ country_event = { # Republican Revolt
 	id = sapin_civil_war.1
 	title = sapin_civil_war.1.t
 	desc = sapin_civil_war.1.desc
-	picture = placeholder
+	picture = GFX_report_event_spain_civil_war_volunteers_01
 	
 	is_triggered_only = yes
 
@@ -1040,7 +1040,7 @@ country_event = { # Nationalist Revolt
 	id = sapin_civil_war.2
 	title = sapin_civil_war.2.t
 	desc = sapin_civil_war.2.desc
-	picture = placeholder
+	picture = GFX_report_event_saf_civil_war
 	
 	is_triggered_only = yes
 

@@ -18,3 +18,7 @@ music = {
 	name = "wacht_am_waldreich"
 	file = "wacht_am_waldreich.ogg"
 }
+music = {
+	name = "prb"
+	file = "perbla_intervention.ogg"
+}

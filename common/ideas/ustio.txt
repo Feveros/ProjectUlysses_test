@@ -762,6 +762,22 @@ ideas = {
 				research_speed_factor = 0.1
 			}
 		}
+		UST_freedom_2 = {
+			picture = generic_democratic_drift_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				defensive_war_stability_factor = 0.1
+				surrender_limit = 0.05
+				drift_defence_factor = 0.5
+			}
+		}
 		UST_central_bank_idea = {
 			picture = xxx
 			allowed = {

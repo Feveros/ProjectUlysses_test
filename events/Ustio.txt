@@ -19,7 +19,14 @@ country_event = { ### ustio gives up east
 	option = { ### YES
 		name = ustio.1.a
 		ai_chance = {
-			factor = 100
+			factor = 85
+			modifier = {
+				factor = 0
+				has_game_rule = {
+						rule = UST_ai_behavior
+						option = NEUTRALITY
+				}
+			}
 		}
 		set_country_flag = UST_sold_land_to_ratio_flag
 		add_opinion_modifier = {
@@ -46,6 +53,29 @@ country_event = { ### ustio gives up east
 		ai_chance = {
 			factor = 0
 		}
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 0		
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = UST_ai_behavior
+							option = DEFAULT
+						}
+					} 
+					has_game_rule = {
+						rule = UST_ai_behavior
+						option = DEMOCRATIC_HISTORICAL
+					}
+					has_game_rule = {
+						rule = UST_ai_behavior
+						option = DEMOCRATIC_ALTERNATE
+					}
+				}
+			}
+		}
 		set_country_flag = UST_not_sold_land_to_ratio_flag
 		add_opinion_modifier = {
 			target = RAT
@@ -54,7 +84,7 @@ country_event = { ### ustio gives up east
 		hidden_effect = {
 			RAT = {
 				add_opinion_modifier = {
-					target = ust
+					target = UST
 					modifier = considers_threat 
 				}
 			}
@@ -183,6 +213,7 @@ country_event = { ### ask ratio for help vs Belka
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = 2000
+			producer = RAT
 		}
 		add_political_power = 100
 	}
@@ -716,6 +747,16 @@ country_event = { ### election event nr. 1
 
 	option = { #Grzegorz
 		name = ustio_main.8.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0		
+				has_game_rule = {
+					rule = UST_ai_behavior
+					option = DEMOCRATIC_ALTERNATE
+				}
+			}
+		}
 		hidden_effect = {
 			country_event = { id = ustio_main.9 days = 10 }
 			add_to_variable = {
@@ -726,6 +767,25 @@ country_event = { ### election event nr. 1
 	}
 	option = { #Morkawiecki
 		name = ustio_main.8.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0		
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = UST_ai_behavior
+							option = DEFAULT
+						}
+					}
+					has_game_rule = {
+						rule = UST_ai_behavior
+						option = DEMOCRATIC_HISTORICAL
+					}
+				}
+			}
+		}
 		hidden_effect = {
 			country_event = { id = ustio_main.9 days = 10 }
 			add_to_variable = {
@@ -746,6 +806,16 @@ country_event = { ### election event nr. 2
 
 	option = { #Grzegorz
 		name = ustio_main.9.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0		
+				has_game_rule = {
+					rule = UST_ai_behavior
+					option = DEMOCRATIC_ALTERNATE
+				}
+			}
+		}
 		hidden_effect = {
 			country_event = { id = ustio_main.10 days = 10 }
 			add_to_variable = {
@@ -756,6 +826,25 @@ country_event = { ### election event nr. 2
 	}
 	option = { #Morkawiecki
 		name = ustio_main.9.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0		
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = UST_ai_behavior
+							option = DEFAULT
+						}
+					}
+					has_game_rule = {
+						rule = UST_ai_behavior
+						option = DEMOCRATIC_HISTORICAL
+					}
+				}
+			}
+		}
 		hidden_effect = {
 			country_event = { id = ustio_main.10 days = 10 }
 			add_to_variable = {
@@ -776,6 +865,16 @@ country_event = { ### election event nr. 3
 
 	option = { #Grzegorz
 		name = ustio_main.10.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0		
+				has_game_rule = {
+					rule = UST_ai_behavior
+					option = DEMOCRATIC_ALTERNATE
+				}
+			}
+		}
 		hidden_effect = {
 			country_event = { id = ustio_main.11 days = 10 }
 			add_to_variable = {
@@ -786,6 +885,25 @@ country_event = { ### election event nr. 3
 	}
 	option = { #Morkawiecki
 		name = ustio_main.10.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0		
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = UST_ai_behavior
+							option = DEFAULT
+						}
+					}
+					has_game_rule = {
+						rule = UST_ai_behavior
+						option = DEMOCRATIC_HISTORICAL
+					}
+				}
+			}
+		}
 		hidden_effect = {
 			country_event = { id = ustio_main.11 days = 10 }
 			add_to_variable = {
@@ -806,6 +924,16 @@ country_event = { ### election event nr. 4
 
 	option = { #Grzegorz
 		name = ustio_main.11.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0		
+				has_game_rule = {
+					rule = UST_ai_behavior
+					option = DEMOCRATIC_ALTERNATE
+				}
+			}
+		}
 		hidden_effect = {
 			country_event = { id = ustio_main.12 days = 10 }
 			add_to_variable = {
@@ -816,6 +944,25 @@ country_event = { ### election event nr. 4
 	}
 	option = { #Morkawiecki
 		name = ustio_main.11.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0		
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = UST_ai_behavior
+							option = DEFAULT
+						}
+					}
+					has_game_rule = {
+						rule = UST_ai_behavior
+						option = DEMOCRATIC_HISTORICAL
+					}
+				}
+			}
+		}
 		hidden_effect = {
 			country_event = { id = ustio_main.12 days = 10 }
 			add_to_variable = {
@@ -836,6 +983,16 @@ country_event = { ### election event nr. 5
 
 	option = { #Grzegorz
 		name = ustio_main.12.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0		
+				has_game_rule = {
+					rule = UST_ai_behavior
+					option = DEMOCRATIC_ALTERNATE
+				}
+			}
+		}
 		hidden_effect = {
 			country_event = { id = ustio_main.13 days = 1 }
 			add_to_variable = {
@@ -846,6 +1003,25 @@ country_event = { ### election event nr. 5
 	}
 	option = { #Morkawiecki
 		name = ustio_main.12.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0		
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = UST_ai_behavior
+							option = DEFAULT
+						}
+					}
+					has_game_rule = {
+						rule = UST_ai_behavior
+						option = DEMOCRATIC_HISTORICAL
+					}
+				}
+			}
+		}
 		hidden_effect = {
 			country_event = { id = ustio_main.13 days = 1 }
 			add_to_variable = {

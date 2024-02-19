@@ -44,6 +44,58 @@ spriteTypes = {
 		name = "GFX_idea_generic_support_ratio"
 		texturefile = "gfx/interface/ideas/_generic/idea_generic_support_ratio.png"
 	}
+	spriteType = {
+		name = "GFX_idea_generic_ifv_production_boost"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_ifv_production_boost.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_artillery_production_boost"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_artillery_production_boost.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_rifle_production_boost"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_rifle_production_boost.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_tank_advance"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_tank_advance.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_helicopter_logistics"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_helicopter_logistics.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_nighttime_ops"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_nighttime_ops.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_bomber_school"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_bomber_school.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_cas_school"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_cas_school.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_fighter_school"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_fighter_school.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_osean_advisors"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_osean_advisors.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_noto_advisors"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_noto_advisors.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_airstrike"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_airstrike.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_logistical_destruction"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_logistical_destruction.png"
+	}
 	### ECONOMY
 	spriteType = {
 		name = "GFX_idea_cold_war_eco"
@@ -228,8 +280,44 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SAP/idea_SAP_reinforced_state_secularism.png"
 	}
 	spriteType = {
+		name = "GFX_idea_SAP_charity_not_welfare"
+		texturefile = "gfx/interface/ideas/SAP/idea_SAP_charity_not_welfare.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SAP_dragons_of_the_alicante"
+		texturefile = "gfx/interface/ideas/SAP/idea_SAP_dragons_of_the_alicante.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SAP_pegasi_of_sapin"
+		texturefile = "gfx/interface/ideas/SAP/idea_SAP_pegasi_of_sapin.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SAP_zeus_thunderbolts"
+		texturefile = "gfx/interface/ideas/SAP/idea_SAP_zeus_thunderbolts.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SAP_sapinish_air_force"
+		texturefile = "gfx/interface/ideas/SAP/idea_SAP_sapinish_air_force.png"
+	}
+	spriteType = {
 		name = "GFX_idea_SAP_guardia_real"
 		texturefile = "gfx/interface/ideas/SAP/idea_SAP_guardia_real.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SAP_fuerzas_de_defensa_local"
+		texturefile = "gfx/interface/ideas/SAP/idea_SAP_fuerzas_de_defensa_local.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SAP_los_cruzados"
+		texturefile = "gfx/interface/ideas/SAP/idea_SAP_los_cruzados.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SAP_milicia_popular"
+		texturefile = "gfx/interface/ideas/SAP/idea_SAP_milicia_popular.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SAP_rectan_air_force_veterans"
+		texturefile = "gfx/interface/ideas/SAP/idea_SAP_rectan_air_force_veterans.png"
 	}
 	### NORTH POINT
 	spriteType = {

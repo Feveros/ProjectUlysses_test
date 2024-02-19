@@ -628,5 +628,27 @@ news_event = { ###Perbla intervention
 			}
         }
     }
+}
 
+news_event = { ###King in Belka
+    id = ac_news_event.20
+	picture = xxx
+    title = ac_news_event.20.t
+    desc = ac_news_event.20.d
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = ac_news_event.20.a
+        trigger = {
+			tag = BLK
+        }
+    }
+	option = {
+        name = ac_news_event.20.b
+        trigger = {
+			NOT = {
+				tag = BLK
+			}
+        }
+    }
 }

@@ -804,7 +804,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_promote_diego_lopez
-    icon = placeholder
+    icon = GFX_goal_SAP_promote_diego_lopez
     cost = 7
     available = {
         if = {
@@ -873,7 +873,7 @@ shared_focus = {
     y = 1
     completion_reward = {
         add_tech_bonus = {
-            bonus = 0.5
+            bonus = 0.50
             uses = 1
             category = cat_air_guns
         }
@@ -891,7 +891,7 @@ shared_focus = {
     y = 2
     completion_reward = {
         add_tech_bonus = {
-            bonus = 0.5
+            bonus = 0.50
             uses = 1
             category = radar_tech
         }
@@ -1000,13 +1000,16 @@ shared_focus = {
     x = 0
     y = 4
     completion_reward = {
-        add_ideas = sap_raf_fighter_command_idea
+        swap_ideas = {
+            remove_idea = sap_toledo_fighter_weapons_school_idea_2
+            add_idea = sap_toledo_fighter_weapons_school_idea_3
+        }
     }
     search_filters = { }
 }
 shared_focus = {
     id = sap_promote_mateo_gonzalez
-    icon = placeholder
+    icon = GFX_goal_SAP_promote_mateo_gonzalez
     cost = 7
     available = {
         if = {
@@ -1059,7 +1062,7 @@ shared_focus = {
     y = 1
     completion_reward = {
         add_tech_bonus = {
-            bonus = 0.5
+            bonus = 0.50
             uses = 1
             category = cas_bomber
         }
@@ -1077,7 +1080,7 @@ shared_focus = {
     y = 1
     completion_reward = {
         add_tech_bonus = {
-            bonus = 0.5
+            bonus = 0.50
             uses = 1
             category = tactical_bomber
         }
@@ -1097,7 +1100,7 @@ shared_focus = {
     y = 2
     completion_reward = {
         add_tech_bonus = {
-            bonus = 0.5
+            bonus = 0.50
             uses = 1
             category = mio_cat_all_cas_and_modules
         }
@@ -1106,7 +1109,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_zaragoza_tactical_support_school
-    icon = placeholder
+    icon = GFX_focus_generic_cas_training_school
     cost = 7
     prerequisite = { focus = sap_promote_mateo_gonzalez }
     relative_position_id = sap_promote_mateo_gonzalez
@@ -1180,13 +1183,16 @@ shared_focus = {
     x = 0
     y = 4
     completion_reward = {
-        add_ideas = sap_tactical_air_control_parties_idea
+        swap_ideas = {
+            remove_idea = sap_zaragoza_tactical_support_school_idea_2
+            add_idea = sap_zaragoza_tactical_support_school_idea_3
+        }
     }
     search_filters = { }
 }
 shared_focus = {
     id = sap_promote_elena_sanchez
-    icon = placeholder
+    icon = GFX_goal_SAP_promote_elena_sanchez
     cost = 7
     available = {
         if = {
@@ -1237,7 +1243,11 @@ shared_focus = {
     x = -1
     y = 1
     completion_reward = {
-        add_ideas = sap_improved_laser_guidance_systems
+        add_tech_bonus = {
+            bonus = 0.50
+            uses = 1
+            category = radar_tech
+        }
     }
     search_filters = { }
 }
@@ -1251,7 +1261,7 @@ shared_focus = {
     y = 1
     completion_reward = {
         add_tech_bonus = {
-            bonus = 0.5
+            bonus = 0.50
             uses = 1
             category = cat_strategic_bomber
         }
@@ -1260,7 +1270,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_soria_air_university
-    icon = placeholder
+    icon = GFX_focus_generic_bomber_training_school
     cost = 7
     prerequisite = { focus = sap_promote_elena_sanchez }
     relative_position_id = sap_promote_elena_sanchez
@@ -1318,7 +1328,6 @@ shared_focus = {
             sap_precision_strike_tactics_idea
             sap_logistical_destruction_idea
         }
-        add_ideas = sap_dragons_of_the_alicante_idea
     }
     search_filters = { }
 }
@@ -1331,13 +1340,16 @@ shared_focus = {
     x = 0
     y = 1
     completion_reward = {
-        add_ideas = sap_raf_bomber_command_idea
+        swap_ideas = {
+            remove_idea = sap_soria_air_university_idea_2
+            add_idea = sap_soria_air_university_idea_3
+        }
     }
     search_filters = { }
 }
 shared_focus = {
     id = sap_reorganize_air_high_command
-    icon = placeholder
+    icon = GFX_goal_SAP_reorganize_air_high_command
     cost = 7
     prerequisite = { focus = sap_raf_fighter_command }
     prerequisite = { focus = sap_tactical_air_control_parties }
@@ -1347,6 +1359,12 @@ shared_focus = {
     y = 6
     completion_reward = {
         SAP_decrease_noble_high_command = yes
+        remove_ideas = {
+            sap_toledo_fighter_weapons_school_idea_3
+            sap_zaragoza_tactical_support_school_idea_3
+            sap_soria_air_university_idea_3
+        }
+        add_ideas = sap_royal_air_force_idea
     }
     search_filters = { }
 }
@@ -1381,7 +1399,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_overwhelming_advance
-    icon = placeholder
+    icon = GFX_goal_SAP_overwhelming_advance
     cost = 7
     prerequisite = { focus = sap_protecting_our_infantry }
     relative_position_id = sap_protecting_our_infantry
@@ -1474,7 +1492,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_embrace_cult_of_mobility
-    icon = placeholder
+    icon = GFX_goal_SAP_embrace_cult_of_mobility
     cost = 7
     prerequisite = { focus = sap_concentrate_ifv_production }
     relative_position_id = sap_concentrate_ifv_production
@@ -1507,7 +1525,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_sapinish_armored_corps
-    icon = placeholder
+    icon = GFX_goal_SAP_sapinish_armored_corps
     cost = 7
     prerequisite = { focus = sap_embrace_cult_of_mobility }
     prerequisite = { focus = sap_aggressive_military_thought }
@@ -1545,7 +1563,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_helicopter_logistics
-    icon = placeholder
+    icon = GFX_goal_SAP_helicopter_logistics
     cost = 7
     prerequisite = { focus = sap_new_logistical_trucks }
     relative_position_id = sap_new_logistical_trucks
@@ -1583,7 +1601,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_prioritize_long_range_fires
-    icon = placeholder
+    icon = GFX_goal_SAP_prioritize_long_range_fires
     cost = 7
     prerequisite = { focus = sap_promote_sofia_hernandez }
     relative_position_id = sap_promote_sofia_hernandez
@@ -1638,7 +1656,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_power_of_fire_superiority
-    icon = placeholder
+    icon = GFX_goal_SAP_power_of_fire_superiority
     cost = 7
     prerequisite = { focus = sap_concentrate_artillery_production }
     relative_position_id = sap_concentrate_artillery_production
@@ -1671,7 +1689,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_las_gran_bombardas
-    icon = placeholder
+    icon = GFX_goal_SAP_las_gran_bombardas
     cost = 7
     prerequisite = { focus = sap_power_of_fire_superiority }
     prerequisite = { focus = sap_the_king_of_battle }
@@ -1764,7 +1782,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_better_portable_defenses
-    icon = placeholder
+    icon = GFX_goal_SAP_better_portable_defenses
     cost = 7
     prerequisite = { focus = sap_promote_juan_carlos_mendoza }
     relative_position_id = sap_promote_juan_carlos_mendoza
@@ -1819,7 +1837,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_bite_and_hold
-    icon = placeholder
+    icon = GFX_goal_generic_occupy_states_ongoing_war
     cost = 7
     prerequisite = { focus = sap_concentrate_rifle_production }
     relative_position_id = sap_concentrate_rifle_production
@@ -1835,7 +1853,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_biting_hard
-    icon = placeholder
+    icon = GFX_goal_SAP_biting_hard
     cost = 7
     prerequisite = { focus = sap_modernize_an_old_doctrine }
     prerequisite = { focus = sap_bite_and_hold }
@@ -1853,7 +1871,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_forward_observers
-    icon = placeholder
+    icon = GFX_goal_SAP_forward_observers
     cost = 7
     prerequisite = { focus = sap_promote_juan_carlos_mendoza }
     relative_position_id = sap_promote_juan_carlos_mendoza
@@ -1870,7 +1888,7 @@ shared_focus = {
 }
 shared_focus = {
     id = sap_nighttime_operations
-    icon = placeholder
+    icon = GFX_goal_SAP_nighttime_operations
     cost = 7
     prerequisite = { focus = sap_forward_observers }
     relative_position_id = sap_forward_observers

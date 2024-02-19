@@ -1,6 +1,6 @@
 shared_focus = {
     id = UST_start
-    icon = xxx
+    icon = GFX_goal_UST_freedom_in_our_hearts
     cost = 5.8
     ai_will_do = {
         factor = 50

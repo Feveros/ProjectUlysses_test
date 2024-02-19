@@ -190,11 +190,40 @@ country_event = { # 1992 Elections
     is_triggered_only = yes
     option = { # Ilse Ebner
         name = gebet_election.1.a
+		ai_chance = {
+			factor = 85
+			modifier = {
+				factor = 0		
+				has_game_rule = {
+					rule = GEB_ai_behavior
+					option = DEMOCRATIC_ALTERNATE
+				}
+			}
+		}
         complete_national_focus = GEB_1992_elections
         set_country_flag = election_1992_winner_sdu
     }
     option = { # Rafael Albrecht
         name = gebet_election.1.b
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 0		
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = GEB_ai_behavior
+							option = DEFAULT
+						}
+					}
+					has_game_rule = {
+						rule = GEB_ai_behavior
+						option = DEMOCRATIC_HISTORICAL
+					}
+				}
+			}
+		}
         complete_national_focus = GEB_1992_elections
         GEB_ilse_ebner = {
             remove_country_leader_role = { ideology = social_democracy }

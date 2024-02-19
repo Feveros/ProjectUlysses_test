@@ -384,6 +384,8 @@
  BLK_the_parade_desc:0 "A massive parade has been put forward to begin in Dinsmark, sporting thousands of soldiers, tanks, aircraft, and even politicians to show off the might of the Belkan nation to the world. This is the army that defeated the Oseans, what could stand against it?"
  BLK_rald_speech:0 "Rald's Address To The Nation"
  BLK_rald_speech_desc:0 "Waldemarr Rald has prepared a speech to the people for the victory celebration, a speech showing not only did he keep his promises to the Belkan people, but also unveiling his greater plans for the future of Belka. Belka is a lighhouse, and Rald is her light."
+ BLK_grand_pardon:0 "Grand Pardon"
+ BLK_grand_pardon_desc:0 ""
  BLK_belka_above_all:0 "Our Undefeated Spirit"
  BLK_belka_above_all_desc:0 "Critical to our soldiers' training was instilling a sense of duty and pride to be Belkan in them. This has clearly gone spectacularly, and both soldiers and civilians across Belka are filled with powerful feelings of patriotism which will empower them in their working and fighting for years to come."
  BLK_army_stands_undefeated:0 "Our Undefeated Army"
@@ -676,7 +678,7 @@
  belka_dlp_won.3.d:0 "The longest military parade in history was held in Dinsmark today, with a column of tanks, divisions, and soldiers stretching over 15 kilometers wrapping around the city, with several air divisions worth of planes doing circles and flyovers the city. While the turnout is lacking an official count, estimates of over 1.5 million people showed up in attendance to the parade. It lasted until dusk, after which the bands played their traditional signal of the day ending and the soldiers returned to their stations. The parade has seen extensive coverage by media both local and international, and while most local media outlets were impressed and pleased to see the soldiers return home, many of the international reporters condemn the parade as "imperialist" and claim our actions give no reason for celebration. The rest merely hold their tongues, as they know there is now no country to stop the army they just watched."
  belka_dlp_won.3.a:0 "The world has seen we are ready to continue fighting if we must."
  
- belka_dlp_won.4.t:0 ""Belkan Once More""
+ belka_dlp_won.4.t:0 "Belkan Once More"
  belka_dlp_won.4.d:0 ""My fellow Belkans, it is with great pride and pleasure that I announce to you that Belka has been made whole once more. Those among us who attempted to undermine our national identity have been swept aside, and the damage they have caused has been reversed. All the territory we have lost over the past few years has been reobtained, with new conquests putting us in possibly the most powerful position our nation has been in, ever. We have also proved our might to the world, that the Belkans are a forced to be reckoned with, through our defeat and humiliation of the Osean forces. The Oseans are not the lords of the world they thought they were, and we will not dance to their music. The misguided lands of our eastern territories have been pacified, and with their troublemakers dealt with, it is believable they will choose to remain with us now. My fellow Belkans, our nation is truly Belkan once more.""
  belka_dlp_won.4.a:0 "The crowd erupted in cheers and applause."
  
@@ -707,6 +709,10 @@
  belka_dlp_won.9.t:0 "The Tower That Shines At The End Of The World"
  belka_dlp_won.9.a:0 "Truly a king's weapon."
  belka_dlp_won.9.d:0 "While we knew Excalibur could be further upgraded, upon hearing our engineers' reports, the possibilities are nearly endless. Since Excalibur uses chemical lasers projected off of satellites, if we keep adding more of these satellites into orbit, we could keep on increasing the range until a series of refractors could carry it all across the globe, allowing us to strike any position at nearly any time. On top of that, a new theorized staggered cooling system and dynamic mechanized lenses would drastically increase it's fire rate and accuracy. With this weapon, it would not be too far-fetched to call us the masters of the world, as we could theoretically call down the fist of God himself to smite all who oppose our reign. That is, of course, still a long way off, and provided we can keep the tower functioning and in our hands during that time period."
+ 
+ belka_dlp_won.10.t:0 ""
+ belka_dlp_won.10.a:0 ""
+ belka_dlp_won.10.d:0 ""
  
  ### TOOLTIPS ###
  
@@ -822,6 +828,25 @@
  BLK_use_locals_decision:0 ""
  
  BLK_wacht_am_wal_hold_timer:0 "Hold The Line"
+ 
+ ###########
+ ### BOP ###
+ ###########
+ BLK_power_balance:0 "Control Over DLP"
+ 
+ # Rald
+ BLK_rald_side:0 "Rald's Faction"
+ BLK_rald_side_low_control_range:0 "Low Rald Control"
+ BLK_rald_side_medium_control_range:0 "Medium Rald Control"
+ BLK_rald_side_high_control_range:0 "High Rald Control"
+
+ # Lehmann
+ BLK_lehmann_side:0 "Lehmann's Faction"
+ BLK_balance_range:0 "No One Holds Control"
+ BLK_lehmann_side_low_control_range:0 "Low Lehmann Control"
+ BLK_lehmann_side_medium_control_range:0 "Medium Lehmann Control"
+ BLK_lehmann_side_high_control_range:0 "High Lehmann Control"
+ BLK_lehmann_side_total_control_range:0 "Total Lehmann Control"
  
  ### FLAGS ###
  belka_dlp_pre_war:0 "DLP Focus Tree"

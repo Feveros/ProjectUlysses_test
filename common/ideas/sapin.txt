@@ -341,7 +341,7 @@ ideas = {
 			}
         }
         sap_charity_not_welfare = {
-            picture = placeholder
+            picture = SAP_charity_not_welfare
             allowed = {
                 always = yes
             }
@@ -403,7 +403,7 @@ ideas = {
 			}
         }
         sap_concentrated_ifv_production = {
-            picture = placeholder
+            picture = generic_ifv_production_boost
             allowed = {
                 always = yes
             }
@@ -424,7 +424,7 @@ ideas = {
 			}
         }
         sap_overwhelming_advance_idea = {
-            picture = placeholder
+            picture = generic_tank_advance
             allowed = {
                 always = yes
             }
@@ -472,7 +472,7 @@ ideas = {
 			}
         }
         sap_helicopter_logistics_idea = {
-            picture = placeholder
+            picture = generic_helicopter_logistics
             allowed = {
                 always = yes
             }
@@ -487,7 +487,7 @@ ideas = {
 			}
         }
         sap_concentrated_artillery_production = {
-            picture = placeholder
+            picture = generic_artillery_production_boost
             allowed = {
                 always = yes
             }
@@ -582,7 +582,7 @@ ideas = {
 			}
         }
         sap_nighttime_operations_idea = {
-            picture = placeholder
+            picture = generic_nighttime_ops
             allowed = {
                 always = yes
             }
@@ -596,7 +596,7 @@ ideas = {
 			}
         }
         sap_concentrated_rifle_production = {
-            picture = placeholder
+            picture = generic_rifle_production_boost
             allowed = {
                 always = yes
             }
@@ -611,7 +611,7 @@ ideas = {
 			}
         }
         sap_toledo_fighter_weapons_school_idea_1 = {
-            picture = placeholder
+            picture = generic_fighter_school
             allowed = {
                 always = yes
             }
@@ -627,7 +627,7 @@ ideas = {
 			}
         }
         sap_toledo_fighter_weapons_school_idea_2 = {
-            picture = placeholder
+            picture = SAP_pegasi_of_sapin
             allowed = {
                 always = yes
             }
@@ -642,8 +642,8 @@ ideas = {
                 air_ace_generation_chance_factor = 0.10
 			}
         }
-        sap_raf_fighter_command_idea = {
-            picture = placeholder
+        sap_toledo_fighter_weapons_school_idea_3 = {
+            picture = SAP_pegasi_of_sapin
             allowed = {
                 always = yes
             }
@@ -652,13 +652,17 @@ ideas = {
             }
             removal_cost = 0
 			modifier = {
+                air_air_superiority_attack_factor = 0.10
+                air_air_superiority_agility_factor = 0.10
+                air_air_superiority_defence_factor = 0.10
                 air_superiority_efficiency = 0.05
                 ace_effectiveness_factor = 0.05
                 air_ace_bonuses_factor = 0.05
+                air_ace_generation_chance_factor = 0.10
 			}
         }
         sap_zaragoza_tactical_support_school_idea_1 = {
-            picture = placeholder
+            picture = generic_cas_school
             allowed = {
                 always = yes
             }
@@ -673,7 +677,7 @@ ideas = {
 			}
         }
         sap_zaragoza_tactical_support_school_idea_2 = {
-            picture = placeholder
+            picture = SAP_zeus_thunderbolts
             allowed = {
                 always = yes
             }
@@ -687,8 +691,8 @@ ideas = {
                 air_close_air_support_defence_factor = 0.10
 			}
         }
-        sap_tactical_air_control_parties_idea = {
-            picture = placeholder
+        sap_zaragoza_tactical_support_school_idea_3 = {
+            picture = SAP_zeus_thunderbolts
             allowed = {
                 always = yes
             }
@@ -697,13 +701,16 @@ ideas = {
             }
             removal_cost = 0
 			modifier = {
+                air_close_air_support_attack_factor = 0.10
+                air_close_air_support_agility_factor = 0.10
+                air_close_air_support_defence_factor = 0.10
                 air_close_air_support_org_damage_factor = 0.05
                 air_cas_efficiency = 0.05
                 air_cas_present_factor = 0.05
 			}
         }
         sap_soria_air_university_idea_1 = {
-            picture = placeholder
+            picture = generic_bomber_school
             allowed = {
                 always = yes
             }
@@ -718,7 +725,7 @@ ideas = {
 			}
         }
         sap_soria_air_university_idea_2 = {
-            picture = placeholder
+            picture = SAP_dragons_of_the_alicante
             allowed = {
                 always = yes
             }
@@ -727,13 +734,14 @@ ideas = {
             }
             removal_cost = 0
 			modifier = {
-                air_strategic_bomber_attack_factor = 0.10
-                air_strategic_bomber_agility_factor = 0.10
+                air_strategic_bomber_attack_factor = 0.15
+                air_strategic_bomber_agility_factor = 0.15
                 air_strategic_bomber_defence_factor = 0.10
+                air_strategic_bomber_bombing_factor = 0.10
 			}
         }
-        sap_raf_bomber_command_idea = {
-            picture = placeholder
+        sap_soria_air_university_idea_3 = {
+            picture = SAP_dragons_of_the_alicante
             allowed = {
                 always = yes
             }
@@ -742,13 +750,17 @@ ideas = {
             }
             removal_cost = 0
 			modifier = {
+                air_strategic_bomber_attack_factor = 0.15
+                air_strategic_bomber_agility_factor = 0.15
+                air_strategic_bomber_defence_factor = 0.10
                 air_strategic_bomber_bombing_factor = 0.05
-                air_strategic_bomber_night_penalty = 0.05
+                air_strategic_bomber_night_penalty = -0.05
                 air_bombing_targetting = 0.05
+                air_strategic_bomber_bombing_factor = 0.10
 			}
         }
         sap_osean_fighter_instructors = {
-            picture = placeholder
+            picture = generic_osean_advisors
             allowed = {
                 always = yes
             }
@@ -762,7 +774,7 @@ ideas = {
 			}
         }
         sap_noto_fighter_instructors = {
-            picture = placeholder
+            picture = generic_noto_advisors
             allowed = {
                 always = yes
             }
@@ -776,7 +788,7 @@ ideas = {
 			}
         }
         sap_rectan_air_force_veterans = {
-            picture = placeholder
+            picture = SAP_rectan_air_force_veterans
             allowed = {
                 always = yes
             }
@@ -789,23 +801,8 @@ ideas = {
                 air_ace_generation_chance_factor = 0.25
 			}
         }
-        sap_improved_laser_guidance_systems = {
-            picture = placeholder
-            allowed = {
-                always = yes
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = 0
-			modifier = {
-                air_bombing_targetting = 0.10
-                naval_strike_targetting_factor = 0.10
-                air_strategic_bomber_night_penalty = -0.15
-			}
-        }
         sap_precision_strike_tactics_idea = {
-            picture = placeholder
+            picture = generic_airstrike
             allowed = {
                 always = yes
             }
@@ -819,7 +816,7 @@ ideas = {
 			}
         }
         sap_logistical_destruction_idea = {
-            picture = placeholder
+            picture = generic_logistical_destruction
             allowed = {
                 always = yes
             }
@@ -831,8 +828,8 @@ ideas = {
                 air_strategic_bomber_bombing_factor = 0.10
 			}
         }
-        sap_dragons_of_the_alicante_idea = {
-            picture = placeholder
+        sap_royal_air_force_idea = {
+            picture = SAP_sapinish_air_force
             allowed = {
                 always = yes
             }
@@ -841,16 +838,31 @@ ideas = {
             }
             removal_cost = 0
 			modifier = {
+                experience_gain_air = 0.01
+                air_air_superiority_attack_factor = 0.15
+                air_air_superiority_agility_factor = 0.15
+                air_air_superiority_defence_factor = 0.15
+                air_superiority_efficiency = 0.10
+                ace_effectiveness_factor = 0.10
+                air_ace_bonuses_factor = 0.10
+                air_ace_generation_chance_factor = 0.15
+                air_close_air_support_attack_factor = 0.15
+                air_close_air_support_agility_factor = 0.15
+                air_close_air_support_defence_factor = 0.15
+                air_close_air_support_org_damage_factor = 0.10
+                air_cas_efficiency = 0.10
+                air_cas_present_factor = 0.10
+                air_strategic_bomber_attack_factor = 0.20
+                air_strategic_bomber_agility_factor = 0.20
+                air_strategic_bomber_defence_factor = 0.15
+                air_strategic_bomber_bombing_factor = 0.10
+                air_strategic_bomber_night_penalty = -0.10
+                air_bombing_targetting = 0.10
                 air_strategic_bomber_bombing_factor = 0.15
-                air_strategic_bomber_attack_factor = 0.15
-                air_strategic_bomber_agility_factor = 0.15
-                air_bombing_targetting = 0.15
-                naval_strike_targetting_factor = 0.15
-                air_strategic_bomber_night_penalty = -0.20
 			}
         }
         sap_milicia_popular = {
-            picture = placeholder
+            picture = SAP_milicia_popular
             allowed = {
                 always = yes
             }
@@ -868,7 +880,7 @@ ideas = {
 			}
         }
         sap_fuerzas_de_defensa_local = {
-            picture = placeholder
+            picture = SAP_fuerzas_de_defensa_local
             allowed = {
                 always = yes
             }
@@ -883,7 +895,7 @@ ideas = {
 			}
         }
         sap_los_cruzados = {
-            picture = placeholder
+            picture = SAP_los_cruzados
             allowed = {
                 always = yes
             }

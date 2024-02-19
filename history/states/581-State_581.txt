@@ -14,6 +14,7 @@ state={
 	history={
 		owner = PBL
 		add_core_of = PBL
+		add_core_of = SER
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2

@@ -23,6 +23,11 @@
  decision_cost_army_xp_50:0 "£army_experience  §Y50§!"
  decision_cost_army_xp_50_blocked:0 "£army_experience  §R50§!"
  decision_cost_army_xp_50_tooltip:0 "It costs £army_experience  §Y50§! to take the decision"
+ 
+ decision_cost_political_power_50_army_xp_50:0 "£pol_power  §Y50§! £army_experience  §Y50§!"
+ decision_cost_political_power_50_army_xp_50_blocked:0 "£pol_power  §R50§! £army_experience  §R50§!"
+ decision_cost_political_power_50_army_xp_50_tooltip:0 "It costs £pol_power  §Y50§! and £army_experience §Y50§! to take the decision"
+ 
  DIVISION_VIEW_HAS_MEDALS:0 "This division can be awarded a §HMedal§!.\n§GClick to open Medals view.§!"
 
  wellow:0 "Wellow"

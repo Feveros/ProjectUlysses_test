@@ -44,3 +44,13 @@
  # Traits
  BLK_mio_trait_grunder_air:0 "Belkan Advanced Air Designs"
  BLK_mio_trait_grunder_tank:0 "Belkan Advanced Armor Patterns"
+ 
+ #############
+ ### SAPIN ###
+ #############
+ # Names
+ SAP_hercules_sistemas_organization: "Sistemas Hércules"
+ SAP_ironclad_artillery_solutions_organization: "Soluciones Artillería Torres"
+ SAP_vanguard_ordnance_organization: "Ordenanza García"
+ SAP_vuelotech_aviacion_organization: "VueloTech Aviación"
+ SAP_aerodinamica_esapina: "Aerodinámica Esapiña"

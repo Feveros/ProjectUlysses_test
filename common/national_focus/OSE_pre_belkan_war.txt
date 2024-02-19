@@ -1537,7 +1537,7 @@ shared_focus = {
 	available = {
 	}
     completion_reward = {
-
+		country_event = osea.51
     }
     search_filters = { }
 }
@@ -1558,7 +1558,7 @@ shared_focus = {
 	available = {
 	}
     completion_reward = {
-
+		country_event = osea.53
     }
     search_filters = { }
 }
@@ -1579,7 +1579,7 @@ shared_focus = {
 	available = {
 	}
     completion_reward = {
-
+		country_event = osea.52
     }
     search_filters = { }
 }
@@ -1606,7 +1606,7 @@ shared_focus = {
 	available = {
 	}
     completion_reward = {
-		add_ideas = OSE_mackenzie_doctrine_idea
+		country_event = osea.54
     }
     search_filters = { }
 }

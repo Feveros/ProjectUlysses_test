@@ -106,3 +106,8 @@
  ac_news_event.19.a:0 "" ### For Belka
  ac_news_event.19.b:0 "" ### For Osea
  ac_news_event.19.c:0 "" ### For Rest
+ 
+ ac_news_event.19.t:0 ""
+ ac_news_event.19.d:0 "king in belka elected"
+ ac_news_event.19.a:0 "" ### For Belka
+ ac_news_event.19.b:0 "" ### For rest

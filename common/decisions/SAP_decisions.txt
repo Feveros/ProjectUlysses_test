@@ -176,7 +176,7 @@ SAP_national_guard = {
                     set_variable = { recruitable_pop = state_population_k }
                     multiply_variable = { recruitable_pop = 0.01 }
                     set_variable = { units_to_spawn = recruitable_pop }
-                    divide_variable = { units_to_spawn = 9 }
+                    divide_variable = { units_to_spawn = 11 }
                     for_loop_effect = {
                         start = 1
                         end = units_to_spawn
@@ -217,7 +217,7 @@ SAP_national_guard = {
         }
         visible = { has_completed_focus = sap_sapinish_national_guard }
         cost = var:sap_mobilization_round_cost
-        days_remove = 30
+        days_remove = 90
 		complete_effect = {
 			add_to_variable = { sap_mobilization_round_cost = 25 }
 		}

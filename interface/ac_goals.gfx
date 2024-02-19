@@ -81,6 +81,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/_generic/focus_generic_fighter_weapons_school.png"
 	}
 	spriteType = {
+		name = "GFX_focus_generic_cas_training_school"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_cas_training_school.png"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_bomber_training_school"
+		texturefile = "gfx/interface/goals/_generic/focus_generic_bomber_training_school.png"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_concentrate_artillery_production"
 		texturefile = "gfx/interface/goals/_generic/goal_generic_concentrate_artillery_production.png"
 	}
@@ -485,6 +493,66 @@ spriteTypes = {
 		name = "GFX_goal_SAP_NOTO_instructors"
 		texturefile = "gfx/interface/goals/SAP/goal_SAP_NOTO_instructors.png"
 	}
+	spriteType = {
+		name = "GFX_goal_SAP_reorganize_air_high_command"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_reorganize_air_high_command.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_promote_diego_lopez"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_promote_diego_lopez.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_promote_mateo_gonzalez"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_promote_mateo_gonzalez.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_promote_elena_sanchez"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_promote_elena_sanchez.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_overwhelming_advance"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_overwhelming_advance.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_embrace_cult_of_mobility"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_embrace_cult_of_mobility.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_sapinish_armored_corps"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_sapinish_armored_corps.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_helicopter_logistics"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_helicopter_logistics.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_prioritize_long_range_fires"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_prioritize_long_range_fires.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_power_of_fire_superiority"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_power_of_fire_superiority.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_las_gran_bombardas"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_las_gran_bombardas.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_better_portable_defenses"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_better_portable_defenses.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_biting_hard"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_biting_hard.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_forward_observers"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_forward_observers.png"
+	}
+	spriteType = {
+		name = "GFX_goal_SAP_nighttime_operations"
+		texturefile = "gfx/interface/goals/SAP/goal_SAP_nighttime_operations.png"
+	}
 ################# GEBET #############################
 	spriteType = {
 		name = "GFX_goal_GEB_gebetian_rangers"
@@ -615,5 +683,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_UST_resettle_the_people"
 		texturefile = "gfx/interface/goals/UST/goal_UST_resettle_the_people.png"
+	}
+	spriteType = {
+		name = "GFX_goal_UST_freedom_in_our_hearts"
+		texturefile = "gfx/interface/goals/UST/goal_UST_freedom_in_our_hearts.png"
 	}
 }

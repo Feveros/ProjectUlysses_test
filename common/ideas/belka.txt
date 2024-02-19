@@ -302,6 +302,11 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
+			cancel = {
+				NOT = {
+					has_war = yes
+				}
+			}
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_factory = 0.5
@@ -323,6 +328,11 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
+			cancel = {
+				NOT = {
+					has_war = yes
+				}
+			}
 			removal_cost = -1
 			modifier = {
 				conscription_factor = 0.25
@@ -337,6 +347,11 @@ ideas = {
 			}
 			allowed_civil_war = {
 				always = no
+			}
+			cancel = {
+				NOT = {
+					has_war = yes
+				}
 			}
 			removal_cost = -1
 			modifier = {
@@ -356,6 +371,11 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
+			cancel = {
+				NOT = {
+					has_war = yes
+				}
+			}
 			removal_cost = -1
 			modifier = {
 				political_power_gain = 0.2
@@ -374,6 +394,11 @@ ideas = {
 			}
 			allowed_civil_war = {
 				always = no
+			}
+			cancel = {
+				NOT = {
+					has_war = yes
+				}
 			}
 			removal_cost = -1
 			modifier = {
@@ -549,6 +574,11 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+			cancel = {
+				NOT = {
+					has_war_with = BLK
+				}
+			}
 			picture = excalibur_fire_idea
 			removal_cost = -1
 			modifier = {
@@ -566,6 +596,11 @@ ideas = {
 			}
 			allowed_civil_war = {
 				always = yes
+			}
+			cancel = {
+				NOT = {
+					has_war = yes
+				}
 			}
 			picture = excalibur_fire_idea
 			removal_cost = -1
@@ -1172,6 +1207,11 @@ ideas = {
 			}
 			allowed_civil_war = {
 				always = no
+			}
+			cancel = {
+				NOT = {
+					has_war = yes
+				}
 			}
 			removal_cost = -1
 			modifier = {

@@ -20,5 +20,5 @@ music = {
 }
 music = {
 	name = "prb"
-	file = "perbla_intervention.ogg"
+	file = "prb.ogg"
 }

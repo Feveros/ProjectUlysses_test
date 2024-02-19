@@ -82,7 +82,7 @@ ideas = {
 	
 	country = {
 		UST_better_schooling = {
-			picture = hol_liberation
+			picture = generic_research_bonus
 			allowed = {
 				always = yes
 			}
@@ -98,7 +98,7 @@ ideas = {
 			}
 		}
 		UST_pay_for_museum_bitch = {
-			picture = hol_liberation`
+			picture = hol_liberation
 			allowed = {
 				always = yes
 			}

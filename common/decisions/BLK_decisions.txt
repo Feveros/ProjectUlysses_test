@@ -190,6 +190,17 @@ BLK_belkan_war_category = {
 		timeout_effect = {
 			country_event = { id = belka_dlp_war.2 }
 			hidden_effect = {
+				UST = {
+					store_own_states = yes
+				}
+				SAP = {
+					store_own_states = yes
+				}
+				OSE = {
+					store_own_states = yes
+				}
+			}
+			hidden_effect = {
 				if = {
 					limit = {
 						PBL = {

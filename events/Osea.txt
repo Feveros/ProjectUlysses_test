@@ -202,6 +202,68 @@ country_event = { #mackenzie presidency event
 	}
 }
 
+country_event = { #belka problem event
+	id = osea.51
+	title = osea.51.t
+	desc = osea.51.d
+	picture = GFX_report_event_ose_president
+	
+	is_triggered_only = yes
+
+	option = {
+		name = osea.51.a
+		add_stability = 0.025
+		add_war_support = 0.025
+	}
+}
+
+country_event = { #perbla problem event
+	id = osea.52
+	title = osea.52.t
+	desc = osea.52.d
+	picture = GFX_report_event_ose_president
+	
+	is_triggered_only = yes
+
+	option = {
+		name = osea.52.a
+		add_stability = 0.025
+		add_war_support = 0.025
+	}
+}
+
+country_event = { #yukto problem event
+	id = osea.53
+	title = osea.53.t
+	desc = osea.53.d
+	picture = GFX_report_event_ose_president
+	
+	is_triggered_only = yes
+
+	option = {
+		name = osea.53.a
+		add_stability = 0.025
+		add_war_support = 0.025
+	}
+}
+
+
+country_event = { #doctrine vent
+	id = osea.54
+	title = osea.54.t
+	desc = osea.54.d
+	picture = GFX_report_event_ose_president
+	
+	is_triggered_only = yes
+
+	option = {
+		name = osea.54.a
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_ideas = OSE_mackenzie_doctrine_idea
+	}
+}
+
 ############################################################
 
 country_event = { ### event about belka becoming democratic

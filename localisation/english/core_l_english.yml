@@ -220,7 +220,7 @@
  COUNTRY_LOCKED_BY_SERVER:0 "$COUNTRY$ is locked by the server."
  FE_IRONMAN:0 "Ironman mode"
  FE_IRONMAN_TOOLTIP:0 "In Ironman mode, console cheats are disabled and the game is automatically saved regularly to a single file. In games played with this setting, there is no turning back."
- FE_HISTORICAL:0 "Canon AI Focuses(WIP)"
+ FE_HISTORICAL:0 "Canon AI Focuses (WIP)"
  FE_HISTORICAL_TOOLTIP:0 "AI countries will, where applicable, pick §HNational Focuses§! in an order accurate to the canon Ace Combat story. Select this if you want other countries to follow the canon Ace Combat storyline as close as possible."
  IRONMAN_START:0 "Start Ironman"
  SUB_UNIT_RANGED_VALUE:0 "$MIN$ - $MAX$ $SUBUNIT$"

@@ -101,7 +101,7 @@ air_wings = {
 			version_name = "F-5E Tiger II"
 		}
 		# 6th Composite Group 
-		large_plane_airframe_0 = {
+		large_plane_maritime_patrol_plane_airframe_0 = {
 			owner = "OSE" 
 			amount = 12
 			version_name = "P-3 Orion"

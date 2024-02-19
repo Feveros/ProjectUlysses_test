@@ -38,7 +38,7 @@
  UST_forged_in_war_idea:0 "Forged In War"
  
  ### FOCUSES ###
- UST_start:0 "With Freedom In Hearts"
+ UST_start:0 "With Freedom In Our Hearts"
  UST_start_desc:0 "The nation of Ustio has been under the control and occupation of Belka for over a century. However, in 1988 the Belkan Federal Law Review finally allowed our nation to be free again. With this in mind, the coming year is full of hope for us as we re-assert ourselves."
  UST_tyran_industry:0 "Expand Tyrann Industry "
  UST_tyran_industry_desc:0 "Tyrann, one of our easternmost cities, has lots of flat, undeveloped land ripe for industrialization. To help kickstart our economy, it would be wise to invest into more factories and infrastructure in the area."
@@ -48,7 +48,7 @@
  UST_pay_for_museum_desc:0 "Under Belkan rule, we were forbidden and restricted from many of our traditions, as well as major parts of Ustian history were censored. To ensure our history is not forgotten, we will construct a large and impressive museum as a tribute to the enduring history and spirit of Ustio."
  UST_upgrade_schooling_system:0 "Upgrade Schooling System"
  UST_upgrade_schooling_system_desc:0 "Our school system is still heavily built on Belkan curriculum and education policies. Distancing ourselves from this will ensure the next generation will not be taught Belkan lies."
- UST_ratio_military_bases:0 "East Military Bases"
+ UST_ratio_military_bases:0 "Eastern Military Bases"
  UST_ratio_military_bases_desc:0 "Belka has established a number of forts and defenses on our eastern border. While now defunct, rebuilding and retrofitting these will be far less expensive than attempting to build entirely new ones."
  UST_anti_partisant_training:0 "Anti-Partisan Training"
  UST_anti_partisant_training_desc:0 "Our eastern territories are primarily Ratian by culture, and as a result many partisans are rebelling against our government and causing attacks in the region. Until a more permanent solution can be achieved, we must work to stop the spread of violence."
@@ -351,11 +351,11 @@
  UST_army_debate_desc:0 "Following our newfound independence, a debate has sparked over our armed forces. Prior to our independence, many highly effective resistance militias brought havoc of the Belkan occupiers, whom were then turned into military militias by the new government. However, there is question on if these militias will stand against an organized invasion, or if a standing army is necessary."
  UST_expand_militia_program:0 "Expand Militia Program"
  UST_expand_militia_program_desc:0 "War is coming quickly, and we Ustians have been using the same tactics to a degree of success for many years now, why stop or change it? Rather than change our militias into an army, we will seek to further develop the militia model, and instead use specialized and heavy equipment to support these militias, rather than simply intwining them into the army itself."
- UST_advanced_small_arms_fire_training:0 "Advanced Small Arms Fire Training"
+ UST_advanced_small_arms_fire_training:0 "Advanced Small Arms Training"
  UST_advanced_small_arms_fire_training_desc:0 "A man is nothing to the military without a rifle. Ensuring our soldiers know the ins and outs of not only their weapons, but also the enemy's will allow them to use their weapons to a greater degree and keep their head on when fighting, both figuratively and literally. Extensive drill will be done to ensure this is firmly ingrained into each soldier's mind."
  UST_to_support_the_push:0 "To Support The Men"
  UST_to_support_the_push_desc:0 "Before our independence, it was rare that we could use artillery within our militias, as such a large and heavy piece of equipment was nearly impossible to move and sustain without a supply base. Now having the means to build and support artillery, we will integrate them into our militias, providing local defence, covering fire, and target softening for our militias to exploit."
- UST_ustian_children_of_the_hills:0 "Ustian Children Of The Hills"
+ UST_ustian_children_of_the_hills:0 ""Children Of The Hills""
  UST_ustian_children_of_the_hills_desc:0 "Having lived and fought here so long, Ustians have a natural comfort in the terrain of our homeland. While many of the old veterans are not fit for combat anymore, their experience is vital, and using them and their knowledge will allow us to improve our special forces with even more terrain knowledge and advantages."
  UST_resist_and_bite:0 "Resist And Bite"
  UST_resist_and_bite_desc:0 "Unlike a standard army, militias are small and can disband and reorganize quickly. Engaging in guerilla warfare against an invader will tire them out and drain their ability to fight at minimal cost to use. This is by far the greatest strength of our militias, and teaching this doctrine of patience will allow our nation to take on an invader twice our size or more."
@@ -586,6 +586,16 @@
  ustio_morka.6.d:0 ""
  ustio_morka.6.a:0 ""
  
+ ### DECISIONS ###
+ 
+ UST_army_dec:0 "Army Reforms"
+ 
+ UST_get_mbt_research:0 "Found Armored Development Brigade"
+ UST_get_lt_parts_research:0 "Research Into Light Support Vehicles"
+ UST_get_tanks_buy:0 "Purchase Equipment"
+ UST_get_motor_mech_research:0 "Developments Into Mechanized Sections"
+ UST_get_motor_mech_buy:0 "Purchase Vehicles"
+ 
  ### TOOLTIPS ###
  
  UST_move_part_of_industry_tt:0 "Upon complementing this focus §Gtwo Civilian Factories and one Military Factory§! will be moved from the land we §Yreturned,§! to §YSolis Ortus§!."
@@ -602,6 +612,8 @@
  UST_money_for_military_complex_tt:0 "\n§YComplementing this focus§! will §GUnlock§! §YArmy Focus Tree§!."
  ust_rangers_tt:0 "\nAdd technology: §YUstian Rangers§!, which gives:\n§YMountaineers§!:\nForest:\n     Attack: §G+10%§!\n     Defence: §G+10%§!\n     Movement: §G+10%§!\n\nJungle:\n     Attack: §G+10%§!\n     Defence: §G+10%§!\n     Movement: §G+10%§!\n\nHills:\n     Attack: §G+10%§!\n     Defence: §G+10%§!\n     Movement: §G+10%§!\n\nMountain:\n     Attack: §G+10%§!\n     Defence: §G+10%§!\n     Movement: §G+10%§!\n\nPlains:\n     Attack: §G+10%§!\n     Defence: §G+10%§!\n     Movement: §G+10%§!\n\nMarsh:\n     Attack: §G+10%§!\n     Defence: §G+10%§!\n     Movement: §G+10%§!\n\n"
  UST_to_expand_the_width_tt:0 "§YComplementing this focus§! will allow us to §GChange Conscription Law§!"
+ UST_get_tanks_buy_tt:0 "We will purchose total of §Y150 MBTs and 150 Light Tanks§! from nations of §GOsea, Perbla and FATO§!.\n\n"
+ UST_get_motor_mech_buy_tt:0 "We will purchose total of §Y150 APCs and 100 IFVs§! from nations of §GOsea, Perbla and FATO§!.\n\n"
  
  unlock_dec_ust_to_catch_up:0 "Finishing this focus §GUnlocks Decision(s)§! to help us §GExpand§! our §YTank Forces§!."
  unlock_dec_ust_to_expand_the_width:0 "\nFinishing this focus §GUnlocks Decision(s)§! to help us §GExpand§! our §YArmy Size§!."

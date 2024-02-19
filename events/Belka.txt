@@ -1242,6 +1242,7 @@ country_event = {
 			transfer_state = 220
 		}
 		clr_global_flag = belkan_war_is_happening
+		set_global_flag = belka_lost_belkan_war
 	}
 }
 
@@ -1558,6 +1559,9 @@ country_event = { ### wacht am wal peace event
 		}
 		clr_global_flag = belkan_war_is_happening
 		set_global_flag = belka_won_belkan_war_wacht_am_wal
+		hidden_effect = {
+			country_event = { id = world_event.2 days = 2 }
+		}
 	}
 }
 
@@ -1655,13 +1659,13 @@ country_event = { #end of the DLP
 		}
 		hidden_effect = {
 			retire_country_leader = yes
+			BLK_advisor_12 = { retire = yes }
+			BLK_advisor_11 = { retire = yes }
+			BLK_advisor_10 = { retire = yes }
+			BLK_FatherWilfriedJanRiesevonSergioLuoni = { retire = yes }
+			BLK_arnold_weinmann = { retire = yes }
+			BLK_hannes_kellermann = { retire = yes }
 		}
-		BLK_advisor_12 = { retire = yes }
-		BLK_advisor_11 = { retire = yes }
-		BLK_advisor_10 = { retire = yes }
-		BLK_FatherWilfriedJanRiesevonSergioLuoni = { retire = yes }
-		BLK_arnold_weinmann = { retire = yes }
-		BLK_hannes_kellermann = { retire = yes }
 	}
 }
 
@@ -1695,6 +1699,12 @@ country_event = { #return of the king
 		set_politics = {
 			ruling_party = monarchism 
 			elections_allowed = no
+		}
+		hidden_effect = {
+			news_event = { id = ac_news_event.20 days = 1 }
+		}
+		hidden_effect = {
+			country_event = { id = world_event.2 days = 2 }
 		}
 	}
 }
@@ -1858,5 +1868,21 @@ country_event = { #event about RHONGOMYNIAD
 
 	option = {
 		name = belka_dlp_won.9.a
+		hidden_effect = {
+			country_event = { id = world_event.2 days = 2 }
+		}
+	}
+}
+
+country_event = { #event about pardon
+	id = belka_dlp_won.10
+	title = belka_dlp_won.10.t
+	desc = belka_dlp_won.10.d
+	picture = GFX_report_event_belka_meme_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = belka_dlp_won.10.a
 	}
 }

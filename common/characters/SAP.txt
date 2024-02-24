@@ -375,7 +375,7 @@ characters = {
 		name = "Alejandro Ramirez"
 		portraits = {
 			army = {
-				#small ="GFX_portrait_empty_advisor"
+				large ="GFX_portrait_SAP_alejandro_ramirez"
 			}
 		}
 		field_marshal = {
@@ -455,7 +455,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { bearer_of_artillery }
+			traits = { SAP_monarchist_sympathies bearer_of_artillery }
 			skill = 2
             attack_skill = 1
             defense_skill = 2
@@ -467,7 +467,7 @@ characters = {
 		name = "Pedro Hernandez"
 		portraits = {
 			army = {
-				#small ="GFX_portrait_empty_advisor"
+				large = "GFX_portrait_SAP_Pedro_Hernandez"
 			}
 		}
 		corps_commander = {
@@ -477,6 +477,22 @@ characters = {
             defense_skill = 1
             planning_skill = 2
             logistics_skill = 1
+		}
+	}
+	SAP_mateo_alvarez = {
+		name = "Mateo Alvarez"
+		portraits = {
+			army = {
+				large ="GFX_portrait_SAP_Mateo_Alvarez"
+			}
+		}
+		corps_commander = {
+			traits = { SAP_liberal_sympathies old_guard }
+			skill = 2
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 2
 		}
 	}
 	SAP_sofia_lopez = {
@@ -503,7 +519,7 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = { old_guard logistics_wizard }
+			traits = { SAP_monarchist_sympathies old_guard logistics_wizard }
 			skill = 2
             attack_skill = 2
             defense_skill = 1
@@ -552,6 +568,22 @@ characters = {
 		}
 		corps_commander = {
 			traits = { inflexible_strategist infantry_officer urban_assault_specialist }
+			skill = 3
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 4
+            logistics_skill = 2
+		}
+	}
+	SAP_javier_ramirez = {
+		name = "Javier Ramirez"
+		portraits = {
+			army = {
+				large ="GFX_portrait_SAP_Javier_Ramirez"
+			}
+		}
+		corps_commander = {
+			traits = { SAP_falangist_sympathies infantry_officer }
 			skill = 3
             attack_skill = 3
             defense_skill = 1
@@ -684,8 +716,8 @@ characters = { #placeholder chiefs
 	SAP_rodrigo_martinez = {
 		name = "Rodrigo Martinez"
 		portraits = {
-			civilian = {
-				small ="GFX_portrait_empty_advisor"
+			army = {
+				large = "GFX_portrait_SAP_Rodrigo_Martinez"
 			}
 		}
 		advisor = {
@@ -709,8 +741,8 @@ characters = { #placeholder chiefs
 	SAP_sofia_hernandez = {
 		name = "Sofia Hernandez"
 		portraits = {
-			civilian = {
-				small ="GFX_portrait_empty_advisor"
+			army = {
+				large = "GFX_portrait_SAP_Sofia_Hernandez"
 			}
 		}
 		advisor = {
@@ -734,8 +766,8 @@ characters = { #placeholder chiefs
 	SAP_juan_carlos_mendoza = {
 		name = "Juan Carlos Mendoza"
 		portraits = {
-			civilian = {
-				small ="GFX_portrait_empty_advisor"
+			army = {
+				large ="GFX_portrait_SAP_Juan_Carlos_Mendoza"
 			}
 		}
 		advisor = {

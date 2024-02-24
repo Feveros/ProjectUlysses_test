@@ -23,6 +23,9 @@ GEB_national_defense = {
                 }
             }
         }
+        ai_will_do = {
+            base = 100
+        }
         on_map_mode = map_and_decisions_view
         days_remove = 14
         complete_effect = {
@@ -209,39 +212,44 @@ GEB_national_defense = {
             }
         }
     }
-    GEB_purchase_osean_guns = {
-        icon = placeholder
-        available = {
-            AND = {
-                has_completed_focus = GEB_purchase_osean_arms
-                OSE = {
-                    exists = yes
-                }
-            }    
-        }
-        visible = { has_completed_focus = GEB_purchase_osean_arms }
-        cost = 25
-        days_remove = 30
-        modifier = {
-            consumer_goods_factor = 0.05
-        }
-        ai_will_do = {
-            base = 10
-            modifier = {
-                add = 90
-                has_equipment = {
-                    infantry_equipment_1 < 5000
-                }
-            }
-        }
-        complete_effect = {
-            add_equipment_to_stockpile = {
-                type = infantry_equipment
-                amount = 1000
-                producer = OSE
-            }
-        }
-    }
+    # GEB_purchase_osean_guns = {
+    #     icon = placeholder
+    #     available = {
+    #         AND = {
+    #             has_completed_focus = GEB_purchase_osean_arms
+    #             OSE = {
+    #                 exists = yes
+    #             }
+    #             stockpile_ratio = {
+    #                 archetype = infantry_equipment
+    #                 ratio < 0.5
+    #             }
+    #         }    
+    #     }
+    #     visible = { has_completed_focus = GEB_purchase_osean_arms }
+    #     cost = 30
+    #     days_remove = 30
+    #     modifier = {
+    #         consumer_goods_factor = 0.075
+    #     }
+    #     ai_will_do = {
+    #         base = 10
+    #         modifier = {
+    #             add = 90
+    #             stockpile_ratio = {
+    #                 archetype = infantry_equipment
+    #                 ratio < 0.5
+    #             }
+    #         }
+    #     }
+    #     complete_effect = {
+    #         add_equipment_to_stockpile = {
+    #             type = infantry_equipment
+    #             amount = 1000
+    #             producer = OSE
+    #         }
+    #     }
+    # }
 }
 GEB_land_reform = {
     GEB_land_reform_in_state = {
@@ -799,6 +807,48 @@ GEB_granley_mountains_excavations = {
                 add_resource = {
                     type = chromium
                     amount = 10
+                }
+            }
+        }
+    }
+}
+GEB_belkan_land = {
+    GEB_integrate_belkan_state = {
+        icon = GFX_decision_infiltrate_state
+        cost = 100
+        state_target = yes
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+                is_core_of = BLK
+				NOT = {
+                    is_core_of = ROOT
+                }
+			}
+		}
+        cancel_trigger = {
+            FROM = {
+                NOT = {
+                    is_controlled_by = ROOT
+                }
+			}
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                date > 1995.6.20
+                add = 100
+            }
+        }
+        days_remove = 1825
+        modifier = {
+            political_power_gain = -0.10
+        }
+        remove_effect = {
+            FROM = {
+                add_core_of = ROOT
+                owner = {
+                    country_event = gebet.5
                 }
             }
         }

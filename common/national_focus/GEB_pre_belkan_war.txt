@@ -17,7 +17,10 @@ shared_focus = {
     id = GEB_second_ebner_administration
     icon = GFX_goal_GEB_election_ilse_ebner
     relative_position_id = GEB_1992_elections
-    available = { has_country_flag = election_1992_winner_sdu }
+    available = {
+        has_country_flag = election_1992_winner_sdu
+        has_country_leader_ideology = social_democracy
+    }
     prerequisite = { focus = GEB_1992_elections }
     cost = 3
     ai_will_do = {
@@ -42,6 +45,7 @@ shared_focus = {
     id = GEB_continue_land_reform
     icon = GFX_goal_GEB_continue_land_reform
     relative_position_id = GEB_second_ebner_administration
+    available = { has_country_leader_ideology = social_democracy }
     prerequisite = { focus = GEB_second_ebner_administration }
     cost = 10
     ai_will_do = {
@@ -63,6 +67,7 @@ shared_focus = {
     id = GEB_develop_the_countryside
     icon = GFX_goal_generic_construction
     relative_position_id = GEB_continue_land_reform
+    available = { has_country_leader_ideology = social_democracy }
     prerequisite = { focus = GEB_continue_land_reform }
     cost = 10
     ai_will_do = {
@@ -98,6 +103,7 @@ shared_focus = {
     id = GEB_implement_a_progressive_tax_system
     icon = GFX_goal_generic_neutrality_focus
     relative_position_id = GEB_second_ebner_administration
+    available = { has_country_leader_ideology = social_democracy }
     prerequisite = { focus = GEB_second_ebner_administration }
     cost = 10
     ai_will_do = {
@@ -125,6 +131,7 @@ shared_focus = {
     icon = GFX_goal_generic_forceful_treaty
     relative_position_id = GEB_implement_a_progressive_tax_system
     available = {
+        has_country_leader_ideology = social_democracy
         custom_trigger_tooltip = {
             tooltip = GEB_liquidate_aristocrat_assets_trigger_tt		
             check_variable = {
@@ -160,6 +167,7 @@ shared_focus = {
     id = GEB_small_businesses_subsidization
     icon = GFX_goal_GEB_small_business_subsidization
     relative_position_id = GEB_develop_the_countryside
+    available = { has_country_leader_ideology = social_democracy }
     prerequisite = { focus = GEB_liquidate_aristocrat_assets }
     prerequisite = { focus = GEB_develop_the_countryside }
     cost = 10
@@ -191,7 +199,10 @@ shared_focus = {
     id = GEB_albrecht_administration
     icon = GFX_goal_GEB_election_rafael_albrecht
     relative_position_id = GEB_1992_elections
-    available = { has_country_flag = election_1992_winner_pdp }
+    available = {
+        has_country_flag = election_1992_winner_pdp
+        has_country_leader_ideology = liberalism
+    }
     prerequisite = { focus = GEB_1992_elections }
     cost = 3
     ai_will_do = {
@@ -216,6 +227,7 @@ shared_focus = {
     id = GEB_negotiate_with_aristocrats
     icon = GFX_focus_eng_concessions_to_the_trade_unions
     relative_position_id = GEB_albrecht_administration
+    available = { has_country_leader_ideology = liberalism }
     prerequisite = { focus = GEB_albrecht_administration }
     cost = 10
     ai_will_do = {
@@ -248,6 +260,7 @@ shared_focus = {
     id = GEB_encourage_philanthropy
     icon = GFX_goal_GEB_encourage_philanthropy
     relative_position_id = GEB_negotiate_with_aristocrats
+    available = { has_country_leader_ideology = liberalism }
     prerequisite = { focus = GEB_negotiate_with_aristocrats }
     cost = 10
     ai_will_do = {
@@ -276,6 +289,7 @@ shared_focus = {
     id = GEB_trickle_down_economics
     icon = GFX_goal_GEB_trickle_down_economics
     relative_position_id = GEB_albrecht_administration
+    available = { has_country_leader_ideology = liberalism }
     prerequisite = { focus = GEB_albrecht_administration }
     cost = 10
     ai_will_do = {
@@ -302,6 +316,7 @@ shared_focus = {
     id = GEB_open_up_trade
     icon = GFX_goal_generic_positive_trade_relations
     relative_position_id = GEB_trickle_down_economics
+    available = { has_country_leader_ideology = liberalism }
     prerequisite = { focus = GEB_trickle_down_economics }
     cost = 10
     ai_will_do = {
@@ -322,6 +337,7 @@ shared_focus = {
     id = GEB_regional_prosperity
     icon = GFX_goal_GEB_regional_prosperity
     relative_position_id = GEB_encourage_philanthropy
+    available = { has_country_leader_ideology = liberalism }
     prerequisite = { focus = GEB_encourage_philanthropy }
     prerequisite = { focus = GEB_open_up_trade }
     cost = 10
@@ -482,7 +498,7 @@ shared_focus = {
             add_extra_state_shared_building_slots = 1
         }
         add_tech_bonus = {
-            bonus = 0.5
+            bonus = 1
             uses = 1
             category = electronics
         }
@@ -1241,10 +1257,11 @@ shared_focus = {
 		
 	}
     completion_reward = {
-        unlock_decision_tooltip = GEB_purchase_osean_guns
+        #unlock_decision_tooltip = GEB_purchase_osean_guns
+        add_political_power = -50
 		add_equipment_to_stockpile = {
             type = infantry_equipment
-            amount = 2000
+            amount = 5000
             producer = OSE
         }
     }

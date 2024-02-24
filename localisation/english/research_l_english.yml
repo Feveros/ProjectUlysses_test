@@ -1418,6 +1418,7 @@
  cat_scout_plane: "Scout Plane models"
  cat_maritime_patrol: "Maritime Patrol Plane models"
  cat_air_guns: "Air-to-Air Weaponry"
+ mot_rockets: "Motorized Rocket Systems"
 
  mio_cat_tech_light_armor_and_modules: "Light Armor Technologies" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_medium_armor_and_modules: "Medium Armor Technologies" #Cannot talk about modules because of DLC lock tack

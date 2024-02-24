@@ -81,6 +81,34 @@ do_not_waste_units_on_garrison = {
 	}
 }
 
+
+ose_oppose_alt_sapin = {
+	allowed = {
+		original_tag = OSE
+	}
+	enable = {
+		SAP = {
+			has_country_flag = sap_on_its_own_path_flag
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = ignore
+		id = SAP
+		value = 100
+	}
+	ai_strategy = {
+		type = contain
+		id = SAP
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = SAP
+		value = 100
+	}
+}
+
 ose_prep_belkan_war = {
 	allowed = {
 		original_tag = OSE

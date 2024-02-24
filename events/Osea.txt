@@ -138,6 +138,8 @@ country_event = { #mackenzie anti GLRDC campaign
 	}
 	option = {
 		name = osea.30.a
+		set_variable = { osea_party_pop_loss_var = 10 }
+		OSE_unity_party_pop_loss_effect = yes
 	}
 }
 

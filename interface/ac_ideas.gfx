@@ -13,6 +13,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/_generic/idea_CNEA_member.png"
 	}
 	spriteType = {
+		name = "GFX_idea_generic_expeditionary_army"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_expeditionary_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_defensive_army"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_defensive_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_internal_security_army"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_internal_security_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_palace_guard_army"
+		texturefile = "gfx/interface/ideas/_generic/idea_generic_palace_guard_army.png"
+	}
+	spriteType = {
 		name = "GFX_idea_generic_funding_research"
 		texturefile = "gfx/interface/ideas/_generic/idea_generic_funding_research.png"
 	}
@@ -256,6 +272,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_GEB_unmechanized_agriculture"
 		texturefile = "gfx/interface/ideas/GEB/idea_GEB_unmechanized_agriculture.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GEB_capital_flight"
+		texturefile = "gfx/interface/ideas/GEB/idea_GEB_capital_flight.png"
 	}
 	### YUKTOBANIA
 	spriteType = {

@@ -15,7 +15,7 @@ SAP_power_balance = {
 			monarchism_drift = 0.01
 		}
 		on_activate = {
-
+			SAP_decrease_government_dysfunction = yes
 		}
 		on_deactivate = {
 			
@@ -36,10 +36,20 @@ SAP_power_balance = {
 				democratic_drift = 0.025
 			}
 			on_activate = {
-				
+				if = {
+					limit = {
+						has_government = monarchism
+					}
+					SAP_increase_government_dysfunction = yes
+				}
 			}
 			on_deactivate = {
-				
+				if = {
+					limit = {
+						has_government = monarchism
+					}
+					SAP_decrease_government_dysfunction = yes
+				}
 			}
 		}
 
@@ -52,10 +62,20 @@ SAP_power_balance = {
 				communism_drift = 0.025
 			}
 			on_activate = {
-				
+				if = {
+					limit = {
+						has_government = monarchism
+					}
+					SAP_increase_government_dysfunction = yes
+				}
 			}
 			on_deactivate = {
-				
+				if = {
+					limit = {
+						has_government = monarchism
+					}
+					SAP_decrease_government_dysfunction = yes
+				}
 			}
 		}
 
@@ -68,10 +88,20 @@ SAP_power_balance = {
 				stability_factor = -0.025
 			}
 			on_activate = {
-				
+				if = {
+					limit = {
+						has_government = monarchism
+					}
+					SAP_increase_government_dysfunction = yes
+				}
 			}
 			on_deactivate = {
-				
+				if = {
+					limit = {
+						has_government = monarchism
+					}
+					SAP_decrease_government_dysfunction = yes
+				}
 			}
 		}
 
@@ -85,6 +115,13 @@ SAP_power_balance = {
 			}
 			on_activate = {
 				country_event = sapin_civil_war.2
+				hidden_effect = {
+					remove_ideas = {
+						sap_dysfunctional_government_1
+						sap_dysfunctional_government_2
+						sap_dysfunctional_government_3
+					}
+				}
 			}
 			on_deactivate = {
 				
@@ -106,10 +143,20 @@ SAP_power_balance = {
 				monarchism_drift = 0.025
 			}
 			on_activate = {
-				
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					SAP_increase_government_dysfunction = yes
+				}
 			}
 			on_deactivate = {
-				
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					SAP_decrease_government_dysfunction = yes
+				}
 			}
 		}
 
@@ -122,10 +169,20 @@ SAP_power_balance = {
 				fascism_drift = 0.025
 			}
 			on_activate = {
-				
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					SAP_increase_government_dysfunction = yes
+				}
 			}
 			on_deactivate = {
-				
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					SAP_decrease_government_dysfunction = yes
+				}
 			}
 		}
 
@@ -138,10 +195,20 @@ SAP_power_balance = {
 				stability_factor = -0.025
 			}
 			on_activate = {
-				
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					SAP_increase_government_dysfunction = yes
+				}
 			}
 			on_deactivate = {
-				
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					SAP_decrease_government_dysfunction = yes
+				}
 			}
 		}
 
@@ -155,6 +222,13 @@ SAP_power_balance = {
 			}
 			on_activate = {
 				country_event = sapin_civil_war.1
+				hidden_effect = {
+					remove_ideas = {
+						sap_dysfunctional_government_1
+						sap_dysfunctional_government_2
+						sap_dysfunctional_government_3
+					}
+				}
 			}
 			on_deactivate = {
 				

@@ -3469,6 +3469,7 @@ generic_general_aircraft_organization = {
 			OR = { 
 				tag = OSE
 				tag = BLK
+				tag = SAP
 			}
 		}
 	}
@@ -6189,7 +6190,7 @@ generic_artillery_organization = {
 	icon = GFX_idea_generic_artillery_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { tag = OSE tag = BLK } }
+		NOT = { OR = { tag = OSE tag = BLK tag = SAP } }
 	}
 
 	equipment_type = {
@@ -6500,7 +6501,7 @@ generic_infantry_equipment_organization = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { tag = OSE tag = BLK } }
+		NOT = { OR = { tag = OSE tag = BLK tag = SAP } }
 	}
 
 	equipment_type = {
@@ -7059,6 +7060,7 @@ generic_motorized_mechanized_organization = {
 			OR = { 
 				tag = OSE
 				tag = BLK
+				tag = SAP
 			}
 		}
 	}

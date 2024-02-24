@@ -333,6 +333,51 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SAP/portrait_SAP_Candida_Castro.png"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_SAP_Alphonso_Espinal"
+		texturefile = "gfx/leaders/SAP/portrait_SAP_Alphonso_Espinal.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SAP_Domingo_Escalona"
+		texturefile = "gfx/leaders/SAP/portrait_SAP_Domingo_Escalona.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SAP_Javier_Ramirez"
+		texturefile = "gfx/leaders/SAP/portrait_SAP_Javier_Ramirez.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SAP_Juan_Carlos_Mendoza"
+		texturefile = "gfx/leaders/SAP/portrait_SAP_Juan_Carlos_Mendoza.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SAP_Mateo_Alvarez"
+		texturefile = "gfx/leaders/SAP/portrait_SAP_Mateo_Alvarez.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SAP_Pedro_Hernandez"
+		texturefile = "gfx/leaders/SAP/portrait_SAP_Pedro_Hernandez.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SAP_Rodrigo_Martinez"
+		texturefile = "gfx/leaders/SAP/portrait_SAP_Rodrigo_Martinez.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SAP_Sofia_Hernandez"
+		texturefile = "gfx/leaders/SAP/portrait_SAP_Sofia_Hernandez.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_SAP_alejandro_ramirez"
+		texturefile = "gfx/leaders/SAP/portrait_SAP_alejandro_ramirez.png"
+	}
+
 ######### GEBET ###################################
 
 	spriteType = {

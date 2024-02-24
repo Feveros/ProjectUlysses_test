@@ -172,3 +172,56 @@ SAP_decrease_noble_high_command = {
         value = -0.05
     }
 }
+SAP_decrease_government_dysfunction = {
+    if = {
+        limit = {
+            has_idea = sap_dysfunctional_government_3
+        }
+        swap_ideas = {
+            remove_idea = sap_dysfunctional_government_3
+            add_idea = sap_dysfunctional_government_2
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = sap_dysfunctional_government_2
+        }
+        swap_ideas = {
+            remove_idea = sap_dysfunctional_government_2
+            add_idea = sap_dysfunctional_government_1
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = sap_dysfunctional_government_1
+        }
+        remove_ideas = sap_dysfunctional_government_1
+    }
+}
+SAP_increase_government_dysfunction = {
+    add_ideas = sap_dysfunctional_government_1
+    if = {
+        limit = {
+            has_idea = sap_dysfunctional_government_1
+        }
+        swap_ideas = {
+            remove_idea = sap_dysfunctional_government_1
+            add_idea = sap_dysfunctional_government_2
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = sap_dysfunctional_government_2
+        }
+        swap_ideas = {
+            remove_idea = sap_dysfunctional_government_2
+            add_idea = sap_dysfunctional_government_3
+        }
+    }
+    else_if = {
+        limit = {
+            has_idea = sap_dysfunctional_government_3
+        }
+        add_stability = -0.01
+    }
+}

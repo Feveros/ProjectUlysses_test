@@ -162,6 +162,7 @@
  GEB_land_reform: "Land Reform"
  GEB_granley_mountains_excavations: "Granley Mountains Excavations"
  GEB_granley_mountains_excavations_desc: "The Granley Mountains are a veritable treasure trove of raw materials that haven't been utilized. By actually extracting and utilizing these resources, we can start to strengthen the Gebetian economy and turn it into a strong trade powerhouse."
+ GEB_belkan_land: "Belkan Land"
  ### DECISIONS
  GEB_land_reform_in_state: "Land Reform In [FROM.GetName]"
  GEB_mobilize_reserves: "Mobilize [FROM.GetMobilizationDivisionCount] Divisions in [FROM.GetName]"
@@ -183,6 +184,7 @@
  GEB_expand_chromium_mines_1: "Establish Chromium Mines"
  GEB_expand_chromium_mines_2: "Expand Chromium Mines"
  GEB_expand_chromium_mines_3: "Complete Chromium Mines"
+ GEB_integrate_belkan_state: "Integrate [FROM.GetName]"
  ### EVENTS
  gebet.2.t: "Philanthropy"
  gebet.2.desc: "A wealthy Gebetian businessman has decided to use his personal wealth to build [?gebet_philanthropy_building] in [FROM.GetName]. This act of generosity is thanks to our push to convince wealthy Gebetians to give back to the community.\n\nSome do argue, however, that it's not an act of generosity but rather a way for these "aristocrats" to increase their own popularity and wealth."
@@ -193,6 +195,11 @@
  gebet.4.t: "Rampant Wealth Inequality"
  gebet.4.desc: "The Gebetian's governments efforts to appease Gebet's aristocracy to make them more friendly towards the Gebetian government, though making them less overtly pro-Belkan, has led to the government instituting policies that have caused much of the nation's wealth to pool at the top. While this has led to explosive GDP growth, it's also led to rampant wealth inequality in Gebet."
  gebet.4.a: "It'll trickle down eventually!"
+ gebet.5.t: "Integration of [FROM.GetName]"
+ gebet.5.desc: "With the full integration of [FROM.GetName] almost complete, the time has come to decide how to deal with the local Belkan population who are hostile to the Gebetian government and still hold nationalist views on Gebet and Belka."
+ gebet.5.a: "Let them be"
+ gebet.5.b: "Deport the aristocrats"
+ gebet.5.c: "Deport anyone openly hostile to us"
  # Election Events
  gebet_election.1.t: "1992 National Elections"
  gebet_election.1.desc: "The 1992 elections have come around with the frontrunners being the two major parties of the Social Democratic Union and the Progressive Democratic Party.\n\nThe Social Democratic Union campaigned on a platform of continued land reform, building a progressive tax system, developing the infrastructure of rural regions, making the aristocrats "pay their fair share," and focusing on strengthening the middle and lower class.\n\nThe Progressive Democratic Party has campaigned on cutting regulations passed by the SDU, lowering taxes, and freeing up trade. All in stark contrast to the policies of the SDU.\n\nThe two opposing parties are now waiting in anticipation to see who won over the people."

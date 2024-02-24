@@ -43,6 +43,7 @@ add_ideas = {
 	sap_guardia_real
 
 	nuke_lvl_1 
+	generic_palace_guard_army_1
 }
 
 ######################################
@@ -65,11 +66,13 @@ recruit_character = SAP_sofia_fernandez
 recruit_character = SAP_maria_torres
 recruit_character = SAP_juan_rodriguez
 recruit_character = SAP_pedro_hernandez
+recruit_character = SAP_mateo_alvarez
 recruit_character = SAP_sofia_lopez
 recruit_character = SAP_miguel_silva
 recruit_character = SAP_gabriella_garcia
 recruit_character = SAP_alejandro_delgado
 recruit_character = SAP_miguel_hernandez
+recruit_character = SAP_javier_ramirez
 recruit_character = SAP_army_3
 recruit_character = SAP_army_4
 recruit_character = SAP_diego_lopez

@@ -33,6 +33,7 @@ add_ideas = {
 	UST_ratio_nationalists
 
 	nuke_lvl_1 
+	generic_defensive_army_2
 }
 
 set_country_flag = cons_laws_blocked

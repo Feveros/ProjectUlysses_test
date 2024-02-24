@@ -14,5 +14,6 @@ opinion_modifiers = {
 	considers_threat = { value = -50 }
 	considers_friend = { value = 50 }
 	air_force_cooperation = { value = 20 }
+	tyrann_dispute_support = { value = 25 }
 	wmd_plan = { value = -100 }
 }

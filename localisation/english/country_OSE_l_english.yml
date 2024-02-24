@@ -82,6 +82,7 @@
 
  OSE_oia_air_force_sabotage_idea: "Air Force Sabotage"
  OSE_oia_army_sabotage_idea: "Army Sabotage"
+ OSE_energized_democratic_protests: "Energized Democratic Movement"
  
  ### Focuses
  
@@ -532,6 +533,14 @@
  ose_urgent_war_committee_tt: "§YFinishing this focus will unlock decisions which will allow us to fix our land army.§!"
 
  mackenzie_won: "Mackenzie Won"
+
+ OSE_unity_party_pop_loss_effect_tt: "§2Unity Party Popularity§!: §R-§![osea_party_pop_loss_var|%R]"
+ OSE_liberty_party_pop_loss_effect_tt: "Liberty Party Popularity§!: §R-§![osea_party_pop_loss_var|%R]"
+ OSE_obp_party_pop_loss_effect_tt: "§4Osean Brotherhood Popularity§!: §R-§![osea_party_pop_loss_var|%R]"
+ OSE_opp_party_pop_loss_effect_tt: "§2Oured Purity Party Popularity§!: §R-§![osea_party_pop_loss_var|%R]"
+ OSE_socialist_party_pop_loss_effect_tt: "§ROsean Socialist Party Popularity§!: §R-§![osea_party_pop_loss_var|%R]"
+ OSE_monarchist_party_pop_loss_effect_tt: "§0Monarchist Popularity§!: §R-§![osea_party_pop_loss_var|%R]"
+ OSE_independent_party_pop_loss_effect_tt: "§gIndependent Popularity§!: §R-§![osea_party_pop_loss_var|%R]"
  
  OSE_extremely_low_taxes_idea_minimum_tt: "Minimum Tax Level: §YExtremely Low§!"
  OSE_very_low_taxes_idea_minimum_tt: "Minimum Tax Level: §YVery Low§!"
@@ -553,6 +562,7 @@
  oia_operation_cost_150: "§GOIA Funding§! is greater than or equal to $150 million"
  oia_operation_cost_100: "§GOIA Funding§! is greater than or equal to $100 million"
  oia_operation_cost_50: "§GOIA Funding§! is greater than or equal to $50 million"
+ oia_ops_check_tt: "Less than [?osea_oia_max_ops|0Y] ongoing operations"
 
  generic_space_tt: "\n "
 
@@ -745,6 +755,7 @@
  ose_support_ustian_home_army_dec: "Support Ustian Home Army"
  ose_support_sapinish_army_in_the_homeland_dec: "Support Sapinish Army In The Homeland"
  ose_support_ejercito_de_liberacion_nacional_dec: "Support Ejército de Liberación Nacional"
+ ose_support_democratic_opposition_in_country: "Support Democratic Opposition In [FROM.owner.GetNonIdeologyName]"
 
  OSE_fix_army: "Restoring The Ground Defense Forces"
  ose_fix_army_dec: "Increase OGDF Funding"
@@ -765,6 +776,7 @@
  ose_chrome_stage_three_done_flag: "First Stage Of Chromium Excavation Completed"
  ose_infiltrated_our_army: "Osea Infiltrated Army"
  ose_infiltrated_our_air_force: "Osea Infiltrated Air Force"
+ ose_supporting_democratic_opposition_in_country: "Supporting Democratic Opposition In A Country"
 
 
  ### BILL NAMES ###

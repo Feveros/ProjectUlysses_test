@@ -91,6 +91,7 @@ on_actions = {
 				limit = {
 					has_global_flag = belkan_war_is_happening
 					surrender_progress > 0.2
+					is_ai = no
 					has_war_with = OSE
 				}
 				country_event = { id = south_belka.2 days = 7 }

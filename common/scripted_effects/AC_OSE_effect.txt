@@ -3209,6 +3209,7 @@ OSE_unity_party_pop_loss_effect = {
 		min = 0
 		max = 1
 	}
+	custom_effect_tooltip  = OSE_unity_party_pop_loss_effect_tt
 	# Run OSE_update_party_popularity to update the idea loc
 	OSE_update_party_popularity = yes
 }
@@ -3345,6 +3346,7 @@ OSE_liberty_party_pop_loss_effect = {
 		min = 0
 		max = 1
 	}
+	custom_effect_tooltip  = OSE_liberty_party_pop_loss_effect_tt
 	# Run OSE_update_party_popularity to update the idea loc
 	OSE_update_party_popularity = yes
 }
@@ -3482,6 +3484,7 @@ OSE_obp_party_pop_loss_effect = {
 		min = 0
 		max = 1
 	}
+	custom_effect_tooltip  = OSE_obp_party_pop_loss_effect_tt
 	# Run OSE_update_party_popularity to update the idea loc
 	OSE_update_party_popularity = yes
 }
@@ -3618,6 +3621,7 @@ OSE_opp_party_pop_loss_effect = {
 		min = 0
 		max = 1
 	}
+	custom_effect_tooltip  = OSE_opp_party_pop_loss_effect_tt
 	# Run OSE_update_party_popularity to update the Congress window
 	OSE_update_party_popularity = yes
 }
@@ -3754,6 +3758,7 @@ OSE_socialist_party_pop_loss_effect = {
 		min = 0
 		max = 1
 	}
+	custom_effect_tooltip  = OSE_socialist_party_pop_loss_effect_tt
 	# Run OSE_update_party_popularity to update the national spirit loc
 	OSE_update_party_popularity = yes
 }
@@ -3890,6 +3895,7 @@ OSE_monarchist_party_pop_loss_effect = {
 		min = 0
 		max = 1
 	}
+	custom_effect_tooltip  = OSE_monarchist_party_pop_loss_effect_tt
 	# Run OSE_update_party_popularity to update the national spirit loc
 	OSE_update_party_popularity = yes
 }
@@ -4026,6 +4032,7 @@ OSE_independent_party_pop_loss_effect = {
 		min = 0
 		max = 1
 	}
+	custom_effect_tooltip  = OSE_independent_party_pop_loss_effect_tt
 	# Run OSE_update_party_popularity to update the national spirit loc
 	OSE_update_party_popularity = yes
 }

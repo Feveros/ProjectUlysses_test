@@ -45,6 +45,11 @@ set_popularities = {
 	communism = 3
 }
 
+add_ideas = {
+	nuke_lvl_1
+	generic_defensive_army_1
+}
+
 set_oob = "RAT_land"
 
 set_stability = 0.85

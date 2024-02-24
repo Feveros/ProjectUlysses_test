@@ -97,6 +97,9 @@ add_ideas = {
 	geb_nonexistent_air_force
 	geb_unindustrialized_economy_3
 	geb_unmechanized_agriculture
+	
+	nuke_lvl_1
+	generic_defensive_army_1
 }
 
 set_variable = { land_reform_time = 180 }

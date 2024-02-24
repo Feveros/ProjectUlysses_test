@@ -183,6 +183,53 @@ country_event = { # Growing Wealth Inequality
     }
 }
 
+country_event = { # Integration of Belkan Land
+    id = gebet.5
+    title = gebet.5.t
+    desc = gebet.5.desc
+    is_triggered_only = yes
+    option = { # Don't deport anyone
+        name = gebet.5.a
+        FROM = {
+            add_dynamic_modifier = { modifier = geb_aristocrat_held_land_2 }
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.25
+        }
+        add_popularity = {
+            ideology = monarchism
+            popularity = 0.25
+        }
+    }
+    option = { # Deport the Belkan aristocracy
+        name = gebet.5.b
+        add_political_power = -50
+        FROM = {
+            set_temp_variable = { state_belkan_deportation_pop = state_population_k }
+            multiply_temp_variable = { state_belkan_deportation_pop = -0.01 }
+            add_manpower = var:state_belkan_deportation_pop
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.25
+        }
+        add_popularity = {
+            ideology = monarchism
+            popularity = 0.25
+        }
+    }
+    option = { # Deport all Belkans
+        name = gebet.5.c
+        add_political_power = -150
+        FROM = {
+            set_temp_variable = { state_belkan_deportation_pop = state_population_k }
+            multiply_temp_variable = { state_belkan_deportation_pop = -0.45 }
+            add_manpower = var:state_belkan_deportation_pop
+        }
+    }
+}
+
 country_event = { # 1992 Elections
     id = gebet_election.1
     title = gebet_election.1.t

@@ -74,7 +74,7 @@ shared_focus = {
             ideology = fascism
             popularity = -0.025
         }
-        add_stability = -0.01
+        add_stability = -0.025
         add_power_balance_value = {
             id = SAP_power_balance
             value = -0.05
@@ -163,7 +163,7 @@ shared_focus = {
             value = -0.05
         }
         SAP_decrease_nobility_influence = yes
-        add_stability = -0.01
+        add_stability = -0.025
         add_political_power = 150
     }
     search_filters = { }
@@ -199,7 +199,7 @@ shared_focus = {
     y = 1
     completion_reward = {
 		SAP_reduce_economic_crisis = yes
-        add_stability = 0.01
+        add_stability = 0.025
         add_political_power = -50
     }
     search_filters = { }
@@ -217,7 +217,7 @@ shared_focus = {
     y = 1
     completion_reward = {
 		SAP_reduce_economic_crisis = yes
-        add_stability = 0.01
+        add_stability = 0.025
         add_political_power = -50
     }
     search_filters = { }
@@ -432,50 +432,7 @@ shared_focus = {
         create_faction = FACTION_NOTO
         news_event = sapin_diplomacy.8
         custom_effect_tooltip = sap_north_osean_treaty_organization_tt
-        effect_tooltip = {
-            country_event = {
-                id = sapin_diplomacy.9
-                days = 1
-            }
-        }
-        hidden_effect = {
-            UST = {
-                country_event = {
-                    id = sapin_diplomacy.9
-                    days = 1
-                }
-            }
-            GEB = {
-                country_event = {
-                    id = sapin_diplomacy.9
-                    days = 1
-                }
-            }
-            RAT = {
-                country_event = {
-                    id = sapin_diplomacy.9
-                    days = 1
-                }
-            }
-            WIE = {
-                country_event = {
-                    id = sapin_diplomacy.9
-                    days = 1
-                }
-            }
-            FAT = {
-                country_event = {
-                    id = sapin_diplomacy.9
-                    days = 1
-                }
-            }
-            NRL = {
-                country_event = {
-                    id = sapin_diplomacy.9
-                    days = 1
-                }
-            }
-        }
+        unlock_decision_category_tooltip = SAP_noto_category
     }
     search_filters = { }
 }
@@ -655,7 +612,7 @@ shared_focus = {
             ideology = fascism
             popularity = 0.025
         }
-        add_stability = 0.01
+        add_stability = 0.025
         add_power_balance_value = {
             id = SAP_power_balance
             value = 0.05
@@ -739,7 +696,7 @@ shared_focus = {
             value = 0.05
         }
         SAP_increase_nobility_influence = yes
-        add_stability = -0.01
+        add_stability = -0.025
         add_political_power = 150
     }
     search_filters = { }
@@ -755,7 +712,7 @@ shared_focus = {
     y = 1
     completion_reward = {
 		SAP_reduce_economic_crisis = yes
-        add_stability = -0.01
+        add_stability = -0.025
         add_political_power = 50
     }
     search_filters = { }

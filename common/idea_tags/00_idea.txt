@@ -176,6 +176,7 @@ idea_categories = {
 	
 	ac_special_ideas = {
 		slot = nuke_lvl
+		slot = army_type_lvl
 		cost = 0
 		removal_cost = 0
 

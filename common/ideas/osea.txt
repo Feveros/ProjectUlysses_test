@@ -1004,5 +1004,18 @@ ideas = {
 				supply_consumption_factor = 0.25
 			}
 		}
+		OSE_energized_democratic_protests = {
+			picture = hidden
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = 0
+			modifier = {
+				democratic_drift = 0.10
+			}
+		}
 	}
 }

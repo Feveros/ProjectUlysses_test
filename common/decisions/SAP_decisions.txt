@@ -147,18 +147,17 @@ SAP_national_guard = {
 			}
 		}
         available = {
-            OR = {
-                has_defensive_war = yes
-                any_other_country = {
-                    OR = {
-                        is_justifying_wargoal_against = ROOT
-                        has_wargoal_against = ROOT
-                    }
-                }
-            }
+            has_defensive_war = yes
         }
+		visible = {
+            has_defensive_war = yes
+        }
+		ai_will_do = {
+			base = 100
+		}
         on_map_mode = map_and_decisions_view
         days_remove = 14
+		cost = 15
         remove_effect = {
             FROM = {
                 if = {
@@ -176,7 +175,7 @@ SAP_national_guard = {
                     set_variable = { recruitable_pop = state_population_k }
                     multiply_variable = { recruitable_pop = 0.01 }
                     set_variable = { units_to_spawn = recruitable_pop }
-                    divide_variable = { units_to_spawn = 11 }
+                    divide_variable = { units_to_spawn = 12 }
                     for_loop_effect = {
                         start = 1
                         end = units_to_spawn
@@ -195,7 +194,8 @@ SAP_national_guard = {
 	}
 	SAP_begin_new_round_of_mobilization = {
 		icon = placeholder
-        available = {
+        available = { has_completed_focus = sap_sapinish_national_guard }
+        visible = {
 			AND = {
 				all_owned_state = {
 					limit = {
@@ -214,8 +214,7 @@ SAP_national_guard = {
 					}
 				}
 			}
-        }
-        visible = { has_completed_focus = sap_sapinish_national_guard }
+		}
         cost = var:sap_mobilization_round_cost
         days_remove = 90
 		complete_effect = {
@@ -247,8 +246,8 @@ SAP_national_guard = {
             OR = {
                 NOT = {
                     has_country_flag = SAP_has_mobilized
-                    has_defensive_war = yes
                 }
+				has_defensive_war = yes
             }
 		}
         complete_effect = {
@@ -273,6 +272,44 @@ SAP_national_guard = {
 					has_state_flag = state_infantry_mobilized
 				}
 				clr_state_flag = state_infantry_mobilized
+			}
+		}
+	}
+}
+SAP_noto_category = {
+	SAP_invite_nation_to_noto = {
+		icon = placeholder
+		target_root_trigger = {
+			has_completed_focus = sap_north_osean_treaty_organization
+		}
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				capital_scope = {
+					is_on_continent = north_osea
+				}
+				AND = {
+					NOT = {
+						is_in_faction_with = ROOT
+						has_country_flag = invited_to_noto_recently_flag
+						original_tag = BLK
+						original_tag = FAT
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+        cost = 100
+		complete_effect = {
+			FROM = {
+				country_event = sapin_diplomacy.9
+				set_country_flag = {
+					flag = invited_to_noto_recently_flag
+					days = 1825
+					value = 1
+				}
 			}
 		}
 	}

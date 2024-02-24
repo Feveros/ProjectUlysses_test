@@ -190,7 +190,7 @@
  sap_forward_observers_desc: "xxx"
  sap_nighttime_operations: "Nighttime Operations"
  sap_nighttime_operations_desc: "xxx"
- sap_expand_the_academia_general_militar: "Academia Militar General"
+ sap_expand_the_academia_general_militar: "Expand The Academia Militar General"
  sap_expand_the_academia_general_militar_desc: "xxx"
 
  ### IDEAS
@@ -260,11 +260,16 @@
  sap_los_cruzados: "Los Cruzados"
  sap_guardia_real: "Guardia Real"
  sap_rectan_air_force_veterans: "Rectan Air Force Veterans"
+ sap_dysfunctional_government_1: "Dysfunctional Government"
+ sap_dysfunctional_government_2: "Dysfunctional Government"
+ sap_dysfunctional_government_3: "Dysfunctional Government"
+ sap_dysfunctional_government_4: "Dysfunctional Government"
 
  ### DECISION CATEGORIES
  SAP_civil_war: "Sapinish Civil War"
  SAP_national_politics: "National Politics"
  SAP_national_guard: "National Guard"
+ SAP_noto_category: "North Osean Treaty Organization"
 
  ### DECISIONS
  SAP_imminent_republican_revolt: "Imminent Republican Revolt"
@@ -273,6 +278,7 @@
  SAP_mobilize_state_national_guard:  "Mobilize [FROM.GetMobilizationDivisionCount] Divisions in [FROM.GetName]"
  SAP_begin_new_round_of_mobilization: "Begin New Round Of Mobilization"
  SAP_demobilize: "Demobilize The Royal Army"
+ SAP_invite_nation_to_noto: "Invite [FROM.GetNonIdeologyName] To NOTO"
 
  SAP_court_socialist_support: "Court Socialist Support"
  SAP_court_liberal_support: "Court Liberal Support"
@@ -309,11 +315,11 @@
  sapin_politics.9.t: "Extremists Join Against Moderates"
  sapin_politics.9.desc: "Extremist members of the Frente Republicano Unido and the Monarchist Union have each made statements denouncing the "establishment" wings of their parties, accusing them of blocking real change being made in Sapin. The declaration was met with mixed public reception, as discontent with the status quo clashed with the general distaste for instability and partisanship."
  sapin_politics.9.a: "This isn't good"
- sapin_politics.10.t: "Republican Delivers Rousing Speech"
- sapin_politics.10.desc: "A Republican member of parliament gave a rousing and convincing speech in front of the Sapinish legislature, broadcasted to the entire country. They were able to eloquently and charismatically bring the Frente Republicano Unido's case to the general public and increase support for their cause."
+ sapin_politics.10.t: "Republican Delivers Fiery Speech"
+ sapin_politics.10.desc: "A Republican member of parliament gave a fiery speech in front of the Sapinish legislature, broadcasted to the entire country. They were able to eloquently and charismatically bring the Frente Republicano Unido's case to the general public and increase support for their cause while denigrating the motives of the opposing side."
  sapin_politics.10.a: "Interesting"
- sapin_politics.11.t: "Monarchist Delivers Rousing Speech"
- sapin_politics.11.desc: "A Monarchist member of parliament gave a rousing and convincing speech in front of the Sapinish legislature, broadcasted to the entire country. They were able to eloquently and charismatically bring the Monarchist Union's case to the general public and increase support for their cause."
+ sapin_politics.11.t: "Monarchist Delivers Fiery Speech"
+ sapin_politics.11.desc: "A Monarchist member of parliament gave a fiery speech in front of the Sapinish legislature, broadcasted to the entire country. They were able to eloquently and charismatically bring the Monarchist Union's case to the general public and increase support for their cause while denigrating the motives of the opposing side."
  sapin_politics.11.a: "Interesting"
  sapin_politics.12.t: "[ROOT.GetLeader] Speaks In Parliament"
  sapin_politics.12.desc: "[ROOT.GetLeader] gave a speech in the nation's parliament today, with the intention of uniting the legislture to address Sapin's issues and stabilize the government. It seemed to be effective, as the legislature responded with applause and the speech was well-recieved by the public."
@@ -366,6 +372,12 @@
  sapin_diplomacy.11.desc: "Sapin is known as being a nation historically friendly to immigration and being a nation that many North Oseans desire to move to to find better opportunities. In recent years, however, more nationalist elements of Sapinish politics have created this notion that immigrants from North Osea could be secret Belkan agents trying to undermine Sapin's national security and those who aren't are stealing jobs from hardworking Sapiniards. Attempting to address this issue, the Sapinish government has tried to tighten immigration restrictions without being too restrictive. However, this has just caused pro-immigration activists to be upset with the Sapinish government without fully placating the other side. As the head of the country, [ROOT.GetLeader] can make a royal decree addressing this issue."
  sapin_diplomacy.11.a: "Loosen our immigration restrictions"
  sapin_diplomacy.11.b: "Tighten our immigration restrictions"
+ sapin_diplomacy.12.t: "[FROM.GetNonIdeologyName] Turns Down Invitation"
+ sapin_diplomacy.12.desc: "Unfortunately, [FROM.GetNonIdeologyName] has declined our invitation for them to join the North Osean Treaty Organization."
+ sapin_diplomacy.12.a: "A shame"
+ sapin_diplomacy.13.t: "[FROM.GetNonIdeologyName] Accepts Invitation"
+ sapin_diplomacy.13.desc: "Fortunately, [FROM.GetNonIdeologyName] has accepted our invitation for them to join the North Osean Treaty Organization!"
+ sapin_diplomacy.13.a: "Hooray!"
  sapin_civil_war.1.t: "Republican Revolt"
  sapin_civil_war.1.desc: "Dissatisfied with the Sapinish government's right-wing policies, the more radical elements of Sapin's Republican movement have taken up arms against the Sapinish government, proclaiming the creation of a Sapinish Republic to create the egalitarian society they desire."
  sapin_civil_war.1.a: "Put this rabble down!"
@@ -399,6 +411,8 @@
  sap_nationalists_split_tt: "§0Monarchist Coalition§! will split"
  
  ### COUNTRY FLAGS
+ invited_to_noto_recently_flag: "Invited To NOTO Recently"
+ sap_on_its_own_path_flag: "On Our Own Path"
  
  ### DYNAMIC MODIFIERS
  
@@ -406,4 +420,6 @@
  
  ### MISC
  FACTION_NOTO: "North Osean Treaty Organization"
+ tyrann_dispute_support: "Supported In Tyrann Dispute"
+ state_infantry_mobilized: "State Infantry Mobilized"
  

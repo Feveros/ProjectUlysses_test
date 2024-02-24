@@ -82,8 +82,10 @@ set_variable = { osea_national_mood_protectionist_swing_loc = 0 }
 
 set_variable = { osea_federal_discretionary_budget = 587.91 } # in millions
 set_variable = { osea_federal_spending = 0 } # Just in case I want to add to some ideas/focuses/events
-OSE_add_to_budget = yes
+#OSE_add_to_budget = yes
 set_variable = { osea_oia_funding = 250 } # in millions
+set_variable = { osea_oia_current_ops = 0 }
+set_variable = { osea_oia_max_ops = 2 }
 
 create_intelligence_agency = {
     name = "Osean Intelligence Agency"
@@ -111,6 +113,7 @@ add_ideas = {
 	OSE_house_majority_unity_idea
 
 	nuke_lvl_5
+	generic_expeditionary_army_1
 }
 
 #############################

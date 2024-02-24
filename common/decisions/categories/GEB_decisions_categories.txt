@@ -32,3 +32,9 @@ GEB_granley_mountains_excavations = {
     available = { has_completed_focus = GEB_expand_granley_mountains_excavations }
     visible = { has_completed_focus = GEB_expand_granley_mountains_excavations }
 }
+GEB_belkan_land = {
+    priority = 8
+    icon = placeholder
+	visible_when_empty = yes
+    allowed = { original_tag = GEB }
+}

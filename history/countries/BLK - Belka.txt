@@ -38,6 +38,7 @@ add_ideas = {
 	#BLK_spring_of_nations
 
 	nuke_lvl_5
+	generic_expeditionary_army_2
 }
 
 create_intelligence_agency = {

@@ -1065,6 +1065,18 @@ country_event = {
 	option = {
 		name = belka_dlp_war.101.a
 		hidden_effect = {
+			if = {
+				limit = {
+					PBL = { has_war = yes }
+				}
+				white_peace = SAP
+				white_peace = OSE
+				white_peace = UST
+				white_peace = FAT
+				white_peace = GEB
+				white_peace = REC
+				white_peace = SBK
+			}
 			BLK = {
 				white_peace = SAP
 				white_peace = OSE

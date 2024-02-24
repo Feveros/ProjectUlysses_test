@@ -2133,6 +2133,10 @@ OSE_oia_operations_dec = {
 				var = osea_oia_funding
 				min = 0
 			}
+			add_to_variable = { osea_oia_current_ops = 1 }
+		}
+		remove_effect = {
+			subtract_from_variable = { osea_oia_current_ops = 1 }
 		}
 	}
 	ose_infiltrate_belkan_air_force_dec = {
@@ -2150,6 +2154,10 @@ OSE_oia_operations_dec = {
 					compare = greater_than_or_equals
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = oia_ops_check_tt
+				check_variable = { osea_oia_current_ops < osea_oia_max_ops }
+			}
 			NOT = {
 				BLK = {
 					has_country_flag = ose_infiltrated_our_air_force
@@ -2157,7 +2165,12 @@ OSE_oia_operations_dec = {
 			}
 		}
 		visible = {
-			has_war_with = BLK
+			OR = {
+				has_war_with = BLK
+				BLK = {
+					has_government = fascism
+				}
+			}
 		}
 		days_remove = 30
 		complete_effect = {
@@ -2166,6 +2179,7 @@ OSE_oia_operations_dec = {
 				var = osea_oia_funding
 				min = 0
 			}
+			add_to_variable = { osea_oia_current_ops = 1 }
 		}
 		remove_effect = {
 			add_intel = {
@@ -2181,6 +2195,7 @@ OSE_oia_operations_dec = {
 					days = 30
 				}
 			}
+			subtract_from_variable = { osea_oia_current_ops = 1 }
 		}
 	}
 	ose_infiltrate_belkan_tech_div_dec = {
@@ -2198,6 +2213,10 @@ OSE_oia_operations_dec = {
 					compare = greater_than_or_equals
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = oia_ops_check_tt
+				check_variable = { osea_oia_current_ops < osea_oia_max_ops }
+			}
 		}
 		visible = {
 			has_war_with = BLK
@@ -2214,12 +2233,14 @@ OSE_oia_operations_dec = {
 				var = osea_oia_funding
 				min = 0
 			}
+			add_to_variable = { osea_oia_current_ops = 1 }
 		}
 		remove_effect = {
 			country_event = {
 				id = osea_oia.3
 				days = 30
-			}	
+			}
+			subtract_from_variable = { osea_oia_current_ops = 1 }
 		}
 	}
 	ose_sabotage_belkan_air_force_dec = {
@@ -2236,6 +2257,10 @@ OSE_oia_operations_dec = {
 					value = 100
 					compare = greater_than_or_equals
 				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = oia_ops_check_tt
+				check_variable = { osea_oia_current_ops < osea_oia_max_ops }
 			}
 			BLK = {
 				has_country_flag = ose_infiltrated_our_air_force
@@ -2256,6 +2281,7 @@ OSE_oia_operations_dec = {
 				var = osea_oia_funding
 				min = 0
 			}
+			add_to_variable = { osea_oia_current_ops = 1 }
 		}
 		remove_effect = {
 			BLK = {
@@ -2264,6 +2290,7 @@ OSE_oia_operations_dec = {
 					days = 60
 				}
 			}
+			subtract_from_variable = { osea_oia_current_ops = 1 }
 		}
 	}
 	ose_infiltrate_belkan_army_dec = {
@@ -2281,6 +2308,10 @@ OSE_oia_operations_dec = {
 					compare = greater_than_or_equals
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = oia_ops_check_tt
+				check_variable = { osea_oia_current_ops < osea_oia_max_ops }
+			}
 			NOT = {
 				BLK = {
 					has_country_flag = ose_infiltrated_our_army
@@ -2288,7 +2319,12 @@ OSE_oia_operations_dec = {
 			}
 		}
 		visible = {
-			has_war_with = BLK
+			OR = {
+				has_war_with = BLK
+				BLK = {
+					has_government = fascism
+				}
+			}
 		}
 		days_remove = 30
 		complete_effect = {
@@ -2297,6 +2333,7 @@ OSE_oia_operations_dec = {
 				var = osea_oia_funding
 				min = 0
 			}
+			add_to_variable = { osea_oia_current_ops = 1 }
 		}
 		remove_effect = {
 			add_intel = {
@@ -2306,6 +2343,7 @@ OSE_oia_operations_dec = {
 			BLK = {
 				set_country_flag = ose_infiltrated_our_army
 			}
+			subtract_from_variable = { osea_oia_current_ops = 1 }
 		}
 	}
 	ose_sabotage_belkan_army_dec = {
@@ -2322,6 +2360,10 @@ OSE_oia_operations_dec = {
 					value = 100
 					compare = greater_than_or_equals
 				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = oia_ops_check_tt
+				check_variable = { osea_oia_current_ops < osea_oia_max_ops }
 			}
 			BLK = {
 				has_country_flag = ose_infiltrated_our_army
@@ -2342,6 +2384,7 @@ OSE_oia_operations_dec = {
 				var = osea_oia_funding
 				min = 0
 			}
+			add_to_variable = { osea_oia_current_ops = 1 }
 		}
 		remove_effect = {
 			BLK = {
@@ -2350,6 +2393,7 @@ OSE_oia_operations_dec = {
 					days = 60
 				}
 			}
+			subtract_from_variable = { osea_oia_current_ops = 1 }
 		}
 	}
 	ose_support_ustian_home_army_dec = {
@@ -2367,6 +2411,10 @@ OSE_oia_operations_dec = {
 					compare = greater_than_or_equals
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = oia_ops_check_tt
+				check_variable = { osea_oia_current_ops < osea_oia_max_ops }
+			}
 		}
 		visible = {
 			UST = {
@@ -2380,6 +2428,7 @@ OSE_oia_operations_dec = {
 				var = osea_oia_funding
 				min = 0
 			}
+			add_to_variable = { osea_oia_current_ops = 1 }
 		}
 		remove_effect = {
 			every_state = {
@@ -2388,6 +2437,7 @@ OSE_oia_operations_dec = {
 				}
 				add_resistance = 10
 			}
+			subtract_from_variable = { osea_oia_current_ops = 1 }
 		}
 	}
 	ose_support_sapinish_army_in_the_homeland_dec = { # Monarchist partisans
@@ -2405,6 +2455,10 @@ OSE_oia_operations_dec = {
 					compare = greater_than_or_equals
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = oia_ops_check_tt
+				check_variable = { osea_oia_current_ops < osea_oia_max_ops }
+			}
 		}
 		visible = {
 			SAP = {
@@ -2418,6 +2472,7 @@ OSE_oia_operations_dec = {
 				var = osea_oia_funding
 				min = 0
 			}
+			add_to_variable = { osea_oia_current_ops = 1 }
 		}
 		remove_effect = {
 			every_state = {
@@ -2444,6 +2499,7 @@ OSE_oia_operations_dec = {
 					value = 0.025
 				}
 			}
+			subtract_from_variable = { osea_oia_current_ops = 1 }
 		}
 	}
 	ose_support_ejercito_de_liberacion_nacional_dec = { # Republican partisans
@@ -2461,6 +2517,10 @@ OSE_oia_operations_dec = {
 					compare = greater_than_or_equals
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = oia_ops_check_tt
+				check_variable = { osea_oia_current_ops < osea_oia_max_ops }
+			}
 		}
 		visible = {
 			SAP = {
@@ -2474,6 +2534,7 @@ OSE_oia_operations_dec = {
 				var = osea_oia_funding
 				min = 0
 			}
+			add_to_variable = { osea_oia_current_ops = 1 }
 		}
 		remove_effect = {
 			every_state = {
@@ -2496,6 +2557,73 @@ OSE_oia_operations_dec = {
 					value = -0.025
 				}
 			}
+			subtract_from_variable = { osea_oia_current_ops = 1 }
+		}
+	}
+	ose_support_democratic_opposition_in_country = {
+		icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
+		state_target = yes
+		targets_dynamic = yes
+		target_root_trigger = {
+			has_government = democratic
+		}
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				owner = {
+					NOT = {
+						original_tag = OSE
+						has_government = democratic
+					}
+					has_opinion = {
+						target = ROOT
+						value < 25
+					}
+				}
+			}
+		}
+		on_map_mode = map_only
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = oia_operation_cost_50
+				check_variable = {
+					var = osea_oia_funding
+					value = 50
+					compare = greater_than_or_equals
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = oia_ops_check_tt
+				check_variable = { osea_oia_current_ops < osea_oia_max_ops }
+			}
+			NOT = {
+				has_country_flag = ose_supporting_democratic_opposition_in_country
+			}
+		}
+		days_remove = 30
+		complete_effect = {
+			subtract_from_variable = { osea_oia_funding = 50 }
+			clamp_variable = {
+				var = osea_oia_funding
+				min = 0
+			}
+			set_country_flag = {
+				flag = ose_supporting_democratic_opposition_in_country
+				days = 30
+				value = 1
+			}
+			FROM = {
+				owner = {
+					add_timed_idea = {
+						idea = OSE_energized_democratic_protests
+						days = 30
+					}
+				}
+			}
+			add_to_variable = { osea_oia_current_ops = 1 }
+		}
+		remove_effect = {
+			subtract_from_variable = { osea_oia_current_ops = 1 }
 		}
 	}
 }

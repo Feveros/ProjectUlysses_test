@@ -275,7 +275,14 @@ BLK_belkan_war_category = {
 			}
 			OSE = {
 				create_faction = OSE_BELKAN_WAR_FACTION
-				add_to_faction = UST
+				if = {
+					limit = {
+						SAP = {
+							is_in_faction = no
+						}
+					}
+					add_to_faction = UST
+				}
 				if = {
 					limit = {
 						SAP = {
@@ -290,8 +297,22 @@ BLK_belkan_war_category = {
 			}
 			FAT = {
 				create_faction = FAT_BELKAN_WAR_FACTION
-				add_to_faction = GEB
-				add_to_faction = REC
+				if = {
+					limit = {
+						GEB = {
+							is_in_faction = no
+						}
+					}
+					add_to_faction = GEB
+				}
+				if = {
+					limit = {
+						REC = {
+							is_in_faction = no
+						}
+					}
+					add_to_faction = REC
+				}
 			}
 			YUK = {
 				country_event = {

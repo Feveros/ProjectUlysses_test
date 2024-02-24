@@ -27,6 +27,9 @@ add_ideas = {
 	limited_conscription
 	low_economic_mobilisation
 	limited_exports 
+	
+	generic_internal_security_army_1
+	nuke_lvl_1
 }
 
 ########################################
